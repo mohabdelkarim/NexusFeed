@@ -1,6 +1,30 @@
 {
   "date": "2026-06-06",
   "last_post_time": "2026-06-06T21:23:30Z",
-  "pending_best": null,
+  "pending_best": {
+    "authoritative_score": 8.0,
+    "canonical_url": "https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim-v2",
+    "cleaned_title": "five labs five minds building multi model finance drama small models",
+    "index": 3,
+    "published_at": "2026-06-06T19:02:33Z",
+    "saved_at": "2026-06-06T21:35:31Z",
+    "score": {
+      "freshness_score": 1.0,
+      "impact_score": 2.5,
+      "novelty_score": 2.5,
+      "reason": "High novelty and impact scores due to the innovative approach to finance drama, and high source score due to the tier S source.",
+      "red_flag": false,
+      "red_flag_reason": null,
+      "source_score": 2.0,
+      "total_score": 8.0
+    },
+    "source": "HuggingFace",
+    "summary": "",
+    "telegram_message": "\ud83d\udd25 *Five labs, five minds: building a multi-model finance drama on small models*\n\nHigh novelty and impact scores due to the innovative approach to finance drama, and high source score due to the tier S source.\n\n\ud83c\udfdb\ufe0f Source: HuggingFace (S)\n\u23f0 Published: 2 hours ago\n\u2b50 Score: 8.0/10\n\n\ud83d\udd17 https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim-v2",
+    "tier": "S",
+    "title": "Five labs, five minds: building a multi-model finance drama on small models",
+    "url": "https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim-v2",
+    "url_hash": "fa5e63bc3187607403748cc32f6425354ed029bb7117f7d5e719ffcce10f4db1"
+  },
   "posts_today": 1
 }
