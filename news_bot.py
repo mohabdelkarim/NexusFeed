@@ -247,6 +247,7 @@ class Article:
 
 FEEDS: tuple[FeedSource, ...] = (
     FeedSource("OpenAI", "S", ("https://openai.com/news/rss.xml",)),
+    # DEAD - needs manual fix (no confirmed working Anthropic RSS endpoint found)
     FeedSource(
         "Anthropic",
         "S",
@@ -302,7 +303,9 @@ FEEDS: tuple[FeedSource, ...] = (
         ("https://feed.infoq.com/",),
         topic_keywords=GENERAL_TOPIC_KEYWORDS,
     ),
+    # DEAD - needs manual fix (current Unite AI feed URLs return non-parseable content)
     FeedSource("Unite AI", "B", ("https://www.unite.ai/feed/",)),
+    # DEAD - needs manual fix (local feedparser SSL verification fails on current arXiv feed URL)
     FeedSource("arXiv cs.AI", "C", ("https://rss.arxiv.org/rss/cs.AI",)),
     FeedSource(
         "Hacker News",
