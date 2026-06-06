@@ -338,7 +338,6 @@ def normalize_digest_result(result: dict[str, Any], now: datetime) -> tuple[list
 def format_digest_message(stories: list[dict[str, Any]], digest_date: str) -> str:
     lines = [
         f"🗞 *Top 5 AI & Tech — {sanitize_telegram_markdown_text(digest_date)}*",
-        "━━━━━━━━━━━━━━━━━━━━━",
         "",
     ]
     for story in stories:
@@ -354,12 +353,6 @@ def format_digest_message(stories: list[dict[str, Any]], digest_date: str) -> st
                 "",
             ]
         )
-    lines.extend(
-        [
-            "━━━━━━━━━━━━━━━━━━━━━",
-            "📅 Daily digest · NexusFeed",
-        ]
-    )
     return clean_multiline_text("\n".join(lines))
 
 
