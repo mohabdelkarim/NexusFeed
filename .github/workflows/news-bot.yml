@@ -47,8 +47,8 @@ jobs:
 
       - name: Commit state files
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "MOHAbdelkarim"
+          git config user.email "mohaabdelkarim2@gmail.com"
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           git add daily_state.json posted_articles.json
           git diff --staged --quiet || git commit -m "chore(state): update bot state [skip ci]"
