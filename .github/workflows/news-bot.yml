@@ -1,4 +1,4 @@
-name: Telegram News Curator
+name: AI News Bot
 
 on:
   workflow_dispatch:
@@ -17,13 +17,14 @@ permissions:
   contents: write
 
 jobs:
-  curate-and-post:
+  run-bot:
     runs-on: ubuntu-latest
 
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
         with:
+          token: ${{ secrets.GIT_TOKEN }}
           fetch-depth: 0
 
       - name: Set up Python
@@ -41,16 +42,17 @@ jobs:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID }}
-        run: python news_bot.py
+          GIT_TOKEN: ${{ secrets.GIT_TOKEN }}
+        run: python main.py
 
       - name: Commit state changes
         run: |
           git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
           git add daily_state.json posted_articles.json
           if git diff --cached --quiet; then
             echo "No state changes to commit."
             exit 0
           fi
-          git commit -m "chore: update curator state"
+          git commit -m "chore(state): update bot state [skip ci]"
           git push
