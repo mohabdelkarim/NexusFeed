@@ -1,11 +1,13 @@
 from __future__ import annotations
 
+import hashlib
 import json
 import logging
 import os
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from datetime import datetime
+from datetime import datetime, timedelta, timezone
+from pathlib import Path
 from typing import Any
 
 import requests
@@ -28,6 +30,10 @@ from news_bot import (
 MAX_DIGEST_CANDIDATES = 30
 REDUCED_DIGEST_CANDIDATES = 15
 REQUIRED_SECRETS = ("GROQ_API_KEY", "TELEGRAM_BOT_TOKEN", "TELEGRAM_CHANNEL_ID")
+DIGEST_HISTORY_FILE = "digest_history.json"
+DIGEST_TITLE_LOOKBACK_DAYS = 3
+ROOT = Path(__file__).resolve().parent
+DIGEST_HISTORY_PATH = ROOT / DIGEST_HISTORY_FILE
 
 DIGEST_SYSTEM_PROMPT = """
 You are an AI news curator creating a daily top 5 digest for a
@@ -71,6 +77,125 @@ def require_env() -> dict[str, str]:
             raise EnvironmentError(f"Missing required secret: {key}")
         values[key] = value
     return values
+
+
+def default_digest_history() -> dict[str, Any]:
+    return {"url_hashes": [], "recent_titles": []}
+
+
+def load_digest_history() -> dict[str, Any]:
+    try:
+        with DIGEST_HISTORY_PATH.open("r", encoding="utf-8") as handle:
+            data = json.load(handle)
+        if not isinstance(data, dict):
+            return default_digest_history()
+        url_hashes = data.get("url_hashes")
+        recent_titles = data.get("recent_titles")
+        return {
+            "url_hashes": url_hashes if isinstance(url_hashes, list) else [],
+            "recent_titles": recent_titles if isinstance(recent_titles, list) else [],
+        }
+    except (FileNotFoundError, json.JSONDecodeError):
+        return default_digest_history()
+
+
+def save_digest_history(history: dict[str, Any]) -> None:
+    tmp_path = DIGEST_HISTORY_PATH.with_suffix(DIGEST_HISTORY_PATH.suffix + ".tmp")
+    with tmp_path.open("w", encoding="utf-8", newline="\n") as handle:
+        json.dump(history, handle, indent=2, sort_keys=True)
+        handle.write("\n")
+    os.replace(tmp_path, DIGEST_HISTORY_PATH)
+
+
+def url_hash(url: str) -> str:
+    return hashlib.sha256(url.encode("utf-8")).hexdigest()
+
+
+def normalize_title(title: str) -> str:
+    stop = {
+        "the",
+        "a",
+        "an",
+        "in",
+        "of",
+        "to",
+        "and",
+        "for",
+        "is",
+        "on",
+        "at",
+        "by",
+        "with",
+        "from",
+        "new",
+        "ai",
+        "how",
+        "what",
+        "why",
+    }
+    words = clean_whitespace(title).lower().split()
+    return " ".join(word for word in words if word not in stop)
+
+
+def parse_history_datetime(value: str) -> datetime | None:
+    if not value:
+        return None
+    try:
+        return datetime.fromisoformat(value.replace("Z", "+00:00")).astimezone(timezone.utc)
+    except ValueError:
+        return None
+
+
+def is_digest_duplicate(story: dict[str, Any], history: dict[str, Any], now: datetime) -> bool:
+    story_hash = url_hash(story["article_url"])
+    if story_hash in history.get("url_hashes", []):
+        return True
+
+    cutoff = now - timedelta(days=DIGEST_TITLE_LOOKBACK_DAYS)
+    cleaned = normalize_title(story["full_title"])
+    cleaned_words = set(cleaned.split())
+    if not cleaned_words:
+        return False
+
+    for entry in history.get("recent_titles", []):
+        if not isinstance(entry, dict):
+            continue
+        sent_at = parse_history_datetime(str(entry.get("sent_at", "")))
+        if not sent_at or sent_at < cutoff:
+            continue
+        prev_words = set(clean_whitespace(str(entry.get("cleaned_title", ""))).split())
+        if not prev_words:
+            continue
+        overlap = len(cleaned_words & prev_words) / max(len(cleaned_words), len(prev_words))
+        if overlap >= 0.8:
+            return True
+    return False
+
+
+def mark_digest_stories(stories: list[dict[str, Any]], history: dict[str, Any], now: datetime) -> dict[str, Any]:
+    sent_at = now.astimezone(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+    for story in stories:
+        story_hash = url_hash(story["article_url"])
+        if story_hash not in history["url_hashes"]:
+            history["url_hashes"].append(story_hash)
+        history["recent_titles"].append(
+            {
+                "cleaned_title": normalize_title(story["full_title"]),
+                "sent_at": sent_at,
+                "url": story["article_url"],
+            }
+        )
+
+    cutoff = now - timedelta(days=7)
+    history["recent_titles"] = [
+        entry
+        for entry in history["recent_titles"]
+        if isinstance(entry, dict)
+        and (parsed_sent_at := parse_history_datetime(str(entry.get("sent_at", ""))))
+        and parsed_sent_at >= cutoff
+    ]
+    history["url_hashes"] = history["url_hashes"][-500:]
+    return history
 
 
 def fetch_digest_candidates(now: datetime) -> list[Article]:
@@ -262,6 +387,7 @@ def main() -> int:
     configure_logging()
     secrets = require_env()
     now = utc_now()
+    history = load_digest_history()
 
     candidates = fetch_digest_candidates(now)[:MAX_DIGEST_CANDIDATES]
     logging.info("Prepared %s digest candidate(s).", len(candidates))
@@ -274,14 +400,27 @@ def main() -> int:
         return 1
 
     stories, digest_date = normalize_digest_result(groq_result, now)
-    if len(stories) < 3:
-        logging.warning("Not enough stories for digest today")
+    clean_stories: list[dict[str, Any]] = []
+    for story in stories:
+        if is_digest_duplicate(story, history, now):
+            logging.warning("Digest duplicate skipped: %s", story["full_title"][:60])
+            continue
+        clean_stories.append(story)
+        if len(clean_stories) == 5:
+            break
+
+    if len(clean_stories) < 3:
+        logging.warning("Not enough unique stories for digest today. Skipping.")
         return 0
 
-    message = format_digest_message(stories, digest_date)
+    stories_to_send = clean_stories
+    message = format_digest_message(stories_to_send, digest_date)
     if not post_to_telegram(message, secrets["TELEGRAM_BOT_TOKEN"], secrets["TELEGRAM_CHANNEL_ID"]):
         return 1
 
+    history = mark_digest_stories(stories_to_send, history, now)
+    save_digest_history(history)
+    logging.info("Digest history updated and saved.")
     logging.info("Daily digest sent successfully.")
     return 0
 
