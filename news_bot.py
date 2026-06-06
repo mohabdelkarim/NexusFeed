@@ -53,22 +53,36 @@ TRACKING_QUERY_PREFIXES = (
 RED_FLAG_PATTERNS = [
     "top 10",
     "top 5",
+    "top 7",
+    "top 15",
+    "top 20",
     "best tools",
+    "best practices",
+    "best ai tools",
     "what is",
     "guide to",
     "how to",
     "tutorial",
     "weekly recap",
     "weekly roundup",
-    "roundup",
     "last week",
     "last month",
     "ultimate guide",
-    "in 2024",
-    "in 2023",
-    "retrospective",
-    "looking back",
     "everything you need to know",
+    "in 2023",
+    "in 2024",
+    "previously announced",
+    "announced last",
+    "looking back",
+    "retrospective",
+    "history of",
+    "beginners guide",
+    "beginner's guide",
+    "getting started",
+    "step by step",
+    "step-by-step",
+    "cheat sheet",
+    "roundup",
 ]
 STOP_WORDS = {
     "a",
@@ -477,6 +491,30 @@ def title_is_duplicate(cleaned_title: str, other_title: str) -> bool:
     return word_overlap_ratio(cleaned_title, other_title) >= TITLE_SIMILARITY_THRESHOLD
 
 
+def _get_article_field(article: Any, field: str) -> str:
+    if isinstance(article, dict):
+        return str(article.get(field) or "")
+    return str(getattr(article, field, "") or "")
+
+
+def find_local_red_flag_pattern(article: Any) -> str | None:
+    text = ((_get_article_field(article, "title") + " " + _get_article_field(article, "summary")[:300]).lower())
+    for pattern in RED_FLAG_PATTERNS:
+        if pattern in text:
+            return pattern
+    return None
+
+
+def has_local_red_flag(article: Any) -> bool:
+    """
+    Hard local check BEFORE sending to Groq.
+    Returns True if article should be auto-rejected.
+    Check both title and first 300 chars of summary.
+    Case-insensitive. If ANY pattern matches -> True.
+    """
+    return find_local_red_flag_pattern(article) is not None
+
+
 def contains_topic_keyword(text: str, keywords: tuple[str, ...]) -> bool:
     haystack = f" {text.lower()} "
     return any(keyword.lower() in haystack for keyword in keywords)
@@ -607,6 +645,11 @@ def is_duplicate_against_posted(article: Article, posted: dict[str, Any], now: d
 def dedupe_candidates(articles: list[Article], posted: dict[str, Any], now: datetime) -> list[Article]:
     chosen: list[Article] = []
     for article in articles:
+        matched_pattern = find_local_red_flag_pattern(article)
+        if matched_pattern:
+            logging.warning('Local red flag: [%s] matched pattern "%s"', article.title, matched_pattern)
+            continue
+
         if is_duplicate_against_posted(article, posted, now):
             continue
 
@@ -745,20 +788,28 @@ def normalize_groq_result(result: dict[str, Any]) -> dict[str, Any] | None:
         if not isinstance(item, dict):
             continue
         try:
-            normalized_articles.append(
-                {
-                    "index": int(item.get("index", -1)),
-                    "title": clean_whitespace(str(item.get("title", ""))),
-                    "novelty_score": float(item.get("novelty_score", 0.0)),
-                    "impact_score": float(item.get("impact_score", 0.0)),
-                    "freshness_score": float(item.get("freshness_score", 0.0)),
-                    "source_score": float(item.get("source_score", 0.0)),
-                    "total_score": float(item.get("total_score", 0.0)),
-                    "red_flag": bool(item.get("red_flag", False)),
-                    "red_flag_reason": item.get("red_flag_reason"),
-                    "reason": clean_whitespace(str(item.get("reason", ""))),
-                }
-            )
+            normalized_item = {
+                "index": int(item.get("index", -1)),
+                "title": clean_whitespace(str(item.get("title", ""))),
+                "summary": clean_whitespace(str(item.get("summary", ""))),
+                "novelty_score": float(item.get("novelty_score", 0.0)),
+                "impact_score": float(item.get("impact_score", 0.0)),
+                "freshness_score": float(item.get("freshness_score", 0.0)),
+                "source_score": float(item.get("source_score", 0.0)),
+                "total_score": float(item.get("total_score", 0.0)),
+                "red_flag": bool(item.get("red_flag", False)),
+                "red_flag_reason": item.get("red_flag_reason"),
+                "reason": clean_whitespace(str(item.get("reason", ""))),
+            }
+            matched_pattern = find_local_red_flag_pattern(normalized_item)
+            if matched_pattern and not normalized_item["red_flag"]:
+                normalized_item["red_flag"] = True
+                normalized_item["total_score"] = 0.0
+                normalized_item["red_flag_reason"] = "Local enforcement override"
+                logging.warning('Groq missed red flag on [%s] - overriding to 0.00', normalized_item["title"])
+            elif normalized_item["red_flag"]:
+                normalized_item["total_score"] = 0.0
+            normalized_articles.append(normalized_item)
         except (TypeError, ValueError):
             continue
 
@@ -772,10 +823,31 @@ def normalize_groq_result(result: dict[str, Any]) -> dict[str, Any] | None:
     except (TypeError, ValueError):
         best_score = 0.0
 
+    enforced_best_index = best_index
+    enforced_best_score = best_score
+    best_article = next((item for item in normalized_articles if item["index"] == best_index), None)
+    if not best_article or best_article["red_flag"]:
+        non_red_articles = [item for item in normalized_articles if not item["red_flag"]]
+        if non_red_articles:
+            best_article = max(non_red_articles, key=lambda item: item["total_score"])
+            enforced_best_index = int(best_article["index"])
+            enforced_best_score = float(best_article["total_score"])
+        else:
+            enforced_best_index = -1
+            enforced_best_score = 0.0
+            recommendation = "SKIP"
+
+    if enforced_best_score >= 8.5:
+        recommendation = "POST_NOW"
+    elif enforced_best_score >= 6.0:
+        recommendation = "SAVE_PENDING"
+    else:
+        recommendation = "SKIP"
+
     return {
         "articles": normalized_articles,
-        "best_index": best_index,
-        "best_score": best_score,
+        "best_index": enforced_best_index,
+        "best_score": enforced_best_score,
         "recommendation": recommendation,
         "telegram_message": clean_multiline_text(result.get("telegram_message", "")),
     }
