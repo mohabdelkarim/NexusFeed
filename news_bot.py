@@ -6,10 +6,9 @@ import json
 import logging
 import os
 import re
-import sys
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from dataclasses import asdict, dataclass
+from dataclasses import dataclass
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
@@ -18,6 +17,7 @@ from urllib.parse import parse_qsl, urlencode, urlparse, urlunparse
 
 import feedparser
 import requests
+from dateutil.parser import isoparse
 
 
 ROOT = Path(__file__).resolve().parent
@@ -29,7 +29,15 @@ MAX_CANDIDATES = 25
 MAX_POSTS_PER_DAY = 3
 MIN_HOURS_BETWEEN_POSTS = 3
 MAX_ARTICLE_AGE_HOURS = 12
-
+TITLE_SIMILARITY_THRESHOLD = 0.80
+POSTED_RETENTION_DAYS = 7
+RECENT_TITLE_LOOKBACK_HOURS = 24
+REQUIRED_SECRETS = [
+    "GROQ_API_KEY",
+    "TELEGRAM_BOT_TOKEN",
+    "TELEGRAM_CHANNEL_ID",
+    "GIT_TOKEN",
+]
 TRACKING_QUERY_PREFIXES = (
     "utm_",
     "fbclid",
@@ -52,13 +60,34 @@ RED_FLAG_PATTERNS = [
     "tutorial",
     "weekly recap",
     "weekly roundup",
+    "roundup",
     "last week",
     "last month",
     "ultimate guide",
     "in 2024",
     "in 2023",
     "retrospective",
+    "looking back",
+    "everything you need to know",
 ]
+STOP_WORDS = {
+    "a",
+    "an",
+    "and",
+    "announces",
+    "announcing",
+    "for",
+    "from",
+    "in",
+    "launches",
+    "new",
+    "of",
+    "on",
+    "releases",
+    "the",
+    "to",
+    "with",
+}
 AI_TOPIC_KEYWORDS = (
     "agent",
     "agents",
@@ -110,6 +139,72 @@ SOFTWARE_TOPIC_KEYWORDS = (
 GENERAL_TOPIC_KEYWORDS = tuple(sorted(set(AI_TOPIC_KEYWORDS + SOFTWARE_TOPIC_KEYWORDS)))
 TIER_ORDER = {"S": 0, "A": 1, "B": 2, "C": 3}
 
+SCORING_SYSTEM_PROMPT = """
+You are a strict AI news curator for a Telegram channel targeting
+software engineers and AI researchers.
+
+Your job per run:
+1. Score every article using the 4-criteria system (max 10.00)
+2. Apply red flags (score = 0.00 if ANY red flag matches)
+3. Select the single best article
+4. Decide: POST_NOW / SAVE_PENDING / SKIP
+5. If decision != SKIP: write the ready Telegram message
+
+SCORING CRITERIA:
+- Novelty (0.00-3.00): new release=3, research=2.5, industry move=2,
+  update=1.5, opinion=0.5, tutorial=0.2, recap=0
+- Impact (0.00-3.00): everyone=3, all devs=2.5, niche=1.5, one company=0.5
+- Freshness (0.00-2.00): <1h=2, 1-3h=1.5, 3-6h=1, 6-12h=0.5, >12h=0
+- Source (0.00-2.00): Tier S=2, A=1.5, B=1, C=0.5
+
+RED FLAGS (auto 0.00): "top 10", "top 5", "best tools", "what is",
+"guide to", "how to", "tutorial", "weekly recap", "roundup",
+"last week", "last month", "ultimate guide", "in 2023", "in 2024",
+"retrospective", "looking back", "everything you need to know"
+
+DECISION RULES:
+- best_score >= 8.5 -> POST_NOW
+- best_score >= 6.0 -> SAVE_PENDING
+- best_score < 6.0  -> SKIP
+
+Respond ONLY with valid JSON. No markdown, no explanation outside JSON.
+""".strip()
+
+TELEGRAM_MESSAGE_TEMPLATE = """
+━━━━━━━━━━━━━━━━━━━━━
+🔥 *{HEADLINE}*
+
+{1-2 sentence summary in Greek or English - match source language}
+
+🏛️ Source: {Source Name} ({Tier S/A/B/C})
+⏰ Published: {X hours ago}
+⭐ Score: {total_score}/10
+
+🔗 {article_url}
+━━━━━━━━━━━━━━━━━━━━━
+""".strip()
+
+GROQ_RESPONSE_SCHEMA = {
+    "articles": [
+        {
+            "index": 0,
+            "title": "string",
+            "novelty_score": 0.0,
+            "impact_score": 0.0,
+            "freshness_score": 0.0,
+            "source_score": 0.0,
+            "total_score": 0.0,
+            "red_flag": False,
+            "red_flag_reason": "string or null",
+            "reason": "string (1 sentence why this score)",
+        }
+    ],
+    "best_index": 0,
+    "best_score": 0.0,
+    "recommendation": "POST_NOW | SAVE_PENDING | SKIP",
+    "telegram_message": "string (ready-to-send Telegram message in Markdown)",
+}
+
 
 @dataclass(frozen=True)
 class FeedSource:
@@ -121,13 +216,13 @@ class FeedSource:
 
 @dataclass
 class Article:
-    article_id: str
+    index: int
     title: str
     summary: str
     url: str
     canonical_url: str
     url_hash: str
-    story_hash: str
+    cleaned_title: str
     source: str
     tier: str
     published_at: str
@@ -224,9 +319,19 @@ def parse_iso_datetime(value: str | None) -> datetime | None:
     if not value:
         return None
     try:
-        return datetime.fromisoformat(value.replace("Z", "+00:00")).astimezone(timezone.utc)
-    except ValueError:
+        return isoparse(value).astimezone(timezone.utc)
+    except (TypeError, ValueError):
         return None
+
+
+def require_env() -> dict[str, str]:
+    values: dict[str, str] = {}
+    for key in REQUIRED_SECRETS:
+        value = os.environ.get(key)
+        if not value:
+            raise EnvironmentError(f"Missing required secret: {key}")
+        values[key] = value
+    return values
 
 
 def default_state(now: datetime | None = None) -> dict[str, Any]:
@@ -241,9 +346,9 @@ def default_state(now: datetime | None = None) -> dict[str, Any]:
 
 def default_posted() -> dict[str, Any]:
     return {
-        "version": 1,
-        "articles": {},
-        "story_hashes": [],
+        "hashes": [],
+        "recent_titles": [],
+        "hash_records": [],
     }
 
 
@@ -269,13 +374,37 @@ def save_json(path: Path, payload: dict[str, Any]) -> None:
 
 
 def sanitize_posted(data: dict[str, Any]) -> dict[str, Any]:
-    articles = data.get("articles")
-    story_hashes = data.get("story_hashes")
+    hashes = data.get("hashes")
+    recent_titles = data.get("recent_titles")
+    hash_records = data.get("hash_records")
     return {
-        "version": 1,
-        "articles": articles if isinstance(articles, dict) else {},
-        "story_hashes": story_hashes if isinstance(story_hashes, list) else [],
+        "hashes": hashes if isinstance(hashes, list) else [],
+        "recent_titles": recent_titles if isinstance(recent_titles, list) else [],
+        "hash_records": hash_records if isinstance(hash_records, list) else [],
     }
+
+
+def cleanup_posted_history(posted: dict[str, Any], now: datetime) -> None:
+    cutoff = now - timedelta(days=POSTED_RETENTION_DAYS)
+    recent_titles: list[dict[str, Any]] = []
+    for item in posted.get("recent_titles", []):
+        if not isinstance(item, dict):
+            continue
+        posted_at = parse_iso_datetime(item.get("posted_at"))
+        if posted_at and posted_at >= cutoff:
+            recent_titles.append(item)
+
+    hash_records: list[dict[str, Any]] = []
+    for item in posted.get("hash_records", []):
+        if not isinstance(item, dict):
+            continue
+        posted_at = parse_iso_datetime(item.get("posted_at"))
+        if posted_at and posted_at >= cutoff and isinstance(item.get("hash"), str):
+            hash_records.append(item)
+
+    posted["recent_titles"] = recent_titles
+    posted["hash_records"] = hash_records
+    posted["hashes"] = sorted({item["hash"] for item in hash_records})
 
 
 def reset_state_if_needed(state: dict[str, Any], now: datetime) -> tuple[dict[str, Any], bool]:
@@ -289,6 +418,11 @@ def clean_whitespace(value: str) -> str:
     return re.sub(r"\s+", " ", value or "").strip()
 
 
+def clean_multiline_text(value: str) -> str:
+    lines = [line.rstrip() for line in str(value).replace("\r\n", "\n").split("\n")]
+    return "\n".join(lines).strip()
+
+
 def strip_html(value: str) -> str:
     value = re.sub(r"<script[\s\S]*?</script>", " ", value or "", flags=re.IGNORECASE)
     value = re.sub(r"<style[\s\S]*?</style>", " ", value, flags=re.IGNORECASE)
@@ -299,7 +433,7 @@ def strip_html(value: str) -> str:
 def truncate(value: str, max_chars: int) -> str:
     if len(value) <= max_chars:
         return value
-    return value[: max_chars - 1].rstrip() + "…"
+    return value[: max_chars - 1].rstrip() + "..."
 
 
 def canonicalize_url(url: str) -> str:
@@ -316,8 +450,7 @@ def canonicalize_url(url: str) -> str:
         query=urlencode(query_items, doseq=True),
         fragment="",
     )
-    normalized = urlunparse(cleaned).rstrip("/")
-    return normalized
+    return urlunparse(cleaned).rstrip("/")
 
 
 def stable_hash(value: str) -> str:
@@ -328,21 +461,25 @@ def normalize_title(title: str) -> str:
     normalized = title.lower()
     normalized = re.sub(r"https?://\S+", " ", normalized)
     normalized = re.sub(r"[^a-z0-9]+", " ", normalized)
-    return clean_whitespace(normalized)
+    words = [word for word in normalized.split() if word and word not in STOP_WORDS]
+    return " ".join(words)
 
 
-def build_story_hash(title: str) -> str:
-    return stable_hash(normalize_title(title))
+def word_overlap_ratio(left: str, right: str) -> float:
+    left_words = set(left.split())
+    right_words = set(right.split())
+    if not left_words or not right_words:
+        return 0.0
+    return len(left_words & right_words) / max(len(left_words), len(right_words))
+
+
+def title_is_duplicate(cleaned_title: str, other_title: str) -> bool:
+    return word_overlap_ratio(cleaned_title, other_title) >= TITLE_SIMILARITY_THRESHOLD
 
 
 def contains_topic_keyword(text: str, keywords: tuple[str, ...]) -> bool:
     haystack = f" {text.lower()} "
     return any(keyword.lower() in haystack for keyword in keywords)
-
-
-def is_red_flag(title: str, summary: str) -> bool:
-    text = f"{title} {summary}".lower()
-    return any(pattern in text for pattern in RED_FLAG_PATTERNS)
 
 
 def parse_entry_datetime(entry: Any) -> datetime | None:
@@ -381,7 +518,6 @@ def fetch_feed(feed: FeedSource, now: datetime) -> list[Article]:
         "User-Agent": "NexusFeedBot/1.0 (+https://github.com/mohabdelkarim/NexusFeed)",
         "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml;q=0.9, */*;q=0.8",
     }
-    last_error = None
     response_content = None
 
     for url in feed.urls:
@@ -391,26 +527,22 @@ def fetch_feed(feed: FeedSource, now: datetime) -> list[Article]:
             response_content = response.content
             break
         except requests.RequestException as exc:
-            last_error = exc
             logging.warning("Feed fetch failed for %s via %s: %s", feed.name, url, exc)
 
     if response_content is None:
-        if last_error:
-            logging.warning("Skipping %s after all feed URLs failed.", feed.name)
+        logging.warning("Skipping %s after all feed URLs failed.", feed.name)
         return []
 
     parsed = feedparser.parse(response_content)
     articles: list[Article] = []
 
-    for idx, entry in enumerate(parsed.entries):
+    for entry in parsed.entries:
         published_dt = parse_entry_datetime(entry)
         if not published_dt or published_dt < cutoff or published_dt > now + timedelta(minutes=5):
             continue
 
         title, summary = extract_entry_text(entry)
         if not title:
-            continue
-        if is_red_flag(title, summary):
             continue
 
         entry_text = clean_whitespace(f"{title} {summary}")
@@ -422,24 +554,24 @@ def fetch_feed(feed: FeedSource, now: datetime) -> list[Article]:
             continue
 
         canonical_url = canonicalize_url(raw_url)
-        article = Article(
-            article_id=f"{feed.name.lower().replace(' ', '-')}-{idx}",
-            title=title,
-            summary=summary,
-            url=raw_url,
-            canonical_url=canonical_url,
-            url_hash=stable_hash(canonical_url),
-            story_hash=build_story_hash(title),
-            source=feed.name,
-            tier=feed.tier,
-            published_at=isoformat_utc(published_dt),
-            published_ts=published_dt.timestamp(),
-            source_rank=TIER_ORDER[feed.tier],
+        articles.append(
+            Article(
+                index=-1,
+                title=title,
+                summary=summary,
+                url=raw_url,
+                canonical_url=canonical_url,
+                url_hash=stable_hash(raw_url),
+                cleaned_title=normalize_title(title),
+                source=feed.name,
+                tier=feed.tier,
+                published_at=isoformat_utc(published_dt),
+                published_ts=published_dt.timestamp(),
+                source_rank=TIER_ORDER[feed.tier],
+            )
         )
-        articles.append(article)
 
-    articles.sort(key=lambda item: item.published_ts, reverse=True)
-    return articles
+    return sorted(articles, key=lambda item: item.published_ts, reverse=True)
 
 
 def fetch_all_feeds(now: datetime) -> list[Article]:
@@ -452,136 +584,100 @@ def fetch_all_feeds(now: datetime) -> list[Article]:
                 articles = future.result()
                 logging.info("Fetched %s article(s) from %s.", len(articles), feed.name)
                 all_articles.extend(articles)
-            except Exception as exc:  # pragma: no cover - defensive resilience path
+            except Exception as exc:  # pragma: no cover
                 logging.exception("Unexpected error while processing %s: %s", feed.name, exc)
-    all_articles.sort(key=lambda item: item.published_ts, reverse=True)
-    return all_articles
+    return sorted(all_articles, key=lambda item: (item.source_rank, -item.published_ts))
 
 
-def dedupe_candidates(articles: list[Article], posted: dict[str, Any]) -> list[Article]:
-    posted_articles = posted.get("articles", {})
-    posted_url_hashes = set(posted_articles.keys())
-    posted_story_hashes = set(posted.get("story_hashes", []))
-    best_by_story: dict[str, Article] = {}
+def is_duplicate_against_posted(article: Article, posted: dict[str, Any], now: datetime) -> bool:
+    if article.url_hash in set(posted.get("hashes", [])):
+        return True
 
+    recent_cutoff = now - timedelta(hours=RECENT_TITLE_LOOKBACK_HOURS)
+    for item in posted.get("recent_titles", []):
+        if not isinstance(item, dict):
+            continue
+        posted_at = parse_iso_datetime(item.get("posted_at"))
+        cleaned_title = clean_whitespace(str(item.get("cleaned_title", "")))
+        if posted_at and posted_at >= recent_cutoff and cleaned_title and title_is_duplicate(article.cleaned_title, cleaned_title):
+            return True
+    return False
+
+
+def dedupe_candidates(articles: list[Article], posted: dict[str, Any], now: datetime) -> list[Article]:
+    chosen: list[Article] = []
     for article in articles:
-        if article.url_hash in posted_url_hashes or article.story_hash in posted_story_hashes:
+        if is_duplicate_against_posted(article, posted, now):
             continue
 
-        existing = best_by_story.get(article.story_hash)
-        if existing is None:
-            best_by_story[article.story_hash] = article
+        duplicate_index = None
+        for idx, existing in enumerate(chosen):
+            same_story = article.url_hash == existing.url_hash or title_is_duplicate(article.cleaned_title, existing.cleaned_title)
+            if same_story:
+                duplicate_index = idx
+                break
+
+        if duplicate_index is None:
+            chosen.append(article)
             continue
 
+        existing = chosen[duplicate_index]
         current_key = (article.source_rank, -article.published_ts)
         existing_key = (existing.source_rank, -existing.published_ts)
         if current_key < existing_key:
-            best_by_story[article.story_hash] = article
+            chosen[duplicate_index] = article
 
-    deduped = list(best_by_story.values())
-    deduped.sort(key=lambda item: (item.source_rank, -item.published_ts))
-    return deduped
-
-
-def shortlist_candidates(articles: list[Article]) -> list[Article]:
-    ranked = sorted(
-        articles,
-        key=lambda item: (item.source_rank, -item.published_ts),
-    )
-    return ranked[:MAX_CANDIDATES]
+    for index, article in enumerate(sorted(chosen, key=lambda item: (item.source_rank, -item.published_ts))):
+        article.index = index
+    return chosen[:MAX_CANDIDATES]
 
 
-def build_groq_prompt(candidates: list[Article]) -> str:
-    compact_candidates = []
-    for article in candidates:
-        compact_candidates.append(
+def hours_ago_text(published_ts: float, now: datetime) -> str:
+    hours = max(0.0, (now.timestamp() - published_ts) / 3600)
+    if hours < 1:
+        return "<1 hour ago"
+    if hours < 2:
+        return "1 hour ago"
+    return f"{int(hours)} hours ago"
+
+
+def build_groq_prompt(candidates: list[Article], now: datetime) -> str:
+    prompt_payload = {
+        "response_schema": GROQ_RESPONSE_SCHEMA,
+        "telegram_message_template": TELEGRAM_MESSAGE_TEMPLATE,
+        "telegram_rules": [
+            "Headline: max 80 chars, do NOT copy title verbatim - rewrite concisely",
+            "Summary: 1-2 sentences max, no fluff, no 'in this article we...'",
+            "Never include: ads, affiliate links, author names, publication dates as text",
+            "Telegram Markdown only: use *bold*, no HTML tags",
+            "Total message length: max 300 chars excluding URL",
+        ],
+        "candidates": [
             {
-                "article_id": article.article_id,
+                "index": article.index,
                 "title": article.title,
                 "summary": article.summary,
                 "source": article.source,
                 "tier": article.tier,
                 "published_time_utc": article.published_at,
+                "published_relative": hours_ago_text(article.published_ts, now),
+                "article_url": article.url,
             }
-        )
-
-    instruction = {
-        "role": (
-            "You are an autonomous Telegram news curator bot for AI and software engineering news. "
-            "You prioritize reliability, freshness, and zero noise over volume."
-        ),
-        "task": (
-            "Score every article, reject low-signal items, pick the single best article if any deserve attention, "
-            "and draft the Telegram copy fields."
-        ),
-        "scoring": {
-            "novelty": "0-3",
-            "impact": "0-3",
-            "freshness": "0-2",
-            "source_credibility": "0-2",
-            "total": "0.00-10.00",
-        },
-        "hard_rules": [
-            "Set disqualify=true and total_score=0.0 for tutorials, explainers, recaps, roundups, guides, listicles, or stale items.",
-            "Favor breaking news, major launches, research breakthroughs, platform moves, policy shifts, and high-signal engineering updates.",
-            "Prefer official lab posts and top-tier publications when duplicates or near-duplicates exist.",
-            "At most one article can be selected.",
-            "Write concise, professional Telegram copy with a one-line summary.",
+            for article in candidates
         ],
-        "output_contract": {
-            "selected_article_id": "string or null",
-            "should_post_now": "boolean",
-            "decision_reason": "short string",
-            "articles": [
-                {
-                    "article_id": "string",
-                    "novelty": "number",
-                    "impact": "number",
-                    "freshness": "number",
-                    "source_credibility": "number",
-                    "total_score": "number with two decimals",
-                    "disqualify": "boolean",
-                    "reason": "short string",
-                }
-            ],
-            "telegram": {
-                "headline": "plain text",
-                "summary": "plain text single sentence",
-                "score_badge": "plain text like 8.9/10",
-            },
-        },
-        "candidates": compact_candidates,
     }
-    return json.dumps(instruction, separators=(",", ":"), ensure_ascii=True)
+    return json.dumps(prompt_payload, ensure_ascii=True, separators=(",", ":"))
 
 
-class GroqError(RuntimeError):
-    pass
-
-
-def call_groq(candidates: list[Article]) -> dict[str, Any] | None:
-    api_key = os.getenv("GROQ_API_KEY")
-    if not api_key:
-        logging.error("GROQ_API_KEY is missing. Skipping AI scoring cleanly.")
-        return None
-
+def call_groq(candidates: list[Article], now: datetime, api_key: str) -> dict[str, Any] | None:
     payload = {
         "model": GROQ_MODEL,
         "temperature": 0.3,
         "max_completion_tokens": 2000,
         "response_format": {"type": "json_object"},
         "messages": [
-            {
-                "role": "system",
-                "content": (
-                    "You are a strict AI news curator. Return only valid JSON. "
-                    "Never include prose outside the JSON object."
-                ),
-            },
-            {
-                "role": "user",
-                "content": build_groq_prompt(candidates),
-            },
+            {"role": "system", "content": SCORING_SYSTEM_PROMPT},
+            {"role": "user", "content": build_groq_prompt(candidates, now)},
         ],
     }
     headers = {
@@ -637,69 +733,81 @@ def call_groq(candidates: list[Article]) -> dict[str, Any] | None:
     return None
 
 
-def score_map_from_result(result: dict[str, Any]) -> dict[str, dict[str, Any]]:
-    items = result.get("articles")
-    if not isinstance(items, list):
-        return {}
-    output: dict[str, dict[str, Any]] = {}
-    for item in items:
-        if isinstance(item, dict) and isinstance(item.get("article_id"), str):
-            output[item["article_id"]] = item
-    return output
+def normalize_groq_result(result: dict[str, Any]) -> dict[str, Any] | None:
+    if not isinstance(result, dict) or not isinstance(result.get("articles"), list):
+        return None
+    recommendation = str(result.get("recommendation", "SKIP")).upper()
+    if recommendation not in {"POST_NOW", "SAVE_PENDING", "SKIP"}:
+        recommendation = "SKIP"
 
-
-def pick_best_article(candidates: list[Article], result: dict[str, Any]) -> tuple[Article | None, dict[str, Any] | None]:
-    score_map = score_map_from_result(result)
-    selected_id = result.get("selected_article_id")
-    if isinstance(selected_id, str):
-        for article in candidates:
-            if article.article_id == selected_id and article.article_id in score_map:
-                return article, score_map[article.article_id]
-
-    best_pair: tuple[Article, dict[str, Any]] | None = None
-    for article in candidates:
-        score = score_map.get(article.article_id)
-        if not score or score.get("disqualify"):
+    normalized_articles = []
+    for item in result.get("articles", []):
+        if not isinstance(item, dict):
             continue
-        total = float(score.get("total_score", 0.0))
-        if best_pair is None:
-            best_pair = (article, score)
+        try:
+            normalized_articles.append(
+                {
+                    "index": int(item.get("index", -1)),
+                    "title": clean_whitespace(str(item.get("title", ""))),
+                    "novelty_score": float(item.get("novelty_score", 0.0)),
+                    "impact_score": float(item.get("impact_score", 0.0)),
+                    "freshness_score": float(item.get("freshness_score", 0.0)),
+                    "source_score": float(item.get("source_score", 0.0)),
+                    "total_score": float(item.get("total_score", 0.0)),
+                    "red_flag": bool(item.get("red_flag", False)),
+                    "red_flag_reason": item.get("red_flag_reason"),
+                    "reason": clean_whitespace(str(item.get("reason", ""))),
+                }
+            )
+        except (TypeError, ValueError):
             continue
-        best_total = float(best_pair[1].get("total_score", 0.0))
-        current_key = (total, -article.source_rank, article.published_ts)
-        best_key = (best_total, -best_pair[0].source_rank, best_pair[0].published_ts)
-        if current_key > best_key:
-            best_pair = (article, score)
 
-    return best_pair if best_pair else (None, None)
+    try:
+        best_index = int(result.get("best_index", -1))
+    except (TypeError, ValueError):
+        best_index = -1
 
+    try:
+        best_score = float(result.get("best_score", 0.0))
+    except (TypeError, ValueError):
+        best_score = 0.0
 
-def article_payload(article: Article, score: dict[str, Any], telegram: dict[str, Any], saved_at: datetime) -> dict[str, Any]:
-    total_score = round(float(score.get("total_score", 0.0)), 2)
     return {
-        "article_id": article.article_id,
+        "articles": normalized_articles,
+        "best_index": best_index,
+        "best_score": best_score,
+        "recommendation": recommendation,
+        "telegram_message": clean_multiline_text(result.get("telegram_message", "")),
+    }
+
+
+def score_map_from_result(result: dict[str, Any]) -> dict[int, dict[str, Any]]:
+    return {item["index"]: item for item in result.get("articles", []) if item.get("index", -1) >= 0}
+
+
+def build_candidate_payload(article: Article, score: dict[str, Any], telegram_message: str, saved_at: datetime) -> dict[str, Any]:
+    return {
+        "index": article.index,
         "title": article.title,
         "summary": article.summary,
         "url": article.url,
         "canonical_url": article.canonical_url,
         "url_hash": article.url_hash,
-        "story_hash": article.story_hash,
+        "cleaned_title": article.cleaned_title,
         "source": article.source,
         "tier": article.tier,
         "published_at": article.published_at,
         "score": {
-            "novelty": float(score.get("novelty", 0.0)),
-            "impact": float(score.get("impact", 0.0)),
-            "freshness": float(score.get("freshness", 0.0)),
-            "source_credibility": float(score.get("source_credibility", 0.0)),
-            "total_score": total_score,
+            "novelty_score": round(float(score.get("novelty_score", 0.0)), 2),
+            "impact_score": round(float(score.get("impact_score", 0.0)), 2),
+            "freshness_score": round(float(score.get("freshness_score", 0.0)), 2),
+            "source_score": round(float(score.get("source_score", 0.0)), 2),
+            "total_score": round(float(score.get("total_score", 0.0)), 2),
+            "red_flag": bool(score.get("red_flag", False)),
+            "red_flag_reason": score.get("red_flag_reason"),
             "reason": clean_whitespace(str(score.get("reason", ""))),
         },
-        "telegram": {
-            "headline": clean_whitespace(str(telegram.get("headline") or article.title)),
-            "summary": clean_whitespace(str(telegram.get("summary") or article.summary or article.title)),
-            "score_badge": clean_whitespace(str(telegram.get("score_badge") or f"{total_score:.2f}/10")),
-        },
+        "telegram_message": telegram_message,
         "saved_at": isoformat_utc(saved_at),
     }
 
@@ -751,71 +859,44 @@ def can_post_now(state: dict[str, Any], score_total: float, now: datetime) -> bo
     return posting_window_allows(score_total, now)
 
 
-def escape_markdown_v2(value: str) -> str:
-    specials = r"_*[]()~`>#+-=|{}.!"
-    return "".join(f"\\{char}" if char in specials else char for char in value)
-
-
-def format_telegram_message(payload: dict[str, Any]) -> str:
-    headline = escape_markdown_v2(payload["telegram"]["headline"])
-    summary = escape_markdown_v2(payload["telegram"]["summary"])
-    source = escape_markdown_v2(payload["source"])
-    score = escape_markdown_v2(payload["telegram"]["score_badge"])
-    url = payload["url"]
-    return (
-        f"*{headline}*\n"
-        f"{summary}\n\n"
-        f"*Source:* {source}\n"
-        f"*Score:* {score}\n\n"
-        f"{url}"
-    )
-
-
-def post_to_telegram(payload: dict[str, Any]) -> bool:
-    bot_token = os.getenv("TELEGRAM_BOT_TOKEN")
-    channel_id = os.getenv("TELEGRAM_CHANNEL_ID")
-    if not bot_token or not channel_id:
-        logging.error("Telegram credentials are missing. Skipping post cleanly.")
-        return False
-
+def post_to_telegram(telegram_message: str, bot_token: str, channel_id: str) -> bool:
     api_url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
     response_payload = {
         "chat_id": channel_id,
-        "text": format_telegram_message(payload),
-        "parse_mode": "MarkdownV2",
+        "text": telegram_message,
+        "parse_mode": "Markdown",
         "disable_web_page_preview": True,
     }
-
     try:
         response = requests.post(api_url, json=response_payload, timeout=30)
         response.raise_for_status()
     except requests.RequestException as exc:
         logging.error("Telegram post failed: %s", exc)
         return False
-
-    logging.info("Posted to Telegram: %s", payload["title"])
     return True
 
 
 def mark_as_posted(posted: dict[str, Any], payload: dict[str, Any], posted_at: datetime) -> None:
-    posted["articles"][payload["url_hash"]] = {
-        "title": payload["title"],
-        "url": payload["url"],
-        "canonical_url": payload["canonical_url"],
+    timestamp = isoformat_utc(posted_at)
+    hash_record = {"hash": payload["url_hash"], "posted_at": timestamp}
+    title_record = {
+        "cleaned_title": payload["cleaned_title"],
+        "posted_at": timestamp,
         "source": payload["source"],
-        "story_hash": payload["story_hash"],
-        "posted_at": isoformat_utc(posted_at),
+        "score": round(float(payload["score"]["total_score"]), 2),
     }
-    if payload["story_hash"] not in posted["story_hashes"]:
-        posted["story_hashes"].append(payload["story_hash"])
-        posted["story_hashes"].sort()
+    posted.setdefault("hash_records", []).append(hash_record)
+    posted.setdefault("recent_titles", []).append(title_record)
+    cleanup_posted_history(posted, posted_at)
 
 
 def clear_pending_if_matches(state: dict[str, Any], payload: dict[str, Any]) -> None:
     pending = state.get("pending_best")
     if not isinstance(pending, dict):
         return
-    if pending.get("url_hash") == payload.get("url_hash") or pending.get("story_hash") == payload.get("story_hash"):
+    same_hash = pending.get("url_hash") == payload.get("url_hash")
+    same_title = pending.get("cleaned_title") == payload.get("cleaned_title")
+    if same_hash or same_title:
         state["pending_best"] = None
 
 
@@ -826,10 +907,12 @@ def persist_state_files(state: dict[str, Any], posted: dict[str, Any]) -> None:
 
 def main() -> int:
     configure_logging()
+    secrets = require_env()
     now = utc_now()
     run_started_at = isoformat_utc(now)
 
     posted = sanitize_posted(load_json(POSTED_PATH, default_posted))
+    cleanup_posted_history(posted, now)
     state = load_json(STATE_PATH, lambda: default_state(now))
     state, _ = reset_state_if_needed(state, now)
 
@@ -840,24 +923,26 @@ def main() -> int:
 
     preexisting_pending = state.get("pending_best") if isinstance(state.get("pending_best"), dict) else None
     fetched_articles = fetch_all_feeds(now)
-    candidates = dedupe_candidates(fetched_articles, posted)
+    candidates = dedupe_candidates(fetched_articles, posted, now)
     logging.info("Found %s deduplicated fresh candidate(s).", len(candidates))
 
     pending_updated = False
-
     if candidates:
-        shortlist = shortlist_candidates(candidates)
-        logging.info("Sending %s candidate(s) to Groq for scoring.", len(shortlist))
-        groq_result = call_groq(shortlist)
-        if groq_result:
-            best_article, best_score = pick_best_article(shortlist, groq_result)
-            if best_article and best_score and not best_score.get("disqualify"):
-                telegram = groq_result.get("telegram") if isinstance(groq_result.get("telegram"), dict) else {}
-                payload = article_payload(best_article, best_score, telegram, now)
-                total_score = float(payload["score"]["total_score"])
+        groq_result = call_groq(candidates, now, secrets["GROQ_API_KEY"])
+        normalized = normalize_groq_result(groq_result) if groq_result else None
+        if normalized:
+            score_map = score_map_from_result(normalized)
+            best_index = normalized["best_index"]
+            best_article = next((article for article in candidates if article.index == best_index), None)
+            best_score = score_map.get(best_index)
 
-                if total_score >= 8.5 and can_post_now(state, total_score, now):
-                    if post_to_telegram(payload):
+            if best_article and best_score and not best_score["red_flag"]:
+                payload = build_candidate_payload(best_article, best_score, normalized["telegram_message"], now)
+                total_score = float(payload["score"]["total_score"])
+                recommendation = normalized["recommendation"]
+
+                if recommendation == "POST_NOW" and can_post_now(state, total_score, now):
+                    if payload["telegram_message"] and post_to_telegram(payload["telegram_message"], secrets["TELEGRAM_BOT_TOKEN"], secrets["TELEGRAM_CHANNEL_ID"]):
                         mark_as_posted(posted, payload, now)
                         state["posts_today"] = int(state.get("posts_today", 0)) + 1
                         state["last_post_time"] = isoformat_utc(now)
@@ -865,7 +950,7 @@ def main() -> int:
                         persist_state_files(state, posted)
                     return 0
 
-                if total_score >= 6.0:
+                if recommendation in {"POST_NOW", "SAVE_PENDING"} and total_score >= 6.0:
                     if pending_is_better(payload, state.get("pending_best")):
                         state["pending_best"] = payload
                         pending_updated = True
@@ -883,13 +968,14 @@ def main() -> int:
                 elif is_2130_or_later(now) and int(state.get("posts_today", 0)) == 0 and pending_score >= 6.0:
                     pending_to_post = preexisting_pending
 
-    if pending_to_post and post_to_telegram(pending_to_post):
-        mark_as_posted(posted, pending_to_post, now)
-        state["posts_today"] = int(state.get("posts_today", 0)) + 1
-        state["last_post_time"] = isoformat_utc(now)
-        clear_pending_if_matches(state, pending_to_post)
-        persist_state_files(state, posted)
-        return 0
+    if pending_to_post and pending_to_post.get("telegram_message"):
+        if post_to_telegram(pending_to_post["telegram_message"], secrets["TELEGRAM_BOT_TOKEN"], secrets["TELEGRAM_CHANNEL_ID"]):
+            mark_as_posted(posted, pending_to_post, now)
+            state["posts_today"] = int(state.get("posts_today", 0)) + 1
+            state["last_post_time"] = isoformat_utc(now)
+            clear_pending_if_matches(state, pending_to_post)
+            persist_state_files(state, posted)
+            return 0
 
     if not candidates:
         logging.info("No new articles qualified for scoring in this run.")
@@ -898,11 +984,3 @@ def main() -> int:
 
     persist_state_files(state, posted)
     return 0
-
-
-if __name__ == "__main__":
-    try:
-        raise SystemExit(main())
-    except Exception as exc:  # pragma: no cover - production safety net
-        logging.exception("Unhandled error: %s", exc)
-        raise SystemExit(0)
