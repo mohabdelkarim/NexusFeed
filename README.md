@@ -19,9 +19,8 @@ Configure these repository secrets before enabling the workflow:
 - `GROQ_API_KEY`
 - `TELEGRAM_BOT_TOKEN`
 - `TELEGRAM_CHANNEL_ID`
-- `GIT_TOKEN`
 
-The bot validates all four secrets at startup and fails fast if one is missing.
+The bot validates all required runtime secrets at startup and fails fast if one is missing.
 
 ## Local Run
 
@@ -34,7 +33,7 @@ python main.py
 
 ## Workflow
 
-The scheduler lives in `.github/workflows/news-bot.yml` and uses the required concurrency guard, `GIT_TOKEN` checkout, and `[skip ci]` on state commits to prevent commit loops:
+The scheduler lives in `.github/workflows/news-bot.yml` and uses the required concurrency guard, `GITHUB_TOKEN` repository writes, and `[skip ci]` on state commits to prevent commit loops:
 
 ```yaml
 concurrency:
