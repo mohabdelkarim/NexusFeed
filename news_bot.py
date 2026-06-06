@@ -685,6 +685,60 @@ def hours_ago_text(published_ts: float, now: datetime) -> str:
     return f"{int(hours)} hours ago"
 
 
+def parse_retry_after(header_value: str, fallback: float) -> float:
+    """
+    Parses Groq's retry-after header.
+    Supports:
+      - Integer seconds: "30"
+      - Float seconds: "1.5"
+      - HTTP-date: "Fri, 06 Jun 2026 14:00:00 GMT"
+    Returns seconds to wait as float. Min=1, Max=120.
+    Falls back to fallback if unparseable.
+    """
+    if not header_value:
+        return fallback
+    try:
+        return max(1.0, min(120.0, float(header_value)))
+    except ValueError:
+        pass
+    try:
+        retry_dt = parsedate_to_datetime(header_value)
+        now = datetime.now(timezone.utc)
+        delta = (retry_dt - now).total_seconds()
+        return max(1.0, min(120.0, delta))
+    except Exception:
+        return fallback
+
+
+def rebuild_prompt_with_summary_limit(candidates: list[Article], char_limit: int) -> str:
+    now = utc_now()
+    prompt_payload = {
+        "response_schema": GROQ_RESPONSE_SCHEMA,
+        "telegram_message_template": TELEGRAM_MESSAGE_TEMPLATE,
+        "telegram_rules": [
+            "Headline: max 80 chars, do NOT copy title verbatim - rewrite concisely",
+            "Summary: 1-2 sentences max, no fluff, no 'in this article we...'",
+            "Never include: ads, affiliate links, author names, publication dates as text",
+            "Telegram Markdown only: use *bold*, no HTML tags",
+            "Total message length: max 300 chars excluding URL",
+        ],
+        "candidates": [
+            {
+                "index": article.index,
+                "title": article.title,
+                "summary": truncate(article.summary, char_limit),
+                "source": article.source,
+                "tier": article.tier,
+                "published_time_utc": article.published_at,
+                "published_relative": hours_ago_text(article.published_ts, now),
+                "article_url": article.url,
+            }
+            for article in candidates
+        ],
+    }
+    return json.dumps(prompt_payload, ensure_ascii=True, separators=(",", ":"))
+
+
 def build_groq_prompt(candidates: list[Article], now: datetime) -> str:
     prompt_payload = {
         "response_schema": GROQ_RESPONSE_SCHEMA,
@@ -714,6 +768,7 @@ def build_groq_prompt(candidates: list[Article], now: datetime) -> str:
 
 
 def call_groq(candidates: list[Article], now: datetime, api_key: str) -> dict[str, Any] | None:
+    prompt_content = build_groq_prompt(candidates, now)
     payload = {
         "model": GROQ_MODEL,
         "temperature": 0.3,
@@ -721,7 +776,7 @@ def call_groq(candidates: list[Article], now: datetime, api_key: str) -> dict[st
         "response_format": {"type": "json_object"},
         "messages": [
             {"role": "system", "content": SCORING_SYSTEM_PROMPT},
-            {"role": "user", "content": build_groq_prompt(candidates, now)},
+            {"role": "user", "content": prompt_content},
         ],
     }
     headers = {
@@ -729,7 +784,7 @@ def call_groq(candidates: list[Article], now: datetime, api_key: str) -> dict[st
         "Content-Type": "application/json",
     }
 
-    delay = 2.0
+    backoff = 2.0
     for attempt in range(1, 6):
         try:
             response = requests.post(GROQ_URL, headers=headers, json=payload, timeout=60)
@@ -737,32 +792,65 @@ def call_groq(candidates: list[Article], now: datetime, api_key: str) -> dict[st
             logging.warning("Groq request failed on attempt %s: %s", attempt, exc)
             if attempt == 5:
                 return None
-            time.sleep(delay)
-            delay *= 2
+            time.sleep(backoff)
+            backoff *= 2
             continue
 
         if response.status_code == 429:
-            retry_after = response.headers.get("retry-after")
-            wait_seconds = float(retry_after) if retry_after and retry_after.isdigit() else delay
-            logging.warning("Groq rate limited. Waiting %.1f second(s).", wait_seconds)
+            raw_header = response.headers.get("retry-after", "")
+            wait_seconds = parse_retry_after(raw_header, backoff)
+            logging.warning("Groq rate limited (429). Waiting %.1fs (retry-after: '%s').", wait_seconds, raw_header)
             time.sleep(wait_seconds)
-            delay *= 2
+            backoff = min(backoff * 2, 120.0)
             continue
 
         if response.status_code in {500, 502, 503}:
             logging.warning("Groq server error %s on attempt %s.", response.status_code, attempt)
             if attempt == 5:
                 return None
-            time.sleep(delay)
-            delay *= 2
+            time.sleep(backoff)
+            backoff *= 2
             continue
 
         if response.status_code == 400:
-            logging.error("Groq rejected the payload with 400. Skipping without retry.")
+            logging.warning("Groq 400 Bad Request on attempt %s.", attempt)
+            if attempt == 1:
+                logging.warning("Retrying with summary truncated to 150 chars...")
+                prompt_content = rebuild_prompt_with_summary_limit(candidates, 150)
+                payload["messages"][1]["content"] = prompt_content
+                continue
+            if attempt == 2:
+                logging.warning("Retrying with max 10 candidates...")
+                prompt_content = rebuild_prompt_with_summary_limit(candidates[:10], 100)
+                payload["messages"][1]["content"] = prompt_content
+                continue
+            logging.error("Groq 400 persists after 2 payload reductions. Skipping run.")
             return None
 
         if response.status_code == 413:
-            logging.error("Groq rejected the payload with 413. Input was too large; skipping without retry.")
+            if attempt == 1:
+                logging.warning("Groq 413: payload too large. Retrying with 15 articles / 200-char summaries.")
+                prompt_content = rebuild_prompt_with_summary_limit(candidates[:15], 200)
+                payload["messages"][1]["content"] = prompt_content
+                continue
+            if attempt == 2:
+                logging.warning("Groq 413 again. Retrying with 8 articles / 100-char summaries.")
+                prompt_content = rebuild_prompt_with_summary_limit(candidates[:8], 100)
+                payload["messages"][1]["content"] = prompt_content
+                continue
+            logging.error("Groq 413 persists after 2 reductions. Skipping run.")
+            return None
+
+        if response.status_code == 401:
+            logging.error("Groq API key is invalid or missing (401 Unauthorized).")
+            logging.error("Check GROQ_API_KEY secret in GitHub -> Settings -> Secrets.")
+            return None
+
+        if response.status_code == 403:
+            logging.error(
+                "Groq API access forbidden (403). Model may not be allowed for this org/project. "
+                "Check Groq console -> model permissions."
+            )
             return None
 
         try:
@@ -771,7 +859,7 @@ def call_groq(candidates: list[Article], now: datetime, api_key: str) -> dict[st
             content = data["choices"][0]["message"]["content"]
             return json.loads(content)
         except (requests.RequestException, KeyError, IndexError, json.JSONDecodeError) as exc:
-            logging.error("Failed to parse Groq response: %s", exc)
+            logging.error("Groq unexpected error on attempt %s: %s", attempt, exc)
             return None
 
     return None
