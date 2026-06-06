@@ -23,6 +23,7 @@ from dateutil.parser import isoparse
 ROOT = Path(__file__).resolve().parent
 POSTED_PATH = ROOT / "posted_articles.json"
 STATE_PATH = ROOT / "daily_state.json"
+POSTING_INTENT_PATH = ROOT / "posting_intent.json"
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
 GROQ_MODEL = "llama-3.3-70b-versatile"
 MAX_CANDIDATES = 25
@@ -823,19 +824,38 @@ def normalize_groq_result(result: dict[str, Any]) -> dict[str, Any] | None:
     except (TypeError, ValueError):
         best_score = 0.0
 
+    valid_articles = [item for item in normalized_articles if item.get("index", -1) >= 0]
+    if best_index < 0 or not any(item["index"] == best_index for item in valid_articles):
+        if valid_articles:
+            logging.warning("Invalid best_index from Groq - using local max")
+            local_max = max(valid_articles, key=lambda item: item["total_score"])
+            best_index = int(local_max["index"])
+        else:
+            best_index = -1
+
     enforced_best_index = best_index
-    enforced_best_score = best_score
+    enforced_best_score = 0.0
     best_article = next((item for item in normalized_articles if item["index"] == best_index), None)
     if not best_article or best_article["red_flag"]:
         non_red_articles = [item for item in normalized_articles if not item["red_flag"]]
         if non_red_articles:
             best_article = max(non_red_articles, key=lambda item: item["total_score"])
             enforced_best_index = int(best_article["index"])
-            enforced_best_score = float(best_article["total_score"])
         else:
             enforced_best_index = -1
             enforced_best_score = 0.0
             recommendation = "SKIP"
+
+    if best_article:
+        article_score = float(best_article["total_score"])
+        if abs(article_score - best_score) > 0.5:
+            logging.warning(
+                "Score mismatch: Groq best_score=%.2f, article[%s].total_score=%.2f. Using article score.",
+                best_score,
+                enforced_best_index,
+                article_score,
+            )
+        enforced_best_score = article_score
 
     if enforced_best_score >= 8.5:
         recommendation = "POST_NOW"
@@ -848,6 +868,7 @@ def normalize_groq_result(result: dict[str, Any]) -> dict[str, Any] | None:
         "articles": normalized_articles,
         "best_index": enforced_best_index,
         "best_score": enforced_best_score,
+        "authoritative_score": enforced_best_score,
         "recommendation": recommendation,
         "telegram_message": clean_multiline_text(result.get("telegram_message", "")),
     }
@@ -858,6 +879,7 @@ def score_map_from_result(result: dict[str, Any]) -> dict[int, dict[str, Any]]:
 
 
 def build_candidate_payload(article: Article, score: dict[str, Any], telegram_message: str, saved_at: datetime) -> dict[str, Any]:
+    authoritative_score = round(float(score.get("authoritative_score", score.get("total_score", 0.0))), 2)
     return {
         "index": article.index,
         "title": article.title,
@@ -874,11 +896,12 @@ def build_candidate_payload(article: Article, score: dict[str, Any], telegram_me
             "impact_score": round(float(score.get("impact_score", 0.0)), 2),
             "freshness_score": round(float(score.get("freshness_score", 0.0)), 2),
             "source_score": round(float(score.get("source_score", 0.0)), 2),
-            "total_score": round(float(score.get("total_score", 0.0)), 2),
+            "total_score": authoritative_score,
             "red_flag": bool(score.get("red_flag", False)),
             "red_flag_reason": score.get("red_flag_reason"),
             "reason": clean_whitespace(str(score.get("reason", ""))),
         },
+        "authoritative_score": authoritative_score,
         "telegram_message": telegram_message,
         "saved_at": isoformat_utc(saved_at),
     }
@@ -972,9 +995,111 @@ def clear_pending_if_matches(state: dict[str, Any], payload: dict[str, Any]) -> 
         state["pending_best"] = None
 
 
+def load_posting_intent() -> dict[str, Any] | None:
+    if not POSTING_INTENT_PATH.exists():
+        return None
+    return load_json(POSTING_INTENT_PATH, dict)
+
+
+def write_posting_intent(payload: dict[str, Any], now: datetime) -> None:
+    save_json(
+        POSTING_INTENT_PATH,
+        {
+            "url_hash": payload["url_hash"],
+            "title": payload["title"],
+            "score": round(float(payload.get("authoritative_score", payload["score"]["total_score"])), 2),
+            "intent_time": isoformat_utc(now),
+            "status": "pending",
+            "cleaned_title": payload.get("cleaned_title", ""),
+            "source": payload.get("source", ""),
+        },
+    )
+
+
+def complete_posting_intent() -> None:
+    intent = load_posting_intent() or {}
+    intent["status"] = "completed"
+    save_json(POSTING_INTENT_PATH, intent)
+
+
+def delete_posting_intent() -> None:
+    if POSTING_INTENT_PATH.exists():
+        POSTING_INTENT_PATH.unlink()
+
+
+def recover_incomplete_posting_intent(posted: dict[str, Any], now: datetime) -> None:
+    intent = load_posting_intent()
+    if not isinstance(intent, dict) or intent.get("status") != "pending":
+        return
+
+    url_hash = str(intent.get("url_hash", ""))
+    if not url_hash:
+        delete_posting_intent()
+        return
+
+    if url_hash in set(posted.get("hashes", [])):
+        delete_posting_intent()
+        return
+
+    logging.warning("Found incomplete posting intent - skipping article")
+    hash_record = {
+        "hash": url_hash,
+        "posted_at": isoformat_utc(now),
+        "status": "crash-recovered",
+    }
+    posted.setdefault("hash_records", []).append(hash_record)
+    cleaned_title = clean_whitespace(str(intent.get("cleaned_title", "")))
+    if cleaned_title:
+        posted.setdefault("recent_titles", []).append(
+            {
+                "cleaned_title": cleaned_title,
+                "posted_at": isoformat_utc(now),
+                "source": clean_whitespace(str(intent.get("source", "crash-recovered"))),
+                "score": round(float(intent.get("score", 0.0)), 2),
+            }
+        )
+    cleanup_posted_history(posted, now)
+    save_json(POSTED_PATH, posted)
+    delete_posting_intent()
+
+
+def post_payload_atomically(
+    payload: dict[str, Any],
+    state: dict[str, Any],
+    posted: dict[str, Any],
+    now: datetime,
+    bot_token: str,
+    channel_id: str,
+) -> bool:
+    write_posting_intent(payload, now)
+    if not payload.get("telegram_message") or not post_to_telegram(payload["telegram_message"], bot_token, channel_id):
+        delete_posting_intent()
+        logging.error("Telegram post failed - intent cancelled, will retry next run")
+        return False
+
+    complete_posting_intent()
+    mark_as_posted(posted, payload, now)
+    state["posts_today"] = int(state.get("posts_today", 0)) + 1
+    state["last_post_time"] = isoformat_utc(now)
+    clear_pending_if_matches(state, payload)
+    persist_state_files(state, posted)
+    delete_posting_intent()
+    logging.info("Post completed and state persisted successfully")
+    return True
+
+
 def persist_state_files(state: dict[str, Any], posted: dict[str, Any]) -> None:
     save_json(STATE_PATH, state)
     save_json(POSTED_PATH, posted)
+
+
+def log_final_decision(score: float, recommendation: str, best_index: int) -> None:
+    logging.info(
+        "Final decision: score=%.2f, recommendation=%s, source=article[%s]",
+        score,
+        recommendation,
+        best_index,
+    )
 
 
 def main() -> int:
@@ -987,9 +1112,11 @@ def main() -> int:
     cleanup_posted_history(posted, now)
     state = load_json(STATE_PATH, lambda: default_state(now))
     state, _ = reset_state_if_needed(state, now)
+    recover_incomplete_posting_intent(posted, now)
 
     if int(state.get("posts_today", 0)) >= MAX_POSTS_PER_DAY:
         logging.info("Daily post cap reached. Exiting.")
+        log_final_decision(0.0, "SKIP", -1)
         persist_state_files(state, posted)
         return 0
 
@@ -1007,30 +1134,33 @@ def main() -> int:
             best_index = normalized["best_index"]
             best_article = next((article for article in candidates if article.index == best_index), None)
             best_score = score_map.get(best_index)
+            authoritative_score = float(normalized.get("authoritative_score", 0.0))
 
             if best_article and best_score and not best_score["red_flag"]:
+                best_score = dict(best_score)
+                best_score["authoritative_score"] = authoritative_score
                 payload = build_candidate_payload(best_article, best_score, normalized["telegram_message"], now)
-                total_score = float(payload["score"]["total_score"])
                 recommendation = normalized["recommendation"]
+                log_final_decision(authoritative_score, recommendation, best_index)
 
-                if recommendation == "POST_NOW" and can_post_now(state, total_score, now):
-                    if payload["telegram_message"] and post_to_telegram(payload["telegram_message"], secrets["TELEGRAM_BOT_TOKEN"], secrets["TELEGRAM_CHANNEL_ID"]):
-                        mark_as_posted(posted, payload, now)
-                        state["posts_today"] = int(state.get("posts_today", 0)) + 1
-                        state["last_post_time"] = isoformat_utc(now)
-                        clear_pending_if_matches(state, payload)
-                        persist_state_files(state, posted)
+                if recommendation == "POST_NOW" and can_post_now(state, authoritative_score, now):
+                    if post_payload_atomically(payload, state, posted, now, secrets["TELEGRAM_BOT_TOKEN"], secrets["TELEGRAM_CHANNEL_ID"]):
+                        return 0
                     return 0
 
-                if recommendation in {"POST_NOW", "SAVE_PENDING"} and total_score >= 6.0:
+                if recommendation in {"POST_NOW", "SAVE_PENDING"} and authoritative_score >= 6.0:
                     if pending_is_better(payload, state.get("pending_best")):
                         state["pending_best"] = payload
                         pending_updated = True
-                        logging.info("Saved %s as pending_best with score %.2f.", payload["title"], total_score)
+                        logging.info("Saved %s as pending_best with score %.2f.", payload["title"], authoritative_score)
+            else:
+                log_final_decision(authoritative_score, normalized["recommendation"], best_index)
+        else:
+            log_final_decision(0.0, "SKIP", -1)
 
     pending_to_post = None
     if isinstance(preexisting_pending, dict):
-        pending_score = float(preexisting_pending.get("score", {}).get("total_score", 0.0))
+        pending_score = float(preexisting_pending.get("authoritative_score", preexisting_pending.get("score", {}).get("total_score", 0.0)))
         if can_post_now(state, pending_score, now):
             saved_at = parse_iso_datetime(preexisting_pending.get("saved_at"))
             is_from_prior_run = saved_at is not None and isoformat_utc(saved_at) < run_started_at
@@ -1041,18 +1171,16 @@ def main() -> int:
                     pending_to_post = preexisting_pending
 
     if pending_to_post and pending_to_post.get("telegram_message"):
-        if post_to_telegram(pending_to_post["telegram_message"], secrets["TELEGRAM_BOT_TOKEN"], secrets["TELEGRAM_CHANNEL_ID"]):
-            mark_as_posted(posted, pending_to_post, now)
-            state["posts_today"] = int(state.get("posts_today", 0)) + 1
-            state["last_post_time"] = isoformat_utc(now)
-            clear_pending_if_matches(state, pending_to_post)
-            persist_state_files(state, posted)
+        if post_payload_atomically(pending_to_post, state, posted, now, secrets["TELEGRAM_BOT_TOKEN"], secrets["TELEGRAM_CHANNEL_ID"]):
             return 0
 
     if not candidates:
         logging.info("No new articles qualified for scoring in this run.")
     elif not pending_updated:
         logging.info("No candidate qualified for posting or pending retention.")
+
+    if not candidates:
+        log_final_decision(0.0, "SKIP", -1)
 
     persist_state_files(state, posted)
     return 0
