@@ -1,5 +1,19 @@
 {
-  "hash_records": [],
-  "hashes": [],
-  "recent_titles": []
+  "hash_records": [
+    {
+      "hash": "303cab70ee0e137fa047ef50b204e7bddbbb74c079c58c735879535586675a4e",
+      "posted_at": "2026-06-06T21:23:30Z"
+    }
+  ],
+  "hashes": [
+    "303cab70ee0e137fa047ef50b204e7bddbbb74c079c58c735879535586675a4e"
+  ],
+  "recent_titles": [
+    {
+      "cleaned_title": "openai unveils lockdown mode protect sensitive data prompt injection attacks",
+      "posted_at": "2026-06-06T21:23:30Z",
+      "score": 8.5,
+      "source": "TechCrunch"
+    }
+  ]
 }
