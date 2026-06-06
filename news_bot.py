@@ -763,7 +763,7 @@ def rebuild_prompt_with_summary_limit(candidates: list[Article], char_limit: int
         "response_schema": GROQ_RESPONSE_SCHEMA,
         "telegram_message_template": TELEGRAM_MESSAGE_TEMPLATE,
         "telegram_rules": [
-            "Headline: max 80 chars, do NOT copy title verbatim - rewrite concisely",
+            "Headline: use the FULL article title, do not truncate, do not shorten",
             "Summary: 1-2 sentences max, no fluff, no 'in this article we...'",
             "Never include: ads, affiliate links, author names, publication dates as text",
             "Telegram Markdown only: use *bold*, no HTML tags",
@@ -791,7 +791,7 @@ def build_groq_prompt(candidates: list[Article], now: datetime) -> str:
         "response_schema": GROQ_RESPONSE_SCHEMA,
         "telegram_message_template": TELEGRAM_MESSAGE_TEMPLATE,
         "telegram_rules": [
-            "Headline: max 80 chars, do NOT copy title verbatim - rewrite concisely",
+            "Headline: use the FULL article title, do not truncate, do not shorten",
             "Summary: 1-2 sentences max, no fluff, no 'in this article we...'",
             "Never include: ads, affiliate links, author names, publication dates as text",
             "Telegram Markdown only: use *bold*, no HTML tags",
@@ -1014,7 +1014,7 @@ def score_map_from_result(result: dict[str, Any]) -> dict[int, dict[str, Any]]:
 
 
 def build_fallback_telegram_message(article: Article, score: dict[str, Any], now: datetime) -> str:
-    headline = truncate(sanitize_telegram_markdown_text(article.title), 80)
+    headline = sanitize_telegram_markdown_text(article.title)
     summary_source = score.get("reason") or article.summary or article.title
     summary = truncate(sanitize_telegram_markdown_text(summary_source), 140)
     source_name = sanitize_telegram_markdown_text(article.source)
