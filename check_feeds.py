@@ -13,10 +13,7 @@ FEEDS = [
     {"source": "OpenAI", "urls": ["https://openai.com/news/rss.xml"]},
     {
         "source": "Anthropic",
-        "urls": [
-            "https://www.anthropic.com/news/rss.xml",
-            "https://www.anthropic.com/feed.xml",
-        ],
+        "urls": ["https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_news.xml"],
     },
     {
         "source": "Google AI",
@@ -50,7 +47,7 @@ FEEDS = [
         "urls": ["https://news.mit.edu/topic/mitartificial-intelligence2-rss.xml"],
     },
     {"source": "InfoQ AI/ML", "urls": ["https://feed.infoq.com/"]},
-    {"source": "Unite AI", "urls": ["https://www.unite.ai/feed/"]},
+    {"source": "AI News", "urls": ["https://artificialintelligence-news.com/feed/"]},
     {"source": "arXiv cs.AI", "urls": ["https://rss.arxiv.org/rss/cs.AI"]},
     {"source": "Hacker News", "urls": ["https://news.ycombinator.com/rss"]},
 ]
@@ -136,7 +133,7 @@ def evaluate_url(url: str) -> dict:
             "http_error": http_error,
         }
 
-    parsed = feedparser.parse(url)
+    parsed = feedparser.parse(response.content)
     bozo = bool(getattr(parsed, "bozo", False))
     entries_count = len(parsed.entries)
     parse_ok = not bozo and entries_count > 0
