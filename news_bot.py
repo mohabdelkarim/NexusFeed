@@ -340,7 +340,49 @@ def parse_iso_datetime(value: str | None) -> datetime | None:
         return None
 
 
+def parse_dotenv_line(line: str) -> tuple[str, str] | None:
+    stripped = line.strip()
+    if not stripped or stripped.startswith("#") or "=" not in stripped:
+        return None
+    key, value = stripped.split("=", 1)
+    key = key.strip()
+    value = value.strip()
+    if len(value) >= 2 and value[0] == value[-1] and value[0] in {"'", '"'}:
+        value = value[1:-1]
+    if not key:
+        return None
+    return key, value
+
+
+def load_local_env_file() -> None:
+    env_path = ROOT / ".env"
+    if not env_path.exists():
+        return
+
+    loaded_keys = 0
+    placeholder_values = {"dummy", "@dummy"}
+    try:
+        for line in env_path.read_text(encoding="utf-8").splitlines():
+            parsed = parse_dotenv_line(line)
+            if not parsed:
+                continue
+            key, value = parsed
+            current = clean_whitespace(os.environ.get(key, ""))
+            if current and current not in placeholder_values:
+                continue
+            if value:
+                os.environ[key] = value
+                loaded_keys += 1
+    except OSError as exc:
+        logging.warning("Failed to read local .env file: %s", exc)
+        return
+
+    if loaded_keys:
+        logging.info("Loaded %s secret(s) from local .env.", loaded_keys)
+
+
 def require_env() -> dict[str, str]:
+    load_local_env_file()
     values: dict[str, str] = {}
     for key in REQUIRED_SECRETS:
         value = os.environ.get(key)
@@ -437,6 +479,11 @@ def clean_whitespace(value: str) -> str:
 def clean_multiline_text(value: str) -> str:
     lines = [line.rstrip() for line in str(value).replace("\r\n", "\n").split("\n")]
     return "\n".join(lines).strip()
+
+
+def sanitize_telegram_markdown_text(value: str) -> str:
+    cleaned = clean_whitespace(str(value))
+    return re.sub(r"[_*\[\]`]", "", cleaned)
 
 
 def strip_html(value: str) -> str:
@@ -967,8 +1014,29 @@ def score_map_from_result(result: dict[str, Any]) -> dict[int, dict[str, Any]]:
     return {item["index"]: item for item in result.get("articles", []) if item.get("index", -1) >= 0}
 
 
+def build_fallback_telegram_message(article: Article, score: dict[str, Any], now: datetime) -> str:
+    headline = truncate(sanitize_telegram_markdown_text(article.title), 80)
+    summary_source = score.get("reason") or article.summary or article.title
+    summary = truncate(sanitize_telegram_markdown_text(summary_source), 140)
+    source_name = sanitize_telegram_markdown_text(article.source)
+    hours_text = hours_ago_text(article.published_ts, now)
+    total_score = round(float(score.get("authoritative_score", score.get("total_score", 0.0))), 2)
+    return (
+        f"🔥 *{headline}*\n\n"
+        f"{summary}\n\n"
+        f"🏛️ Source: {source_name} ({article.tier})\n"
+        f"⏰ Published: {hours_text}\n"
+        f"⭐ Score: {total_score}/10\n\n"
+        f"🔗 {article.url}"
+    )
+
+
 def build_candidate_payload(article: Article, score: dict[str, Any], telegram_message: str, saved_at: datetime) -> dict[str, Any]:
     authoritative_score = round(float(score.get("authoritative_score", score.get("total_score", 0.0))), 2)
+    cleaned_message = clean_multiline_text(telegram_message)
+    if not cleaned_message:
+        logging.warning("Groq omitted telegram_message - using deterministic local fallback.")
+        cleaned_message = build_fallback_telegram_message(article, score, saved_at)
     return {
         "index": article.index,
         "title": article.title,
@@ -991,7 +1059,7 @@ def build_candidate_payload(article: Article, score: dict[str, Any], telegram_me
             "reason": clean_whitespace(str(score.get("reason", ""))),
         },
         "authoritative_score": authoritative_score,
-        "telegram_message": telegram_message,
+        "telegram_message": cleaned_message,
         "saved_at": isoformat_utc(saved_at),
     }
 
