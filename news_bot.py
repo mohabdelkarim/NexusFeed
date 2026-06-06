@@ -29,7 +29,7 @@ GROQ_MODEL = "llama-3.3-70b-versatile"
 MAX_CANDIDATES = 25
 MAX_POSTS_PER_DAY = 3
 MIN_HOURS_BETWEEN_POSTS = 3
-MAX_ARTICLE_AGE_HOURS = 12
+MAX_ARTICLE_AGE_HOURS = 24
 TITLE_SIMILARITY_THRESHOLD = 0.80
 POSTED_RETENTION_DAYS = 7
 RECENT_TITLE_LOOKBACK_HOURS = 24
@@ -628,7 +628,7 @@ def fetch_all_feeds(now: datetime) -> list[Article]:
                 all_articles.extend(articles)
             except Exception as exc:  # pragma: no cover
                 logging.exception("Unexpected error while processing %s: %s", feed.name, exc)
-    return sorted(all_articles, key=lambda item: (item.source_rank, -item.published_ts))
+    return sorted(all_articles, key=lambda item: -item.published_ts)
 
 
 def is_duplicate_against_posted(article: Article, posted: dict[str, Any], now: datetime) -> bool:
@@ -674,7 +674,7 @@ def dedupe_candidates(articles: list[Article], posted: dict[str, Any], now: date
         if current_key < existing_key:
             chosen[duplicate_index] = article
 
-    for index, article in enumerate(sorted(chosen, key=lambda item: (item.source_rank, -item.published_ts))):
+    for index, article in enumerate(sorted(chosen, key=lambda item: -item.published_ts)):
         article.index = index
     return chosen[:MAX_CANDIDATES]
 
