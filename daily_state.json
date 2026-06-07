@@ -1,6 +1,6 @@
 {
   "date": "2026-06-07",
-  "last_post_time": null,
+  "last_post_time": "2026-06-07T14:23:49Z",
   "pending_best": {
     "authoritative_score": 8.5,
     "canonical_url": "https://www.marktechpost.com/2026/06/06/googles-new-colab-cli-lets-developers-and-ai-agents-run-python-on-remote-colab-gpus-and-tpus-from-the-terminal",
@@ -26,5 +26,5 @@
     "url": "https://www.marktechpost.com/2026/06/06/googles-new-colab-cli-lets-developers-and-ai-agents-run-python-on-remote-colab-gpus-and-tpus-from-the-terminal/",
     "url_hash": "eaa4e83c5ba2fabdd6966fb11d2e22a8e97fb239f7225ceefdcfd19623a1c3bf"
   },
-  "posts_today": 0
+  "posts_today": 1
 }
