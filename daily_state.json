@@ -1,30 +1,6 @@
 {
   "date": "2026-06-07",
-  "last_post_time": "2026-06-07T14:23:49Z",
-  "pending_best": {
-    "authoritative_score": 8.5,
-    "canonical_url": "https://www.marktechpost.com/2026/06/06/googles-new-colab-cli-lets-developers-and-ai-agents-run-python-on-remote-colab-gpus-and-tpus-from-the-terminal",
-    "cleaned_title": "google s colab cli lets developers ai agents run python remote colab gpus tpus terminal",
-    "index": 1,
-    "published_at": "2026-06-06T22:07:34Z",
-    "saved_at": "2026-06-07T00:07:38Z",
-    "score": {
-      "freshness_score": 1.5,
-      "impact_score": 2.5,
-      "novelty_score": 3.0,
-      "reason": "The article is about a new release from Google, which is relevant to the target audience and has a high impact score.",
-      "red_flag": false,
-      "red_flag_reason": null,
-      "source_score": 1.5,
-      "total_score": 8.5
-    },
-    "source": "MarkTechPost",
-    "summary": "Google released the Colab CLI, letting developers and AI agents run local code on remote Colab GPU and TPU runtime The post Google\u2019s New Colab CLI Lets Developers and AI Agents Run Python on Remote Colab GPUs and TPUs From the Terminal appeared first on MarkTechPost .",
-    "telegram_message": "\ud83d\udd25 *Google\u2019s New Colab CLI Lets Developers and AI Agents Run Python on Remote Colab GPUs and TPUs From the Terminal*\n\nThe article is about a new release from Google, which is relevant to the target audience and has a high impact score.\n\n\ud83c\udfdb\ufe0f Source: MarkTechPost (A)\n\u23f0 Published: 2 hours ago\n\u2b50 Score: 8.5/10\n\n\ud83d\udd17 https://www.marktechpost.com/2026/06/06/googles-new-colab-cli-lets-developers-and-ai-agents-run-python-on-remote-colab-gpus-and-tpus-from-the-terminal/",
-    "tier": "A",
-    "title": "Google\u2019s New Colab CLI Lets Developers and AI Agents Run Python on Remote Colab GPUs and TPUs From the Terminal",
-    "url": "https://www.marktechpost.com/2026/06/06/googles-new-colab-cli-lets-developers-and-ai-agents-run-python-on-remote-colab-gpus-and-tpus-from-the-terminal/",
-    "url_hash": "eaa4e83c5ba2fabdd6966fb11d2e22a8e97fb239f7225ceefdcfd19623a1c3bf"
-  },
-  "posts_today": 1
+  "last_post_time": "2026-06-07T18:40:51Z",
+  "pending_best": null,
+  "posts_today": 2
 }
