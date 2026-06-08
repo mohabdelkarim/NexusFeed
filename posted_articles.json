@@ -11,9 +11,14 @@
     {
       "hash": "eaa4e83c5ba2fabdd6966fb11d2e22a8e97fb239f7225ceefdcfd19623a1c3bf",
       "posted_at": "2026-06-07T18:40:51Z"
+    },
+    {
+      "hash": "02d506c09b732cbfad8f8c04bc4e830f40219d68ae07da6bc8284db5e8c58a1c",
+      "posted_at": "2026-06-08T16:12:59Z"
     }
   ],
   "hashes": [
+    "02d506c09b732cbfad8f8c04bc4e830f40219d68ae07da6bc8284db5e8c58a1c",
     "303cab70ee0e137fa047ef50b204e7bddbbb74c079c58c735879535586675a4e",
     "aae82d5b85e674f966af126c5b664aa7828a4e6302ea7719e103a2ee7971d9ee",
     "eaa4e83c5ba2fabdd6966fb11d2e22a8e97fb239f7225ceefdcfd19623a1c3bf"
@@ -36,6 +41,12 @@
       "posted_at": "2026-06-07T18:40:51Z",
       "score": 8.5,
       "source": "MarkTechPost"
+    },
+    {
+      "cleaned_title": "building pakistan notice helper small ai tool very local safety problem",
+      "posted_at": "2026-06-08T16:12:59Z",
+      "score": 8.0,
+      "source": "HuggingFace"
     }
   ]
 }
