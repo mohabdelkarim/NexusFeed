@@ -1,30 +1,6 @@
 {
-  "date": "2026-06-07",
-  "last_post_time": "2026-06-07T18:40:51Z",
-  "pending_best": {
-    "authoritative_score": 8.0,
-    "canonical_url": "https://huggingface.co/blog/build-small-hackathon/amazingdigitaldentures",
-    "cleaned_title": "amazing digital dentures failed project",
-    "index": 0,
-    "published_at": "2026-06-07T19:44:27Z",
-    "saved_at": "2026-06-07T20:07:58Z",
-    "score": {
-      "freshness_score": 2.0,
-      "impact_score": 1.5,
-      "novelty_score": 2.5,
-      "reason": "The article is about a failed project, which is a research topic.",
-      "red_flag": false,
-      "red_flag_reason": null,
-      "source_score": 2.0,
-      "total_score": 8.0
-    },
-    "source": "HuggingFace",
-    "summary": "",
-    "telegram_message": "\ud83d\udd25 *Amazing Digital Dentures (a failed project)*\n\nThe article is about a failed project, which is a research topic.\n\n\ud83c\udfdb\ufe0f Source: HuggingFace (S)\n\u23f0 Published: <1 hour ago\n\u2b50 Score: 8.0/10\n\n\ud83d\udd17 https://huggingface.co/blog/build-small-hackathon/amazingdigitaldentures",
-    "tier": "S",
-    "title": "Amazing Digital Dentures (a failed project)",
-    "url": "https://huggingface.co/blog/build-small-hackathon/amazingdigitaldentures",
-    "url_hash": "5725beb086e0235bd792a985a756965c8a9719c2514876da59c6f8b58818578e"
-  },
-  "posts_today": 2
+  "date": "2026-06-08",
+  "last_post_time": null,
+  "pending_best": null,
+  "posts_today": 0
 }
