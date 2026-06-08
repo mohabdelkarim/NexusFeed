@@ -2,29 +2,29 @@
   "date": "2026-06-08",
   "last_post_time": null,
   "pending_best": {
-    "authoritative_score": 7.5,
-    "canonical_url": "https://arxiv.org/abs/2606.06514",
-    "cleaned_title": "detecting mitigating bias by treating fairness as symmetry operation",
+    "authoritative_score": 8.0,
+    "canonical_url": "https://huggingface.co/blog/build-small-hackathon/building-pakistan-notice-helper",
+    "cleaned_title": "building pakistan notice helper small ai tool very local safety problem",
     "index": 0,
-    "published_at": "2026-06-08T04:00:00Z",
-    "saved_at": "2026-06-08T06:23:11Z",
+    "published_at": "2026-06-08T11:46:56Z",
+    "saved_at": "2026-06-08T11:59:42Z",
     "score": {
       "freshness_score": 2.0,
-      "impact_score": 2.5,
+      "impact_score": 1.5,
       "novelty_score": 2.5,
-      "reason": "The article presents a new research on bias mitigation in machine learning, which is a significant concern in the field.",
+      "reason": "Research article with high novelty and impact scores",
       "red_flag": false,
       "red_flag_reason": null,
-      "source_score": 0.5,
-      "total_score": 7.5
+      "source_score": 2.0,
+      "total_score": 8.0
     },
-    "source": "arXiv cs.AI",
-    "summary": "arXiv:2606.06514v1 Announce Type: new Abstract: Machine learning systems deployed in high stakes socioeconomic settings routinely display bias. We formalize bias as a symmetry breaking operation: a classifier is fair if its outputs remain invariant under the counterfactual operation of switching a...",
-    "telegram_message": "\ud83d\udd25 *Detecting and Mitigating Bias by Treating Fairness as a Symmetry Operation*\n\nThe article presents a new research on bias mitigation in machine learning, which is a significant concern in the field.\n\n\ud83c\udfdb\ufe0f Source: arXiv cs.AI (C)\n\u23f0 Published: 2 hours ago\n\u2b50 Score: 7.5/10\n\n\ud83d\udd17 https://arxiv.org/abs/2606.06514",
-    "tier": "C",
-    "title": "Detecting and Mitigating Bias by Treating Fairness as a Symmetry Operation",
-    "url": "https://arxiv.org/abs/2606.06514",
-    "url_hash": "a02a12cf61a51336c13433a0dd1efdc3bf3262245f2c5994df9608c43be7b508"
+    "source": "HuggingFace",
+    "summary": "",
+    "telegram_message": "\ud83d\udd25 *Building Pakistan Notice Helper: A Small AI Tool for a Very Local Safety Problem*\n\nResearch article with high novelty and impact scores\n\n\ud83c\udfdb\ufe0f Source: HuggingFace (S)\n\u23f0 Published: <1 hour ago\n\u2b50 Score: 8.0/10\n\n\ud83d\udd17 https://huggingface.co/blog/build-small-hackathon/building-pakistan-notice-helper",
+    "tier": "S",
+    "title": "Building Pakistan Notice Helper: A Small AI Tool for a Very Local Safety Problem",
+    "url": "https://huggingface.co/blog/build-small-hackathon/building-pakistan-notice-helper",
+    "url_hash": "02d506c09b732cbfad8f8c04bc4e830f40219d68ae07da6bc8284db5e8c58a1c"
   },
   "posts_today": 0
 }
