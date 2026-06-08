@@ -1,6 +1,30 @@
 {
   "date": "2026-06-08",
   "last_post_time": null,
-  "pending_best": null,
+  "pending_best": {
+    "authoritative_score": 7.5,
+    "canonical_url": "https://arxiv.org/abs/2606.06514",
+    "cleaned_title": "detecting mitigating bias by treating fairness as symmetry operation",
+    "index": 0,
+    "published_at": "2026-06-08T04:00:00Z",
+    "saved_at": "2026-06-08T06:23:11Z",
+    "score": {
+      "freshness_score": 2.0,
+      "impact_score": 2.5,
+      "novelty_score": 2.5,
+      "reason": "The article presents a new research on bias mitigation in machine learning, which is a significant concern in the field.",
+      "red_flag": false,
+      "red_flag_reason": null,
+      "source_score": 0.5,
+      "total_score": 7.5
+    },
+    "source": "arXiv cs.AI",
+    "summary": "arXiv:2606.06514v1 Announce Type: new Abstract: Machine learning systems deployed in high stakes socioeconomic settings routinely display bias. We formalize bias as a symmetry breaking operation: a classifier is fair if its outputs remain invariant under the counterfactual operation of switching a...",
+    "telegram_message": "\ud83d\udd25 *Detecting and Mitigating Bias by Treating Fairness as a Symmetry Operation*\n\nThe article presents a new research on bias mitigation in machine learning, which is a significant concern in the field.\n\n\ud83c\udfdb\ufe0f Source: arXiv cs.AI (C)\n\u23f0 Published: 2 hours ago\n\u2b50 Score: 7.5/10\n\n\ud83d\udd17 https://arxiv.org/abs/2606.06514",
+    "tier": "C",
+    "title": "Detecting and Mitigating Bias by Treating Fairness as a Symmetry Operation",
+    "url": "https://arxiv.org/abs/2606.06514",
+    "url_hash": "a02a12cf61a51336c13433a0dd1efdc3bf3262245f2c5994df9608c43be7b508"
+  },
   "posts_today": 0
 }
