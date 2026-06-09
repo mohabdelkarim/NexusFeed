@@ -1,6 +1,30 @@
 {
-  "date": "2026-06-08",
-  "last_post_time": "2026-06-08T19:40:59Z",
-  "pending_best": null,
-  "posts_today": 2
+  "date": "2026-06-09",
+  "last_post_time": null,
+  "pending_best": {
+    "authoritative_score": 8.0,
+    "canonical_url": "https://www.theverge.com/tech/946458/instagram-is-finally-letting-everyone-reorganize-their-grid",
+    "cleaned_title": "instagram is finally letting everyone reorganize their profile grid",
+    "index": 0,
+    "published_at": "2026-06-08T23:58:30Z",
+    "saved_at": "2026-06-09T00:17:24Z",
+    "score": {
+      "freshness_score": 2.0,
+      "impact_score": 2.5,
+      "novelty_score": 2.0,
+      "reason": "The article is about a new feature release, which scores high on novelty and impact.",
+      "red_flag": false,
+      "red_flag_reason": null,
+      "source_score": 1.5,
+      "total_score": 8.0
+    },
+    "source": "The Verge",
+    "summary": "Nearly a year after it was announced, Instagram says it's delivering the ability to rearrange the posts in your profile grid. It had been available to some people in test groups, but as of June 8th, it's rolling out widely via the Android and iPhone mobile apps. Until now, the posts on your Instagr...",
+    "telegram_message": "\ud83d\udd25 *Instagram is finally letting everyone reorganize their profile grid*\n\nThe article is about a new feature release, which scores high on novelty and impact.\n\n\ud83c\udfdb\ufe0f Source: The Verge (A)\n\u23f0 Published: <1 hour ago\n\u2b50 Score: 8.0/10\n\n\ud83d\udd17 https://www.theverge.com/tech/946458/instagram-is-finally-letting-everyone-reorganize-their-grid",
+    "tier": "A",
+    "title": "Instagram is finally letting everyone reorganize their profile grid",
+    "url": "https://www.theverge.com/tech/946458/instagram-is-finally-letting-everyone-reorganize-their-grid",
+    "url_hash": "6528dfb967c22994b40a3cbac962ad1e9951bc352cbb70e934b01a5cf3bbf5e4"
+  },
+  "posts_today": 0
 }
