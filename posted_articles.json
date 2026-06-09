@@ -19,11 +19,16 @@
     {
       "hash": "8fc2f58f2800484b12647aa1b7e48dfc423d92ebff350af6b67b964b4aa8a9ca",
       "posted_at": "2026-06-08T19:40:59Z"
+    },
+    {
+      "hash": "702c5db3afc1bce39483286575bbcfa916f67c3aa7b4a2aec76ecc9743a13e43",
+      "posted_at": "2026-06-09T16:20:23Z"
     }
   ],
   "hashes": [
     "02d506c09b732cbfad8f8c04bc4e830f40219d68ae07da6bc8284db5e8c58a1c",
     "303cab70ee0e137fa047ef50b204e7bddbbb74c079c58c735879535586675a4e",
+    "702c5db3afc1bce39483286575bbcfa916f67c3aa7b4a2aec76ecc9743a13e43",
     "8fc2f58f2800484b12647aa1b7e48dfc423d92ebff350af6b67b964b4aa8a9ca",
     "aae82d5b85e674f966af126c5b664aa7828a4e6302ea7719e103a2ee7971d9ee",
     "eaa4e83c5ba2fabdd6966fb11d2e22a8e97fb239f7225ceefdcfd19623a1c3bf"
@@ -58,6 +63,12 @@
       "posted_at": "2026-06-08T19:40:59Z",
       "score": 8.99,
       "source": "The Verge"
+    },
+    {
+      "cleaned_title": "apple says its ai is still private even when it s running google s servers",
+      "posted_at": "2026-06-09T16:20:23Z",
+      "score": 8.0,
+      "source": "Ars Technica"
     }
   ]
 }
