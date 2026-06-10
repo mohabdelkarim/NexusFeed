@@ -2,29 +2,29 @@
   "date": "2026-06-10",
   "last_post_time": null,
   "pending_best": {
-    "authoritative_score": 7.5,
-    "canonical_url": "https://arstechnica.com/ai/2026/06/google-announces-gemini-3-5-live-translate-for-instant-voice-to-voice-translation",
-    "cleaned_title": "google gemini 3 5 live translate instant voice voice translation",
-    "index": 15,
-    "published_at": "2026-06-09T18:57:25Z",
-    "saved_at": "2026-06-10T01:34:20Z",
+    "authoritative_score": 8.0,
+    "canonical_url": "https://www.wired.com/story/artificial-intelligence-sneaks-into-the-world-cup-thanks-to-google-gemini",
+    "cleaned_title": "artificial intelligence sneaks into world cup thanks google gemini",
+    "index": 1,
+    "published_at": "2026-06-10T10:00:00Z",
+    "saved_at": "2026-06-10T10:36:35Z",
     "score": {
-      "freshness_score": 1.0,
+      "freshness_score": 2.0,
       "impact_score": 2.5,
-      "novelty_score": 3.0,
-      "reason": "The article discusses Google's new Gemini 3.5 Live Translate feature, which has a significant impact on the industry.",
+      "novelty_score": 2.0,
+      "reason": "Industry move, Tier A source, fresh article",
       "red_flag": false,
       "red_flag_reason": null,
       "source_score": 1.5,
-      "total_score": 7.5
+      "total_score": 8.0
     },
-    "source": "Ars Technica",
-    "summary": "Voice translations preserve speaker's tone, pacing, pitch\u2014with SynthID watermarks for security.",
-    "telegram_message": "\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\ud83d\udd25 *Google announces Gemini 3.5 Live Translate for instant voice-to-voice translation*\n\nGoogle announces Gemini 3.5 Live Translate, a new feature that enables instant voice-to-voice translation.\n\n\ud83c\udfdb\ufe0f Source: Ars Technica (A)\n\u23f0 Published: 6 hours ago\n\u2b50 Score: 7.5/10\n\n\ud83d\udd17 https://arstechnica.com/ai/2026/06/google-announces-gemini-3-5-live-translate-for-instant-voice-to-voice-translation/\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501",
+    "source": "Wired AI",
+    "summary": "The Argentine national team will be Google\u2019s test bench and technological showcase during the World Cup.",
+    "telegram_message": "\ud83d\udd25 *Artificial Intelligence Sneaks Into the World Cup Thanks to Google Gemini*\n\nIndustry move, Tier A source, fresh article\n\n\ud83c\udfdb\ufe0f Source: Wired AI (A)\n\u23f0 Published: <1 hour ago\n\u2b50 Score: 8.0/10\n\n\ud83d\udd17 https://www.wired.com/story/artificial-intelligence-sneaks-into-the-world-cup-thanks-to-google-gemini/",
     "tier": "A",
-    "title": "Google announces Gemini 3.5 Live Translate for instant voice-to-voice translation",
-    "url": "https://arstechnica.com/ai/2026/06/google-announces-gemini-3-5-live-translate-for-instant-voice-to-voice-translation/",
-    "url_hash": "d0348c85180f3580403fb2a925a9639b9b54893c9aecb2173f3ff778c3949fef"
+    "title": "Artificial Intelligence Sneaks Into the World Cup Thanks to Google Gemini",
+    "url": "https://www.wired.com/story/artificial-intelligence-sneaks-into-the-world-cup-thanks-to-google-gemini/",
+    "url_hash": "2475343ad9be66a640c76350f7db673b1f2982e7724129bf06af2b974ab3cf95"
   },
   "posts_today": 0
 }
