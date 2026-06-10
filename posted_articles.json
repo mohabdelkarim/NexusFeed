@@ -27,10 +27,15 @@
     {
       "hash": "5ec2963d36a6737726329483e8d540b990d18da547b16bfff78468eea1d1afda",
       "posted_at": "2026-06-09T20:35:48Z"
+    },
+    {
+      "hash": "125e36dbff4c86dc5b46bf8632657bdc98f26919a63f208910a625f715dfc35f",
+      "posted_at": "2026-06-10T14:27:29Z"
     }
   ],
   "hashes": [
     "02d506c09b732cbfad8f8c04bc4e830f40219d68ae07da6bc8284db5e8c58a1c",
+    "125e36dbff4c86dc5b46bf8632657bdc98f26919a63f208910a625f715dfc35f",
     "303cab70ee0e137fa047ef50b204e7bddbbb74c079c58c735879535586675a4e",
     "5ec2963d36a6737726329483e8d540b990d18da547b16bfff78468eea1d1afda",
     "702c5db3afc1bce39483286575bbcfa916f67c3aa7b4a2aec76ecc9743a13e43",
@@ -80,6 +85,12 @@
       "posted_at": "2026-06-09T20:35:48Z",
       "score": 9.0,
       "source": "HuggingFace"
+    },
+    {
+      "cleaned_title": "china opens world s first wind powered underwater data center",
+      "posted_at": "2026-06-10T14:27:29Z",
+      "score": 8.5,
+      "source": "Wired AI"
     }
   ]
 }
