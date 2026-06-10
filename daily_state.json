@@ -3,28 +3,28 @@
   "last_post_time": "2026-06-10T19:55:36Z",
   "pending_best": {
     "authoritative_score": 8.5,
-    "canonical_url": "https://www.marktechpost.com/2026/06/10/a-coding-implementation-on-microsoft-skillopt-for-instrumented-prompt-optimization-skill-evolution-analysis-and-baseline-comparison",
-    "cleaned_title": "coding implementation microsoft skillopt instrumented prompt optimization skill evolution analysis baseline comparison",
-    "index": 0,
-    "published_at": "2026-06-10T22:07:13Z",
-    "saved_at": "2026-06-10T22:12:57Z",
+    "canonical_url": "https://www.theverge.com/tech/948155/apple-siri-ai-chatbot-personality",
+    "cleaned_title": "apple s siri ai knows when shut up",
+    "index": 1,
+    "published_at": "2026-06-10T22:52:17Z",
+    "saved_at": "2026-06-10T23:26:56Z",
     "score": {
       "freshness_score": 2.0,
       "impact_score": 2.5,
       "novelty_score": 2.5,
-      "reason": "High novelty and impact score due to research on Microsoft SkillOpt",
+      "reason": "New AI release with significant impact on the tech industry",
       "red_flag": false,
       "red_flag_reason": null,
       "source_score": 1.5,
       "total_score": 8.5
     },
-    "source": "MarkTechPost",
-    "summary": "We implement an instrumented workflow for Microsoft SkillOpt end to end. We set up the repository, connect OpenAI-compatible model access, and configure the optimizer and target models. We evaluate the original seed skill as a baseline, then run a real optimization loop with rollout, reflection, ag...",
-    "telegram_message": "\ud83d\udd25 *A Coding Implementation on Microsoft SkillOpt for Instrumented Prompt Optimization, Skill Evolution Analysis, and Baseline Comparison*\n\nHigh novelty and impact score due to research on Microsoft SkillOpt\n\n\ud83c\udfdb\ufe0f Source: MarkTechPost (A)\n\u23f0 Published: <1 hour ago\n\u2b50 Score: 8.5/10\n\n\ud83d\udd17 https://www.marktechpost.com/2026/06/10/a-coding-implementation-on-microsoft-skillopt-for-instrumented-prompt-optimization-skill-evolution-analysis-and-baseline-comparison/",
+    "source": "The Verge",
+    "summary": "Apple's new Siri AI is finally here, and so far, it seems like it works. I have access and have been messing around with it, and my biggest impression so far is that Siri AI is quite curt - which I mean as a compliment. Many AI chatbots are cheery and wordy. While a more [\u2026]",
+    "telegram_message": "\ud83d\udd25 *Apple\u2019s new Siri AI knows when to shut up*\n\nNew AI release with significant impact on the tech industry\n\n\ud83c\udfdb\ufe0f Source: The Verge (A)\n\u23f0 Published: <1 hour ago\n\u2b50 Score: 8.5/10\n\n\ud83d\udd17 https://www.theverge.com/tech/948155/apple-siri-ai-chatbot-personality",
     "tier": "A",
-    "title": "A Coding Implementation on Microsoft SkillOpt for Instrumented Prompt Optimization, Skill Evolution Analysis, and Baseline Comparison",
-    "url": "https://www.marktechpost.com/2026/06/10/a-coding-implementation-on-microsoft-skillopt-for-instrumented-prompt-optimization-skill-evolution-analysis-and-baseline-comparison/",
-    "url_hash": "acce0ac2f42e05d58a78b708a5dbf8ad77714f391c9bcd5f5d0e4dc2a1ec3f66"
+    "title": "Apple\u2019s new Siri AI knows when to shut up",
+    "url": "https://www.theverge.com/tech/948155/apple-siri-ai-chatbot-personality",
+    "url_hash": "6dc2d50c6826dd37d3b8aab243738c64db5283d07ca0e8445e81d51745c67325"
   },
   "posts_today": 2
 }
