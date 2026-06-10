@@ -1,30 +1,30 @@
 {
-  "date": "2026-06-09",
-  "last_post_time": "2026-06-09T20:35:48Z",
+  "date": "2026-06-10",
+  "last_post_time": null,
   "pending_best": {
-    "authoritative_score": 8.0,
-    "canonical_url": "https://techcrunch.com/2026/06/09/its-not-faang-anymore-its-mangos",
-    "cleaned_title": "it s not faang anymore it s mangos",
-    "index": 1,
-    "published_at": "2026-06-09T16:09:14Z",
-    "saved_at": "2026-06-09T16:20:23Z",
+    "authoritative_score": 7.5,
+    "canonical_url": "https://arstechnica.com/ai/2026/06/google-announces-gemini-3-5-live-translate-for-instant-voice-to-voice-translation",
+    "cleaned_title": "google gemini 3 5 live translate instant voice voice translation",
+    "index": 15,
+    "published_at": "2026-06-09T18:57:25Z",
+    "saved_at": "2026-06-10T01:34:20Z",
     "score": {
-      "freshness_score": 2.0,
+      "freshness_score": 1.0,
       "impact_score": 2.5,
-      "novelty_score": 2.0,
-      "reason": "New acronym with potential industry impact",
+      "novelty_score": 3.0,
+      "reason": "The article discusses Google's new Gemini 3.5 Live Translate feature, which has a significant impact on the industry.",
       "red_flag": false,
       "red_flag_reason": null,
       "source_score": 1.5,
-      "total_score": 8.0
+      "total_score": 7.5
     },
-    "source": "TechCrunch",
-    "summary": "With SpaceX, Anthropic, and OpenAI all eyeing massive public debuts, the tech industry may soon have a new class of corporate overlords \u2014 and a new acronym to match. Say goodbye to FAANG and hello to MANGOS.",
-    "telegram_message": "\ud83d\udd25 *It\u2019s not FAANG anymore. It\u2019s MANGOS.*\n\nNew acronym with potential industry impact\n\n\ud83c\udfdb\ufe0f Source: TechCrunch (A)\n\u23f0 Published: <1 hour ago\n\u2b50 Score: 8.0/10\n\n\ud83d\udd17 https://techcrunch.com/2026/06/09/its-not-faang-anymore-its-mangos/",
+    "source": "Ars Technica",
+    "summary": "Voice translations preserve speaker's tone, pacing, pitch\u2014with SynthID watermarks for security.",
+    "telegram_message": "\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\ud83d\udd25 *Google announces Gemini 3.5 Live Translate for instant voice-to-voice translation*\n\nGoogle announces Gemini 3.5 Live Translate, a new feature that enables instant voice-to-voice translation.\n\n\ud83c\udfdb\ufe0f Source: Ars Technica (A)\n\u23f0 Published: 6 hours ago\n\u2b50 Score: 7.5/10\n\n\ud83d\udd17 https://arstechnica.com/ai/2026/06/google-announces-gemini-3-5-live-translate-for-instant-voice-to-voice-translation/\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501",
     "tier": "A",
-    "title": "It\u2019s not FAANG anymore. It\u2019s MANGOS.",
-    "url": "https://techcrunch.com/2026/06/09/its-not-faang-anymore-its-mangos/",
-    "url_hash": "f22369b206bb8bfda1ddaeb5ebd3f1f3f8b6a934a07e9816e79d52beac759054"
+    "title": "Google announces Gemini 3.5 Live Translate for instant voice-to-voice translation",
+    "url": "https://arstechnica.com/ai/2026/06/google-announces-gemini-3-5-live-translate-for-instant-voice-to-voice-translation/",
+    "url_hash": "d0348c85180f3580403fb2a925a9639b9b54893c9aecb2173f3ff778c3949fef"
   },
-  "posts_today": 2
+  "posts_today": 0
 }
