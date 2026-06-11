@@ -39,6 +39,10 @@
     {
       "hash": "da604b9c1ce499392c6b001ad4a5ddf2952b5634f4d517acf23a9a406ddd0715",
       "posted_at": "2026-06-11T11:23:42Z"
+    },
+    {
+      "hash": "f3e47acb4975baeb91bf04348c0a2f8234000b62f92d0185b73eb7a346ed43df",
+      "posted_at": "2026-06-11T15:04:00Z"
     }
   ],
   "hashes": [
@@ -51,7 +55,8 @@
     "8fc2f58f2800484b12647aa1b7e48dfc423d92ebff350af6b67b964b4aa8a9ca",
     "aae82d5b85e674f966af126c5b664aa7828a4e6302ea7719e103a2ee7971d9ee",
     "da604b9c1ce499392c6b001ad4a5ddf2952b5634f4d517acf23a9a406ddd0715",
-    "eaa4e83c5ba2fabdd6966fb11d2e22a8e97fb239f7225ceefdcfd19623a1c3bf"
+    "eaa4e83c5ba2fabdd6966fb11d2e22a8e97fb239f7225ceefdcfd19623a1c3bf",
+    "f3e47acb4975baeb91bf04348c0a2f8234000b62f92d0185b73eb7a346ed43df"
   ],
   "recent_titles": [
     {
@@ -113,6 +118,12 @@
       "posted_at": "2026-06-11T11:23:42Z",
       "score": 8.5,
       "source": "AI News"
+    },
+    {
+      "cleaned_title": "opendoor s india exit is fueling bigger conversation about ai outsourcing",
+      "posted_at": "2026-06-11T15:04:00Z",
+      "score": 7.5,
+      "source": "TechCrunch"
     }
   ]
 }

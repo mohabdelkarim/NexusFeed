@@ -1,30 +1,6 @@
 {
   "date": "2026-06-11",
-  "last_post_time": "2026-06-11T11:23:42Z",
-  "pending_best": {
-    "authoritative_score": 7.5,
-    "canonical_url": "https://techcrunch.com/2026/06/10/opendoors-india-exit-is-fueling-a-bigger-conversation-about-ai-and-outsourcing",
-    "cleaned_title": "opendoor s india exit is fueling bigger conversation about ai outsourcing",
-    "index": 1,
-    "published_at": "2026-06-11T04:02:19Z",
-    "saved_at": "2026-06-11T07:11:27Z",
-    "score": {
-      "freshness_score": 1.5,
-      "impact_score": 2.5,
-      "novelty_score": 2.0,
-      "reason": "The article is about a recent industry move, which scores high on novelty and impact, and has a reputable source.",
-      "red_flag": false,
-      "red_flag_reason": null,
-      "source_score": 1.5,
-      "total_score": 7.5
-    },
-    "source": "TechCrunch",
-    "summary": "The decision comes as India emerges as the world\u2019s largest GCC market.",
-    "telegram_message": "\ud83d\udd25 *Opendoor\u2019s India exit is fueling a bigger conversation about AI and outsourcing*\n\nThe article is about a recent industry move, which scores high on novelty and impact, and has a reputable source.\n\n\ud83c\udfdb\ufe0f Source: TechCrunch (A)\n\u23f0 Published: 3 hours ago\n\u2b50 Score: 7.5/10\n\n\ud83d\udd17 https://techcrunch.com/2026/06/10/opendoors-india-exit-is-fueling-a-bigger-conversation-about-ai-and-outsourcing/",
-    "tier": "A",
-    "title": "Opendoor\u2019s India exit is fueling a bigger conversation about AI and outsourcing",
-    "url": "https://techcrunch.com/2026/06/10/opendoors-india-exit-is-fueling-a-bigger-conversation-about-ai-and-outsourcing/",
-    "url_hash": "f3e47acb4975baeb91bf04348c0a2f8234000b62f92d0185b73eb7a346ed43df"
-  },
-  "posts_today": 1
+  "last_post_time": "2026-06-11T15:04:00Z",
+  "pending_best": null,
+  "posts_today": 2
 }
