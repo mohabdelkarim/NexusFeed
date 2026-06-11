@@ -43,6 +43,10 @@
     {
       "hash": "f3e47acb4975baeb91bf04348c0a2f8234000b62f92d0185b73eb7a346ed43df",
       "posted_at": "2026-06-11T15:04:00Z"
+    },
+    {
+      "hash": "5d052fa633025fcc16aad26ebf1a82a7037855359439665dfeed6d8283442744",
+      "posted_at": "2026-06-11T20:01:46Z"
     }
   ],
   "hashes": [
@@ -50,6 +54,7 @@
     "125e36dbff4c86dc5b46bf8632657bdc98f26919a63f208910a625f715dfc35f",
     "29bc060a3062e6aeb52dcd8886c103313e98a3f664981f63057ac521ec2ba423",
     "303cab70ee0e137fa047ef50b204e7bddbbb74c079c58c735879535586675a4e",
+    "5d052fa633025fcc16aad26ebf1a82a7037855359439665dfeed6d8283442744",
     "5ec2963d36a6737726329483e8d540b990d18da547b16bfff78468eea1d1afda",
     "702c5db3afc1bce39483286575bbcfa916f67c3aa7b4a2aec76ecc9743a13e43",
     "8fc2f58f2800484b12647aa1b7e48dfc423d92ebff350af6b67b964b4aa8a9ca",
@@ -124,6 +129,12 @@
       "posted_at": "2026-06-11T15:04:00Z",
       "score": 7.5,
       "source": "TechCrunch"
+    },
+    {
+      "cleaned_title": "grok is still hosting sexualized deepfakes famous women",
+      "posted_at": "2026-06-11T20:01:46Z",
+      "score": 8.5,
+      "source": "Wired AI"
     }
   ]
 }
