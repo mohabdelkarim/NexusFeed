@@ -1,6 +1,30 @@
 {
   "date": "2026-06-11",
   "last_post_time": "2026-06-11T15:04:00Z",
-  "pending_best": null,
+  "pending_best": {
+    "authoritative_score": 8.0,
+    "canonical_url": "https://www.theverge.com/tech/948534/amazon-data-centers-water-use",
+    "cleaned_title": "amazon 8217 s data centers used 2 5 billion gallons water last year",
+    "index": 1,
+    "published_at": "2026-06-11T17:26:57Z",
+    "saved_at": "2026-06-11T17:40:02Z",
+    "score": {
+      "freshness_score": 2.0,
+      "impact_score": 2.5,
+      "novelty_score": 2.0,
+      "reason": "The article is about a significant environmental impact, which affects all developers, and is from a reputable source (The Verge) with a tier A rating.",
+      "red_flag": false,
+      "red_flag_reason": null,
+      "source_score": 1.5,
+      "total_score": 8.0
+    },
+    "source": "The Verge",
+    "summary": "Just after Seattle enacted a one-year data center moratorium that some of Amazon's own employees pushed for, Amazon shared how much water its data centers use, reportedly for the first time. With concerns about water consumption and energy use a focus of new AI data center construction debates, Ama...",
+    "telegram_message": "\ud83d\udd25 *Amazon&#8217;s data centers used 2.5 billion gallons of water last year*\n\nThe article is about a significant environmental impact, which affects all developers, and is from a reputable source (The Verge) with a ti...\n\n\ud83c\udfdb\ufe0f Source: The Verge (A)\n\u23f0 Published: <1 hour ago\n\u2b50 Score: 8.0/10\n\n\ud83d\udd17 https://www.theverge.com/tech/948534/amazon-data-centers-water-use",
+    "tier": "A",
+    "title": "Amazon&#8217;s data centers used 2.5 billion gallons of water last year",
+    "url": "https://www.theverge.com/tech/948534/amazon-data-centers-water-use",
+    "url_hash": "11ba347d6c94a1d89a9ad6057fb34357a13e366e50485bf4d03e5dfae2023226"
+  },
   "posts_today": 2
 }
