@@ -1,6 +1,6 @@
 {
   "date": "2026-06-11",
-  "last_post_time": null,
+  "last_post_time": "2026-06-11T11:23:42Z",
   "pending_best": {
     "authoritative_score": 7.5,
     "canonical_url": "https://techcrunch.com/2026/06/10/opendoors-india-exit-is-fueling-a-bigger-conversation-about-ai-and-outsourcing",
@@ -26,5 +26,5 @@
     "url": "https://techcrunch.com/2026/06/10/opendoors-india-exit-is-fueling-a-bigger-conversation-about-ai-and-outsourcing/",
     "url_hash": "f3e47acb4975baeb91bf04348c0a2f8234000b62f92d0185b73eb7a346ed43df"
   },
-  "posts_today": 0
+  "posts_today": 1
 }
