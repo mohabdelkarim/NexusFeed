@@ -69,6 +69,31 @@
       "cleaned_title": "apple says its still private, even when it's running google's servers",
       "sent_at": "2026-06-09T20:15:03Z",
       "url": "https://arstechnica.com/apple/2026/06/apple-says-its-ai-is-still-private-even-when-its-running-on-googles-servers/"
+    },
+    {
+      "cleaned_title": "grok still hosting sexualized deepfakes famous women",
+      "sent_at": "2026-06-11T20:29:40Z",
+      "url": "https://www.wired.com/story/grok-is-still-hosting-sexualized-deepfakes-of-famous-women/"
+    },
+    {
+      "cleaned_title": "openai's gpt-5.5 codex reach general availability amazon bedrock",
+      "sent_at": "2026-06-11T20:29:40Z",
+      "url": "https://www.infoq.com/news/2026/06/openai-frontier-models-aws/"
+    },
+    {
+      "cleaned_title": "meet \u2018north mini code\u2019: cohere\u2019s 30b open-weight mixture-of-experts model 3b active parameters agentic coding",
+      "sent_at": "2026-06-11T20:29:40Z",
+      "url": "https://www.marktechpost.com/2026/06/11/meet-north-mini-code-coheres-30b-open-weight-mixture-of-experts-model-with-3b-active-parameters-for-agentic-coding/"
+    },
+    {
+      "cleaned_title": "deezer\u2019s tool can identify music spotify, apple music, others",
+      "sent_at": "2026-06-11T20:29:40Z",
+      "url": "https://techcrunch.com/2026/06/11/deezers-new-tool-can-identify-ai-music-from-spotify-apple-music-and-others/"
+    },
+    {
+      "cleaned_title": "visa chatgpt integration enables agent retail purchasing",
+      "sent_at": "2026-06-11T20:29:40Z",
+      "url": "https://www.artificialintelligence-news.com/news/visa-chatgpt-integration-enables-ai-agent-retail-purchasing/"
     }
   ],
   "url_hashes": [
@@ -85,6 +110,11 @@
     "8645cd7ab49a2981579c667cd9ebb4fe82745f14772c6915230dcc1b9cd37361",
     "d0348c85180f3580403fb2a925a9639b9b54893c9aecb2173f3ff778c3949fef",
     "1da870b229296d0c86930d215a77e5f79bee2ebc8ead27f39bb41381d0f9727c",
-    "702c5db3afc1bce39483286575bbcfa916f67c3aa7b4a2aec76ecc9743a13e43"
+    "702c5db3afc1bce39483286575bbcfa916f67c3aa7b4a2aec76ecc9743a13e43",
+    "5d052fa633025fcc16aad26ebf1a82a7037855359439665dfeed6d8283442744",
+    "20e494be0190d4af1d1b67ad276b6dd2af79a79d4de2febd13700ab5d1538753",
+    "6883ba4667c4344215870365a18f38557973be15f7dc4f7f9ab6666a424348d7",
+    "a5c55bcf0af36b8671cf0d5bea8b31cfd3dd38f6a23e17cfcd52b05fb266d987",
+    "da604b9c1ce499392c6b001ad4a5ddf2952b5634f4d517acf23a9a406ddd0715"
   ]
 }
