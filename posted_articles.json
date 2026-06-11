@@ -35,6 +35,10 @@
     {
       "hash": "29bc060a3062e6aeb52dcd8886c103313e98a3f664981f63057ac521ec2ba423",
       "posted_at": "2026-06-10T19:55:36Z"
+    },
+    {
+      "hash": "da604b9c1ce499392c6b001ad4a5ddf2952b5634f4d517acf23a9a406ddd0715",
+      "posted_at": "2026-06-11T11:23:42Z"
     }
   ],
   "hashes": [
@@ -46,6 +50,7 @@
     "702c5db3afc1bce39483286575bbcfa916f67c3aa7b4a2aec76ecc9743a13e43",
     "8fc2f58f2800484b12647aa1b7e48dfc423d92ebff350af6b67b964b4aa8a9ca",
     "aae82d5b85e674f966af126c5b664aa7828a4e6302ea7719e103a2ee7971d9ee",
+    "da604b9c1ce499392c6b001ad4a5ddf2952b5634f4d517acf23a9a406ddd0715",
     "eaa4e83c5ba2fabdd6966fb11d2e22a8e97fb239f7225ceefdcfd19623a1c3bf"
   ],
   "recent_titles": [
@@ -102,6 +107,12 @@
       "posted_at": "2026-06-10T19:55:36Z",
       "score": 9.0,
       "source": "Ars Technica"
+    },
+    {
+      "cleaned_title": "visa chatgpt integration enables ai agent retail purchasing",
+      "posted_at": "2026-06-11T11:23:42Z",
+      "score": 8.5,
+      "source": "AI News"
     }
   ]
 }
