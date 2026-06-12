@@ -1,30 +1,30 @@
 {
-  "date": "2026-06-11",
-  "last_post_time": "2026-06-11T20:01:46Z",
+  "date": "2026-06-12",
+  "last_post_time": null,
   "pending_best": {
     "authoritative_score": 8.0,
-    "canonical_url": "https://www.theverge.com/tech/948534/amazon-data-centers-water-use",
-    "cleaned_title": "amazon 8217 s data centers used 2 5 billion gallons water last year",
-    "index": 1,
-    "published_at": "2026-06-11T17:26:57Z",
-    "saved_at": "2026-06-11T17:40:02Z",
+    "canonical_url": "https://techcrunch.com/2026/06/11/theker-just-raised-85m-to-build-the-factory-robot-that-doesnt-specialize-in-anything",
+    "cleaned_title": "theker just raised 85m build factory robot that doesn t specialize anything",
+    "index": 0,
+    "published_at": "2026-06-12T01:48:07Z",
+    "saved_at": "2026-06-12T01:59:28Z",
     "score": {
       "freshness_score": 2.0,
       "impact_score": 2.5,
       "novelty_score": 2.0,
-      "reason": "The article is about a significant environmental impact, which affects all developers, and is from a reputable source (The Verge) with a tier A rating.",
+      "reason": "The article is about a new funding round for a company developing a versatile factory robot, which is a significant development in the field of robotics and AI.",
       "red_flag": false,
       "red_flag_reason": null,
       "source_score": 1.5,
       "total_score": 8.0
     },
-    "source": "The Verge",
-    "summary": "Just after Seattle enacted a one-year data center moratorium that some of Amazon's own employees pushed for, Amazon shared how much water its data centers use, reportedly for the first time. With concerns about water consumption and energy use a focus of new AI data center construction debates, Ama...",
-    "telegram_message": "\ud83d\udd25 *Amazon&#8217;s data centers used 2.5 billion gallons of water last year*\n\nThe article is about a significant environmental impact, which affects all developers, and is from a reputable source (The Verge) with a ti...\n\n\ud83c\udfdb\ufe0f Source: The Verge (A)\n\u23f0 Published: <1 hour ago\n\u2b50 Score: 8.0/10\n\n\ud83d\udd17 https://www.theverge.com/tech/948534/amazon-data-centers-water-use",
+    "source": "TechCrunch",
+    "summary": "Unlike humanoid robots designed around a fixed form \u2014 think Boston Dynamics \u2014 Theker's machines are built to be reconfigured.",
+    "telegram_message": "\ud83d\udd25 *Theker just raised $85M to build the factory robot that doesn\u2019t specialize in anything*\n\nThe article is about a new funding round for a company developing a versatile factory robot, which is a significant development in the fiel...\n\n\ud83c\udfdb\ufe0f Source: TechCrunch (A)\n\u23f0 Published: <1 hour ago\n\u2b50 Score: 8.0/10\n\n\ud83d\udd17 https://techcrunch.com/2026/06/11/theker-just-raised-85m-to-build-the-factory-robot-that-doesnt-specialize-in-anything/",
     "tier": "A",
-    "title": "Amazon&#8217;s data centers used 2.5 billion gallons of water last year",
-    "url": "https://www.theverge.com/tech/948534/amazon-data-centers-water-use",
-    "url_hash": "11ba347d6c94a1d89a9ad6057fb34357a13e366e50485bf4d03e5dfae2023226"
+    "title": "Theker just raised $85M to build the factory robot that doesn\u2019t specialize in anything",
+    "url": "https://techcrunch.com/2026/06/11/theker-just-raised-85m-to-build-the-factory-robot-that-doesnt-specialize-in-anything/",
+    "url_hash": "8ab494d6b198b017e860fa2344359f64ce5695ee5ae89ca91705cd1a4baea96f"
   },
-  "posts_today": 3
+  "posts_today": 0
 }
