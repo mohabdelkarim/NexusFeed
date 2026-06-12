@@ -3,28 +3,28 @@
   "last_post_time": "2026-06-12T14:14:54Z",
   "pending_best": {
     "authoritative_score": 8.0,
-    "canonical_url": "https://techcrunch.com/2026/06/11/theker-just-raised-85m-to-build-the-factory-robot-that-doesnt-specialize-in-anything",
-    "cleaned_title": "theker just raised 85m build factory robot that doesn t specialize anything",
+    "canonical_url": "https://arstechnica.com/google/2026/06/google-sues-chinese-cybercrime-network-that-used-gemini-to-automate-scams",
+    "cleaned_title": "google sues chinese cybercrime network that used gemini automate scams",
     "index": 0,
-    "published_at": "2026-06-12T01:48:07Z",
-    "saved_at": "2026-06-12T01:59:28Z",
+    "published_at": "2026-06-12T16:34:36Z",
+    "saved_at": "2026-06-12T16:44:32Z",
     "score": {
       "freshness_score": 2.0,
       "impact_score": 2.5,
       "novelty_score": 2.0,
-      "reason": "The article is about a new funding round for a company developing a versatile factory robot, which is a significant development in the field of robotics and AI.",
+      "reason": "Industry move with high impact and freshness",
       "red_flag": false,
       "red_flag_reason": null,
       "source_score": 1.5,
       "total_score": 8.0
     },
-    "source": "TechCrunch",
-    "summary": "Unlike humanoid robots designed around a fixed form \u2014 think Boston Dynamics \u2014 Theker's machines are built to be reconfigured.",
-    "telegram_message": "\ud83d\udd25 *Theker just raised $85M to build the factory robot that doesn\u2019t specialize in anything*\n\nThe article is about a new funding round for a company developing a versatile factory robot, which is a significant development in the fiel...\n\n\ud83c\udfdb\ufe0f Source: TechCrunch (A)\n\u23f0 Published: <1 hour ago\n\u2b50 Score: 8.0/10\n\n\ud83d\udd17 https://techcrunch.com/2026/06/11/theker-just-raised-85m-to-build-the-factory-robot-that-doesnt-specialize-in-anything/",
+    "source": "Ars Technica",
+    "summary": "The fraudsters allegedly targeted hundreds of thousands of people with Gemini-coded scams sites.",
+    "telegram_message": "\ud83d\udd25 *Google sues Chinese cybercrime network that used Gemini to automate scams*\n\nIndustry move with high impact and freshness\n\n\ud83c\udfdb\ufe0f Source: Ars Technica (A)\n\u23f0 Published: <1 hour ago\n\u2b50 Score: 8.0/10\n\n\ud83d\udd17 https://arstechnica.com/google/2026/06/google-sues-chinese-cybercrime-network-that-used-gemini-to-automate-scams/",
     "tier": "A",
-    "title": "Theker just raised $85M to build the factory robot that doesn\u2019t specialize in anything",
-    "url": "https://techcrunch.com/2026/06/11/theker-just-raised-85m-to-build-the-factory-robot-that-doesnt-specialize-in-anything/",
-    "url_hash": "8ab494d6b198b017e860fa2344359f64ce5695ee5ae89ca91705cd1a4baea96f"
+    "title": "Google sues Chinese cybercrime network that used Gemini to automate scams",
+    "url": "https://arstechnica.com/google/2026/06/google-sues-chinese-cybercrime-network-that-used-gemini-to-automate-scams/",
+    "url_hash": "6aaafb222e007452d9103441e437207b596a5aa93bf27d6f8405714df6c7a87e"
   },
   "posts_today": 1
 }
