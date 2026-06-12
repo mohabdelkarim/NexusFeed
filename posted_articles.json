@@ -47,6 +47,10 @@
     {
       "hash": "5d052fa633025fcc16aad26ebf1a82a7037855359439665dfeed6d8283442744",
       "posted_at": "2026-06-11T20:01:46Z"
+    },
+    {
+      "hash": "74e1484708925cfdea608d16e7f02b3d64321c7fd288089de2f4dd07c54efba5",
+      "posted_at": "2026-06-12T14:14:54Z"
     }
   ],
   "hashes": [
@@ -57,6 +61,7 @@
     "5d052fa633025fcc16aad26ebf1a82a7037855359439665dfeed6d8283442744",
     "5ec2963d36a6737726329483e8d540b990d18da547b16bfff78468eea1d1afda",
     "702c5db3afc1bce39483286575bbcfa916f67c3aa7b4a2aec76ecc9743a13e43",
+    "74e1484708925cfdea608d16e7f02b3d64321c7fd288089de2f4dd07c54efba5",
     "8fc2f58f2800484b12647aa1b7e48dfc423d92ebff350af6b67b964b4aa8a9ca",
     "aae82d5b85e674f966af126c5b664aa7828a4e6302ea7719e103a2ee7971d9ee",
     "da604b9c1ce499392c6b001ad4a5ddf2952b5634f4d517acf23a9a406ddd0715",
@@ -135,6 +140,12 @@
       "posted_at": "2026-06-11T20:01:46Z",
       "score": 8.5,
       "source": "Wired AI"
+    },
+    {
+      "cleaned_title": "spacex is now public",
+      "posted_at": "2026-06-12T14:14:54Z",
+      "score": 9.5,
+      "source": "The Verge"
     }
   ]
 }
