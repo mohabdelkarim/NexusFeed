@@ -2,29 +2,29 @@
   "date": "2026-06-12",
   "last_post_time": "2026-06-12T18:32:47Z",
   "pending_best": {
-    "authoritative_score": 8.0,
-    "canonical_url": "https://techcrunch.com/2026/06/12/chinese-cybercrime-operation-that-used-ai-to-scam-hundreds-of-thousands-of-victims-sued-by-google",
-    "cleaned_title": "chinese cybercrime operation that used ai scam hundreds thousands victims sued by google",
-    "index": 0,
-    "published_at": "2026-06-12T20:38:09Z",
-    "saved_at": "2026-06-12T20:39:41Z",
+    "authoritative_score": 8.5,
+    "canonical_url": "https://www.marktechpost.com/2026/06/12/google-releases-gemini-sql2-gemini-3-1-pro-text-to-sql-scores-80-04-on-bird-single-model-leaderboard",
+    "cleaned_title": "google gemini sql2 gemini 3 1 pro text sql scores 80 04 bird single model leaderboard",
+    "index": 1,
+    "published_at": "2026-06-12T21:04:11Z",
+    "saved_at": "2026-06-12T22:15:08Z",
     "score": {
-      "freshness_score": 2.0,
+      "freshness_score": 1.5,
       "impact_score": 2.5,
-      "novelty_score": 2.0,
-      "reason": "The article is about a recent lawsuit filed by Google against a Chinese cybercrime operation that used AI to scam hundreds of thousands of victims, which is a significant and impactful event in the tech industry.",
+      "novelty_score": 3.0,
+      "reason": "The article announces a new release from Google, which is a significant development in the AI industry.",
       "red_flag": false,
       "red_flag_reason": null,
       "source_score": 1.5,
-      "total_score": 8.0
+      "total_score": 8.5
     },
-    "source": "TechCrunch",
-    "summary": "The tech giant said a group called \"Outsider Enterprise\" used AI to scam hundreds of thousands of victims, sending 2.5 million text messages over a span of two weeks.",
-    "telegram_message": "\ud83d\udd25 *Chinese cybercrime operation that used AI to scam \u2018hundreds of thousands of victims\u2019 sued by Google*\n\nThe article is about a recent lawsuit filed by Google against a Chinese cybercrime operation that used AI to scam hundreds of thousands of...\n\n\ud83c\udfdb\ufe0f Source: TechCrunch (A)\n\u23f0 Published: <1 hour ago\n\u2b50 Score: 8.0/10\n\n\ud83d\udd17 https://techcrunch.com/2026/06/12/chinese-cybercrime-operation-that-used-ai-to-scam-hundreds-of-thousands-of-victims-sued-by-google/",
+    "source": "MarkTechPost",
+    "summary": "We look at Gemini-SQL2, the text-to-SQL capability Google Research announced on June 12, 2026. Powered by Gemini 3.1 Pro, it posted 80.04% execution accuracy on the BIRD single-model leaderboard. We explain what the score measures, how the leaderboard stacks up, and what Google has not yet disclose...",
+    "telegram_message": "\ud83d\udd25 *Google Releases Gemini-SQL2: Gemini 3.1 Pro Text-to-SQL Scores 80.04% on BIRD Single-Model Leaderboard*\n\nThe article announces a new release from Google, which is a significant development in the AI industry.\n\n\ud83c\udfdb\ufe0f Source: MarkTechPost (A)\n\u23f0 Published: 1 hour ago\n\u2b50 Score: 8.5/10\n\n\ud83d\udd17 https://www.marktechpost.com/2026/06/12/google-releases-gemini-sql2-gemini-3-1-pro-text-to-sql-scores-80-04-on-bird-single-model-leaderboard/",
     "tier": "A",
-    "title": "Chinese cybercrime operation that used AI to scam \u2018hundreds of thousands of victims\u2019 sued by Google",
-    "url": "https://techcrunch.com/2026/06/12/chinese-cybercrime-operation-that-used-ai-to-scam-hundreds-of-thousands-of-victims-sued-by-google/",
-    "url_hash": "f998c275d7032b30f56a2767dd67716ae047a9c74bd4773ff852dc2d209642f1"
+    "title": "Google Releases Gemini-SQL2: Gemini 3.1 Pro Text-to-SQL Scores 80.04% on BIRD Single-Model Leaderboard",
+    "url": "https://www.marktechpost.com/2026/06/12/google-releases-gemini-sql2-gemini-3-1-pro-text-to-sql-scores-80-04-on-bird-single-model-leaderboard/",
+    "url_hash": "6b157013391437bed9664bf006e2942c8fa3d929747f4bc6efb6b9bb0bbf6313"
   },
   "posts_today": 2
 }
