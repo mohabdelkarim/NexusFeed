@@ -1,6 +1,6 @@
 {
   "date": "2026-06-12",
-  "last_post_time": null,
+  "last_post_time": "2026-06-12T14:14:54Z",
   "pending_best": {
     "authoritative_score": 8.0,
     "canonical_url": "https://techcrunch.com/2026/06/11/theker-just-raised-85m-to-build-the-factory-robot-that-doesnt-specialize-in-anything",
@@ -26,5 +26,5 @@
     "url": "https://techcrunch.com/2026/06/11/theker-just-raised-85m-to-build-the-factory-robot-that-doesnt-specialize-in-anything/",
     "url_hash": "8ab494d6b198b017e860fa2344359f64ce5695ee5ae89ca91705cd1a4baea96f"
   },
-  "posts_today": 0
+  "posts_today": 1
 }
