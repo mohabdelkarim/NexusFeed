@@ -51,6 +51,10 @@
     {
       "hash": "74e1484708925cfdea608d16e7f02b3d64321c7fd288089de2f4dd07c54efba5",
       "posted_at": "2026-06-12T14:14:54Z"
+    },
+    {
+      "hash": "b8db8cbbb952d56495b0076bf582421ce787790ad41040159d9be942a37ce0ce",
+      "posted_at": "2026-06-12T18:32:47Z"
     }
   ],
   "hashes": [
@@ -64,6 +68,7 @@
     "74e1484708925cfdea608d16e7f02b3d64321c7fd288089de2f4dd07c54efba5",
     "8fc2f58f2800484b12647aa1b7e48dfc423d92ebff350af6b67b964b4aa8a9ca",
     "aae82d5b85e674f966af126c5b664aa7828a4e6302ea7719e103a2ee7971d9ee",
+    "b8db8cbbb952d56495b0076bf582421ce787790ad41040159d9be942a37ce0ce",
     "da604b9c1ce499392c6b001ad4a5ddf2952b5634f4d517acf23a9a406ddd0715",
     "eaa4e83c5ba2fabdd6966fb11d2e22a8e97fb239f7225ceefdcfd19623a1c3bf",
     "f3e47acb4975baeb91bf04348c0a2f8234000b62f92d0185b73eb7a346ed43df"
@@ -146,6 +151,12 @@
       "posted_at": "2026-06-12T14:14:54Z",
       "score": 9.5,
       "source": "The Verge"
+    },
+    {
+      "cleaned_title": "ukraine s one time test used fully autonomous drones kill russian soldiers",
+      "posted_at": "2026-06-12T18:32:47Z",
+      "score": 8.5,
+      "source": "Ars Technica"
     }
   ]
 }

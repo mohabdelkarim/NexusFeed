@@ -1,6 +1,6 @@
 {
   "date": "2026-06-12",
-  "last_post_time": "2026-06-12T14:14:54Z",
+  "last_post_time": "2026-06-12T18:32:47Z",
   "pending_best": {
     "authoritative_score": 8.0,
     "canonical_url": "https://arstechnica.com/google/2026/06/google-sues-chinese-cybercrime-network-that-used-gemini-to-automate-scams",
@@ -26,5 +26,5 @@
     "url": "https://arstechnica.com/google/2026/06/google-sues-chinese-cybercrime-network-that-used-gemini-to-automate-scams/",
     "url_hash": "6aaafb222e007452d9103441e437207b596a5aa93bf27d6f8405714df6c7a87e"
   },
-  "posts_today": 1
+  "posts_today": 2
 }
