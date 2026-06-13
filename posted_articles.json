@@ -59,6 +59,10 @@
     {
       "hash": "5283bb1f8652b3a7cd93889f72cbe20ffb2d0d5657ae5d269d72c5ebf2be88db",
       "posted_at": "2026-06-13T11:51:21Z"
+    },
+    {
+      "hash": "5654027cea7c5eda9a499751cd35b6a1427cdd235dfb98fb737888e23946bcfd",
+      "posted_at": "2026-06-13T15:28:56Z"
     }
   ],
   "hashes": [
@@ -67,6 +71,7 @@
     "29bc060a3062e6aeb52dcd8886c103313e98a3f664981f63057ac521ec2ba423",
     "303cab70ee0e137fa047ef50b204e7bddbbb74c079c58c735879535586675a4e",
     "5283bb1f8652b3a7cd93889f72cbe20ffb2d0d5657ae5d269d72c5ebf2be88db",
+    "5654027cea7c5eda9a499751cd35b6a1427cdd235dfb98fb737888e23946bcfd",
     "5d052fa633025fcc16aad26ebf1a82a7037855359439665dfeed6d8283442744",
     "5ec2963d36a6737726329483e8d540b990d18da547b16bfff78468eea1d1afda",
     "702c5db3afc1bce39483286575bbcfa916f67c3aa7b4a2aec76ecc9743a13e43",
@@ -166,6 +171,12 @@
     {
       "cleaned_title": "future hollywood isn t feeding prompts into vanilla gen ai models",
       "posted_at": "2026-06-13T11:51:21Z",
+      "score": 8.5,
+      "source": "The Verge"
+    },
+    {
+      "cleaned_title": "my first 24 hours siri ai mac",
+      "posted_at": "2026-06-13T15:28:56Z",
       "score": 8.5,
       "source": "The Verge"
     }
