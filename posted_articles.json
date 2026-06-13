@@ -1,10 +1,6 @@
 {
   "hash_records": [
     {
-      "hash": "303cab70ee0e137fa047ef50b204e7bddbbb74c079c58c735879535586675a4e",
-      "posted_at": "2026-06-06T21:23:30Z"
-    },
-    {
       "hash": "aae82d5b85e674f966af126c5b664aa7828a4e6302ea7719e103a2ee7971d9ee",
       "posted_at": "2026-06-07T14:23:49Z"
     },
@@ -74,7 +70,6 @@
     "125e36dbff4c86dc5b46bf8632657bdc98f26919a63f208910a625f715dfc35f",
     "1eaf4aab7431c0b6069295bb556b28917546a2e8ca96663b4d3989e530f2730d",
     "29bc060a3062e6aeb52dcd8886c103313e98a3f664981f63057ac521ec2ba423",
-    "303cab70ee0e137fa047ef50b204e7bddbbb74c079c58c735879535586675a4e",
     "5283bb1f8652b3a7cd93889f72cbe20ffb2d0d5657ae5d269d72c5ebf2be88db",
     "5654027cea7c5eda9a499751cd35b6a1427cdd235dfb98fb737888e23946bcfd",
     "5d052fa633025fcc16aad26ebf1a82a7037855359439665dfeed6d8283442744",
@@ -89,12 +84,6 @@
     "f3e47acb4975baeb91bf04348c0a2f8234000b62f92d0185b73eb7a346ed43df"
   ],
   "recent_titles": [
-    {
-      "cleaned_title": "openai unveils lockdown mode protect sensitive data prompt injection attacks",
-      "posted_at": "2026-06-06T21:23:30Z",
-      "score": 8.5,
-      "source": "TechCrunch"
-    },
     {
       "cleaned_title": "virtual os museum lets you relive over 600 operating systems right your desktop",
       "posted_at": "2026-06-07T14:23:49Z",
