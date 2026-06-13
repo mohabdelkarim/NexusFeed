@@ -119,6 +119,31 @@
       "cleaned_title": "google sues alleged chinese cybercrime operation that used send scam texts",
       "sent_at": "2026-06-12T20:20:15Z",
       "url": "https://techcrunch.com/2026/06/12/google-sues-alleged-chinese-cybercrime-operation-that-used-ai-to-send-scam-texts/"
+    },
+    {
+      "cleaned_title": "amazon ceo reportedly raised anthropic model concerns before government crackdown",
+      "sent_at": "2026-06-13T19:46:04Z",
+      "url": "https://techcrunch.com/2026/06/13/amazon-ceo-reportedly-raised-anthropic-model-concerns-before-government-crackdown/"
+    },
+    {
+      "cleaned_title": "anthropic cuts off fable 5 mythos 5 access following government order",
+      "sent_at": "2026-06-13T19:46:04Z",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/949553/anthropic-fable-5-mythos-5-government-national-security"
+    },
+    {
+      "cleaned_title": "openai faces investigation state attorneys general",
+      "sent_at": "2026-06-13T19:46:04Z",
+      "url": "https://techcrunch.com/2026/06/13/openai-faces-investigation-from-state-attorneys-general/"
+    },
+    {
+      "cleaned_title": "court has ruled that google liable false statements generated overviews",
+      "sent_at": "2026-06-13T19:46:04Z",
+      "url": "https://www.wired.com/story/a-court-has-ruled-that-google-is-liable-for-false-statements-generated-by-ai-overviews/"
+    },
+    {
+      "cleaned_title": "anthropic disables claude fable 5 mythos 5 after us government order",
+      "sent_at": "2026-06-13T19:46:04Z",
+      "url": "https://www.marktechpost.com/2026/06/13/anthropic-disables-claude-fable-5-and-mythos-5-after-us-government-order/"
     }
   ],
   "url_hashes": [
@@ -145,6 +170,11 @@
     "74e1484708925cfdea608d16e7f02b3d64321c7fd288089de2f4dd07c54efba5",
     "b25b2eec7bd70abacf1f604d6cb4b598deb5b9498160a49a19709e3a3cd75543",
     "b8db8cbbb952d56495b0076bf582421ce787790ad41040159d9be942a37ce0ce",
-    "8406c27ed4908ee00c89a9299acf0b0ec1b0b201154a454843d44f40a03fd316"
+    "8406c27ed4908ee00c89a9299acf0b0ec1b0b201154a454843d44f40a03fd316",
+    "fdd8b93776182ec2ab123fa9150aa792edbd844628b938355ce42ab7de6807da",
+    "c324d96608f563d60c0488fce323e35068143d2f6a1ad22dab03ea4f1cc4916a",
+    "e3bfdb856d9444350a19325e2267b12be512371cc711ed092f84a35eab4444b4",
+    "ec99355c3a725d3453d88b338dddb230f5d8b1e6cfa9f190ba2c352024f74968",
+    "f8b2575c21e687b6a94b0cb0c03eb97ac789bb9466eaf45b40d7622cd2abfa79"
   ]
 }
