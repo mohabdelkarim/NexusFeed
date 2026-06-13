@@ -55,6 +55,10 @@
     {
       "hash": "b8db8cbbb952d56495b0076bf582421ce787790ad41040159d9be942a37ce0ce",
       "posted_at": "2026-06-12T18:32:47Z"
+    },
+    {
+      "hash": "5283bb1f8652b3a7cd93889f72cbe20ffb2d0d5657ae5d269d72c5ebf2be88db",
+      "posted_at": "2026-06-13T11:51:21Z"
     }
   ],
   "hashes": [
@@ -62,6 +66,7 @@
     "125e36dbff4c86dc5b46bf8632657bdc98f26919a63f208910a625f715dfc35f",
     "29bc060a3062e6aeb52dcd8886c103313e98a3f664981f63057ac521ec2ba423",
     "303cab70ee0e137fa047ef50b204e7bddbbb74c079c58c735879535586675a4e",
+    "5283bb1f8652b3a7cd93889f72cbe20ffb2d0d5657ae5d269d72c5ebf2be88db",
     "5d052fa633025fcc16aad26ebf1a82a7037855359439665dfeed6d8283442744",
     "5ec2963d36a6737726329483e8d540b990d18da547b16bfff78468eea1d1afda",
     "702c5db3afc1bce39483286575bbcfa916f67c3aa7b4a2aec76ecc9743a13e43",
@@ -157,6 +162,12 @@
       "posted_at": "2026-06-12T18:32:47Z",
       "score": 8.5,
       "source": "Ars Technica"
+    },
+    {
+      "cleaned_title": "future hollywood isn t feeding prompts into vanilla gen ai models",
+      "posted_at": "2026-06-13T11:51:21Z",
+      "score": 8.5,
+      "source": "The Verge"
     }
   ]
 }

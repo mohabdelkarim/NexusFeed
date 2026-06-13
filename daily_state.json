@@ -1,6 +1,6 @@
 {
   "date": "2026-06-13",
-  "last_post_time": null,
+  "last_post_time": "2026-06-13T11:51:21Z",
   "pending_best": {
     "authoritative_score": 8.5,
     "canonical_url": "https://www.marktechpost.com/2026/06/12/a-coding-implementation-on-spatial-graph-neural-networks-for-urban-function-inference-using-city2graph-osmnx-and-pytorch-geometric",
@@ -26,5 +26,5 @@
     "url": "https://www.marktechpost.com/2026/06/12/a-coding-implementation-on-spatial-graph-neural-networks-for-urban-function-inference-using-city2graph-osmnx-and-pytorch-geometric/",
     "url_hash": "1eaf4aab7431c0b6069295bb556b28917546a2e8ca96663b4d3989e530f2730d"
   },
-  "posts_today": 0
+  "posts_today": 1
 }
