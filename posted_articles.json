@@ -63,11 +63,16 @@
     {
       "hash": "5654027cea7c5eda9a499751cd35b6a1427cdd235dfb98fb737888e23946bcfd",
       "posted_at": "2026-06-13T15:28:56Z"
+    },
+    {
+      "hash": "1eaf4aab7431c0b6069295bb556b28917546a2e8ca96663b4d3989e530f2730d",
+      "posted_at": "2026-06-13T18:46:14Z"
     }
   ],
   "hashes": [
     "02d506c09b732cbfad8f8c04bc4e830f40219d68ae07da6bc8284db5e8c58a1c",
     "125e36dbff4c86dc5b46bf8632657bdc98f26919a63f208910a625f715dfc35f",
+    "1eaf4aab7431c0b6069295bb556b28917546a2e8ca96663b4d3989e530f2730d",
     "29bc060a3062e6aeb52dcd8886c103313e98a3f664981f63057ac521ec2ba423",
     "303cab70ee0e137fa047ef50b204e7bddbbb74c079c58c735879535586675a4e",
     "5283bb1f8652b3a7cd93889f72cbe20ffb2d0d5657ae5d269d72c5ebf2be88db",
@@ -179,6 +184,12 @@
       "posted_at": "2026-06-13T15:28:56Z",
       "score": 8.5,
       "source": "The Verge"
+    },
+    {
+      "cleaned_title": "coding implementation spatial graph neural networks urban function inference using city2graph osmnx pytorch geometric",
+      "posted_at": "2026-06-13T18:46:14Z",
+      "score": 8.5,
+      "source": "MarkTechPost"
     }
   ]
 }

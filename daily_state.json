@@ -1,30 +1,6 @@
 {
   "date": "2026-06-13",
-  "last_post_time": "2026-06-13T15:28:56Z",
-  "pending_best": {
-    "authoritative_score": 8.5,
-    "canonical_url": "https://www.marktechpost.com/2026/06/12/a-coding-implementation-on-spatial-graph-neural-networks-for-urban-function-inference-using-city2graph-osmnx-and-pytorch-geometric",
-    "cleaned_title": "coding implementation spatial graph neural networks urban function inference using city2graph osmnx pytorch geometric",
-    "index": 0,
-    "published_at": "2026-06-13T02:47:16Z",
-    "saved_at": "2026-06-13T02:49:58Z",
-    "score": {
-      "freshness_score": 2.0,
-      "impact_score": 2.5,
-      "novelty_score": 2.5,
-      "reason": "High novelty, impact, and freshness scores due to its recent publication and relevance to AI research.",
-      "red_flag": false,
-      "red_flag_reason": null,
-      "source_score": 1.5,
-      "total_score": 8.5
-    },
-    "source": "MarkTechPost",
-    "summary": "We build an end-to-end spatial graph learning pipeline using city2graph. We collect urban POI and street network data from OpenStreetMap, with a synthetic fallback for reliability. We engineer spatial features, construct several proximity graph families, and compare how each represents the same urb...",
-    "telegram_message": "\ud83d\udd25 *A Coding Implementation on Spatial Graph Neural Networks for Urban Function Inference Using city2graph, OSMnx, and PyTorch Geometric*\n\nHigh novelty, impact, and freshness scores due to its recent publication and relevance to AI research.\n\n\ud83c\udfdb\ufe0f Source: MarkTechPost (A)\n\u23f0 Published: <1 hour ago\n\u2b50 Score: 8.5/10\n\n\ud83d\udd17 https://www.marktechpost.com/2026/06/12/a-coding-implementation-on-spatial-graph-neural-networks-for-urban-function-inference-using-city2graph-osmnx-and-pytorch-geometric/",
-    "tier": "A",
-    "title": "A Coding Implementation on Spatial Graph Neural Networks for Urban Function Inference Using city2graph, OSMnx, and PyTorch Geometric",
-    "url": "https://www.marktechpost.com/2026/06/12/a-coding-implementation-on-spatial-graph-neural-networks-for-urban-function-inference-using-city2graph-osmnx-and-pytorch-geometric/",
-    "url_hash": "1eaf4aab7431c0b6069295bb556b28917546a2e8ca96663b4d3989e530f2730d"
-  },
-  "posts_today": 2
+  "last_post_time": "2026-06-13T18:46:14Z",
+  "pending_best": null,
+  "posts_today": 3
 }
