@@ -1,6 +1,30 @@
 {
-  "date": "2026-06-13",
-  "last_post_time": "2026-06-13T18:46:14Z",
-  "pending_best": null,
-  "posts_today": 3
+  "date": "2026-06-14",
+  "last_post_time": null,
+  "pending_best": {
+    "authoritative_score": 8.0,
+    "canonical_url": "https://techcrunch.com/2026/06/13/kpmg-pulls-report-on-ai-usage-due-to-apparent-hallucinations",
+    "cleaned_title": "kpmg pulls report ai usage due apparent hallucinations",
+    "index": 1,
+    "published_at": "2026-06-13T20:42:31Z",
+    "saved_at": "2026-06-14T00:01:33Z",
+    "score": {
+      "freshness_score": 1.5,
+      "impact_score": 2.5,
+      "novelty_score": 2.5,
+      "reason": "The article is about KPMG pulling a report on AI usage due to apparent hallucinations, which is a new and impactful development in the field of AI and business.",
+      "red_flag": false,
+      "red_flag_reason": null,
+      "source_score": 1.5,
+      "total_score": 8.0
+    },
+    "source": "TechCrunch",
+    "summary": "Once again, AI proves to be an unreliable source of information about AI.",
+    "telegram_message": "\ud83d\udd25 *KPMG pulls report on AI usage due to apparent hallucinations*\n\nThe article is about KPMG pulling a report on AI usage due to apparent hallucinations, which is a new and impactful development in the fiel...\n\n\ud83c\udfdb\ufe0f Source: TechCrunch (A)\n\u23f0 Published: 3 hours ago\n\u2b50 Score: 8.0/10\n\n\ud83d\udd17 https://techcrunch.com/2026/06/13/kpmg-pulls-report-on-ai-usage-due-to-apparent-hallucinations/",
+    "tier": "A",
+    "title": "KPMG pulls report on AI usage due to apparent hallucinations",
+    "url": "https://techcrunch.com/2026/06/13/kpmg-pulls-report-on-ai-usage-due-to-apparent-hallucinations/",
+    "url_hash": "d5a71d336caf9a9cf19d0c6a6050f086894289379ee71056549f410a6b23e9a6"
+  },
+  "posts_today": 0
 }
