@@ -1,6 +1,30 @@
 {
   "date": "2026-06-14",
   "last_post_time": "2026-06-14T18:45:39Z",
-  "pending_best": null,
+  "pending_best": {
+    "authoritative_score": 6.0,
+    "canonical_url": "https://techcrunch.com/2026/06/13/as-anthropic-suspends-access-to-new-models-india-debates-its-ai-future",
+    "cleaned_title": "as anthropic suspends access models india debates its ai future",
+    "index": 6,
+    "published_at": "2026-06-14T03:00:00Z",
+    "saved_at": "2026-06-14T20:15:15Z",
+    "score": {
+      "freshness_score": 0.0,
+      "impact_score": 2.5,
+      "novelty_score": 2.0,
+      "reason": "The article discusses a significant development in the AI industry and its potential impact on a country's AI strategy.",
+      "red_flag": false,
+      "red_flag_reason": null,
+      "source_score": 1.5,
+      "total_score": 6.0
+    },
+    "source": "TechCrunch",
+    "summary": "Tech leaders debate whether the Anthropic episode is a wake-up call for India\u2019s AI ambitions.",
+    "telegram_message": "\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\ud83d\udd25 *As Anthropic suspends access to new models, India debates its AI future*\n\nTech leaders debate whether the Anthropic episode is a wake-up call for India\u2019s AI ambitions.\n\n\ud83c\udfdb\ufe0f Source: TechCrunch (A)\n\u23f0 Published: 17 hours ago\n\u2b50 Score: 6.0/10\n\n\ud83d\udd17 https://techcrunch.com/2026/06/13/as-anthropic-suspends-access-to-new-models-india-debates-its-ai-future/\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501",
+    "tier": "A",
+    "title": "As Anthropic suspends access to new models, India debates its AI future",
+    "url": "https://techcrunch.com/2026/06/13/as-anthropic-suspends-access-to-new-models-india-debates-its-ai-future/",
+    "url_hash": "61ae2308d52a41fe9add39ce0de210737127444a34c772e76127228b0628bc84"
+  },
   "posts_today": 2
 }
