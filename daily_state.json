@@ -1,30 +1,6 @@
 {
   "date": "2026-06-14",
-  "last_post_time": "2026-06-14T15:20:22Z",
-  "pending_best": {
-    "authoritative_score": 8.0,
-    "canonical_url": "https://techcrunch.com/2026/06/14/as-ai-companies-race-to-go-public-who-else-is-along-for-the-ride",
-    "cleaned_title": "as ai companies race go public who else is along ride",
-    "index": 0,
-    "published_at": "2026-06-14T16:38:09Z",
-    "saved_at": "2026-06-14T17:00:30Z",
-    "score": {
-      "freshness_score": 2.0,
-      "impact_score": 2.5,
-      "novelty_score": 2.0,
-      "reason": "The article discusses the current trend of AI companies going public and its potential impact on the industry.",
-      "red_flag": false,
-      "red_flag_reason": null,
-      "source_score": 1.5,
-      "total_score": 8.0
-    },
-    "source": "TechCrunch",
-    "summary": "Startups are trying to \"ride that SpaceX IPO wave.\"",
-    "telegram_message": "\ud83d\udd25 *As AI companies race to go public, who else is along for the ride?*\n\nThe article discusses the current trend of AI companies going public and its potential impact on the industry.\n\n\ud83c\udfdb\ufe0f Source: TechCrunch (A)\n\u23f0 Published: <1 hour ago\n\u2b50 Score: 8.0/10\n\n\ud83d\udd17 https://techcrunch.com/2026/06/14/as-ai-companies-race-to-go-public-who-else-is-along-for-the-ride/",
-    "tier": "A",
-    "title": "As AI companies race to go public, who else is along for the ride?",
-    "url": "https://techcrunch.com/2026/06/14/as-ai-companies-race-to-go-public-who-else-is-along-for-the-ride/",
-    "url_hash": "ed97a7971fbb0470372c22c61abdcd872f8246235bf6968ba58f2a4e3baf3574"
-  },
-  "posts_today": 1
+  "last_post_time": "2026-06-14T18:45:39Z",
+  "pending_best": null,
+  "posts_today": 2
 }
