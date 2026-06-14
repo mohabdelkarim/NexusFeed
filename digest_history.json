@@ -1,31 +1,6 @@
 {
   "recent_titles": [
     {
-      "cleaned_title": "openai unveils lockdown mode protect sensitive data prompt injection attacks",
-      "sent_at": "2026-06-06T21:36:17Z",
-      "url": "https://techcrunch.com/2026/06/06/openai-unveils-lockdown-mode-to-protect-sensitive-data-from-prompt-injection-attacks/"
-    },
-    {
-      "cleaned_title": "trump administration might take equity stake openai",
-      "sent_at": "2026-06-06T21:36:17Z",
-      "url": "https://techcrunch.com/2026/06/06/the-trump-administration-might-take-an-equity-stake-in-openai/"
-    },
-    {
-      "cleaned_title": "sriram krishnan leaving his role as white house advisor",
-      "sent_at": "2026-06-06T21:36:17Z",
-      "url": "https://techcrunch.com/2026/06/06/sriram-krishnan-is-leaving-his-role-as-white-house-ai-advisor/"
-    },
-    {
-      "cleaned_title": "expect wwdc 2026: siri\u2019s highly anticipated revamp apple intelligence updates",
-      "sent_at": "2026-06-06T21:36:17Z",
-      "url": "https://techcrunch.com/2026/06/06/what-to-expect-from-wwdc-2026-siris-highly-anticipated-revamp-and-apple-intelligence-updates/"
-    },
-    {
-      "cleaned_title": "meta made its own ai-generated clickbait news feed",
-      "sent_at": "2026-06-06T21:36:17Z",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/944235/meta-app-ai-clickbait-articles"
-    },
-    {
       "cleaned_title": "apple\u2019s siri ready get personal",
       "sent_at": "2026-06-08T20:27:17Z",
       "url": "https://www.wired.com/story/apples-new-siri-ai-is-ready-to-get-personal/"
@@ -144,6 +119,31 @@
       "cleaned_title": "anthropic disables claude fable 5 mythos 5 after us government order",
       "sent_at": "2026-06-13T19:46:04Z",
       "url": "https://www.marktechpost.com/2026/06/13/anthropic-disables-claude-fable-5-and-mythos-5-after-us-government-order/"
+    },
+    {
+      "cleaned_title": "as anthropic suspends access models, india debates its future",
+      "sent_at": "2026-06-14T19:46:42Z",
+      "url": "https://techcrunch.com/2026/06/13/as-anthropic-suspends-access-to-new-models-india-debates-its-ai-future/"
+    },
+    {
+      "cleaned_title": "kpmg pulls report usage due apparent hallucinations",
+      "sent_at": "2026-06-14T19:46:42Z",
+      "url": "https://techcrunch.com/2026/06/13/kpmg-pulls-report-on-ai-usage-due-to-apparent-hallucinations/"
+    },
+    {
+      "cleaned_title": "meta reportedly moves unwind $2b manus deal after beijing\u2019s demand",
+      "sent_at": "2026-06-14T19:46:42Z",
+      "url": "https://techcrunch.com/2026/06/13/meta-reportedly-moves-to-unwind-2b-manus-deal-after-beijings-demand/"
+    },
+    {
+      "cleaned_title": "aws introduces durable storage option elasticache valkey",
+      "sent_at": "2026-06-14T19:46:42Z",
+      "url": "https://www.infoq.com/news/2026/06/elasticache-valkey-durability/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+    },
+    {
+      "cleaned_title": "terraform mcp server enables assistants interact terraform infrastructure",
+      "sent_at": "2026-06-14T19:46:42Z",
+      "url": "https://www.infoq.com/news/2026/06/terraform-mcp-server-ga/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
     }
   ],
   "url_hashes": [
@@ -175,6 +175,11 @@
     "c324d96608f563d60c0488fce323e35068143d2f6a1ad22dab03ea4f1cc4916a",
     "e3bfdb856d9444350a19325e2267b12be512371cc711ed092f84a35eab4444b4",
     "ec99355c3a725d3453d88b338dddb230f5d8b1e6cfa9f190ba2c352024f74968",
-    "f8b2575c21e687b6a94b0cb0c03eb97ac789bb9466eaf45b40d7622cd2abfa79"
+    "f8b2575c21e687b6a94b0cb0c03eb97ac789bb9466eaf45b40d7622cd2abfa79",
+    "61ae2308d52a41fe9add39ce0de210737127444a34c772e76127228b0628bc84",
+    "d5a71d336caf9a9cf19d0c6a6050f086894289379ee71056549f410a6b23e9a6",
+    "cbdd28ce68758d125120cc45d418569b639e11fe788dc32cb6de0d106bb3f3a0",
+    "4ca0f58f0a00e28f1e9cbcf0eab4a7edf6c187d8d8830451f306ff6ed84d39ec",
+    "c9b4861f5a18a60ca1a59cc9a92632c7c568e2654b22c24e2be281b430ad27c8"
   ]
 }
