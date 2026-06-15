@@ -1,6 +1,6 @@
 {
   "date": "2026-06-15",
-  "last_post_time": "2026-06-15T13:17:04Z",
+  "last_post_time": "2026-06-15T21:37:23Z",
   "pending_best": {
     "authoritative_score": 8.5,
     "canonical_url": "https://www.infoq.com/news/2026/06/zero-native-zig-xplatform-vercel",
@@ -26,5 +26,5 @@
     "url": "https://www.infoq.com/news/2026/06/zero-native-zig-xplatform-vercel/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "url_hash": "e525ffa8d76c7440c6f03a91b0cf2c6b8a1122843b36b40bf7985deddd311f33"
   },
-  "posts_today": 1
+  "posts_today": 2
 }
