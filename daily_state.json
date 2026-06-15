@@ -1,30 +1,30 @@
 {
-  "date": "2026-06-14",
-  "last_post_time": "2026-06-14T18:45:39Z",
+  "date": "2026-06-15",
+  "last_post_time": null,
   "pending_best": {
-    "authoritative_score": 7.5,
-    "canonical_url": "https://www.theverge.com/tech/949648/fbi-fake-town-cyberattacks-kinetic-cyber-range",
-    "cleaned_title": "fbi built small town simulate cyberattacks",
-    "index": 1,
-    "published_at": "2026-06-14T20:35:41Z",
-    "saved_at": "2026-06-14T23:11:13Z",
+    "authoritative_score": 8.5,
+    "canonical_url": "https://www.infoq.com/news/2026/06/zero-native-zig-xplatform-vercel",
+    "cleaned_title": "vercel labs open sources zero native zig based cross platform native application framework",
+    "index": 0,
+    "published_at": "2026-06-15T01:25:00Z",
+    "saved_at": "2026-06-15T01:41:52Z",
     "score": {
-      "freshness_score": 1.5,
+      "freshness_score": 2.0,
       "impact_score": 2.5,
-      "novelty_score": 2.0,
-      "reason": "The article reports on a unique, recent development in cyberattack simulation.",
+      "novelty_score": 3.0,
+      "reason": "High novelty score due to new open-source release.",
       "red_flag": false,
       "red_flag_reason": null,
-      "source_score": 1.5,
-      "total_score": 7.5
+      "source_score": 1.0,
+      "total_score": 8.5
     },
-    "source": "The Verge",
-    "summary": "Last year, the FBI opened a Cyber Range in Huntsville, Alabama, for simulating cyberattacks. Think of it sort of like the famous Hogan's Alley, but for modern digital crime training. It's a massive 22,000 square-foot replica of an entire town, complete with a convenience store, gas station, hospita...",
-    "telegram_message": "\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\ud83d\udd25 *The FBI built a small town to simulate cyberattacks*\n\nThe FBI has opened a Cyber Range in Huntsville, Alabama, for simulating cyberattacks. It's a massive 22,000 square-foot replica of an entire town.\n\n\ud83c\udfdb\ufe0f Source: The Verge (A)\n\u23f0 Published: 2 hours ago\n\u2b50 Score: 7.5/10\n\n\ud83d\udd17 https://www.theverge.com/tech/949648/fbi-fake-town-cyberattacks-kinetic-cyber-range\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501",
-    "tier": "A",
-    "title": "The FBI built a small town to simulate cyberattacks",
-    "url": "https://www.theverge.com/tech/949648/fbi-fake-town-cyberattacks-kinetic-cyber-range",
-    "url_hash": "85d95390afebab6e1efe416e793caa1dc801a9f6d1ddde497aa198f4cb4fbdc5"
+    "source": "InfoQ AI/ML",
+    "summary": "Vercel Labs recently open-sourced zero-native, a cross-platform framework for native desktop applications. Zero-native bypasses Electron runtime in favor or native OS WebViews and claims to achieve smaller, more efficient native apps with minimal overhead. Zero-native is written in Zig, thus direct...",
+    "telegram_message": "\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\ud83d\udd25 *Vercel Labs Open-Sources Zero-Native: A Zig-Based Cross-Platform Native Application Framework*\n\nVercel Labs recently open-sourced zero-native, a cross-platform framework for native desktop applications. Zero-native bypasses Electron runtime in favor or native OS WebViews and claims to achieve smaller, more efficient native apps with minimal overhead.\n\n\ud83c\udfdb\ufe0f Source: InfoQ AI/ML (B)\n\u23f0 Published: <1 hour ago\n\u2b50 Score: 8.5/10\n\n\ud83d\udd17 https://www.infoq.com/news/2026/06/zero-native-zig-xplatform-vercel/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501",
+    "tier": "B",
+    "title": "Vercel Labs Open-Sources Zero-Native: A Zig-Based Cross-Platform Native Application Framework",
+    "url": "https://www.infoq.com/news/2026/06/zero-native-zig-xplatform-vercel/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "url_hash": "e525ffa8d76c7440c6f03a91b0cf2c6b8a1122843b36b40bf7985deddd311f33"
   },
-  "posts_today": 2
+  "posts_today": 0
 }
