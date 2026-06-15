@@ -1,31 +1,6 @@
 {
   "recent_titles": [
     {
-      "cleaned_title": "apple\u2019s siri ready get personal",
-      "sent_at": "2026-06-08T20:27:17Z",
-      "url": "https://www.wired.com/story/apples-new-siri-ai-is-ready-to-get-personal/"
-    },
-    {
-      "cleaned_title": "wwdc 2026: everything announced siri ai, ios 27, apple intelligence more",
-      "sent_at": "2026-06-08T20:27:17Z",
-      "url": "https://techcrunch.com/2026/06/08/wwdc-2026-everything-announced-on-siri-ai-os-27-apple-intelligence-and-more/"
-    },
-    {
-      "cleaned_title": "apple announces watchos 27, now siri",
-      "sent_at": "2026-06-08T20:27:17Z",
-      "url": "https://www.theverge.com/tech/943145/apple-watch-watchos-27-wwdc-2026"
-    },
-    {
-      "cleaned_title": "say hi \u201csiri ai\u201d\u2014apple announces new, more \u201cconversational\u201d voice assistant",
-      "sent_at": "2026-06-08T20:27:17Z",
-      "url": "https://arstechnica.com/apple/2026/06/say-hi-to-siri-ai-apple-announces-new-more-conversational-voice-assistant/"
-    },
-    {
-      "cleaned_title": "uk betting billion-dollar supercomputer kick its addiction us tech",
-      "sent_at": "2026-06-08T20:27:17Z",
-      "url": "https://www.wired.com/story/uk-supercomputer-investment-ai-homegrown-semiconductor/"
-    },
-    {
       "cleaned_title": "anthropic says these topics are too dangerous let its fable 5 model talk about",
       "sent_at": "2026-06-09T20:15:03Z",
       "url": "https://arstechnica.com/ai/2026/06/anthropic-says-these-topics-are-too-dangerous-to-let-its-fable-5-model-talk-about/"
@@ -144,6 +119,31 @@
       "cleaned_title": "terraform mcp server enables assistants interact terraform infrastructure",
       "sent_at": "2026-06-14T19:46:42Z",
       "url": "https://www.infoq.com/news/2026/06/terraform-mcp-server-ga/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+    },
+    {
+      "cleaned_title": "fox wants take over your tv \u2014 tech inside it",
+      "sent_at": "2026-06-15T21:13:03Z",
+      "url": "https://www.theverge.com/streaming/950116/fox-roku-takeover"
+    },
+    {
+      "cleaned_title": "chipmaker nvidia seeks raise over $25b first bond deal since 2021",
+      "sent_at": "2026-06-15T21:13:03Z",
+      "url": "https://arstechnica.com/ai/2026/06/chipmaker-nvidia-seeks-to-raise-over-25b-in-first-bond-deal-since-2021/"
+    },
+    {
+      "cleaned_title": "all news about anthropic\u2019s fight white house",
+      "sent_at": "2026-06-15T21:13:03Z",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/950026/anthropic-fable-mythos-ban-ai-shutdown"
+    },
+    {
+      "cleaned_title": "trump\u2019s anthropic shutdown just made case non-american",
+      "sent_at": "2026-06-15T21:13:03Z",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/949986/anthropic-fable-mythos-shutdown-sovereign-ai"
+    },
+    {
+      "cleaned_title": "salesforce acquires customer service platform fin $3.6b",
+      "sent_at": "2026-06-15T21:13:03Z",
+      "url": "https://techcrunch.com/2026/06/15/salesforce-acquires-ai-customer-service-platform-fin-for-3-6b/"
     }
   ],
   "url_hashes": [
@@ -180,6 +180,11 @@
     "d5a71d336caf9a9cf19d0c6a6050f086894289379ee71056549f410a6b23e9a6",
     "cbdd28ce68758d125120cc45d418569b639e11fe788dc32cb6de0d106bb3f3a0",
     "4ca0f58f0a00e28f1e9cbcf0eab4a7edf6c187d8d8830451f306ff6ed84d39ec",
-    "c9b4861f5a18a60ca1a59cc9a92632c7c568e2654b22c24e2be281b430ad27c8"
+    "c9b4861f5a18a60ca1a59cc9a92632c7c568e2654b22c24e2be281b430ad27c8",
+    "35e1f5ba73ce012b9d4e1ea18fa51538141859e30b80b31fca1763af6d45cb1d",
+    "a9f0ab8e6b6cfb6c2175e08c39c6ac9a7929eb468b6f3bc415d3b99e71b0ccd3",
+    "d432605b3cd1123da5d2e024f0634c87d953e2c412e2b98906b4d36606094f9c",
+    "94b7866da73e1fa18dd5a55516f37e1eb94d1e49b5e4b6582945c201ac1efc7f",
+    "bd9bf27f1c675da1d4cd42b9b8bc1bc2af854bc49ef10ce57fc2b8651b70e359"
   ]
 }
