@@ -63,9 +63,14 @@
     {
       "hash": "fb4772aafa138c02ee2a4aa520c9f05c6d7c80ab53c112d5cc8bd6d4d9d95563",
       "posted_at": "2026-06-15T21:37:23Z"
+    },
+    {
+      "hash": "092d2649f244b3abcdb3f85467071e62580855489c179f4c40e72a95810ea14b",
+      "posted_at": "2026-06-16T12:13:01Z"
     }
   ],
   "hashes": [
+    "092d2649f244b3abcdb3f85467071e62580855489c179f4c40e72a95810ea14b",
     "125e36dbff4c86dc5b46bf8632657bdc98f26919a63f208910a625f715dfc35f",
     "1eaf4aab7431c0b6069295bb556b28917546a2e8ca96663b4d3989e530f2730d",
     "29bc060a3062e6aeb52dcd8886c103313e98a3f664981f63057ac521ec2ba423",
@@ -178,6 +183,12 @@
       "cleaned_title": "facebook s ai mode search gets its info public posts",
       "posted_at": "2026-06-15T21:37:23Z",
       "score": 8.5,
+      "source": "The Verge"
+    },
+    {
+      "cleaned_title": "spacex is officially buying cursor 60 billion",
+      "posted_at": "2026-06-16T12:13:01Z",
+      "score": 9.5,
       "source": "The Verge"
     }
   ]
