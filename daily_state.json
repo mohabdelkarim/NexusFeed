@@ -1,6 +1,6 @@
 {
   "date": "2026-06-16",
-  "last_post_time": "2026-06-16T12:13:01Z",
+  "last_post_time": "2026-06-16T17:25:42Z",
   "pending_best": {
     "authoritative_score": 8.0,
     "canonical_url": "https://www.wired.com/story/claude-tokens-compute-cost-code-8x8",
@@ -26,5 +26,5 @@
     "url": "https://www.wired.com/story/claude-tokens-compute-cost-code-8x8/",
     "url_hash": "4c2ced0c75c6232e32db6180e4aecdeed4261b28c8d01a0f5cbd069341c6dddb"
   },
-  "posts_today": 1
+  "posts_today": 2
 }
