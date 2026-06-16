@@ -1,26 +1,6 @@
 {
   "recent_titles": [
     {
-      "cleaned_title": "anthropic says these topics are too dangerous let its fable 5 model talk about",
-      "sent_at": "2026-06-09T20:15:03Z",
-      "url": "https://arstechnica.com/ai/2026/06/anthropic-says-these-topics-are-too-dangerous-to-let-its-fable-5-model-talk-about/"
-    },
-    {
-      "cleaned_title": "google announces gemini 3.5 live translate instant voice-to-voice translation",
-      "sent_at": "2026-06-09T20:15:03Z",
-      "url": "https://arstechnica.com/ai/2026/06/google-announces-gemini-3-5-live-translate-for-instant-voice-to-voice-translation/"
-    },
-    {
-      "cleaned_title": "anthropic releases its first mythos-class model claude fable",
-      "sent_at": "2026-06-09T20:15:03Z",
-      "url": "https://www.theverge.com/news/946725/anthropic-releases-claude-fable-5-mythos"
-    },
-    {
-      "cleaned_title": "apple says its still private, even when it's running google's servers",
-      "sent_at": "2026-06-09T20:15:03Z",
-      "url": "https://arstechnica.com/apple/2026/06/apple-says-its-ai-is-still-private-even-when-its-running-on-googles-servers/"
-    },
-    {
       "cleaned_title": "grok still hosting sexualized deepfakes famous women",
       "sent_at": "2026-06-11T20:29:40Z",
       "url": "https://www.wired.com/story/grok-is-still-hosting-sexualized-deepfakes-of-famous-women/"
@@ -144,6 +124,31 @@
       "cleaned_title": "salesforce acquires customer service platform fin $3.6b",
       "sent_at": "2026-06-15T21:13:03Z",
       "url": "https://techcrunch.com/2026/06/15/salesforce-acquires-ai-customer-service-platform-fin-for-3-6b/"
+    },
+    {
+      "cleaned_title": "leaked financial docs show openai losing billions dollars year",
+      "sent_at": "2026-06-16T21:11:59Z",
+      "url": "https://arstechnica.com/ai/2026/06/leaked-financial-docs-show-openai-is-losing-billions-of-dollars-a-year/"
+    },
+    {
+      "cleaned_title": "spacex acquire cursor $60b stock, days after blockbuster ipo",
+      "sent_at": "2026-06-16T21:11:59Z",
+      "url": "https://techcrunch.com/2026/06/16/spacex-to-acquire-cursor-for-60b-in-stock-days-after-blockbuster-ipo/"
+    },
+    {
+      "cleaned_title": "spacex valuation balloons $2.6t, briefly passes amazon",
+      "sent_at": "2026-06-16T21:11:59Z",
+      "url": "https://techcrunch.com/2026/06/16/spacex-valuation-balloons-to-2-6t-briefly-passes-amazon/"
+    },
+    {
+      "cleaned_title": "pentagon boasts using write reports mandated congress",
+      "sent_at": "2026-06-16T21:11:59Z",
+      "url": "https://arstechnica.com/ai/2026/06/pentagon-boasts-of-using-ai-to-write-reports-mandated-by-congress/"
+    },
+    {
+      "cleaned_title": "anthropic \"pauses\" token-based billing its claude agent sdk",
+      "sent_at": "2026-06-16T21:11:59Z",
+      "url": "https://arstechnica.com/ai/2026/06/anthropic-pauses-token-based-billing-for-its-claude-agent-sdk/"
     }
   ],
   "url_hashes": [
@@ -185,6 +190,11 @@
     "a9f0ab8e6b6cfb6c2175e08c39c6ac9a7929eb468b6f3bc415d3b99e71b0ccd3",
     "d432605b3cd1123da5d2e024f0634c87d953e2c412e2b98906b4d36606094f9c",
     "94b7866da73e1fa18dd5a55516f37e1eb94d1e49b5e4b6582945c201ac1efc7f",
-    "bd9bf27f1c675da1d4cd42b9b8bc1bc2af854bc49ef10ce57fc2b8651b70e359"
+    "bd9bf27f1c675da1d4cd42b9b8bc1bc2af854bc49ef10ce57fc2b8651b70e359",
+    "a54155c5488c751397b7500d5405103ba3507894cf23618609ff9a9f5ae4bf9a",
+    "bdb897e9b16cdf715c69138e332c90fec4fe0edcc9533312c82714f39a78f24d",
+    "aa6c9ee9734935c0099152bcae7d51edbfe36bbe516accc35433d4a5f5e38928",
+    "a63630bc9083677b15db0a0396b5393d3a54b36b9720465ca48fcfa52202b95b",
+    "ccb02d928b5259b743de5d1e088ab84428648234b4ed03e0851c097900a475ff"
   ]
 }
