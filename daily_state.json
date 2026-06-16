@@ -2,29 +2,29 @@
   "date": "2026-06-16",
   "last_post_time": "2026-06-16T17:25:42Z",
   "pending_best": {
-    "authoritative_score": 8.0,
-    "canonical_url": "https://www.wired.com/story/claude-tokens-compute-cost-code-8x8",
-    "cleaned_title": "pretty crazy token usage is testing bosses bet ai",
-    "index": 0,
-    "published_at": "2026-06-16T09:30:00Z",
-    "saved_at": "2026-06-16T09:58:31Z",
+    "authoritative_score": 9.0,
+    "canonical_url": "https://techcrunch.com/2026/06/16/android-17-launches-with-new-multitasking-tools-as-google-expands-gemini-features",
+    "cleaned_title": "android 17 multitasking tools as google expands gemini features",
+    "index": 1,
+    "published_at": "2026-06-16T18:00:00Z",
+    "saved_at": "2026-06-16T18:37:33Z",
     "score": {
       "freshness_score": 2.0,
       "impact_score": 2.5,
-      "novelty_score": 2.0,
-      "reason": "The article discusses the emerging challenge of tokenomics and its impact on businesses, making it a relevant and timely topic for software engineers and AI researchers.",
+      "novelty_score": 3.0,
+      "reason": "The article announces the launch of Android 17, which introduces new multitasking features and expands Gemini features, making it a significant development in the tech industry.",
       "red_flag": false,
       "red_flag_reason": null,
       "source_score": 1.5,
-      "total_score": 8.0
+      "total_score": 9.0
     },
-    "source": "Wired AI",
-    "summary": "A Silicon Valley software maker and an ecommerce company reveal to WIRED how they are navigating the emerging challenge of \u201ctokenomics.\u201d",
-    "telegram_message": "\ud83d\udd25 *\u2018Pretty Crazy\u2019 Token Usage Is Testing Bosses\u2019 Bet on AI*\n\nThe article discusses the emerging challenge of tokenomics and its impact on businesses, making it a relevant and timely topic for software...\n\n\ud83c\udfdb\ufe0f Source: Wired AI (A)\n\u23f0 Published: <1 hour ago\n\u2b50 Score: 8.0/10\n\n\ud83d\udd17 https://www.wired.com/story/claude-tokens-compute-cost-code-8x8/",
+    "source": "TechCrunch",
+    "summary": "Google has released Android 17 and Wear OS 7, introducing new multitasking features, parental controls, security tools, and smartwatch upgrades. The launch is also accompanied by a Pixel Drop that brings Google\u2019s latest AI models to its devices.",
+    "telegram_message": "\ud83d\udd25 *Android 17 launches with new multitasking tools as Google expands Gemini features*\n\nThe article announces the launch of Android 17, which introduces new multitasking features and expands Gemini features, making it a signifi...\n\n\ud83c\udfdb\ufe0f Source: TechCrunch (A)\n\u23f0 Published: <1 hour ago\n\u2b50 Score: 9.0/10\n\n\ud83d\udd17 https://techcrunch.com/2026/06/16/android-17-launches-with-new-multitasking-tools-as-google-expands-gemini-features/",
     "tier": "A",
-    "title": "\u2018Pretty Crazy\u2019 Token Usage Is Testing Bosses\u2019 Bet on AI",
-    "url": "https://www.wired.com/story/claude-tokens-compute-cost-code-8x8/",
-    "url_hash": "4c2ced0c75c6232e32db6180e4aecdeed4261b28c8d01a0f5cbd069341c6dddb"
+    "title": "Android 17 launches with new multitasking tools as Google expands Gemini features",
+    "url": "https://techcrunch.com/2026/06/16/android-17-launches-with-new-multitasking-tools-as-google-expands-gemini-features/",
+    "url_hash": "fc68331373f981907bfbf62e6f2c4a91f4b3f967635820e1f33e7d566029967a"
   },
   "posts_today": 2
 }
