@@ -1,30 +1,30 @@
 {
-  "date": "2026-06-15",
-  "last_post_time": "2026-06-15T21:37:23Z",
+  "date": "2026-06-16",
+  "last_post_time": null,
   "pending_best": {
-    "authoritative_score": 9.0,
-    "canonical_url": "https://www.marktechpost.com/2026/06/15/sakana-ai-marlin",
-    "cleaned_title": "sakana ai commercializes ab mcts sakana marlin enterprise agent generating up 100 page research reports slides",
+    "authoritative_score": 8.0,
+    "canonical_url": "https://arxiv.org/abs/2606.14885",
+    "cleaned_title": "dr dci scaling direct corpus interaction via dynamic workspace expansion",
     "index": 0,
-    "published_at": "2026-06-15T22:32:50Z",
-    "saved_at": "2026-06-15T23:24:47Z",
+    "published_at": "2026-06-16T04:00:00Z",
+    "saved_at": "2026-06-16T04:25:32Z",
     "score": {
       "freshness_score": 2.0,
       "impact_score": 2.5,
       "novelty_score": 3.0,
-      "reason": "High novelty, impact, and freshness scores due to the commercialization of a new AI product.",
+      "reason": "New research with high impact and freshness.",
       "red_flag": false,
       "red_flag_reason": null,
-      "source_score": 1.5,
-      "total_score": 9.0
+      "source_score": 0.5,
+      "total_score": 8.0
     },
-    "source": "MarkTechPost",
-    "summary": "Sakana AI's first commercial product runs autonomously for up to eight hours per task. It returns multi-page reports and slides, built on AB-MCTS and AI Scientist workflows. The post Sakana AI Commercializes AB-MCTS in Sakana Marlin, an Enterprise Agent Generating Up to 100-Page Research Reports Wi...",
-    "telegram_message": "\ud83d\udd25 *Sakana AI Commercializes AB-MCTS in Sakana Marlin, an Enterprise Agent Generating Up to 100-Page Research Reports With Slides*\n\nHigh novelty, impact, and freshness scores due to the commercialization of a new AI product.\n\n\ud83c\udfdb\ufe0f Source: MarkTechPost (A)\n\u23f0 Published: <1 hour ago\n\u2b50 Score: 9.0/10\n\n\ud83d\udd17 https://www.marktechpost.com/2026/06/15/sakana-ai-marlin/",
-    "tier": "A",
-    "title": "Sakana AI Commercializes AB-MCTS in Sakana Marlin, an Enterprise Agent Generating Up to 100-Page Research Reports With Slides",
-    "url": "https://www.marktechpost.com/2026/06/15/sakana-ai-marlin/",
-    "url_hash": "024b25c45f500b79d9eac82defbef788c67f2bc48e714773dc888b44debdc3d2"
+    "source": "arXiv cs.AI",
+    "summary": "arXiv:2606.14885v1 Announce Type: new Abstract: Agentic search over large corpora relies on retriever-mediated interfaces (e.g., BM25 or ColBERT) for scalable candidate discovery. While effective at ranking relevant documents, these interfaces expose evidence only as ranked results or bounded docum...",
+    "telegram_message": "\ud83d\udd25 *Dr-DCI: Scaling Direct Corpus Interaction via Dynamic Workspace Expansion*\n\nNew research with high impact and freshness.\n\n\ud83c\udfdb\ufe0f Source: arXiv cs.AI (C)\n\u23f0 Published: <1 hour ago\n\u2b50 Score: 8.0/10\n\n\ud83d\udd17 https://arxiv.org/abs/2606.14885",
+    "tier": "C",
+    "title": "Dr-DCI: Scaling Direct Corpus Interaction via Dynamic Workspace Expansion",
+    "url": "https://arxiv.org/abs/2606.14885",
+    "url_hash": "ba92a281793a15723add77ab9b3924e26e12de0560ed73f8fcc4a8ce55957797"
   },
-  "posts_today": 2
+  "posts_today": 0
 }
