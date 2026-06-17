@@ -1,6 +1,30 @@
 {
-  "date": "2026-06-16",
-  "last_post_time": "2026-06-16T21:35:39Z",
-  "pending_best": null,
-  "posts_today": 3
+  "date": "2026-06-17",
+  "last_post_time": null,
+  "pending_best": {
+    "authoritative_score": 7.5,
+    "canonical_url": "https://techcrunch.com/2026/06/16/anthropics-latest-feud-with-the-trump-admin-may-actually-help-it-sales-data-suggests",
+    "cleaned_title": "anthropic s latest feud trump admin may actually help it sales data suggests",
+    "index": 2,
+    "published_at": "2026-06-16T22:34:17Z",
+    "saved_at": "2026-06-17T02:05:15Z",
+    "score": {
+      "freshness_score": 1.5,
+      "impact_score": 2.5,
+      "novelty_score": 2.0,
+      "reason": "The article is about a recent industry move with significant impact.",
+      "red_flag": false,
+      "red_flag_reason": null,
+      "source_score": 1.5,
+      "total_score": 7.5
+    },
+    "source": "TechCrunch",
+    "summary": "Anthropic's popularity with business users is growing so well that the latest beef with the government might actually boost it, data from Ramp suggests.",
+    "telegram_message": "\ud83d\udd25 *Anthropic\u2019s latest feud with the Trump admin may actually help it, sales data suggests*\n\nThe article is about a recent industry move with significant impact.\n\n\ud83c\udfdb\ufe0f Source: TechCrunch (A)\n\u23f0 Published: 3 hours ago\n\u2b50 Score: 7.5/10\n\n\ud83d\udd17 https://techcrunch.com/2026/06/16/anthropics-latest-feud-with-the-trump-admin-may-actually-help-it-sales-data-suggests/",
+    "tier": "A",
+    "title": "Anthropic\u2019s latest feud with the Trump admin may actually help it, sales data suggests",
+    "url": "https://techcrunch.com/2026/06/16/anthropics-latest-feud-with-the-trump-admin-may-actually-help-it-sales-data-suggests/",
+    "url_hash": "1b87c6d3d1719b6c2c567a36c772df128abe6185f72a217c7db48872b894de1f"
+  },
+  "posts_today": 0
 }
