@@ -1,10 +1,6 @@
 {
   "hash_records": [
     {
-      "hash": "29bc060a3062e6aeb52dcd8886c103313e98a3f664981f63057ac521ec2ba423",
-      "posted_at": "2026-06-10T19:55:36Z"
-    },
-    {
       "hash": "da604b9c1ce499392c6b001ad4a5ddf2952b5634f4d517acf23a9a406ddd0715",
       "posted_at": "2026-06-11T11:23:42Z"
     },
@@ -76,7 +72,6 @@
   "hashes": [
     "092d2649f244b3abcdb3f85467071e62580855489c179f4c40e72a95810ea14b",
     "1eaf4aab7431c0b6069295bb556b28917546a2e8ca96663b4d3989e530f2730d",
-    "29bc060a3062e6aeb52dcd8886c103313e98a3f664981f63057ac521ec2ba423",
     "2a13a388a10613828daad9cb9fd3922b4889978c5eef893616f6b98b71eb229a",
     "5283bb1f8652b3a7cd93889f72cbe20ffb2d0d5657ae5d269d72c5ebf2be88db",
     "55cb6182b54ccf8df3275a34ca86764ec1e0b6626e3ca69f90b768543d0c3b71",
@@ -94,12 +89,6 @@
     "fc68331373f981907bfbf62e6f2c4a91f4b3f967635820e1f33e7d566029967a"
   ],
   "recent_titles": [
-    {
-      "cleaned_title": "google deepmind diffusiongemma model that runs local ai 4x faster",
-      "posted_at": "2026-06-10T19:55:36Z",
-      "score": 9.0,
-      "source": "Ars Technica"
-    },
     {
       "cleaned_title": "visa chatgpt integration enables ai agent retail purchasing",
       "posted_at": "2026-06-11T11:23:42Z",
