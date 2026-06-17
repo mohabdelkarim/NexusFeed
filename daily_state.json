@@ -3,28 +3,28 @@
   "last_post_time": "2026-06-17T19:32:52Z",
   "pending_best": {
     "authoritative_score": 8.0,
-    "canonical_url": "https://techcrunch.com/2026/06/17/pramaana-labs-raises-27-million-seed-round-from-khosla-ventures-to-bring-formal-verification-to-ai",
-    "cleaned_title": "pramaana labs raises 27m seed round khosla ventures bring formal verification ai",
-    "index": 1,
-    "published_at": "2026-06-17T14:15:22Z",
-    "saved_at": "2026-06-17T14:46:01Z",
+    "canonical_url": "https://www.wired.com/story/sk-telecom-anthropic-mythos-export-controls",
+    "cleaned_title": "korean telecom giant at center anthropic s mythos controversy",
+    "index": 0,
+    "published_at": "2026-06-17T22:52:00Z",
+    "saved_at": "2026-06-17T23:06:58Z",
     "score": {
       "freshness_score": 2.0,
       "impact_score": 2.5,
       "novelty_score": 2.0,
-      "reason": "The article reports on a significant funding round for an AI-related startup.",
+      "reason": "High impact and novelty score due to the involvement of a major telecom giant and a significant AI model controversy.",
       "red_flag": false,
       "red_flag_reason": null,
       "source_score": 1.5,
       "total_score": 8.0
     },
-    "source": "TechCrunch",
-    "summary": "Pramaana will focus on highly sensitive verticals like law, drug discovery, and tax preparation \u2014 where errors can be costly and reliability is at a premium.",
-    "telegram_message": "\ud83d\udd25 *Pramaana Labs raises $27M seed round from Khosla Ventures to bring formal verification to AI*\n\nThe article reports on a significant funding round for an AI-related startup.\n\n\ud83c\udfdb\ufe0f Source: TechCrunch (A)\n\u23f0 Published: <1 hour ago\n\u2b50 Score: 8.0/10\n\n\ud83d\udd17 https://techcrunch.com/2026/06/17/pramaana-labs-raises-27-million-seed-round-from-khosla-ventures-to-bring-formal-verification-to-ai/",
+    "source": "Wired AI",
+    "summary": "Days before Anthropic took its most advanced AI models offline, the White House ordered the company to revoke SK Telecom\u2019s access to Claude Mythos over claims of alleged ties to China.",
+    "telegram_message": "\ud83d\udd25 *The Korean Telecom Giant at the Center of Anthropic\u2019s Mythos Controversy*\n\nHigh impact and novelty score due to the involvement of a major telecom giant and a significant AI model controversy.\n\n\ud83c\udfdb\ufe0f Source: Wired AI (A)\n\u23f0 Published: <1 hour ago\n\u2b50 Score: 8.0/10\n\n\ud83d\udd17 https://www.wired.com/story/sk-telecom-anthropic-mythos-export-controls/",
     "tier": "A",
-    "title": "Pramaana Labs raises $27M seed round from Khosla Ventures to bring formal verification to AI",
-    "url": "https://techcrunch.com/2026/06/17/pramaana-labs-raises-27-million-seed-round-from-khosla-ventures-to-bring-formal-verification-to-ai/",
-    "url_hash": "35c5de2fa4b683760b119d49b60a50d82b226a307c336de94ba6e1f59a719e16"
+    "title": "The Korean Telecom Giant at the Center of Anthropic\u2019s Mythos Controversy",
+    "url": "https://www.wired.com/story/sk-telecom-anthropic-mythos-export-controls/",
+    "url_hash": "df7701f7052509546fd95afba13d5f2504b5de5eefecac0d72ea4e442df38006"
   },
   "posts_today": 2
 }
