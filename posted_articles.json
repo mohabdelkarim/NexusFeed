@@ -1,10 +1,6 @@
 {
   "hash_records": [
     {
-      "hash": "125e36dbff4c86dc5b46bf8632657bdc98f26919a63f208910a625f715dfc35f",
-      "posted_at": "2026-06-10T14:27:29Z"
-    },
-    {
       "hash": "29bc060a3062e6aeb52dcd8886c103313e98a3f664981f63057ac521ec2ba423",
       "posted_at": "2026-06-10T19:55:36Z"
     },
@@ -67,11 +63,14 @@
     {
       "hash": "fc68331373f981907bfbf62e6f2c4a91f4b3f967635820e1f33e7d566029967a",
       "posted_at": "2026-06-16T21:35:39Z"
+    },
+    {
+      "hash": "cb0050ce80fc13f0ad73174b3250b2e0794b4afe127c0809ac3867ffab6fc1f7",
+      "posted_at": "2026-06-17T14:46:01Z"
     }
   ],
   "hashes": [
     "092d2649f244b3abcdb3f85467071e62580855489c179f4c40e72a95810ea14b",
-    "125e36dbff4c86dc5b46bf8632657bdc98f26919a63f208910a625f715dfc35f",
     "1eaf4aab7431c0b6069295bb556b28917546a2e8ca96663b4d3989e530f2730d",
     "29bc060a3062e6aeb52dcd8886c103313e98a3f664981f63057ac521ec2ba423",
     "5283bb1f8652b3a7cd93889f72cbe20ffb2d0d5657ae5d269d72c5ebf2be88db",
@@ -81,6 +80,7 @@
     "74e1484708925cfdea608d16e7f02b3d64321c7fd288089de2f4dd07c54efba5",
     "9072570a39dc91ad8de1baba1808e3672d3d190f46a4d76c1babdf4b2ccfc416",
     "b8db8cbbb952d56495b0076bf582421ce787790ad41040159d9be942a37ce0ce",
+    "cb0050ce80fc13f0ad73174b3250b2e0794b4afe127c0809ac3867ffab6fc1f7",
     "da604b9c1ce499392c6b001ad4a5ddf2952b5634f4d517acf23a9a406ddd0715",
     "ed97a7971fbb0470372c22c61abdcd872f8246235bf6968ba58f2a4e3baf3574",
     "f3e47acb4975baeb91bf04348c0a2f8234000b62f92d0185b73eb7a346ed43df",
@@ -89,12 +89,6 @@
     "fc68331373f981907bfbf62e6f2c4a91f4b3f967635820e1f33e7d566029967a"
   ],
   "recent_titles": [
-    {
-      "cleaned_title": "china opens world s first wind powered underwater data center",
-      "posted_at": "2026-06-10T14:27:29Z",
-      "score": 8.5,
-      "source": "Wired AI"
-    },
     {
       "cleaned_title": "google deepmind diffusiongemma model that runs local ai 4x faster",
       "posted_at": "2026-06-10T19:55:36Z",
@@ -189,6 +183,12 @@
       "cleaned_title": "android 17 multitasking tools as google expands gemini features",
       "posted_at": "2026-06-16T21:35:39Z",
       "score": 9.0,
+      "source": "TechCrunch"
+    },
+    {
+      "cleaned_title": "pinterest experimental ai shopping app called ask pinterest",
+      "posted_at": "2026-06-17T14:46:01Z",
+      "score": 8.0,
       "source": "TechCrunch"
     }
   ]
