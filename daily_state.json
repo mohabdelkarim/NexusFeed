@@ -2,29 +2,29 @@
   "date": "2026-06-17",
   "last_post_time": null,
   "pending_best": {
-    "authoritative_score": 7.5,
-    "canonical_url": "https://techcrunch.com/2026/06/16/anthropics-latest-feud-with-the-trump-admin-may-actually-help-it-sales-data-suggests",
-    "cleaned_title": "anthropic s latest feud trump admin may actually help it sales data suggests",
-    "index": 2,
-    "published_at": "2026-06-16T22:34:17Z",
-    "saved_at": "2026-06-17T02:05:15Z",
+    "authoritative_score": 8.0,
+    "canonical_url": "https://techcrunch.com/2026/06/17/pinterest-launches-an-experimental-ai-shopping-app-called-ask-pinterest",
+    "cleaned_title": "pinterest experimental ai shopping app called ask pinterest",
+    "index": 0,
+    "published_at": "2026-06-17T11:00:00Z",
+    "saved_at": "2026-06-17T11:50:08Z",
     "score": {
-      "freshness_score": 1.5,
+      "freshness_score": 2.0,
       "impact_score": 2.5,
       "novelty_score": 2.0,
-      "reason": "The article is about a recent industry move with significant impact.",
+      "reason": "The article is about a new AI shopping app, which is a novelty, and it has a high impact on the shopping experience.",
       "red_flag": false,
       "red_flag_reason": null,
       "source_score": 1.5,
-      "total_score": 7.5
+      "total_score": 8.0
     },
     "source": "TechCrunch",
-    "summary": "Anthropic's popularity with business users is growing so well that the latest beef with the government might actually boost it, data from Ramp suggests.",
-    "telegram_message": "\ud83d\udd25 *Anthropic\u2019s latest feud with the Trump admin may actually help it, sales data suggests*\n\nThe article is about a recent industry move with significant impact.\n\n\ud83c\udfdb\ufe0f Source: TechCrunch (A)\n\u23f0 Published: 3 hours ago\n\u2b50 Score: 7.5/10\n\n\ud83d\udd17 https://techcrunch.com/2026/06/16/anthropics-latest-feud-with-the-trump-admin-may-actually-help-it-sales-data-suggests/",
+    "summary": "Pinterest has launched 'Ask Pinterest,' an experimental AI-powered shopping app that lets users seek recommendations and inspiration through a conversational interface.",
+    "telegram_message": "\ud83d\udd25 *Pinterest launches an experimental AI shopping app called \u2018Ask Pinterest\u2019*\n\nThe article is about a new AI shopping app, which is a novelty, and it has a high impact on the shopping experience.\n\n\ud83c\udfdb\ufe0f Source: TechCrunch (A)\n\u23f0 Published: <1 hour ago\n\u2b50 Score: 8.0/10\n\n\ud83d\udd17 https://techcrunch.com/2026/06/17/pinterest-launches-an-experimental-ai-shopping-app-called-ask-pinterest/",
     "tier": "A",
-    "title": "Anthropic\u2019s latest feud with the Trump admin may actually help it, sales data suggests",
-    "url": "https://techcrunch.com/2026/06/16/anthropics-latest-feud-with-the-trump-admin-may-actually-help-it-sales-data-suggests/",
-    "url_hash": "1b87c6d3d1719b6c2c567a36c772df128abe6185f72a217c7db48872b894de1f"
+    "title": "Pinterest launches an experimental AI shopping app called \u2018Ask Pinterest\u2019",
+    "url": "https://techcrunch.com/2026/06/17/pinterest-launches-an-experimental-ai-shopping-app-called-ask-pinterest/",
+    "url_hash": "cb0050ce80fc13f0ad73174b3250b2e0794b4afe127c0809ac3867ffab6fc1f7"
   },
   "posts_today": 0
 }
