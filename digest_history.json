@@ -149,6 +149,31 @@
       "cleaned_title": "anthropic \"pauses\" token-based billing its claude agent sdk",
       "sent_at": "2026-06-16T21:11:59Z",
       "url": "https://arstechnica.com/ai/2026/06/anthropic-pauses-token-based-billing-for-its-claude-agent-sdk/"
+    },
+    {
+      "cleaned_title": "world leaders want american ai. they just don\u2019t want america be able turn it off.",
+      "sent_at": "2026-06-17T20:23:23Z",
+      "url": "https://techcrunch.com/2026/06/17/world-leaders-want-american-ai-they-just-dont-want-america-to-be-able-to-turn-it-off/"
+    },
+    {
+      "cleaned_title": "anthropic got hit export rules nobody understands",
+      "sent_at": "2026-06-17T20:23:23Z",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/951703/anthropic-shutdown-export-controls"
+    },
+    {
+      "cleaned_title": "nea\u2019s tiffany luck says enterprises are still figuring out their roi",
+      "sent_at": "2026-06-17T20:23:23Z",
+      "url": "https://techcrunch.com/video/neas-tiffany-luck-says-enterprises-are-still-figuring-out-their-ai-roi/"
+    },
+    {
+      "cleaned_title": "coding agents taught robots install gpus cut zip-ties",
+      "sent_at": "2026-06-17T20:23:23Z",
+      "url": "https://arstechnica.com/ai/2026/06/ai-coding-agents-can-autonomously-direct-robot-training/"
+    },
+    {
+      "cleaned_title": "research shows amie, our medical ai, could help manage health conditions.",
+      "sent_at": "2026-06-17T20:23:23Z",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-for-disease-management-in-nature/"
     }
   ],
   "url_hashes": [
@@ -195,6 +220,11 @@
     "bdb897e9b16cdf715c69138e332c90fec4fe0edcc9533312c82714f39a78f24d",
     "aa6c9ee9734935c0099152bcae7d51edbfe36bbe516accc35433d4a5f5e38928",
     "a63630bc9083677b15db0a0396b5393d3a54b36b9720465ca48fcfa52202b95b",
-    "ccb02d928b5259b743de5d1e088ab84428648234b4ed03e0851c097900a475ff"
+    "ccb02d928b5259b743de5d1e088ab84428648234b4ed03e0851c097900a475ff",
+    "819ce18c6e685e747dde650ee87055a9eb8124bbd716164cb7de4f80fb6bab87",
+    "c1fa95dd22fb68370e19c8c96358916974ce7782ccd87ed6090ad6e10aaeced2",
+    "f709715eb74f68ad82330393a038cd0e1c19bee116100e8d070b92d525712fc5",
+    "2a13a388a10613828daad9cb9fd3922b4889978c5eef893616f6b98b71eb229a",
+    "866972b9be74b22136123688f0b414f3f65b1bcdb970264412a6a96d2f3cde27"
   ]
 }
