@@ -1,31 +1,6 @@
 {
   "recent_titles": [
     {
-      "cleaned_title": "grok still hosting sexualized deepfakes famous women",
-      "sent_at": "2026-06-11T20:29:40Z",
-      "url": "https://www.wired.com/story/grok-is-still-hosting-sexualized-deepfakes-of-famous-women/"
-    },
-    {
-      "cleaned_title": "openai's gpt-5.5 codex reach general availability amazon bedrock",
-      "sent_at": "2026-06-11T20:29:40Z",
-      "url": "https://www.infoq.com/news/2026/06/openai-frontier-models-aws/"
-    },
-    {
-      "cleaned_title": "meet \u2018north mini code\u2019: cohere\u2019s 30b open-weight mixture-of-experts model 3b active parameters agentic coding",
-      "sent_at": "2026-06-11T20:29:40Z",
-      "url": "https://www.marktechpost.com/2026/06/11/meet-north-mini-code-coheres-30b-open-weight-mixture-of-experts-model-with-3b-active-parameters-for-agentic-coding/"
-    },
-    {
-      "cleaned_title": "deezer\u2019s tool can identify music spotify, apple music, others",
-      "sent_at": "2026-06-11T20:29:40Z",
-      "url": "https://techcrunch.com/2026/06/11/deezers-new-tool-can-identify-ai-music-from-spotify-apple-music-and-others/"
-    },
-    {
-      "cleaned_title": "visa chatgpt integration enables agent retail purchasing",
-      "sent_at": "2026-06-11T20:29:40Z",
-      "url": "https://www.artificialintelligence-news.com/news/visa-chatgpt-integration-enables-ai-agent-retail-purchasing/"
-    },
-    {
       "cleaned_title": "elon musk world\u2019s first trillionaire",
       "sent_at": "2026-06-12T20:20:15Z",
       "url": "https://www.theverge.com/ai-artificial-intelligence/948409/elon-musk-trillionaire-spacex-ipo"
@@ -174,6 +149,31 @@
       "cleaned_title": "research shows amie, our medical ai, could help manage health conditions.",
       "sent_at": "2026-06-17T20:23:23Z",
       "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-for-disease-management-in-nature/"
+    },
+    {
+      "cleaned_title": "perplexity launches brain, self-improving memory system that builds context graph agent\u2019s work learns overnight",
+      "sent_at": "2026-06-18T20:34:00Z",
+      "url": "https://www.marktechpost.com/2026/06/18/perplexity-launches-brain/"
+    },
+    {
+      "cleaned_title": "openai bringing some big guns lead-up its ipo",
+      "sent_at": "2026-06-18T20:34:00Z",
+      "url": "https://techcrunch.com/2026/06/18/openai-is-bringing-on-some-big-guns-in-the-lead-up-to-its-ipo/"
+    },
+    {
+      "cleaned_title": "amazon hopes challenge nvidia more directly selling its chips",
+      "sent_at": "2026-06-18T20:34:00Z",
+      "url": "https://techcrunch.com/2026/06/18/amazon-hopes-to-challenge-nvidia-more-directly-by-selling-its-ai-chips/"
+    },
+    {
+      "cleaned_title": "mosaicleaks: can your research agent keep secret?",
+      "sent_at": "2026-06-18T20:34:00Z",
+      "url": "https://huggingface.co/blog/ServiceNow/mosaicleaks"
+    },
+    {
+      "cleaned_title": "usage analytics updated spend controls enterprises",
+      "sent_at": "2026-06-18T20:34:00Z",
+      "url": "https://openai.com/index/chatgpt-enterprise-spend-controls"
     }
   ],
   "url_hashes": [
@@ -225,6 +225,11 @@
     "c1fa95dd22fb68370e19c8c96358916974ce7782ccd87ed6090ad6e10aaeced2",
     "f709715eb74f68ad82330393a038cd0e1c19bee116100e8d070b92d525712fc5",
     "2a13a388a10613828daad9cb9fd3922b4889978c5eef893616f6b98b71eb229a",
-    "866972b9be74b22136123688f0b414f3f65b1bcdb970264412a6a96d2f3cde27"
+    "866972b9be74b22136123688f0b414f3f65b1bcdb970264412a6a96d2f3cde27",
+    "329ab127198d39ad1733e3acdf463f53ffc80a3aee17e78a37c79cfb79405da5",
+    "f53aff1afeef2419060a8089393446d64d5155647e8667e370386469ffa10102",
+    "be26d7f567ae2eaddcf48b549b8ce183be190bf908e34af94d3aa046c0369dda",
+    "2eb5bcc3ad88b97ec36616da4492f783e0b7188871f20dd0ee456f000c78f604",
+    "450d5ccfb1602dc277cdfc7081592af9d5770b23e6395d73e1190a55a4b14872"
   ]
 }
