@@ -1,10 +1,6 @@
 {
   "hash_records": [
     {
-      "hash": "5d052fa633025fcc16aad26ebf1a82a7037855359439665dfeed6d8283442744",
-      "posted_at": "2026-06-11T20:01:46Z"
-    },
-    {
       "hash": "74e1484708925cfdea608d16e7f02b3d64321c7fd288089de2f4dd07c54efba5",
       "posted_at": "2026-06-12T14:14:54Z"
     },
@@ -63,6 +59,10 @@
     {
       "hash": "afbabd6e27a244a433c2bb672e96b1d49791b555038d1779fdfe5b7eca43cc19",
       "posted_at": "2026-06-18T14:23:03Z"
+    },
+    {
+      "hash": "e5b23f303b9737e9da74126a233f785714fb5edb30a00649fb8dc9390ac970cc",
+      "posted_at": "2026-06-18T21:51:32Z"
     }
   ],
   "hashes": [
@@ -72,24 +72,18 @@
     "5283bb1f8652b3a7cd93889f72cbe20ffb2d0d5657ae5d269d72c5ebf2be88db",
     "55cb6182b54ccf8df3275a34ca86764ec1e0b6626e3ca69f90b768543d0c3b71",
     "5654027cea7c5eda9a499751cd35b6a1427cdd235dfb98fb737888e23946bcfd",
-    "5d052fa633025fcc16aad26ebf1a82a7037855359439665dfeed6d8283442744",
     "74e1484708925cfdea608d16e7f02b3d64321c7fd288089de2f4dd07c54efba5",
     "9072570a39dc91ad8de1baba1808e3672d3d190f46a4d76c1babdf4b2ccfc416",
     "afbabd6e27a244a433c2bb672e96b1d49791b555038d1779fdfe5b7eca43cc19",
     "b8db8cbbb952d56495b0076bf582421ce787790ad41040159d9be942a37ce0ce",
     "cb0050ce80fc13f0ad73174b3250b2e0794b4afe127c0809ac3867ffab6fc1f7",
+    "e5b23f303b9737e9da74126a233f785714fb5edb30a00649fb8dc9390ac970cc",
     "ed97a7971fbb0470372c22c61abdcd872f8246235bf6968ba58f2a4e3baf3574",
     "fac2e3fad262e89a5e6e09e7f8b43f099c1b4f50d2273be80e6a645280fcb67b",
     "fb4772aafa138c02ee2a4aa520c9f05c6d7c80ab53c112d5cc8bd6d4d9d95563",
     "fc68331373f981907bfbf62e6f2c4a91f4b3f967635820e1f33e7d566029967a"
   ],
   "recent_titles": [
-    {
-      "cleaned_title": "grok is still hosting sexualized deepfakes famous women",
-      "posted_at": "2026-06-11T20:01:46Z",
-      "score": 8.5,
-      "source": "Wired AI"
-    },
     {
       "cleaned_title": "spacex is now public",
       "posted_at": "2026-06-12T14:14:54Z",
@@ -178,6 +172,12 @@
       "cleaned_title": "uk will scan asylum seekers faces age checks despite knowing tech is flawed",
       "posted_at": "2026-06-18T14:23:03Z",
       "score": 8.0,
+      "source": "Wired AI"
+    },
+    {
+      "cleaned_title": "white house is making up its rules ai real time",
+      "posted_at": "2026-06-18T21:51:32Z",
+      "score": 9.0,
       "source": "Wired AI"
     }
   ]
