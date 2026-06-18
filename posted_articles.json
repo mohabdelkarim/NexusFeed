@@ -1,10 +1,6 @@
 {
   "hash_records": [
     {
-      "hash": "f3e47acb4975baeb91bf04348c0a2f8234000b62f92d0185b73eb7a346ed43df",
-      "posted_at": "2026-06-11T15:04:00Z"
-    },
-    {
       "hash": "5d052fa633025fcc16aad26ebf1a82a7037855359439665dfeed6d8283442744",
       "posted_at": "2026-06-11T20:01:46Z"
     },
@@ -83,18 +79,11 @@
     "b8db8cbbb952d56495b0076bf582421ce787790ad41040159d9be942a37ce0ce",
     "cb0050ce80fc13f0ad73174b3250b2e0794b4afe127c0809ac3867ffab6fc1f7",
     "ed97a7971fbb0470372c22c61abdcd872f8246235bf6968ba58f2a4e3baf3574",
-    "f3e47acb4975baeb91bf04348c0a2f8234000b62f92d0185b73eb7a346ed43df",
     "fac2e3fad262e89a5e6e09e7f8b43f099c1b4f50d2273be80e6a645280fcb67b",
     "fb4772aafa138c02ee2a4aa520c9f05c6d7c80ab53c112d5cc8bd6d4d9d95563",
     "fc68331373f981907bfbf62e6f2c4a91f4b3f967635820e1f33e7d566029967a"
   ],
   "recent_titles": [
-    {
-      "cleaned_title": "opendoor s india exit is fueling bigger conversation about ai outsourcing",
-      "posted_at": "2026-06-11T15:04:00Z",
-      "score": 7.5,
-      "source": "TechCrunch"
-    },
     {
       "cleaned_title": "grok is still hosting sexualized deepfakes famous women",
       "posted_at": "2026-06-11T20:01:46Z",
