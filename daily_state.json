@@ -2,29 +2,29 @@
   "date": "2026-06-18",
   "last_post_time": null,
   "pending_best": {
-    "authoritative_score": 7.5,
-    "canonical_url": "https://www.wired.com/story/sk-telecom-anthropic-mythos-export-controls",
-    "cleaned_title": "korean telecom giant at center anthropic s mythos controversy",
-    "index": 0,
-    "published_at": "2026-06-17T22:52:00Z",
-    "saved_at": "2026-06-18T02:03:24Z",
+    "authoritative_score": 8.0,
+    "canonical_url": "https://www.wired.com/story/facial-age-estimate-uk-asylum-seekers",
+    "cleaned_title": "uk will scan asylum seekers faces age checks despite knowing tech is flawed",
+    "index": 1,
+    "published_at": "2026-06-18T06:00:00Z",
+    "saved_at": "2026-06-18T07:13:10Z",
     "score": {
       "freshness_score": 1.5,
       "impact_score": 2.5,
-      "novelty_score": 2.0,
-      "reason": "The article discusses a recent controversy surrounding Anthropic's Mythos, which is a significant development in the AI industry.",
+      "novelty_score": 2.5,
+      "reason": "The article discusses a new technology being used by the UK government, which has significant implications for asylum seekers and raises important questions about the use of flawed technology.",
       "red_flag": false,
       "red_flag_reason": null,
       "source_score": 1.5,
-      "total_score": 7.5
+      "total_score": 8.0
     },
     "source": "Wired AI",
-    "summary": "Days before Anthropic took its most advanced AI models offline, the White House ordered the company to revoke SK Telecom\u2019s access to Claude Mythos over claims of alleged ties to China.",
-    "telegram_message": "\ud83d\udd25 *The Korean Telecom Giant at the Center of Anthropic\u2019s Mythos Controversy*\n\nThe article discusses a recent controversy surrounding Anthropic's Mythos, which is a significant development in the AI industry.\n\n\ud83c\udfdb\ufe0f Source: Wired AI (A)\n\u23f0 Published: 3 hours ago\n\u2b50 Score: 7.5/10\n\n\ud83d\udd17 https://www.wired.com/story/sk-telecom-anthropic-mythos-export-controls/",
+    "summary": "Internal Home Office tests of age-verification technology show the risks of life-altering errors. It\u2019s moving forward anyway.",
+    "telegram_message": "\ud83d\udd25 *The UK Will Scan Asylum-Seekers\u2019 Faces for Age Checks\u2014Despite Knowing the Tech Is Flawed*\n\nThe article discusses a new technology being used by the UK government, which has significant implications for asylum seekers and raises im...\n\n\ud83c\udfdb\ufe0f Source: Wired AI (A)\n\u23f0 Published: 1 hour ago\n\u2b50 Score: 8.0/10\n\n\ud83d\udd17 https://www.wired.com/story/facial-age-estimate-uk-asylum-seekers/",
     "tier": "A",
-    "title": "The Korean Telecom Giant at the Center of Anthropic\u2019s Mythos Controversy",
-    "url": "https://www.wired.com/story/sk-telecom-anthropic-mythos-export-controls/",
-    "url_hash": "df7701f7052509546fd95afba13d5f2504b5de5eefecac0d72ea4e442df38006"
+    "title": "The UK Will Scan Asylum-Seekers\u2019 Faces for Age Checks\u2014Despite Knowing the Tech Is Flawed",
+    "url": "https://www.wired.com/story/facial-age-estimate-uk-asylum-seekers/",
+    "url_hash": "afbabd6e27a244a433c2bb672e96b1d49791b555038d1779fdfe5b7eca43cc19"
   },
   "posts_today": 0
 }
