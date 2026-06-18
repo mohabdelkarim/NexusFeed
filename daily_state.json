@@ -1,30 +1,30 @@
 {
-  "date": "2026-06-17",
-  "last_post_time": "2026-06-17T19:32:52Z",
+  "date": "2026-06-18",
+  "last_post_time": null,
   "pending_best": {
-    "authoritative_score": 8.0,
+    "authoritative_score": 7.5,
     "canonical_url": "https://www.wired.com/story/sk-telecom-anthropic-mythos-export-controls",
     "cleaned_title": "korean telecom giant at center anthropic s mythos controversy",
     "index": 0,
     "published_at": "2026-06-17T22:52:00Z",
-    "saved_at": "2026-06-17T23:26:54Z",
+    "saved_at": "2026-06-18T02:03:24Z",
     "score": {
-      "freshness_score": 2.0,
+      "freshness_score": 1.5,
       "impact_score": 2.5,
       "novelty_score": 2.0,
-      "reason": "High novelty and impact scores due to the controversy surrounding Anthropic's Mythos and its connection to a major telecom giant.",
+      "reason": "The article discusses a recent controversy surrounding Anthropic's Mythos, which is a significant development in the AI industry.",
       "red_flag": false,
       "red_flag_reason": null,
       "source_score": 1.5,
-      "total_score": 8.0
+      "total_score": 7.5
     },
     "source": "Wired AI",
     "summary": "Days before Anthropic took its most advanced AI models offline, the White House ordered the company to revoke SK Telecom\u2019s access to Claude Mythos over claims of alleged ties to China.",
-    "telegram_message": "\ud83d\udd25 *The Korean Telecom Giant at the Center of Anthropic\u2019s Mythos Controversy*\n\nHigh novelty and impact scores due to the controversy surrounding Anthropic's Mythos and its connection to a major telecom giant.\n\n\ud83c\udfdb\ufe0f Source: Wired AI (A)\n\u23f0 Published: <1 hour ago\n\u2b50 Score: 8.0/10\n\n\ud83d\udd17 https://www.wired.com/story/sk-telecom-anthropic-mythos-export-controls/",
+    "telegram_message": "\ud83d\udd25 *The Korean Telecom Giant at the Center of Anthropic\u2019s Mythos Controversy*\n\nThe article discusses a recent controversy surrounding Anthropic's Mythos, which is a significant development in the AI industry.\n\n\ud83c\udfdb\ufe0f Source: Wired AI (A)\n\u23f0 Published: 3 hours ago\n\u2b50 Score: 7.5/10\n\n\ud83d\udd17 https://www.wired.com/story/sk-telecom-anthropic-mythos-export-controls/",
     "tier": "A",
     "title": "The Korean Telecom Giant at the Center of Anthropic\u2019s Mythos Controversy",
     "url": "https://www.wired.com/story/sk-telecom-anthropic-mythos-export-controls/",
     "url_hash": "df7701f7052509546fd95afba13d5f2504b5de5eefecac0d72ea4e442df38006"
   },
-  "posts_today": 2
+  "posts_today": 0
 }
