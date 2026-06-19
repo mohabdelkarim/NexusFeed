@@ -67,6 +67,10 @@
     {
       "hash": "2fee3d084618ca8ab24d1e8a5176f80c02acb50f547811d6c360ef9d5c20ddac",
       "posted_at": "2026-06-19T14:25:51Z"
+    },
+    {
+      "hash": "8509e4e9c51ce48c48c43abe692cd8f03aa04cc99ed6434e7ab48e43881a322f",
+      "posted_at": "2026-06-19T18:20:11Z"
     }
   ],
   "hashes": [
@@ -78,6 +82,7 @@
     "5283bb1f8652b3a7cd93889f72cbe20ffb2d0d5657ae5d269d72c5ebf2be88db",
     "55cb6182b54ccf8df3275a34ca86764ec1e0b6626e3ca69f90b768543d0c3b71",
     "5654027cea7c5eda9a499751cd35b6a1427cdd235dfb98fb737888e23946bcfd",
+    "8509e4e9c51ce48c48c43abe692cd8f03aa04cc99ed6434e7ab48e43881a322f",
     "9072570a39dc91ad8de1baba1808e3672d3d190f46a4d76c1babdf4b2ccfc416",
     "afbabd6e27a244a433c2bb672e96b1d49791b555038d1779fdfe5b7eca43cc19",
     "b8db8cbbb952d56495b0076bf582421ce787790ad41040159d9be942a37ce0ce",
@@ -190,6 +195,12 @@
       "posted_at": "2026-06-19T14:25:51Z",
       "score": 7.5,
       "source": "arXiv cs.AI"
+    },
+    {
+      "cleaned_title": "sap google cloud deploy agentic commerce architecture",
+      "posted_at": "2026-06-19T18:20:11Z",
+      "score": 7.5,
+      "source": "AI News"
     }
   ]
 }
