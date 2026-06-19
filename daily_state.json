@@ -1,6 +1,6 @@
 {
   "date": "2026-06-19",
-  "last_post_time": null,
+  "last_post_time": "2026-06-19T11:25:17Z",
   "pending_best": {
     "authoritative_score": 7.5,
     "canonical_url": "https://arxiv.org/abs/2606.19464",
@@ -26,5 +26,5 @@
     "url": "https://arxiv.org/abs/2606.19464",
     "url_hash": "2fee3d084618ca8ab24d1e8a5176f80c02acb50f547811d6c360ef9d5c20ddac"
   },
-  "posts_today": 0
+  "posts_today": 1
 }

@@ -63,9 +63,14 @@
     {
       "hash": "e5b23f303b9737e9da74126a233f785714fb5edb30a00649fb8dc9390ac970cc",
       "posted_at": "2026-06-18T21:51:32Z"
+    },
+    {
+      "hash": "0162de192780ba16125b1d12598b348b1afb7cbf2b546f8283c5ed2a421a0e6e",
+      "posted_at": "2026-06-19T11:25:17Z"
     }
   ],
   "hashes": [
+    "0162de192780ba16125b1d12598b348b1afb7cbf2b546f8283c5ed2a421a0e6e",
     "092d2649f244b3abcdb3f85467071e62580855489c179f4c40e72a95810ea14b",
     "1eaf4aab7431c0b6069295bb556b28917546a2e8ca96663b4d3989e530f2730d",
     "2a13a388a10613828daad9cb9fd3922b4889978c5eef893616f6b98b71eb229a",
@@ -179,6 +184,12 @@
       "posted_at": "2026-06-18T21:51:32Z",
       "score": 9.0,
       "source": "Wired AI"
+    },
+    {
+      "cleaned_title": "liquid ai introduces lfm2 5 embedding 350m lfm2 5 colbert 350m dense bi encoder late interaction models fast multilingual search across 11 languages",
+      "posted_at": "2026-06-19T11:25:17Z",
+      "score": 9.0,
+      "source": "MarkTechPost"
     }
   ]
 }
