@@ -1,30 +1,30 @@
 {
-  "date": "2026-06-18",
-  "last_post_time": "2026-06-18T21:51:32Z",
+  "date": "2026-06-19",
+  "last_post_time": null,
   "pending_best": {
-    "authoritative_score": 8.0,
-    "canonical_url": "https://www.wired.com/story/uncanny-valley-podcast-meta-ai-workers-revolting-peter-thiel-secret-society-sbf-plea-to-trump",
-    "cleaned_title": "meta s ai workers are revolting peter thiel s secret society sbf s plea trump",
+    "authoritative_score": 7.5,
+    "canonical_url": "https://arxiv.org/abs/2606.19464",
+    "cleaned_title": "deontic policies runtime governance agentic ai systems",
     "index": 0,
-    "published_at": "2026-06-18T19:29:51Z",
-    "saved_at": "2026-06-18T19:38:20Z",
+    "published_at": "2026-06-19T04:00:00Z",
+    "saved_at": "2026-06-19T04:41:11Z",
     "score": {
       "freshness_score": 2.0,
       "impact_score": 2.5,
-      "novelty_score": 2.0,
-      "reason": "The article discusses a recent development in Meta's AI unit, which is likely to be of interest to software engineers and AI researchers.",
+      "novelty_score": 2.5,
+      "reason": "New research on agentic AI systems with high impact on the field.",
       "red_flag": false,
       "red_flag_reason": null,
-      "source_score": 1.5,
-      "total_score": 8.0
+      "source_score": 0.5,
+      "total_score": 7.5
     },
-    "source": "Wired AI",
-    "summary": "On today\u2019s Uncanny Valley, we dive into the dysfunction in Meta\u2019s newly formed AI unit and why it\u2019s been driving already-low employee morale even further into the ground.",
-    "telegram_message": "\ud83d\udd25 *Meta\u2019s AI Workers Are Revolting, Peter Thiel\u2019s Secret Society, and SBF\u2019s Plea to Trump*\n\nThe article discusses a recent development in Meta's AI unit, which is likely to be of interest to software engineers and AI researchers.\n\n\ud83c\udfdb\ufe0f Source: Wired AI (A)\n\u23f0 Published: <1 hour ago\n\u2b50 Score: 8.0/10\n\n\ud83d\udd17 https://www.wired.com/story/uncanny-valley-podcast-meta-ai-workers-revolting-peter-thiel-secret-society-sbf-plea-to-trump/",
-    "tier": "A",
-    "title": "Meta\u2019s AI Workers Are Revolting, Peter Thiel\u2019s Secret Society, and SBF\u2019s Plea to Trump",
-    "url": "https://www.wired.com/story/uncanny-valley-podcast-meta-ai-workers-revolting-peter-thiel-secret-society-sbf-plea-to-trump/",
-    "url_hash": "7b970ffb45cf50e94fa08000370c483da0d7b6258904545fe50cd663ae0f4269"
+    "source": "arXiv cs.AI",
+    "summary": "arXiv:2606.19464v1 Announce Type: new Abstract: Autonomous agentic AI systems driven by Large Language Models (LLMs) introduce a new class of security, privacy, and compliance challenges: an agent that can invoke tools, manipulate data, install software, and coordinate with peer agents across organ...",
+    "telegram_message": "\ud83d\udd25 *Deontic Policies for Runtime Governance of Agentic AI Systems*\n\nNew research on agentic AI systems with high impact on the field.\n\n\ud83c\udfdb\ufe0f Source: arXiv cs.AI (C)\n\u23f0 Published: <1 hour ago\n\u2b50 Score: 7.5/10\n\n\ud83d\udd17 https://arxiv.org/abs/2606.19464",
+    "tier": "C",
+    "title": "Deontic Policies for Runtime Governance of Agentic AI Systems",
+    "url": "https://arxiv.org/abs/2606.19464",
+    "url_hash": "2fee3d084618ca8ab24d1e8a5176f80c02acb50f547811d6c360ef9d5c20ddac"
   },
-  "posts_today": 2
+  "posts_today": 0
 }
