@@ -1,10 +1,6 @@
 {
   "hash_records": [
     {
-      "hash": "b8db8cbbb952d56495b0076bf582421ce787790ad41040159d9be942a37ce0ce",
-      "posted_at": "2026-06-12T18:32:47Z"
-    },
-    {
       "hash": "5283bb1f8652b3a7cd93889f72cbe20ffb2d0d5657ae5d269d72c5ebf2be88db",
       "posted_at": "2026-06-13T11:51:21Z"
     },
@@ -85,7 +81,6 @@
     "8509e4e9c51ce48c48c43abe692cd8f03aa04cc99ed6434e7ab48e43881a322f",
     "9072570a39dc91ad8de1baba1808e3672d3d190f46a4d76c1babdf4b2ccfc416",
     "afbabd6e27a244a433c2bb672e96b1d49791b555038d1779fdfe5b7eca43cc19",
-    "b8db8cbbb952d56495b0076bf582421ce787790ad41040159d9be942a37ce0ce",
     "cb0050ce80fc13f0ad73174b3250b2e0794b4afe127c0809ac3867ffab6fc1f7",
     "e5b23f303b9737e9da74126a233f785714fb5edb30a00649fb8dc9390ac970cc",
     "ed97a7971fbb0470372c22c61abdcd872f8246235bf6968ba58f2a4e3baf3574",
@@ -94,12 +89,6 @@
     "fc68331373f981907bfbf62e6f2c4a91f4b3f967635820e1f33e7d566029967a"
   ],
   "recent_titles": [
-    {
-      "cleaned_title": "ukraine s one time test used fully autonomous drones kill russian soldiers",
-      "posted_at": "2026-06-12T18:32:47Z",
-      "score": 8.5,
-      "source": "Ars Technica"
-    },
     {
       "cleaned_title": "future hollywood isn t feeding prompts into vanilla gen ai models",
       "posted_at": "2026-06-13T11:51:21Z",
