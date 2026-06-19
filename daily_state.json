@@ -1,30 +1,30 @@
 {
   "date": "2026-06-19",
-  "last_post_time": "2026-06-19T11:25:17Z",
+  "last_post_time": "2026-06-19T14:25:51Z",
   "pending_best": {
     "authoritative_score": 7.5,
-    "canonical_url": "https://arxiv.org/abs/2606.19464",
-    "cleaned_title": "deontic policies runtime governance agentic ai systems",
+    "canonical_url": "https://www.artificialintelligence-news.com/news/sap-and-google-cloud-deploy-agentic-commerce-architecture",
+    "cleaned_title": "sap google cloud deploy agentic commerce architecture",
     "index": 0,
-    "published_at": "2026-06-19T04:00:00Z",
-    "saved_at": "2026-06-19T04:41:11Z",
+    "published_at": "2026-06-19T14:02:20Z",
+    "saved_at": "2026-06-19T14:25:51Z",
     "score": {
       "freshness_score": 2.0,
       "impact_score": 2.5,
-      "novelty_score": 2.5,
-      "reason": "New research on agentic AI systems with high impact on the field.",
+      "novelty_score": 2.0,
+      "reason": "Industry move with significant impact on multiple companies",
       "red_flag": false,
       "red_flag_reason": null,
-      "source_score": 0.5,
+      "source_score": 1.0,
       "total_score": 7.5
     },
-    "source": "arXiv cs.AI",
-    "summary": "arXiv:2606.19464v1 Announce Type: new Abstract: Autonomous agentic AI systems driven by Large Language Models (LLMs) introduce a new class of security, privacy, and compliance challenges: an agent that can invoke tools, manipulate data, install software, and coordinate with peer agents across organ...",
-    "telegram_message": "\ud83d\udd25 *Deontic Policies for Runtime Governance of Agentic AI Systems*\n\nNew research on agentic AI systems with high impact on the field.\n\n\ud83c\udfdb\ufe0f Source: arXiv cs.AI (C)\n\u23f0 Published: <1 hour ago\n\u2b50 Score: 7.5/10\n\n\ud83d\udd17 https://arxiv.org/abs/2606.19464",
-    "tier": "C",
-    "title": "Deontic Policies for Runtime Governance of Agentic AI Systems",
-    "url": "https://arxiv.org/abs/2606.19464",
-    "url_hash": "2fee3d084618ca8ab24d1e8a5176f80c02acb50f547811d6c360ef9d5c20ddac"
+    "source": "AI News",
+    "summary": "SAP and Google Cloud are deploying agentic commerce architecture to automate multi-agent marketing and retail operations at enterprise scale. SAP research indicates 78 percent of businesses consider AI essential for retaining customers in 2026. However, the same data reveals fewer than two in five...",
+    "telegram_message": "\ud83d\udd25 *SAP and Google Cloud deploy agentic commerce architecture*\n\nIndustry move with significant impact on multiple companies\n\n\ud83c\udfdb\ufe0f Source: AI News (B)\n\u23f0 Published: <1 hour ago\n\u2b50 Score: 7.5/10\n\n\ud83d\udd17 https://www.artificialintelligence-news.com/news/sap-and-google-cloud-deploy-agentic-commerce-architecture/",
+    "tier": "B",
+    "title": "SAP and Google Cloud deploy agentic commerce architecture",
+    "url": "https://www.artificialintelligence-news.com/news/sap-and-google-cloud-deploy-agentic-commerce-architecture/",
+    "url_hash": "8509e4e9c51ce48c48c43abe692cd8f03aa04cc99ed6434e7ab48e43881a322f"
   },
-  "posts_today": 1
+  "posts_today": 2
 }
