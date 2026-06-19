@@ -174,6 +174,31 @@
       "cleaned_title": "usage analytics updated spend controls enterprises",
       "sent_at": "2026-06-18T20:34:00Z",
       "url": "https://openai.com/index/chatgpt-enterprise-spend-controls"
+    },
+    {
+      "cleaned_title": "nasa selects eric schmidt\u2019s rocket company 2028 mission mars",
+      "sent_at": "2026-06-19T19:56:58Z",
+      "url": "https://www.theverge.com/science/952988/nasa-relativity-space-eric-schmidt-mars"
+    },
+    {
+      "cleaned_title": "barret zoph out openai again after just five months",
+      "sent_at": "2026-06-19T19:56:58Z",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/952837/barret-zoph-openai-thinking-machines-lab"
+    },
+    {
+      "cleaned_title": "hyundai buys boston dynamics",
+      "sent_at": "2026-06-19T19:56:58Z",
+      "url": "https://startupfortune.com/hyundai-takes-full-control-of-boston-dynamics-as-softbank-exits-for-325-million/"
+    },
+    {
+      "cleaned_title": "us says asml\u2019s top chip tool may be china. asml says it isn\u2019t.",
+      "sent_at": "2026-06-19T19:56:58Z",
+      "url": "https://techcrunch.com/2026/06/19/the-us-says-asmls-top-chip-tool-may-be-in-china-asml-says-it-isnt/"
+    },
+    {
+      "cleaned_title": "billionaire ambani wants every call, app, home",
+      "sent_at": "2026-06-19T19:56:58Z",
+      "url": "https://techcrunch.com/2026/06/19/billionaire-ambani-wants-ai-in-every-call-app-and-home/"
     }
   ],
   "url_hashes": [
@@ -230,6 +255,11 @@
     "f53aff1afeef2419060a8089393446d64d5155647e8667e370386469ffa10102",
     "be26d7f567ae2eaddcf48b549b8ce183be190bf908e34af94d3aa046c0369dda",
     "2eb5bcc3ad88b97ec36616da4492f783e0b7188871f20dd0ee456f000c78f604",
-    "450d5ccfb1602dc277cdfc7081592af9d5770b23e6395d73e1190a55a4b14872"
+    "450d5ccfb1602dc277cdfc7081592af9d5770b23e6395d73e1190a55a4b14872",
+    "e1579b10df51950e036e05632f1866ab6d561b5528201480771f49eddad6b846",
+    "8ad2b1d3c2a8e540f3275bcf19ce6e3b8d597d8281a491cf4b238908085dd916",
+    "65ef1642e740e5aebd95bfdbf0f51cd76c824cc60fe7e2b9bc37e78be054f5c7",
+    "260212e25527350dfbe1528656634fd28f975ebc756ca7758c6dfb2abb82ce4b",
+    "317002a5314d07bc9bca81fbd790300a4208ff618c0bdd9446c5ae28a3999b82"
   ]
 }
