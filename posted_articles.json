@@ -1,34 +1,6 @@
 {
   "hash_records": [
     {
-      "hash": "5283bb1f8652b3a7cd93889f72cbe20ffb2d0d5657ae5d269d72c5ebf2be88db",
-      "posted_at": "2026-06-13T11:51:21Z"
-    },
-    {
-      "hash": "5654027cea7c5eda9a499751cd35b6a1427cdd235dfb98fb737888e23946bcfd",
-      "posted_at": "2026-06-13T15:28:56Z"
-    },
-    {
-      "hash": "1eaf4aab7431c0b6069295bb556b28917546a2e8ca96663b4d3989e530f2730d",
-      "posted_at": "2026-06-13T18:46:14Z"
-    },
-    {
-      "hash": "fac2e3fad262e89a5e6e09e7f8b43f099c1b4f50d2273be80e6a645280fcb67b",
-      "posted_at": "2026-06-14T15:20:22Z"
-    },
-    {
-      "hash": "ed97a7971fbb0470372c22c61abdcd872f8246235bf6968ba58f2a4e3baf3574",
-      "posted_at": "2026-06-14T18:45:39Z"
-    },
-    {
-      "hash": "55cb6182b54ccf8df3275a34ca86764ec1e0b6626e3ca69f90b768543d0c3b71",
-      "posted_at": "2026-06-15T13:17:04Z"
-    },
-    {
-      "hash": "fb4772aafa138c02ee2a4aa520c9f05c6d7c80ab53c112d5cc8bd6d4d9d95563",
-      "posted_at": "2026-06-15T21:37:23Z"
-    },
-    {
       "hash": "092d2649f244b3abcdb3f85467071e62580855489c179f4c40e72a95810ea14b",
       "posted_at": "2026-06-16T12:13:01Z"
     },
@@ -72,65 +44,16 @@
   "hashes": [
     "0162de192780ba16125b1d12598b348b1afb7cbf2b546f8283c5ed2a421a0e6e",
     "092d2649f244b3abcdb3f85467071e62580855489c179f4c40e72a95810ea14b",
-    "1eaf4aab7431c0b6069295bb556b28917546a2e8ca96663b4d3989e530f2730d",
     "2a13a388a10613828daad9cb9fd3922b4889978c5eef893616f6b98b71eb229a",
     "2fee3d084618ca8ab24d1e8a5176f80c02acb50f547811d6c360ef9d5c20ddac",
-    "5283bb1f8652b3a7cd93889f72cbe20ffb2d0d5657ae5d269d72c5ebf2be88db",
-    "55cb6182b54ccf8df3275a34ca86764ec1e0b6626e3ca69f90b768543d0c3b71",
-    "5654027cea7c5eda9a499751cd35b6a1427cdd235dfb98fb737888e23946bcfd",
     "8509e4e9c51ce48c48c43abe692cd8f03aa04cc99ed6434e7ab48e43881a322f",
     "9072570a39dc91ad8de1baba1808e3672d3d190f46a4d76c1babdf4b2ccfc416",
     "afbabd6e27a244a433c2bb672e96b1d49791b555038d1779fdfe5b7eca43cc19",
     "cb0050ce80fc13f0ad73174b3250b2e0794b4afe127c0809ac3867ffab6fc1f7",
     "e5b23f303b9737e9da74126a233f785714fb5edb30a00649fb8dc9390ac970cc",
-    "ed97a7971fbb0470372c22c61abdcd872f8246235bf6968ba58f2a4e3baf3574",
-    "fac2e3fad262e89a5e6e09e7f8b43f099c1b4f50d2273be80e6a645280fcb67b",
-    "fb4772aafa138c02ee2a4aa520c9f05c6d7c80ab53c112d5cc8bd6d4d9d95563",
     "fc68331373f981907bfbf62e6f2c4a91f4b3f967635820e1f33e7d566029967a"
   ],
   "recent_titles": [
-    {
-      "cleaned_title": "future hollywood isn t feeding prompts into vanilla gen ai models",
-      "posted_at": "2026-06-13T11:51:21Z",
-      "score": 8.5,
-      "source": "The Verge"
-    },
-    {
-      "cleaned_title": "my first 24 hours siri ai mac",
-      "posted_at": "2026-06-13T15:28:56Z",
-      "score": 8.5,
-      "source": "The Verge"
-    },
-    {
-      "cleaned_title": "coding implementation spatial graph neural networks urban function inference using city2graph osmnx pytorch geometric",
-      "posted_at": "2026-06-13T18:46:14Z",
-      "score": 8.5,
-      "source": "MarkTechPost"
-    },
-    {
-      "cleaned_title": "databricks open sources omnigent meta harness that composes governs shares ai agents across claude code codex pi",
-      "posted_at": "2026-06-14T15:20:22Z",
-      "score": 8.5,
-      "source": "MarkTechPost"
-    },
-    {
-      "cleaned_title": "as ai companies race go public who else is along ride",
-      "posted_at": "2026-06-14T18:45:39Z",
-      "score": 8.0,
-      "source": "TechCrunch"
-    },
-    {
-      "cleaned_title": "as ai agents become employees newcore emerges 66m give them identities",
-      "posted_at": "2026-06-15T13:17:04Z",
-      "score": 8.5,
-      "source": "TechCrunch"
-    },
-    {
-      "cleaned_title": "facebook s ai mode search gets its info public posts",
-      "posted_at": "2026-06-15T21:37:23Z",
-      "score": 8.5,
-      "source": "The Verge"
-    },
     {
       "cleaned_title": "spacex is officially buying cursor 60 billion",
       "posted_at": "2026-06-16T12:13:01Z",
