@@ -1,6 +1,6 @@
 {
   "date": "2026-06-23",
-  "last_post_time": null,
+  "last_post_time": "2026-06-23T13:27:59Z",
   "pending_best": {
     "authoritative_score": 8.0,
     "canonical_url": "https://techcrunch.com/2026/06/22/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai",
@@ -26,5 +26,5 @@
     "url": "https://techcrunch.com/2026/06/22/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai/",
     "url_hash": "ec9b9d1b8b046ec880a216ce0a394fca4ea8e6152a36b9d28c53a6856b22622c"
   },
-  "posts_today": 0
+  "posts_today": 1
 }
