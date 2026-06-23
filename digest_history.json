@@ -1,106 +1,6 @@
 {
   "recent_titles": [
     {
-      "cleaned_title": "elon musk world\u2019s first trillionaire",
-      "sent_at": "2026-06-12T20:20:15Z",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/948409/elon-musk-trillionaire-spacex-ipo"
-    },
-    {
-      "cleaned_title": "spacex now public",
-      "sent_at": "2026-06-12T20:20:15Z",
-      "url": "https://www.theverge.com/science/947926/spacex-ipo-stock-shares-trading-elon-musk"
-    },
-    {
-      "cleaned_title": "jeff bezos\u2019 startup aims build \u2018artificial general engineer\u2019",
-      "sent_at": "2026-06-12T20:20:15Z",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/949005/jeff-bezos-prometheus-artificial-general-engineer"
-    },
-    {
-      "cleaned_title": "ukraine's one-time test used fully autonomous drones kill russian soldiers",
-      "sent_at": "2026-06-12T20:20:15Z",
-      "url": "https://arstechnica.com/ai/2026/06/ukraines-one-time-test-used-fully-autonomous-drones-to-kill-russian-soldiers/"
-    },
-    {
-      "cleaned_title": "google sues alleged chinese cybercrime operation that used send scam texts",
-      "sent_at": "2026-06-12T20:20:15Z",
-      "url": "https://techcrunch.com/2026/06/12/google-sues-alleged-chinese-cybercrime-operation-that-used-ai-to-send-scam-texts/"
-    },
-    {
-      "cleaned_title": "amazon ceo reportedly raised anthropic model concerns before government crackdown",
-      "sent_at": "2026-06-13T19:46:04Z",
-      "url": "https://techcrunch.com/2026/06/13/amazon-ceo-reportedly-raised-anthropic-model-concerns-before-government-crackdown/"
-    },
-    {
-      "cleaned_title": "anthropic cuts off fable 5 mythos 5 access following government order",
-      "sent_at": "2026-06-13T19:46:04Z",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/949553/anthropic-fable-5-mythos-5-government-national-security"
-    },
-    {
-      "cleaned_title": "openai faces investigation state attorneys general",
-      "sent_at": "2026-06-13T19:46:04Z",
-      "url": "https://techcrunch.com/2026/06/13/openai-faces-investigation-from-state-attorneys-general/"
-    },
-    {
-      "cleaned_title": "court has ruled that google liable false statements generated overviews",
-      "sent_at": "2026-06-13T19:46:04Z",
-      "url": "https://www.wired.com/story/a-court-has-ruled-that-google-is-liable-for-false-statements-generated-by-ai-overviews/"
-    },
-    {
-      "cleaned_title": "anthropic disables claude fable 5 mythos 5 after us government order",
-      "sent_at": "2026-06-13T19:46:04Z",
-      "url": "https://www.marktechpost.com/2026/06/13/anthropic-disables-claude-fable-5-and-mythos-5-after-us-government-order/"
-    },
-    {
-      "cleaned_title": "as anthropic suspends access models, india debates its future",
-      "sent_at": "2026-06-14T19:46:42Z",
-      "url": "https://techcrunch.com/2026/06/13/as-anthropic-suspends-access-to-new-models-india-debates-its-ai-future/"
-    },
-    {
-      "cleaned_title": "kpmg pulls report usage due apparent hallucinations",
-      "sent_at": "2026-06-14T19:46:42Z",
-      "url": "https://techcrunch.com/2026/06/13/kpmg-pulls-report-on-ai-usage-due-to-apparent-hallucinations/"
-    },
-    {
-      "cleaned_title": "meta reportedly moves unwind $2b manus deal after beijing\u2019s demand",
-      "sent_at": "2026-06-14T19:46:42Z",
-      "url": "https://techcrunch.com/2026/06/13/meta-reportedly-moves-to-unwind-2b-manus-deal-after-beijings-demand/"
-    },
-    {
-      "cleaned_title": "aws introduces durable storage option elasticache valkey",
-      "sent_at": "2026-06-14T19:46:42Z",
-      "url": "https://www.infoq.com/news/2026/06/elasticache-valkey-durability/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
-    },
-    {
-      "cleaned_title": "terraform mcp server enables assistants interact terraform infrastructure",
-      "sent_at": "2026-06-14T19:46:42Z",
-      "url": "https://www.infoq.com/news/2026/06/terraform-mcp-server-ga/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
-    },
-    {
-      "cleaned_title": "fox wants take over your tv \u2014 tech inside it",
-      "sent_at": "2026-06-15T21:13:03Z",
-      "url": "https://www.theverge.com/streaming/950116/fox-roku-takeover"
-    },
-    {
-      "cleaned_title": "chipmaker nvidia seeks raise over $25b first bond deal since 2021",
-      "sent_at": "2026-06-15T21:13:03Z",
-      "url": "https://arstechnica.com/ai/2026/06/chipmaker-nvidia-seeks-to-raise-over-25b-in-first-bond-deal-since-2021/"
-    },
-    {
-      "cleaned_title": "all news about anthropic\u2019s fight white house",
-      "sent_at": "2026-06-15T21:13:03Z",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/950026/anthropic-fable-mythos-ban-ai-shutdown"
-    },
-    {
-      "cleaned_title": "trump\u2019s anthropic shutdown just made case non-american",
-      "sent_at": "2026-06-15T21:13:03Z",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/949986/anthropic-fable-mythos-shutdown-sovereign-ai"
-    },
-    {
-      "cleaned_title": "salesforce acquires customer service platform fin $3.6b",
-      "sent_at": "2026-06-15T21:13:03Z",
-      "url": "https://techcrunch.com/2026/06/15/salesforce-acquires-ai-customer-service-platform-fin-for-3-6b/"
-    },
-    {
       "cleaned_title": "leaked financial docs show openai losing billions dollars year",
       "sent_at": "2026-06-16T21:11:59Z",
       "url": "https://arstechnica.com/ai/2026/06/leaked-financial-docs-show-openai-is-losing-billions-of-dollars-a-year/"
@@ -199,6 +99,31 @@
       "cleaned_title": "billionaire ambani wants every call, app, home",
       "sent_at": "2026-06-19T19:56:58Z",
       "url": "https://techcrunch.com/2026/06/19/billionaire-ambani-wants-ai-in-every-call-app-and-home/"
+    },
+    {
+      "cleaned_title": "gpt-5 helped immunologist derya unutmaz solve 3-year-old mystery",
+      "sent_at": "2026-06-23T20:09:11Z",
+      "url": "https://openai.com/index/gpt-5-immunology-mystery"
+    },
+    {
+      "cleaned_title": "helping build shared standards advanced",
+      "sent_at": "2026-06-23T20:09:11Z",
+      "url": "https://openai.com/index/helping-build-shared-standards-for-advanced-ai"
+    },
+    {
+      "cleaned_title": "build real agentic apps using cuga: two dozen working examples lightweight harness",
+      "sent_at": "2026-06-23T20:09:11Z",
+      "url": "https://huggingface.co/blog/ibm-research/cuga-apps"
+    },
+    {
+      "cleaned_title": "datalab releases lift: 9b open-weights vision model that extracts structured json pdfs using schemas",
+      "sent_at": "2026-06-23T20:09:11Z",
+      "url": "https://www.marktechpost.com/2026/06/23/datalab-releases-lift-a-9b-open-weights-vision-model-that-extracts-structured-json-from-pdfs-using-schemas/"
+    },
+    {
+      "cleaned_title": "anthropic\u2019s claude tag learning your company, one slack message time",
+      "sent_at": "2026-06-23T20:09:11Z",
+      "url": "https://techcrunch.com/2026/06/23/anthropics-claude-tag-is-learning-your-company-one-slack-message-at-a-time/"
     }
   ],
   "url_hashes": [
@@ -260,6 +185,11 @@
     "8ad2b1d3c2a8e540f3275bcf19ce6e3b8d597d8281a491cf4b238908085dd916",
     "65ef1642e740e5aebd95bfdbf0f51cd76c824cc60fe7e2b9bc37e78be054f5c7",
     "260212e25527350dfbe1528656634fd28f975ebc756ca7758c6dfb2abb82ce4b",
-    "317002a5314d07bc9bca81fbd790300a4208ff618c0bdd9446c5ae28a3999b82"
+    "317002a5314d07bc9bca81fbd790300a4208ff618c0bdd9446c5ae28a3999b82",
+    "072c0c3973379946c848feb9ff14228d9d29fde8c83279e6df85b33a9830890e",
+    "aec47bf765565a42d15632893022dd8dad49d3735db96380d92af7e90fffa2df",
+    "0b690c5df303dfe7e095d5b343e487a8485c7d059bb9563ff4bd7fdd0f7dd056",
+    "fe174e095c48939f14acb633a78d347d6ac4617bfa1070fe47ec5ca6180f190e",
+    "c4b83b4a74b9817217032de796dfa0e2e764e0b4ef936a1fa7fd26ddc7c6d3d2"
   ]
 }
