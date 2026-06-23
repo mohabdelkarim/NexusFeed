@@ -1,30 +1,30 @@
 {
-  "date": "2026-06-20",
+  "date": "2026-06-23",
   "last_post_time": null,
   "pending_best": {
     "authoritative_score": 8.0,
-    "canonical_url": "https://www.marktechpost.com/2026/06/19/nvidia-ai-introduce-spatialclaw-a-training-free-agent-that-treats-code-as-the-action-interface-for-spatial-reasoning",
-    "cleaned_title": "nvidia ai introduce spatialclaw training free agent that treats code as action interface spatial reasoning",
-    "index": 2,
-    "published_at": "2026-06-19T22:51:59Z",
-    "saved_at": "2026-06-20T01:33:25Z",
+    "canonical_url": "https://techcrunch.com/2026/06/22/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai",
+    "cleaned_title": "running list major tech layoffs 2026 where employers cited ai",
+    "index": 0,
+    "published_at": "2026-06-23T01:27:55Z",
+    "saved_at": "2026-06-23T02:43:36Z",
     "score": {
-      "freshness_score": 1.5,
+      "freshness_score": 2.0,
       "impact_score": 2.5,
-      "novelty_score": 2.5,
-      "reason": "High novelty and impact scores due to the introduction of a new AI agent by NVIDIA, with a reputable source and recent publication time.",
+      "novelty_score": 2.0,
+      "reason": "The article discusses recent tech layoffs due to AI, which is a significant and timely topic.",
       "red_flag": false,
       "red_flag_reason": null,
       "source_score": 1.5,
       "total_score": 8.0
     },
-    "source": "MarkTechPost",
-    "summary": "SpatialClaw is a training-free agent that writes Python in a persistent kernel, composing perception tools for 3D spatial reasoning The post NVIDIA AI Introduce SpatialClaw: A Training-Free Agent That Treats Code as the Action Interface for Spatial Reasoning appeared first on MarkTechPost .",
-    "telegram_message": "\ud83d\udd25 *NVIDIA AI Introduce SpatialClaw: A Training-Free Agent That Treats Code as the Action Interface for Spatial Reasoning*\n\nHigh novelty and impact scores due to the introduction of a new AI agent by NVIDIA, with a reputable source and recent publication time.\n\n\ud83c\udfdb\ufe0f Source: MarkTechPost (A)\n\u23f0 Published: 2 hours ago\n\u2b50 Score: 8.0/10\n\n\ud83d\udd17 https://www.marktechpost.com/2026/06/19/nvidia-ai-introduce-spatialclaw-a-training-free-agent-that-treats-code-as-the-action-interface-for-spatial-reasoning/",
+    "source": "TechCrunch",
+    "summary": "A running look \u2014 in reverse chronological order \u2014 at the bigger tech companies that have announced significant layoffs this year with AI as a stated factor.",
+    "telegram_message": "\ud83d\udd25 *The running list: major tech layoffs in 2026 where employers cited AI*\n\nThe article discusses recent tech layoffs due to AI, which is a significant and timely topic.\n\n\ud83c\udfdb\ufe0f Source: TechCrunch (A)\n\u23f0 Published: 1 hour ago\n\u2b50 Score: 8.0/10\n\n\ud83d\udd17 https://techcrunch.com/2026/06/22/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai/",
     "tier": "A",
-    "title": "NVIDIA AI Introduce SpatialClaw: A Training-Free Agent That Treats Code as the Action Interface for Spatial Reasoning",
-    "url": "https://www.marktechpost.com/2026/06/19/nvidia-ai-introduce-spatialclaw-a-training-free-agent-that-treats-code-as-the-action-interface-for-spatial-reasoning/",
-    "url_hash": "1eba2fe0c2c9915e603b793c6bf1035382f4f7619c485648e779c8f7f72be156"
+    "title": "The running list: major tech layoffs in 2026 where employers cited AI",
+    "url": "https://techcrunch.com/2026/06/22/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai/",
+    "url_hash": "ec9b9d1b8b046ec880a216ce0a394fca4ea8e6152a36b9d28c53a6856b22622c"
   },
   "posts_today": 0
 }
