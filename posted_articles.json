@@ -39,6 +39,10 @@
     {
       "hash": "0b690c5df303dfe7e095d5b343e487a8485c7d059bb9563ff4bd7fdd0f7dd056",
       "posted_at": "2026-06-23T13:27:59Z"
+    },
+    {
+      "hash": "ec9b9d1b8b046ec880a216ce0a394fca4ea8e6152a36b9d28c53a6856b22622c",
+      "posted_at": "2026-06-23T16:30:10Z"
     }
   ],
   "hashes": [
@@ -51,6 +55,7 @@
     "afbabd6e27a244a433c2bb672e96b1d49791b555038d1779fdfe5b7eca43cc19",
     "cb0050ce80fc13f0ad73174b3250b2e0794b4afe127c0809ac3867ffab6fc1f7",
     "e5b23f303b9737e9da74126a233f785714fb5edb30a00649fb8dc9390ac970cc",
+    "ec9b9d1b8b046ec880a216ce0a394fca4ea8e6152a36b9d28c53a6856b22622c",
     "fc68331373f981907bfbf62e6f2c4a91f4b3f967635820e1f33e7d566029967a"
   ],
   "recent_titles": [
@@ -113,6 +118,12 @@
       "posted_at": "2026-06-23T13:27:59Z",
       "score": 9.0,
       "source": "HuggingFace"
+    },
+    {
+      "cleaned_title": "running list major tech layoffs 2026 where employers cited ai",
+      "posted_at": "2026-06-23T16:30:10Z",
+      "score": 8.0,
+      "source": "TechCrunch"
     }
   ]
 }
