@@ -1,10 +1,6 @@
 {
   "hash_records": [
     {
-      "hash": "9072570a39dc91ad8de1baba1808e3672d3d190f46a4d76c1babdf4b2ccfc416",
-      "posted_at": "2026-06-16T17:25:42Z"
-    },
-    {
       "hash": "fc68331373f981907bfbf62e6f2c4a91f4b3f967635820e1f33e7d566029967a",
       "posted_at": "2026-06-16T21:35:39Z"
     },
@@ -51,7 +47,6 @@
     "2a13a388a10613828daad9cb9fd3922b4889978c5eef893616f6b98b71eb229a",
     "2fee3d084618ca8ab24d1e8a5176f80c02acb50f547811d6c360ef9d5c20ddac",
     "8509e4e9c51ce48c48c43abe692cd8f03aa04cc99ed6434e7ab48e43881a322f",
-    "9072570a39dc91ad8de1baba1808e3672d3d190f46a4d76c1babdf4b2ccfc416",
     "afbabd6e27a244a433c2bb672e96b1d49791b555038d1779fdfe5b7eca43cc19",
     "cb0050ce80fc13f0ad73174b3250b2e0794b4afe127c0809ac3867ffab6fc1f7",
     "e5b23f303b9737e9da74126a233f785714fb5edb30a00649fb8dc9390ac970cc",
@@ -59,12 +54,6 @@
     "fc68331373f981907bfbf62e6f2c4a91f4b3f967635820e1f33e7d566029967a"
   ],
   "recent_titles": [
-    {
-      "cleaned_title": "spacex acquires ai coding platform cursor 60 billion",
-      "posted_at": "2026-06-16T17:25:42Z",
-      "score": 9.5,
-      "source": "Ars Technica"
-    },
     {
       "cleaned_title": "android 17 multitasking tools as google expands gemini features",
       "posted_at": "2026-06-16T21:35:39Z",
