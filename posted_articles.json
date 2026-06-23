@@ -39,10 +39,15 @@
     {
       "hash": "ec9b9d1b8b046ec880a216ce0a394fca4ea8e6152a36b9d28c53a6856b22622c",
       "posted_at": "2026-06-23T16:30:10Z"
+    },
+    {
+      "hash": "072c0c3973379946c848feb9ff14228d9d29fde8c83279e6df85b33a9830890e",
+      "posted_at": "2026-06-23T20:39:53Z"
     }
   ],
   "hashes": [
     "0162de192780ba16125b1d12598b348b1afb7cbf2b546f8283c5ed2a421a0e6e",
+    "072c0c3973379946c848feb9ff14228d9d29fde8c83279e6df85b33a9830890e",
     "0b690c5df303dfe7e095d5b343e487a8485c7d059bb9563ff4bd7fdd0f7dd056",
     "2a13a388a10613828daad9cb9fd3922b4889978c5eef893616f6b98b71eb229a",
     "2fee3d084618ca8ab24d1e8a5176f80c02acb50f547811d6c360ef9d5c20ddac",
@@ -113,6 +118,12 @@
       "posted_at": "2026-06-23T16:30:10Z",
       "score": 8.0,
       "source": "TechCrunch"
+    },
+    {
+      "cleaned_title": "how gpt 5 helped immunologist derya unutmaz solve 3 year old mystery",
+      "posted_at": "2026-06-23T20:39:53Z",
+      "score": 9.0,
+      "source": "OpenAI"
     }
   ]
 }
