@@ -1,10 +1,6 @@
 {
   "hash_records": [
     {
-      "hash": "fc68331373f981907bfbf62e6f2c4a91f4b3f967635820e1f33e7d566029967a",
-      "posted_at": "2026-06-16T21:35:39Z"
-    },
-    {
       "hash": "cb0050ce80fc13f0ad73174b3250b2e0794b4afe127c0809ac3867ffab6fc1f7",
       "posted_at": "2026-06-17T14:46:01Z"
     },
@@ -55,16 +51,9 @@
     "afbabd6e27a244a433c2bb672e96b1d49791b555038d1779fdfe5b7eca43cc19",
     "cb0050ce80fc13f0ad73174b3250b2e0794b4afe127c0809ac3867ffab6fc1f7",
     "e5b23f303b9737e9da74126a233f785714fb5edb30a00649fb8dc9390ac970cc",
-    "ec9b9d1b8b046ec880a216ce0a394fca4ea8e6152a36b9d28c53a6856b22622c",
-    "fc68331373f981907bfbf62e6f2c4a91f4b3f967635820e1f33e7d566029967a"
+    "ec9b9d1b8b046ec880a216ce0a394fca4ea8e6152a36b9d28c53a6856b22622c"
   ],
   "recent_titles": [
-    {
-      "cleaned_title": "android 17 multitasking tools as google expands gemini features",
-      "posted_at": "2026-06-16T21:35:39Z",
-      "score": 9.0,
-      "source": "TechCrunch"
-    },
     {
       "cleaned_title": "pinterest experimental ai shopping app called ask pinterest",
       "posted_at": "2026-06-17T14:46:01Z",
