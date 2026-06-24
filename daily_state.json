@@ -1,6 +1,30 @@
 {
-  "date": "2026-06-23",
-  "last_post_time": "2026-06-23T20:39:53Z",
-  "pending_best": null,
-  "posts_today": 3
+  "date": "2026-06-24",
+  "last_post_time": null,
+  "pending_best": {
+    "authoritative_score": 7.0,
+    "canonical_url": "https://techcrunch.com/2026/06/23/indias-moengage-bets-marketings-future-on-millions-of-ai-agents",
+    "cleaned_title": "india s moengage bets that future marketing is millions ai agents",
+    "index": 1,
+    "published_at": "2026-06-23T23:30:00Z",
+    "saved_at": "2026-06-24T00:12:59Z",
+    "score": {
+      "freshness_score": 2.0,
+      "impact_score": 1.5,
+      "novelty_score": 2.0,
+      "reason": "The article is about a company's bet on the future of marketing with AI agents, which is a relatively new concept.",
+      "red_flag": false,
+      "red_flag_reason": null,
+      "source_score": 1.5,
+      "total_score": 7.0
+    },
+    "source": "TechCrunch",
+    "summary": "The all-cash deal gives MoEngage access to technology that assigns AI agents to individual customers.",
+    "telegram_message": "\ud83d\udd25 *India\u2019s MoEngage bets that the future of marketing is millions of AI agents*\n\nThe article is about a company's bet on the future of marketing with AI agents, which is a relatively new concept.\n\n\ud83c\udfdb\ufe0f Source: TechCrunch (A)\n\u23f0 Published: <1 hour ago\n\u2b50 Score: 7.0/10\n\n\ud83d\udd17 https://techcrunch.com/2026/06/23/indias-moengage-bets-marketings-future-on-millions-of-ai-agents/",
+    "tier": "A",
+    "title": "India\u2019s MoEngage bets that the future of marketing is millions of AI agents",
+    "url": "https://techcrunch.com/2026/06/23/indias-moengage-bets-marketings-future-on-millions-of-ai-agents/",
+    "url_hash": "ccbe4d356160d5143872776418c5c5382f45d6739dd8c952db7f3f64de1a68cf"
+  },
+  "posts_today": 0
 }
