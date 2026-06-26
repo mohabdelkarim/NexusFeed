@@ -1,10 +1,6 @@
 {
   "hash_records": [
     {
-      "hash": "2fee3d084618ca8ab24d1e8a5176f80c02acb50f547811d6c360ef9d5c20ddac",
-      "posted_at": "2026-06-19T14:25:51Z"
-    },
-    {
       "hash": "8509e4e9c51ce48c48c43abe692cd8f03aa04cc99ed6434e7ab48e43881a322f",
       "posted_at": "2026-06-19T18:20:11Z"
     },
@@ -19,22 +15,20 @@
     {
       "hash": "072c0c3973379946c848feb9ff14228d9d29fde8c83279e6df85b33a9830890e",
       "posted_at": "2026-06-23T20:39:53Z"
+    },
+    {
+      "hash": "5d2de9152522b89c1ce0edc076a4c866512058bfa9da70df6b579b2db8df6dcd",
+      "posted_at": "2026-06-26T15:15:03Z"
     }
   ],
   "hashes": [
     "072c0c3973379946c848feb9ff14228d9d29fde8c83279e6df85b33a9830890e",
     "0b690c5df303dfe7e095d5b343e487a8485c7d059bb9563ff4bd7fdd0f7dd056",
-    "2fee3d084618ca8ab24d1e8a5176f80c02acb50f547811d6c360ef9d5c20ddac",
+    "5d2de9152522b89c1ce0edc076a4c866512058bfa9da70df6b579b2db8df6dcd",
     "8509e4e9c51ce48c48c43abe692cd8f03aa04cc99ed6434e7ab48e43881a322f",
     "ec9b9d1b8b046ec880a216ce0a394fca4ea8e6152a36b9d28c53a6856b22622c"
   ],
   "recent_titles": [
-    {
-      "cleaned_title": "deontic policies runtime governance agentic ai systems",
-      "posted_at": "2026-06-19T14:25:51Z",
-      "score": 7.5,
-      "source": "arXiv cs.AI"
-    },
     {
       "cleaned_title": "sap google cloud deploy agentic commerce architecture",
       "posted_at": "2026-06-19T18:20:11Z",
@@ -58,6 +52,12 @@
       "posted_at": "2026-06-23T20:39:53Z",
       "score": 9.0,
       "source": "OpenAI"
+    },
+    {
+      "cleaned_title": "run vllm server hf jobs one command",
+      "posted_at": "2026-06-26T15:15:03Z",
+      "score": 8.0,
+      "source": "HuggingFace"
     }
   ]
 }

@@ -1,30 +1,6 @@
 {
   "date": "2026-06-26",
-  "last_post_time": null,
-  "pending_best": {
-    "authoritative_score": 8.0,
-    "canonical_url": "https://huggingface.co/blog/vllm-jobs",
-    "cleaned_title": "run vllm server hf jobs one command",
-    "index": 3,
-    "published_at": "2026-06-26T00:00:00Z",
-    "saved_at": "2026-06-26T02:49:16Z",
-    "score": {
-      "freshness_score": 1.0,
-      "impact_score": 2.0,
-      "novelty_score": 3.0,
-      "reason": "The article provides a tutorial on running a vLLM server, which may be of interest to AI researchers.",
-      "red_flag": false,
-      "red_flag_reason": null,
-      "source_score": 2.0,
-      "total_score": 8.0
-    },
-    "source": "HuggingFace",
-    "summary": "",
-    "telegram_message": "\ud83d\udd25 *Run a vLLM Server on HF Jobs in One Command*\n\nThe article provides a tutorial on running a vLLM server, which may be of interest to AI researchers.\n\n\ud83c\udfdb\ufe0f Source: HuggingFace (S)\n\u23f0 Published: 2 hours ago\n\u2b50 Score: 8.0/10\n\n\ud83d\udd17 https://huggingface.co/blog/vllm-jobs",
-    "tier": "S",
-    "title": "Run a vLLM Server on HF Jobs in One Command",
-    "url": "https://huggingface.co/blog/vllm-jobs",
-    "url_hash": "5d2de9152522b89c1ce0edc076a4c866512058bfa9da70df6b579b2db8df6dcd"
-  },
-  "posts_today": 0
+  "last_post_time": "2026-06-26T15:15:03Z",
+  "pending_best": null,
+  "posts_today": 1
 }
