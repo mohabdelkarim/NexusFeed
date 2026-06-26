@@ -1,10 +1,6 @@
 {
   "hash_records": [
     {
-      "hash": "8509e4e9c51ce48c48c43abe692cd8f03aa04cc99ed6434e7ab48e43881a322f",
-      "posted_at": "2026-06-19T18:20:11Z"
-    },
-    {
       "hash": "0b690c5df303dfe7e095d5b343e487a8485c7d059bb9563ff4bd7fdd0f7dd056",
       "posted_at": "2026-06-23T13:27:59Z"
     },
@@ -19,22 +15,20 @@
     {
       "hash": "5d2de9152522b89c1ce0edc076a4c866512058bfa9da70df6b579b2db8df6dcd",
       "posted_at": "2026-06-26T15:15:03Z"
+    },
+    {
+      "hash": "33b5ffdd1d78945e67446fc2b14fc9d2b0dac8a59a5dd6a7ea044f1ef946e63e",
+      "posted_at": "2026-06-26T20:12:07Z"
     }
   ],
   "hashes": [
     "072c0c3973379946c848feb9ff14228d9d29fde8c83279e6df85b33a9830890e",
     "0b690c5df303dfe7e095d5b343e487a8485c7d059bb9563ff4bd7fdd0f7dd056",
+    "33b5ffdd1d78945e67446fc2b14fc9d2b0dac8a59a5dd6a7ea044f1ef946e63e",
     "5d2de9152522b89c1ce0edc076a4c866512058bfa9da70df6b579b2db8df6dcd",
-    "8509e4e9c51ce48c48c43abe692cd8f03aa04cc99ed6434e7ab48e43881a322f",
     "ec9b9d1b8b046ec880a216ce0a394fca4ea8e6152a36b9d28c53a6856b22622c"
   ],
   "recent_titles": [
-    {
-      "cleaned_title": "sap google cloud deploy agentic commerce architecture",
-      "posted_at": "2026-06-19T18:20:11Z",
-      "score": 7.5,
-      "source": "AI News"
-    },
     {
       "cleaned_title": "build real agentic apps using cuga two dozen working examples lightweight harness",
       "posted_at": "2026-06-23T13:27:59Z",
@@ -58,6 +52,12 @@
       "posted_at": "2026-06-26T15:15:03Z",
       "score": 8.0,
       "source": "HuggingFace"
+    },
+    {
+      "cleaned_title": "openai previews gpt 5 6 sol terra luna tiered models reasoning modes limited access",
+      "posted_at": "2026-06-26T20:12:07Z",
+      "score": 8.5,
+      "source": "MarkTechPost"
     }
   ]
 }

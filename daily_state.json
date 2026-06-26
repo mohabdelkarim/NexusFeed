@@ -1,6 +1,6 @@
 {
   "date": "2026-06-26",
-  "last_post_time": "2026-06-26T15:15:03Z",
+  "last_post_time": "2026-06-26T20:12:07Z",
   "pending_best": {
     "authoritative_score": 8.0,
     "canonical_url": "https://techcrunch.com/video/why-everyone-from-openai-to-spacex-is-building-their-own-chips-and-turning-up-the-heat-on-nvidia",
@@ -26,5 +26,5 @@
     "url": "https://techcrunch.com/video/why-everyone-from-openai-to-spacex-is-building-their-own-chips-and-turning-up-the-heat-on-nvidia/",
     "url_hash": "22860fcb0315498ac60f93a9b492431e8d08b626298286891ed75e0910fdff7f"
   },
-  "posts_today": 1
+  "posts_today": 2
 }
