@@ -2,29 +2,29 @@
   "date": "2026-06-26",
   "last_post_time": "2026-06-26T15:15:03Z",
   "pending_best": {
-    "authoritative_score": 7.0,
-    "canonical_url": "https://www.theverge.com/tech/957751/arduino-q-microcomputer-price-increase-ram-crisis",
-    "cleaned_title": "it s now arduino uno q s turn get price hike",
-    "index": 3,
-    "published_at": "2026-06-26T15:35:31Z",
-    "saved_at": "2026-06-26T16:22:51Z",
+    "authoritative_score": 8.0,
+    "canonical_url": "https://techcrunch.com/video/why-everyone-from-openai-to-spacex-is-building-their-own-chips-and-turning-up-the-heat-on-nvidia",
+    "cleaned_title": "why everyone openai spacex is building their own chips turning up heat nvidia",
+    "index": 2,
+    "published_at": "2026-06-26T17:43:22Z",
+    "saved_at": "2026-06-26T18:09:44Z",
     "score": {
       "freshness_score": 2.0,
-      "impact_score": 1.5,
+      "impact_score": 2.5,
       "novelty_score": 2.0,
-      "reason": "The article is about a price hike, which is an industry move.",
+      "reason": "High novelty and impact score due to industry move, with a reputable source and recent publication.",
       "red_flag": false,
       "red_flag_reason": null,
       "source_score": 1.5,
-      "total_score": 7.0
+      "total_score": 8.0
     },
-    "source": "The Verge",
-    "summary": "Arduino's Raspberry Pi-like microcomputer the Uno Q is joining many other devices in getting a price hike this week. The 2GB version of the Uno Q, which is powered by a Qualcomm Dragonwing QRB2210 processor, will increase in price from $44 to $59, while the 4GB model is getting a slightly steeper i...",
-    "telegram_message": "\ud83d\udd25 *It\u2019s now the Arduino Uno Q\u2019s turn to get a price hike*\n\nThe article is about a price hike, which is an industry move.\n\n\ud83c\udfdb\ufe0f Source: The Verge (A)\n\u23f0 Published: <1 hour ago\n\u2b50 Score: 7.0/10\n\n\ud83d\udd17 https://www.theverge.com/tech/957751/arduino-q-microcomputer-price-increase-ram-crisis",
+    "source": "TechCrunch",
+    "summary": "Nvidia has dominated the AI chip market for years, but the era of total dependence might be ending. OpenAI just shared its plans to spice things up with Jalape\u00f1o, its custom inference chip built with Broadcom, joining Google, Apple, and SpaceX in a growing list of companies building their way out o...",
+    "telegram_message": "\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\ud83d\udd25 *Why everyone from OpenAI to SpaceX is building their own chips (and turning up the heat on Nvidia)*\n\nNvidia has dominated the AI chip market for years, but the era of total dependence might be ending. OpenAI just shared its plans to spice things up with Jalape\u00f1o, its custom inference chip built with Broadcom.\n\n\ud83c\udfdb\ufe0f Source: TechCrunch (A)\n\u23f0 Published: <1 hour ago\n\u2b50 Score: 8.0/10\n\n\ud83d\udd17 https://techcrunch.com/video/why-everyone-from-openai-to-spacex-is-building-their-own-chips-and-turning-up-the-heat-on-nvidia/\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501",
     "tier": "A",
-    "title": "It\u2019s now the Arduino Uno Q\u2019s turn to get a price hike",
-    "url": "https://www.theverge.com/tech/957751/arduino-q-microcomputer-price-increase-ram-crisis",
-    "url_hash": "f06f418daa17e85e37ac5b3fbb323537ff582ffb3efb879f2687f838287d3abd"
+    "title": "Why everyone from OpenAI to SpaceX is building their own chips (and turning up the heat on Nvidia)",
+    "url": "https://techcrunch.com/video/why-everyone-from-openai-to-spacex-is-building-their-own-chips-and-turning-up-the-heat-on-nvidia/",
+    "url_hash": "22860fcb0315498ac60f93a9b492431e8d08b626298286891ed75e0910fdff7f"
   },
   "posts_today": 1
 }
