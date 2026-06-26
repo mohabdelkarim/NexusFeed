@@ -1,81 +1,6 @@
 {
   "recent_titles": [
     {
-      "cleaned_title": "leaked financial docs show openai losing billions dollars year",
-      "sent_at": "2026-06-16T21:11:59Z",
-      "url": "https://arstechnica.com/ai/2026/06/leaked-financial-docs-show-openai-is-losing-billions-of-dollars-a-year/"
-    },
-    {
-      "cleaned_title": "spacex acquire cursor $60b stock, days after blockbuster ipo",
-      "sent_at": "2026-06-16T21:11:59Z",
-      "url": "https://techcrunch.com/2026/06/16/spacex-to-acquire-cursor-for-60b-in-stock-days-after-blockbuster-ipo/"
-    },
-    {
-      "cleaned_title": "spacex valuation balloons $2.6t, briefly passes amazon",
-      "sent_at": "2026-06-16T21:11:59Z",
-      "url": "https://techcrunch.com/2026/06/16/spacex-valuation-balloons-to-2-6t-briefly-passes-amazon/"
-    },
-    {
-      "cleaned_title": "pentagon boasts using write reports mandated congress",
-      "sent_at": "2026-06-16T21:11:59Z",
-      "url": "https://arstechnica.com/ai/2026/06/pentagon-boasts-of-using-ai-to-write-reports-mandated-by-congress/"
-    },
-    {
-      "cleaned_title": "anthropic \"pauses\" token-based billing its claude agent sdk",
-      "sent_at": "2026-06-16T21:11:59Z",
-      "url": "https://arstechnica.com/ai/2026/06/anthropic-pauses-token-based-billing-for-its-claude-agent-sdk/"
-    },
-    {
-      "cleaned_title": "world leaders want american ai. they just don\u2019t want america be able turn it off.",
-      "sent_at": "2026-06-17T20:23:23Z",
-      "url": "https://techcrunch.com/2026/06/17/world-leaders-want-american-ai-they-just-dont-want-america-to-be-able-to-turn-it-off/"
-    },
-    {
-      "cleaned_title": "anthropic got hit export rules nobody understands",
-      "sent_at": "2026-06-17T20:23:23Z",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/951703/anthropic-shutdown-export-controls"
-    },
-    {
-      "cleaned_title": "nea\u2019s tiffany luck says enterprises are still figuring out their roi",
-      "sent_at": "2026-06-17T20:23:23Z",
-      "url": "https://techcrunch.com/video/neas-tiffany-luck-says-enterprises-are-still-figuring-out-their-ai-roi/"
-    },
-    {
-      "cleaned_title": "coding agents taught robots install gpus cut zip-ties",
-      "sent_at": "2026-06-17T20:23:23Z",
-      "url": "https://arstechnica.com/ai/2026/06/ai-coding-agents-can-autonomously-direct-robot-training/"
-    },
-    {
-      "cleaned_title": "research shows amie, our medical ai, could help manage health conditions.",
-      "sent_at": "2026-06-17T20:23:23Z",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-for-disease-management-in-nature/"
-    },
-    {
-      "cleaned_title": "perplexity launches brain, self-improving memory system that builds context graph agent\u2019s work learns overnight",
-      "sent_at": "2026-06-18T20:34:00Z",
-      "url": "https://www.marktechpost.com/2026/06/18/perplexity-launches-brain/"
-    },
-    {
-      "cleaned_title": "openai bringing some big guns lead-up its ipo",
-      "sent_at": "2026-06-18T20:34:00Z",
-      "url": "https://techcrunch.com/2026/06/18/openai-is-bringing-on-some-big-guns-in-the-lead-up-to-its-ipo/"
-    },
-    {
-      "cleaned_title": "amazon hopes challenge nvidia more directly selling its chips",
-      "sent_at": "2026-06-18T20:34:00Z",
-      "url": "https://techcrunch.com/2026/06/18/amazon-hopes-to-challenge-nvidia-more-directly-by-selling-its-ai-chips/"
-    },
-    {
-      "cleaned_title": "mosaicleaks: can your research agent keep secret?",
-      "sent_at": "2026-06-18T20:34:00Z",
-      "url": "https://huggingface.co/blog/ServiceNow/mosaicleaks"
-    },
-    {
-      "cleaned_title": "usage analytics updated spend controls enterprises",
-      "sent_at": "2026-06-18T20:34:00Z",
-      "url": "https://openai.com/index/chatgpt-enterprise-spend-controls"
-    },
-    {
       "cleaned_title": "nasa selects eric schmidt\u2019s rocket company 2028 mission mars",
       "sent_at": "2026-06-19T19:56:58Z",
       "url": "https://www.theverge.com/science/952988/nasa-relativity-space-eric-schmidt-mars"
@@ -124,6 +49,31 @@
       "cleaned_title": "anthropic\u2019s claude tag learning your company, one slack message time",
       "sent_at": "2026-06-23T20:09:11Z",
       "url": "https://techcrunch.com/2026/06/23/anthropics-claude-tag-is-learning-your-company-one-slack-message-at-a-time/"
+    },
+    {
+      "cleaned_title": "openai limits gpt-5.6 rollout after government request, says restrictions shouldn\u2019t be norm",
+      "sent_at": "2026-06-26T19:51:20Z",
+      "url": "https://techcrunch.com/2026/06/26/openai-limits-gpt-5-6-rollout-after-government-request-says-restrictions-shouldnt-be-the-norm/"
+    },
+    {
+      "cleaned_title": "openai unveils gpt-5.6 amid us regulatory drama",
+      "sent_at": "2026-06-26T19:51:20Z",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/957845/openai-gpt-5-6-trump-administration-ai-preview"
+    },
+    {
+      "cleaned_title": "everyone openai spacex building their own chips (and turning up heat nvidia)",
+      "sent_at": "2026-06-26T19:51:20Z",
+      "url": "https://techcrunch.com/video/why-everyone-from-openai-to-spacex-is-building-their-own-chips-and-turning-up-the-heat-on-nvidia/"
+    },
+    {
+      "cleaned_title": "openai has models. here\u2019s you can\u2019t use them",
+      "sent_at": "2026-06-26T19:51:20Z",
+      "url": "https://www.wired.com/story/openai-gpt-56-model-release-trump-admin-approval/"
+    },
+    {
+      "cleaned_title": "europe fed up wants its own",
+      "sent_at": "2026-06-26T19:51:20Z",
+      "url": "https://www.wired.com/story/europe-is-fed-up-and-wants-its-own-ai/"
     }
   ],
   "url_hashes": [
@@ -190,6 +140,11 @@
     "aec47bf765565a42d15632893022dd8dad49d3735db96380d92af7e90fffa2df",
     "0b690c5df303dfe7e095d5b343e487a8485c7d059bb9563ff4bd7fdd0f7dd056",
     "fe174e095c48939f14acb633a78d347d6ac4617bfa1070fe47ec5ca6180f190e",
-    "c4b83b4a74b9817217032de796dfa0e2e764e0b4ef936a1fa7fd26ddc7c6d3d2"
+    "c4b83b4a74b9817217032de796dfa0e2e764e0b4ef936a1fa7fd26ddc7c6d3d2",
+    "1656bcd15dacc24112d5716b7083ce91aeb243a6bdd70908bf9a2ccc195eed57",
+    "7ec59b6a76d611d1753e0d740fd3320e9ead55cc13692543fd947720c1a301d6",
+    "22860fcb0315498ac60f93a9b492431e8d08b626298286891ed75e0910fdff7f",
+    "e966d4aebb4f423d717e54309fbb7a49d50b3590602e998cadadde343262bb3a",
+    "2f4f90bb1370c4b6074fb0c233915e756fe4ee9026de6e38ecc5fca5abd042fc"
   ]
 }
