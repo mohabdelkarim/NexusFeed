@@ -1,22 +1,6 @@
 {
   "hash_records": [
     {
-      "hash": "cb0050ce80fc13f0ad73174b3250b2e0794b4afe127c0809ac3867ffab6fc1f7",
-      "posted_at": "2026-06-17T14:46:01Z"
-    },
-    {
-      "hash": "2a13a388a10613828daad9cb9fd3922b4889978c5eef893616f6b98b71eb229a",
-      "posted_at": "2026-06-17T19:32:52Z"
-    },
-    {
-      "hash": "afbabd6e27a244a433c2bb672e96b1d49791b555038d1779fdfe5b7eca43cc19",
-      "posted_at": "2026-06-18T14:23:03Z"
-    },
-    {
-      "hash": "e5b23f303b9737e9da74126a233f785714fb5edb30a00649fb8dc9390ac970cc",
-      "posted_at": "2026-06-18T21:51:32Z"
-    },
-    {
       "hash": "0162de192780ba16125b1d12598b348b1afb7cbf2b546f8283c5ed2a421a0e6e",
       "posted_at": "2026-06-19T11:25:17Z"
     },
@@ -45,39 +29,11 @@
     "0162de192780ba16125b1d12598b348b1afb7cbf2b546f8283c5ed2a421a0e6e",
     "072c0c3973379946c848feb9ff14228d9d29fde8c83279e6df85b33a9830890e",
     "0b690c5df303dfe7e095d5b343e487a8485c7d059bb9563ff4bd7fdd0f7dd056",
-    "2a13a388a10613828daad9cb9fd3922b4889978c5eef893616f6b98b71eb229a",
     "2fee3d084618ca8ab24d1e8a5176f80c02acb50f547811d6c360ef9d5c20ddac",
     "8509e4e9c51ce48c48c43abe692cd8f03aa04cc99ed6434e7ab48e43881a322f",
-    "afbabd6e27a244a433c2bb672e96b1d49791b555038d1779fdfe5b7eca43cc19",
-    "cb0050ce80fc13f0ad73174b3250b2e0794b4afe127c0809ac3867ffab6fc1f7",
-    "e5b23f303b9737e9da74126a233f785714fb5edb30a00649fb8dc9390ac970cc",
     "ec9b9d1b8b046ec880a216ce0a394fca4ea8e6152a36b9d28c53a6856b22622c"
   ],
   "recent_titles": [
-    {
-      "cleaned_title": "pinterest experimental ai shopping app called ask pinterest",
-      "posted_at": "2026-06-17T14:46:01Z",
-      "score": 8.0,
-      "source": "TechCrunch"
-    },
-    {
-      "cleaned_title": "ai coding agents can autonomously direct robot training",
-      "posted_at": "2026-06-17T19:32:52Z",
-      "score": 8.5,
-      "source": "Ars Technica"
-    },
-    {
-      "cleaned_title": "uk will scan asylum seekers faces age checks despite knowing tech is flawed",
-      "posted_at": "2026-06-18T14:23:03Z",
-      "score": 8.0,
-      "source": "Wired AI"
-    },
-    {
-      "cleaned_title": "white house is making up its rules ai real time",
-      "posted_at": "2026-06-18T21:51:32Z",
-      "score": 9.0,
-      "source": "Wired AI"
-    },
     {
       "cleaned_title": "liquid ai introduces lfm2 5 embedding 350m lfm2 5 colbert 350m dense bi encoder late interaction models fast multilingual search across 11 languages",
       "posted_at": "2026-06-19T11:25:17Z",
