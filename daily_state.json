@@ -3,28 +3,28 @@
   "last_post_time": "2026-06-26T20:12:07Z",
   "pending_best": {
     "authoritative_score": 8.0,
-    "canonical_url": "https://techcrunch.com/video/why-everyone-from-openai-to-spacex-is-building-their-own-chips-and-turning-up-the-heat-on-nvidia",
-    "cleaned_title": "why everyone openai spacex is building their own chips turning up heat nvidia",
-    "index": 2,
-    "published_at": "2026-06-26T17:43:22Z",
-    "saved_at": "2026-06-26T18:09:44Z",
+    "canonical_url": "https://arstechnica.com/ai/2026/06/south-korea-plans-to-train-entire-military-as-drone-warriors",
+    "cleaned_title": "south korea plans train entire military as drone warriors",
+    "index": 0,
+    "published_at": "2026-06-26T22:19:05Z",
+    "saved_at": "2026-06-26T22:55:03Z",
     "score": {
       "freshness_score": 2.0,
       "impact_score": 2.5,
       "novelty_score": 2.0,
-      "reason": "High novelty and impact score due to industry move, with a reputable source and recent publication.",
+      "reason": "The article is about a significant development in the use of drones in military training, which is a novel and impactful topic.",
       "red_flag": false,
       "red_flag_reason": null,
       "source_score": 1.5,
       "total_score": 8.0
     },
-    "source": "TechCrunch",
-    "summary": "Nvidia has dominated the AI chip market for years, but the era of total dependence might be ending. OpenAI just shared its plans to spice things up with Jalape\u00f1o, its custom inference chip built with Broadcom, joining Google, Apple, and SpaceX in a growing list of companies building their way out o...",
-    "telegram_message": "\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\ud83d\udd25 *Why everyone from OpenAI to SpaceX is building their own chips (and turning up the heat on Nvidia)*\n\nNvidia has dominated the AI chip market for years, but the era of total dependence might be ending. OpenAI just shared its plans to spice things up with Jalape\u00f1o, its custom inference chip built with Broadcom.\n\n\ud83c\udfdb\ufe0f Source: TechCrunch (A)\n\u23f0 Published: <1 hour ago\n\u2b50 Score: 8.0/10\n\n\ud83d\udd17 https://techcrunch.com/video/why-everyone-from-openai-to-spacex-is-building-their-own-chips-and-turning-up-the-heat-on-nvidia/\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501",
+    "source": "Ars Technica",
+    "summary": "Half-million strong military will train on drones as \u201cuniversal combat tool.\u201d",
+    "telegram_message": "\ud83d\udd25 *South Korea plans to train entire military as \"drone warriors\"*\n\nThe article is about a significant development in the use of drones in military training, which is a novel and impactful topic.\n\n\ud83c\udfdb\ufe0f Source: Ars Technica (A)\n\u23f0 Published: <1 hour ago\n\u2b50 Score: 8.0/10\n\n\ud83d\udd17 https://arstechnica.com/ai/2026/06/south-korea-plans-to-train-entire-military-as-drone-warriors/",
     "tier": "A",
-    "title": "Why everyone from OpenAI to SpaceX is building their own chips (and turning up the heat on Nvidia)",
-    "url": "https://techcrunch.com/video/why-everyone-from-openai-to-spacex-is-building-their-own-chips-and-turning-up-the-heat-on-nvidia/",
-    "url_hash": "22860fcb0315498ac60f93a9b492431e8d08b626298286891ed75e0910fdff7f"
+    "title": "South Korea plans to train entire military as \"drone warriors\"",
+    "url": "https://arstechnica.com/ai/2026/06/south-korea-plans-to-train-entire-military-as-drone-warriors/",
+    "url_hash": "9ad3af891193d1bf813d598aa20201ca777911749040396aa3502cc9de7897c2"
   },
   "posts_today": 2
 }
