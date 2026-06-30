@@ -1,6 +1,6 @@
 {
   "date": "2026-06-30",
-  "last_post_time": "2026-06-30T15:17:11Z",
+  "last_post_time": "2026-06-30T18:20:24Z",
   "pending_best": {
     "authoritative_score": 9.5,
     "canonical_url": "https://techcrunch.com/2026/06/30/amazon-launches-new-1-billion-fde-org-following-openai-and-anthropic",
@@ -26,5 +26,5 @@
     "url": "https://techcrunch.com/2026/06/30/amazon-launches-new-1-billion-fde-org-following-openai-and-anthropic/",
     "url_hash": "d6adaabeb707b608e48eeb622a1be0462708e24ef2571e6f4933d53671b34cb5"
   },
-  "posts_today": 1
+  "posts_today": 2
 }
