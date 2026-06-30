@@ -1,6 +1,30 @@
 {
   "date": "2026-06-30",
   "last_post_time": "2026-06-30T15:17:11Z",
-  "pending_best": null,
+  "pending_best": {
+    "authoritative_score": 9.5,
+    "canonical_url": "https://techcrunch.com/2026/06/30/amazon-launches-new-1-billion-fde-org-following-openai-and-anthropic",
+    "cleaned_title": "amazon 1 billion fde org following openai anthropic",
+    "index": 6,
+    "published_at": "2026-06-30T15:00:00Z",
+    "saved_at": "2026-06-30T16:25:56Z",
+    "score": {
+      "freshness_score": 2.0,
+      "impact_score": 3.0,
+      "novelty_score": 3.0,
+      "reason": "The article discusses a major development in AI research and funding, which could be of high interest to software engineers and AI researchers.",
+      "red_flag": false,
+      "red_flag_reason": null,
+      "source_score": 1.5,
+      "total_score": 9.5
+    },
+    "source": "TechCrunch",
+    "summary": "Engineers on the new team will embed within companies to deploy purpose-built agents, focusing on fast deployments and customer self-sufficiency.",
+    "telegram_message": "\ud83d\udd25 *Amazon launches new $1 billion FDE org, following OpenAI and Anthropic*\n\nThe article discusses a major development in AI research and funding, which could be of high interest to software engineers and AI research...\n\n\ud83c\udfdb\ufe0f Source: TechCrunch (A)\n\u23f0 Published: 1 hour ago\n\u2b50 Score: 9.5/10\n\n\ud83d\udd17 https://techcrunch.com/2026/06/30/amazon-launches-new-1-billion-fde-org-following-openai-and-anthropic/",
+    "tier": "A",
+    "title": "Amazon launches new $1 billion FDE org, following OpenAI and Anthropic",
+    "url": "https://techcrunch.com/2026/06/30/amazon-launches-new-1-billion-fde-org-following-openai-and-anthropic/",
+    "url_hash": "d6adaabeb707b608e48eeb622a1be0462708e24ef2571e6f4933d53671b34cb5"
+  },
   "posts_today": 1
 }
