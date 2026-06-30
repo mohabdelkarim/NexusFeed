@@ -2,29 +2,29 @@
   "date": "2026-06-30",
   "last_post_time": null,
   "pending_best": {
-    "authoritative_score": 8.0,
-    "canonical_url": "https://techcrunch.com/2026/06/29/vibe-coding-platform-base44-launches-own-model-as-ai-startups-seek-defensibility",
-    "cleaned_title": "vibe coding platform base44 own model as ai startups seek defensibility",
+    "authoritative_score": 8.5,
+    "canonical_url": "https://blog.google/company-news/inside-google/around-the-globe/google-europe/united-kingdom/unlocking-britains-next-era-of-productivity-building-a-nation-of-ai-trailblazers",
+    "cleaned_title": "unlocking britain s next era productivity building nation ai trailblazers",
     "index": 0,
-    "published_at": "2026-06-30T02:28:41Z",
-    "saved_at": "2026-06-30T02:48:56Z",
+    "published_at": "2026-06-30T06:00:00Z",
+    "saved_at": "2026-06-30T06:52:53Z",
     "score": {
       "freshness_score": 2.0,
       "impact_score": 2.5,
       "novelty_score": 2.0,
-      "reason": "High novelty and impact score due to the launch of a new AI model, with a very fresh article from a reputable source.",
+      "reason": "High novelty, impact, and freshness scores, with a reputable source.",
       "red_flag": false,
       "red_flag_reason": null,
-      "source_score": 1.5,
-      "total_score": 8.0
+      "source_score": 2.0,
+      "total_score": 8.5
     },
-    "source": "TechCrunch",
-    "summary": "Wix-owned vibe coding platform Base44 has started rolling out its own AI model \u2014 with hopes that it will eventually outperform frontier models.",
-    "telegram_message": "\ud83d\udd25 *Vibe coding platform Base44 launches own model as AI startups seek defensibility*\n\nHigh novelty and impact score due to the launch of a new AI model, with a very fresh article from a reputable source.\n\n\ud83c\udfdb\ufe0f Source: TechCrunch (A)\n\u23f0 Published: <1 hour ago\n\u2b50 Score: 8.0/10\n\n\ud83d\udd17 https://techcrunch.com/2026/06/29/vibe-coding-platform-base44-launches-own-model-as-ai-startups-seek-defensibility/",
-    "tier": "A",
-    "title": "Vibe coding platform Base44 launches own model as AI startups seek defensibility",
-    "url": "https://techcrunch.com/2026/06/29/vibe-coding-platform-base44-launches-own-model-as-ai-startups-seek-defensibility/",
-    "url_hash": "559a10d0dfda2d934b259158fcf74d3c4492317d302235620660289c4930c37d"
+    "source": "Google AI",
+    "summary": "Four illustrated characters representing different professional roles, including a scientist, technician, explorer, and observer.",
+    "telegram_message": "\ud83d\udd25 *Unlocking Britain\u2019s next era of productivity: Building a nation of AI trailblazers*\n\nHigh novelty, impact, and freshness scores, with a reputable source.\n\n\ud83c\udfdb\ufe0f Source: Google AI (S)\n\u23f0 Published: <1 hour ago\n\u2b50 Score: 8.5/10\n\n\ud83d\udd17 https://blog.google/company-news/inside-google/around-the-globe/google-europe/united-kingdom/unlocking-britains-next-era-of-productivity-building-a-nation-of-ai-trailblazers/",
+    "tier": "S",
+    "title": "Unlocking Britain\u2019s next era of productivity: Building a nation of AI trailblazers",
+    "url": "https://blog.google/company-news/inside-google/around-the-globe/google-europe/united-kingdom/unlocking-britains-next-era-of-productivity-building-a-nation-of-ai-trailblazers/",
+    "url_hash": "2987e3b3c79a3a0a8e66291442765b58df54881ad185090c6e0a51cece4b4295"
   },
   "posts_today": 0
 }
