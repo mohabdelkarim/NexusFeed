@@ -1,10 +1,6 @@
 {
   "hash_records": [
     {
-      "hash": "0b690c5df303dfe7e095d5b343e487a8485c7d059bb9563ff4bd7fdd0f7dd056",
-      "posted_at": "2026-06-23T13:27:59Z"
-    },
-    {
       "hash": "ec9b9d1b8b046ec880a216ce0a394fca4ea8e6152a36b9d28c53a6856b22622c",
       "posted_at": "2026-06-23T16:30:10Z"
     },
@@ -19,22 +15,20 @@
     {
       "hash": "33b5ffdd1d78945e67446fc2b14fc9d2b0dac8a59a5dd6a7ea044f1ef946e63e",
       "posted_at": "2026-06-26T20:12:07Z"
+    },
+    {
+      "hash": "2987e3b3c79a3a0a8e66291442765b58df54881ad185090c6e0a51cece4b4295",
+      "posted_at": "2026-06-30T15:17:11Z"
     }
   ],
   "hashes": [
     "072c0c3973379946c848feb9ff14228d9d29fde8c83279e6df85b33a9830890e",
-    "0b690c5df303dfe7e095d5b343e487a8485c7d059bb9563ff4bd7fdd0f7dd056",
+    "2987e3b3c79a3a0a8e66291442765b58df54881ad185090c6e0a51cece4b4295",
     "33b5ffdd1d78945e67446fc2b14fc9d2b0dac8a59a5dd6a7ea044f1ef946e63e",
     "5d2de9152522b89c1ce0edc076a4c866512058bfa9da70df6b579b2db8df6dcd",
     "ec9b9d1b8b046ec880a216ce0a394fca4ea8e6152a36b9d28c53a6856b22622c"
   ],
   "recent_titles": [
-    {
-      "cleaned_title": "build real agentic apps using cuga two dozen working examples lightweight harness",
-      "posted_at": "2026-06-23T13:27:59Z",
-      "score": 9.0,
-      "source": "HuggingFace"
-    },
     {
       "cleaned_title": "running list major tech layoffs 2026 where employers cited ai",
       "posted_at": "2026-06-23T16:30:10Z",
@@ -58,6 +52,12 @@
       "posted_at": "2026-06-26T20:12:07Z",
       "score": 8.5,
       "source": "MarkTechPost"
+    },
+    {
+      "cleaned_title": "unlocking britain s next era productivity building nation ai trailblazers",
+      "posted_at": "2026-06-30T15:17:11Z",
+      "score": 8.5,
+      "source": "Google AI"
     }
   ]
 }
