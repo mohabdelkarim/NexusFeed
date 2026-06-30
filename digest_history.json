@@ -1,31 +1,6 @@
 {
   "recent_titles": [
     {
-      "cleaned_title": "nasa selects eric schmidt\u2019s rocket company 2028 mission mars",
-      "sent_at": "2026-06-19T19:56:58Z",
-      "url": "https://www.theverge.com/science/952988/nasa-relativity-space-eric-schmidt-mars"
-    },
-    {
-      "cleaned_title": "barret zoph out openai again after just five months",
-      "sent_at": "2026-06-19T19:56:58Z",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/952837/barret-zoph-openai-thinking-machines-lab"
-    },
-    {
-      "cleaned_title": "hyundai buys boston dynamics",
-      "sent_at": "2026-06-19T19:56:58Z",
-      "url": "https://startupfortune.com/hyundai-takes-full-control-of-boston-dynamics-as-softbank-exits-for-325-million/"
-    },
-    {
-      "cleaned_title": "us says asml\u2019s top chip tool may be china. asml says it isn\u2019t.",
-      "sent_at": "2026-06-19T19:56:58Z",
-      "url": "https://techcrunch.com/2026/06/19/the-us-says-asmls-top-chip-tool-may-be-in-china-asml-says-it-isnt/"
-    },
-    {
-      "cleaned_title": "billionaire ambani wants every call, app, home",
-      "sent_at": "2026-06-19T19:56:58Z",
-      "url": "https://techcrunch.com/2026/06/19/billionaire-ambani-wants-ai-in-every-call-app-and-home/"
-    },
-    {
       "cleaned_title": "gpt-5 helped immunologist derya unutmaz solve 3-year-old mystery",
       "sent_at": "2026-06-23T20:09:11Z",
       "url": "https://openai.com/index/gpt-5-immunology-mystery"
@@ -74,6 +49,31 @@
       "cleaned_title": "europe fed up wants its own",
       "sent_at": "2026-06-26T19:51:20Z",
       "url": "https://www.wired.com/story/europe-is-fed-up-and-wants-its-own-ai/"
+    },
+    {
+      "cleaned_title": "amazon launches $1 billion fde org, following openai anthropic",
+      "sent_at": "2026-06-30T20:01:25Z",
+      "url": "https://techcrunch.com/2026/06/30/amazon-launches-new-1-billion-fde-org-following-openai-and-anthropic/"
+    },
+    {
+      "cleaned_title": "nvidia competitor etched hits $5b valuation, $1b sales chip",
+      "sent_at": "2026-06-30T20:01:25Z",
+      "url": "https://techcrunch.com/2026/06/30/nvidia-competitor-etched-hits-5b-valuation-1b-in-sales-for-ai-chip/"
+    },
+    {
+      "cleaned_title": "google introduces faster, cheaper image generator nano banana 2 lite",
+      "sent_at": "2026-06-30T20:01:25Z",
+      "url": "https://techcrunch.com/2026/06/30/google-introduces-a-faster-cheaper-image-generator-with-nano-banana-2-lite/"
+    },
+    {
+      "cleaned_title": "anthropic launches claude sonnet 5 as cheaper way run agents",
+      "sent_at": "2026-06-30T20:01:25Z",
+      "url": "https://techcrunch.com/2026/06/30/anthropic-launches-claude-sonnet-5-as-a-cheaper-way-to-run-agents/"
+    },
+    {
+      "cleaned_title": "scarfbench: benchmarking agents enterprise java framework migration",
+      "sent_at": "2026-06-30T20:01:25Z",
+      "url": "https://huggingface.co/blog/ibm-research/scarfbench"
     }
   ],
   "url_hashes": [
@@ -145,6 +145,11 @@
     "7ec59b6a76d611d1753e0d740fd3320e9ead55cc13692543fd947720c1a301d6",
     "22860fcb0315498ac60f93a9b492431e8d08b626298286891ed75e0910fdff7f",
     "e966d4aebb4f423d717e54309fbb7a49d50b3590602e998cadadde343262bb3a",
-    "2f4f90bb1370c4b6074fb0c233915e756fe4ee9026de6e38ecc5fca5abd042fc"
+    "2f4f90bb1370c4b6074fb0c233915e756fe4ee9026de6e38ecc5fca5abd042fc",
+    "d6adaabeb707b608e48eeb622a1be0462708e24ef2571e6f4933d53671b34cb5",
+    "2c28145366d0d5d18b009e758088710a60dd53198e32e7eacf6180023f74a096",
+    "828c9ac954816ef667afccfc8e5841fda22478f354590fe15f996e5660b1bece",
+    "a2fd93ac1dfd72703a445e266d7f873e306a32257041603cd1f205e2c5a42d04",
+    "d2b47e5ca2b10e4d38ddb26f782d9fb30163ac0b076dcf56cbcff33b5e4a5298"
   ]
 }
