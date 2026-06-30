@@ -1,10 +1,6 @@
 {
   "hash_records": [
     {
-      "hash": "ec9b9d1b8b046ec880a216ce0a394fca4ea8e6152a36b9d28c53a6856b22622c",
-      "posted_at": "2026-06-23T16:30:10Z"
-    },
-    {
       "hash": "072c0c3973379946c848feb9ff14228d9d29fde8c83279e6df85b33a9830890e",
       "posted_at": "2026-06-23T20:39:53Z"
     },
@@ -19,6 +15,10 @@
     {
       "hash": "2987e3b3c79a3a0a8e66291442765b58df54881ad185090c6e0a51cece4b4295",
       "posted_at": "2026-06-30T15:17:11Z"
+    },
+    {
+      "hash": "a2fd93ac1dfd72703a445e266d7f873e306a32257041603cd1f205e2c5a42d04",
+      "posted_at": "2026-06-30T18:20:24Z"
     }
   ],
   "hashes": [
@@ -26,15 +26,9 @@
     "2987e3b3c79a3a0a8e66291442765b58df54881ad185090c6e0a51cece4b4295",
     "33b5ffdd1d78945e67446fc2b14fc9d2b0dac8a59a5dd6a7ea044f1ef946e63e",
     "5d2de9152522b89c1ce0edc076a4c866512058bfa9da70df6b579b2db8df6dcd",
-    "ec9b9d1b8b046ec880a216ce0a394fca4ea8e6152a36b9d28c53a6856b22622c"
+    "a2fd93ac1dfd72703a445e266d7f873e306a32257041603cd1f205e2c5a42d04"
   ],
   "recent_titles": [
-    {
-      "cleaned_title": "running list major tech layoffs 2026 where employers cited ai",
-      "posted_at": "2026-06-23T16:30:10Z",
-      "score": 8.0,
-      "source": "TechCrunch"
-    },
     {
       "cleaned_title": "how gpt 5 helped immunologist derya unutmaz solve 3 year old mystery",
       "posted_at": "2026-06-23T20:39:53Z",
@@ -58,6 +52,12 @@
       "posted_at": "2026-06-30T15:17:11Z",
       "score": 8.5,
       "source": "Google AI"
+    },
+    {
+      "cleaned_title": "anthropic claude sonnet 5 as cheaper way run agents",
+      "posted_at": "2026-06-30T18:20:24Z",
+      "score": 8.5,
+      "source": "TechCrunch"
     }
   ]
 }
