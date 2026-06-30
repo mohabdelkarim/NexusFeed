@@ -1,10 +1,6 @@
 {
   "hash_records": [
     {
-      "hash": "072c0c3973379946c848feb9ff14228d9d29fde8c83279e6df85b33a9830890e",
-      "posted_at": "2026-06-23T20:39:53Z"
-    },
-    {
       "hash": "5d2de9152522b89c1ce0edc076a4c866512058bfa9da70df6b579b2db8df6dcd",
       "posted_at": "2026-06-26T15:15:03Z"
     },
@@ -22,19 +18,12 @@
     }
   ],
   "hashes": [
-    "072c0c3973379946c848feb9ff14228d9d29fde8c83279e6df85b33a9830890e",
     "2987e3b3c79a3a0a8e66291442765b58df54881ad185090c6e0a51cece4b4295",
     "33b5ffdd1d78945e67446fc2b14fc9d2b0dac8a59a5dd6a7ea044f1ef946e63e",
     "5d2de9152522b89c1ce0edc076a4c866512058bfa9da70df6b579b2db8df6dcd",
     "a2fd93ac1dfd72703a445e266d7f873e306a32257041603cd1f205e2c5a42d04"
   ],
   "recent_titles": [
-    {
-      "cleaned_title": "how gpt 5 helped immunologist derya unutmaz solve 3 year old mystery",
-      "posted_at": "2026-06-23T20:39:53Z",
-      "score": 9.0,
-      "source": "OpenAI"
-    },
     {
       "cleaned_title": "run vllm server hf jobs one command",
       "posted_at": "2026-06-26T15:15:03Z",
