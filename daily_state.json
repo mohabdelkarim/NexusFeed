@@ -1,30 +1,30 @@
 {
-  "date": "2026-06-30",
-  "last_post_time": "2026-06-30T18:20:24Z",
+  "date": "2026-07-01",
+  "last_post_time": null,
   "pending_best": {
-    "authoritative_score": 9.5,
-    "canonical_url": "https://huggingface.co/blog/ibm-research/scarfbench",
-    "cleaned_title": "scarfbench benchmarking ai agents enterprise java framework migration",
-    "index": 5,
-    "published_at": "2026-06-30T18:32:50Z",
-    "saved_at": "2026-06-30T20:27:05Z",
+    "authoritative_score": 8.5,
+    "canonical_url": "https://www.theverge.com/ai-artificial-intelligence/958964/anthropic-claude-fable-5-is-back",
+    "cleaned_title": "anthropic 8217 s long sidelined fable 5 is greenlit return",
+    "index": 1,
+    "published_at": "2026-07-01T00:03:55Z",
+    "saved_at": "2026-07-01T01:33:45Z",
     "score": {
       "freshness_score": 2.0,
       "impact_score": 2.5,
-      "novelty_score": 3.0,
-      "reason": "High novelty, impact, and freshness scores with a highly reputable source.",
+      "novelty_score": 2.5,
+      "reason": "High novelty and impact score due to research, with high freshness and reputable source.",
       "red_flag": false,
       "red_flag_reason": null,
-      "source_score": 2.0,
-      "total_score": 9.5
+      "source_score": 1.5,
+      "total_score": 8.5
     },
-    "source": "HuggingFace",
-    "summary": "",
-    "telegram_message": "\ud83d\udd25 *ScarfBench: Benchmarking AI Agents for Enterprise Java Framework Migration*\n\nHigh novelty, impact, and freshness scores with a highly reputable source.\n\n\ud83c\udfdb\ufe0f Source: HuggingFace (S)\n\u23f0 Published: 1 hour ago\n\u2b50 Score: 9.5/10\n\n\ud83d\udd17 https://huggingface.co/blog/ibm-research/scarfbench",
-    "tier": "S",
-    "title": "ScarfBench: Benchmarking AI Agents for Enterprise Java Framework Migration",
-    "url": "https://huggingface.co/blog/ibm-research/scarfbench",
-    "url_hash": "d2b47e5ca2b10e4d38ddb26f782d9fb30163ac0b076dcf56cbcff33b5e4a5298"
+    "source": "The Verge",
+    "summary": "After weeks of negotiating with the Trump administration, Anthropic is finally going to be able to bring Claude Fable 5 back online. In a post on X, Anthropic said it plans to begin restoring access tomorrow. Anthropic: We've received notice that the Department of Commerce has lifted export control...",
+    "telegram_message": "\ud83d\udd25 *Anthropic&#8217;s long-sidelined Fable 5 is greenlit to return*\n\nHigh novelty and impact score due to research, with high freshness and reputable source.\n\n\ud83c\udfdb\ufe0f Source: The Verge (A)\n\u23f0 Published: 1 hour ago\n\u2b50 Score: 8.5/10\n\n\ud83d\udd17 https://www.theverge.com/ai-artificial-intelligence/958964/anthropic-claude-fable-5-is-back",
+    "tier": "A",
+    "title": "Anthropic&#8217;s long-sidelined Fable 5 is greenlit to return",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/958964/anthropic-claude-fable-5-is-back",
+    "url_hash": "0a7ef5b46f0256da97caa1350d0745e64c7cef068a20c02480ee704a2e6f09e5"
   },
-  "posts_today": 2
+  "posts_today": 0
 }
