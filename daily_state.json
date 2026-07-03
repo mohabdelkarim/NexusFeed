@@ -1,30 +1,30 @@
 {
   "date": "2026-07-03",
-  "last_post_time": "2026-07-03T14:34:03Z",
+  "last_post_time": "2026-07-03T17:41:32Z",
   "pending_best": {
     "authoritative_score": 8.0,
-    "canonical_url": "https://www.theverge.com/ai-artificial-intelligence/961311/anthropic-claude-science-ai-drug-development",
-    "cleaned_title": "anthropic wants develop its own drugs",
+    "canonical_url": "https://www.wired.com/story/google-deepmind-unionization-talks-are-off-to-a-rocky-start",
+    "cleaned_title": "google deepmind unionization talks are off rocky start",
     "index": 0,
-    "published_at": "2026-07-03T13:56:52Z",
-    "saved_at": "2026-07-03T14:34:03Z",
+    "published_at": "2026-07-03T16:30:00Z",
+    "saved_at": "2026-07-03T17:41:32Z",
     "score": {
       "freshness_score": 2.0,
       "impact_score": 2.5,
       "novelty_score": 2.0,
-      "reason": "High novelty and impact score due to new AI workbench announcement",
+      "reason": "High impact and novelty score due to industry move, with a reputable source and recent publication.",
       "red_flag": false,
       "red_flag_reason": null,
       "source_score": 1.5,
       "total_score": 8.0
     },
-    "source": "The Verge",
-    "summary": "At the event \"The Briefing: AI for Science\" earlier this week, Anthropic announced Claude Science, a new \"AI workbench for scientists\" that pulls fragmented tools and datasets into one environment, and generates figures and visuals. Anthropic, already dominating the industry with its popular coding...",
-    "telegram_message": "\ud83d\udd25 *Anthropic wants to develop its own drugs*\n\nHigh novelty and impact score due to new AI workbench announcement\n\n\ud83c\udfdb\ufe0f Source: The Verge (A)\n\u23f0 Published: <1 hour ago\n\u2b50 Score: 8.0/10\n\n\ud83d\udd17 https://www.theverge.com/ai-artificial-intelligence/961311/anthropic-claude-science-ai-drug-development",
+    "source": "Wired AI",
+    "summary": "During negotiations on Wednesday, employees voiced frustrations with what they consider an unwillingness among executives to engage meaningfully with the prospect of unionization.",
+    "telegram_message": "\ud83d\udd25 *Google DeepMind Unionization Talks Are Off to a Rocky Start*\n\nHigh impact and novelty score due to industry move, with a reputable source and recent publication.\n\n\ud83c\udfdb\ufe0f Source: Wired AI (A)\n\u23f0 Published: 1 hour ago\n\u2b50 Score: 8.0/10\n\n\ud83d\udd17 https://www.wired.com/story/google-deepmind-unionization-talks-are-off-to-a-rocky-start/",
     "tier": "A",
-    "title": "Anthropic wants to develop its own drugs",
-    "url": "https://www.theverge.com/ai-artificial-intelligence/961311/anthropic-claude-science-ai-drug-development",
-    "url_hash": "88ecdef43c05f6e509a226809d026d8b1a199e5a02d86ca6f47162a800d63bb0"
+    "title": "Google DeepMind Unionization Talks Are Off to a Rocky Start",
+    "url": "https://www.wired.com/story/google-deepmind-unionization-talks-are-off-to-a-rocky-start/",
+    "url_hash": "3d570a7af8596dadf37dcb71264941ba84b103e8356563ef79e4487b926d917f"
   },
-  "posts_today": 1
+  "posts_today": 2
 }
