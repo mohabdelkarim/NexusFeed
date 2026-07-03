@@ -1,31 +1,6 @@
 {
   "recent_titles": [
     {
-      "cleaned_title": "gpt-5 helped immunologist derya unutmaz solve 3-year-old mystery",
-      "sent_at": "2026-06-23T20:09:11Z",
-      "url": "https://openai.com/index/gpt-5-immunology-mystery"
-    },
-    {
-      "cleaned_title": "helping build shared standards advanced",
-      "sent_at": "2026-06-23T20:09:11Z",
-      "url": "https://openai.com/index/helping-build-shared-standards-for-advanced-ai"
-    },
-    {
-      "cleaned_title": "build real agentic apps using cuga: two dozen working examples lightweight harness",
-      "sent_at": "2026-06-23T20:09:11Z",
-      "url": "https://huggingface.co/blog/ibm-research/cuga-apps"
-    },
-    {
-      "cleaned_title": "datalab releases lift: 9b open-weights vision model that extracts structured json pdfs using schemas",
-      "sent_at": "2026-06-23T20:09:11Z",
-      "url": "https://www.marktechpost.com/2026/06/23/datalab-releases-lift-a-9b-open-weights-vision-model-that-extracts-structured-json-from-pdfs-using-schemas/"
-    },
-    {
-      "cleaned_title": "anthropic\u2019s claude tag learning your company, one slack message time",
-      "sent_at": "2026-06-23T20:09:11Z",
-      "url": "https://techcrunch.com/2026/06/23/anthropics-claude-tag-is-learning-your-company-one-slack-message-at-a-time/"
-    },
-    {
       "cleaned_title": "openai limits gpt-5.6 rollout after government request, says restrictions shouldn\u2019t be norm",
       "sent_at": "2026-06-26T19:51:20Z",
       "url": "https://techcrunch.com/2026/06/26/openai-limits-gpt-5-6-rollout-after-government-request-says-restrictions-shouldnt-be-the-norm/"
@@ -74,6 +49,31 @@
       "cleaned_title": "scarfbench: benchmarking agents enterprise java framework migration",
       "sent_at": "2026-06-30T20:01:25Z",
       "url": "https://huggingface.co/blog/ibm-research/scarfbench"
+    },
+    {
+      "cleaned_title": "google deepmind unionization talks are off rocky start",
+      "sent_at": "2026-07-03T19:25:58Z",
+      "url": "https://www.wired.com/story/google-deepmind-unionization-talks-are-off-to-a-rocky-start/"
+    },
+    {
+      "cleaned_title": "anthropic wants develop its own drugs",
+      "sent_at": "2026-07-03T19:25:58Z",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/961311/anthropic-claude-science-ai-drug-development"
+    },
+    {
+      "cleaned_title": "google releases a2ui v0.9: portable, framework-agnostic generative ui",
+      "sent_at": "2026-07-03T19:25:58Z",
+      "url": "https://www.infoq.com/news/2026/07/google-a2ui-genui/"
+    },
+    {
+      "cleaned_title": "cloudflare details unified data platform where billing workloads account 53% queries",
+      "sent_at": "2026-07-03T19:25:58Z",
+      "url": "https://www.infoq.com/news/2026/07/cloudflare-unified-data-platform/"
+    },
+    {
+      "cleaned_title": "opentelemetry graduates cncf's highest maturity level",
+      "sent_at": "2026-07-03T19:25:58Z",
+      "url": "https://www.infoq.com/news/2026/07/opentelemetry-cncf-maturity/"
     }
   ],
   "url_hashes": [
@@ -150,6 +150,11 @@
     "2c28145366d0d5d18b009e758088710a60dd53198e32e7eacf6180023f74a096",
     "828c9ac954816ef667afccfc8e5841fda22478f354590fe15f996e5660b1bece",
     "a2fd93ac1dfd72703a445e266d7f873e306a32257041603cd1f205e2c5a42d04",
-    "d2b47e5ca2b10e4d38ddb26f782d9fb30163ac0b076dcf56cbcff33b5e4a5298"
+    "d2b47e5ca2b10e4d38ddb26f782d9fb30163ac0b076dcf56cbcff33b5e4a5298",
+    "3d570a7af8596dadf37dcb71264941ba84b103e8356563ef79e4487b926d917f",
+    "88ecdef43c05f6e509a226809d026d8b1a199e5a02d86ca6f47162a800d63bb0",
+    "d3e8ca56f8f9c616ef24c329d6696f4203a0c4e05f9821510d9868087fef0b6f",
+    "c81f1e992aad4ea5a1f87b5fc9d2b772eacc6d312d7503dcc27a53e13f4e48ee",
+    "26ae6c575a63fe69b5d93d2b92a16ede51c7fe2dbeddca58541e0723590c34d8"
   ]
 }
