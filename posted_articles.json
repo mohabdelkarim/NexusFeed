@@ -15,10 +15,15 @@
     {
       "hash": "88ecdef43c05f6e509a226809d026d8b1a199e5a02d86ca6f47162a800d63bb0",
       "posted_at": "2026-07-03T17:41:32Z"
+    },
+    {
+      "hash": "3d570a7af8596dadf37dcb71264941ba84b103e8356563ef79e4487b926d917f",
+      "posted_at": "2026-07-03T21:35:13Z"
     }
   ],
   "hashes": [
     "2987e3b3c79a3a0a8e66291442765b58df54881ad185090c6e0a51cece4b4295",
+    "3d570a7af8596dadf37dcb71264941ba84b103e8356563ef79e4487b926d917f",
     "7904b17d31a21067bd6f6837c5c05bd34a4bc3044594158206656e91a28d217c",
     "88ecdef43c05f6e509a226809d026d8b1a199e5a02d86ca6f47162a800d63bb0",
     "a2fd93ac1dfd72703a445e266d7f873e306a32257041603cd1f205e2c5a42d04"
@@ -47,6 +52,12 @@
       "posted_at": "2026-07-03T17:41:32Z",
       "score": 8.0,
       "source": "The Verge"
+    },
+    {
+      "cleaned_title": "google deepmind unionization talks are off rocky start",
+      "posted_at": "2026-07-03T21:35:13Z",
+      "score": 8.0,
+      "source": "Wired AI"
     }
   ]
 }
