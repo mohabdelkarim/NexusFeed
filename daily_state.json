@@ -1,30 +1,30 @@
 {
   "date": "2026-07-03",
-  "last_post_time": null,
+  "last_post_time": "2026-07-03T14:34:03Z",
   "pending_best": {
     "authoritative_score": 8.0,
-    "canonical_url": "https://www.theverge.com/games/961203/sony-austria-thalgau-end-disc-production-microlenses-instead",
-    "cleaned_title": "sony s playstation disc factory is already being repurposed",
+    "canonical_url": "https://www.theverge.com/ai-artificial-intelligence/961311/anthropic-claude-science-ai-drug-development",
+    "cleaned_title": "anthropic wants develop its own drugs",
     "index": 0,
-    "published_at": "2026-07-03T01:05:13Z",
-    "saved_at": "2026-07-03T02:26:37Z",
+    "published_at": "2026-07-03T13:56:52Z",
+    "saved_at": "2026-07-03T14:34:03Z",
     "score": {
       "freshness_score": 2.0,
       "impact_score": 2.5,
       "novelty_score": 2.0,
-      "reason": "Industry move with high impact and recent publication.",
+      "reason": "High novelty and impact score due to new AI workbench announcement",
       "red_flag": false,
       "red_flag_reason": null,
       "source_score": 1.5,
       "total_score": 8.0
     },
     "source": "The Verge",
-    "summary": "The video game disc is dead, and Sony's been planning to kill it for some time, according to a report out of Austria. The man who leads Sony's discmaking operations, Sony DADC president Dietmar Tanzer, told ORF Salzberg that the company's Thalgau plant produces 600,000 discs every day, half of whic...",
-    "telegram_message": "\ud83d\udd25 *Sony\u2019s PlayStation disc factory is already being repurposed*\n\nIndustry move with high impact and recent publication.\n\n\ud83c\udfdb\ufe0f Source: The Verge (A)\n\u23f0 Published: 1 hour ago\n\u2b50 Score: 8.0/10\n\n\ud83d\udd17 https://www.theverge.com/games/961203/sony-austria-thalgau-end-disc-production-microlenses-instead",
+    "summary": "At the event \"The Briefing: AI for Science\" earlier this week, Anthropic announced Claude Science, a new \"AI workbench for scientists\" that pulls fragmented tools and datasets into one environment, and generates figures and visuals. Anthropic, already dominating the industry with its popular coding...",
+    "telegram_message": "\ud83d\udd25 *Anthropic wants to develop its own drugs*\n\nHigh novelty and impact score due to new AI workbench announcement\n\n\ud83c\udfdb\ufe0f Source: The Verge (A)\n\u23f0 Published: <1 hour ago\n\u2b50 Score: 8.0/10\n\n\ud83d\udd17 https://www.theverge.com/ai-artificial-intelligence/961311/anthropic-claude-science-ai-drug-development",
     "tier": "A",
-    "title": "Sony\u2019s PlayStation disc factory is already being repurposed",
-    "url": "https://www.theverge.com/games/961203/sony-austria-thalgau-end-disc-production-microlenses-instead",
-    "url_hash": "7904b17d31a21067bd6f6837c5c05bd34a4bc3044594158206656e91a28d217c"
+    "title": "Anthropic wants to develop its own drugs",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/961311/anthropic-claude-science-ai-drug-development",
+    "url_hash": "88ecdef43c05f6e509a226809d026d8b1a199e5a02d86ca6f47162a800d63bb0"
   },
-  "posts_today": 0
+  "posts_today": 1
 }
