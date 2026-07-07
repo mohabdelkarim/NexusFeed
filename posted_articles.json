@@ -1,10 +1,6 @@
 {
   "hash_records": [
     {
-      "hash": "a2fd93ac1dfd72703a445e266d7f873e306a32257041603cd1f205e2c5a42d04",
-      "posted_at": "2026-06-30T18:20:24Z"
-    },
-    {
       "hash": "7904b17d31a21067bd6f6837c5c05bd34a4bc3044594158206656e91a28d217c",
       "posted_at": "2026-07-03T14:34:03Z"
     },
@@ -34,17 +30,10 @@
     "3d570a7af8596dadf37dcb71264941ba84b103e8356563ef79e4487b926d917f",
     "7904b17d31a21067bd6f6837c5c05bd34a4bc3044594158206656e91a28d217c",
     "88ecdef43c05f6e509a226809d026d8b1a199e5a02d86ca6f47162a800d63bb0",
-    "a2fd93ac1dfd72703a445e266d7f873e306a32257041603cd1f205e2c5a42d04",
     "bf55a61637b6dda9b083ebf2d4dade85aebb634090c07419d1e6dcf093c736ee",
     "f20ff2fa98c802f81ca3d9511728dbff1c120caa46ee2a9779ea250a549bc706"
   ],
   "recent_titles": [
-    {
-      "cleaned_title": "anthropic claude sonnet 5 as cheaper way run agents",
-      "posted_at": "2026-06-30T18:20:24Z",
-      "score": 8.5,
-      "source": "TechCrunch"
-    },
     {
       "cleaned_title": "sony s playstation disc factory is already being repurposed",
       "posted_at": "2026-07-03T14:34:03Z",
