@@ -1,6 +1,6 @@
 {
   "date": "2026-07-07",
-  "last_post_time": "2026-07-07T02:34:53Z",
+  "last_post_time": "2026-07-07T10:24:47Z",
   "pending_best": {
     "authoritative_score": 9.0,
     "canonical_url": "https://www.marktechpost.com/2026/07/06/tencent-releases-hy3-open-295b-moe-model",
@@ -26,5 +26,5 @@
     "url": "https://www.marktechpost.com/2026/07/06/tencent-releases-hy3-open-295b-moe-model/",
     "url_hash": "1e1285a1168e3b110701d434ad5a92fb778743309e61feeb88c90a7f192e58bf"
   },
-  "posts_today": 1
+  "posts_today": 2
 }
