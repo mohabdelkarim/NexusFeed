@@ -1,6 +1,5 @@
 .env
 *.env
-posting_intent.json
 __pycache__/
 .venv/
 .pytest_cache/

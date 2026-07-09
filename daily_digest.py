@@ -17,11 +17,9 @@ from news_bot import (
     GROQ_MODEL,
     GROQ_URL,
     Article,
-    clean_multiline_text,
     clean_whitespace,
     configure_logging,
     fetch_feed,
-    sanitize_telegram_markdown_text,
     truncate,
     utc_now,
 )
@@ -29,15 +27,17 @@ from news_bot import (
 
 MAX_DIGEST_CANDIDATES = 30
 REDUCED_DIGEST_CANDIDATES = 15
-REQUIRED_SECRETS = ("GROQ_API_KEY", "TELEGRAM_BOT_TOKEN", "TELEGRAM_CHANNEL_ID")
+REQUIRED_SECRETS = ("GROQ_API_KEY",)
 DIGEST_HISTORY_FILE = "digest_history.json"
+DIGEST_OUTPUT_FILE = "latest_digest.json"
 DIGEST_TITLE_LOOKBACK_DAYS = 3
 ROOT = Path(__file__).resolve().parent
 DIGEST_HISTORY_PATH = ROOT / DIGEST_HISTORY_FILE
+DIGEST_OUTPUT_PATH = ROOT / DIGEST_OUTPUT_FILE
 
 DIGEST_SYSTEM_PROMPT = """
 You are an AI news curator creating a daily top 5 digest for a
-Telegram channel for software engineers and AI researchers.
+repository dashboard for software engineers and AI researchers.
 
 Select the 5 most important AI/tech stories from today.
 Rank them by importance (most important first).
@@ -335,45 +335,17 @@ def normalize_digest_result(result: dict[str, Any], now: datetime) -> tuple[list
     return normalized[:5], digest_date
 
 
-def format_digest_message(stories: list[dict[str, Any]], digest_date: str) -> str:
-    lines = [
-        f"🗞 *Top 5 AI & Tech — {sanitize_telegram_markdown_text(digest_date)}*",
-        "",
-    ]
-    for story in stories:
-        title = sanitize_telegram_markdown_text(story["full_title"])
-        summary = sanitize_telegram_markdown_text(story["one_line_summary"])
-        source_name = sanitize_telegram_markdown_text(story["source_name"])
-        lines.extend(
-            [
-                f"*{story['rank']}.* {title}",
-                f"_{summary}_",
-                f"🏛️ {source_name} ({story['source_tier']}) · ⭐ {story['score']}/10",
-                f"🔗 {story['article_url']}",
-                "",
-            ]
-        )
-    return clean_multiline_text("\n".join(lines))
-
-
-def post_to_telegram(message: str, bot_token: str, channel_id: str) -> bool:
-    api_url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
-    try:
-        response = requests.post(
-            api_url,
-            json={
-                "chat_id": channel_id,
-                "text": message,
-                "parse_mode": "Markdown",
-                "disable_web_page_preview": True,
-            },
-            timeout=30,
-        )
-        response.raise_for_status()
-    except requests.RequestException as exc:
-        logging.error("Daily digest Telegram post failed: %s", exc)
-        return False
-    return True
+def save_latest_digest(stories: list[dict[str, Any]], digest_date: str, now: datetime) -> None:
+    payload = {
+        "digest_date": digest_date,
+        "saved_at": now.astimezone(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z"),
+        "stories": stories,
+    }
+    tmp_path = DIGEST_OUTPUT_PATH.with_suffix(DIGEST_OUTPUT_PATH.suffix + ".tmp")
+    with tmp_path.open("w", encoding="utf-8", newline="\n") as handle:
+        json.dump(payload, handle, indent=2, sort_keys=True)
+        handle.write("\n")
+    os.replace(tmp_path, DIGEST_OUTPUT_PATH)
 
 
 def main() -> int:
@@ -406,15 +378,13 @@ def main() -> int:
         logging.warning("Not enough unique stories for digest today. Skipping.")
         return 0
 
-    stories_to_send = clean_stories
-    message = format_digest_message(stories_to_send, digest_date)
-    if not post_to_telegram(message, secrets["TELEGRAM_BOT_TOKEN"], secrets["TELEGRAM_CHANNEL_ID"]):
-        return 1
-
-    history = mark_digest_stories(stories_to_send, history, now)
+    stories_to_save = clean_stories
+    save_latest_digest(stories_to_save, digest_date, now)
+    history = mark_digest_stories(stories_to_save, history, now)
     save_digest_history(history)
+    logging.info("Latest digest saved to %s.", DIGEST_OUTPUT_PATH.name)
     logging.info("Digest history updated and saved.")
-    logging.info("Daily digest sent successfully.")
+    logging.info("Daily digest generated successfully.")
     return 0
 
 

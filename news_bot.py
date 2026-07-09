@@ -23,7 +23,8 @@ from dateutil.parser import isoparse
 ROOT = Path(__file__).resolve().parent
 POSTED_PATH = ROOT / "posted_articles.json"
 STATE_PATH = ROOT / "daily_state.json"
-POSTING_INTENT_PATH = ROOT / "posting_intent.json"
+POSTED_NOW_PATH = ROOT / "posted_now.json"
+README_PATH = ROOT / "README.md"
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
 GROQ_MODEL = "llama-3.3-70b-versatile"
 MAX_CANDIDATES = 25
@@ -33,11 +34,12 @@ MAX_ARTICLE_AGE_HOURS = 24
 TITLE_SIMILARITY_THRESHOLD = 0.80
 POSTED_RETENTION_DAYS = 7
 RECENT_TITLE_LOOKBACK_HOURS = 24
+MAX_POSTED_NOW_ITEMS = 20
 REQUIRED_SECRETS = [
     "GROQ_API_KEY",
-    "TELEGRAM_BOT_TOKEN",
-    "TELEGRAM_CHANNEL_ID",
 ]
+POST_NOW_SECTION_START = "<!-- POST_NOW_START -->"
+POST_NOW_SECTION_END = "<!-- POST_NOW_END -->"
 TRACKING_QUERY_PREFIXES = (
     "utm_",
     "fbclid",
@@ -154,7 +156,7 @@ GENERAL_TOPIC_KEYWORDS = tuple(sorted(set(AI_TOPIC_KEYWORDS + SOFTWARE_TOPIC_KEY
 TIER_ORDER = {"S": 0, "A": 1, "B": 2, "C": 3}
 
 SCORING_SYSTEM_PROMPT = """
-You are a strict AI news curator for a Telegram channel targeting
+You are a strict AI news curator for a repository dashboard targeting
 software engineers and AI researchers.
 
 Your job per run:
@@ -162,7 +164,7 @@ Your job per run:
 2. Apply red flags (score = 0.00 if ANY red flag matches)
 3. Select the single best article
 4. Decide: POST_NOW / SAVE_PENDING / SKIP
-5. If decision != SKIP: write the ready Telegram message
+5. Return scoring data only. Do not write any social or chat message.
 
 SCORING CRITERIA:
 - Novelty (0.00-3.00): new release=3, research=2.5, industry move=2,
@@ -184,20 +186,6 @@ DECISION RULES:
 Respond ONLY with valid JSON. No markdown, no explanation outside JSON.
 """.strip()
 
-TELEGRAM_MESSAGE_TEMPLATE = """
-━━━━━━━━━━━━━━━━━━━━━
-🔥 *{HEADLINE}*
-
-{1-2 sentence summary in Greek or English - match source language}
-
-🏛️ Source: {Source Name} ({Tier S/A/B/C})
-⏰ Published: {X hours ago}
-⭐ Score: {total_score}/10
-
-🔗 {article_url}
-━━━━━━━━━━━━━━━━━━━━━
-""".strip()
-
 GROQ_RESPONSE_SCHEMA = {
     "articles": [
         {
@@ -216,7 +204,6 @@ GROQ_RESPONSE_SCHEMA = {
     "best_index": 0,
     "best_score": 0.0,
     "recommendation": "POST_NOW | SAVE_PENDING | SKIP",
-    "telegram_message": "string (ready-to-send Telegram message in Markdown)",
 }
 
 
@@ -409,6 +396,33 @@ def default_posted() -> dict[str, Any]:
     }
 
 
+def sanitize_state(data: dict[str, Any], now: datetime) -> dict[str, Any]:
+    pending_best = data.get("pending_best") if isinstance(data.get("pending_best"), dict) else None
+    if isinstance(pending_best, dict):
+        allowed_keys = {
+            "authoritative_score",
+            "canonical_url",
+            "cleaned_title",
+            "index",
+            "published_at",
+            "saved_at",
+            "score",
+            "source",
+            "summary",
+            "tier",
+            "title",
+            "url",
+            "url_hash",
+        }
+        pending_best = {key: value for key, value in pending_best.items() if key in allowed_keys}
+    return {
+        "date": str(data.get("date") or now.date().isoformat()),
+        "posts_today": int(data.get("posts_today", 0) or 0),
+        "last_post_time": data.get("last_post_time"),
+        "pending_best": pending_best,
+    }
+
+
 def load_json(path: Path, default_factory) -> dict[str, Any]:
     if not path.exists():
         return default_factory()
@@ -478,11 +492,6 @@ def clean_whitespace(value: str) -> str:
 def clean_multiline_text(value: str) -> str:
     lines = [line.rstrip() for line in str(value).replace("\r\n", "\n").split("\n")]
     return "\n".join(lines).strip()
-
-
-def sanitize_telegram_markdown_text(value: str) -> str:
-    cleaned = clean_whitespace(str(value))
-    return re.sub(r"[_*\[\]`]", "", cleaned)
 
 
 def strip_html(value: str) -> str:
@@ -761,14 +770,6 @@ def rebuild_prompt_with_summary_limit(candidates: list[Article], char_limit: int
     now = utc_now()
     prompt_payload = {
         "response_schema": GROQ_RESPONSE_SCHEMA,
-        "telegram_message_template": TELEGRAM_MESSAGE_TEMPLATE,
-        "telegram_rules": [
-            "Headline: use the FULL article title, do not truncate, do not shorten",
-            "Summary: 1-2 sentences max, no fluff, no 'in this article we...'",
-            "Never include: ads, affiliate links, author names, publication dates as text",
-            "Telegram Markdown only: use *bold*, no HTML tags",
-            "Total message length: max 300 chars excluding URL",
-        ],
         "candidates": [
             {
                 "index": article.index,
@@ -789,14 +790,6 @@ def rebuild_prompt_with_summary_limit(candidates: list[Article], char_limit: int
 def build_groq_prompt(candidates: list[Article], now: datetime) -> str:
     prompt_payload = {
         "response_schema": GROQ_RESPONSE_SCHEMA,
-        "telegram_message_template": TELEGRAM_MESSAGE_TEMPLATE,
-        "telegram_rules": [
-            "Headline: use the FULL article title, do not truncate, do not shorten",
-            "Summary: 1-2 sentences max, no fluff, no 'in this article we...'",
-            "Never include: ads, affiliate links, author names, publication dates as text",
-            "Telegram Markdown only: use *bold*, no HTML tags",
-            "Total message length: max 300 chars excluding URL",
-        ],
         "candidates": [
             {
                 "index": article.index,
@@ -1005,7 +998,6 @@ def normalize_groq_result(result: dict[str, Any]) -> dict[str, Any] | None:
         "best_score": enforced_best_score,
         "authoritative_score": enforced_best_score,
         "recommendation": recommendation,
-        "telegram_message": clean_multiline_text(result.get("telegram_message", "")),
     }
 
 
@@ -1013,29 +1005,8 @@ def score_map_from_result(result: dict[str, Any]) -> dict[int, dict[str, Any]]:
     return {item["index"]: item for item in result.get("articles", []) if item.get("index", -1) >= 0}
 
 
-def build_fallback_telegram_message(article: Article, score: dict[str, Any], now: datetime) -> str:
-    headline = sanitize_telegram_markdown_text(article.title)
-    summary_source = score.get("reason") or article.summary or article.title
-    summary = truncate(sanitize_telegram_markdown_text(summary_source), 140)
-    source_name = sanitize_telegram_markdown_text(article.source)
-    hours_text = hours_ago_text(article.published_ts, now)
-    total_score = round(float(score.get("authoritative_score", score.get("total_score", 0.0))), 2)
-    return (
-        f"🔥 *{headline}*\n\n"
-        f"{summary}\n\n"
-        f"🏛️ Source: {source_name} ({article.tier})\n"
-        f"⏰ Published: {hours_text}\n"
-        f"⭐ Score: {total_score}/10\n\n"
-        f"🔗 {article.url}"
-    )
-
-
-def build_candidate_payload(article: Article, score: dict[str, Any], telegram_message: str, saved_at: datetime) -> dict[str, Any]:
+def build_candidate_payload(article: Article, score: dict[str, Any], saved_at: datetime) -> dict[str, Any]:
     authoritative_score = round(float(score.get("authoritative_score", score.get("total_score", 0.0))), 2)
-    cleaned_message = clean_multiline_text(telegram_message)
-    if not cleaned_message:
-        logging.warning("Groq omitted telegram_message - using deterministic local fallback.")
-        cleaned_message = build_fallback_telegram_message(article, score, saved_at)
     return {
         "index": article.index,
         "title": article.title,
@@ -1058,7 +1029,6 @@ def build_candidate_payload(article: Article, score: dict[str, Any], telegram_me
             "reason": clean_whitespace(str(score.get("reason", ""))),
         },
         "authoritative_score": authoritative_score,
-        "telegram_message": cleaned_message,
         "saved_at": isoformat_utc(saved_at),
     }
 
@@ -1110,23 +1080,6 @@ def can_post_now(state: dict[str, Any], score_total: float, now: datetime) -> bo
     return posting_window_allows(score_total, now)
 
 
-def post_to_telegram(telegram_message: str, bot_token: str, channel_id: str) -> bool:
-    api_url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
-    response_payload = {
-        "chat_id": channel_id,
-        "text": telegram_message,
-        "parse_mode": "Markdown",
-        "disable_web_page_preview": True,
-    }
-    try:
-        response = requests.post(api_url, json=response_payload, timeout=30)
-        response.raise_for_status()
-    except requests.RequestException as exc:
-        logging.error("Telegram post failed: %s", exc)
-        return False
-    return True
-
-
 def mark_as_posted(posted: dict[str, Any], payload: dict[str, Any], posted_at: datetime) -> None:
     timestamp = isoformat_utc(posted_at)
     hash_record = {"hash": payload["url_hash"], "posted_at": timestamp}
@@ -1151,97 +1104,90 @@ def clear_pending_if_matches(state: dict[str, Any], payload: dict[str, Any]) -> 
         state["pending_best"] = None
 
 
-def load_posting_intent() -> dict[str, Any] | None:
-    if not POSTING_INTENT_PATH.exists():
-        return None
-    return load_json(POSTING_INTENT_PATH, dict)
+def load_posted_now() -> list[dict[str, Any]]:
+    if not POSTED_NOW_PATH.exists():
+        return []
+    try:
+        with POSTED_NOW_PATH.open("r", encoding="utf-8") as handle:
+            data = json.load(handle)
+        if isinstance(data, list):
+            return data
+    except (json.JSONDecodeError, OSError):
+        logging.warning("Failed to load %s. Recreating with defaults.", POSTED_NOW_PATH.name)
+    return []
 
 
-def write_posting_intent(payload: dict[str, Any], now: datetime) -> None:
-    save_json(
-        POSTING_INTENT_PATH,
-        {
-            "url_hash": payload["url_hash"],
-            "title": payload["title"],
-            "score": round(float(payload.get("authoritative_score", payload["score"]["total_score"])), 2),
-            "intent_time": isoformat_utc(now),
-            "status": "pending",
-            "cleaned_title": payload.get("cleaned_title", ""),
-            "source": payload.get("source", ""),
-        },
+def save_posted_now(payload: dict[str, Any], now: datetime) -> None:
+    """Save POST_NOW articles to a dedicated file."""
+    temp_path = POSTED_NOW_PATH.with_suffix(POSTED_NOW_PATH.suffix + ".tmp")
+    existing = [item for item in load_posted_now() if item.get("url_hash") != payload["url_hash"]]
+    existing.append({
+        "url_hash": payload["url_hash"],
+        "title": payload["title"],
+        "summary": payload["summary"],
+        "url": payload["url"],
+        "canonical_url": payload["canonical_url"],
+        "source": payload["source"],
+        "tier": payload["tier"],
+        "published_at": payload["published_at"],
+        "score": payload["score"],
+        "authoritative_score": payload.get("authoritative_score", 0.0),
+        "saved_at": isoformat_utc(now),
+    })
+    existing = sorted(existing, key=lambda item: str(item.get("saved_at", "")), reverse=True)[:MAX_POSTED_NOW_ITEMS]
+
+    with temp_path.open("w", encoding="utf-8", newline="\n") as handle:
+        json.dump(existing, handle, indent=2, sort_keys=True)
+        handle.write("\n")
+    temp_path.replace(POSTED_NOW_PATH)
+    logging.info("POST_NOW article saved to %s", POSTED_NOW_PATH.name)
+
+
+def render_post_now_section(items: list[dict[str, Any]]) -> str:
+    lines = [
+        "## Latest POST_NOW",
+        "",
+        "Αυτα ειναι τα πιο προσφατα αρθρα που πηραν αποφαση `POST_NOW`.",
+        "",
+    ]
+    if not items:
+        lines.append("- Δεν υπαρχουν ακομα POST_NOW αρθρα.")
+        return "\n".join(lines)
+
+    for item in items:
+        title = clean_whitespace(str(item.get("title", ""))) or "Untitled"
+        source = clean_whitespace(str(item.get("source", ""))) or "Unknown"
+        score = round(float(item.get("authoritative_score", 0.0)), 2)
+        url = clean_whitespace(str(item.get("url", "")))
+        published_at = clean_whitespace(str(item.get("published_at", "")))
+        suffix = f" | [link]({url})" if url else ""
+        lines.append(f"- **{title}** | {source} | score {score}/10 | {published_at}{suffix}")
+    return "\n".join(lines)
+
+
+def update_readme_post_now(items: list[dict[str, Any]]) -> None:
+    section = "\n".join(
+        [
+            POST_NOW_SECTION_START,
+            render_post_now_section(items),
+            POST_NOW_SECTION_END,
+        ]
     )
-
-
-def complete_posting_intent() -> None:
-    intent = load_posting_intent() or {}
-    intent["status"] = "completed"
-    save_json(POSTING_INTENT_PATH, intent)
-
-
-def delete_posting_intent() -> None:
-    if POSTING_INTENT_PATH.exists():
-        POSTING_INTENT_PATH.unlink()
-
-
-def recover_incomplete_posting_intent(posted: dict[str, Any], now: datetime) -> None:
-    intent = load_posting_intent()
-    if not isinstance(intent, dict) or intent.get("status") != "pending":
+    try:
+        readme = README_PATH.read_text(encoding="utf-8")
+    except OSError as exc:
+        logging.warning("Failed to read %s: %s", README_PATH.name, exc)
         return
 
-    url_hash = str(intent.get("url_hash", ""))
-    if not url_hash:
-        delete_posting_intent()
-        return
+    if POST_NOW_SECTION_START in readme and POST_NOW_SECTION_END in readme:
+        start = readme.index(POST_NOW_SECTION_START)
+        end = readme.index(POST_NOW_SECTION_END) + len(POST_NOW_SECTION_END)
+        updated = readme[:start] + section + readme[end:]
+    else:
+        updated = readme.rstrip() + "\n\n" + section + "\n"
 
-    if url_hash in set(posted.get("hashes", [])):
-        delete_posting_intent()
-        return
-
-    logging.warning("Found incomplete posting intent - skipping article")
-    hash_record = {
-        "hash": url_hash,
-        "posted_at": isoformat_utc(now),
-        "status": "crash-recovered",
-    }
-    posted.setdefault("hash_records", []).append(hash_record)
-    cleaned_title = clean_whitespace(str(intent.get("cleaned_title", "")))
-    if cleaned_title:
-        posted.setdefault("recent_titles", []).append(
-            {
-                "cleaned_title": cleaned_title,
-                "posted_at": isoformat_utc(now),
-                "source": clean_whitespace(str(intent.get("source", "crash-recovered"))),
-                "score": round(float(intent.get("score", 0.0)), 2),
-            }
-        )
-    cleanup_posted_history(posted, now)
-    save_json(POSTED_PATH, posted)
-    delete_posting_intent()
-
-
-def post_payload_atomically(
-    payload: dict[str, Any],
-    state: dict[str, Any],
-    posted: dict[str, Any],
-    now: datetime,
-    bot_token: str,
-    channel_id: str,
-) -> bool:
-    write_posting_intent(payload, now)
-    if not payload.get("telegram_message") or not post_to_telegram(payload["telegram_message"], bot_token, channel_id):
-        delete_posting_intent()
-        logging.error("Telegram post failed - intent cancelled, will retry next run")
-        return False
-
-    complete_posting_intent()
-    mark_as_posted(posted, payload, now)
-    state["posts_today"] = int(state.get("posts_today", 0)) + 1
-    state["last_post_time"] = isoformat_utc(now)
-    clear_pending_if_matches(state, payload)
-    persist_state_files(state, posted)
-    delete_posting_intent()
-    logging.info("Post completed and state persisted successfully")
-    return True
+    if updated != readme:
+        README_PATH.write_text(updated, encoding="utf-8", newline="\n")
 
 
 def persist_state_files(state: dict[str, Any], posted: dict[str, Any]) -> None:
@@ -1266,9 +1212,8 @@ def main() -> int:
 
     posted = sanitize_posted(load_json(POSTED_PATH, default_posted))
     cleanup_posted_history(posted, now)
-    state = load_json(STATE_PATH, lambda: default_state(now))
+    state = sanitize_state(load_json(STATE_PATH, lambda: default_state(now)), now)
     state, _ = reset_state_if_needed(state, now)
-    recover_incomplete_posting_intent(posted, now)
 
     if int(state.get("posts_today", 0)) >= MAX_POSTS_PER_DAY:
         logging.info("Daily post cap reached. Exiting.")
@@ -1295,13 +1240,18 @@ def main() -> int:
             if best_article and best_score and not best_score["red_flag"]:
                 best_score = dict(best_score)
                 best_score["authoritative_score"] = authoritative_score
-                payload = build_candidate_payload(best_article, best_score, normalized["telegram_message"], now)
+                payload = build_candidate_payload(best_article, best_score, now)
                 recommendation = normalized["recommendation"]
                 log_final_decision(authoritative_score, recommendation, best_index)
 
                 if recommendation == "POST_NOW" and can_post_now(state, authoritative_score, now):
-                    if post_payload_atomically(payload, state, posted, now, secrets["TELEGRAM_BOT_TOKEN"], secrets["TELEGRAM_CHANNEL_ID"]):
-                        return 0
+                    save_posted_now(payload, now)
+                    mark_as_posted(posted, payload, now)
+                    state["posts_today"] = int(state.get("posts_today", 0)) + 1
+                    state["last_post_time"] = isoformat_utc(now)
+                    clear_pending_if_matches(state, payload)
+                    persist_state_files(state, posted)
+                    update_readme_post_now(load_posted_now())
                     return 0
 
                 if recommendation in {"POST_NOW", "SAVE_PENDING"} and authoritative_score >= 6.0:
@@ -1326,9 +1276,15 @@ def main() -> int:
                 elif is_2130_or_later(now) and int(state.get("posts_today", 0)) == 0 and pending_score >= 6.0:
                     pending_to_post = preexisting_pending
 
-    if pending_to_post and pending_to_post.get("telegram_message"):
-        if post_payload_atomically(pending_to_post, state, posted, now, secrets["TELEGRAM_BOT_TOKEN"], secrets["TELEGRAM_CHANNEL_ID"]):
-            return 0
+    if pending_to_post:
+        save_posted_now(pending_to_post, now)
+        mark_as_posted(posted, pending_to_post, now)
+        state["posts_today"] = int(state.get("posts_today", 0)) + 1
+        state["last_post_time"] = isoformat_utc(now)
+        clear_pending_if_matches(state, pending_to_post)
+        persist_state_files(state, posted)
+        update_readme_post_now(load_posted_now())
+        return 0
 
     if not candidates:
         logging.info("No new articles qualified for scoring in this run.")
