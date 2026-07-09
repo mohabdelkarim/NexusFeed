@@ -1145,13 +1145,17 @@ def save_posted_now(payload: dict[str, Any], now: datetime) -> None:
 
 def render_post_now_section(items: list[dict[str, Any]]) -> str:
     lines = [
-        "## Latest POST_NOW",
+        "## 🔥 Latest Curated News",
         "",
-        "Αυτα ειναι τα πιο προσφατα αρθρα που πηραν αποφαση `POST_NOW`.",
+        "> **Live examples** of high-quality articles automatically discovered, scored, and marked as `POST_NOW` by NexusFeed",
         "",
+        "| Score | Headline | Source | Published | Tier |",
+        "|-------|----------|--------|-----------|------|",
     ]
     if not items:
-        lines.append("- Δεν υπαρχουν ακομα POST_NOW αρθρα.")
+        lines.append("| - | No POST_NOW articles yet | - | - | - |")
+        lines.append("")
+        lines.append("*All articles above passed strict scoring, deduplication, and red-flag checks. NexusFeed keeps only the very best.*")
         return "\n".join(lines)
 
     for item in items:
@@ -1160,8 +1164,11 @@ def render_post_now_section(items: list[dict[str, Any]]) -> str:
         score = round(float(item.get("authoritative_score", 0.0)), 2)
         url = clean_whitespace(str(item.get("url", "")))
         published_at = clean_whitespace(str(item.get("published_at", "")))
-        suffix = f" | [link]({url})" if url else ""
-        lines.append(f"- **{title}** | {source} | score {score}/10 | {published_at}{suffix}")
+        tier = clean_whitespace(str(item.get("tier", ""))) or "-"
+        headline = f"[{title}]({url})" if url else title
+        lines.append(f"| **{score}** | {headline} | {source} | {published_at} | **{tier}** |")
+    lines.append("")
+    lines.append("*All articles above passed strict scoring, deduplication, and red-flag checks. NexusFeed keeps only the very best.*")
     return "\n".join(lines)
 
 
