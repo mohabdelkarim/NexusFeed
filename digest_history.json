@@ -1,29 +1,79 @@
 {
   "recent_titles": [
     {
-      "cleaned_title": "openai unveils lockdown mode protect sensitive data prompt injection attacks",
-      "sent_at": "2026-06-06T21:36:17Z",
-      "url": "https://techcrunch.com/2026/06/06/openai-unveils-lockdown-mode-to-protect-sensitive-data-from-prompt-injection-attacks/"
+      "cleaned_title": "amazon launches $1 billion fde org, following openai anthropic",
+      "sent_at": "2026-06-30T20:01:25Z",
+      "url": "https://techcrunch.com/2026/06/30/amazon-launches-new-1-billion-fde-org-following-openai-and-anthropic/"
     },
     {
-      "cleaned_title": "trump administration might take equity stake openai",
-      "sent_at": "2026-06-06T21:36:17Z",
-      "url": "https://techcrunch.com/2026/06/06/the-trump-administration-might-take-an-equity-stake-in-openai/"
+      "cleaned_title": "nvidia competitor etched hits $5b valuation, $1b sales chip",
+      "sent_at": "2026-06-30T20:01:25Z",
+      "url": "https://techcrunch.com/2026/06/30/nvidia-competitor-etched-hits-5b-valuation-1b-in-sales-for-ai-chip/"
     },
     {
-      "cleaned_title": "sriram krishnan leaving his role as white house advisor",
-      "sent_at": "2026-06-06T21:36:17Z",
-      "url": "https://techcrunch.com/2026/06/06/sriram-krishnan-is-leaving-his-role-as-white-house-ai-advisor/"
+      "cleaned_title": "google introduces faster, cheaper image generator nano banana 2 lite",
+      "sent_at": "2026-06-30T20:01:25Z",
+      "url": "https://techcrunch.com/2026/06/30/google-introduces-a-faster-cheaper-image-generator-with-nano-banana-2-lite/"
     },
     {
-      "cleaned_title": "expect wwdc 2026: siri\u2019s highly anticipated revamp apple intelligence updates",
-      "sent_at": "2026-06-06T21:36:17Z",
-      "url": "https://techcrunch.com/2026/06/06/what-to-expect-from-wwdc-2026-siris-highly-anticipated-revamp-and-apple-intelligence-updates/"
+      "cleaned_title": "anthropic launches claude sonnet 5 as cheaper way run agents",
+      "sent_at": "2026-06-30T20:01:25Z",
+      "url": "https://techcrunch.com/2026/06/30/anthropic-launches-claude-sonnet-5-as-a-cheaper-way-to-run-agents/"
     },
     {
-      "cleaned_title": "meta made its own ai-generated clickbait news feed",
-      "sent_at": "2026-06-06T21:36:17Z",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/944235/meta-app-ai-clickbait-articles"
+      "cleaned_title": "scarfbench: benchmarking agents enterprise java framework migration",
+      "sent_at": "2026-06-30T20:01:25Z",
+      "url": "https://huggingface.co/blog/ibm-research/scarfbench"
+    },
+    {
+      "cleaned_title": "google deepmind unionization talks are off rocky start",
+      "sent_at": "2026-07-03T19:25:58Z",
+      "url": "https://www.wired.com/story/google-deepmind-unionization-talks-are-off-to-a-rocky-start/"
+    },
+    {
+      "cleaned_title": "anthropic wants develop its own drugs",
+      "sent_at": "2026-07-03T19:25:58Z",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/961311/anthropic-claude-science-ai-drug-development"
+    },
+    {
+      "cleaned_title": "google releases a2ui v0.9: portable, framework-agnostic generative ui",
+      "sent_at": "2026-07-03T19:25:58Z",
+      "url": "https://www.infoq.com/news/2026/07/google-a2ui-genui/"
+    },
+    {
+      "cleaned_title": "cloudflare details unified data platform where billing workloads account 53% queries",
+      "sent_at": "2026-07-03T19:25:58Z",
+      "url": "https://www.infoq.com/news/2026/07/cloudflare-unified-data-platform/"
+    },
+    {
+      "cleaned_title": "opentelemetry graduates cncf's highest maturity level",
+      "sent_at": "2026-07-03T19:25:58Z",
+      "url": "https://www.infoq.com/news/2026/07/opentelemetry-cncf-maturity/"
+    },
+    {
+      "cleaned_title": "discord admits moderation bug wrongfully banned users over harmless images",
+      "sent_at": "2026-07-07T19:58:21Z",
+      "url": "https://techcrunch.com/2026/07/07/discord-admits-ai-moderation-bug-wrongfully-banned-users-over-harmless-images/"
+    },
+    {
+      "cleaned_title": "discord accidentally banned over 8,000 people posting grids other \u2018benign\u2019 images",
+      "sent_at": "2026-07-07T19:58:21Z",
+      "url": "https://www.theverge.com/games/962156/discord-accidental-bans-grid-images"
+    },
+    {
+      "cleaned_title": "liquid open-sources antidoom: final token preference optimization (ftpo) method that reduces doom loops reasoning models",
+      "sent_at": "2026-07-07T19:58:21Z",
+      "url": "https://www.marktechpost.com/2026/07/07/liquid-ai-antidoom-doom-loops-ftpo/"
+    },
+    {
+      "cleaned_title": "anthropic launching claude cowork mobile web",
+      "sent_at": "2026-07-07T19:58:21Z",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/961978/anthropic-claude-cowork-mobile-web"
+    },
+    {
+      "cleaned_title": "novice coders can develop programs military applications",
+      "sent_at": "2026-07-07T19:58:21Z",
+      "url": "https://news.mit.edu/2026/how-novice-coders-can-develop-ai-programs-for-military-applications-0707"
     }
   ],
   "url_hashes": [
@@ -31,6 +81,85 @@
     "c97cc39055e28c5250f002fd830aab9b39ddb8334683cba98d47879228264612",
     "fe2b0eda655028ba3562fe41c56ca8f7a1ec68e7ff753628ba29821bfc5aeec3",
     "c810b309cf73a8c1541a0ef7846972f5e47d8b3e871d9e9e56f40cffb5fc3b50",
-    "7704f67e310788ff4b3bb3dc0bf5b88bc52746b78c8a72cfcbad9d828ee88ea5"
+    "7704f67e310788ff4b3bb3dc0bf5b88bc52746b78c8a72cfcbad9d828ee88ea5",
+    "d2db4263cbb74bf8ee193c54779985e647bc9508827a5c1ce43fafef8c5798cf",
+    "1bce3dd67d51fe1e11de295672237ff567cfc8d7b122e79d0e363b4540614c70",
+    "8fc2f58f2800484b12647aa1b7e48dfc423d92ebff350af6b67b964b4aa8a9ca",
+    "02191229a64bafa3cedac754ec1837b02fd7d7bb1a64aa858c15b107e0fad72d",
+    "332f05f3cd6ad0d638b44aa1accfeb0586796d95da2ba47ada040858e75bbace",
+    "8645cd7ab49a2981579c667cd9ebb4fe82745f14772c6915230dcc1b9cd37361",
+    "d0348c85180f3580403fb2a925a9639b9b54893c9aecb2173f3ff778c3949fef",
+    "1da870b229296d0c86930d215a77e5f79bee2ebc8ead27f39bb41381d0f9727c",
+    "702c5db3afc1bce39483286575bbcfa916f67c3aa7b4a2aec76ecc9743a13e43",
+    "5d052fa633025fcc16aad26ebf1a82a7037855359439665dfeed6d8283442744",
+    "20e494be0190d4af1d1b67ad276b6dd2af79a79d4de2febd13700ab5d1538753",
+    "6883ba4667c4344215870365a18f38557973be15f7dc4f7f9ab6666a424348d7",
+    "a5c55bcf0af36b8671cf0d5bea8b31cfd3dd38f6a23e17cfcd52b05fb266d987",
+    "da604b9c1ce499392c6b001ad4a5ddf2952b5634f4d517acf23a9a406ddd0715",
+    "773ea9f42ed74926bf0d0853f06c2253633d3ef4389407b7b87ccf279a2e7919",
+    "74e1484708925cfdea608d16e7f02b3d64321c7fd288089de2f4dd07c54efba5",
+    "b25b2eec7bd70abacf1f604d6cb4b598deb5b9498160a49a19709e3a3cd75543",
+    "b8db8cbbb952d56495b0076bf582421ce787790ad41040159d9be942a37ce0ce",
+    "8406c27ed4908ee00c89a9299acf0b0ec1b0b201154a454843d44f40a03fd316",
+    "fdd8b93776182ec2ab123fa9150aa792edbd844628b938355ce42ab7de6807da",
+    "c324d96608f563d60c0488fce323e35068143d2f6a1ad22dab03ea4f1cc4916a",
+    "e3bfdb856d9444350a19325e2267b12be512371cc711ed092f84a35eab4444b4",
+    "ec99355c3a725d3453d88b338dddb230f5d8b1e6cfa9f190ba2c352024f74968",
+    "f8b2575c21e687b6a94b0cb0c03eb97ac789bb9466eaf45b40d7622cd2abfa79",
+    "61ae2308d52a41fe9add39ce0de210737127444a34c772e76127228b0628bc84",
+    "d5a71d336caf9a9cf19d0c6a6050f086894289379ee71056549f410a6b23e9a6",
+    "cbdd28ce68758d125120cc45d418569b639e11fe788dc32cb6de0d106bb3f3a0",
+    "4ca0f58f0a00e28f1e9cbcf0eab4a7edf6c187d8d8830451f306ff6ed84d39ec",
+    "c9b4861f5a18a60ca1a59cc9a92632c7c568e2654b22c24e2be281b430ad27c8",
+    "35e1f5ba73ce012b9d4e1ea18fa51538141859e30b80b31fca1763af6d45cb1d",
+    "a9f0ab8e6b6cfb6c2175e08c39c6ac9a7929eb468b6f3bc415d3b99e71b0ccd3",
+    "d432605b3cd1123da5d2e024f0634c87d953e2c412e2b98906b4d36606094f9c",
+    "94b7866da73e1fa18dd5a55516f37e1eb94d1e49b5e4b6582945c201ac1efc7f",
+    "bd9bf27f1c675da1d4cd42b9b8bc1bc2af854bc49ef10ce57fc2b8651b70e359",
+    "a54155c5488c751397b7500d5405103ba3507894cf23618609ff9a9f5ae4bf9a",
+    "bdb897e9b16cdf715c69138e332c90fec4fe0edcc9533312c82714f39a78f24d",
+    "aa6c9ee9734935c0099152bcae7d51edbfe36bbe516accc35433d4a5f5e38928",
+    "a63630bc9083677b15db0a0396b5393d3a54b36b9720465ca48fcfa52202b95b",
+    "ccb02d928b5259b743de5d1e088ab84428648234b4ed03e0851c097900a475ff",
+    "819ce18c6e685e747dde650ee87055a9eb8124bbd716164cb7de4f80fb6bab87",
+    "c1fa95dd22fb68370e19c8c96358916974ce7782ccd87ed6090ad6e10aaeced2",
+    "f709715eb74f68ad82330393a038cd0e1c19bee116100e8d070b92d525712fc5",
+    "2a13a388a10613828daad9cb9fd3922b4889978c5eef893616f6b98b71eb229a",
+    "866972b9be74b22136123688f0b414f3f65b1bcdb970264412a6a96d2f3cde27",
+    "329ab127198d39ad1733e3acdf463f53ffc80a3aee17e78a37c79cfb79405da5",
+    "f53aff1afeef2419060a8089393446d64d5155647e8667e370386469ffa10102",
+    "be26d7f567ae2eaddcf48b549b8ce183be190bf908e34af94d3aa046c0369dda",
+    "2eb5bcc3ad88b97ec36616da4492f783e0b7188871f20dd0ee456f000c78f604",
+    "450d5ccfb1602dc277cdfc7081592af9d5770b23e6395d73e1190a55a4b14872",
+    "e1579b10df51950e036e05632f1866ab6d561b5528201480771f49eddad6b846",
+    "8ad2b1d3c2a8e540f3275bcf19ce6e3b8d597d8281a491cf4b238908085dd916",
+    "65ef1642e740e5aebd95bfdbf0f51cd76c824cc60fe7e2b9bc37e78be054f5c7",
+    "260212e25527350dfbe1528656634fd28f975ebc756ca7758c6dfb2abb82ce4b",
+    "317002a5314d07bc9bca81fbd790300a4208ff618c0bdd9446c5ae28a3999b82",
+    "072c0c3973379946c848feb9ff14228d9d29fde8c83279e6df85b33a9830890e",
+    "aec47bf765565a42d15632893022dd8dad49d3735db96380d92af7e90fffa2df",
+    "0b690c5df303dfe7e095d5b343e487a8485c7d059bb9563ff4bd7fdd0f7dd056",
+    "fe174e095c48939f14acb633a78d347d6ac4617bfa1070fe47ec5ca6180f190e",
+    "c4b83b4a74b9817217032de796dfa0e2e764e0b4ef936a1fa7fd26ddc7c6d3d2",
+    "1656bcd15dacc24112d5716b7083ce91aeb243a6bdd70908bf9a2ccc195eed57",
+    "7ec59b6a76d611d1753e0d740fd3320e9ead55cc13692543fd947720c1a301d6",
+    "22860fcb0315498ac60f93a9b492431e8d08b626298286891ed75e0910fdff7f",
+    "e966d4aebb4f423d717e54309fbb7a49d50b3590602e998cadadde343262bb3a",
+    "2f4f90bb1370c4b6074fb0c233915e756fe4ee9026de6e38ecc5fca5abd042fc",
+    "d6adaabeb707b608e48eeb622a1be0462708e24ef2571e6f4933d53671b34cb5",
+    "2c28145366d0d5d18b009e758088710a60dd53198e32e7eacf6180023f74a096",
+    "828c9ac954816ef667afccfc8e5841fda22478f354590fe15f996e5660b1bece",
+    "a2fd93ac1dfd72703a445e266d7f873e306a32257041603cd1f205e2c5a42d04",
+    "d2b47e5ca2b10e4d38ddb26f782d9fb30163ac0b076dcf56cbcff33b5e4a5298",
+    "3d570a7af8596dadf37dcb71264941ba84b103e8356563ef79e4487b926d917f",
+    "88ecdef43c05f6e509a226809d026d8b1a199e5a02d86ca6f47162a800d63bb0",
+    "d3e8ca56f8f9c616ef24c329d6696f4203a0c4e05f9821510d9868087fef0b6f",
+    "c81f1e992aad4ea5a1f87b5fc9d2b772eacc6d312d7503dcc27a53e13f4e48ee",
+    "26ae6c575a63fe69b5d93d2b92a16ede51c7fe2dbeddca58541e0723590c34d8",
+    "1456e1678db7593b67fb735984e9dca5cefb6a09d473cc799e61f2b052d78932",
+    "5483fbb8a64825c9e0a1f920af11859b848ada68c35ae516bc1054d5a4d725c2",
+    "1783468e23e9e8c845100e3721c11ac6a5727f02913816016024e5eb4e23d3a6",
+    "9e6282f436819adf7d586803b884e77edbdd119e7c2ce34aed63ab8f2c08afc3",
+    "1f9d06fc3d46e02673ff92eee2c8c03706eb0714d41bad87a1c96145cb96f16b"
   ]
 }
