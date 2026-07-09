@@ -1,30 +1,30 @@
 {
-  "date": "2026-06-06",
-  "last_post_time": "2026-06-06T21:23:30Z",
+  "date": "2026-07-07",
+  "last_post_time": "2026-07-07T15:36:38Z",
   "pending_best": {
-    "authoritative_score": 8.0,
-    "canonical_url": "https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim-v2",
-    "cleaned_title": "five labs five minds building multi model finance drama small models",
-    "index": 3,
-    "published_at": "2026-06-06T19:02:33Z",
-    "saved_at": "2026-06-06T21:35:31Z",
+    "authoritative_score": 9.0,
+    "canonical_url": "https://www.marktechpost.com/2026/07/06/tencent-releases-hy3-open-295b-moe-model",
+    "cleaned_title": "tencent hy3 open 295b mixture experts moe model 21b active parameters 256k context",
+    "index": 0,
+    "published_at": "2026-07-07T05:59:07Z",
+    "saved_at": "2026-07-07T06:30:44Z",
     "score": {
-      "freshness_score": 1.0,
+      "freshness_score": 2.0,
       "impact_score": 2.5,
-      "novelty_score": 2.5,
-      "reason": "High novelty and impact scores due to the innovative approach to finance drama, and high source score due to the tier S source.",
+      "novelty_score": 3.0,
+      "reason": "New release of a significant AI model",
       "red_flag": false,
       "red_flag_reason": null,
-      "source_score": 2.0,
-      "total_score": 8.0
+      "source_score": 1.5,
+      "total_score": 9.0
     },
-    "source": "HuggingFace",
-    "summary": "",
-    "telegram_message": "\ud83d\udd25 *Five labs, five minds: building a multi-model finance drama on small models*\n\nHigh novelty and impact scores due to the innovative approach to finance drama, and high source score due to the tier S source.\n\n\ud83c\udfdb\ufe0f Source: HuggingFace (S)\n\u23f0 Published: 2 hours ago\n\u2b50 Score: 8.0/10\n\n\ud83d\udd17 https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim-v2",
-    "tier": "S",
-    "title": "Five labs, five minds: building a multi-model finance drama on small models",
-    "url": "https://huggingface.co/blog/build-small-hackathon/thousand-token-wood-sim-v2",
-    "url_hash": "fa5e63bc3187607403748cc32f6425354ed029bb7117f7d5e719ffcce10f4db1"
+    "source": "MarkTechPost",
+    "summary": "Tencent's Hy team released Hy3, a 295B Mixture-of-Experts (MoE) model that activates only 21B parameters per token. It ships under Apache 2.0 with a 256K context window, targeting reasoning, agentic, and long-context tasks. Hy3 reports 78.0 on SWE-Bench Verified and lower hallucination rates, and i...",
+    "telegram_message": "\ud83d\udd25 *Tencent Releases Hy3: An Open 295B Mixture-of-Experts (MoE) Model with 21B Active Parameters and 256K Context*\n\nNew release of a significant AI model\n\n\ud83c\udfdb\ufe0f Source: MarkTechPost (A)\n\u23f0 Published: <1 hour ago\n\u2b50 Score: 9.0/10\n\n\ud83d\udd17 https://www.marktechpost.com/2026/07/06/tencent-releases-hy3-open-295b-moe-model/",
+    "tier": "A",
+    "title": "Tencent Releases Hy3: An Open 295B Mixture-of-Experts (MoE) Model with 21B Active Parameters and 256K Context",
+    "url": "https://www.marktechpost.com/2026/07/06/tencent-releases-hy3-open-295b-moe-model/",
+    "url_hash": "1e1285a1168e3b110701d434ad5a92fb778743309e61feeb88c90a7f192e58bf"
   },
-  "posts_today": 1
+  "posts_today": 3
 }
