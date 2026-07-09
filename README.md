@@ -1,101 +1,234 @@
 # NexusFeed
 
-Autonomous AI and software engineering news curator for this repository.
+> **Autonomous AI News Curator** — A production-grade curation engine for software engineers and AI researchers.
 
-## Overview
+[![GitHub Stars](https://img.shields.io/github/stars/mohabdelkarim/NexusFeed?style=social)](https://github.com/mohabdelkarim/NexusFeed/stargazers)
+[![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![Powered by Groq](https://img.shields.io/badge/powered%20by-Groq-FF6B35)](https://groq.com)
+[![GitHub Actions](https://img.shields.io/badge/runs%20on-GitHub%20Actions-2088FF?logo=githubactions&logoColor=white)](https://github.com/mohabdelkarim/NexusFeed/actions)
 
-NexusFeed fetches curated RSS feeds, filters recent stories, scores them with Groq, and keeps only the strongest candidates.
+**NexusFeed** is a production-grade, fully autonomous AI news curator that discovers, scores, deduplicates, and archives the highest-quality AI and software engineering news without human intervention.
 
-- `POST_NOW` stories are saved in `posted_now.json`
-- `SAVE_PENDING` stories stay in `daily_state.json` as `pending_best`
-- Posted story history stays in `posted_articles.json`
-- The README is auto-updated with the latest `POST_NOW` items
+---
 
-## How It Works
+## ✨ Why NexusFeed?
 
-1. Fetches 15 RSS sources in parallel
-2. Keeps articles from the last 24 hours
-3. Removes duplicates by URL hash and title similarity
-4. Sends up to 25 candidates to Groq for scoring
-5. Decides `POST_NOW`, `SAVE_PENDING`, or `SKIP`
-6. Saves only actual `POST_NOW` results to `posted_now.json` and this README
+| Problem | NexusFeed Solution |
+|---------|--------------------|
+| Endless low-quality listicles | Strict 4-criteria AI scoring plus red-flag detection |
+| Duplicate stories everywhere | Multi-layer deduplication with URL hash and title similarity |
+| Inconsistent curation quality | One-shot Groq scoring with deterministic decision rules |
+| Manual curation is exhausting | Fully autonomous flow with smart pending queue |
+| Server costs | Runs entirely on GitHub Actions and persists state in the repo |
 
-## Scoring
+---
 
-The scorer uses 4 criteria:
+<!-- POST_NOW_START -->
+## 🔥 Latest Curated News
 
-- `Novelty` up to `3.0`
-- `Impact` up to `3.0`
-- `Freshness` up to `2.0`
-- `Source` up to `2.0`
+> **Live examples** of high-quality articles automatically discovered, scored, and marked as `POST_NOW` by NexusFeed
 
-Decision thresholds:
+| Score | Headline | Source | Published | Tier |
+|-------|----------|--------|-----------|------|
+| - | No POST_NOW articles yet | - | - | - |
 
-- `>= 8.5` -> `POST_NOW`
-- `>= 6.0` -> `SAVE_PENDING`
-- `< 6.0` -> `SKIP`
+*All articles above passed strict scoring, deduplication, and red-flag checks. NexusFeed keeps only the very best.*
+<!-- POST_NOW_END -->
 
-Articles that match red-flag patterns such as `top 10`, `how to`, `tutorial`, `weekly recap`, and similar listicles are rejected locally.
+---
 
-## Outputs
+**Want to see it in action?**  
+Run it locally in minutes or let GitHub Actions keep the repository updated automatically.
 
-Main generated files:
+---
 
-- `posted_now.json`: latest `POST_NOW` items
-- `posted_articles.json`: dedupe history
-- `daily_state.json`: daily counters and `pending_best`
-- `digest_history.json`: digest dedupe history
-- `latest_digest.json`: latest generated daily digest
+## 🧠 How It Thinks
 
-## Secrets
+NexusFeed uses a **4-dimensional scoring system** powered by Groq:
 
-Only one secret is required:
-
-- `GROQ_API_KEY`
-
-Example local `.env`:
-
-```bash
-GROQ_API_KEY=your_groq_api_key_here
+```text
+Total Score = Novelty (3) + Impact (3) + Freshness (2) + Source Authority (2)
 ```
 
-## Local Run
+**Red flags are strictly enforced**: tutorials, "top 10" lists, recaps, and how-to guides are automatically rejected.
+
+Real-time decisions:
+
+- `POST_NOW` -> `>= 8.5`
+- `SAVE_PENDING` -> `6.0 - 8.4`
+- `SKIP` -> `< 6.0`
+
+---
+
+## 🚀 Features
+
+- **15 curated RSS feeds** across AI and software engineering
+- **Parallel fetching** with `ThreadPoolExecutor(max_workers=15)`
+- **One-shot Groq call** for scoring and decisioning
+- **Aggressive deduplication** with URL hash and 80% title similarity
+- **Smart pending queue** stored in `daily_state.json`
+- **Automatic README updates** with the latest `POST_NOW` stories
+- **Daily digest generation** saved to `latest_digest.json`
+- **Zero server cost** because everything lives in the GitHub repo
+
+---
+
+## 📦 Quick Start
+
+### 1. Clone The Repository
+
+```bash
+git clone https://github.com/mohabdelkarim/NexusFeed.git
+cd NexusFeed
+```
+
+### 2. Required Secret
+
+Add this GitHub Actions secret:
+
+| Secret | Description |
+|--------|-------------|
+| `GROQ_API_KEY` | Your Groq API key |
+
+### 3. Local Development
 
 ```bash
 python -m venv .venv
 . .venv\Scripts\Activate.ps1
 pip install -r requirements.txt
+
+# Create .env file
+copy .env.example .env
+# Edit .env with your key
+
 python main.py
 ```
 
-Other commands:
+---
 
-```bash
-python daily_digest.py
-python check_feeds.py
+## 🏗️ Architecture
+
+```text
+┌─────────────────────┐
+│   GitHub Actions    │
+│   (cron scheduler)  │
+└──────────┬──────────┘
+           │
+           ▼
+┌─────────────────────┐     ┌──────────────────────┐
+│   news_bot.py       │────▶│   Groq (Llama 3.3)   │
+│                     │     │   (JSON mode)        │
+└──────────┬──────────┘     └──────────────────────┘
+           │
+           ▼
+┌─────────────────────┐
+│  posted_now.json    │
+│  README dashboard   │
+└──────────┬──────────┘
+           │
+           ▼
+┌─────────────────────┐
+│  State persisted    │
+│  to GitHub repo     │
+└─────────────────────┘
 ```
 
-## GitHub Actions
+**Key files:**
+
+- `news_bot.py` — Scoring, deduplication, decision logic, README updates
+- `main.py` — Clean entrypoint
+- `daily_state.json` — Persistent daily counters and pending queue
+- `posted_articles.json` — Deduplication memory
+- `posted_now.json` — Latest `POST_NOW` stories
+- `daily_digest.py` — Daily digest generator
+
+---
+
+## 🎯 Curated Sources
+
+**Tier S**
+
+- OpenAI
+- Anthropic
+- Google AI
+- Hugging Face
+- Microsoft AI
+
+**Tier A**
+
+- TechCrunch
+- The Verge
+- Ars Technica
+- MarkTechPost
+- Wired AI
+
+**Tier B and C**
+
+- MIT News
+- InfoQ
+- AI News
+- arXiv cs.AI
+- Hacker News
+
+---
+
+## 🔧 Customization
+
+Want to change behavior? Edit these constants in `news_bot.py`:
+
+```python
+MAX_POSTS_PER_DAY = 3
+MIN_HOURS_BETWEEN_POSTS = 3
+MAX_CANDIDATES = 25
+TITLE_SIMILARITY_THRESHOLD = 0.80
+```
+
+You can also:
+
+- Add or remove feeds in `FEEDS`
+- Extend `RED_FLAG_PATTERNS`
+- Tune `SCORING_SYSTEM_PROMPT`
+
+---
+
+## 📁 Outputs
+
+Repository outputs:
+
+- `posted_now.json` — latest `POST_NOW` items
+- `posted_articles.json` — dedupe history
+- `daily_state.json` — daily counters and `pending_best`
+- `digest_history.json` — digest dedupe history
+- `latest_digest.json` — latest saved daily digest
+
+---
+
+## ⚙️ GitHub Actions
 
 `news-bot.yml`
 
 - Runs the main curator on schedule
-- Commits `daily_state.json`, `posted_articles.json`, `posted_now.json`, and `README.md`
+- Updates `posted_now.json`
+- Refreshes the `README` curated news section
+- Commits repo state back automatically
 
 `daily-digest.yml`
 
 - Generates the top 5 digest
-- Commits `digest_history.json` and `latest_digest.json`
+- Saves it to `latest_digest.json`
+- Commits digest state back automatically
 
 `feed-health.yml`
 
 - Checks feed availability
-- Fails if too many sources are dead
+- Fails if too many sources are unavailable
 
-<!-- POST_NOW_START -->
-## Latest POST_NOW
+---
 
-Αυτα ειναι τα πιο προσφατα αρθρα που πηραν αποφαση `POST_NOW`.
+## 📈 Roadmap
 
-- Δεν υπαρχουν ακομα POST_NOW αρθρα.
-<!-- POST_NOW_END -->
+- [ ] Semantic deduplication with embeddings
+- [ ] Better README news cards or richer dashboard formatting
+- [ ] Weekly digest mode
+- [ ] Dynamic source tiering
+- [ ] Historical analytics for score trends
