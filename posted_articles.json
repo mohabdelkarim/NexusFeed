@@ -1,10 +1,6 @@
 {
   "hash_records": [
     {
-      "hash": "3d570a7af8596dadf37dcb71264941ba84b103e8356563ef79e4487b926d917f",
-      "posted_at": "2026-07-03T21:35:13Z"
-    },
-    {
       "hash": "bf55a61637b6dda9b083ebf2d4dade85aebb634090c07419d1e6dcf093c736ee",
       "posted_at": "2026-07-07T02:34:53Z"
     },
@@ -23,18 +19,11 @@
   ],
   "hashes": [
     "1ec294ada9f40d0a169e6cf8fa1023812cdb1be3e02ba8996c8955382ac7a69b",
-    "3d570a7af8596dadf37dcb71264941ba84b103e8356563ef79e4487b926d917f",
     "bf55a61637b6dda9b083ebf2d4dade85aebb634090c07419d1e6dcf093c736ee",
     "f20ff2fa98c802f81ca3d9511728dbff1c120caa46ee2a9779ea250a549bc706",
     "f3845f235d8107add910c9f74e67cee839e9b69e6f242dcb99d9eb0ed9f05918"
   ],
   "recent_titles": [
-    {
-      "cleaned_title": "google deepmind unionization talks are off rocky start",
-      "posted_at": "2026-07-03T21:35:13Z",
-      "score": 8.0,
-      "source": "Wired AI"
-    },
     {
       "cleaned_title": "lerobot v0 6 0 imagine evaluate improve",
       "posted_at": "2026-07-07T02:34:53Z",
