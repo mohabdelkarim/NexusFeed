@@ -1,56 +1,6 @@
 {
   "recent_titles": [
     {
-      "cleaned_title": "amazon launches $1 billion fde org, following openai anthropic",
-      "sent_at": "2026-06-30T20:01:25Z",
-      "url": "https://techcrunch.com/2026/06/30/amazon-launches-new-1-billion-fde-org-following-openai-and-anthropic/"
-    },
-    {
-      "cleaned_title": "nvidia competitor etched hits $5b valuation, $1b sales chip",
-      "sent_at": "2026-06-30T20:01:25Z",
-      "url": "https://techcrunch.com/2026/06/30/nvidia-competitor-etched-hits-5b-valuation-1b-in-sales-for-ai-chip/"
-    },
-    {
-      "cleaned_title": "google introduces faster, cheaper image generator nano banana 2 lite",
-      "sent_at": "2026-06-30T20:01:25Z",
-      "url": "https://techcrunch.com/2026/06/30/google-introduces-a-faster-cheaper-image-generator-with-nano-banana-2-lite/"
-    },
-    {
-      "cleaned_title": "anthropic launches claude sonnet 5 as cheaper way run agents",
-      "sent_at": "2026-06-30T20:01:25Z",
-      "url": "https://techcrunch.com/2026/06/30/anthropic-launches-claude-sonnet-5-as-a-cheaper-way-to-run-agents/"
-    },
-    {
-      "cleaned_title": "scarfbench: benchmarking agents enterprise java framework migration",
-      "sent_at": "2026-06-30T20:01:25Z",
-      "url": "https://huggingface.co/blog/ibm-research/scarfbench"
-    },
-    {
-      "cleaned_title": "google deepmind unionization talks are off rocky start",
-      "sent_at": "2026-07-03T19:25:58Z",
-      "url": "https://www.wired.com/story/google-deepmind-unionization-talks-are-off-to-a-rocky-start/"
-    },
-    {
-      "cleaned_title": "anthropic wants develop its own drugs",
-      "sent_at": "2026-07-03T19:25:58Z",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/961311/anthropic-claude-science-ai-drug-development"
-    },
-    {
-      "cleaned_title": "google releases a2ui v0.9: portable, framework-agnostic generative ui",
-      "sent_at": "2026-07-03T19:25:58Z",
-      "url": "https://www.infoq.com/news/2026/07/google-a2ui-genui/"
-    },
-    {
-      "cleaned_title": "cloudflare details unified data platform where billing workloads account 53% queries",
-      "sent_at": "2026-07-03T19:25:58Z",
-      "url": "https://www.infoq.com/news/2026/07/cloudflare-unified-data-platform/"
-    },
-    {
-      "cleaned_title": "opentelemetry graduates cncf's highest maturity level",
-      "sent_at": "2026-07-03T19:25:58Z",
-      "url": "https://www.infoq.com/news/2026/07/opentelemetry-cncf-maturity/"
-    },
-    {
       "cleaned_title": "discord admits moderation bug wrongfully banned users over harmless images",
       "sent_at": "2026-07-07T19:58:21Z",
       "url": "https://techcrunch.com/2026/07/07/discord-admits-ai-moderation-bug-wrongfully-banned-users-over-harmless-images/"
@@ -74,6 +24,31 @@
       "cleaned_title": "novice coders can develop programs military applications",
       "sent_at": "2026-07-07T19:58:21Z",
       "url": "https://news.mit.edu/2026/how-novice-coders-can-develop-ai-programs-for-military-applications-0707"
+    },
+    {
+      "cleaned_title": "sk hynix raises $26.5b biggest foreign ipo us history, urged build us fabs",
+      "sent_at": "2026-07-10T19:35:48Z",
+      "url": "https://techcrunch.com/2026/07/10/sk-hynix-raises-26-5b-in-the-biggest-foreign-ipo-in-us-history-is-urged-to-build-new-us-fabs/"
+    },
+    {
+      "cleaned_title": "nvidia\u2019s biggest ram supplier just had trillion-dollar debut wall street",
+      "sent_at": "2026-07-10T19:35:48Z",
+      "url": "https://www.theverge.com/tech/964121/sk-hynix-nvidia-ram-stock-market-debut"
+    },
+    {
+      "cleaned_title": "deutsche telekom rewiring telecommunications",
+      "sent_at": "2026-07-10T19:35:48Z",
+      "url": "https://openai.com/index/deutsche-telekom"
+    },
+    {
+      "cleaned_title": "google research introduces sensorfm: wearable health foundation model pretrained one trillion minutes sensor data",
+      "sent_at": "2026-07-10T19:35:48Z",
+      "url": "https://www.marktechpost.com/2026/07/10/google-research-introduces-sensorfm-a-wearable-health-foundation-model-pretrained-on-one-trillion-minutes-of-sensor-data/"
+    },
+    {
+      "cleaned_title": "meet lingbot-world-infinity: open causal world model agentic harness",
+      "sent_at": "2026-07-10T19:35:48Z",
+      "url": "https://www.marktechpost.com/2026/07/09/meet-lingbot-world-infinity-an-open-causal-world-model-with-an-agentic-harness/"
     }
   ],
   "url_hashes": [
@@ -160,6 +135,11 @@
     "5483fbb8a64825c9e0a1f920af11859b848ada68c35ae516bc1054d5a4d725c2",
     "1783468e23e9e8c845100e3721c11ac6a5727f02913816016024e5eb4e23d3a6",
     "9e6282f436819adf7d586803b884e77edbdd119e7c2ce34aed63ab8f2c08afc3",
-    "1f9d06fc3d46e02673ff92eee2c8c03706eb0714d41bad87a1c96145cb96f16b"
+    "1f9d06fc3d46e02673ff92eee2c8c03706eb0714d41bad87a1c96145cb96f16b",
+    "215c84d847ed745900deebd3e619a4c2fc826ad9dbcbb52335ebe38f38475f99",
+    "3839887e5ca53a0cb0e7c91ec82c49a8ec74649239a93e78fa8f5638293abfb5",
+    "521cb8f5727237af1c44feb4444334a2faf7dfcc9e7d53764a3e5fae7e59bce7",
+    "79e4db2341aa4c2a69ab0ff9908cf3c82d49b13928bf2a765245b76eb82397dc",
+    "93799ccbd9e7bc0ea66cba43550f7d4c85545b63b7bc3541bb37fbe0b4100d3f"
   ]
 }
