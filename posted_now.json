@@ -1,0 +1,24 @@
+[
+  {
+    "authoritative_score": 8.5,
+    "canonical_url": "https://www.infoq.com/news/2026/07/akrites-open-source-ai-threats",
+    "published_at": "2026-07-10T12:00:00Z",
+    "saved_at": "2026-07-10T12:40:23Z",
+    "score": {
+      "freshness_score": 2.0,
+      "impact_score": 2.5,
+      "novelty_score": 3.0,
+      "reason": "The article is about a new release of a critical open source software protection initiative.",
+      "red_flag": false,
+      "red_flag_reason": null,
+      "source_score": 1.0,
+      "total_score": 8.5
+    },
+    "source": "InfoQ AI/ML",
+    "summary": "The Linux Foundation has launched Akrites, a new industry-wide initiative aimed at defending the world's most critical open source software against a rapidly evolving generation of AI-enabled cyber threats. By Craig Risi",
+    "tier": "B",
+    "title": "Linux Foundation Launches Akrites to Protect Critical Open Source Software from AI-Powered Threats",
+    "url": "https://www.infoq.com/news/2026/07/akrites-open-source-ai-threats/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "url_hash": "f3845f235d8107add910c9f74e67cee839e9b69e6f242dcb99d9eb0ed9f05918"
+  }
+]

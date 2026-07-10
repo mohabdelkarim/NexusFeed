@@ -30,7 +30,7 @@
 
 | Score | Headline | Source | Published | Tier |
 |-------|----------|--------|-----------|------|
-| - | No POST_NOW articles yet | - | - | - |
+| **8.5** | [Linux Foundation Launches Akrites to Protect Critical Open Source Software from AI-Powered Threats](https://www.infoq.com/news/2026/07/akrites-open-source-ai-threats/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) | InfoQ AI/ML | 2026-07-10T12:00:00Z | **B** |
 
 *All articles above passed strict scoring, deduplication, and red-flag checks. NexusFeed keeps only the very best.*
 <!-- POST_NOW_END -->

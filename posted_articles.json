@@ -23,6 +23,10 @@
     {
       "hash": "1ec294ada9f40d0a169e6cf8fa1023812cdb1be3e02ba8996c8955382ac7a69b",
       "posted_at": "2026-07-07T15:36:38Z"
+    },
+    {
+      "hash": "f3845f235d8107add910c9f74e67cee839e9b69e6f242dcb99d9eb0ed9f05918",
+      "posted_at": "2026-07-10T12:40:23Z"
     }
   ],
   "hashes": [
@@ -31,7 +35,8 @@
     "7904b17d31a21067bd6f6837c5c05bd34a4bc3044594158206656e91a28d217c",
     "88ecdef43c05f6e509a226809d026d8b1a199e5a02d86ca6f47162a800d63bb0",
     "bf55a61637b6dda9b083ebf2d4dade85aebb634090c07419d1e6dcf093c736ee",
-    "f20ff2fa98c802f81ca3d9511728dbff1c120caa46ee2a9779ea250a549bc706"
+    "f20ff2fa98c802f81ca3d9511728dbff1c120caa46ee2a9779ea250a549bc706",
+    "f3845f235d8107add910c9f74e67cee839e9b69e6f242dcb99d9eb0ed9f05918"
   ],
   "recent_titles": [
     {
@@ -69,6 +74,12 @@
       "posted_at": "2026-07-07T15:36:38Z",
       "score": 9.0,
       "source": "HuggingFace"
+    },
+    {
+      "cleaned_title": "linux foundation akrites protect critical open source software ai powered threats",
+      "posted_at": "2026-07-10T12:40:23Z",
+      "score": 8.5,
+      "source": "InfoQ AI/ML"
     }
   ]
 }
