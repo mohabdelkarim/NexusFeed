@@ -7,10 +7,15 @@
     {
       "hash": "f3845f235d8107add910c9f74e67cee839e9b69e6f242dcb99d9eb0ed9f05918",
       "posted_at": "2026-07-10T12:40:23Z"
+    },
+    {
+      "hash": "2926143ff589a8d471ee68b05ac4620e69a24993e5eaaa5223d72d23e09dd826",
+      "posted_at": "2026-07-14T14:13:24Z"
     }
   ],
   "hashes": [
     "1ec294ada9f40d0a169e6cf8fa1023812cdb1be3e02ba8996c8955382ac7a69b",
+    "2926143ff589a8d471ee68b05ac4620e69a24993e5eaaa5223d72d23e09dd826",
     "f3845f235d8107add910c9f74e67cee839e9b69e6f242dcb99d9eb0ed9f05918"
   ],
   "recent_titles": [
@@ -25,6 +30,12 @@
       "posted_at": "2026-07-10T12:40:23Z",
       "score": 8.5,
       "source": "InfoQ AI/ML"
+    },
+    {
+      "cleaned_title": "spotify expands its ai push chatgpt like music assistant",
+      "posted_at": "2026-07-14T14:13:24Z",
+      "score": 8.5,
+      "source": "TechCrunch"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "date": "2026-07-14",
-  "last_post_time": null,
+  "last_post_time": "2026-07-14T14:13:24Z",
   "pending_best": {
     "authoritative_score": 8.0,
     "canonical_url": "https://www.theverge.com/policy/965110/new-york-ai-data-center-moratorium",
@@ -25,5 +25,5 @@
     "url": "https://www.theverge.com/policy/965110/new-york-ai-data-center-moratorium",
     "url_hash": "5ff11aca353498070a6e1a31c2869cf186b8d938aa91c06fccb3ee6e4ebe19ce"
   },
-  "posts_today": 0
+  "posts_today": 1
 }

@@ -30,6 +30,7 @@
 
 | Score | Headline | Source | Published | Tier |
 |-------|----------|--------|-----------|------|
+| **8.5** | [Spotify expands its AI push with a ChatGPT-like music assistant](https://techcrunch.com/2026/07/14/spotify-expands-its-ai-push-with-a-chatgpt-like-music-assistant/) | TechCrunch | 2026-07-14T14:06:47Z | **A** |
 | **8.5** | [Linux Foundation Launches Akrites to Protect Critical Open Source Software from AI-Powered Threats](https://www.infoq.com/news/2026/07/akrites-open-source-ai-threats/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) | InfoQ AI/ML | 2026-07-10T12:00:00Z | **B** |
 
 *All articles above passed strict scoring, deduplication, and red-flag checks. NexusFeed keeps only the very best.*
