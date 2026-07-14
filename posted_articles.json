@@ -7,10 +7,15 @@
     {
       "hash": "2926143ff589a8d471ee68b05ac4620e69a24993e5eaaa5223d72d23e09dd826",
       "posted_at": "2026-07-14T14:13:24Z"
+    },
+    {
+      "hash": "299bc3d1cdce6c01cba82bec83b9d3a61765a82308c0367c62b01e0f6c77f23e",
+      "posted_at": "2026-07-14T17:54:12Z"
     }
   ],
   "hashes": [
     "2926143ff589a8d471ee68b05ac4620e69a24993e5eaaa5223d72d23e09dd826",
+    "299bc3d1cdce6c01cba82bec83b9d3a61765a82308c0367c62b01e0f6c77f23e",
     "f3845f235d8107add910c9f74e67cee839e9b69e6f242dcb99d9eb0ed9f05918"
   ],
   "recent_titles": [
@@ -25,6 +30,12 @@
       "posted_at": "2026-07-14T14:13:24Z",
       "score": 8.5,
       "source": "TechCrunch"
+    },
+    {
+      "cleaned_title": "meta accused using biased ai targeting mass layoffs",
+      "posted_at": "2026-07-14T17:54:12Z",
+      "score": 8.5,
+      "source": "The Verge"
     }
   ]
 }

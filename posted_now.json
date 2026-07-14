@@ -1,6 +1,28 @@
 [
   {
     "authoritative_score": 8.5,
+    "canonical_url": "https://www.theverge.com/tech/965486/meta-lawsuit-former-employees-ai-layoffs",
+    "published_at": "2026-07-14T17:18:11Z",
+    "saved_at": "2026-07-14T17:54:12Z",
+    "score": {
+      "freshness_score": 2.0,
+      "impact_score": 2.5,
+      "novelty_score": 2.5,
+      "reason": "The article is about a recent lawsuit against Meta, which has high novelty and impact scores.",
+      "red_flag": false,
+      "red_flag_reason": null,
+      "source_score": 1.5,
+      "total_score": 8.5
+    },
+    "source": "The Verge",
+    "summary": "A group of 26 former Meta employees is suing the company over claims that it used AI tools to unfairly target workers on leave with layoffs, as reported earlier by Reuters. In the lawsuit, the employees allege Meta determined which workers to dismiss based on performance data collected by a \"conste...",
+    "tier": "A",
+    "title": "Meta accused of using biased AI targeting for mass layoffs",
+    "url": "https://www.theverge.com/tech/965486/meta-lawsuit-former-employees-ai-layoffs",
+    "url_hash": "299bc3d1cdce6c01cba82bec83b9d3a61765a82308c0367c62b01e0f6c77f23e"
+  },
+  {
+    "authoritative_score": 8.5,
     "canonical_url": "https://techcrunch.com/2026/07/14/spotify-expands-its-ai-push-with-a-chatgpt-like-music-assistant",
     "published_at": "2026-07-14T14:06:47Z",
     "saved_at": "2026-07-14T14:13:24Z",
