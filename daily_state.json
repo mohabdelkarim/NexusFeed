@@ -2,28 +2,28 @@
   "date": "2026-07-14",
   "last_post_time": null,
   "pending_best": {
-    "authoritative_score": 6.5,
-    "canonical_url": "https://arxiv.org/abs/2607.09664",
-    "cleaned_title": "ml predictions informed diagnostic assistance using toulmin model argumentation",
+    "authoritative_score": 8.0,
+    "canonical_url": "https://www.theverge.com/policy/965110/new-york-ai-data-center-moratorium",
+    "cleaned_title": "york becomes first state enact data center moratorium",
     "index": 0,
-    "published_at": "2026-07-14T04:00:00Z",
-    "saved_at": "2026-07-14T04:51:36Z",
+    "published_at": "2026-07-14T09:00:00Z",
+    "saved_at": "2026-07-14T09:03:11Z",
     "score": {
       "freshness_score": 2.0,
-      "impact_score": 1.5,
-      "novelty_score": 2.5,
-      "reason": "This article presents a new approach to diagnostic assistance using the Toulmin model of argumentation, which is a research contribution.",
+      "impact_score": 2.5,
+      "novelty_score": 2.0,
+      "reason": "The article is about a new industry move, has a moderate impact on all devs, is very fresh, and comes from a reputable source.",
       "red_flag": false,
       "red_flag_reason": null,
-      "source_score": 0.5,
-      "total_score": 6.5
+      "source_score": 1.5,
+      "total_score": 8.0
     },
-    "source": "arXiv cs.AI",
-    "summary": "arXiv:2607.09664v1 Announce Type: new Abstract: To provide a structured and interpretable assessment, we decompose the image-based diagnosis into components following the Toulmin model of argumentation. This model consists of a claim, grounds, warrant, qualifier, rebuttal, and backing. Consider a c...",
-    "tier": "C",
-    "title": "From ML Predictions to Informed Diagnostic Assistance Using the Toulmin Model of Argumentation",
-    "url": "https://arxiv.org/abs/2607.09664",
-    "url_hash": "112252077fbde269939e049ff7b1e63dd57e33284bc42c68888ca5076c09ecbe"
+    "source": "The Verge",
+    "summary": "New hyperscale data centers can't set up shop in New York for up to a year now that Governor Kathy Hochul (D) has signed the nation's first statewide moratorium. But a bill passed by the state legislature that could restrict even more developments still awaits her signature. The order blocks new en...",
+    "tier": "A",
+    "title": "New York becomes the first state to enact a data center moratorium",
+    "url": "https://www.theverge.com/policy/965110/new-york-ai-data-center-moratorium",
+    "url_hash": "5ff11aca353498070a6e1a31c2869cf186b8d938aa91c06fccb3ee6e4ebe19ce"
   },
   "posts_today": 0
 }
