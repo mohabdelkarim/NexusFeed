@@ -49,6 +49,31 @@
       "cleaned_title": "meet lingbot-world-infinity: open causal world model agentic harness",
       "sent_at": "2026-07-10T19:35:48Z",
       "url": "https://www.marktechpost.com/2026/07/09/meet-lingbot-world-infinity-an-open-causal-world-model-with-an-agentic-harness/"
+    },
+    {
+      "cleaned_title": "google faces another training lawsuit major publishers",
+      "sent_at": "2026-07-14T19:22:47Z",
+      "url": "https://techcrunch.com/2026/07/14/google-faces-another-ai-training-lawsuit-from-major-publishers/"
+    },
+    {
+      "cleaned_title": "york state halts construction all data centers",
+      "sent_at": "2026-07-14T19:22:47Z",
+      "url": "https://techcrunch.com/2026/07/14/new-york-state-halts-construction-of-all-new-data-centers/"
+    },
+    {
+      "cleaned_title": "deepmind ceo calls independent standards body regulate frontier",
+      "sent_at": "2026-07-14T19:22:47Z",
+      "url": "https://techcrunch.com/2026/07/14/deepmind-ceo-calls-for-an-independent-standards-body-to-regulate-frontier-ai/"
+    },
+    {
+      "cleaned_title": "us military sent explosive drone boats into combat first time",
+      "sent_at": "2026-07-14T19:22:47Z",
+      "url": "https://arstechnica.com/ai/2026/07/us-military-sent-explosive-drone-boats-into-combat-for-the-first-time/"
+    },
+    {
+      "cleaned_title": "meta accused using biased targeting mass layoffs",
+      "sent_at": "2026-07-14T19:22:47Z",
+      "url": "https://www.theverge.com/tech/965486/meta-lawsuit-former-employees-ai-layoffs"
     }
   ],
   "url_hashes": [
@@ -140,6 +165,11 @@
     "3839887e5ca53a0cb0e7c91ec82c49a8ec74649239a93e78fa8f5638293abfb5",
     "521cb8f5727237af1c44feb4444334a2faf7dfcc9e7d53764a3e5fae7e59bce7",
     "79e4db2341aa4c2a69ab0ff9908cf3c82d49b13928bf2a765245b76eb82397dc",
-    "93799ccbd9e7bc0ea66cba43550f7d4c85545b63b7bc3541bb37fbe0b4100d3f"
+    "93799ccbd9e7bc0ea66cba43550f7d4c85545b63b7bc3541bb37fbe0b4100d3f",
+    "d77e9587a329da4dc3ce1c1791a8d70fb0b2fc80fe58de9571b71386c5ba66a1",
+    "77dc192c6086c8cdbbaae3553f4aa4723acb6c188fa48485751a1b3d3992b632",
+    "e585d859a804b49ed1989de5e361257db0e37379fe22cd5d8f6a6e97ce586cf4",
+    "5eedc8bd141bce8c2ceb653993c2b78e51d543d8d8846e4b9c1f51a79a89cdf3",
+    "299bc3d1cdce6c01cba82bec83b9d3a61765a82308c0367c62b01e0f6c77f23e"
   ]
 }
