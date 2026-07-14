@@ -1,6 +1,28 @@
 [
   {
     "authoritative_score": 8.5,
+    "canonical_url": "https://techcrunch.com/2026/07/14/spotify-expands-its-ai-push-with-a-chatgpt-like-music-assistant",
+    "published_at": "2026-07-14T14:06:47Z",
+    "saved_at": "2026-07-14T14:13:24Z",
+    "score": {
+      "freshness_score": 2.0,
+      "impact_score": 2.5,
+      "novelty_score": 2.5,
+      "reason": "High novelty and impact scores due to the introduction of a new AI-powered feature, combined with a high freshness score due to recent publication and a good source score from TechCrunch.",
+      "red_flag": false,
+      "red_flag_reason": null,
+      "source_score": 1.5,
+      "total_score": 8.5
+    },
+    "source": "TechCrunch",
+    "summary": "Spotify is rolling out a new AI-powered conversational feature that lets Premium subscribers chat with the app to discover music, podcasts, and audiobooks, and more.",
+    "tier": "A",
+    "title": "Spotify expands its AI push with a ChatGPT-like music assistant",
+    "url": "https://techcrunch.com/2026/07/14/spotify-expands-its-ai-push-with-a-chatgpt-like-music-assistant/",
+    "url_hash": "2926143ff589a8d471ee68b05ac4620e69a24993e5eaaa5223d72d23e09dd826"
+  },
+  {
+    "authoritative_score": 8.5,
     "canonical_url": "https://www.infoq.com/news/2026/07/akrites-open-source-ai-threats",
     "published_at": "2026-07-10T12:00:00Z",
     "saved_at": "2026-07-10T12:40:23Z",
