@@ -1,50 +1,50 @@
 {
-  "digest_date": "2026-07-10",
-  "saved_at": "2026-07-10T19:35:48Z",
+  "digest_date": "2026-07-14",
+  "saved_at": "2026-07-14T19:22:47Z",
   "stories": [
     {
-      "article_url": "https://techcrunch.com/2026/07/10/sk-hynix-raises-26-5b-in-the-biggest-foreign-ipo-in-us-history-is-urged-to-build-new-us-fabs/",
-      "full_title": "SK Hynix raises $26.5B in the biggest foreign IPO in US history, is urged to build new US fabs",
-      "one_line_summary": "SK Hynix raises $26.5B",
+      "article_url": "https://techcrunch.com/2026/07/14/google-faces-another-ai-training-lawsuit-from-major-publishers/",
+      "full_title": "Google faces another AI training lawsuit from major publishers",
+      "one_line_summary": "Google sued over AI training",
       "rank": 1,
-      "score": 9.8,
+      "score": 9.5,
       "source_name": "TechCrunch",
       "source_tier": "A"
     },
     {
-      "article_url": "https://www.theverge.com/tech/964121/sk-hynix-nvidia-ram-stock-market-debut",
-      "full_title": "Nvidia\u2019s biggest RAM supplier just had a trillion-dollar debut on Wall Street",
-      "one_line_summary": "Nvidia RAM supplier debuts",
+      "article_url": "https://techcrunch.com/2026/07/14/new-york-state-halts-construction-of-all-new-data-centers/",
+      "full_title": "New York State halts construction of all new data centers",
+      "one_line_summary": "NY halts data center construction",
       "rank": 2,
-      "score": 9.5,
-      "source_name": "The Verge",
+      "score": 9.2,
+      "source_name": "TechCrunch",
       "source_tier": "A"
     },
     {
-      "article_url": "https://openai.com/index/deutsche-telekom",
-      "full_title": "How Deutsche Telekom is rewiring telecommunications with AI",
-      "one_line_summary": "Deutsche Telekom uses AI",
+      "article_url": "https://techcrunch.com/2026/07/14/deepmind-ceo-calls-for-an-independent-standards-body-to-regulate-frontier-ai/",
+      "full_title": "DeepMind CEO calls for an independent standards body to regulate frontier AI",
+      "one_line_summary": "DeepMind CEO proposes AI standards",
       "rank": 3,
-      "score": 9.2,
-      "source_name": "OpenAI",
-      "source_tier": "S"
+      "score": 9.0,
+      "source_name": "TechCrunch",
+      "source_tier": "A"
     },
     {
-      "article_url": "https://www.marktechpost.com/2026/07/10/google-research-introduces-sensorfm-a-wearable-health-foundation-model-pretrained-on-one-trillion-minutes-of-sensor-data/",
-      "full_title": "Google Research Introduces SensorFM: A Wearable Health Foundation Model Pretrained on One Trillion Minutes of Sensor Data",
-      "one_line_summary": "Google introduces SensorFM",
+      "article_url": "https://arstechnica.com/ai/2026/07/us-military-sent-explosive-drone-boats-into-combat-for-the-first-time/",
+      "full_title": "US military sent explosive drone boats into combat for the first time",
+      "one_line_summary": "US military uses drone boats",
       "rank": 4,
       "score": 8.8,
-      "source_name": "MarkTechPost",
+      "source_name": "Ars Technica",
       "source_tier": "A"
     },
     {
-      "article_url": "https://www.marktechpost.com/2026/07/09/meet-lingbot-world-infinity-an-open-causal-world-model-with-an-agentic-harness/",
-      "full_title": "Meet LingBot-World-Infinity: An Open Causal World Model With An Agentic Harness",
-      "one_line_summary": "LingBot-World-Infinity released",
+      "article_url": "https://www.theverge.com/tech/965486/meta-lawsuit-former-employees-ai-layoffs",
+      "full_title": "Meta accused of using biased AI targeting for mass layoffs",
+      "one_line_summary": "Meta accused of biased AI",
       "rank": 5,
       "score": 8.5,
-      "source_name": "MarkTechPost",
+      "source_name": "The Verge",
       "source_tier": "A"
     }
   ]
