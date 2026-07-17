@@ -1,10 +1,6 @@
 {
   "hash_records": [
     {
-      "hash": "f3845f235d8107add910c9f74e67cee839e9b69e6f242dcb99d9eb0ed9f05918",
-      "posted_at": "2026-07-10T12:40:23Z"
-    },
-    {
       "hash": "2926143ff589a8d471ee68b05ac4620e69a24993e5eaaa5223d72d23e09dd826",
       "posted_at": "2026-07-14T14:13:24Z"
     },
@@ -20,16 +16,9 @@
   "hashes": [
     "2926143ff589a8d471ee68b05ac4620e69a24993e5eaaa5223d72d23e09dd826",
     "299bc3d1cdce6c01cba82bec83b9d3a61765a82308c0367c62b01e0f6c77f23e",
-    "5ff11aca353498070a6e1a31c2869cf186b8d938aa91c06fccb3ee6e4ebe19ce",
-    "f3845f235d8107add910c9f74e67cee839e9b69e6f242dcb99d9eb0ed9f05918"
+    "5ff11aca353498070a6e1a31c2869cf186b8d938aa91c06fccb3ee6e4ebe19ce"
   ],
   "recent_titles": [
-    {
-      "cleaned_title": "linux foundation akrites protect critical open source software ai powered threats",
-      "posted_at": "2026-07-10T12:40:23Z",
-      "score": 8.5,
-      "source": "InfoQ AI/ML"
-    },
     {
       "cleaned_title": "spotify expands its ai push chatgpt like music assistant",
       "posted_at": "2026-07-14T14:13:24Z",
