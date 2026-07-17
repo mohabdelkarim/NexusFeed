@@ -1,6 +1,29 @@
 {
   "date": "2026-07-17",
   "last_post_time": null,
-  "pending_best": null,
+  "pending_best": {
+    "authoritative_score": 8.0,
+    "canonical_url": "https://arstechnica.com/tech-policy/2026/07/apple-google-must-stop-profiting-off-ai-nudify-apps-san-francisco-ag-says",
+    "cleaned_title": "san francisco orders apple google remove nudify apps app stores",
+    "index": 0,
+    "published_at": "2026-07-17T16:10:05Z",
+    "saved_at": "2026-07-17T16:38:46Z",
+    "score": {
+      "freshness_score": 2.0,
+      "impact_score": 2.5,
+      "novelty_score": 2.0,
+      "reason": "The article discusses a recent development in the tech industry, with San Francisco ordering Apple and Google to remove certain apps from their stores, which has a significant impact on the industry and is a recent event.",
+      "red_flag": false,
+      "red_flag_reason": null,
+      "source_score": 1.5,
+      "total_score": 8.0
+    },
+    "source": "Ars Technica",
+    "summary": "Official estimates Google and Apple likely made millions in nudify app fees.",
+    "tier": "A",
+    "title": "San Francisco orders Apple, Google to remove nudify apps from app stores",
+    "url": "https://arstechnica.com/tech-policy/2026/07/apple-google-must-stop-profiting-off-ai-nudify-apps-san-francisco-ag-says/",
+    "url_hash": "160a77853eb76a75f842554a3a9476a11e7ec4992e660d62ff8278e89c04677b"
+  },
   "posts_today": 0
 }
