@@ -1,31 +1,6 @@
 {
   "recent_titles": [
     {
-      "cleaned_title": "discord admits moderation bug wrongfully banned users over harmless images",
-      "sent_at": "2026-07-07T19:58:21Z",
-      "url": "https://techcrunch.com/2026/07/07/discord-admits-ai-moderation-bug-wrongfully-banned-users-over-harmless-images/"
-    },
-    {
-      "cleaned_title": "discord accidentally banned over 8,000 people posting grids other \u2018benign\u2019 images",
-      "sent_at": "2026-07-07T19:58:21Z",
-      "url": "https://www.theverge.com/games/962156/discord-accidental-bans-grid-images"
-    },
-    {
-      "cleaned_title": "liquid open-sources antidoom: final token preference optimization (ftpo) method that reduces doom loops reasoning models",
-      "sent_at": "2026-07-07T19:58:21Z",
-      "url": "https://www.marktechpost.com/2026/07/07/liquid-ai-antidoom-doom-loops-ftpo/"
-    },
-    {
-      "cleaned_title": "anthropic launching claude cowork mobile web",
-      "sent_at": "2026-07-07T19:58:21Z",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/961978/anthropic-claude-cowork-mobile-web"
-    },
-    {
-      "cleaned_title": "novice coders can develop programs military applications",
-      "sent_at": "2026-07-07T19:58:21Z",
-      "url": "https://news.mit.edu/2026/how-novice-coders-can-develop-ai-programs-for-military-applications-0707"
-    },
-    {
       "cleaned_title": "sk hynix raises $26.5b biggest foreign ipo us history, urged build us fabs",
       "sent_at": "2026-07-10T19:35:48Z",
       "url": "https://techcrunch.com/2026/07/10/sk-hynix-raises-26-5b-in-the-biggest-foreign-ipo-in-us-history-is-urged-to-build-new-us-fabs/"
@@ -74,6 +49,31 @@
       "cleaned_title": "meta accused using biased targeting mass layoffs",
       "sent_at": "2026-07-14T19:22:47Z",
       "url": "https://www.theverge.com/tech/965486/meta-lawsuit-former-employees-ai-layoffs"
+    },
+    {
+      "cleaned_title": "apple\u2019s big lawsuit could disrupt openai\u2019s ipo plans",
+      "sent_at": "2026-07-17T19:13:10Z",
+      "url": "https://techcrunch.com/video/how-apples-big-lawsuit-could-disrupt-openais-ipo-plans/"
+    },
+    {
+      "cleaned_title": "apple\u2019s plot crush openai",
+      "sent_at": "2026-07-17T19:13:10Z",
+      "url": "https://www.theverge.com/podcast/967244/apple-openai-lawsuit-vergecast"
+    },
+    {
+      "cleaned_title": "san francisco orders apple, google remove nudify apps app stores",
+      "sent_at": "2026-07-17T19:13:10Z",
+      "url": "https://arstechnica.com/tech-policy/2026/07/apple-google-must-stop-profiting-off-ai-nudify-apps-san-francisco-ag-says/"
+    },
+    {
+      "cleaned_title": "scorecard age",
+      "sent_at": "2026-07-17T19:13:10Z",
+      "url": "https://openai.com/index/a-scorecard-for-the-ai-age"
+    },
+    {
+      "cleaned_title": "fine-tune video image models scale nvidia nemo automodel diffusers",
+      "sent_at": "2026-07-17T19:13:10Z",
+      "url": "https://huggingface.co/blog/nvidia/scale-diffusers-finetuning-nemo-automodel"
     }
   ],
   "url_hashes": [
@@ -170,6 +170,11 @@
     "77dc192c6086c8cdbbaae3553f4aa4723acb6c188fa48485751a1b3d3992b632",
     "e585d859a804b49ed1989de5e361257db0e37379fe22cd5d8f6a6e97ce586cf4",
     "5eedc8bd141bce8c2ceb653993c2b78e51d543d8d8846e4b9c1f51a79a89cdf3",
-    "299bc3d1cdce6c01cba82bec83b9d3a61765a82308c0367c62b01e0f6c77f23e"
+    "299bc3d1cdce6c01cba82bec83b9d3a61765a82308c0367c62b01e0f6c77f23e",
+    "9cf21b8cc9d27befe1479d8a753c1ae8e969e7a8e83fdc65ecb20acc5b0501c1",
+    "c96da0c277b129d7b1e6427f9b6c7642408b5052a6f9f6ff4d037acd6aefceea",
+    "160a77853eb76a75f842554a3a9476a11e7ec4992e660d62ff8278e89c04677b",
+    "c5c5248230951857dae9664d8976aabb3764bf6936706cfde3b2931f62916be6",
+    "d9b2b6a45e1f9f2cf4cd6b23a6752233b2f868c95fd1d4d16678af02f87712fe"
   ]
 }
