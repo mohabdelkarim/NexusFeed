@@ -11,9 +11,14 @@
     {
       "hash": "5ff11aca353498070a6e1a31c2869cf186b8d938aa91c06fccb3ee6e4ebe19ce",
       "posted_at": "2026-07-14T21:39:45Z"
+    },
+    {
+      "hash": "160a77853eb76a75f842554a3a9476a11e7ec4992e660d62ff8278e89c04677b",
+      "posted_at": "2026-07-17T17:46:51Z"
     }
   ],
   "hashes": [
+    "160a77853eb76a75f842554a3a9476a11e7ec4992e660d62ff8278e89c04677b",
     "2926143ff589a8d471ee68b05ac4620e69a24993e5eaaa5223d72d23e09dd826",
     "299bc3d1cdce6c01cba82bec83b9d3a61765a82308c0367c62b01e0f6c77f23e",
     "5ff11aca353498070a6e1a31c2869cf186b8d938aa91c06fccb3ee6e4ebe19ce"
@@ -36,6 +41,12 @@
       "posted_at": "2026-07-14T21:39:45Z",
       "score": 8.0,
       "source": "The Verge"
+    },
+    {
+      "cleaned_title": "san francisco orders apple google remove nudify apps app stores",
+      "posted_at": "2026-07-17T17:46:51Z",
+      "score": 8.0,
+      "source": "Ars Technica"
     }
   ]
 }

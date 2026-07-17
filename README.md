@@ -30,6 +30,7 @@
 
 | Score | Headline | Source | Published | Tier |
 |-------|----------|--------|-----------|------|
+| **8.0** | [San Francisco orders Apple, Google to remove nudify apps from app stores](https://arstechnica.com/tech-policy/2026/07/apple-google-must-stop-profiting-off-ai-nudify-apps-san-francisco-ag-says/) | Ars Technica | 2026-07-17T16:10:05Z | **A** |
 | **8.0** | [New York becomes the first state to enact a data center moratorium](https://www.theverge.com/policy/965110/new-york-ai-data-center-moratorium) | The Verge | 2026-07-14T09:00:00Z | **A** |
 | **8.5** | [Meta accused of using biased AI targeting for mass layoffs](https://www.theverge.com/tech/965486/meta-lawsuit-former-employees-ai-layoffs) | The Verge | 2026-07-14T17:18:11Z | **A** |
 | **8.5** | [Spotify expands its AI push with a ChatGPT-like music assistant](https://techcrunch.com/2026/07/14/spotify-expands-its-ai-push-with-a-chatgpt-like-music-assistant/) | TechCrunch | 2026-07-14T14:06:47Z | **A** |
