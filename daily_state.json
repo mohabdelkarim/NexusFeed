@@ -1,6 +1,29 @@
 {
   "date": "2026-07-21",
   "last_post_time": null,
-  "pending_best": null,
+  "pending_best": {
+    "authoritative_score": 7.5,
+    "canonical_url": "https://arxiv.org/abs/2607.16197",
+    "cleaned_title": "some large language models exhibit consistent risk attitudes",
+    "index": 2,
+    "published_at": "2026-07-21T04:00:00Z",
+    "saved_at": "2026-07-21T05:31:01Z",
+    "score": {
+      "freshness_score": 2.0,
+      "impact_score": 2.5,
+      "novelty_score": 2.5,
+      "reason": "The article presents a new finding on the risk attitudes of large language models, which has a significant impact on the AI research community.",
+      "red_flag": false,
+      "red_flag_reason": null,
+      "source_score": 0.5,
+      "total_score": 7.5
+    },
+    "source": "arXiv cs.AI",
+    "summary": "arXiv:2607.16197v1 Announce Type: new Abstract: As artificial intelligence systems are deployed in open-ended, high-stakes settings, a critical dimension remains unmeasured: how perceived risk is translated into action. We test whether large language models (LLMs) exhibit systematic and consistent...",
+    "tier": "C",
+    "title": "Some Large Language Models Exhibit Consistent Risk Attitudes",
+    "url": "https://arxiv.org/abs/2607.16197",
+    "url_hash": "ebf53cb497eebc57fd36a14c181c788aacfc25e70f20fc7fe814926ff00e6f20"
+  },
   "posts_today": 0
 }
