@@ -1,10 +1,6 @@
 {
   "hash_records": [
     {
-      "hash": "2926143ff589a8d471ee68b05ac4620e69a24993e5eaaa5223d72d23e09dd826",
-      "posted_at": "2026-07-14T14:13:24Z"
-    },
-    {
       "hash": "299bc3d1cdce6c01cba82bec83b9d3a61765a82308c0367c62b01e0f6c77f23e",
       "posted_at": "2026-07-14T17:54:12Z"
     },
@@ -15,21 +11,19 @@
     {
       "hash": "160a77853eb76a75f842554a3a9476a11e7ec4992e660d62ff8278e89c04677b",
       "posted_at": "2026-07-17T17:46:51Z"
+    },
+    {
+      "hash": "ebf53cb497eebc57fd36a14c181c788aacfc25e70f20fc7fe814926ff00e6f20",
+      "posted_at": "2026-07-21T15:02:28Z"
     }
   ],
   "hashes": [
     "160a77853eb76a75f842554a3a9476a11e7ec4992e660d62ff8278e89c04677b",
-    "2926143ff589a8d471ee68b05ac4620e69a24993e5eaaa5223d72d23e09dd826",
     "299bc3d1cdce6c01cba82bec83b9d3a61765a82308c0367c62b01e0f6c77f23e",
-    "5ff11aca353498070a6e1a31c2869cf186b8d938aa91c06fccb3ee6e4ebe19ce"
+    "5ff11aca353498070a6e1a31c2869cf186b8d938aa91c06fccb3ee6e4ebe19ce",
+    "ebf53cb497eebc57fd36a14c181c788aacfc25e70f20fc7fe814926ff00e6f20"
   ],
   "recent_titles": [
-    {
-      "cleaned_title": "spotify expands its ai push chatgpt like music assistant",
-      "posted_at": "2026-07-14T14:13:24Z",
-      "score": 8.5,
-      "source": "TechCrunch"
-    },
     {
       "cleaned_title": "meta accused using biased ai targeting mass layoffs",
       "posted_at": "2026-07-14T17:54:12Z",
@@ -47,6 +41,12 @@
       "posted_at": "2026-07-17T17:46:51Z",
       "score": 8.0,
       "source": "Ars Technica"
+    },
+    {
+      "cleaned_title": "some large language models exhibit consistent risk attitudes",
+      "posted_at": "2026-07-21T15:02:28Z",
+      "score": 7.5,
+      "source": "arXiv cs.AI"
     }
   ]
 }
