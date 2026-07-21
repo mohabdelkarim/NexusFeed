@@ -1,10 +1,6 @@
 {
   "hash_records": [
     {
-      "hash": "299bc3d1cdce6c01cba82bec83b9d3a61765a82308c0367c62b01e0f6c77f23e",
-      "posted_at": "2026-07-14T17:54:12Z"
-    },
-    {
       "hash": "5ff11aca353498070a6e1a31c2869cf186b8d938aa91c06fccb3ee6e4ebe19ce",
       "posted_at": "2026-07-14T21:39:45Z"
     },
@@ -19,17 +15,10 @@
   ],
   "hashes": [
     "160a77853eb76a75f842554a3a9476a11e7ec4992e660d62ff8278e89c04677b",
-    "299bc3d1cdce6c01cba82bec83b9d3a61765a82308c0367c62b01e0f6c77f23e",
     "5ff11aca353498070a6e1a31c2869cf186b8d938aa91c06fccb3ee6e4ebe19ce",
     "ebf53cb497eebc57fd36a14c181c788aacfc25e70f20fc7fe814926ff00e6f20"
   ],
   "recent_titles": [
-    {
-      "cleaned_title": "meta accused using biased ai targeting mass layoffs",
-      "posted_at": "2026-07-14T17:54:12Z",
-      "score": 8.5,
-      "source": "The Verge"
-    },
     {
       "cleaned_title": "york becomes first state enact data center moratorium",
       "posted_at": "2026-07-14T21:39:45Z",
