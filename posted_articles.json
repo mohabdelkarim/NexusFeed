@@ -1,10 +1,6 @@
 {
   "hash_records": [
     {
-      "hash": "5ff11aca353498070a6e1a31c2869cf186b8d938aa91c06fccb3ee6e4ebe19ce",
-      "posted_at": "2026-07-14T21:39:45Z"
-    },
-    {
       "hash": "160a77853eb76a75f842554a3a9476a11e7ec4992e660d62ff8278e89c04677b",
       "posted_at": "2026-07-17T17:46:51Z"
     },
@@ -15,16 +11,9 @@
   ],
   "hashes": [
     "160a77853eb76a75f842554a3a9476a11e7ec4992e660d62ff8278e89c04677b",
-    "5ff11aca353498070a6e1a31c2869cf186b8d938aa91c06fccb3ee6e4ebe19ce",
     "ebf53cb497eebc57fd36a14c181c788aacfc25e70f20fc7fe814926ff00e6f20"
   ],
   "recent_titles": [
-    {
-      "cleaned_title": "york becomes first state enact data center moratorium",
-      "posted_at": "2026-07-14T21:39:45Z",
-      "score": 8.0,
-      "source": "The Verge"
-    },
     {
       "cleaned_title": "san francisco orders apple google remove nudify apps app stores",
       "posted_at": "2026-07-17T17:46:51Z",
