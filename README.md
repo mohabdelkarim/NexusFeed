@@ -30,6 +30,7 @@
 
 | Score | Headline | Source | Published | Tier |
 |-------|----------|--------|-----------|------|
+| **7.5** | [Some Large Language Models Exhibit Consistent Risk Attitudes](https://arxiv.org/abs/2607.16197) | arXiv cs.AI | 2026-07-21T04:00:00Z | **C** |
 | **8.0** | [San Francisco orders Apple, Google to remove nudify apps from app stores](https://arstechnica.com/tech-policy/2026/07/apple-google-must-stop-profiting-off-ai-nudify-apps-san-francisco-ag-says/) | Ars Technica | 2026-07-17T16:10:05Z | **A** |
 | **8.0** | [New York becomes the first state to enact a data center moratorium](https://www.theverge.com/policy/965110/new-york-ai-data-center-moratorium) | The Verge | 2026-07-14T09:00:00Z | **A** |
 | **8.5** | [Meta accused of using biased AI targeting for mass layoffs](https://www.theverge.com/tech/965486/meta-lawsuit-former-employees-ai-layoffs) | The Verge | 2026-07-14T17:18:11Z | **A** |
