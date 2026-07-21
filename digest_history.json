@@ -1,56 +1,6 @@
 {
   "recent_titles": [
     {
-      "cleaned_title": "sk hynix raises $26.5b biggest foreign ipo us history, urged build us fabs",
-      "sent_at": "2026-07-10T19:35:48Z",
-      "url": "https://techcrunch.com/2026/07/10/sk-hynix-raises-26-5b-in-the-biggest-foreign-ipo-in-us-history-is-urged-to-build-new-us-fabs/"
-    },
-    {
-      "cleaned_title": "nvidia\u2019s biggest ram supplier just had trillion-dollar debut wall street",
-      "sent_at": "2026-07-10T19:35:48Z",
-      "url": "https://www.theverge.com/tech/964121/sk-hynix-nvidia-ram-stock-market-debut"
-    },
-    {
-      "cleaned_title": "deutsche telekom rewiring telecommunications",
-      "sent_at": "2026-07-10T19:35:48Z",
-      "url": "https://openai.com/index/deutsche-telekom"
-    },
-    {
-      "cleaned_title": "google research introduces sensorfm: wearable health foundation model pretrained one trillion minutes sensor data",
-      "sent_at": "2026-07-10T19:35:48Z",
-      "url": "https://www.marktechpost.com/2026/07/10/google-research-introduces-sensorfm-a-wearable-health-foundation-model-pretrained-on-one-trillion-minutes-of-sensor-data/"
-    },
-    {
-      "cleaned_title": "meet lingbot-world-infinity: open causal world model agentic harness",
-      "sent_at": "2026-07-10T19:35:48Z",
-      "url": "https://www.marktechpost.com/2026/07/09/meet-lingbot-world-infinity-an-open-causal-world-model-with-an-agentic-harness/"
-    },
-    {
-      "cleaned_title": "google faces another training lawsuit major publishers",
-      "sent_at": "2026-07-14T19:22:47Z",
-      "url": "https://techcrunch.com/2026/07/14/google-faces-another-ai-training-lawsuit-from-major-publishers/"
-    },
-    {
-      "cleaned_title": "york state halts construction all data centers",
-      "sent_at": "2026-07-14T19:22:47Z",
-      "url": "https://techcrunch.com/2026/07/14/new-york-state-halts-construction-of-all-new-data-centers/"
-    },
-    {
-      "cleaned_title": "deepmind ceo calls independent standards body regulate frontier",
-      "sent_at": "2026-07-14T19:22:47Z",
-      "url": "https://techcrunch.com/2026/07/14/deepmind-ceo-calls-for-an-independent-standards-body-to-regulate-frontier-ai/"
-    },
-    {
-      "cleaned_title": "us military sent explosive drone boats into combat first time",
-      "sent_at": "2026-07-14T19:22:47Z",
-      "url": "https://arstechnica.com/ai/2026/07/us-military-sent-explosive-drone-boats-into-combat-for-the-first-time/"
-    },
-    {
-      "cleaned_title": "meta accused using biased targeting mass layoffs",
-      "sent_at": "2026-07-14T19:22:47Z",
-      "url": "https://www.theverge.com/tech/965486/meta-lawsuit-former-employees-ai-layoffs"
-    },
-    {
       "cleaned_title": "apple\u2019s big lawsuit could disrupt openai\u2019s ipo plans",
       "sent_at": "2026-07-17T19:13:10Z",
       "url": "https://techcrunch.com/video/how-apples-big-lawsuit-could-disrupt-openais-ipo-plans/"
@@ -74,6 +24,31 @@
       "cleaned_title": "fine-tune video image models scale nvidia nemo automodel diffusers",
       "sent_at": "2026-07-17T19:13:10Z",
       "url": "https://huggingface.co/blog/nvidia/scale-diffusers-finetuning-nemo-automodel"
+    },
+    {
+      "cleaned_title": "substack adds detector help spot blogs written no one",
+      "sent_at": "2026-07-21T19:25:56Z",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/968855/substack-pangram-ai-detecting-tool"
+    },
+    {
+      "cleaned_title": "anthropic\u2019s $1.5b copyright settlement approved; only 350 authors opted out",
+      "sent_at": "2026-07-21T19:25:56Z",
+      "url": "https://arstechnica.com/tech-policy/2026/07/judge-approves-anthropics-1-5-billion-copyright-settlement-with-authors/"
+    },
+    {
+      "cleaned_title": "google releases three gemini models \u2014 but no 3.5 pro",
+      "sent_at": "2026-07-21T19:25:56Z",
+      "url": "https://techcrunch.com/2026/07/21/google-releases-three-new-gemini-models-but-no-3-5-pro/"
+    },
+    {
+      "cleaned_title": "us threatens sanctions against chinese models over ip theft",
+      "sent_at": "2026-07-21T19:25:56Z",
+      "url": "https://techcrunch.com/2026/07/21/us-threatens-sanctions-against-chinese-ai-models-over-ip-theft/"
+    },
+    {
+      "cleaned_title": "introducing chatgpt small business program",
+      "sent_at": "2026-07-21T19:25:56Z",
+      "url": "https://openai.com/index/introducing-chatgpt-small-business-program"
     }
   ],
   "url_hashes": [
@@ -175,6 +150,11 @@
     "c96da0c277b129d7b1e6427f9b6c7642408b5052a6f9f6ff4d037acd6aefceea",
     "160a77853eb76a75f842554a3a9476a11e7ec4992e660d62ff8278e89c04677b",
     "c5c5248230951857dae9664d8976aabb3764bf6936706cfde3b2931f62916be6",
-    "d9b2b6a45e1f9f2cf4cd6b23a6752233b2f868c95fd1d4d16678af02f87712fe"
+    "d9b2b6a45e1f9f2cf4cd6b23a6752233b2f868c95fd1d4d16678af02f87712fe",
+    "6deae87e629a169503a34a8986fe94f8ed0a2b86098d0fb44187f83d7098482d",
+    "878389a947a3cd2444dda11fd93a9e786e01697e135a14d16aee9a073de50d8b",
+    "bc8fdb9e41796c88cd980cd586894db6a3537a1657f5115e440eadf6a6274d9a",
+    "11f8b56414a2b9fb980dd4b57a1d356aebc3d814bcd7afa12425f681c250ddd7",
+    "3064e426d18ccd85acab9b00d8511c97976c1d62bf25b663ad46f55f6cae1deb"
   ]
 }
