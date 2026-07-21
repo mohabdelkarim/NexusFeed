@@ -1,50 +1,50 @@
 {
-  "digest_date": "2026-07-17",
-  "saved_at": "2026-07-17T19:13:10Z",
+  "digest_date": "2026-07-21",
+  "saved_at": "2026-07-21T19:25:56Z",
   "stories": [
     {
-      "article_url": "https://techcrunch.com/video/how-apples-big-lawsuit-could-disrupt-openais-ipo-plans/",
-      "full_title": "How Apple\u2019s big lawsuit could disrupt OpenAI\u2019s IPO plans",
-      "one_line_summary": "Apple sues OpenAI",
+      "article_url": "https://www.theverge.com/ai-artificial-intelligence/968855/substack-pangram-ai-detecting-tool",
+      "full_title": "Substack adds an AI detector to help spot blogs written by no one",
+      "one_line_summary": "Substack adds AI detector",
       "rank": 1,
       "score": 9.5,
-      "source_name": "TechCrunch",
-      "source_tier": "A"
-    },
-    {
-      "article_url": "https://www.theverge.com/podcast/967244/apple-openai-lawsuit-vergecast",
-      "full_title": "Apple\u2019s plot to crush OpenAI",
-      "one_line_summary": "Apple sues OpenAI",
-      "rank": 2,
-      "score": 9.2,
       "source_name": "The Verge",
       "source_tier": "A"
     },
     {
-      "article_url": "https://arstechnica.com/tech-policy/2026/07/apple-google-must-stop-profiting-off-ai-nudify-apps-san-francisco-ag-says/",
-      "full_title": "San Francisco orders Apple, Google to remove nudify apps from app stores",
-      "one_line_summary": "SF orders Apple, Google",
-      "rank": 3,
-      "score": 8.8,
+      "article_url": "https://arstechnica.com/tech-policy/2026/07/judge-approves-anthropics-1-5-billion-copyright-settlement-with-authors/",
+      "full_title": "Anthropic\u2019s $1.5B copyright settlement approved; only 350 authors opted out",
+      "one_line_summary": "Anthropic settles copyright",
+      "rank": 2,
+      "score": 9.2,
       "source_name": "Ars Technica",
       "source_tier": "A"
     },
     {
-      "article_url": "https://openai.com/index/a-scorecard-for-the-ai-age",
-      "full_title": "A scorecard for the AI age",
-      "one_line_summary": "AI scorecard introduced",
-      "rank": 4,
-      "score": 8.5,
-      "source_name": "OpenAI",
-      "source_tier": "S"
+      "article_url": "https://techcrunch.com/2026/07/21/google-releases-three-new-gemini-models-but-no-3-5-pro/",
+      "full_title": "Google releases three new Gemini models \u2014 but no 3.5 Pro",
+      "one_line_summary": "Google releases new Gemini",
+      "rank": 3,
+      "score": 9.0,
+      "source_name": "TechCrunch",
+      "source_tier": "A"
     },
     {
-      "article_url": "https://huggingface.co/blog/nvidia/scale-diffusers-finetuning-nemo-automodel",
-      "full_title": "Fine-tune video and image models at scale with NVIDIA NeMo Automodel and Diffusers",
-      "one_line_summary": "NVIDIA NeMo Automodel",
+      "article_url": "https://techcrunch.com/2026/07/21/us-threatens-sanctions-against-chinese-ai-models-over-ip-theft/",
+      "full_title": "US threatens sanctions against Chinese AI models over IP theft",
+      "one_line_summary": "US threatens sanctions",
+      "rank": 4,
+      "score": 8.8,
+      "source_name": "TechCrunch",
+      "source_tier": "A"
+    },
+    {
+      "article_url": "https://openai.com/index/introducing-chatgpt-small-business-program",
+      "full_title": "Introducing the ChatGPT for small business program",
+      "one_line_summary": "ChatGPT for small business",
       "rank": 5,
-      "score": 8.2,
-      "source_name": "HuggingFace",
+      "score": 8.5,
+      "source_name": "OpenAI",
       "source_tier": "S"
     }
   ]
