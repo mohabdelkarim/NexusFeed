@@ -1,25 +1,14 @@
 {
   "hash_records": [
     {
-      "hash": "160a77853eb76a75f842554a3a9476a11e7ec4992e660d62ff8278e89c04677b",
-      "posted_at": "2026-07-17T17:46:51Z"
-    },
-    {
       "hash": "ebf53cb497eebc57fd36a14c181c788aacfc25e70f20fc7fe814926ff00e6f20",
       "posted_at": "2026-07-21T15:02:28Z"
     }
   ],
   "hashes": [
-    "160a77853eb76a75f842554a3a9476a11e7ec4992e660d62ff8278e89c04677b",
     "ebf53cb497eebc57fd36a14c181c788aacfc25e70f20fc7fe814926ff00e6f20"
   ],
   "recent_titles": [
-    {
-      "cleaned_title": "san francisco orders apple google remove nudify apps app stores",
-      "posted_at": "2026-07-17T17:46:51Z",
-      "score": 8.0,
-      "source": "Ars Technica"
-    },
     {
       "cleaned_title": "some large language models exhibit consistent risk attitudes",
       "posted_at": "2026-07-21T15:02:28Z",
