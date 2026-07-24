@@ -1,31 +1,6 @@
 {
   "recent_titles": [
     {
-      "cleaned_title": "apple\u2019s big lawsuit could disrupt openai\u2019s ipo plans",
-      "sent_at": "2026-07-17T19:13:10Z",
-      "url": "https://techcrunch.com/video/how-apples-big-lawsuit-could-disrupt-openais-ipo-plans/"
-    },
-    {
-      "cleaned_title": "apple\u2019s plot crush openai",
-      "sent_at": "2026-07-17T19:13:10Z",
-      "url": "https://www.theverge.com/podcast/967244/apple-openai-lawsuit-vergecast"
-    },
-    {
-      "cleaned_title": "san francisco orders apple, google remove nudify apps app stores",
-      "sent_at": "2026-07-17T19:13:10Z",
-      "url": "https://arstechnica.com/tech-policy/2026/07/apple-google-must-stop-profiting-off-ai-nudify-apps-san-francisco-ag-says/"
-    },
-    {
-      "cleaned_title": "scorecard age",
-      "sent_at": "2026-07-17T19:13:10Z",
-      "url": "https://openai.com/index/a-scorecard-for-the-ai-age"
-    },
-    {
-      "cleaned_title": "fine-tune video image models scale nvidia nemo automodel diffusers",
-      "sent_at": "2026-07-17T19:13:10Z",
-      "url": "https://huggingface.co/blog/nvidia/scale-diffusers-finetuning-nemo-automodel"
-    },
-    {
       "cleaned_title": "substack adds detector help spot blogs written no one",
       "sent_at": "2026-07-21T19:25:56Z",
       "url": "https://www.theverge.com/ai-artificial-intelligence/968855/substack-pangram-ai-detecting-tool"
@@ -49,6 +24,31 @@
       "cleaned_title": "introducing chatgpt small business program",
       "sent_at": "2026-07-21T19:25:56Z",
       "url": "https://openai.com/index/introducing-chatgpt-small-business-program"
+    },
+    {
+      "cleaned_title": "qualcomm about raise prices that\u2019s bad news everyone",
+      "sent_at": "2026-07-24T19:26:45Z",
+      "url": "https://www.theverge.com/gadgets/970910/qualcomm-raising-prices-bloomberg"
+    },
+    {
+      "cleaned_title": "anthropic releases opus 5 \u2018close\u2019 fable 5\u2019s capabilities",
+      "sent_at": "2026-07-24T19:26:45Z",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/970105/claude-opus-5-announced-anthropic-ai-model-release"
+    },
+    {
+      "cleaned_title": "did chinese steal anthropic, openai loses control two models",
+      "sent_at": "2026-07-24T19:26:45Z",
+      "url": "https://www.wired.com/story/uncanny-valley-podcast/"
+    },
+    {
+      "cleaned_title": "team uses alphafold redesign gene-editing proteins make them safer",
+      "sent_at": "2026-07-24T19:26:45Z",
+      "url": "https://arstechnica.com/science/2026/07/team-uses-alphafold-ai-to-redesign-gene-editing-proteins-to-make-them-safer/"
+    },
+    {
+      "cleaned_title": "as us weighs response chinese ai, industry urges against broad open-weight restrictions",
+      "sent_at": "2026-07-24T19:26:45Z",
+      "url": "https://techcrunch.com/2026/07/24/as-us-weighs-response-to-chinese-ai-industry-urges-against-broad-open-weight-restrictions/"
     }
   ],
   "url_hashes": [
@@ -155,6 +155,11 @@
     "878389a947a3cd2444dda11fd93a9e786e01697e135a14d16aee9a073de50d8b",
     "bc8fdb9e41796c88cd980cd586894db6a3537a1657f5115e440eadf6a6274d9a",
     "11f8b56414a2b9fb980dd4b57a1d356aebc3d814bcd7afa12425f681c250ddd7",
-    "3064e426d18ccd85acab9b00d8511c97976c1d62bf25b663ad46f55f6cae1deb"
+    "3064e426d18ccd85acab9b00d8511c97976c1d62bf25b663ad46f55f6cae1deb",
+    "401df34caebc64c8b04e0c779dc026c4120522fb9d12410b24964648b3ec79cd",
+    "24e986a8ed3daf1f65a9afae49fa072621943eee87a7779e70a4b97a83469a63",
+    "1888feacb6ac0dd491c6a1d1bb12d597c26a812b1f37fd21e89f92bbc70a50de",
+    "cfb2d330d2414b5f82e236cfd040154f52e93ae6dd43a76fec357ac1438207ee",
+    "ffafa4496b0ec7489287bfa0930935f5e3829e342d6113919636bf95a79bb1d1"
   ]
 }
