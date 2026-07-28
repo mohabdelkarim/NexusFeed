@@ -1,19 +1,5 @@
 {
-  "hash_records": [
-    {
-      "hash": "ebf53cb497eebc57fd36a14c181c788aacfc25e70f20fc7fe814926ff00e6f20",
-      "posted_at": "2026-07-21T15:02:28Z"
-    }
-  ],
-  "hashes": [
-    "ebf53cb497eebc57fd36a14c181c788aacfc25e70f20fc7fe814926ff00e6f20"
-  ],
-  "recent_titles": [
-    {
-      "cleaned_title": "some large language models exhibit consistent risk attitudes",
-      "posted_at": "2026-07-21T15:02:28Z",
-      "score": 7.5,
-      "source": "arXiv cs.AI"
-    }
-  ]
+  "hash_records": [],
+  "hashes": [],
+  "recent_titles": []
 }
