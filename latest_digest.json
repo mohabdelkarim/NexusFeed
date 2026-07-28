@@ -1,51 +1,51 @@
 {
-  "digest_date": "2026-07-24",
-  "saved_at": "2026-07-24T19:26:45Z",
+  "digest_date": "2026-07-28",
+  "saved_at": "2026-07-28T19:26:50Z",
   "stories": [
     {
-      "article_url": "https://www.theverge.com/gadgets/970910/qualcomm-raising-prices-bloomberg",
-      "full_title": "Qualcomm is about to raise prices and that\u2019s bad news for everyone",
-      "one_line_summary": "Qualcomm raises prices",
+      "article_url": "https://techcrunch.com/2026/07/28/recursive-superintelligence-signs-400-compute-deal-with-amazon/",
+      "full_title": "Recursive Superintelligence signs $410M compute deal with Amazon",
+      "one_line_summary": "Recursive signs deal with Amazon",
       "rank": 1,
-      "score": 9.5,
-      "source_name": "The Verge",
-      "source_tier": "A"
-    },
-    {
-      "article_url": "https://www.theverge.com/ai-artificial-intelligence/970105/claude-opus-5-announced-anthropic-ai-model-release",
-      "full_title": "Anthropic releases Opus 5 with \u2018close\u2019 to Fable 5\u2019s capabilities",
-      "one_line_summary": "Anthropic releases Opus 5",
-      "rank": 2,
-      "score": 9.2,
-      "source_name": "The Verge",
-      "source_tier": "A"
-    },
-    {
-      "article_url": "https://www.wired.com/story/uncanny-valley-podcast/",
-      "full_title": "Did Chinese AI Steal From Anthropic, and OpenAI Loses Control of Two Models",
-      "one_line_summary": "Chinese AI steals data",
-      "rank": 3,
-      "score": 9.0,
-      "source_name": "Wired AI",
-      "source_tier": "A"
-    },
-    {
-      "article_url": "https://arstechnica.com/science/2026/07/team-uses-alphafold-ai-to-redesign-gene-editing-proteins-to-make-them-safer/",
-      "full_title": "Team uses AlphaFold AI to redesign gene-editing proteins to make them safer",
-      "one_line_summary": "AlphaFold improves safety",
-      "rank": 4,
-      "score": 8.8,
-      "source_name": "Ars Technica",
-      "source_tier": "A"
-    },
-    {
-      "article_url": "https://techcrunch.com/2026/07/24/as-us-weighs-response-to-chinese-ai-industry-urges-against-broad-open-weight-restrictions/",
-      "full_title": "As US weighs response to Chinese AI, industry urges against broad open-weight restrictions",
-      "one_line_summary": "US weighs AI response",
-      "rank": 5,
-      "score": 8.5,
+      "score": 9.8,
       "source_name": "TechCrunch",
       "source_tier": "A"
+    },
+    {
+      "article_url": "https://openai.com/index/scientific-computing-agentic-ai/",
+      "full_title": "Scientific computing in the age of agentic AI",
+      "one_line_summary": "AI in scientific computing",
+      "rank": 2,
+      "score": 9.5,
+      "source_name": "OpenAI",
+      "source_tier": "S"
+    },
+    {
+      "article_url": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api-3-6-flash-hooks/",
+      "full_title": "Gemini API Managed Agents: 3.6 Flash, hooks, and more",
+      "one_line_summary": "Gemini API update released",
+      "rank": 3,
+      "score": 9.2,
+      "source_name": "Google AI",
+      "source_tier": "S"
+    },
+    {
+      "article_url": "https://techcrunch.com/2026/07/28/fish-audio-raises-50m-seed-to-build-ai-voice-models-for-creators-and-enterprises/",
+      "full_title": "Fish Audio raises $52M seed to build AI voice models for creators and enterprises",
+      "one_line_summary": "Fish Audio raises $52M",
+      "rank": 4,
+      "score": 8.8,
+      "source_name": "TechCrunch",
+      "source_tier": "A"
+    },
+    {
+      "article_url": "https://www.infoq.com/news/2026/07/github-dependabot-cooldown/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+      "full_title": "GitHub Introduces Default \"Cooldown\" Policy for Dependabot Version Updates",
+      "one_line_summary": "GitHub updates Dependabot",
+      "rank": 5,
+      "score": 8.5,
+      "source_name": "InfoQ AI/ML",
+      "source_tier": "B"
     }
   ]
 }

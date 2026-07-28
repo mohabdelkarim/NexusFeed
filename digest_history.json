@@ -1,31 +1,6 @@
 {
   "recent_titles": [
     {
-      "cleaned_title": "substack adds detector help spot blogs written no one",
-      "sent_at": "2026-07-21T19:25:56Z",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/968855/substack-pangram-ai-detecting-tool"
-    },
-    {
-      "cleaned_title": "anthropic\u2019s $1.5b copyright settlement approved; only 350 authors opted out",
-      "sent_at": "2026-07-21T19:25:56Z",
-      "url": "https://arstechnica.com/tech-policy/2026/07/judge-approves-anthropics-1-5-billion-copyright-settlement-with-authors/"
-    },
-    {
-      "cleaned_title": "google releases three gemini models \u2014 but no 3.5 pro",
-      "sent_at": "2026-07-21T19:25:56Z",
-      "url": "https://techcrunch.com/2026/07/21/google-releases-three-new-gemini-models-but-no-3-5-pro/"
-    },
-    {
-      "cleaned_title": "us threatens sanctions against chinese models over ip theft",
-      "sent_at": "2026-07-21T19:25:56Z",
-      "url": "https://techcrunch.com/2026/07/21/us-threatens-sanctions-against-chinese-ai-models-over-ip-theft/"
-    },
-    {
-      "cleaned_title": "introducing chatgpt small business program",
-      "sent_at": "2026-07-21T19:25:56Z",
-      "url": "https://openai.com/index/introducing-chatgpt-small-business-program"
-    },
-    {
       "cleaned_title": "qualcomm about raise prices that\u2019s bad news everyone",
       "sent_at": "2026-07-24T19:26:45Z",
       "url": "https://www.theverge.com/gadgets/970910/qualcomm-raising-prices-bloomberg"
@@ -49,6 +24,31 @@
       "cleaned_title": "as us weighs response chinese ai, industry urges against broad open-weight restrictions",
       "sent_at": "2026-07-24T19:26:45Z",
       "url": "https://techcrunch.com/2026/07/24/as-us-weighs-response-to-chinese-ai-industry-urges-against-broad-open-weight-restrictions/"
+    },
+    {
+      "cleaned_title": "recursive superintelligence signs $410m compute deal amazon",
+      "sent_at": "2026-07-28T19:26:50Z",
+      "url": "https://techcrunch.com/2026/07/28/recursive-superintelligence-signs-400-compute-deal-with-amazon/"
+    },
+    {
+      "cleaned_title": "scientific computing age agentic",
+      "sent_at": "2026-07-28T19:26:50Z",
+      "url": "https://openai.com/index/scientific-computing-agentic-ai/"
+    },
+    {
+      "cleaned_title": "gemini api managed agents: 3.6 flash, hooks, more",
+      "sent_at": "2026-07-28T19:26:50Z",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api-3-6-flash-hooks/"
+    },
+    {
+      "cleaned_title": "fish audio raises $52m seed build voice models creators enterprises",
+      "sent_at": "2026-07-28T19:26:50Z",
+      "url": "https://techcrunch.com/2026/07/28/fish-audio-raises-50m-seed-to-build-ai-voice-models-for-creators-and-enterprises/"
+    },
+    {
+      "cleaned_title": "github introduces default \"cooldown\" policy dependabot version updates",
+      "sent_at": "2026-07-28T19:26:50Z",
+      "url": "https://www.infoq.com/news/2026/07/github-dependabot-cooldown/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
     }
   ],
   "url_hashes": [
@@ -160,6 +160,11 @@
     "24e986a8ed3daf1f65a9afae49fa072621943eee87a7779e70a4b97a83469a63",
     "1888feacb6ac0dd491c6a1d1bb12d597c26a812b1f37fd21e89f92bbc70a50de",
     "cfb2d330d2414b5f82e236cfd040154f52e93ae6dd43a76fec357ac1438207ee",
-    "ffafa4496b0ec7489287bfa0930935f5e3829e342d6113919636bf95a79bb1d1"
+    "ffafa4496b0ec7489287bfa0930935f5e3829e342d6113919636bf95a79bb1d1",
+    "e458eb461571301b976fbabf5cedfe17d751804bf6e7c0efc5fe0c05930de21c",
+    "7afa5cf938dff38a5877e3bc6de764bc6027cf062cfb4ed2b76c5e7018ed6234",
+    "55560096859ebe200396b9cbe7a75939c3de6a867d3f82f1dc84015c4a313e1b",
+    "b3e7eb847fa278799914de3a04699290178dafa415e179ac648e7c5d3b5b5eb1",
+    "a95db42a1b781d46fc87c60ccc3f56e2749aa2491d687c810c5b5aa969023d84"
   ]
 }
