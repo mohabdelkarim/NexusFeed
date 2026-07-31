@@ -1,5 +1,19 @@
 {
-  "hash_records": [],
-  "hashes": [],
-  "recent_titles": []
+  "hash_records": [
+    {
+      "hash": "6cbdffa80a320f5dd830beadc2704a0a823dec35fbe344e663096f4aba754afd",
+      "posted_at": "2026-07-31T11:49:36Z"
+    }
+  ],
+  "hashes": [
+    "6cbdffa80a320f5dd830beadc2704a0a823dec35fbe344e663096f4aba754afd"
+  ],
+  "recent_titles": [
+    {
+      "cleaned_title": "jetbrains open sources kotlinllm smart macros that generate kotlin source code at runtime hot reload it through jdi",
+      "posted_at": "2026-07-31T11:49:36Z",
+      "score": 8.5,
+      "source": "MarkTechPost"
+    }
+  ]
 }
