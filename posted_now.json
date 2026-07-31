@@ -1,5 +1,27 @@
 [
   {
+    "authoritative_score": 8.5,
+    "canonical_url": "https://www.marktechpost.com/2026/07/31/jetbrains-research-open-sources-kotlinllm-intellij-plugin-kotlin-runtime-llm",
+    "published_at": "2026-07-31T10:32:53Z",
+    "saved_at": "2026-07-31T11:49:36Z",
+    "score": {
+      "freshness_score": 2.0,
+      "impact_score": 2.5,
+      "novelty_score": 2.5,
+      "reason": "The article discusses a new research release by JetBrains, which could have a significant impact on the development of Kotlin.",
+      "red_flag": false,
+      "red_flag_reason": null,
+      "source_score": 1.5,
+      "total_score": 8.5
+    },
+    "source": "MarkTechPost",
+    "summary": "JetBrains Research has open-sourced KotlinLLM under the Apache License 2.0. The IntelliJ IDEA plugin prototype adds Smart macros, asLlm and mockLlm, whose bodies are generated Kotlin source rather than live model calls. The plugin captures runtime values through JDI, asks an LLM agent for a narrow...",
+    "tier": "A",
+    "title": "JetBrains Open-Sources KotlinLLM: Smart Macros That Generate Kotlin Source Code at Runtime and Hot-Reload It Through JDI",
+    "url": "https://www.marktechpost.com/2026/07/31/jetbrains-research-open-sources-kotlinllm-intellij-plugin-kotlin-runtime-llm/",
+    "url_hash": "6cbdffa80a320f5dd830beadc2704a0a823dec35fbe344e663096f4aba754afd"
+  },
+  {
     "authoritative_score": 7.5,
     "canonical_url": "https://arxiv.org/abs/2607.16197",
     "published_at": "2026-07-21T04:00:00Z",
