@@ -1,31 +1,6 @@
 {
   "recent_titles": [
     {
-      "cleaned_title": "qualcomm about raise prices that\u2019s bad news everyone",
-      "sent_at": "2026-07-24T19:26:45Z",
-      "url": "https://www.theverge.com/gadgets/970910/qualcomm-raising-prices-bloomberg"
-    },
-    {
-      "cleaned_title": "anthropic releases opus 5 \u2018close\u2019 fable 5\u2019s capabilities",
-      "sent_at": "2026-07-24T19:26:45Z",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/970105/claude-opus-5-announced-anthropic-ai-model-release"
-    },
-    {
-      "cleaned_title": "did chinese steal anthropic, openai loses control two models",
-      "sent_at": "2026-07-24T19:26:45Z",
-      "url": "https://www.wired.com/story/uncanny-valley-podcast/"
-    },
-    {
-      "cleaned_title": "team uses alphafold redesign gene-editing proteins make them safer",
-      "sent_at": "2026-07-24T19:26:45Z",
-      "url": "https://arstechnica.com/science/2026/07/team-uses-alphafold-ai-to-redesign-gene-editing-proteins-to-make-them-safer/"
-    },
-    {
-      "cleaned_title": "as us weighs response chinese ai, industry urges against broad open-weight restrictions",
-      "sent_at": "2026-07-24T19:26:45Z",
-      "url": "https://techcrunch.com/2026/07/24/as-us-weighs-response-to-chinese-ai-industry-urges-against-broad-open-weight-restrictions/"
-    },
-    {
       "cleaned_title": "recursive superintelligence signs $410m compute deal amazon",
       "sent_at": "2026-07-28T19:26:50Z",
       "url": "https://techcrunch.com/2026/07/28/recursive-superintelligence-signs-400-compute-deal-with-amazon/"
@@ -49,6 +24,31 @@
       "cleaned_title": "github introduces default \"cooldown\" policy dependabot version updates",
       "sent_at": "2026-07-28T19:26:50Z",
       "url": "https://www.infoq.com/news/2026/07/github-dependabot-cooldown/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
+    },
+    {
+      "cleaned_title": "google earth\u2019s deepfake tool only lasted one day",
+      "sent_at": "2026-07-31T19:35:51Z",
+      "url": "https://www.theverge.com/tech/973943/google-earth-ai-image-generation-deepfake-tool"
+    },
+    {
+      "cleaned_title": "it\u2019s time panic about safety",
+      "sent_at": "2026-07-31T19:35:51Z",
+      "url": "https://www.theverge.com/podcast/973668/ai-safety-openai-hugging-face-vergecast"
+    },
+    {
+      "cleaned_title": "advancing responsible across europe",
+      "sent_at": "2026-07-31T19:35:51Z",
+      "url": "https://openai.com/index/advancing-responsible-ai-across-europe"
+    },
+    {
+      "cleaned_title": "scammers outperform humans when it comes building trust",
+      "sent_at": "2026-07-31T19:35:51Z",
+      "url": "https://arstechnica.com/security/2026/07/ai-scammers-outperform-humans-when-it-comes-to-building-trust/"
+    },
+    {
+      "cleaned_title": "smallest.ai raises $13m build ultra-fast voice that sounds genuinely human",
+      "sent_at": "2026-07-31T19:35:51Z",
+      "url": "https://techcrunch.com/2026/07/31/smallest-ai-raises-13m-to-build-ultra-fast-voice-ai-that-sounds-genuinely-human/"
     }
   ],
   "url_hashes": [
@@ -165,6 +165,11 @@
     "7afa5cf938dff38a5877e3bc6de764bc6027cf062cfb4ed2b76c5e7018ed6234",
     "55560096859ebe200396b9cbe7a75939c3de6a867d3f82f1dc84015c4a313e1b",
     "b3e7eb847fa278799914de3a04699290178dafa415e179ac648e7c5d3b5b5eb1",
-    "a95db42a1b781d46fc87c60ccc3f56e2749aa2491d687c810c5b5aa969023d84"
+    "a95db42a1b781d46fc87c60ccc3f56e2749aa2491d687c810c5b5aa969023d84",
+    "a503f2e2beff190fe5c3ed8f60b4896ea72de9453b5c5ef6e216ace7a3830264",
+    "13380feffaa4ee7b53a06b7f5fc466d22465a120a3093ec1949d4840b23ad38b",
+    "f8ec64126bdac17b3b31c4b605b37e973d9d687edd758330e6ea3e1eb48255f8",
+    "3f8b6e255cb31507493ac8c2c4dc8ced297ad61f8fef753e8c4a653560fb446f",
+    "3d7423ec8d9c6228919943fc1e1c35dbcc830fde5a21fd06ca8fd089cccb5428"
   ]
 }
