@@ -1,29 +1,6 @@
 {
-  "date": "2026-07-28",
+  "date": "2026-07-31",
   "last_post_time": null,
-  "pending_best": {
-    "authoritative_score": 7.5,
-    "canonical_url": "https://github.com/openai/codex-security",
-    "cleaned_title": "openai just open sourced codex security",
-    "index": 2,
-    "published_at": "2026-07-28T20:52:55Z",
-    "saved_at": "2026-07-28T21:37:20Z",
-    "score": {
-      "freshness_score": 2.0,
-      "impact_score": 2.5,
-      "novelty_score": 2.5,
-      "reason": "The article reports on the open-sourcing of a significant AI-related project, which could have a substantial impact on the field.",
-      "red_flag": false,
-      "red_flag_reason": null,
-      "source_score": 0.5,
-      "total_score": 7.5
-    },
-    "source": "Hacker News",
-    "summary": "Comments",
-    "tier": "C",
-    "title": "OpenAI just open-sourced Codex Security",
-    "url": "https://github.com/openai/codex-security",
-    "url_hash": "328a7b2dd544e1886d6cbf15dbfdc68d58f69cba3baabc611b075422049f88b5"
-  },
+  "pending_best": null,
   "posts_today": 0
 }
