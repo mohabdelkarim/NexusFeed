@@ -1,31 +1,6 @@
 {
   "recent_titles": [
     {
-      "cleaned_title": "recursive superintelligence signs $410m compute deal amazon",
-      "sent_at": "2026-07-28T19:26:50Z",
-      "url": "https://techcrunch.com/2026/07/28/recursive-superintelligence-signs-400-compute-deal-with-amazon/"
-    },
-    {
-      "cleaned_title": "scientific computing age agentic",
-      "sent_at": "2026-07-28T19:26:50Z",
-      "url": "https://openai.com/index/scientific-computing-agentic-ai/"
-    },
-    {
-      "cleaned_title": "gemini api managed agents: 3.6 flash, hooks, more",
-      "sent_at": "2026-07-28T19:26:50Z",
-      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api-3-6-flash-hooks/"
-    },
-    {
-      "cleaned_title": "fish audio raises $52m seed build voice models creators enterprises",
-      "sent_at": "2026-07-28T19:26:50Z",
-      "url": "https://techcrunch.com/2026/07/28/fish-audio-raises-50m-seed-to-build-ai-voice-models-for-creators-and-enterprises/"
-    },
-    {
-      "cleaned_title": "github introduces default \"cooldown\" policy dependabot version updates",
-      "sent_at": "2026-07-28T19:26:50Z",
-      "url": "https://www.infoq.com/news/2026/07/github-dependabot-cooldown/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global"
-    },
-    {
       "cleaned_title": "google earth\u2019s deepfake tool only lasted one day",
       "sent_at": "2026-07-31T19:35:51Z",
       "url": "https://www.theverge.com/tech/973943/google-earth-ai-image-generation-deepfake-tool"
@@ -49,6 +24,31 @@
       "cleaned_title": "smallest.ai raises $13m build ultra-fast voice that sounds genuinely human",
       "sent_at": "2026-07-31T19:35:51Z",
       "url": "https://techcrunch.com/2026/07/31/smallest-ai-raises-13m-to-build-ultra-fast-voice-ai-that-sounds-genuinely-human/"
+    },
+    {
+      "cleaned_title": "nvidia doesn\u2019t mess around: week after open industry group formed, it\u2019s already showing progress",
+      "sent_at": "2026-08-04T19:39:25Z",
+      "url": "https://techcrunch.com/2026/08/04/nvidia-doesnt-mess-around-a-week-after-open-ai-industry-group-formed-its-already-showing-progress/"
+    },
+    {
+      "cleaned_title": "deploy local agents everywhere lfm2.5-2.6b",
+      "sent_at": "2026-08-04T19:39:25Z",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-2-6b"
+    },
+    {
+      "cleaned_title": "teaching speak language pathology",
+      "sent_at": "2026-08-04T19:39:25Z",
+      "url": "https://news.microsoft.com/signal/articles/teaching-ai-to-speak-the-language-of-pathology/"
+    },
+    {
+      "cleaned_title": "latest news we announced july 2026",
+      "sent_at": "2026-08-04T19:39:25Z",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-july-2026/"
+    },
+    {
+      "cleaned_title": "apple says more ex-employees may have taken confidential data openai",
+      "sent_at": "2026-08-04T19:39:25Z",
+      "url": "https://techcrunch.com/2026/08/04/apple-says-more-ex-employees-may-have-taken-confidential-data-to-openai/"
     }
   ],
   "url_hashes": [
@@ -170,6 +170,11 @@
     "13380feffaa4ee7b53a06b7f5fc466d22465a120a3093ec1949d4840b23ad38b",
     "f8ec64126bdac17b3b31c4b605b37e973d9d687edd758330e6ea3e1eb48255f8",
     "3f8b6e255cb31507493ac8c2c4dc8ced297ad61f8fef753e8c4a653560fb446f",
-    "3d7423ec8d9c6228919943fc1e1c35dbcc830fde5a21fd06ca8fd089cccb5428"
+    "3d7423ec8d9c6228919943fc1e1c35dbcc830fde5a21fd06ca8fd089cccb5428",
+    "3cc1d075abd40b8935839540c830fc6427d39c63d64c37945edaf5f481ee863b",
+    "aa21db80f8b7b7664c23f0b5de6fc014a64920e8fdb45e2877008c81969f17ab",
+    "1fb607ce4cf9e97e0f27bef1aaa7469c9bf27edb6b56ac482a38a69964b30f35",
+    "58ba351a21396b4331c6b8ca3bfa48db7fbc8a60b9882f01eebdb5c246d2df3c",
+    "239a1d5abd13ecf899b115b36e82bf5702239dbb720d92fdc81e8d1b18bbd024"
   ]
 }
