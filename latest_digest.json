@@ -1,47 +1,47 @@
 {
-  "digest_date": "2026-07-31",
-  "saved_at": "2026-07-31T19:35:51Z",
+  "digest_date": "2026-08-04",
+  "saved_at": "2026-08-04T19:39:25Z",
   "stories": [
     {
-      "article_url": "https://www.theverge.com/tech/973943/google-earth-ai-image-generation-deepfake-tool",
-      "full_title": "Google Earth\u2019s AI deepfake tool only lasted one day",
-      "one_line_summary": "Google shuts down AI tool",
+      "article_url": "https://techcrunch.com/2026/08/04/nvidia-doesnt-mess-around-a-week-after-open-ai-industry-group-formed-its-already-showing-progress/",
+      "full_title": "Nvidia doesn\u2019t mess around: A week after open AI industry group formed, it\u2019s already showing progress",
+      "one_line_summary": "Nvidia's AI group shows progress",
       "rank": 1,
       "score": 9.5,
-      "source_name": "The Verge",
+      "source_name": "TechCrunch",
       "source_tier": "A"
     },
     {
-      "article_url": "https://www.theverge.com/podcast/973668/ai-safety-openai-hugging-face-vergecast",
-      "full_title": "It\u2019s time to panic about AI safety",
-      "one_line_summary": "AI safety concerns rise",
+      "article_url": "https://huggingface.co/blog/LiquidAI/lfm2-5-2-6b",
+      "full_title": "Deploy local agents everywhere with LFM2.5-2.6B",
+      "one_line_summary": "LFM2.5-2.6B released",
       "rank": 2,
       "score": 9.2,
-      "source_name": "The Verge",
-      "source_tier": "A"
-    },
-    {
-      "article_url": "https://openai.com/index/advancing-responsible-ai-across-europe",
-      "full_title": "Advancing responsible AI across Europe",
-      "one_line_summary": "OpenAI on responsible AI",
-      "rank": 3,
-      "score": 9.0,
-      "source_name": "OpenAI",
+      "source_name": "HuggingFace",
       "source_tier": "S"
     },
     {
-      "article_url": "https://arstechnica.com/security/2026/07/ai-scammers-outperform-humans-when-it-comes-to-building-trust/",
-      "full_title": "AI scammers outperform humans when it comes to building trust",
-      "one_line_summary": "AI scammers build trust",
-      "rank": 4,
-      "score": 8.8,
-      "source_name": "Ars Technica",
-      "source_tier": "A"
+      "article_url": "https://news.microsoft.com/signal/articles/teaching-ai-to-speak-the-language-of-pathology/",
+      "full_title": "Teaching AI to speak the language of pathology",
+      "one_line_summary": "AI for pathology",
+      "rank": 3,
+      "score": 9.0,
+      "source_name": "Microsoft AI",
+      "source_tier": "S"
     },
     {
-      "article_url": "https://techcrunch.com/2026/07/31/smallest-ai-raises-13m-to-build-ultra-fast-voice-ai-that-sounds-genuinely-human/",
-      "full_title": "Smallest.ai raises $13M to build ultra-fast voice AI that sounds genuinely human",
-      "one_line_summary": "Smallest.ai raises funds",
+      "article_url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-july-2026/",
+      "full_title": "The latest AI news we announced in July 2026",
+      "one_line_summary": "Google AI updates",
+      "rank": 4,
+      "score": 8.8,
+      "source_name": "Google AI",
+      "source_tier": "S"
+    },
+    {
+      "article_url": "https://techcrunch.com/2026/08/04/apple-says-more-ex-employees-may-have-taken-confidential-data-to-openai/",
+      "full_title": "Apple says more ex-employees may have taken confidential data to OpenAI",
+      "one_line_summary": "Apple investigates data leak",
       "rank": 5,
       "score": 8.5,
       "source_name": "TechCrunch",
