@@ -1,6 +1,6 @@
 {
   "date": "2026-08-07",
-  "last_post_time": null,
+  "last_post_time": "2026-08-07T14:17:30Z",
   "pending_best": {
     "authoritative_score": 8.0,
     "canonical_url": "https://www.theverge.com/tech/976405/apple-telegram-ban-x-app-store-violations",
@@ -25,5 +25,5 @@
     "url": "https://www.theverge.com/tech/976405/apple-telegram-ban-x-app-store-violations",
     "url_hash": "ab7794ca7210ad85ad2e2379f44ae96862742c330236bae62a0c0e1030c8ea46"
   },
-  "posts_today": 0
+  "posts_today": 1
 }

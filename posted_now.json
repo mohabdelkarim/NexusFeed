@@ -1,6 +1,28 @@
 [
   {
     "authoritative_score": 8.5,
+    "canonical_url": "https://www.wired.com/story/scientists-used-ai-to-create-16-new-viruses",
+    "published_at": "2026-08-07T14:13:57Z",
+    "saved_at": "2026-08-07T14:17:30Z",
+    "score": {
+      "freshness_score": 2.0,
+      "impact_score": 2.5,
+      "novelty_score": 2.5,
+      "reason": "High novelty, impact, and freshness scores with a reputable source.",
+      "red_flag": false,
+      "red_flag_reason": null,
+      "source_score": 1.5,
+      "total_score": 8.5
+    },
+    "source": "Wired AI",
+    "summary": "The use of AI systems to create viruses opens up new possibilities for combating bacterial resistance. It also raises concerns about the pace at which technology is outstripping regulation.",
+    "tier": "A",
+    "title": "Scientists Used AI to Create 16 New Viruses",
+    "url": "https://www.wired.com/story/scientists-used-ai-to-create-16-new-viruses/",
+    "url_hash": "8c0291ea9ebd8cfdfe8b7e30e6ee72077a558aab4ed281413c69f09b3f539738"
+  },
+  {
+    "authoritative_score": 8.5,
     "canonical_url": "https://www.marktechpost.com/2026/07/31/jetbrains-research-open-sources-kotlinllm-intellij-plugin-kotlin-runtime-llm",
     "published_at": "2026-07-31T10:32:53Z",
     "saved_at": "2026-07-31T11:49:36Z",
