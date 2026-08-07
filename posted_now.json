@@ -1,5 +1,27 @@
 [
   {
+    "authoritative_score": 8.0,
+    "canonical_url": "https://www.theverge.com/tech/976405/apple-telegram-ban-x-app-store-violations",
+    "published_at": "2026-08-07T11:00:00Z",
+    "saved_at": "2026-08-07T17:59:44Z",
+    "score": {
+      "freshness_score": 2.0,
+      "impact_score": 2.5,
+      "novelty_score": 2.0,
+      "reason": "The article discusses a recent event involving Apple and Telegram, which is relevant to the tech industry and has a significant impact on users.",
+      "red_flag": false,
+      "red_flag_reason": null,
+      "source_score": 1.5,
+      "total_score": 8.0
+    },
+    "source": "The Verge",
+    "summary": "For roughly an hour this week, Telegram vanished from Apple's App Store. Even during that blip, it was a stunning absence for such a major app: an avenue of communication for more than 1 billion users around the world, used widely as a secure platform for people who live in countries under censorsh...",
+    "tier": "A",
+    "title": "Why does Apple keep banning Telegram, but never X?",
+    "url": "https://www.theverge.com/tech/976405/apple-telegram-ban-x-app-store-violations",
+    "url_hash": "ab7794ca7210ad85ad2e2379f44ae96862742c330236bae62a0c0e1030c8ea46"
+  },
+  {
     "authoritative_score": 8.5,
     "canonical_url": "https://www.wired.com/story/scientists-used-ai-to-create-16-new-viruses",
     "published_at": "2026-08-07T14:13:57Z",
