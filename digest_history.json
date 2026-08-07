@@ -49,6 +49,31 @@
       "cleaned_title": "apple says more ex-employees may have taken confidential data openai",
       "sent_at": "2026-08-04T19:39:25Z",
       "url": "https://techcrunch.com/2026/08/04/apple-says-more-ex-employees-may-have-taken-confidential-data-to-openai/"
+    },
+    {
+      "cleaned_title": "openai puts brakes model because it\u2019s supposedly too powerful",
+      "sent_at": "2026-08-07T18:59:31Z",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/976948/openai-astra-model-pause-critical-cyber-capabilities"
+    },
+    {
+      "cleaned_title": "responding next frontier critical cyber capabilities",
+      "sent_at": "2026-08-07T18:59:31Z",
+      "url": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities"
+    },
+    {
+      "cleaned_title": "bytedance trains massive model bid rival anthropic",
+      "sent_at": "2026-08-07T18:59:31Z",
+      "url": "https://arstechnica.com/ai/2026/08/bytedance-trains-massive-ai-model-in-bid-to-rival-anthropic/"
+    },
+    {
+      "cleaned_title": "cloudflare launches kitesurf, browser built agents",
+      "sent_at": "2026-08-07T18:59:31Z",
+      "url": "https://techcrunch.com/2026/08/07/cloudflare-launches-kitesurf-a-browser-built-for-ai-agents/"
+    },
+    {
+      "cleaned_title": "scientists used create 16 viruses",
+      "sent_at": "2026-08-07T18:59:31Z",
+      "url": "https://www.wired.com/story/scientists-used-ai-to-create-16-new-viruses/"
     }
   ],
   "url_hashes": [
@@ -175,6 +200,11 @@
     "aa21db80f8b7b7664c23f0b5de6fc014a64920e8fdb45e2877008c81969f17ab",
     "1fb607ce4cf9e97e0f27bef1aaa7469c9bf27edb6b56ac482a38a69964b30f35",
     "58ba351a21396b4331c6b8ca3bfa48db7fbc8a60b9882f01eebdb5c246d2df3c",
-    "239a1d5abd13ecf899b115b36e82bf5702239dbb720d92fdc81e8d1b18bbd024"
+    "239a1d5abd13ecf899b115b36e82bf5702239dbb720d92fdc81e8d1b18bbd024",
+    "557e0bfc0113e2a7221554189f860b018b7d198d60f585241cc6f9f81b065095",
+    "e66cc71d0943fe40ad6453dad08e9df8e67072ce6e9fa35d606a5faf12a1f86c",
+    "0a754c7cb1653c10c077d2563eab34c1f6c10642399b805dafe533479774b9c7",
+    "66165609f5f264e5ce55e7793da938e3ddd36f28834b4df79f1d749215ae739f",
+    "8c0291ea9ebd8cfdfe8b7e30e6ee72077a558aab4ed281413c69f09b3f539738"
   ]
 }
