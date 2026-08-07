@@ -1,50 +1,50 @@
 {
-  "digest_date": "2026-08-04",
-  "saved_at": "2026-08-04T19:39:25Z",
+  "digest_date": "2026-08-07",
+  "saved_at": "2026-08-07T18:59:31Z",
   "stories": [
     {
-      "article_url": "https://techcrunch.com/2026/08/04/nvidia-doesnt-mess-around-a-week-after-open-ai-industry-group-formed-its-already-showing-progress/",
-      "full_title": "Nvidia doesn\u2019t mess around: A week after open AI industry group formed, it\u2019s already showing progress",
-      "one_line_summary": "Nvidia's AI group shows progress",
+      "article_url": "https://www.theverge.com/ai-artificial-intelligence/976948/openai-astra-model-pause-critical-cyber-capabilities",
+      "full_title": "OpenAI puts the brakes on a new model because it\u2019s supposedly too powerful",
+      "one_line_summary": "OpenAI pauses model",
       "rank": 1,
       "score": 9.5,
+      "source_name": "The Verge",
+      "source_tier": "A"
+    },
+    {
+      "article_url": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities",
+      "full_title": "Responding to the next frontier of critical cyber capabilities",
+      "one_line_summary": "OpenAI shares cybersecurity",
+      "rank": 2,
+      "score": 9.2,
+      "source_name": "OpenAI",
+      "source_tier": "S"
+    },
+    {
+      "article_url": "https://arstechnica.com/ai/2026/08/bytedance-trains-massive-ai-model-in-bid-to-rival-anthropic/",
+      "full_title": "ByteDance trains massive AI model in bid to rival Anthropic",
+      "one_line_summary": "ByteDance trains AI model",
+      "rank": 3,
+      "score": 8.8,
+      "source_name": "Ars Technica",
+      "source_tier": "A"
+    },
+    {
+      "article_url": "https://techcrunch.com/2026/08/07/cloudflare-launches-kitesurf-a-browser-built-for-ai-agents/",
+      "full_title": "Cloudflare launches Kitesurf, a browser built for AI agents",
+      "one_line_summary": "Cloudflare launches Kitesurf",
+      "rank": 4,
+      "score": 8.5,
       "source_name": "TechCrunch",
       "source_tier": "A"
     },
     {
-      "article_url": "https://huggingface.co/blog/LiquidAI/lfm2-5-2-6b",
-      "full_title": "Deploy local agents everywhere with LFM2.5-2.6B",
-      "one_line_summary": "LFM2.5-2.6B released",
-      "rank": 2,
-      "score": 9.2,
-      "source_name": "HuggingFace",
-      "source_tier": "S"
-    },
-    {
-      "article_url": "https://news.microsoft.com/signal/articles/teaching-ai-to-speak-the-language-of-pathology/",
-      "full_title": "Teaching AI to speak the language of pathology",
-      "one_line_summary": "AI for pathology",
-      "rank": 3,
-      "score": 9.0,
-      "source_name": "Microsoft AI",
-      "source_tier": "S"
-    },
-    {
-      "article_url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-july-2026/",
-      "full_title": "The latest AI news we announced in July 2026",
-      "one_line_summary": "Google AI updates",
-      "rank": 4,
-      "score": 8.8,
-      "source_name": "Google AI",
-      "source_tier": "S"
-    },
-    {
-      "article_url": "https://techcrunch.com/2026/08/04/apple-says-more-ex-employees-may-have-taken-confidential-data-to-openai/",
-      "full_title": "Apple says more ex-employees may have taken confidential data to OpenAI",
-      "one_line_summary": "Apple investigates data leak",
+      "article_url": "https://www.wired.com/story/scientists-used-ai-to-create-16-new-viruses/",
+      "full_title": "Scientists Used AI to Create 16 New Viruses",
+      "one_line_summary": "AI creates new viruses",
       "rank": 5,
-      "score": 8.5,
-      "source_name": "TechCrunch",
+      "score": 8.2,
+      "source_name": "Wired AI",
       "source_tier": "A"
     }
   ]
