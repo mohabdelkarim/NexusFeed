@@ -30,6 +30,7 @@
 
 | Score | Headline | Source | Published | Tier |
 |-------|----------|--------|-----------|------|
+| **8.5** | [OpenAI puts the brakes on a new model because it&#8217;s supposedly too powerful](https://www.theverge.com/ai-artificial-intelligence/976948/openai-astra-model-pause-critical-cyber-capabilities) | The Verge | 2026-08-07T18:40:34Z | **A** |
 | **8.0** | [Why does Apple keep banning Telegram, but never X?](https://www.theverge.com/tech/976405/apple-telegram-ban-x-app-store-violations) | The Verge | 2026-08-07T11:00:00Z | **A** |
 | **8.5** | [Scientists Used AI to Create 16 New Viruses](https://www.wired.com/story/scientists-used-ai-to-create-16-new-viruses/) | Wired AI | 2026-08-07T14:13:57Z | **A** |
 | **8.5** | [JetBrains Open-Sources KotlinLLM: Smart Macros That Generate Kotlin Source Code at Runtime and Hot-Reload It Through JDI](https://www.marktechpost.com/2026/07/31/jetbrains-research-open-sources-kotlinllm-intellij-plugin-kotlin-runtime-llm/) | MarkTechPost | 2026-07-31T10:32:53Z | **A** |

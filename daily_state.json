@@ -1,29 +1,6 @@
 {
   "date": "2026-08-07",
-  "last_post_time": "2026-08-07T17:59:44Z",
-  "pending_best": {
-    "authoritative_score": 8.5,
-    "canonical_url": "https://www.theverge.com/ai-artificial-intelligence/976948/openai-astra-model-pause-critical-cyber-capabilities",
-    "cleaned_title": "openai puts brakes model because it 8217 s supposedly too powerful",
-    "index": 1,
-    "published_at": "2026-08-07T18:40:34Z",
-    "saved_at": "2026-08-07T19:10:00Z",
-    "score": {
-      "freshness_score": 2.0,
-      "impact_score": 2.5,
-      "novelty_score": 2.5,
-      "reason": "The article reports on a significant development in AI research, with potential implications for the broader tech industry.",
-      "red_flag": false,
-      "red_flag_reason": null,
-      "source_score": 1.5,
-      "total_score": 8.5
-    },
-    "source": "The Verge",
-    "summary": "OpenAI says it is pausing \"internal activities\" around an in-development AI model, Astra, because it doesn't yet meet new security standards the company is putting in place. The announcement follows its recent disclosure that OpenAI models accidentally hacked Hugging Face. Anthropic and Meta have a...",
-    "tier": "A",
-    "title": "OpenAI puts the brakes on a new model because it&#8217;s supposedly too powerful",
-    "url": "https://www.theverge.com/ai-artificial-intelligence/976948/openai-astra-model-pause-critical-cyber-capabilities",
-    "url_hash": "557e0bfc0113e2a7221554189f860b018b7d198d60f585241cc6f9f81b065095"
-  },
-  "posts_today": 2
+  "last_post_time": "2026-08-07T21:38:42Z",
+  "pending_best": null,
+  "posts_today": 3
 }
