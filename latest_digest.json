@@ -1,51 +1,51 @@
 {
-  "digest_date": "2026-08-07",
-  "saved_at": "2026-08-07T18:59:31Z",
+  "digest_date": "2026-08-11",
+  "saved_at": "2026-08-11T19:03:41Z",
   "stories": [
     {
-      "article_url": "https://www.theverge.com/ai-artificial-intelligence/976948/openai-astra-model-pause-critical-cyber-capabilities",
-      "full_title": "OpenAI puts the brakes on a new model because it\u2019s supposedly too powerful",
-      "one_line_summary": "OpenAI pauses model",
+      "article_url": "https://techcrunch.com/2026/08/11/googles-gemini-app-surges-to-one-billion-users/",
+      "full_title": "Google\u2019s Gemini app surges to one billion users",
+      "one_line_summary": "Gemini hits 1 billion users",
       "rank": 1,
       "score": 9.5,
-      "source_name": "The Verge",
-      "source_tier": "A"
-    },
-    {
-      "article_url": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities",
-      "full_title": "Responding to the next frontier of critical cyber capabilities",
-      "one_line_summary": "OpenAI shares cybersecurity",
-      "rank": 2,
-      "score": 9.2,
-      "source_name": "OpenAI",
-      "source_tier": "S"
-    },
-    {
-      "article_url": "https://arstechnica.com/ai/2026/08/bytedance-trains-massive-ai-model-in-bid-to-rival-anthropic/",
-      "full_title": "ByteDance trains massive AI model in bid to rival Anthropic",
-      "one_line_summary": "ByteDance trains AI model",
-      "rank": 3,
-      "score": 8.8,
-      "source_name": "Ars Technica",
-      "source_tier": "A"
-    },
-    {
-      "article_url": "https://techcrunch.com/2026/08/07/cloudflare-launches-kitesurf-a-browser-built-for-ai-agents/",
-      "full_title": "Cloudflare launches Kitesurf, a browser built for AI agents",
-      "one_line_summary": "Cloudflare launches Kitesurf",
-      "rank": 4,
-      "score": 8.5,
       "source_name": "TechCrunch",
       "source_tier": "A"
     },
     {
-      "article_url": "https://www.wired.com/story/scientists-used-ai-to-create-16-new-viruses/",
-      "full_title": "Scientists Used AI to Create 16 New Viruses",
-      "one_line_summary": "AI creates new viruses",
-      "rank": 5,
-      "score": 8.2,
+      "article_url": "https://techcrunch.com/2026/08/11/an-unreleased-anthropic-model-made-progress-on-one-of-maths-biggest-unsolved-problems/",
+      "full_title": "An unreleased Anthropic model made progress on one of math\u2019s biggest unsolved problems",
+      "one_line_summary": "Anthropic model solves math problem",
+      "rank": 2,
+      "score": 9.2,
+      "source_name": "TechCrunch",
+      "source_tier": "A"
+    },
+    {
+      "article_url": "https://techcrunch.com/2026/08/11/general-catalyst-leads-1-1b-round-into-2-month-old-river-ai/",
+      "full_title": "General Catalyst leads $1.1B round into 2-month-old River AI",
+      "one_line_summary": "River AI gets $1.1B funding",
+      "rank": 3,
+      "score": 9.0,
+      "source_name": "TechCrunch",
+      "source_tier": "A"
+    },
+    {
+      "article_url": "https://www.wired.com/story/a-zoom-screen-sharing-bug-let-anyone-take-over-other-devices-on-a-call/",
+      "full_title": "A Zoom Screen-Sharing Bug Let Anyone Take Over Other Devices on a Call",
+      "one_line_summary": "Zoom bug allows device takeover",
+      "rank": 4,
+      "score": 8.8,
       "source_name": "Wired AI",
       "source_tier": "A"
+    },
+    {
+      "article_url": "https://openai.com/index/testing-ads-in-chatgpt",
+      "full_title": "Testing ads in ChatGPT",
+      "one_line_summary": "ChatGPT tests ads",
+      "rank": 5,
+      "score": 8.5,
+      "source_name": "OpenAI",
+      "source_tier": "S"
     }
   ]
 }

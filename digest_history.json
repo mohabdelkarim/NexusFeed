@@ -1,31 +1,6 @@
 {
   "recent_titles": [
     {
-      "cleaned_title": "google earth\u2019s deepfake tool only lasted one day",
-      "sent_at": "2026-07-31T19:35:51Z",
-      "url": "https://www.theverge.com/tech/973943/google-earth-ai-image-generation-deepfake-tool"
-    },
-    {
-      "cleaned_title": "it\u2019s time panic about safety",
-      "sent_at": "2026-07-31T19:35:51Z",
-      "url": "https://www.theverge.com/podcast/973668/ai-safety-openai-hugging-face-vergecast"
-    },
-    {
-      "cleaned_title": "advancing responsible across europe",
-      "sent_at": "2026-07-31T19:35:51Z",
-      "url": "https://openai.com/index/advancing-responsible-ai-across-europe"
-    },
-    {
-      "cleaned_title": "scammers outperform humans when it comes building trust",
-      "sent_at": "2026-07-31T19:35:51Z",
-      "url": "https://arstechnica.com/security/2026/07/ai-scammers-outperform-humans-when-it-comes-to-building-trust/"
-    },
-    {
-      "cleaned_title": "smallest.ai raises $13m build ultra-fast voice that sounds genuinely human",
-      "sent_at": "2026-07-31T19:35:51Z",
-      "url": "https://techcrunch.com/2026/07/31/smallest-ai-raises-13m-to-build-ultra-fast-voice-ai-that-sounds-genuinely-human/"
-    },
-    {
       "cleaned_title": "nvidia doesn\u2019t mess around: week after open industry group formed, it\u2019s already showing progress",
       "sent_at": "2026-08-04T19:39:25Z",
       "url": "https://techcrunch.com/2026/08/04/nvidia-doesnt-mess-around-a-week-after-open-ai-industry-group-formed-its-already-showing-progress/"
@@ -74,6 +49,31 @@
       "cleaned_title": "scientists used create 16 viruses",
       "sent_at": "2026-08-07T18:59:31Z",
       "url": "https://www.wired.com/story/scientists-used-ai-to-create-16-new-viruses/"
+    },
+    {
+      "cleaned_title": "google\u2019s gemini app surges one billion users",
+      "sent_at": "2026-08-11T19:03:41Z",
+      "url": "https://techcrunch.com/2026/08/11/googles-gemini-app-surges-to-one-billion-users/"
+    },
+    {
+      "cleaned_title": "unreleased anthropic model made progress one math\u2019s biggest unsolved problems",
+      "sent_at": "2026-08-11T19:03:41Z",
+      "url": "https://techcrunch.com/2026/08/11/an-unreleased-anthropic-model-made-progress-on-one-of-maths-biggest-unsolved-problems/"
+    },
+    {
+      "cleaned_title": "general catalyst leads $1.1b round into 2-month-old river",
+      "sent_at": "2026-08-11T19:03:41Z",
+      "url": "https://techcrunch.com/2026/08/11/general-catalyst-leads-1-1b-round-into-2-month-old-river-ai/"
+    },
+    {
+      "cleaned_title": "zoom screen-sharing bug let anyone take over other devices call",
+      "sent_at": "2026-08-11T19:03:41Z",
+      "url": "https://www.wired.com/story/a-zoom-screen-sharing-bug-let-anyone-take-over-other-devices-on-a-call/"
+    },
+    {
+      "cleaned_title": "testing ads chatgpt",
+      "sent_at": "2026-08-11T19:03:41Z",
+      "url": "https://openai.com/index/testing-ads-in-chatgpt"
     }
   ],
   "url_hashes": [
@@ -205,6 +205,11 @@
     "e66cc71d0943fe40ad6453dad08e9df8e67072ce6e9fa35d606a5faf12a1f86c",
     "0a754c7cb1653c10c077d2563eab34c1f6c10642399b805dafe533479774b9c7",
     "66165609f5f264e5ce55e7793da938e3ddd36f28834b4df79f1d749215ae739f",
-    "8c0291ea9ebd8cfdfe8b7e30e6ee72077a558aab4ed281413c69f09b3f539738"
+    "8c0291ea9ebd8cfdfe8b7e30e6ee72077a558aab4ed281413c69f09b3f539738",
+    "6d1c60f6173d76629ee86ad62806ed569e482faeeb111dcb1e4ea256d8c1e529",
+    "e32278b94fa29df352cebf4abc17dbb76ae45c4dfedcf65e6d1ba1552a7619fe",
+    "4a3a16344e7faccbc1ec328500bf0a20f73a111ff1735cb5fe9ccf216cfa459a",
+    "3ca220656174dc91459a8afab7f7b6d866342c645ab5568dc16937f6d7ea7f1b",
+    "b19ec562c455e753267b0e04107e2217c787cdc2a4884378a6d93cdc79d11f47"
   ]
 }
