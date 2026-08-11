@@ -1,6 +1,6 @@
 {
   "date": "2026-08-11",
-  "last_post_time": null,
+  "last_post_time": "2026-08-11T10:13:48Z",
   "pending_best": {
     "authoritative_score": 7.5,
     "canonical_url": "https://techcrunch.com/2026/08/10/as-ai-led-attacks-multiply-openai-launches-a-new-cyber-model",
@@ -25,5 +25,5 @@
     "url": "https://techcrunch.com/2026/08/10/as-ai-led-attacks-multiply-openai-launches-a-new-cyber-model/",
     "url_hash": "0212f9770ddac1d8870a713dec502a1307cc700335004cb42e54ff0739585ff5"
   },
-  "posts_today": 0
+  "posts_today": 1
 }

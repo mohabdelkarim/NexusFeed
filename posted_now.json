@@ -1,6 +1,28 @@
 [
   {
     "authoritative_score": 8.5,
+    "canonical_url": "https://www.wired.com/story/organoids-lab-grown-brains-neural-networks",
+    "published_at": "2026-08-11T10:00:00Z",
+    "saved_at": "2026-08-11T10:13:48Z",
+    "score": {
+      "freshness_score": 2.0,
+      "impact_score": 2.5,
+      "novelty_score": 2.5,
+      "reason": "The article has a high novelty score due to its research nature, high impact score as it affects all devs, high freshness score as it was published less than an hour ago, and a moderate source score due to its Tier A source.",
+      "red_flag": false,
+      "red_flag_reason": null,
+      "source_score": 1.5,
+      "total_score": 8.5
+    },
+    "source": "Wired AI",
+    "summary": "Mini human brains are being grown in labs all over the world. Soon, they could outthink neural networks.",
+    "tier": "A",
+    "title": "AI Is Dead. Organoids Are Alive",
+    "url": "https://www.wired.com/story/organoids-lab-grown-brains-neural-networks/",
+    "url_hash": "eb359392cfb3b76fb6e44e8d2f8d4f71ceaeddd289b91d44376d46ab544f8a34"
+  },
+  {
+    "authoritative_score": 8.5,
     "canonical_url": "https://www.theverge.com/ai-artificial-intelligence/976948/openai-astra-model-pause-critical-cyber-capabilities",
     "published_at": "2026-08-07T18:40:34Z",
     "saved_at": "2026-08-07T21:38:42Z",

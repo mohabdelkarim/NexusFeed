@@ -11,12 +11,17 @@
     {
       "hash": "557e0bfc0113e2a7221554189f860b018b7d198d60f585241cc6f9f81b065095",
       "posted_at": "2026-08-07T21:38:42Z"
+    },
+    {
+      "hash": "eb359392cfb3b76fb6e44e8d2f8d4f71ceaeddd289b91d44376d46ab544f8a34",
+      "posted_at": "2026-08-11T10:13:48Z"
     }
   ],
   "hashes": [
     "557e0bfc0113e2a7221554189f860b018b7d198d60f585241cc6f9f81b065095",
     "8c0291ea9ebd8cfdfe8b7e30e6ee72077a558aab4ed281413c69f09b3f539738",
-    "ab7794ca7210ad85ad2e2379f44ae96862742c330236bae62a0c0e1030c8ea46"
+    "ab7794ca7210ad85ad2e2379f44ae96862742c330236bae62a0c0e1030c8ea46",
+    "eb359392cfb3b76fb6e44e8d2f8d4f71ceaeddd289b91d44376d46ab544f8a34"
   ],
   "recent_titles": [
     {
@@ -36,6 +41,12 @@
       "posted_at": "2026-08-07T21:38:42Z",
       "score": 8.5,
       "source": "The Verge"
+    },
+    {
+      "cleaned_title": "ai is dead organoids are alive",
+      "posted_at": "2026-08-11T10:13:48Z",
+      "score": 8.5,
+      "source": "Wired AI"
     }
   ]
 }
