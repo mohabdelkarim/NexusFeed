@@ -15,9 +15,14 @@
     {
       "hash": "eb359392cfb3b76fb6e44e8d2f8d4f71ceaeddd289b91d44376d46ab544f8a34",
       "posted_at": "2026-08-11T10:13:48Z"
+    },
+    {
+      "hash": "0212f9770ddac1d8870a713dec502a1307cc700335004cb42e54ff0739585ff5",
+      "posted_at": "2026-08-11T14:22:29Z"
     }
   ],
   "hashes": [
+    "0212f9770ddac1d8870a713dec502a1307cc700335004cb42e54ff0739585ff5",
     "557e0bfc0113e2a7221554189f860b018b7d198d60f585241cc6f9f81b065095",
     "8c0291ea9ebd8cfdfe8b7e30e6ee72077a558aab4ed281413c69f09b3f539738",
     "ab7794ca7210ad85ad2e2379f44ae96862742c330236bae62a0c0e1030c8ea46",
@@ -47,6 +52,12 @@
       "posted_at": "2026-08-11T10:13:48Z",
       "score": 8.5,
       "source": "Wired AI"
+    },
+    {
+      "cleaned_title": "as ai led attacks multiply openai cyber model",
+      "posted_at": "2026-08-11T14:22:29Z",
+      "score": 7.5,
+      "source": "TechCrunch"
     }
   ]
 }
