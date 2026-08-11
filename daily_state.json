@@ -1,6 +1,29 @@
 {
   "date": "2026-08-11",
   "last_post_time": "2026-08-11T14:22:29Z",
-  "pending_best": null,
+  "pending_best": {
+    "authoritative_score": 9.0,
+    "canonical_url": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-video-consultations",
+    "cleaned_title": "amie our research medical ai system demonstrates real time clinical video consultation capabilities first its kind study",
+    "index": 0,
+    "published_at": "2026-08-11T17:00:00Z",
+    "saved_at": "2026-08-11T17:13:06Z",
+    "score": {
+      "freshness_score": 2.0,
+      "impact_score": 2.5,
+      "novelty_score": 2.5,
+      "reason": "High novelty and impact score due to the first-of-its-kind study, with a high freshness score due to recent publication and a high source score from a reputable source.",
+      "red_flag": false,
+      "red_flag_reason": null,
+      "source_score": 2.0,
+      "total_score": 9.0
+    },
+    "source": "Google AI",
+    "summary": "AMIE promotional video",
+    "tier": "S",
+    "title": "AMIE, our research medical AI system, demonstrates real-time clinical video consultation capabilities in a first-of-its-kind study.",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-video-consultations/",
+    "url_hash": "012e30e2c241e587c1433ba3a5472308bf3a08181c284d48ec40814ffc00b0ea"
+  },
   "posts_today": 2
 }
