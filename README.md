@@ -30,6 +30,7 @@
 
 | Score | Headline | Source | Published | Tier |
 |-------|----------|--------|-----------|------|
+| **9.0** | [AMIE, our research medical AI system, demonstrates real-time clinical video consultation capabilities in a first-of-its-kind study.](https://blog.google/innovation-and-ai/models-and-research/google-research/amie-video-consultations/) | Google AI | 2026-08-11T17:00:00Z | **S** |
 | **7.5** | [As AI-led attacks multiply, OpenAI launches a new cyber model](https://techcrunch.com/2026/08/10/as-ai-led-attacks-multiply-openai-launches-a-new-cyber-model/) | TechCrunch | 2026-08-10T23:56:15Z | **A** |
 | **8.5** | [AI Is Dead. Organoids Are Alive](https://www.wired.com/story/organoids-lab-grown-brains-neural-networks/) | Wired AI | 2026-08-11T10:00:00Z | **A** |
 | **8.5** | [OpenAI puts the brakes on a new model because it&#8217;s supposedly too powerful](https://www.theverge.com/ai-artificial-intelligence/976948/openai-astra-model-pause-critical-cyber-capabilities) | The Verge | 2026-08-07T18:40:34Z | **A** |
