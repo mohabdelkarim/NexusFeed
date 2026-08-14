@@ -1,5 +1,27 @@
 [
   {
+    "authoritative_score": 8.0,
+    "canonical_url": "https://arstechnica.com/ai/2026/08/openai-and-anthropic-in-price-war-as-chinese-ai-rivals-gain-ground",
+    "published_at": "2026-08-14T14:27:14Z",
+    "saved_at": "2026-08-14T14:58:02Z",
+    "score": {
+      "freshness_score": 2.0,
+      "impact_score": 2.5,
+      "novelty_score": 2.0,
+      "reason": "The article discusses a recent development in the AI industry, specifically a price war between OpenAI and Anthropic, which could impact the market and many developers.",
+      "red_flag": false,
+      "red_flag_reason": null,
+      "source_score": 1.5,
+      "total_score": 8.0
+    },
+    "source": "Ars Technica",
+    "summary": "US groups release cheaper models after new challenges to their trillion-dollar ambitions.",
+    "tier": "A",
+    "title": "OpenAI and Anthropic in price war as Chinese AI rivals gain ground",
+    "url": "https://arstechnica.com/ai/2026/08/openai-and-anthropic-in-price-war-as-chinese-ai-rivals-gain-ground/",
+    "url_hash": "0778f93b3ef227dda6cd2efb78a3475b9ce62a9c753be68d425f2a3b4ac95158"
+  },
+  {
     "authoritative_score": 9.0,
     "canonical_url": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-video-consultations",
     "published_at": "2026-08-11T17:00:00Z",
