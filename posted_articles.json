@@ -1,10 +1,6 @@
 {
   "hash_records": [
     {
-      "hash": "8c0291ea9ebd8cfdfe8b7e30e6ee72077a558aab4ed281413c69f09b3f539738",
-      "posted_at": "2026-08-07T14:17:30Z"
-    },
-    {
       "hash": "ab7794ca7210ad85ad2e2379f44ae96862742c330236bae62a0c0e1030c8ea46",
       "posted_at": "2026-08-07T17:59:44Z"
     },
@@ -29,17 +25,10 @@
     "012e30e2c241e587c1433ba3a5472308bf3a08181c284d48ec40814ffc00b0ea",
     "0212f9770ddac1d8870a713dec502a1307cc700335004cb42e54ff0739585ff5",
     "557e0bfc0113e2a7221554189f860b018b7d198d60f585241cc6f9f81b065095",
-    "8c0291ea9ebd8cfdfe8b7e30e6ee72077a558aab4ed281413c69f09b3f539738",
     "ab7794ca7210ad85ad2e2379f44ae96862742c330236bae62a0c0e1030c8ea46",
     "eb359392cfb3b76fb6e44e8d2f8d4f71ceaeddd289b91d44376d46ab544f8a34"
   ],
   "recent_titles": [
-    {
-      "cleaned_title": "scientists used ai create 16 viruses",
-      "posted_at": "2026-08-07T14:17:30Z",
-      "score": 8.5,
-      "source": "Wired AI"
-    },
     {
       "cleaned_title": "why does apple keep banning telegram but never x",
       "posted_at": "2026-08-07T17:59:44Z",
