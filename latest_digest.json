@@ -1,51 +1,51 @@
 {
-  "digest_date": "2026-08-11",
-  "saved_at": "2026-08-11T19:03:41Z",
+  "digest_date": "2026-08-14",
+  "saved_at": "2026-08-14T18:56:09Z",
   "stories": [
     {
-      "article_url": "https://techcrunch.com/2026/08/11/googles-gemini-app-surges-to-one-billion-users/",
-      "full_title": "Google\u2019s Gemini app surges to one billion users",
-      "one_line_summary": "Gemini hits 1 billion users",
+      "article_url": "https://arstechnica.com/ai/2026/08/openai-and-anthropic-in-price-war-as-chinese-ai-rivals-gain-ground/",
+      "full_title": "OpenAI and Anthropic in price war as Chinese AI rivals gain ground",
+      "one_line_summary": "OpenAI, Anthropic in price war",
       "rank": 1,
       "score": 9.5,
-      "source_name": "TechCrunch",
+      "source_name": "Ars Technica",
       "source_tier": "A"
     },
     {
-      "article_url": "https://techcrunch.com/2026/08/11/an-unreleased-anthropic-model-made-progress-on-one-of-maths-biggest-unsolved-problems/",
-      "full_title": "An unreleased Anthropic model made progress on one of math\u2019s biggest unsolved problems",
-      "one_line_summary": "Anthropic model solves math problem",
+      "article_url": "https://www.wired.com/story/tech-visionary-says-the-big-ai-labs-dont-get-what-people-want/",
+      "full_title": "Tech Visionary Says the Big AI Labs Don\u2019t Get What People Want",
+      "one_line_summary": "Big AI labs miss people's needs",
       "rank": 2,
       "score": 9.2,
-      "source_name": "TechCrunch",
-      "source_tier": "A"
-    },
-    {
-      "article_url": "https://techcrunch.com/2026/08/11/general-catalyst-leads-1-1b-round-into-2-month-old-river-ai/",
-      "full_title": "General Catalyst leads $1.1B round into 2-month-old River AI",
-      "one_line_summary": "River AI gets $1.1B funding",
-      "rank": 3,
-      "score": 9.0,
-      "source_name": "TechCrunch",
-      "source_tier": "A"
-    },
-    {
-      "article_url": "https://www.wired.com/story/a-zoom-screen-sharing-bug-let-anyone-take-over-other-devices-on-a-call/",
-      "full_title": "A Zoom Screen-Sharing Bug Let Anyone Take Over Other Devices on a Call",
-      "one_line_summary": "Zoom bug allows device takeover",
-      "rank": 4,
-      "score": 8.8,
       "source_name": "Wired AI",
       "source_tier": "A"
     },
     {
-      "article_url": "https://openai.com/index/testing-ads-in-chatgpt",
-      "full_title": "Testing ads in ChatGPT",
-      "one_line_summary": "ChatGPT tests ads",
+      "article_url": "https://arstechnica.com/tech-policy/2026/08/suspecting-court-of-using-ai-man-injected-prompts-in-filings-to-try-to-win-case/",
+      "full_title": "Suspecting court of using AI, man injected prompts in filings to try to win case",
+      "one_line_summary": "Man uses AI to win court case",
+      "rank": 3,
+      "score": 9.0,
+      "source_name": "Ars Technica",
+      "source_tier": "A"
+    },
+    {
+      "article_url": "https://techcrunch.com/2026/08/14/google-will-now-allow-users-to-remove-visible-watermark-from-its-ai-generations/",
+      "full_title": "Google will now allow users to remove visible watermark from its AI generations",
+      "one_line_summary": "Google removes AI watermarks",
+      "rank": 4,
+      "score": 8.8,
+      "source_name": "TechCrunch",
+      "source_tier": "A"
+    },
+    {
+      "article_url": "https://techcrunch.com/2026/08/14/kog-is-going-deeper-to-squeeze-more-inference-out-of-gpus/",
+      "full_title": "Kog is going deeper to squeeze more inference out of GPUs",
+      "one_line_summary": "Kog optimizes GPU inference",
       "rank": 5,
       "score": 8.5,
-      "source_name": "OpenAI",
-      "source_tier": "S"
+      "source_name": "TechCrunch",
+      "source_tier": "A"
     }
   ]
 }

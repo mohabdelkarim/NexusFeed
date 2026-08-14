@@ -1,31 +1,6 @@
 {
   "recent_titles": [
     {
-      "cleaned_title": "nvidia doesn\u2019t mess around: week after open industry group formed, it\u2019s already showing progress",
-      "sent_at": "2026-08-04T19:39:25Z",
-      "url": "https://techcrunch.com/2026/08/04/nvidia-doesnt-mess-around-a-week-after-open-ai-industry-group-formed-its-already-showing-progress/"
-    },
-    {
-      "cleaned_title": "deploy local agents everywhere lfm2.5-2.6b",
-      "sent_at": "2026-08-04T19:39:25Z",
-      "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-2-6b"
-    },
-    {
-      "cleaned_title": "teaching speak language pathology",
-      "sent_at": "2026-08-04T19:39:25Z",
-      "url": "https://news.microsoft.com/signal/articles/teaching-ai-to-speak-the-language-of-pathology/"
-    },
-    {
-      "cleaned_title": "latest news we announced july 2026",
-      "sent_at": "2026-08-04T19:39:25Z",
-      "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-july-2026/"
-    },
-    {
-      "cleaned_title": "apple says more ex-employees may have taken confidential data openai",
-      "sent_at": "2026-08-04T19:39:25Z",
-      "url": "https://techcrunch.com/2026/08/04/apple-says-more-ex-employees-may-have-taken-confidential-data-to-openai/"
-    },
-    {
       "cleaned_title": "openai puts brakes model because it\u2019s supposedly too powerful",
       "sent_at": "2026-08-07T18:59:31Z",
       "url": "https://www.theverge.com/ai-artificial-intelligence/976948/openai-astra-model-pause-critical-cyber-capabilities"
@@ -74,6 +49,31 @@
       "cleaned_title": "testing ads chatgpt",
       "sent_at": "2026-08-11T19:03:41Z",
       "url": "https://openai.com/index/testing-ads-in-chatgpt"
+    },
+    {
+      "cleaned_title": "openai anthropic price war as chinese rivals gain ground",
+      "sent_at": "2026-08-14T18:56:09Z",
+      "url": "https://arstechnica.com/ai/2026/08/openai-and-anthropic-in-price-war-as-chinese-ai-rivals-gain-ground/"
+    },
+    {
+      "cleaned_title": "tech visionary says big labs don\u2019t get people want",
+      "sent_at": "2026-08-14T18:56:09Z",
+      "url": "https://www.wired.com/story/tech-visionary-says-the-big-ai-labs-dont-get-what-people-want/"
+    },
+    {
+      "cleaned_title": "suspecting court using ai, man injected prompts filings try win case",
+      "sent_at": "2026-08-14T18:56:09Z",
+      "url": "https://arstechnica.com/tech-policy/2026/08/suspecting-court-of-using-ai-man-injected-prompts-in-filings-to-try-to-win-case/"
+    },
+    {
+      "cleaned_title": "google will now allow users remove visible watermark its generations",
+      "sent_at": "2026-08-14T18:56:09Z",
+      "url": "https://techcrunch.com/2026/08/14/google-will-now-allow-users-to-remove-visible-watermark-from-its-ai-generations/"
+    },
+    {
+      "cleaned_title": "kog going deeper squeeze more inference out gpus",
+      "sent_at": "2026-08-14T18:56:09Z",
+      "url": "https://techcrunch.com/2026/08/14/kog-is-going-deeper-to-squeeze-more-inference-out-of-gpus/"
     }
   ],
   "url_hashes": [
@@ -210,6 +210,11 @@
     "e32278b94fa29df352cebf4abc17dbb76ae45c4dfedcf65e6d1ba1552a7619fe",
     "4a3a16344e7faccbc1ec328500bf0a20f73a111ff1735cb5fe9ccf216cfa459a",
     "3ca220656174dc91459a8afab7f7b6d866342c645ab5568dc16937f6d7ea7f1b",
-    "b19ec562c455e753267b0e04107e2217c787cdc2a4884378a6d93cdc79d11f47"
+    "b19ec562c455e753267b0e04107e2217c787cdc2a4884378a6d93cdc79d11f47",
+    "0778f93b3ef227dda6cd2efb78a3475b9ce62a9c753be68d425f2a3b4ac95158",
+    "03fa8605a0c7acba2420c87e38c58488361e72554263c7069a67d4376565f97b",
+    "2dbd025943acfbff7a6405dfd3059517e2da89176f2e46610532bc160e89f225",
+    "c22aae7eac7970725e12b5980906f37b5d5f0e7200a3473849f83a3d9d34c31c",
+    "bc3411669855d8b411bfb3cf14f79da47a20fb650935d0ce1dba2a47b2a9fbeb"
   ]
 }
