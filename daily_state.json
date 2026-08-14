@@ -1,29 +1,6 @@
 {
   "date": "2026-08-14",
-  "last_post_time": "2026-08-14T14:58:02Z",
-  "pending_best": {
-    "authoritative_score": 8.0,
-    "canonical_url": "https://www.theverge.com/tech/980416/google-gemini-ai-watermarks-removal",
-    "cleaned_title": "you can now turn off google gemini 8217 s visible watermarks",
-    "index": 1,
-    "published_at": "2026-08-14T16:39:32Z",
-    "saved_at": "2026-08-14T17:04:29Z",
-    "score": {
-      "freshness_score": 2.0,
-      "impact_score": 2.5,
-      "novelty_score": 2.0,
-      "reason": "The article is about a new update to Google Gemini, which is a significant development in the AI field.",
-      "red_flag": false,
-      "red_flag_reason": null,
-      "source_score": 1.5,
-      "total_score": 8.0
-    },
-    "source": "The Verge",
-    "summary": "Google will now allow you to remove visible watermarks from the images, videos, and music made with AI tools. With the update, you can toggle off a new \"Media watermark\" setting in Gemini and Google's AI video generator, Flow. When toggled off, Google will remove the \"sparkle\" watermark that appear...",
-    "tier": "A",
-    "title": "You can now turn off Google Gemini&#8217;s visible watermarks",
-    "url": "https://www.theverge.com/tech/980416/google-gemini-ai-watermarks-removal",
-    "url_hash": "e5026bc3d2dc8fd3a568e72b95218b4fcd315d1b482aebcfb5055badc9682bf7"
-  },
-  "posts_today": 1
+  "last_post_time": "2026-08-14T18:04:13Z",
+  "pending_best": null,
+  "posts_today": 2
 }

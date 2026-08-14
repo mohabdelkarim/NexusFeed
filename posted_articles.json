@@ -1,10 +1,6 @@
 {
   "hash_records": [
     {
-      "hash": "ab7794ca7210ad85ad2e2379f44ae96862742c330236bae62a0c0e1030c8ea46",
-      "posted_at": "2026-08-07T17:59:44Z"
-    },
-    {
       "hash": "557e0bfc0113e2a7221554189f860b018b7d198d60f585241cc6f9f81b065095",
       "posted_at": "2026-08-07T21:38:42Z"
     },
@@ -23,6 +19,10 @@
     {
       "hash": "0778f93b3ef227dda6cd2efb78a3475b9ce62a9c753be68d425f2a3b4ac95158",
       "posted_at": "2026-08-14T14:58:02Z"
+    },
+    {
+      "hash": "e5026bc3d2dc8fd3a568e72b95218b4fcd315d1b482aebcfb5055badc9682bf7",
+      "posted_at": "2026-08-14T18:04:13Z"
     }
   ],
   "hashes": [
@@ -30,16 +30,10 @@
     "0212f9770ddac1d8870a713dec502a1307cc700335004cb42e54ff0739585ff5",
     "0778f93b3ef227dda6cd2efb78a3475b9ce62a9c753be68d425f2a3b4ac95158",
     "557e0bfc0113e2a7221554189f860b018b7d198d60f585241cc6f9f81b065095",
-    "ab7794ca7210ad85ad2e2379f44ae96862742c330236bae62a0c0e1030c8ea46",
+    "e5026bc3d2dc8fd3a568e72b95218b4fcd315d1b482aebcfb5055badc9682bf7",
     "eb359392cfb3b76fb6e44e8d2f8d4f71ceaeddd289b91d44376d46ab544f8a34"
   ],
   "recent_titles": [
-    {
-      "cleaned_title": "why does apple keep banning telegram but never x",
-      "posted_at": "2026-08-07T17:59:44Z",
-      "score": 8.0,
-      "source": "The Verge"
-    },
     {
       "cleaned_title": "openai puts brakes model because it 8217 s supposedly too powerful",
       "posted_at": "2026-08-07T21:38:42Z",
@@ -69,6 +63,12 @@
       "posted_at": "2026-08-14T14:58:02Z",
       "score": 8.0,
       "source": "Ars Technica"
+    },
+    {
+      "cleaned_title": "you can now turn off google gemini 8217 s visible watermarks",
+      "posted_at": "2026-08-14T18:04:13Z",
+      "score": 8.0,
+      "source": "The Verge"
     }
   ]
 }

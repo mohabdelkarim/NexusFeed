@@ -30,6 +30,7 @@
 
 | Score | Headline | Source | Published | Tier |
 |-------|----------|--------|-----------|------|
+| **8.0** | [You can now turn off Google Gemini&#8217;s visible watermarks](https://www.theverge.com/tech/980416/google-gemini-ai-watermarks-removal) | The Verge | 2026-08-14T16:39:32Z | **A** |
 | **8.0** | [OpenAI and Anthropic in price war as Chinese AI rivals gain ground](https://arstechnica.com/ai/2026/08/openai-and-anthropic-in-price-war-as-chinese-ai-rivals-gain-ground/) | Ars Technica | 2026-08-14T14:27:14Z | **A** |
 | **9.0** | [AMIE, our research medical AI system, demonstrates real-time clinical video consultation capabilities in a first-of-its-kind study.](https://blog.google/innovation-and-ai/models-and-research/google-research/amie-video-consultations/) | Google AI | 2026-08-11T17:00:00Z | **S** |
 | **7.5** | [As AI-led attacks multiply, OpenAI launches a new cyber model](https://techcrunch.com/2026/08/10/as-ai-led-attacks-multiply-openai-launches-a-new-cyber-model/) | TechCrunch | 2026-08-10T23:56:15Z | **A** |
