@@ -1,31 +1,6 @@
 {
   "recent_titles": [
     {
-      "cleaned_title": "openai puts brakes model because it\u2019s supposedly too powerful",
-      "sent_at": "2026-08-07T18:59:31Z",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/976948/openai-astra-model-pause-critical-cyber-capabilities"
-    },
-    {
-      "cleaned_title": "responding next frontier critical cyber capabilities",
-      "sent_at": "2026-08-07T18:59:31Z",
-      "url": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities"
-    },
-    {
-      "cleaned_title": "bytedance trains massive model bid rival anthropic",
-      "sent_at": "2026-08-07T18:59:31Z",
-      "url": "https://arstechnica.com/ai/2026/08/bytedance-trains-massive-ai-model-in-bid-to-rival-anthropic/"
-    },
-    {
-      "cleaned_title": "cloudflare launches kitesurf, browser built agents",
-      "sent_at": "2026-08-07T18:59:31Z",
-      "url": "https://techcrunch.com/2026/08/07/cloudflare-launches-kitesurf-a-browser-built-for-ai-agents/"
-    },
-    {
-      "cleaned_title": "scientists used create 16 viruses",
-      "sent_at": "2026-08-07T18:59:31Z",
-      "url": "https://www.wired.com/story/scientists-used-ai-to-create-16-new-viruses/"
-    },
-    {
       "cleaned_title": "google\u2019s gemini app surges one billion users",
       "sent_at": "2026-08-11T19:03:41Z",
       "url": "https://techcrunch.com/2026/08/11/googles-gemini-app-surges-to-one-billion-users/"
@@ -74,6 +49,31 @@
       "cleaned_title": "kog going deeper squeeze more inference out gpus",
       "sent_at": "2026-08-14T18:56:09Z",
       "url": "https://techcrunch.com/2026/08/14/kog-is-going-deeper-to-squeeze-more-inference-out-of-gpus/"
+    },
+    {
+      "cleaned_title": "fine-tuning tool-calling llms: complete guide using xyz-aquila-sft qwen3",
+      "sent_at": "2026-08-15T11:36:53Z",
+      "url": "https://www.marktechpost.com/2026/08/15/fine-tuning-tool-calling-llms-a-complete-guide-using-xyz-aquila-sft-and-qwen3"
+    },
+    {
+      "cleaned_title": "amazon can use your twitch content train its ai\u2014unless you opt out",
+      "sent_at": "2026-08-15T11:36:53Z",
+      "url": "https://www.wired.com/story/amazon-uses-your-twitch-content-to-train-its-ai-how-to-opt-out"
+    },
+    {
+      "cleaned_title": "presentation: models agents: building context-aware consumer scale doordash",
+      "sent_at": "2026-08-15T11:36:53Z",
+      "url": "https://www.infoq.com/presentations/ai-agentic-recommendations-semantic-ids"
+    },
+    {
+      "cleaned_title": "cloudflare adds agent tracing, truncation limits uneven payload defaults",
+      "sent_at": "2026-08-15T11:36:53Z",
+      "url": "https://www.infoq.com/news/2026/08/cloudflare-agent-tracing"
+    },
+    {
+      "cleaned_title": "debian has begun voting future ai/llm contributions",
+      "sent_at": "2026-08-15T11:36:53Z",
+      "url": "https://lists.debian.org/debian-devel-announce/2026/08/msg00002.html"
     }
   ],
   "url_hashes": [
@@ -215,6 +215,11 @@
     "03fa8605a0c7acba2420c87e38c58488361e72554263c7069a67d4376565f97b",
     "2dbd025943acfbff7a6405dfd3059517e2da89176f2e46610532bc160e89f225",
     "c22aae7eac7970725e12b5980906f37b5d5f0e7200a3473849f83a3d9d34c31c",
-    "bc3411669855d8b411bfb3cf14f79da47a20fb650935d0ce1dba2a47b2a9fbeb"
+    "bc3411669855d8b411bfb3cf14f79da47a20fb650935d0ce1dba2a47b2a9fbeb",
+    "82150fc61c1f534a6b89e7a03087bc0f8edf80b8e022e1fa976e1ca98cba4729",
+    "93b7aa460bd0e29542af0441e1f44b87210f26419dc2c5bffc28ff482b708d82",
+    "91824ab5ca845f1839b479eb1b848567300530278a9e73c704a93e8198cfefdb",
+    "98731eca2a9b89da337fafa90c6f657889dddb6266c37ca6cf924dc424e127a2",
+    "230a7914be5e3b1d52c691664caa4a8e2a4a1fd79fd7a6e727019ef28884c951"
   ]
 }
