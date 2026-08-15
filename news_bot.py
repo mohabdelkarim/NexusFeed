@@ -1179,16 +1179,6 @@ def shorten_title(title: str, max_chars: int = 110) -> str:
     return trimmed + "…"
 
 
-def escape_html_attr(value: str) -> str:
-    return (
-        str(value or "")
-        .replace("&", "&amp;")
-        .replace('"', "&quot;")
-        .replace("<", "&lt;")
-        .replace(">", "&gt;")
-    )
-
-
 def render_post_now_section(items: list[dict[str, Any]]) -> str:
     qualified = [
         item for item in items if item_authoritative_score(item) >= POST_NOW_MIN_SCORE
@@ -1197,7 +1187,7 @@ def render_post_now_section(items: list[dict[str, Any]]) -> str:
         '<a id="cleared"></a>',
         "## Cleared",
         "",
-        f"<p align=\"center\"><sub>Scored {POST_NOW_MIN_SCORE}+ · refreshed by GitHub Actions</sub></p>",
+        "<p align=\"center\"><sub>Live clears · refreshed by GitHub Actions</sub></p>",
         "",
     ]
     if not qualified:
@@ -1208,21 +1198,11 @@ def render_post_now_section(items: list[dict[str, Any]]) -> str:
     for item in qualified:
         title = shorten_title(str(item.get("title", "")), max_chars=110) or "Untitled"
         source = escape_markdown_text(str(item.get("source", ""))) or "Unknown"
-        score = round(item_authoritative_score(item), 1)
         url = clean_whitespace(str(item.get("canonical_url") or item.get("url", "")))
         published = format_display_date(str(item.get("published_at", "")))
-        safe_title = html.escape(title)
-        if url:
-            safe_url = escape_html_attr(url)
-            headline = f'<a href="{safe_url}"><strong>{safe_title}</strong></a>'
-        else:
-            headline = f"<strong>{safe_title}</strong>"
-        lines.append("<p>")
-        lines.append(f"  {headline}<br>")
-        lines.append(
-            f"  <code>{score:.1f}</code> &nbsp;·&nbsp; {html.escape(source)} &nbsp;·&nbsp; {html.escape(published)}"
-        )
-        lines.append("</p>")
+        headline = f"[{title}]({url})" if url else title
+        lines.append(f"> {headline}  ")
+        lines.append(f"> {source} · {published}")
         lines.append("")
     lines.append(
         f"<p align=\"center\"><sub>{len(qualified)} clears · full state in <code>posted_now.json</code></sub></p>"

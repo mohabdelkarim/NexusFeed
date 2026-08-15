@@ -28,47 +28,31 @@
 <a id="cleared"></a>
 ## Cleared
 
-<p align="center"><sub>Scored 8.5+ · refreshed by GitHub Actions</sub></p>
+<p align="center"><sub>Live clears · refreshed by GitHub Actions</sub></p>
 
-<p>
-  <a href="https://blog.google/innovation-and-ai/models-and-research/google-research/amie-video-consultations"><strong>AMIE, our research medical AI system, demonstrates real-time clinical video consultation capabilities in a…</strong></a><br>
-  <code>9.0</code> &nbsp;·&nbsp; Google AI &nbsp;·&nbsp; Aug 11
-</p>
+> [AMIE, our research medical AI system, demonstrates real-time clinical video consultation capabilities in a…](https://blog.google/innovation-and-ai/models-and-research/google-research/amie-video-consultations)  
+> Google AI · Aug 11
 
-<p>
-  <a href="https://www.wired.com/story/organoids-lab-grown-brains-neural-networks"><strong>AI Is Dead. Organoids Are Alive</strong></a><br>
-  <code>8.5</code> &nbsp;·&nbsp; Wired AI &nbsp;·&nbsp; Aug 11
-</p>
+> [AI Is Dead. Organoids Are Alive](https://www.wired.com/story/organoids-lab-grown-brains-neural-networks)  
+> Wired AI · Aug 11
 
-<p>
-  <a href="https://www.theverge.com/ai-artificial-intelligence/976948/openai-astra-model-pause-critical-cyber-capabilities"><strong>OpenAI puts the brakes on a new model because it’s supposedly too powerful</strong></a><br>
-  <code>8.5</code> &nbsp;·&nbsp; The Verge &nbsp;·&nbsp; Aug 07
-</p>
+> [OpenAI puts the brakes on a new model because it’s supposedly too powerful](https://www.theverge.com/ai-artificial-intelligence/976948/openai-astra-model-pause-critical-cyber-capabilities)  
+> The Verge · Aug 07
 
-<p>
-  <a href="https://www.wired.com/story/scientists-used-ai-to-create-16-new-viruses"><strong>Scientists Used AI to Create 16 New Viruses</strong></a><br>
-  <code>8.5</code> &nbsp;·&nbsp; Wired AI &nbsp;·&nbsp; Aug 07
-</p>
+> [Scientists Used AI to Create 16 New Viruses](https://www.wired.com/story/scientists-used-ai-to-create-16-new-viruses)  
+> Wired AI · Aug 07
 
-<p>
-  <a href="https://www.marktechpost.com/2026/07/31/jetbrains-research-open-sources-kotlinllm-intellij-plugin-kotlin-runtime-llm"><strong>JetBrains Open-Sources KotlinLLM: Smart Macros That Generate Kotlin Source Code at Runtime and Hot-Reload It…</strong></a><br>
-  <code>8.5</code> &nbsp;·&nbsp; MarkTechPost &nbsp;·&nbsp; Jul 31
-</p>
+> [JetBrains Open-Sources KotlinLLM: Smart Macros That Generate Kotlin Source Code at Runtime and Hot-Reload It…](https://www.marktechpost.com/2026/07/31/jetbrains-research-open-sources-kotlinllm-intellij-plugin-kotlin-runtime-llm)  
+> MarkTechPost · Jul 31
 
-<p>
-  <a href="https://www.theverge.com/tech/965486/meta-lawsuit-former-employees-ai-layoffs"><strong>Meta accused of using biased AI targeting for mass layoffs</strong></a><br>
-  <code>8.5</code> &nbsp;·&nbsp; The Verge &nbsp;·&nbsp; Jul 14
-</p>
+> [Meta accused of using biased AI targeting for mass layoffs](https://www.theverge.com/tech/965486/meta-lawsuit-former-employees-ai-layoffs)  
+> The Verge · Jul 14
 
-<p>
-  <a href="https://techcrunch.com/2026/07/14/spotify-expands-its-ai-push-with-a-chatgpt-like-music-assistant"><strong>Spotify expands its AI push with a ChatGPT-like music assistant</strong></a><br>
-  <code>8.5</code> &nbsp;·&nbsp; TechCrunch &nbsp;·&nbsp; Jul 14
-</p>
+> [Spotify expands its AI push with a ChatGPT-like music assistant](https://techcrunch.com/2026/07/14/spotify-expands-its-ai-push-with-a-chatgpt-like-music-assistant)  
+> TechCrunch · Jul 14
 
-<p>
-  <a href="https://www.infoq.com/news/2026/07/akrites-open-source-ai-threats"><strong>Linux Foundation Launches Akrites to Protect Critical Open Source Software from AI-Powered Threats</strong></a><br>
-  <code>8.5</code> &nbsp;·&nbsp; InfoQ AI/ML &nbsp;·&nbsp; Jul 10
-</p>
+> [Linux Foundation Launches Akrites to Protect Critical Open Source Software from AI-Powered Threats](https://www.infoq.com/news/2026/07/akrites-open-source-ai-threats)  
+> InfoQ AI/ML · Jul 10
 
 <p align="center"><sub>8 clears · full state in <code>posted_now.json</code></sub></p>
 
