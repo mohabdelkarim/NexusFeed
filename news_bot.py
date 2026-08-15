@@ -1179,32 +1179,63 @@ def shorten_title(title: str, max_chars: int = 110) -> str:
     return trimmed + "…"
 
 
+def score_bar(score: float, width: int = 10) -> str:
+    clamped = max(0.0, min(10.0, float(score)))
+    filled = int(round((clamped / 10.0) * width))
+    filled = min(width, max(0, filled))
+    return ("█" * filled) + ("░" * (width - filled))
+
+
 def render_post_now_section(items: list[dict[str, Any]]) -> str:
     qualified = [
         item for item in items if item_authoritative_score(item) >= POST_NOW_MIN_SCORE
     ][:README_FEED_LIMIT]
     lines = [
-        "## On the wire",
+        '<a id="open_channel"></a>',
+        "## OPEN CHANNEL",
         "",
-        f"Live picks scored **{POST_NOW_MIN_SCORE}+**. Refreshed by GitHub Actions.",
+        f"<p align=\"center\"><code>CLEARANCE {POST_NOW_MIN_SCORE}+ &nbsp;//&nbsp; LIVE FROM ACTIONS &nbsp;//&nbsp; NOISE FILTERED</code></p>",
         "",
     ]
     if not qualified:
-        lines.append("_No stories cleared the bar yet. Check back after the next curator run._")
+        lines.extend(
+            [
+                "```text",
+                "  signal ........ waiting",
+                "  clearance .... no story has broken the bar yet",
+                "  next hop ...... Tuesday / Friday curator window",
+                "```",
+                "",
+            ]
+        )
         return "\n".join(lines)
 
+    lines.append("<table>")
+    lines.append("<tr><td width=\"100%\">")
+    lines.append("")
     for index, item in enumerate(qualified, start=1):
-        title = shorten_title(str(item.get("title", ""))) or "Untitled"
+        title = shorten_title(str(item.get("title", "")), max_chars=96) or "Untitled"
         source = escape_markdown_text(str(item.get("source", ""))) or "Unknown"
         score = round(item_authoritative_score(item), 1)
         url = clean_whitespace(str(item.get("canonical_url") or item.get("url", "")))
         published = format_display_date(str(item.get("published_at", "")))
+        tier = escape_markdown_text(str(item.get("tier", ""))) or "?"
+        bar = score_bar(score)
         headline = f"[{title}]({url})" if url else title
-        lines.append(f"{index}. **{score:.1f}** · {source} · {published}  ")
-        lines.append(f"   {headline}")
+        lines.append(f"#### `{score:04.1f}`&nbsp;&nbsp;{bar}&nbsp;&nbsp;`{source}` · `{published}` · tier `{tier}`")
+        lines.append(f"**{index:02d}.** {headline}")
         lines.append("")
-    lines.append(f"_Showing {len(qualified)} of the latest clears. Full state lives in `posted_now.json`._")
-    return "\n".join(lines).rstrip() + "\n"
+        if index != len(qualified):
+            lines.append("<br/>")
+            lines.append("")
+    lines.append("</td></tr>")
+    lines.append("</table>")
+    lines.append("")
+    lines.append(
+        f"<p align=\"center\"><sub>CHANNEL HOLDING {len(qualified)} CLEARS · FULL TAPE IN <code>posted_now.json</code></sub></p>"
+    )
+    lines.append("")
+    return "\n".join(lines)
 
 
 def update_readme_post_now(items: list[dict[str, Any]]) -> None:
