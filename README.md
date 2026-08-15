@@ -1,7 +1,15 @@
-<h1 align="center">NEXUSFEED</h1>
+<pre align="center">
+∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿
+                                             
+              N E X U S F E E D              
+         shortwave for software + ai         
+                                             
+     tune → weigh → gate → stamp → wire      
+                                             
+∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿
+</pre>
 
 <p align="center">
-  <code>SHORTWAVE FOR SOFTWARE + AI</code><br>
   <sub>RSS noise in &nbsp;·&nbsp; scored clearance out &nbsp;·&nbsp; zero servers</sub>
 </p>
 
@@ -18,11 +26,6 @@
 <br>
 
 <p align="center"><b>This repository is the product.</b> A curator listens to fifteen feeds, asks Groq for a hard score, kills duplicates, and stamps only the clears onto this page.</p>
-
-```text
-   ∿∿∿  tune  →  weigh  →  gate  →  stamp  ∿∿∿
-   feeds        Groq       8.5+      README
-```
 
 <!-- POST_NOW_START -->
 <a id="cleared"></a>
