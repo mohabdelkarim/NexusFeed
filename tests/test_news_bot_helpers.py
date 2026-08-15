@@ -8,7 +8,6 @@ from news_bot import (
     escape_markdown_cell,
     format_display_date,
     item_authoritative_score,
-    score_bar,
     shorten_title,
     stable_hash,
 )
@@ -42,10 +41,6 @@ class DisplayHelpersTests(unittest.TestCase):
         shortened = shorten_title(long_title, max_chars=40)
         self.assertLessEqual(len(shortened), 40)
         self.assertTrue(shortened.endswith("…"))
-
-    def test_score_bar(self) -> None:
-        self.assertEqual(score_bar(10, width=10), "██████████")
-        self.assertEqual(len(score_bar(8.5, width=10)), 10)
 
 
 class ScoreGateTests(unittest.TestCase):

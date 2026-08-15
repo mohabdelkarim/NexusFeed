@@ -1179,11 +1179,14 @@ def shorten_title(title: str, max_chars: int = 110) -> str:
     return trimmed + "…"
 
 
-def score_bar(score: float, width: int = 10) -> str:
-    clamped = max(0.0, min(10.0, float(score)))
-    filled = int(round((clamped / 10.0) * width))
-    filled = min(width, max(0, filled))
-    return ("█" * filled) + ("░" * (width - filled))
+def escape_html_attr(value: str) -> str:
+    return (
+        str(value or "")
+        .replace("&", "&amp;")
+        .replace('"', "&quot;")
+        .replace("<", "&lt;")
+        .replace(">", "&gt;")
+    )
 
 
 def render_post_now_section(items: list[dict[str, Any]]) -> str:
@@ -1191,48 +1194,38 @@ def render_post_now_section(items: list[dict[str, Any]]) -> str:
         item for item in items if item_authoritative_score(item) >= POST_NOW_MIN_SCORE
     ][:README_FEED_LIMIT]
     lines = [
-        '<a id="open_channel"></a>',
-        "## OPEN CHANNEL",
+        '<a id="cleared"></a>',
+        "## Cleared",
         "",
-        f"<p align=\"center\"><code>CLEARANCE {POST_NOW_MIN_SCORE}+ &nbsp;//&nbsp; LIVE FROM ACTIONS &nbsp;//&nbsp; NOISE FILTERED</code></p>",
+        f"<p align=\"center\"><sub>Scored {POST_NOW_MIN_SCORE}+ · refreshed by GitHub Actions</sub></p>",
         "",
     ]
     if not qualified:
-        lines.extend(
-            [
-                "```text",
-                "  signal ........ waiting",
-                "  clearance .... no story has broken the bar yet",
-                "  next hop ...... Tuesday / Friday curator window",
-                "```",
-                "",
-            ]
-        )
+        lines.append("<p align=\"center\"><em>No stories cleared the bar yet.</em></p>")
+        lines.append("")
         return "\n".join(lines)
 
-    lines.append("<table>")
-    lines.append("<tr><td width=\"100%\">")
-    lines.append("")
-    for index, item in enumerate(qualified, start=1):
-        title = shorten_title(str(item.get("title", "")), max_chars=96) or "Untitled"
+    for item in qualified:
+        title = shorten_title(str(item.get("title", "")), max_chars=110) or "Untitled"
         source = escape_markdown_text(str(item.get("source", ""))) or "Unknown"
         score = round(item_authoritative_score(item), 1)
         url = clean_whitespace(str(item.get("canonical_url") or item.get("url", "")))
         published = format_display_date(str(item.get("published_at", "")))
-        tier = escape_markdown_text(str(item.get("tier", ""))) or "?"
-        bar = score_bar(score)
-        headline = f"[{title}]({url})" if url else title
-        lines.append(f"#### `{score:04.1f}`&nbsp;&nbsp;{bar}&nbsp;&nbsp;`{source}` · `{published}` · tier `{tier}`")
-        lines.append(f"**{index:02d}.** {headline}")
+        safe_title = html.escape(title)
+        if url:
+            safe_url = escape_html_attr(url)
+            headline = f'<a href="{safe_url}"><strong>{safe_title}</strong></a>'
+        else:
+            headline = f"<strong>{safe_title}</strong>"
+        lines.append("<p>")
+        lines.append(f"  {headline}<br>")
+        lines.append(
+            f"  <code>{score:.1f}</code> &nbsp;·&nbsp; {html.escape(source)} &nbsp;·&nbsp; {html.escape(published)}"
+        )
+        lines.append("</p>")
         lines.append("")
-        if index != len(qualified):
-            lines.append("<br/>")
-            lines.append("")
-    lines.append("</td></tr>")
-    lines.append("</table>")
-    lines.append("")
     lines.append(
-        f"<p align=\"center\"><sub>CHANNEL HOLDING {len(qualified)} CLEARS · FULL TAPE IN <code>posted_now.json</code></sub></p>"
+        f"<p align=\"center\"><sub>{len(qualified)} clears · full state in <code>posted_now.json</code></sub></p>"
     )
     lines.append("")
     return "\n".join(lines)
