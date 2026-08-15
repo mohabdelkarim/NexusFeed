@@ -6,7 +6,9 @@ from news_bot import (
     POST_NOW_MIN_SCORE,
     canonicalize_url,
     escape_markdown_cell,
+    format_display_date,
     item_authoritative_score,
+    shorten_title,
     stable_hash,
 )
 
@@ -28,6 +30,17 @@ class MarkdownEscapeTests(unittest.TestCase):
             escape_markdown_cell("Gemini&#8217;s | model"),
             "Gemini’s \\| model",
         )
+
+
+class DisplayHelpersTests(unittest.TestCase):
+    def test_format_display_date(self) -> None:
+        self.assertEqual(format_display_date("2026-08-11T17:00:00Z"), "Aug 11")
+
+    def test_shorten_title(self) -> None:
+        long_title = "A" * 140
+        shortened = shorten_title(long_title, max_chars=40)
+        self.assertLessEqual(len(shortened), 40)
+        self.assertTrue(shortened.endswith("…"))
 
 
 class ScoreGateTests(unittest.TestCase):

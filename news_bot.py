@@ -35,6 +35,7 @@ TITLE_SIMILARITY_THRESHOLD = 0.80
 POSTED_RETENTION_DAYS = 7
 RECENT_TITLE_LOOKBACK_HOURS = 24
 MAX_POSTED_NOW_ITEMS = 20
+README_FEED_LIMIT = 8
 POST_NOW_MIN_SCORE = 8.5
 PENDING_MIN_SCORE = 6.0
 REQUIRED_SECRETS = [
@@ -1151,39 +1152,58 @@ def save_posted_now(payload: dict[str, Any], now: datetime) -> None:
     logging.info("POST_NOW article saved to %s", POSTED_NOW_PATH.name)
 
 
-def escape_markdown_cell(value: str) -> str:
+def escape_markdown_text(value: str) -> str:
     cleaned = clean_whitespace(html.unescape(str(value or "")))
     return cleaned.replace("|", "\\|").replace("\n", " ")
 
 
+# Backwards compatible alias used by older tests / imports
+escape_markdown_cell = escape_markdown_text
+
+
+def format_display_date(value: str) -> str:
+    parsed = parse_iso_datetime(value)
+    if not parsed:
+        return clean_whitespace(value) or "recent"
+    return parsed.strftime("%b %d")
+
+
+def shorten_title(title: str, max_chars: int = 110) -> str:
+    cleaned = escape_markdown_text(title)
+    if len(cleaned) <= max_chars:
+        return cleaned
+    trimmed = cleaned[:max_chars].rsplit(" ", 1)[0].rstrip(" ,;:")
+    if len(trimmed) < max_chars // 2:
+        trimmed = cleaned[: max_chars - 1].rstrip(" ,;:")
+    return trimmed + "…"
+
+
 def render_post_now_section(items: list[dict[str, Any]]) -> str:
-    qualified = [item for item in items if item_authoritative_score(item) >= POST_NOW_MIN_SCORE]
+    qualified = [
+        item for item in items if item_authoritative_score(item) >= POST_NOW_MIN_SCORE
+    ][:README_FEED_LIMIT]
     lines = [
-        "## Latest Curated News",
+        "## On the wire",
         "",
-        f"> Live examples scored `POST_NOW` (>= {POST_NOW_MIN_SCORE}) by NexusFeed",
+        f"Live picks scored **{POST_NOW_MIN_SCORE}+**. Refreshed by GitHub Actions.",
         "",
-        "| Score | Headline | Source | Published | Tier |",
-        "|-------|----------|--------|-----------|------|",
     ]
     if not qualified:
-        lines.append("| n/a | No POST_NOW articles yet | n/a | n/a | n/a |")
-        lines.append("")
-        lines.append("*Articles above passed scoring, deduplication, and red-flag checks.*")
+        lines.append("_No stories cleared the bar yet. Check back after the next curator run._")
         return "\n".join(lines)
 
-    for item in qualified:
-        title = escape_markdown_cell(str(item.get("title", ""))) or "Untitled"
-        source = escape_markdown_cell(str(item.get("source", ""))) or "Unknown"
-        score = round(item_authoritative_score(item), 2)
+    for index, item in enumerate(qualified, start=1):
+        title = shorten_title(str(item.get("title", ""))) or "Untitled"
+        source = escape_markdown_text(str(item.get("source", ""))) or "Unknown"
+        score = round(item_authoritative_score(item), 1)
         url = clean_whitespace(str(item.get("canonical_url") or item.get("url", "")))
-        published_at = escape_markdown_cell(str(item.get("published_at", "")))
-        tier = escape_markdown_cell(str(item.get("tier", ""))) or "n/a"
+        published = format_display_date(str(item.get("published_at", "")))
         headline = f"[{title}]({url})" if url else title
-        lines.append(f"| **{score}** | {headline} | {source} | {published_at} | **{tier}** |")
-    lines.append("")
-    lines.append("*Articles above passed scoring, deduplication, and red-flag checks.*")
-    return "\n".join(lines)
+        lines.append(f"{index}. **{score:.1f}** · {source} · {published}  ")
+        lines.append(f"   {headline}")
+        lines.append("")
+    lines.append(f"_Showing {len(qualified)} of the latest clears. Full state lives in `posted_now.json`._")
+    return "\n".join(lines).rstrip() + "\n"
 
 
 def update_readme_post_now(items: list[dict[str, Any]]) -> None:
