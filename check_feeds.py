@@ -8,49 +8,8 @@ from email.utils import parsedate_to_datetime
 import feedparser
 import requests
 
+from news_bot import FEEDS
 
-FEEDS = [
-    {"source": "OpenAI", "urls": ["https://openai.com/news/rss.xml"]},
-    {
-        "source": "Anthropic",
-        "urls": ["https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_news.xml"],
-    },
-    {
-        "source": "Google AI",
-        "urls": [
-            "https://blog.google/technology/ai/rss/",
-            "https://blog.research.google/feeds/posts/default?alt=rss",
-        ],
-    },
-    {"source": "HuggingFace", "urls": ["https://huggingface.co/blog/feed.xml"]},
-    {
-        "source": "Microsoft AI",
-        "urls": [
-            "https://news.microsoft.com/source/topics/ai/feed/",
-            "https://blogs.microsoft.com/ai/feed/",
-            "https://blogs.microsoft.com/feed/",
-        ],
-    },
-    {
-        "source": "TechCrunch",
-        "urls": [
-            "https://techcrunch.com/category/artificial-intelligence/feed/",
-            "https://techcrunch.com/tag/artificial-intelligence/feed/",
-        ],
-    },
-    {"source": "The Verge", "urls": ["https://www.theverge.com/rss/index.xml"]},
-    {"source": "Ars Technica", "urls": ["https://arstechnica.com/ai/feed/"]},
-    {"source": "MarkTechPost", "urls": ["https://www.marktechpost.com/feed/"]},
-    {"source": "Wired AI", "urls": ["https://www.wired.com/feed/tag/ai/latest/rss"]},
-    {
-        "source": "MIT News AI",
-        "urls": ["https://news.mit.edu/topic/mitartificial-intelligence2-rss.xml"],
-    },
-    {"source": "InfoQ AI/ML", "urls": ["https://feed.infoq.com/"]},
-    {"source": "AI News", "urls": ["https://artificialintelligence-news.com/feed/"]},
-    {"source": "arXiv cs.AI", "urls": ["https://rss.arxiv.org/rss/cs.AI"]},
-    {"source": "Hacker News", "urls": ["https://news.ycombinator.com/rss"]},
-]
 
 REQUEST_HEADERS = {
     "User-Agent": "NexusFeedFeedHealth/1.0",
@@ -214,22 +173,22 @@ def main() -> int:
     working_count = 0
 
     for feed in FEEDS:
-        results = [evaluate_url(url) for url in feed["urls"]]
+        results = [evaluate_url(url) for url in feed.urls]
         best = pick_best_result(results)
-        best["source"] = feed["source"]
+        best["source"] = feed.name
 
         if best["status"] == "OK":
             best["display_status"] = "OK"
             working_count += 1
         elif best["status"] == "STALE":
             best["display_status"] = "STALE"
-            stale_feeds.append(feed["source"])
+            stale_feeds.append(feed.name)
         elif best["status"] == "NO_TIMESTAMP":
             best["display_status"] = "NO_TIMESTAMP"
-            no_timestamp_feeds.append(feed["source"])
+            no_timestamp_feeds.append(feed.name)
         else:
             best["display_status"] = "DEAD"
-            dead_feeds.append(feed["source"])
+            dead_feeds.append(feed.name)
 
         rows.append(best)
 

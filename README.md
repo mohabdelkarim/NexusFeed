@@ -1,95 +1,86 @@
 # NexusFeed
 
-> **Autonomous AI News Curator** — A production-grade curation engine for software engineers and AI researchers.
+> Autonomous AI and software engineering news curator powered by Groq and GitHub Actions.
 
-[![GitHub Stars](https://img.shields.io/github/stars/mohabdelkarim/NexusFeed?style=social)](https://github.com/mohabdelkarim/NexusFeed/stargazers)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![Powered by Groq](https://img.shields.io/badge/powered%20by-Groq-FF6B35)](https://groq.com)
-[![GitHub Actions](https://img.shields.io/badge/runs%20on-GitHub%20Actions-2088FF?logo=githubactions&logoColor=white)](https://github.com/mohabdelkarim/NexusFeed/actions)
+[![Curator](https://github.com/mohabdelkarim/NexusFeed/actions/workflows/news_bot.yml/badge.svg)](https://github.com/mohabdelkarim/NexusFeed/actions/workflows/news_bot.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
-**NexusFeed** is a production-grade, fully autonomous AI news curator that discovers, scores, deduplicates, and archives the highest-quality AI and software engineering news without human intervention.
+**NexusFeed** fetches RSS feeds, scores stories with Groq, deduplicates them, and writes the strongest AI / software engineering picks into this repository. No separate server is required.
 
 ---
 
-## ✨ Why NexusFeed?
+## Why NexusFeed?
 
 | Problem | NexusFeed Solution |
 |---------|--------------------|
-| Endless low-quality listicles | Strict 4-criteria AI scoring plus red-flag detection |
-| Duplicate stories everywhere | Multi-layer deduplication with URL hash and title similarity |
-| Inconsistent curation quality | One-shot Groq scoring with deterministic decision rules |
-| Manual curation is exhausting | Fully autonomous flow with smart pending queue |
-| Server costs | Runs entirely on GitHub Actions and persists state in the repo |
+| Endless low quality listicles | 4 criteria scoring plus local red flag checks |
+| Duplicate stories everywhere | Canonical URL hashing and title similarity |
+| Manual curation is exhausting | Scheduled GitHub Actions with a pending queue |
+| Hosting cost | State and dashboard live in the repo |
 
 ---
 
 <!-- POST_NOW_START -->
-## 🔥 Latest Curated News
+## Latest Curated News
 
-> **Live examples** of high-quality articles automatically discovered, scored, and marked as `POST_NOW` by NexusFeed
+> Live examples scored `POST_NOW` (>= 8.5) by NexusFeed
 
 | Score | Headline | Source | Published | Tier |
 |-------|----------|--------|-----------|------|
-| **8.0** | [You can now turn off Google Gemini&#8217;s visible watermarks](https://www.theverge.com/tech/980416/google-gemini-ai-watermarks-removal) | The Verge | 2026-08-14T16:39:32Z | **A** |
-| **8.0** | [OpenAI and Anthropic in price war as Chinese AI rivals gain ground](https://arstechnica.com/ai/2026/08/openai-and-anthropic-in-price-war-as-chinese-ai-rivals-gain-ground/) | Ars Technica | 2026-08-14T14:27:14Z | **A** |
-| **9.0** | [AMIE, our research medical AI system, demonstrates real-time clinical video consultation capabilities in a first-of-its-kind study.](https://blog.google/innovation-and-ai/models-and-research/google-research/amie-video-consultations/) | Google AI | 2026-08-11T17:00:00Z | **S** |
-| **7.5** | [As AI-led attacks multiply, OpenAI launches a new cyber model](https://techcrunch.com/2026/08/10/as-ai-led-attacks-multiply-openai-launches-a-new-cyber-model/) | TechCrunch | 2026-08-10T23:56:15Z | **A** |
-| **8.5** | [AI Is Dead. Organoids Are Alive](https://www.wired.com/story/organoids-lab-grown-brains-neural-networks/) | Wired AI | 2026-08-11T10:00:00Z | **A** |
-| **8.5** | [OpenAI puts the brakes on a new model because it&#8217;s supposedly too powerful](https://www.theverge.com/ai-artificial-intelligence/976948/openai-astra-model-pause-critical-cyber-capabilities) | The Verge | 2026-08-07T18:40:34Z | **A** |
-| **8.0** | [Why does Apple keep banning Telegram, but never X?](https://www.theverge.com/tech/976405/apple-telegram-ban-x-app-store-violations) | The Verge | 2026-08-07T11:00:00Z | **A** |
-| **8.5** | [Scientists Used AI to Create 16 New Viruses](https://www.wired.com/story/scientists-used-ai-to-create-16-new-viruses/) | Wired AI | 2026-08-07T14:13:57Z | **A** |
-| **8.5** | [JetBrains Open-Sources KotlinLLM: Smart Macros That Generate Kotlin Source Code at Runtime and Hot-Reload It Through JDI](https://www.marktechpost.com/2026/07/31/jetbrains-research-open-sources-kotlinllm-intellij-plugin-kotlin-runtime-llm/) | MarkTechPost | 2026-07-31T10:32:53Z | **A** |
-| **7.5** | [Some Large Language Models Exhibit Consistent Risk Attitudes](https://arxiv.org/abs/2607.16197) | arXiv cs.AI | 2026-07-21T04:00:00Z | **C** |
-| **8.0** | [San Francisco orders Apple, Google to remove nudify apps from app stores](https://arstechnica.com/tech-policy/2026/07/apple-google-must-stop-profiting-off-ai-nudify-apps-san-francisco-ag-says/) | Ars Technica | 2026-07-17T16:10:05Z | **A** |
-| **8.0** | [New York becomes the first state to enact a data center moratorium](https://www.theverge.com/policy/965110/new-york-ai-data-center-moratorium) | The Verge | 2026-07-14T09:00:00Z | **A** |
+| **9.0** | [AMIE, our research medical AI system, demonstrates real-time clinical video consultation capabilities in a first-of-its-kind study.](https://blog.google/innovation-and-ai/models-and-research/google-research/amie-video-consultations) | Google AI | 2026-08-11T17:00:00Z | **S** |
+| **8.5** | [AI Is Dead. Organoids Are Alive](https://www.wired.com/story/organoids-lab-grown-brains-neural-networks) | Wired AI | 2026-08-11T10:00:00Z | **A** |
+| **8.5** | [OpenAI puts the brakes on a new model because it’s supposedly too powerful](https://www.theverge.com/ai-artificial-intelligence/976948/openai-astra-model-pause-critical-cyber-capabilities) | The Verge | 2026-08-07T18:40:34Z | **A** |
+| **8.5** | [Scientists Used AI to Create 16 New Viruses](https://www.wired.com/story/scientists-used-ai-to-create-16-new-viruses) | Wired AI | 2026-08-07T14:13:57Z | **A** |
+| **8.5** | [JetBrains Open-Sources KotlinLLM: Smart Macros That Generate Kotlin Source Code at Runtime and Hot-Reload It Through JDI](https://www.marktechpost.com/2026/07/31/jetbrains-research-open-sources-kotlinllm-intellij-plugin-kotlin-runtime-llm) | MarkTechPost | 2026-07-31T10:32:53Z | **A** |
 | **8.5** | [Meta accused of using biased AI targeting for mass layoffs](https://www.theverge.com/tech/965486/meta-lawsuit-former-employees-ai-layoffs) | The Verge | 2026-07-14T17:18:11Z | **A** |
-| **8.5** | [Spotify expands its AI push with a ChatGPT-like music assistant](https://techcrunch.com/2026/07/14/spotify-expands-its-ai-push-with-a-chatgpt-like-music-assistant/) | TechCrunch | 2026-07-14T14:06:47Z | **A** |
-| **8.5** | [Linux Foundation Launches Akrites to Protect Critical Open Source Software from AI-Powered Threats](https://www.infoq.com/news/2026/07/akrites-open-source-ai-threats/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global) | InfoQ AI/ML | 2026-07-10T12:00:00Z | **B** |
+| **8.5** | [Spotify expands its AI push with a ChatGPT-like music assistant](https://techcrunch.com/2026/07/14/spotify-expands-its-ai-push-with-a-chatgpt-like-music-assistant) | TechCrunch | 2026-07-14T14:06:47Z | **A** |
+| **8.5** | [Linux Foundation Launches Akrites to Protect Critical Open Source Software from AI-Powered Threats](https://www.infoq.com/news/2026/07/akrites-open-source-ai-threats) | InfoQ AI/ML | 2026-07-10T12:00:00Z | **B** |
 
-*All articles above passed strict scoring, deduplication, and red-flag checks. NexusFeed keeps only the very best.*
+*Articles above passed scoring, deduplication, and red-flag checks.*
 <!-- POST_NOW_END -->
 
 ---
 
-**Want to see it in action?**  
-Run it locally in minutes or let GitHub Actions keep the repository updated automatically.
+Run it locally or let GitHub Actions update the repository on schedule (Tuesday and Friday).
 
 ---
 
-## 🧠 How It Thinks
+## How It Scores
 
-NexusFeed uses a **4-dimensional scoring system** powered by Groq:
+NexusFeed uses a 4 dimensional scoring system powered by Groq (`temperature: 0`):
 
 ```text
 Total Score = Novelty (3) + Impact (3) + Freshness (2) + Source Authority (2)
 ```
 
-**Red flags are strictly enforced**: tutorials, "top 10" lists, recaps, and how-to guides are automatically rejected.
+Red flags (tutorials, top 10 lists, recaps, how to guides) are enforced locally and override the model when needed.
 
-Real-time decisions:
+Decision rules:
 
-- `POST_NOW` -> `>= 8.5`
-- `SAVE_PENDING` -> `6.0 - 8.4`
+- `POST_NOW` -> score `>= 8.5` (only these are written to `posted_now.json` and the README table)
+- `SAVE_PENDING` -> `6.0` to `8.4` (held for a later peak window if they reach `>= 8.5`)
 - `SKIP` -> `< 6.0`
 
 ---
 
-## 🚀 Features
+## Features
 
-- **15 curated RSS feeds** across AI and software engineering
-- **Parallel fetching** with `ThreadPoolExecutor(max_workers=15)`
-- **One-shot Groq call** for scoring and decisioning
-- **Aggressive deduplication** with URL hash and 80% title similarity
-- **Smart pending queue** stored in `daily_state.json`
-- **Automatic README updates** with the latest `POST_NOW` stories
-- **Daily digest generation** saved to `latest_digest.json`
-- **Zero server cost** because everything lives in the GitHub repo
+- 15 curated RSS feeds across AI and software engineering
+- Parallel feed fetching
+- One Groq call per run for scoring and recommendation
+- Deduplication via canonical URL hash and title similarity
+- Pending queue in `daily_state.json`
+- Automatic README updates for `POST_NOW` stories
+- Daily digest output in `latest_digest.json`
+- Runs on GitHub Actions with repo persisted state
 
 ---
 
-## 📦 Quick Start
+## Quick Start
 
-### 1. Clone The Repository
+### 1. Clone
 
 ```bash
 git clone https://github.com/mohabdelkarim/NexusFeed.git
@@ -108,141 +99,126 @@ Add this GitHub Actions secret:
 
 ```bash
 python -m venv .venv
-. .venv\Scripts\Activate.ps1
-pip install -r requirements.txt
+```
 
-# Create .env file
-copy .env.example .env
-# Edit .env with your key
+Activate the virtualenv:
+
+```bash
+# macOS / Linux
+source .venv/bin/activate
+
+# Windows PowerShell
+. .venv/Scripts/Activate.ps1
+```
+
+```bash
+pip install -r requirements.txt
+cp .env.example .env   # Windows: copy .env.example .env
+# Edit .env and set GROQ_API_KEY
 
 python main.py
 ```
 
----
+Optional:
 
-## 🏗️ Architecture
-
-```text
-┌─────────────────────┐
-│   GitHub Actions    │
-│   (cron scheduler)  │
-└──────────┬──────────┘
-           │
-           ▼
-┌─────────────────────┐     ┌──────────────────────┐
-│   news_bot.py       │────▶│   Groq (Llama 3.3)   │
-│                     │     │   (JSON mode)        │
-└──────────┬──────────┘     └──────────────────────┘
-           │
-           ▼
-┌─────────────────────┐
-│  posted_now.json    │
-│  README dashboard   │
-└──────────┬──────────┘
-           │
-           ▼
-┌─────────────────────┐
-│  State persisted    │
-│  to GitHub repo     │
-└─────────────────────┘
+```bash
+python daily_digest.py
+python check_feeds.py
+python -m unittest discover -s tests -v
 ```
 
-**Key files:**
+---
 
-- `news_bot.py` — Scoring, deduplication, decision logic, README updates
-- `main.py` — Clean entrypoint
-- `daily_state.json` — Persistent daily counters and pending queue
-- `posted_articles.json` — Deduplication memory
-- `posted_now.json` — Latest `POST_NOW` stories
-- `daily_digest.py` — Daily digest generator
+## Architecture
+
+```text
+GitHub Actions (cron)
+        |
+        v
+   news_bot.py  ---->  Groq (Llama 3.3, JSON mode)
+        |
+        v
+ posted_now.json + README table + daily_state.json
+```
+
+Key files:
+
+- `news_bot.py` scoring, dedupe, decisions, README updates
+- `main.py` curator entrypoint
+- `daily_digest.py` daily digest generator
+- `check_feeds.py` feed health checks
+- `daily_state.json` counters and pending queue
+- `posted_articles.json` dedupe memory
+- `posted_now.json` latest `POST_NOW` stories
 
 ---
 
-## 🎯 Curated Sources
+## Curated Sources
 
-**Tier S**
+**Tier S:** OpenAI, Anthropic, Google AI, Hugging Face, Microsoft AI
 
-- OpenAI
-- Anthropic
-- Google AI
-- Hugging Face
-- Microsoft AI
+**Tier A:** TechCrunch, The Verge, Ars Technica, MarkTechPost, Wired AI
 
-**Tier A**
-
-- TechCrunch
-- The Verge
-- Ars Technica
-- MarkTechPost
-- Wired AI
-
-**Tier B and C**
-
-- MIT News
-- InfoQ
-- AI News
-- arXiv cs.AI
-- Hacker News
+**Tier B / C:** MIT News, InfoQ, AI News, arXiv cs.AI, Hacker News
 
 ---
 
-## 🔧 Customization
+## Customization
 
-Want to change behavior? Edit these constants in `news_bot.py`:
+Tune these constants in `news_bot.py`:
 
 ```python
 MAX_POSTS_PER_DAY = 3
 MIN_HOURS_BETWEEN_POSTS = 3
 MAX_CANDIDATES = 25
 TITLE_SIMILARITY_THRESHOLD = 0.80
+POST_NOW_MIN_SCORE = 8.5
 ```
 
-You can also:
-
-- Add or remove feeds in `FEEDS`
-- Extend `RED_FLAG_PATTERNS`
-- Tune `SCORING_SYSTEM_PROMPT`
+You can also edit `FEEDS`, `RED_FLAG_PATTERNS`, and `SCORING_SYSTEM_PROMPT`.
 
 ---
 
-## 📁 Outputs
+## Outputs
 
-Repository outputs:
-
-- `posted_now.json` — latest `POST_NOW` items
-- `posted_articles.json` — dedupe history
-- `daily_state.json` — daily counters and `pending_best`
-- `digest_history.json` — digest dedupe history
-- `latest_digest.json` — latest saved daily digest
+- `posted_now.json` latest `POST_NOW` items (`>= 8.5`)
+- `posted_articles.json` dedupe history
+- `daily_state.json` daily counters and `pending_best`
+- `digest_history.json` digest dedupe history
+- `latest_digest.json` latest daily digest
 
 ---
 
-## ⚙️ GitHub Actions
+## GitHub Actions
 
-`news-bot.yml`
+`news_bot.yml`
 
-- Runs the main curator on schedule
-- Updates `posted_now.json`
-- Refreshes the `README` curated news section
-- Commits repo state back automatically
+- Runs the curator on Tuesday and Friday schedules
+- Updates `posted_now.json` and the README section
+- Commits state back to the repo
 
-`daily-digest.yml`
+`daily_digest.yml`
 
-- Generates the top 5 digest
-- Saves it to `latest_digest.json`
-- Commits digest state back automatically
+- Builds the top 5 digest
+- Saves `latest_digest.json`
 
-`feed-health.yml`
+`feed_health.yml`
 
-- Checks feed availability
-- Fails if too many sources are unavailable
+- Checks feed availability weekly
+- Fails if too many sources are down
 
 ---
 
-## 📈 Roadmap
+## License
+
+MIT. See [LICENSE](LICENSE).
+
+---
+
+## Roadmap
 
 - [ ] Semantic deduplication with embeddings
-- [ ] Better README news cards or richer dashboard formatting
+- [ ] Richer README news cards
 - [ ] Weekly digest mode
 - [ ] Dynamic source tiering
-- [ ] Historical analytics for score trends
+- [ ] Historical score analytics

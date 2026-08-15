@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import hashlib
 import json
 import logging
 import os
@@ -17,9 +16,12 @@ from news_bot import (
     GROQ_MODEL,
     GROQ_URL,
     Article,
+    canonicalize_url,
     clean_whitespace,
     configure_logging,
     fetch_feed,
+    load_local_env_file,
+    stable_hash,
     truncate,
     utc_now,
 )
@@ -70,6 +72,7 @@ Respond ONLY with valid JSON:
 
 
 def require_env() -> dict[str, str]:
+    load_local_env_file()
     values: dict[str, str] = {}
     for key in REQUIRED_SECRETS:
         value = os.environ.get(key)
@@ -108,7 +111,7 @@ def save_digest_history(history: dict[str, Any]) -> None:
 
 
 def url_hash(url: str) -> str:
-    return hashlib.sha256(url.encode("utf-8")).hexdigest()
+    return stable_hash(canonicalize_url(url))
 
 
 def normalize_title(title: str) -> str:

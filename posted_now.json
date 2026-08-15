@@ -1,49 +1,5 @@
 [
   {
-    "authoritative_score": 8.0,
-    "canonical_url": "https://www.theverge.com/tech/980416/google-gemini-ai-watermarks-removal",
-    "published_at": "2026-08-14T16:39:32Z",
-    "saved_at": "2026-08-14T18:04:13Z",
-    "score": {
-      "freshness_score": 2.0,
-      "impact_score": 2.5,
-      "novelty_score": 2.0,
-      "reason": "The article is about a new update to Google Gemini, which is a significant development in the AI field.",
-      "red_flag": false,
-      "red_flag_reason": null,
-      "source_score": 1.5,
-      "total_score": 8.0
-    },
-    "source": "The Verge",
-    "summary": "Google will now allow you to remove visible watermarks from the images, videos, and music made with AI tools. With the update, you can toggle off a new \"Media watermark\" setting in Gemini and Google's AI video generator, Flow. When toggled off, Google will remove the \"sparkle\" watermark that appear...",
-    "tier": "A",
-    "title": "You can now turn off Google Gemini&#8217;s visible watermarks",
-    "url": "https://www.theverge.com/tech/980416/google-gemini-ai-watermarks-removal",
-    "url_hash": "e5026bc3d2dc8fd3a568e72b95218b4fcd315d1b482aebcfb5055badc9682bf7"
-  },
-  {
-    "authoritative_score": 8.0,
-    "canonical_url": "https://arstechnica.com/ai/2026/08/openai-and-anthropic-in-price-war-as-chinese-ai-rivals-gain-ground",
-    "published_at": "2026-08-14T14:27:14Z",
-    "saved_at": "2026-08-14T14:58:02Z",
-    "score": {
-      "freshness_score": 2.0,
-      "impact_score": 2.5,
-      "novelty_score": 2.0,
-      "reason": "The article discusses a recent development in the AI industry, specifically a price war between OpenAI and Anthropic, which could impact the market and many developers.",
-      "red_flag": false,
-      "red_flag_reason": null,
-      "source_score": 1.5,
-      "total_score": 8.0
-    },
-    "source": "Ars Technica",
-    "summary": "US groups release cheaper models after new challenges to their trillion-dollar ambitions.",
-    "tier": "A",
-    "title": "OpenAI and Anthropic in price war as Chinese AI rivals gain ground",
-    "url": "https://arstechnica.com/ai/2026/08/openai-and-anthropic-in-price-war-as-chinese-ai-rivals-gain-ground/",
-    "url_hash": "0778f93b3ef227dda6cd2efb78a3475b9ce62a9c753be68d425f2a3b4ac95158"
-  },
-  {
     "authoritative_score": 9.0,
     "canonical_url": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-video-consultations",
     "published_at": "2026-08-11T17:00:00Z",
@@ -62,30 +18,8 @@
     "summary": "AMIE promotional video",
     "tier": "S",
     "title": "AMIE, our research medical AI system, demonstrates real-time clinical video consultation capabilities in a first-of-its-kind study.",
-    "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-video-consultations/",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-video-consultations",
     "url_hash": "012e30e2c241e587c1433ba3a5472308bf3a08181c284d48ec40814ffc00b0ea"
-  },
-  {
-    "authoritative_score": 7.5,
-    "canonical_url": "https://techcrunch.com/2026/08/10/as-ai-led-attacks-multiply-openai-launches-a-new-cyber-model",
-    "published_at": "2026-08-10T23:56:15Z",
-    "saved_at": "2026-08-11T14:22:29Z",
-    "score": {
-      "freshness_score": 1.5,
-      "impact_score": 2.5,
-      "novelty_score": 2.5,
-      "reason": "The article is about a new research development by OpenAI, which has a high novelty score due to its innovative nature.",
-      "red_flag": false,
-      "red_flag_reason": null,
-      "source_score": 1.5,
-      "total_score": 7.5
-    },
-    "source": "TechCrunch",
-    "summary": "OpenAI is expanding its AI cybersecurity defense program Daybreak, and rolling out a new cyber-trained AI model with it.",
-    "tier": "A",
-    "title": "As AI-led attacks multiply, OpenAI launches a new cyber model",
-    "url": "https://techcrunch.com/2026/08/10/as-ai-led-attacks-multiply-openai-launches-a-new-cyber-model/",
-    "url_hash": "0212f9770ddac1d8870a713dec502a1307cc700335004cb42e54ff0739585ff5"
   },
   {
     "authoritative_score": 8.5,
@@ -106,7 +40,7 @@
     "summary": "Mini human brains are being grown in labs all over the world. Soon, they could outthink neural networks.",
     "tier": "A",
     "title": "AI Is Dead. Organoids Are Alive",
-    "url": "https://www.wired.com/story/organoids-lab-grown-brains-neural-networks/",
+    "url": "https://www.wired.com/story/organoids-lab-grown-brains-neural-networks",
     "url_hash": "eb359392cfb3b76fb6e44e8d2f8d4f71ceaeddd289b91d44376d46ab544f8a34"
   },
   {
@@ -127,31 +61,9 @@
     "source": "The Verge",
     "summary": "OpenAI says it is pausing \"internal activities\" around an in-development AI model, Astra, because it doesn't yet meet new security standards the company is putting in place. The announcement follows its recent disclosure that OpenAI models accidentally hacked Hugging Face. Anthropic and Meta have a...",
     "tier": "A",
-    "title": "OpenAI puts the brakes on a new model because it&#8217;s supposedly too powerful",
+    "title": "OpenAI puts the brakes on a new model because it\u2019s supposedly too powerful",
     "url": "https://www.theverge.com/ai-artificial-intelligence/976948/openai-astra-model-pause-critical-cyber-capabilities",
     "url_hash": "557e0bfc0113e2a7221554189f860b018b7d198d60f585241cc6f9f81b065095"
-  },
-  {
-    "authoritative_score": 8.0,
-    "canonical_url": "https://www.theverge.com/tech/976405/apple-telegram-ban-x-app-store-violations",
-    "published_at": "2026-08-07T11:00:00Z",
-    "saved_at": "2026-08-07T17:59:44Z",
-    "score": {
-      "freshness_score": 2.0,
-      "impact_score": 2.5,
-      "novelty_score": 2.0,
-      "reason": "The article discusses a recent event involving Apple and Telegram, which is relevant to the tech industry and has a significant impact on users.",
-      "red_flag": false,
-      "red_flag_reason": null,
-      "source_score": 1.5,
-      "total_score": 8.0
-    },
-    "source": "The Verge",
-    "summary": "For roughly an hour this week, Telegram vanished from Apple's App Store. Even during that blip, it was a stunning absence for such a major app: an avenue of communication for more than 1 billion users around the world, used widely as a secure platform for people who live in countries under censorsh...",
-    "tier": "A",
-    "title": "Why does Apple keep banning Telegram, but never X?",
-    "url": "https://www.theverge.com/tech/976405/apple-telegram-ban-x-app-store-violations",
-    "url_hash": "ab7794ca7210ad85ad2e2379f44ae96862742c330236bae62a0c0e1030c8ea46"
   },
   {
     "authoritative_score": 8.5,
@@ -172,7 +84,7 @@
     "summary": "The use of AI systems to create viruses opens up new possibilities for combating bacterial resistance. It also raises concerns about the pace at which technology is outstripping regulation.",
     "tier": "A",
     "title": "Scientists Used AI to Create 16 New Viruses",
-    "url": "https://www.wired.com/story/scientists-used-ai-to-create-16-new-viruses/",
+    "url": "https://www.wired.com/story/scientists-used-ai-to-create-16-new-viruses",
     "url_hash": "8c0291ea9ebd8cfdfe8b7e30e6ee72077a558aab4ed281413c69f09b3f539738"
   },
   {
@@ -194,74 +106,8 @@
     "summary": "JetBrains Research has open-sourced KotlinLLM under the Apache License 2.0. The IntelliJ IDEA plugin prototype adds Smart macros, asLlm and mockLlm, whose bodies are generated Kotlin source rather than live model calls. The plugin captures runtime values through JDI, asks an LLM agent for a narrow...",
     "tier": "A",
     "title": "JetBrains Open-Sources KotlinLLM: Smart Macros That Generate Kotlin Source Code at Runtime and Hot-Reload It Through JDI",
-    "url": "https://www.marktechpost.com/2026/07/31/jetbrains-research-open-sources-kotlinllm-intellij-plugin-kotlin-runtime-llm/",
+    "url": "https://www.marktechpost.com/2026/07/31/jetbrains-research-open-sources-kotlinllm-intellij-plugin-kotlin-runtime-llm",
     "url_hash": "6cbdffa80a320f5dd830beadc2704a0a823dec35fbe344e663096f4aba754afd"
-  },
-  {
-    "authoritative_score": 7.5,
-    "canonical_url": "https://arxiv.org/abs/2607.16197",
-    "published_at": "2026-07-21T04:00:00Z",
-    "saved_at": "2026-07-21T15:02:28Z",
-    "score": {
-      "freshness_score": 2.0,
-      "impact_score": 2.5,
-      "novelty_score": 2.5,
-      "reason": "The article presents a new finding on the risk attitudes of large language models, which has a significant impact on the AI research community.",
-      "red_flag": false,
-      "red_flag_reason": null,
-      "source_score": 0.5,
-      "total_score": 7.5
-    },
-    "source": "arXiv cs.AI",
-    "summary": "arXiv:2607.16197v1 Announce Type: new Abstract: As artificial intelligence systems are deployed in open-ended, high-stakes settings, a critical dimension remains unmeasured: how perceived risk is translated into action. We test whether large language models (LLMs) exhibit systematic and consistent...",
-    "tier": "C",
-    "title": "Some Large Language Models Exhibit Consistent Risk Attitudes",
-    "url": "https://arxiv.org/abs/2607.16197",
-    "url_hash": "ebf53cb497eebc57fd36a14c181c788aacfc25e70f20fc7fe814926ff00e6f20"
-  },
-  {
-    "authoritative_score": 8.0,
-    "canonical_url": "https://arstechnica.com/tech-policy/2026/07/apple-google-must-stop-profiting-off-ai-nudify-apps-san-francisco-ag-says",
-    "published_at": "2026-07-17T16:10:05Z",
-    "saved_at": "2026-07-17T17:46:51Z",
-    "score": {
-      "freshness_score": 2.0,
-      "impact_score": 2.5,
-      "novelty_score": 2.0,
-      "reason": "The article discusses a recent development in the tech industry, with San Francisco ordering Apple and Google to remove certain apps from their stores, which has a significant impact on the industry and is a recent event.",
-      "red_flag": false,
-      "red_flag_reason": null,
-      "source_score": 1.5,
-      "total_score": 8.0
-    },
-    "source": "Ars Technica",
-    "summary": "Official estimates Google and Apple likely made millions in nudify app fees.",
-    "tier": "A",
-    "title": "San Francisco orders Apple, Google to remove nudify apps from app stores",
-    "url": "https://arstechnica.com/tech-policy/2026/07/apple-google-must-stop-profiting-off-ai-nudify-apps-san-francisco-ag-says/",
-    "url_hash": "160a77853eb76a75f842554a3a9476a11e7ec4992e660d62ff8278e89c04677b"
-  },
-  {
-    "authoritative_score": 8.0,
-    "canonical_url": "https://www.theverge.com/policy/965110/new-york-ai-data-center-moratorium",
-    "published_at": "2026-07-14T09:00:00Z",
-    "saved_at": "2026-07-14T21:39:45Z",
-    "score": {
-      "freshness_score": 2.0,
-      "impact_score": 2.5,
-      "novelty_score": 2.0,
-      "reason": "The article is about a new industry move, has a moderate impact on all devs, is very fresh, and comes from a reputable source.",
-      "red_flag": false,
-      "red_flag_reason": null,
-      "source_score": 1.5,
-      "total_score": 8.0
-    },
-    "source": "The Verge",
-    "summary": "New hyperscale data centers can't set up shop in New York for up to a year now that Governor Kathy Hochul (D) has signed the nation's first statewide moratorium. But a bill passed by the state legislature that could restrict even more developments still awaits her signature. The order blocks new en...",
-    "tier": "A",
-    "title": "New York becomes the first state to enact a data center moratorium",
-    "url": "https://www.theverge.com/policy/965110/new-york-ai-data-center-moratorium",
-    "url_hash": "5ff11aca353498070a6e1a31c2869cf186b8d938aa91c06fccb3ee6e4ebe19ce"
   },
   {
     "authoritative_score": 8.5,
@@ -304,7 +150,7 @@
     "summary": "Spotify is rolling out a new AI-powered conversational feature that lets Premium subscribers chat with the app to discover music, podcasts, and audiobooks, and more.",
     "tier": "A",
     "title": "Spotify expands its AI push with a ChatGPT-like music assistant",
-    "url": "https://techcrunch.com/2026/07/14/spotify-expands-its-ai-push-with-a-chatgpt-like-music-assistant/",
+    "url": "https://techcrunch.com/2026/07/14/spotify-expands-its-ai-push-with-a-chatgpt-like-music-assistant",
     "url_hash": "2926143ff589a8d471ee68b05ac4620e69a24993e5eaaa5223d72d23e09dd826"
   },
   {
@@ -326,7 +172,7 @@
     "summary": "The Linux Foundation has launched Akrites, a new industry-wide initiative aimed at defending the world's most critical open source software against a rapidly evolving generation of AI-enabled cyber threats. By Craig Risi",
     "tier": "B",
     "title": "Linux Foundation Launches Akrites to Protect Critical Open Source Software from AI-Powered Threats",
-    "url": "https://www.infoq.com/news/2026/07/akrites-open-source-ai-threats/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "url": "https://www.infoq.com/news/2026/07/akrites-open-source-ai-threats",
     "url_hash": "f3845f235d8107add910c9f74e67cee839e9b69e6f242dcb99d9eb0ed9f05918"
   }
 ]

@@ -1,4 +1,4 @@
-name: Feed Health Check
+name: NexusFeed Feed Health
 
 on:
   schedule:
@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  check-feeds:
+  check_feeds:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

@@ -35,6 +35,8 @@ TITLE_SIMILARITY_THRESHOLD = 0.80
 POSTED_RETENTION_DAYS = 7
 RECENT_TITLE_LOOKBACK_HOURS = 24
 MAX_POSTED_NOW_ITEMS = 20
+POST_NOW_MIN_SCORE = 8.5
+PENDING_MIN_SCORE = 6.0
 REQUIRED_SECRETS = [
     "GROQ_API_KEY",
 ]
@@ -515,15 +517,17 @@ def canonicalize_url(url: str) -> str:
         if lowered.startswith("utm_") or lowered in TRACKING_QUERY_PREFIXES:
             continue
         query_items.append((key, val))
+    path = parsed.path or "/"
+    if path != "/":
+        path = path.rstrip("/")
     cleaned = parsed._replace(
         scheme=parsed.scheme.lower() or "https",
         netloc=parsed.netloc.lower(),
+        path=path,
         query=urlencode(query_items, doseq=True),
         fragment="",
     )
-    return urlunparse(cleaned).rstrip("/")
-
-
+    return urlunparse(cleaned)
 def stable_hash(value: str) -> str:
     return hashlib.sha256(value.encode("utf-8")).hexdigest()
 
@@ -596,7 +600,7 @@ def parse_entry_datetime(entry: Any) -> datetime | None:
 
 
 def extract_entry_text(entry: Any) -> tuple[str, str]:
-    title = clean_whitespace(getattr(entry, "title", ""))
+    title = clean_whitespace(html.unescape(str(getattr(entry, "title", "") or "")))
     summary_raw = getattr(entry, "summary", "") or getattr(entry, "description", "")
     if not summary_raw and getattr(entry, "content", None):
         try:
@@ -654,9 +658,9 @@ def fetch_feed(feed: FeedSource, now: datetime) -> list[Article]:
                 index=-1,
                 title=title,
                 summary=summary,
-                url=raw_url,
+                url=canonical_url,
                 canonical_url=canonical_url,
-                url_hash=stable_hash(raw_url),
+                url_hash=stable_hash(canonical_url),
                 cleaned_title=normalize_title(title),
                 source=feed.name,
                 tier=feed.tier,
@@ -811,7 +815,7 @@ def call_groq(candidates: list[Article], now: datetime, api_key: str) -> dict[st
     prompt_content = build_groq_prompt(candidates, now)
     payload = {
         "model": GROQ_MODEL,
-        "temperature": 0.3,
+        "temperature": 0.0,
         "max_completion_tokens": 2000,
         "response_format": {"type": "json_object"},
         "messages": [
@@ -1117,15 +1121,34 @@ def load_posted_now() -> list[dict[str, Any]]:
     return []
 
 
+def item_authoritative_score(item: dict[str, Any]) -> float:
+    score_field = item.get("score")
+    nested = score_field.get("total_score", 0.0) if isinstance(score_field, dict) else 0.0
+    return float(item.get("authoritative_score", nested or 0.0))
+
+
 def save_posted_now(payload: dict[str, Any], now: datetime) -> None:
-    """Save POST_NOW articles to a dedicated file."""
+    """Save POST_NOW articles to a dedicated file. Only scores >= POST_NOW_MIN_SCORE are kept."""
+    score = item_authoritative_score(payload)
+    if score < POST_NOW_MIN_SCORE:
+        logging.info(
+            "Skipping posted_now write for score %.2f (minimum %.2f).",
+            score,
+            POST_NOW_MIN_SCORE,
+        )
+        return
+
     temp_path = POSTED_NOW_PATH.with_suffix(POSTED_NOW_PATH.suffix + ".tmp")
-    existing = [item for item in load_posted_now() if item.get("url_hash") != payload["url_hash"]]
+    existing = [
+        item
+        for item in load_posted_now()
+        if item.get("url_hash") != payload["url_hash"] and item_authoritative_score(item) >= POST_NOW_MIN_SCORE
+    ]
     existing.append({
         "url_hash": payload["url_hash"],
-        "title": payload["title"],
+        "title": html.unescape(str(payload["title"])),
         "summary": payload["summary"],
-        "url": payload["url"],
+        "url": payload.get("canonical_url") or payload["url"],
         "canonical_url": payload["canonical_url"],
         "source": payload["source"],
         "tier": payload["tier"],
@@ -1143,32 +1166,38 @@ def save_posted_now(payload: dict[str, Any], now: datetime) -> None:
     logging.info("POST_NOW article saved to %s", POSTED_NOW_PATH.name)
 
 
+def escape_markdown_cell(value: str) -> str:
+    cleaned = clean_whitespace(html.unescape(str(value or "")))
+    return cleaned.replace("|", "\\|").replace("\n", " ")
+
+
 def render_post_now_section(items: list[dict[str, Any]]) -> str:
+    qualified = [item for item in items if item_authoritative_score(item) >= POST_NOW_MIN_SCORE]
     lines = [
-        "## 🔥 Latest Curated News",
+        "## Latest Curated News",
         "",
-        "> **Live examples** of high-quality articles automatically discovered, scored, and marked as `POST_NOW` by NexusFeed",
+        f"> Live examples scored `POST_NOW` (>= {POST_NOW_MIN_SCORE}) by NexusFeed",
         "",
         "| Score | Headline | Source | Published | Tier |",
         "|-------|----------|--------|-----------|------|",
     ]
-    if not items:
-        lines.append("| - | No POST_NOW articles yet | - | - | - |")
+    if not qualified:
+        lines.append("| n/a | No POST_NOW articles yet | n/a | n/a | n/a |")
         lines.append("")
-        lines.append("*All articles above passed strict scoring, deduplication, and red-flag checks. NexusFeed keeps only the very best.*")
+        lines.append("*Articles above passed scoring, deduplication, and red-flag checks.*")
         return "\n".join(lines)
 
-    for item in items:
-        title = clean_whitespace(str(item.get("title", ""))) or "Untitled"
-        source = clean_whitespace(str(item.get("source", ""))) or "Unknown"
-        score = round(float(item.get("authoritative_score", 0.0)), 2)
-        url = clean_whitespace(str(item.get("url", "")))
-        published_at = clean_whitespace(str(item.get("published_at", "")))
-        tier = clean_whitespace(str(item.get("tier", ""))) or "-"
+    for item in qualified:
+        title = escape_markdown_cell(str(item.get("title", ""))) or "Untitled"
+        source = escape_markdown_cell(str(item.get("source", ""))) or "Unknown"
+        score = round(item_authoritative_score(item), 2)
+        url = clean_whitespace(str(item.get("canonical_url") or item.get("url", "")))
+        published_at = escape_markdown_cell(str(item.get("published_at", "")))
+        tier = escape_markdown_cell(str(item.get("tier", ""))) or "n/a"
         headline = f"[{title}]({url})" if url else title
         lines.append(f"| **{score}** | {headline} | {source} | {published_at} | **{tier}** |")
     lines.append("")
-    lines.append("*All articles above passed strict scoring, deduplication, and red-flag checks. NexusFeed keeps only the very best.*")
+    lines.append("*Articles above passed scoring, deduplication, and red-flag checks.*")
     return "\n".join(lines)
 
 
@@ -1251,7 +1280,11 @@ def main() -> int:
                 recommendation = normalized["recommendation"]
                 log_final_decision(authoritative_score, recommendation, best_index)
 
-                if recommendation == "POST_NOW" and can_post_now(state, authoritative_score, now):
+                if (
+                    recommendation == "POST_NOW"
+                    and authoritative_score >= POST_NOW_MIN_SCORE
+                    and can_post_now(state, authoritative_score, now)
+                ):
                     save_posted_now(payload, now)
                     mark_as_posted(posted, payload, now)
                     state["posts_today"] = int(state.get("posts_today", 0)) + 1
@@ -1261,7 +1294,7 @@ def main() -> int:
                     update_readme_post_now(load_posted_now())
                     return 0
 
-                if recommendation in {"POST_NOW", "SAVE_PENDING"} and authoritative_score >= 6.0:
+                if recommendation in {"POST_NOW", "SAVE_PENDING"} and authoritative_score >= PENDING_MIN_SCORE:
                     if pending_is_better(payload, state.get("pending_best")):
                         state["pending_best"] = payload
                         pending_updated = True
@@ -1274,13 +1307,13 @@ def main() -> int:
     pending_to_post = None
     if isinstance(preexisting_pending, dict):
         pending_score = float(preexisting_pending.get("authoritative_score", preexisting_pending.get("score", {}).get("total_score", 0.0)))
-        if can_post_now(state, pending_score, now):
+        if pending_score >= POST_NOW_MIN_SCORE and can_post_now(state, pending_score, now):
             saved_at = parse_iso_datetime(preexisting_pending.get("saved_at"))
             is_from_prior_run = saved_at is not None and isoformat_utc(saved_at) < run_started_at
             if is_from_prior_run:
                 if is_peak_hours(now):
                     pending_to_post = preexisting_pending
-                elif is_2130_or_later(now) and int(state.get("posts_today", 0)) == 0 and pending_score >= 6.0:
+                elif is_2130_or_later(now) and int(state.get("posts_today", 0)) == 0:
                     pending_to_post = preexisting_pending
 
     if pending_to_post:
