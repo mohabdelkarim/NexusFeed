@@ -4,4 +4,7 @@ __pycache__/
 .venv/
 .pytest_cache/
 *.pyc
+*.tmp
 .DS_Store
+.cursor/
+feed_health.json

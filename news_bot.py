@@ -491,11 +491,6 @@ def clean_whitespace(value: str) -> str:
     return re.sub(r"\s+", " ", value or "").strip()
 
 
-def clean_multiline_text(value: str) -> str:
-    lines = [line.rstrip() for line in str(value).replace("\r\n", "\n").split("\n")]
-    return "\n".join(lines).strip()
-
-
 def strip_html(value: str) -> str:
     value = re.sub(r"<script[\s\S]*?</script>", " ", value or "", flags=re.IGNORECASE)
     value = re.sub(r"<style[\s\S]*?</style>", " ", value, flags=re.IGNORECASE)
@@ -564,16 +559,6 @@ def find_local_red_flag_pattern(article: Any) -> str | None:
         if pattern in text:
             return pattern
     return None
-
-
-def has_local_red_flag(article: Any) -> bool:
-    """
-    Hard local check BEFORE sending to Groq.
-    Returns True if article should be auto-rejected.
-    Check both title and first 300 chars of summary.
-    Case-insensitive. If ANY pattern matches -> True.
-    """
-    return find_local_red_flag_pattern(article) is not None
 
 
 def contains_topic_keyword(text: str, keywords: tuple[str, ...]) -> bool:
