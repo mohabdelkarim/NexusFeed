@@ -1172,9 +1172,10 @@ def shorten_title(title: str, max_chars: int = 110) -> str:
     cleaned = escape_markdown_text(title)
     if len(cleaned) <= max_chars:
         return cleaned
-    trimmed = cleaned[:max_chars].rsplit(" ", 1)[0].rstrip(" ,;:")
-    if len(trimmed) < max_chars // 2:
-        trimmed = cleaned[: max_chars - 1].rstrip(" ,;:")
+    budget = max(8, max_chars - 1)
+    trimmed = cleaned[:budget].rsplit(" ", 1)[0].rstrip(" ,;:")
+    if len(trimmed) < budget // 2:
+        trimmed = cleaned[:budget].rstrip(" ,;:")
     return trimmed + "…"
 
 
