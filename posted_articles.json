@@ -1,10 +1,6 @@
 {
   "hash_records": [
     {
-      "hash": "012e30e2c241e587c1433ba3a5472308bf3a08181c284d48ec40814ffc00b0ea",
-      "posted_at": "2026-08-11T18:09:30Z"
-    },
-    {
       "hash": "0778f93b3ef227dda6cd2efb78a3475b9ce62a9c753be68d425f2a3b4ac95158",
       "posted_at": "2026-08-14T14:58:02Z"
     },
@@ -14,17 +10,10 @@
     }
   ],
   "hashes": [
-    "012e30e2c241e587c1433ba3a5472308bf3a08181c284d48ec40814ffc00b0ea",
     "0778f93b3ef227dda6cd2efb78a3475b9ce62a9c753be68d425f2a3b4ac95158",
     "e5026bc3d2dc8fd3a568e72b95218b4fcd315d1b482aebcfb5055badc9682bf7"
   ],
   "recent_titles": [
-    {
-      "cleaned_title": "amie our research medical ai system demonstrates real time clinical video consultation capabilities first its kind study",
-      "posted_at": "2026-08-11T18:09:30Z",
-      "score": 9.0,
-      "source": "Google AI"
-    },
     {
       "cleaned_title": "openai anthropic price war as chinese ai rivals gain ground",
       "posted_at": "2026-08-14T14:58:02Z",
