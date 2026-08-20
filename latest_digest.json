@@ -1,51 +1,51 @@
 {
-  "digest_date": "2026-08-15",
-  "saved_at": "2026-08-15T11:36:53Z",
+  "digest_date": "2026-08-20",
+  "saved_at": "2026-08-20T19:36:02Z",
   "stories": [
     {
-      "article_url": "https://www.marktechpost.com/2026/08/15/fine-tuning-tool-calling-llms-a-complete-guide-using-xyz-aquila-sft-and-qwen3",
-      "full_title": "Fine-Tuning Tool-Calling LLMs: A Complete Guide Using XYZ-Aquila-SFT and Qwen3",
-      "one_line_summary": "Fine-tune LLMs",
+      "article_url": "https://techcrunch.com/2026/08/20/google-gives-publishers-a-new-way-to-fight-ai-driven-traffic-losses",
+      "full_title": "Google gives publishers a new way to fight AI-driven traffic losses",
+      "one_line_summary": "Google introduces button to boost publisher traffic amid AI search decline",
       "rank": 1,
       "score": 9.5,
+      "source_name": "TechCrunch",
+      "source_tier": "A"
+    },
+    {
+      "article_url": "https://techcrunch.com/2026/08/20/grok-keeps-sending-gibberish-responses-to-users",
+      "full_title": "Grok keeps sending gibberish responses to users",
+      "one_line_summary": "Users report Grok Lite producing nonsensical replies since Wednesday",
+      "rank": 2,
+      "score": 9.0,
+      "source_name": "TechCrunch",
+      "source_tier": "A"
+    },
+    {
+      "article_url": "https://arstechnica.com/security/2026/08/grok-exfiltrates-user-data-when-malicious-instructions-are-encrypted",
+      "full_title": "Grok exfiltrates user data when malicious instructions are encrypted",
+      "one_line_summary": "Encrypted malicious prompts cause Grok to leak user data",
+      "rank": 3,
+      "score": 8.8,
+      "source_name": "Ars Technica",
+      "source_tier": "A"
+    },
+    {
+      "article_url": "https://www.marktechpost.com/2026/08/20/liquid-ai-releases-lfm2-5-dspark-draft-models-that-deliver-up-to-3-18x-faster-decoding",
+      "full_title": "Liquid AI Releases LFM2.5-DSpark Draft Models That Deliver Up to 3.18x Faster Decoding Without Changing Model Outputs",
+      "one_line_summary": "New draft models speed inference 3.18x while preserving outputs",
+      "rank": 4,
+      "score": 8.5,
       "source_name": "MarkTechPost",
       "source_tier": "A"
     },
     {
-      "article_url": "https://www.wired.com/story/amazon-uses-your-twitch-content-to-train-its-ai-how-to-opt-out",
-      "full_title": "Amazon Can Use Your Twitch Content to Train Its AI\u2014Unless You Opt Out",
-      "one_line_summary": "Twitch content used",
-      "rank": 2,
-      "score": 9.2,
-      "source_name": "Wired AI",
-      "source_tier": "A"
-    },
-    {
-      "article_url": "https://www.infoq.com/presentations/ai-agentic-recommendations-semantic-ids",
-      "full_title": "Presentation: From Models to Agents: Building Context-Aware Consumer AI at Scale at DoorDash",
-      "one_line_summary": "Context-aware AI",
-      "rank": 3,
-      "score": 8.8,
-      "source_name": "InfoQ AI/ML",
-      "source_tier": "B"
-    },
-    {
-      "article_url": "https://www.infoq.com/news/2026/08/cloudflare-agent-tracing",
-      "full_title": "Cloudflare Adds Agent Tracing, with Truncation Limits and Uneven Payload Defaults",
-      "one_line_summary": "Agent tracing added",
-      "rank": 4,
-      "score": 8.5,
-      "source_name": "InfoQ AI/ML",
-      "source_tier": "B"
-    },
-    {
-      "article_url": "https://lists.debian.org/debian-devel-announce/2026/08/msg00002.html",
-      "full_title": "Debian has begun voting on the future of AI/LLM contributions",
-      "one_line_summary": "Debian votes AI",
+      "article_url": "https://techcrunch.com/2026/08/20/meta-brings-pocket-an-app-that-lets-you-vibe-code-and-share-games-to-us-users",
+      "full_title": "Meta brings Pocket, an app that lets you vibe-code and share games, to US users",
+      "one_line_summary": "Meta launches AI-powered Pocket app for interactive game creation",
       "rank": 5,
       "score": 8.0,
-      "source_name": "Hacker News",
-      "source_tier": "C"
+      "source_name": "TechCrunch",
+      "source_tier": "A"
     }
   ]
 }
