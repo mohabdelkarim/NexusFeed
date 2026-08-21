@@ -1,30 +1,5 @@
 {
-  "hash_records": [
-    {
-      "hash": "0778f93b3ef227dda6cd2efb78a3475b9ce62a9c753be68d425f2a3b4ac95158",
-      "posted_at": "2026-08-14T14:58:02Z"
-    },
-    {
-      "hash": "e5026bc3d2dc8fd3a568e72b95218b4fcd315d1b482aebcfb5055badc9682bf7",
-      "posted_at": "2026-08-14T18:04:13Z"
-    }
-  ],
-  "hashes": [
-    "0778f93b3ef227dda6cd2efb78a3475b9ce62a9c753be68d425f2a3b4ac95158",
-    "e5026bc3d2dc8fd3a568e72b95218b4fcd315d1b482aebcfb5055badc9682bf7"
-  ],
-  "recent_titles": [
-    {
-      "cleaned_title": "openai anthropic price war as chinese ai rivals gain ground",
-      "posted_at": "2026-08-14T14:58:02Z",
-      "score": 8.0,
-      "source": "Ars Technica"
-    },
-    {
-      "cleaned_title": "you can now turn off google gemini 8217 s visible watermarks",
-      "posted_at": "2026-08-14T18:04:13Z",
-      "score": 8.0,
-      "source": "The Verge"
-    }
-  ]
+  "hash_records": [],
+  "hashes": [],
+  "recent_titles": []
 }
