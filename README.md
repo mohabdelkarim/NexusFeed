@@ -119,7 +119,7 @@ python check_feeds.py
 python -m unittest discover -s tests -v
 ```
 
-**Band list** · OpenAI · Anthropic · Google AI · Hugging Face · Microsoft AI · TechCrunch · The Verge · Ars Technica · MarkTechPost · Wired AI · MIT News · InfoQ · AI News · arXiv cs.AI · Hacker News
+**Band list** · OpenAI · Anthropic · Google AI · Hugging Face · Microsoft AI · TechCrunch · The Verge · Ars Technica · MarkTechPost · Wired AI · MIT News · InfoQ · VentureBeat AI · arXiv cs.AI · Hacker News
 
 **License** · MIT
 
