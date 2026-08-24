@@ -278,7 +278,14 @@ FEEDS: tuple[FeedSource, ...] = (
         topic_keywords=GENERAL_TOPIC_KEYWORDS,
     ),
     FeedSource("Ars Technica", "A", ("https://arstechnica.com/ai/feed/",)),
-    FeedSource("MarkTechPost", "A", ("https://www.marktechpost.com/feed/",)),
+    FeedSource(
+        "MarkTechPost",
+        "A",
+        (
+            "https://feeds.feedburner.com/MarkTechPost",
+            "https://www.marktechpost.com/feed/",
+        ),
+    ),
     FeedSource("Wired AI", "A", ("https://www.wired.com/feed/tag/ai/latest/rss",)),
     FeedSource(
         "MIT News AI",
@@ -291,7 +298,8 @@ FEEDS: tuple[FeedSource, ...] = (
         ("https://feed.infoq.com/",),
         topic_keywords=GENERAL_TOPIC_KEYWORDS,
     ),
-    FeedSource("AI News", "B", ("https://artificialintelligence-news.com/feed/",)),
+    # Direct AI News RSS is blocked from GitHub Actions (HTTP 202 WAF).
+    FeedSource("VentureBeat AI", "B", ("https://venturebeat.com/category/ai/feed/",)),
     # SSL error in local env only - works fine on GitHub Actions runner
     FeedSource("arXiv cs.AI", "C", ("https://rss.arxiv.org/rss/cs.AI",)),
     FeedSource(

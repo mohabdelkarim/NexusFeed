@@ -23,9 +23,14 @@ jobs:
           with open('feed_health.json', encoding='utf-8') as f:
               results = json.load(f)
           working = results['working_count']
+          stale = len(results.get('stale_feeds', []))
+          dead = len(results.get('dead_feeds', []))
           total = results['total_count']
-          print(f'Working feeds: {working}/{total}')
-          if working < 12:
+          usable = working + stale
+          print(f'Working feeds: {working}/{total} (usable with stale: {usable}, dead: {dead})')
+          # Fail only on catastrophic outage. Stale feeds still parse and serve content.
+          # Occasional WAF blocks on 1-3 sources should not red the workflow.
+          if dead > 3:
               print('ERROR: Too many dead feeds!')
               sys.exit(1)
           "
