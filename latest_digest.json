@@ -1,50 +1,50 @@
 {
-  "digest_date": "2026-08-20",
-  "saved_at": "2026-08-20T19:36:02Z",
+  "digest_date": "2026-09-01",
+  "saved_at": "2026-09-01T20:37:15Z",
   "stories": [
     {
-      "article_url": "https://techcrunch.com/2026/08/20/google-gives-publishers-a-new-way-to-fight-ai-driven-traffic-losses",
-      "full_title": "Google gives publishers a new way to fight AI-driven traffic losses",
-      "one_line_summary": "Google introduces button to boost publisher traffic amid AI search decline",
+      "article_url": "https://openai.com/index/path-to-astra",
+      "full_title": "Path to Astra: critical capabilities and frontier safeguards",
+      "one_line_summary": "OpenAI announces Astra, meeting critical cybersecurity thresholds with enhanced safeguards",
       "rank": 1,
-      "score": 9.5,
-      "source_name": "TechCrunch",
-      "source_tier": "A"
+      "score": 9.8,
+      "source_name": "OpenAI",
+      "source_tier": "S"
     },
     {
-      "article_url": "https://techcrunch.com/2026/08/20/grok-keeps-sending-gibberish-responses-to-users",
-      "full_title": "Grok keeps sending gibberish responses to users",
-      "one_line_summary": "Users report Grok Lite producing nonsensical replies since Wednesday",
+      "article_url": "https://openai.com/index/ai-native-company-workflows",
+      "full_title": "How AI-native companies turn workflows into operating capability",
+      "one_line_summary": "OpenAI explains how AI agents streamline onboarding, account management, and developer integrations",
       "rank": 2,
-      "score": 9.0,
-      "source_name": "TechCrunch",
-      "source_tier": "A"
+      "score": 9.5,
+      "source_name": "OpenAI",
+      "source_tier": "S"
     },
     {
-      "article_url": "https://arstechnica.com/security/2026/08/grok-exfiltrates-user-data-when-malicious-instructions-are-encrypted",
-      "full_title": "Grok exfiltrates user data when malicious instructions are encrypted",
-      "one_line_summary": "Encrypted malicious prompts cause Grok to leak user data",
+      "article_url": "https://blog.google/products-and-platforms/products/workspace/google-pics",
+      "full_title": "Try Google Pics: Easy image creation and editing in Google Workspace",
+      "one_line_summary": "Google launches AI-powered Pics for prompt-based image creation within Workspace",
       "rank": 3,
-      "score": 8.8,
-      "source_name": "Ars Technica",
-      "source_tier": "A"
+      "score": 9.0,
+      "source_name": "Google AI",
+      "source_tier": "S"
     },
     {
-      "article_url": "https://www.marktechpost.com/2026/08/20/liquid-ai-releases-lfm2-5-dspark-draft-models-that-deliver-up-to-3-18x-faster-decoding",
-      "full_title": "Liquid AI Releases LFM2.5-DSpark Draft Models That Deliver Up to 3.18x Faster Decoding Without Changing Model Outputs",
-      "one_line_summary": "New draft models speed inference 3.18x while preserving outputs",
+      "article_url": "https://www.wired.com/story/openai-astra-first-ai-model-with-critical-cyber-abilities",
+      "full_title": "OpenAI Is About to Release Its First AI Model With \u2018Critical\u2019 Cyber Abilities",
+      "one_line_summary": "OpenAI to give partners early access to Astra, a model with critical cyber capabilities",
       "rank": 4,
-      "score": 8.5,
-      "source_name": "MarkTechPost",
+      "score": 8.8,
+      "source_name": "Wired AI",
       "source_tier": "A"
     },
     {
-      "article_url": "https://techcrunch.com/2026/08/20/meta-brings-pocket-an-app-that-lets-you-vibe-code-and-share-games-to-us-users",
-      "full_title": "Meta brings Pocket, an app that lets you vibe-code and share games, to US users",
-      "one_line_summary": "Meta launches AI-powered Pocket app for interactive game creation",
+      "article_url": "https://www.theverge.com/tech/987575/apple-openai-destroying-evidence-trade-secrets-lawsuit",
+      "full_title": "Apple accuses OpenAI of destroying evidence",
+      "one_line_summary": "Apple seeks expedited discovery, alleging OpenAI is destroying evidence in lawsuit",
       "rank": 5,
-      "score": 8.0,
-      "source_name": "TechCrunch",
+      "score": 8.5,
+      "source_name": "The Verge",
       "source_tier": "A"
     }
   ]

@@ -1,79 +1,29 @@
 {
   "recent_titles": [
     {
-      "cleaned_title": "openai anthropic price war as chinese rivals gain ground",
-      "sent_at": "2026-08-14T18:56:09Z",
-      "url": "https://arstechnica.com/ai/2026/08/openai-and-anthropic-in-price-war-as-chinese-ai-rivals-gain-ground/"
+      "cleaned_title": "path astra: critical capabilities frontier safeguards",
+      "sent_at": "2026-09-01T20:37:15Z",
+      "url": "https://openai.com/index/path-to-astra"
     },
     {
-      "cleaned_title": "tech visionary says big labs don\u2019t get people want",
-      "sent_at": "2026-08-14T18:56:09Z",
-      "url": "https://www.wired.com/story/tech-visionary-says-the-big-ai-labs-dont-get-what-people-want/"
+      "cleaned_title": "ai-native companies turn workflows into operating capability",
+      "sent_at": "2026-09-01T20:37:15Z",
+      "url": "https://openai.com/index/ai-native-company-workflows"
     },
     {
-      "cleaned_title": "suspecting court using ai, man injected prompts filings try win case",
-      "sent_at": "2026-08-14T18:56:09Z",
-      "url": "https://arstechnica.com/tech-policy/2026/08/suspecting-court-of-using-ai-man-injected-prompts-in-filings-to-try-to-win-case/"
+      "cleaned_title": "try google pics: easy image creation editing google workspace",
+      "sent_at": "2026-09-01T20:37:15Z",
+      "url": "https://blog.google/products-and-platforms/products/workspace/google-pics"
     },
     {
-      "cleaned_title": "google will now allow users remove visible watermark its generations",
-      "sent_at": "2026-08-14T18:56:09Z",
-      "url": "https://techcrunch.com/2026/08/14/google-will-now-allow-users-to-remove-visible-watermark-from-its-ai-generations/"
+      "cleaned_title": "openai about release its first model \u2018critical\u2019 cyber abilities",
+      "sent_at": "2026-09-01T20:37:15Z",
+      "url": "https://www.wired.com/story/openai-astra-first-ai-model-with-critical-cyber-abilities"
     },
     {
-      "cleaned_title": "kog going deeper squeeze more inference out gpus",
-      "sent_at": "2026-08-14T18:56:09Z",
-      "url": "https://techcrunch.com/2026/08/14/kog-is-going-deeper-to-squeeze-more-inference-out-of-gpus/"
-    },
-    {
-      "cleaned_title": "fine-tuning tool-calling llms: complete guide using xyz-aquila-sft qwen3",
-      "sent_at": "2026-08-15T11:36:53Z",
-      "url": "https://www.marktechpost.com/2026/08/15/fine-tuning-tool-calling-llms-a-complete-guide-using-xyz-aquila-sft-and-qwen3"
-    },
-    {
-      "cleaned_title": "amazon can use your twitch content train its ai\u2014unless you opt out",
-      "sent_at": "2026-08-15T11:36:53Z",
-      "url": "https://www.wired.com/story/amazon-uses-your-twitch-content-to-train-its-ai-how-to-opt-out"
-    },
-    {
-      "cleaned_title": "presentation: models agents: building context-aware consumer scale doordash",
-      "sent_at": "2026-08-15T11:36:53Z",
-      "url": "https://www.infoq.com/presentations/ai-agentic-recommendations-semantic-ids"
-    },
-    {
-      "cleaned_title": "cloudflare adds agent tracing, truncation limits uneven payload defaults",
-      "sent_at": "2026-08-15T11:36:53Z",
-      "url": "https://www.infoq.com/news/2026/08/cloudflare-agent-tracing"
-    },
-    {
-      "cleaned_title": "debian has begun voting future ai/llm contributions",
-      "sent_at": "2026-08-15T11:36:53Z",
-      "url": "https://lists.debian.org/debian-devel-announce/2026/08/msg00002.html"
-    },
-    {
-      "cleaned_title": "google gives publishers way fight ai-driven traffic losses",
-      "sent_at": "2026-08-20T19:36:02Z",
-      "url": "https://techcrunch.com/2026/08/20/google-gives-publishers-a-new-way-to-fight-ai-driven-traffic-losses"
-    },
-    {
-      "cleaned_title": "grok keeps sending gibberish responses users",
-      "sent_at": "2026-08-20T19:36:02Z",
-      "url": "https://techcrunch.com/2026/08/20/grok-keeps-sending-gibberish-responses-to-users"
-    },
-    {
-      "cleaned_title": "grok exfiltrates user data when malicious instructions are encrypted",
-      "sent_at": "2026-08-20T19:36:02Z",
-      "url": "https://arstechnica.com/security/2026/08/grok-exfiltrates-user-data-when-malicious-instructions-are-encrypted"
-    },
-    {
-      "cleaned_title": "liquid releases lfm2.5-dspark draft models that deliver up 3.18x faster decoding without changing model outputs",
-      "sent_at": "2026-08-20T19:36:02Z",
-      "url": "https://www.marktechpost.com/2026/08/20/liquid-ai-releases-lfm2-5-dspark-draft-models-that-deliver-up-to-3-18x-faster-decoding"
-    },
-    {
-      "cleaned_title": "meta brings pocket, app that lets you vibe-code share games, us users",
-      "sent_at": "2026-08-20T19:36:02Z",
-      "url": "https://techcrunch.com/2026/08/20/meta-brings-pocket-an-app-that-lets-you-vibe-code-and-share-games-to-us-users"
+      "cleaned_title": "apple accuses openai destroying evidence",
+      "sent_at": "2026-09-01T20:37:15Z",
+      "url": "https://www.theverge.com/tech/987575/apple-openai-destroying-evidence-trade-secrets-lawsuit"
     }
   ],
   "url_hashes": [
@@ -225,6 +175,11 @@
     "3e25c33330e7022b45977557aef7bcf3532ff26e9edc62e34aa05baac7640229",
     "a9e7d80754e6f186f92de6d15c8c5bab78734f682d79367822aee2c65d8767ea",
     "37d75aed04cb4a5432fecc5cc3600206506493f29dabe735bb56b728ebc325f9",
-    "30ed338aa1befde7ba5753342c042ff3cdde49eb0087d7cab3d38674244fb3ac"
+    "30ed338aa1befde7ba5753342c042ff3cdde49eb0087d7cab3d38674244fb3ac",
+    "f2694bfa96c49e91da594bc0cb315cea9400ac30ae168e84999723429399dcd3",
+    "b0cbef382238cdd5b88df7d9e2e972c6de79dc01f5270d52514cbb50f83a1be1",
+    "ab46a267f212840f55ce0fca0e22055322d94e7d064bddcc231454dd875bafa7",
+    "3951a0599c9e89f86a0a754f4a9eb2b8638ce57e1ae6c214fd3a54f2e86cd2db",
+    "7680bcf78a62aeae4795e5ec54f269d0e67304baa373f4a210c276dea148e48d"
   ]
 }
