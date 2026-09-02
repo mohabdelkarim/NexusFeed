@@ -53,3 +53,30 @@ jobs:
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Slack digest on success
+        if: success()
+        env:
+          SLACK_WEBHOOK_AI_PIPELINES: ${{ secrets.SLACK_WEBHOOK_AI_PIPELINES }}
+        run: |
+          if [ -z "$SLACK_WEBHOOK_AI_PIPELINES" ]; then exit 0; fi
+          TITLE=$(python -c "import json; d=json.load(open('posted_now.json',encoding='utf-8')); item=d[0] if isinstance(d,list) and d else {}; print(item.get('title','NexusFeed run')[:120])" 2>/dev/null || echo "NexusFeed run")
+          URL=$(python -c "import json; d=json.load(open('posted_now.json',encoding='utf-8')); item=d[0] if isinstance(d,list) and d else {}; print(item.get('url',''))" 2>/dev/null || echo "")
+          python slack_notify.py --digest \
+            --title "NexusFeed" \
+            --text "*${TITLE}*\n${URL}" \
+            --webhook-env SLACK_WEBHOOK_AI_PIPELINES
+
+      - name: Notify Slack on failure
+        if: failure()
+        uses: slackapi/slack-github-action@v4.0.0
+        with:
+          webhook: ${{ secrets.SLACK_WEBHOOK_ALERTS }}
+          webhook-type: incoming-webhook
+          payload: |
+            text: "CI failed: ${{ github.repository }} / ${{ github.workflow }}"
+            blocks:
+              - type: section
+                text:
+                  type: mrkdwn
+                  text: "*${{ github.repository }}* — `${{ github.workflow }}` failed\n<${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|View run>"
