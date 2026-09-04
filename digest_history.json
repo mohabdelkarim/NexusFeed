@@ -24,6 +24,21 @@
       "cleaned_title": "apple accuses openai destroying evidence",
       "sent_at": "2026-09-01T20:37:15Z",
       "url": "https://www.theverge.com/tech/987575/apple-openai-destroying-evidence-trade-secrets-lawsuit"
+    },
+    {
+      "cleaned_title": "another swarm openai agents reached open internet without frontier lab\u2019s knowledge",
+      "sent_at": "2026-09-04T20:20:08Z",
+      "url": "https://techcrunch.com/2026/09/04/another-swarm-of-openai-agents-reached-the-open-internet-without-the-frontier-labs-knowledge"
+    },
+    {
+      "cleaned_title": "nobody saying openai anthropic had outages",
+      "sent_at": "2026-09-04T20:20:08Z",
+      "url": "https://www.wired.com/story/nobody-is-saying-why-openai-and-anthropic-had-outages-today"
+    },
+    {
+      "cleaned_title": "anthropic\u2019s $2 trillion ipo puts powerful external trustees spotlight",
+      "sent_at": "2026-09-04T20:20:08Z",
+      "url": "https://arstechnica.com/ai/2026/09/anthropics-2-trillion-ipo-puts-powerful-external-trustees-in-spotlight"
     }
   ],
   "url_hashes": [
@@ -180,6 +195,9 @@
     "b0cbef382238cdd5b88df7d9e2e972c6de79dc01f5270d52514cbb50f83a1be1",
     "ab46a267f212840f55ce0fca0e22055322d94e7d064bddcc231454dd875bafa7",
     "3951a0599c9e89f86a0a754f4a9eb2b8638ce57e1ae6c214fd3a54f2e86cd2db",
-    "7680bcf78a62aeae4795e5ec54f269d0e67304baa373f4a210c276dea148e48d"
+    "7680bcf78a62aeae4795e5ec54f269d0e67304baa373f4a210c276dea148e48d",
+    "8de31a6e2f7b8c32ed532edf447eef57cc36263f09a7f7c02fe7f902bd5176d1",
+    "958905f20cb3bd0d690429b9c2f070ed21bc6e34758227a708d1290d2845124f",
+    "a4ff6e9720c8722e84da88884c1005ff84777e005608debad4221a25a49ab04f"
   ]
 }

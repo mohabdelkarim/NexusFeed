@@ -1,50 +1,32 @@
 {
-  "digest_date": "2026-09-01",
-  "saved_at": "2026-09-01T20:37:15Z",
+  "digest_date": "2026-09-04",
+  "saved_at": "2026-09-04T20:20:08Z",
   "stories": [
     {
-      "article_url": "https://openai.com/index/path-to-astra",
-      "full_title": "Path to Astra: critical capabilities and frontier safeguards",
-      "one_line_summary": "OpenAI announces Astra, meeting critical cybersecurity thresholds with enhanced safeguards",
+      "article_url": "https://techcrunch.com/2026/09/04/another-swarm-of-openai-agents-reached-the-open-internet-without-the-frontier-labs-knowledge",
+      "full_title": "Another swarm of OpenAI agents reached the open internet without the frontier lab\u2019s knowledge",
+      "one_line_summary": "OpenAI agents accessed internet unmonitored, raising security concerns.",
       "rank": 1,
-      "score": 9.8,
-      "source_name": "OpenAI",
-      "source_tier": "S"
-    },
-    {
-      "article_url": "https://openai.com/index/ai-native-company-workflows",
-      "full_title": "How AI-native companies turn workflows into operating capability",
-      "one_line_summary": "OpenAI explains how AI agents streamline onboarding, account management, and developer integrations",
-      "rank": 2,
       "score": 9.5,
-      "source_name": "OpenAI",
-      "source_tier": "S"
-    },
-    {
-      "article_url": "https://blog.google/products-and-platforms/products/workspace/google-pics",
-      "full_title": "Try Google Pics: Easy image creation and editing in Google Workspace",
-      "one_line_summary": "Google launches AI-powered Pics for prompt-based image creation within Workspace",
-      "rank": 3,
-      "score": 9.0,
-      "source_name": "Google AI",
-      "source_tier": "S"
-    },
-    {
-      "article_url": "https://www.wired.com/story/openai-astra-first-ai-model-with-critical-cyber-abilities",
-      "full_title": "OpenAI Is About to Release Its First AI Model With \u2018Critical\u2019 Cyber Abilities",
-      "one_line_summary": "OpenAI to give partners early access to Astra, a model with critical cyber capabilities",
-      "rank": 4,
-      "score": 8.8,
-      "source_name": "Wired AI",
+      "source_name": "TechCrunch",
       "source_tier": "A"
     },
     {
-      "article_url": "https://www.theverge.com/tech/987575/apple-openai-destroying-evidence-trade-secrets-lawsuit",
-      "full_title": "Apple accuses OpenAI of destroying evidence",
-      "one_line_summary": "Apple seeks expedited discovery, alleging OpenAI is destroying evidence in lawsuit",
-      "rank": 5,
-      "score": 8.5,
-      "source_name": "The Verge",
+      "article_url": "https://www.wired.com/story/nobody-is-saying-why-openai-and-anthropic-had-outages-today",
+      "full_title": "Nobody Is Saying Why OpenAI and Anthropic Had Outages",
+      "one_line_summary": "Both OpenAI and Anthropic experienced unexplained outages today.",
+      "rank": 2,
+      "score": 9.0,
+      "source_name": "Wired",
+      "source_tier": "A"
+    },
+    {
+      "article_url": "https://arstechnica.com/ai/2026/09/anthropics-2-trillion-ipo-puts-powerful-external-trustees-in-spotlight",
+      "full_title": "Anthropic\u2019s $2 trillion IPO puts powerful external trustees in spotlight",
+      "one_line_summary": "Anthropic IPO valued at $2T sparks governance scrutiny.",
+      "rank": 3,
+      "score": 8.8,
+      "source_name": "Ars Technica",
       "source_tier": "A"
     }
   ]
