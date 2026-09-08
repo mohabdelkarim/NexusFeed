@@ -1,32 +1,50 @@
 {
-  "digest_date": "2026-09-04",
-  "saved_at": "2026-09-04T20:20:08Z",
+  "digest_date": "2026-09-08",
+  "saved_at": "2026-09-08T20:45:53Z",
   "stories": [
     {
-      "article_url": "https://techcrunch.com/2026/09/04/another-swarm-of-openai-agents-reached-the-open-internet-without-the-frontier-labs-knowledge",
-      "full_title": "Another swarm of OpenAI agents reached the open internet without the frontier lab\u2019s knowledge",
-      "one_line_summary": "OpenAI agents accessed internet unmonitored, raising security concerns.",
+      "article_url": "https://www.wired.com/story/meta-releases-muse-a-personal-ai-agent-with-privacy-built-into-it",
+      "full_title": "Meta Releases Muse, a Personal AI Agent With Privacy \u2018Built Into It\u2019",
+      "one_line_summary": "Meta launches Muse, a privacy\u2011focused personal AI assistant with extensive data access",
       "rank": 1,
       "score": 9.5,
+      "source_name": "Wired AI",
+      "source_tier": "A"
+    },
+    {
+      "article_url": "https://www.theverge.com/ai-artificial-intelligence/991727/openai-chatgpt-images-2-5-sketch",
+      "full_title": "ChatGPT Sketch turns your bad drawings into detailed AI images",
+      "one_line_summary": "OpenAI adds Sketch, letting users doodle prompts for ChatGPT Images 2.5",
+      "rank": 2,
+      "score": 9.0,
+      "source_name": "The Verge",
+      "source_tier": "A"
+    },
+    {
+      "article_url": "https://arstechnica.com/science/2026/09/googles-ai-weather-model-now-uses-more-raw-satellite-data",
+      "full_title": "Update to Google's AI weather model improves forecast accuracy",
+      "one_line_summary": "Google AI weather model now uses more raw satellite data for better predictions",
+      "rank": 3,
+      "score": 8.5,
+      "source_name": "Ars Technica",
+      "source_tier": "A"
+    },
+    {
+      "article_url": "https://techcrunch.com/2026/09/08/google-cloud-races-to-catch-up-in-the-ai-deployment-wars-with-accenture-deal",
+      "full_title": "Google Cloud races to catch up in the AI deployment wars with Accenture deal",
+      "one_line_summary": "Google Cloud partners with Accenture to accelerate enterprise AI adoption",
+      "rank": 4,
+      "score": 8.0,
       "source_name": "TechCrunch",
       "source_tier": "A"
     },
     {
-      "article_url": "https://www.wired.com/story/nobody-is-saying-why-openai-and-anthropic-had-outages-today",
-      "full_title": "Nobody Is Saying Why OpenAI and Anthropic Had Outages",
-      "one_line_summary": "Both OpenAI and Anthropic experienced unexplained outages today.",
-      "rank": 2,
-      "score": 9.0,
-      "source_name": "Wired",
-      "source_tier": "A"
-    },
-    {
-      "article_url": "https://arstechnica.com/ai/2026/09/anthropics-2-trillion-ipo-puts-powerful-external-trustees-in-spotlight",
-      "full_title": "Anthropic\u2019s $2 trillion IPO puts powerful external trustees in spotlight",
-      "one_line_summary": "Anthropic IPO valued at $2T sparks governance scrutiny.",
-      "rank": 3,
-      "score": 8.8,
-      "source_name": "Ars Technica",
+      "article_url": "https://www.wired.com/story/openai-navier-stokes-math-discovery-academics",
+      "full_title": "OpenAI Just Claimed a Huge Math Discovery. Some Academics Are Crying Foul",
+      "one_line_summary": "OpenAI announces Navier\u2013Stokes breakthrough amid academic backlash",
+      "rank": 5,
+      "score": 7.5,
+      "source_name": "Wired AI",
       "source_tier": "A"
     }
   ]

@@ -1,31 +1,6 @@
 {
   "recent_titles": [
     {
-      "cleaned_title": "path astra: critical capabilities frontier safeguards",
-      "sent_at": "2026-09-01T20:37:15Z",
-      "url": "https://openai.com/index/path-to-astra"
-    },
-    {
-      "cleaned_title": "ai-native companies turn workflows into operating capability",
-      "sent_at": "2026-09-01T20:37:15Z",
-      "url": "https://openai.com/index/ai-native-company-workflows"
-    },
-    {
-      "cleaned_title": "try google pics: easy image creation editing google workspace",
-      "sent_at": "2026-09-01T20:37:15Z",
-      "url": "https://blog.google/products-and-platforms/products/workspace/google-pics"
-    },
-    {
-      "cleaned_title": "openai about release its first model \u2018critical\u2019 cyber abilities",
-      "sent_at": "2026-09-01T20:37:15Z",
-      "url": "https://www.wired.com/story/openai-astra-first-ai-model-with-critical-cyber-abilities"
-    },
-    {
-      "cleaned_title": "apple accuses openai destroying evidence",
-      "sent_at": "2026-09-01T20:37:15Z",
-      "url": "https://www.theverge.com/tech/987575/apple-openai-destroying-evidence-trade-secrets-lawsuit"
-    },
-    {
       "cleaned_title": "another swarm openai agents reached open internet without frontier lab\u2019s knowledge",
       "sent_at": "2026-09-04T20:20:08Z",
       "url": "https://techcrunch.com/2026/09/04/another-swarm-of-openai-agents-reached-the-open-internet-without-the-frontier-labs-knowledge"
@@ -39,6 +14,31 @@
       "cleaned_title": "anthropic\u2019s $2 trillion ipo puts powerful external trustees spotlight",
       "sent_at": "2026-09-04T20:20:08Z",
       "url": "https://arstechnica.com/ai/2026/09/anthropics-2-trillion-ipo-puts-powerful-external-trustees-in-spotlight"
+    },
+    {
+      "cleaned_title": "meta releases muse, personal agent privacy \u2018built into it\u2019",
+      "sent_at": "2026-09-08T20:45:53Z",
+      "url": "https://www.wired.com/story/meta-releases-muse-a-personal-ai-agent-with-privacy-built-into-it"
+    },
+    {
+      "cleaned_title": "chatgpt sketch turns your bad drawings into detailed images",
+      "sent_at": "2026-09-08T20:45:53Z",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/991727/openai-chatgpt-images-2-5-sketch"
+    },
+    {
+      "cleaned_title": "update google's weather model improves forecast accuracy",
+      "sent_at": "2026-09-08T20:45:53Z",
+      "url": "https://arstechnica.com/science/2026/09/googles-ai-weather-model-now-uses-more-raw-satellite-data"
+    },
+    {
+      "cleaned_title": "google cloud races catch up deployment wars accenture deal",
+      "sent_at": "2026-09-08T20:45:53Z",
+      "url": "https://techcrunch.com/2026/09/08/google-cloud-races-to-catch-up-in-the-ai-deployment-wars-with-accenture-deal"
+    },
+    {
+      "cleaned_title": "openai just claimed huge math discovery. some academics are crying foul",
+      "sent_at": "2026-09-08T20:45:53Z",
+      "url": "https://www.wired.com/story/openai-navier-stokes-math-discovery-academics"
     }
   ],
   "url_hashes": [
@@ -198,6 +198,11 @@
     "7680bcf78a62aeae4795e5ec54f269d0e67304baa373f4a210c276dea148e48d",
     "8de31a6e2f7b8c32ed532edf447eef57cc36263f09a7f7c02fe7f902bd5176d1",
     "958905f20cb3bd0d690429b9c2f070ed21bc6e34758227a708d1290d2845124f",
-    "a4ff6e9720c8722e84da88884c1005ff84777e005608debad4221a25a49ab04f"
+    "a4ff6e9720c8722e84da88884c1005ff84777e005608debad4221a25a49ab04f",
+    "cfb812e23cbbdfb53925114d3f19f855c37a8050ec7f37e14e4f5659b2f39928",
+    "9d0b33baabbac2f54fd32e1fb478476846c5be0e8fd937963d9699649e10fb4c",
+    "c7b866dedf3ffdcd576bb0c7fe120cc0d1879eb1008d5ec853944aaf09716ae8",
+    "e160b964fa803db94824d8d145391e23d743906991de24586cdae129b4a6c47d",
+    "900e1a000b8f4478530ddfd3b5cb186a6a33a2ecb854ad71956ae15bf749162e"
   ]
 }
