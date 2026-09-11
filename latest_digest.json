@@ -1,50 +1,50 @@
 {
-  "digest_date": "2026-09-08",
-  "saved_at": "2026-09-08T20:45:53Z",
+  "digest_date": "2026-09-11",
+  "saved_at": "2026-09-11T20:31:21Z",
   "stories": [
     {
-      "article_url": "https://www.wired.com/story/meta-releases-muse-a-personal-ai-agent-with-privacy-built-into-it",
-      "full_title": "Meta Releases Muse, a Personal AI Agent With Privacy \u2018Built Into It\u2019",
-      "one_line_summary": "Meta launches Muse, a privacy\u2011focused personal AI assistant with extensive data access",
+      "article_url": "https://www.wired.com/story/meta-sued-over-training-data-for-its-ai-and-face-recognition-systems",
+      "full_title": "Meta Sued Over Training Data for Its AI and Face-Recognition Systems",
+      "one_line_summary": "Class action alleges Meta illegally harvested photos to train AI models.",
       "rank": 1,
       "score": 9.5,
       "source_name": "Wired AI",
       "source_tier": "A"
     },
     {
-      "article_url": "https://www.theverge.com/ai-artificial-intelligence/991727/openai-chatgpt-images-2-5-sketch",
-      "full_title": "ChatGPT Sketch turns your bad drawings into detailed AI images",
-      "one_line_summary": "OpenAI adds Sketch, letting users doodle prompts for ChatGPT Images 2.5",
+      "article_url": "https://techcrunch.com/podcast/an-anthropic-researchers-doomsday-warning-comes-at-a-very-interesting-time",
+      "full_title": "An Anthropic researcher\u2019s doomsday warning comes at a very interesting time",
+      "one_line_summary": "Anthropic researcher resigns, warns of racing toward dangerous superintelligence.",
       "rank": 2,
       "score": 9.0,
-      "source_name": "The Verge",
-      "source_tier": "A"
-    },
-    {
-      "article_url": "https://arstechnica.com/science/2026/09/googles-ai-weather-model-now-uses-more-raw-satellite-data",
-      "full_title": "Update to Google's AI weather model improves forecast accuracy",
-      "one_line_summary": "Google AI weather model now uses more raw satellite data for better predictions",
-      "rank": 3,
-      "score": 8.5,
-      "source_name": "Ars Technica",
-      "source_tier": "A"
-    },
-    {
-      "article_url": "https://techcrunch.com/2026/09/08/google-cloud-races-to-catch-up-in-the-ai-deployment-wars-with-accenture-deal",
-      "full_title": "Google Cloud races to catch up in the AI deployment wars with Accenture deal",
-      "one_line_summary": "Google Cloud partners with Accenture to accelerate enterprise AI adoption",
-      "rank": 4,
-      "score": 8.0,
       "source_name": "TechCrunch",
       "source_tier": "A"
     },
     {
-      "article_url": "https://www.wired.com/story/openai-navier-stokes-math-discovery-academics",
-      "full_title": "OpenAI Just Claimed a Huge Math Discovery. Some Academics Are Crying Foul",
-      "one_line_summary": "OpenAI announces Navier\u2013Stokes breakthrough amid academic backlash",
+      "article_url": "https://arstechnica.com/ai/2026/09/claude-users-found-ways-around-safeguards-for-bioweapons-research",
+      "full_title": "Claude users found ways around safeguards for bioweapons research",
+      "one_line_summary": "Users bypassed Claude safeguards, enabling potentially dangerous biology queries.",
+      "rank": 3,
+      "score": 8.8,
+      "source_name": "Ars Technica",
+      "source_tier": "A"
+    },
+    {
+      "article_url": "https://www.theverge.com/tech/993974/meta-ai-prompt-invasive-suggestions",
+      "full_title": "Meta says it\u2019s changing AI suggestions after posing invasive personal questions",
+      "one_line_summary": "Meta modifies chatbot prompts after viral video of invasive inquiries.",
+      "rank": 4,
+      "score": 8.5,
+      "source_name": "The Verge",
+      "source_tier": "A"
+    },
+    {
+      "article_url": "https://techcrunch.com/2026/09/11/kimi-maker-moonshot-ai-targets-2-billion-in-annual-revenue",
+      "full_title": "Kimi-maker Moonshot AI targets $2B in annual revenue",
+      "one_line_summary": "Moonshot AI aims for $2B revenue amid declining usage metrics.",
       "rank": 5,
       "score": 7.5,
-      "source_name": "Wired AI",
+      "source_name": "TechCrunch",
       "source_tier": "A"
     }
   ]

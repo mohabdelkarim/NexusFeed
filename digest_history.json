@@ -1,21 +1,6 @@
 {
   "recent_titles": [
     {
-      "cleaned_title": "another swarm openai agents reached open internet without frontier lab\u2019s knowledge",
-      "sent_at": "2026-09-04T20:20:08Z",
-      "url": "https://techcrunch.com/2026/09/04/another-swarm-of-openai-agents-reached-the-open-internet-without-the-frontier-labs-knowledge"
-    },
-    {
-      "cleaned_title": "nobody saying openai anthropic had outages",
-      "sent_at": "2026-09-04T20:20:08Z",
-      "url": "https://www.wired.com/story/nobody-is-saying-why-openai-and-anthropic-had-outages-today"
-    },
-    {
-      "cleaned_title": "anthropic\u2019s $2 trillion ipo puts powerful external trustees spotlight",
-      "sent_at": "2026-09-04T20:20:08Z",
-      "url": "https://arstechnica.com/ai/2026/09/anthropics-2-trillion-ipo-puts-powerful-external-trustees-in-spotlight"
-    },
-    {
       "cleaned_title": "meta releases muse, personal agent privacy \u2018built into it\u2019",
       "sent_at": "2026-09-08T20:45:53Z",
       "url": "https://www.wired.com/story/meta-releases-muse-a-personal-ai-agent-with-privacy-built-into-it"
@@ -39,6 +24,31 @@
       "cleaned_title": "openai just claimed huge math discovery. some academics are crying foul",
       "sent_at": "2026-09-08T20:45:53Z",
       "url": "https://www.wired.com/story/openai-navier-stokes-math-discovery-academics"
+    },
+    {
+      "cleaned_title": "meta sued over training data its face-recognition systems",
+      "sent_at": "2026-09-11T20:31:21Z",
+      "url": "https://www.wired.com/story/meta-sued-over-training-data-for-its-ai-and-face-recognition-systems"
+    },
+    {
+      "cleaned_title": "anthropic researcher\u2019s doomsday warning comes very interesting time",
+      "sent_at": "2026-09-11T20:31:21Z",
+      "url": "https://techcrunch.com/podcast/an-anthropic-researchers-doomsday-warning-comes-at-a-very-interesting-time"
+    },
+    {
+      "cleaned_title": "claude users found ways around safeguards bioweapons research",
+      "sent_at": "2026-09-11T20:31:21Z",
+      "url": "https://arstechnica.com/ai/2026/09/claude-users-found-ways-around-safeguards-for-bioweapons-research"
+    },
+    {
+      "cleaned_title": "meta says it\u2019s changing suggestions after posing invasive personal questions",
+      "sent_at": "2026-09-11T20:31:21Z",
+      "url": "https://www.theverge.com/tech/993974/meta-ai-prompt-invasive-suggestions"
+    },
+    {
+      "cleaned_title": "kimi-maker moonshot targets $2b annual revenue",
+      "sent_at": "2026-09-11T20:31:21Z",
+      "url": "https://techcrunch.com/2026/09/11/kimi-maker-moonshot-ai-targets-2-billion-in-annual-revenue"
     }
   ],
   "url_hashes": [
@@ -203,6 +213,11 @@
     "9d0b33baabbac2f54fd32e1fb478476846c5be0e8fd937963d9699649e10fb4c",
     "c7b866dedf3ffdcd576bb0c7fe120cc0d1879eb1008d5ec853944aaf09716ae8",
     "e160b964fa803db94824d8d145391e23d743906991de24586cdae129b4a6c47d",
-    "900e1a000b8f4478530ddfd3b5cb186a6a33a2ecb854ad71956ae15bf749162e"
+    "900e1a000b8f4478530ddfd3b5cb186a6a33a2ecb854ad71956ae15bf749162e",
+    "100612fd29ec106d25fcaef91582c88baba2ab9220d3f5082812dad4c357a8a2",
+    "c0774e79dcbdf32d6ac403f3a6714a566e67569cfa4f061a5e2765b34d0f129b",
+    "626b0ed26a7b7fd616c9ad7bad74da48d382567f9022061e0329313fd0578241",
+    "4f33cb2d4aa2df21f2fc0901b7d70d99665785a05fca3fc410d514c88f4e76e3",
+    "cd4dece0b1837435f305f0ab6fce9fdb172803c283ca0f079fa5645e71755ba3"
   ]
 }
