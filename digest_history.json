@@ -1,31 +1,6 @@
 {
   "recent_titles": [
     {
-      "cleaned_title": "meta releases muse, personal agent privacy \u2018built into it\u2019",
-      "sent_at": "2026-09-08T20:45:53Z",
-      "url": "https://www.wired.com/story/meta-releases-muse-a-personal-ai-agent-with-privacy-built-into-it"
-    },
-    {
-      "cleaned_title": "chatgpt sketch turns your bad drawings into detailed images",
-      "sent_at": "2026-09-08T20:45:53Z",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/991727/openai-chatgpt-images-2-5-sketch"
-    },
-    {
-      "cleaned_title": "update google's weather model improves forecast accuracy",
-      "sent_at": "2026-09-08T20:45:53Z",
-      "url": "https://arstechnica.com/science/2026/09/googles-ai-weather-model-now-uses-more-raw-satellite-data"
-    },
-    {
-      "cleaned_title": "google cloud races catch up deployment wars accenture deal",
-      "sent_at": "2026-09-08T20:45:53Z",
-      "url": "https://techcrunch.com/2026/09/08/google-cloud-races-to-catch-up-in-the-ai-deployment-wars-with-accenture-deal"
-    },
-    {
-      "cleaned_title": "openai just claimed huge math discovery. some academics are crying foul",
-      "sent_at": "2026-09-08T20:45:53Z",
-      "url": "https://www.wired.com/story/openai-navier-stokes-math-discovery-academics"
-    },
-    {
       "cleaned_title": "meta sued over training data its face-recognition systems",
       "sent_at": "2026-09-11T20:31:21Z",
       "url": "https://www.wired.com/story/meta-sued-over-training-data-for-its-ai-and-face-recognition-systems"
@@ -49,6 +24,31 @@
       "cleaned_title": "kimi-maker moonshot targets $2b annual revenue",
       "sent_at": "2026-09-11T20:31:21Z",
       "url": "https://techcrunch.com/2026/09/11/kimi-maker-moonshot-ai-targets-2-billion-in-annual-revenue"
+    },
+    {
+      "cleaned_title": "microsoft announces windows surface event october 7th",
+      "sent_at": "2026-09-15T20:54:15Z",
+      "url": "https://www.theverge.com/news/994714/microsoft-windows-surface-event-october-7-san-francisco"
+    },
+    {
+      "cleaned_title": "meta expands subscription push ai-focused plans",
+      "sent_at": "2026-09-15T20:54:15Z",
+      "url": "https://techcrunch.com/2026/09/15/meta-expands-subscription-push-with-new-ai-focused-plans"
+    },
+    {
+      "cleaned_title": "agents now have place snitch",
+      "sent_at": "2026-09-15T20:54:15Z",
+      "url": "https://techcrunch.com/2026/09/15/ai-agents-now-have-a-place-to-snitch"
+    },
+    {
+      "cleaned_title": "us data centers could consume more natural gas than germany japan combined 2035",
+      "sent_at": "2026-09-15T20:54:15Z",
+      "url": "https://techcrunch.com/2026/09/15/us-data-centers-could-consume-more-natural-gas-than-germany-and-japan-combined-by-2035"
+    },
+    {
+      "cleaned_title": "ai-assisted discovery helps microsoft patch more than 1,000 vulnerabilities month",
+      "sent_at": "2026-09-15T20:54:15Z",
+      "url": "https://www.infoq.com/news/2026/09/microsoft-ai-security-patch"
     }
   ],
   "url_hashes": [
@@ -218,6 +218,11 @@
     "c0774e79dcbdf32d6ac403f3a6714a566e67569cfa4f061a5e2765b34d0f129b",
     "626b0ed26a7b7fd616c9ad7bad74da48d382567f9022061e0329313fd0578241",
     "4f33cb2d4aa2df21f2fc0901b7d70d99665785a05fca3fc410d514c88f4e76e3",
-    "cd4dece0b1837435f305f0ab6fce9fdb172803c283ca0f079fa5645e71755ba3"
+    "cd4dece0b1837435f305f0ab6fce9fdb172803c283ca0f079fa5645e71755ba3",
+    "746e67bf33bbd6eb2eab94b4e2c65c5b21a648d903de4c423ef883de6d5f395b",
+    "549d4b3f5ab263ac34e5273da92db203c644755e7d6d286e2f544f5cdec77301",
+    "8719e1c439c05fd490297303bacdeb9a080284a3ade679a626444f406169518f",
+    "7e80b1190b4584f27cc8e38e228eb36c7ebbfe50b725326a360e89c09b61ee07",
+    "db5236f81a0f9903908d4d520d2ba3e5c3a262eb76d82ebe44416a1cb9e0a4dc"
   ]
 }
