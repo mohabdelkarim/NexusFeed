@@ -49,6 +49,31 @@
       "cleaned_title": "ai-assisted discovery helps microsoft patch more than 1,000 vulnerabilities month",
       "sent_at": "2026-09-15T20:54:15Z",
       "url": "https://www.infoq.com/news/2026/09/microsoft-ai-security-patch"
+    },
+    {
+      "cleaned_title": "report: us almost boarded chinese ship over hallucinated arms report",
+      "sent_at": "2026-09-18T20:27:53Z",
+      "url": "https://arstechnica.com/ai/2026/09/report-us-almost-boarded-chinese-ship-over-hallucinated-ai-arms-report"
+    },
+    {
+      "cleaned_title": "faa tees up $875m tool help manage air traffic congestion",
+      "sent_at": "2026-09-18T20:27:53Z",
+      "url": "https://arstechnica.com/ai/2026/09/faa-tees-up-875m-ai-tool-to-help-manage-air-traffic-congestion"
+    },
+    {
+      "cleaned_title": "here\u2019s slowdown could actually be enforced",
+      "sent_at": "2026-09-18T20:27:53Z",
+      "url": "https://www.wired.com/story/heres-how-an-ai-slowdown-could-actually-work"
+    },
+    {
+      "cleaned_title": "virginia governor creates task force moves restrain data centers",
+      "sent_at": "2026-09-18T20:27:53Z",
+      "url": "https://www.theverge.com/policy/997573/virginia-governor-spanberger-data-center-ai-task-force"
+    },
+    {
+      "cleaned_title": "kind model chatgpt inventor thrilling developers",
+      "sent_at": "2026-09-18T20:27:53Z",
+      "url": "https://techcrunch.com/2026/09/18/a-new-kind-of-ai-model-from-a-chatgpt-inventor-is-thrilling-developers"
     }
   ],
   "url_hashes": [
@@ -223,6 +248,11 @@
     "549d4b3f5ab263ac34e5273da92db203c644755e7d6d286e2f544f5cdec77301",
     "8719e1c439c05fd490297303bacdeb9a080284a3ade679a626444f406169518f",
     "7e80b1190b4584f27cc8e38e228eb36c7ebbfe50b725326a360e89c09b61ee07",
-    "db5236f81a0f9903908d4d520d2ba3e5c3a262eb76d82ebe44416a1cb9e0a4dc"
+    "db5236f81a0f9903908d4d520d2ba3e5c3a262eb76d82ebe44416a1cb9e0a4dc",
+    "723c449cb1bb389967e448db44f5d17a0af2ab1926c2ce36a747dd03a8a0b202",
+    "34f89a45631ccd21267ceb09ef1c65b6c27c6104ea93cab8895010a7cbbb3074",
+    "d0a1362ff9cce82c6b8723184fab562dc46bbad8ee52422e306db14f01d6ea9a",
+    "0a255d7c17cbd4b0b89a2f8fcbe884ae20771432c45af099cba2c1b792d7cfc1",
+    "b0f2fc35950c247905dc9574ece5361db112f051551641dd43c6d390457ed5f6"
   ]
 }

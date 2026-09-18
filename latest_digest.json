@@ -1,51 +1,51 @@
 {
-  "digest_date": "2026-09-15",
-  "saved_at": "2026-09-15T20:54:15Z",
+  "digest_date": "2026-09-18",
+  "saved_at": "2026-09-18T20:27:53Z",
   "stories": [
     {
-      "article_url": "https://www.theverge.com/news/994714/microsoft-windows-surface-event-october-7-san-francisco",
-      "full_title": "Microsoft announces Windows and Surface event for October 7th",
-      "one_line_summary": "Microsoft will unveil future Windows and Surface devices at a San Francisco event on Oct 7.",
+      "article_url": "https://arstechnica.com/ai/2026/09/report-us-almost-boarded-chinese-ship-over-hallucinated-ai-arms-report",
+      "full_title": "Report: US almost boarded Chinese ship over hallucinated AI arms report",
+      "one_line_summary": "US military nearly boarded Chinese vessel after false AI arms claim.",
       "rank": 1,
       "score": 9.5,
+      "source_name": "Ars Technica",
+      "source_tier": "A"
+    },
+    {
+      "article_url": "https://arstechnica.com/ai/2026/09/faa-tees-up-875m-ai-tool-to-help-manage-air-traffic-congestion",
+      "full_title": "FAA tees up $875M AI tool to help manage air traffic congestion",
+      "one_line_summary": "FAA plans $875M AI system to ease Washington DC air traffic.",
+      "rank": 2,
+      "score": 8.8,
+      "source_name": "Ars Technica",
+      "source_tier": "A"
+    },
+    {
+      "article_url": "https://www.wired.com/story/heres-how-an-ai-slowdown-could-actually-work",
+      "full_title": "Here\u2019s How an AI Slowdown Could Actually Be Enforced",
+      "one_line_summary": "Explores mechanisms to enforce a global pause on AI development.",
+      "rank": 3,
+      "score": 8.5,
+      "source_name": "Wired AI",
+      "source_tier": "A"
+    },
+    {
+      "article_url": "https://www.theverge.com/policy/997573/virginia-governor-spanberger-data-center-ai-task-force",
+      "full_title": "Virginia governor creates an AI task force and moves to restrain data centers",
+      "one_line_summary": "Gov. Spanberger orders AI task force, slows data center approvals.",
+      "rank": 4,
+      "score": 8.0,
       "source_name": "The Verge",
       "source_tier": "A"
     },
     {
-      "article_url": "https://techcrunch.com/2026/09/15/meta-expands-subscription-push-with-new-ai-focused-plans",
-      "full_title": "Meta expands subscription push with new AI-focused plans",
-      "one_line_summary": "Meta bundles AI tools into new subscription plans across Facebook, Instagram, and WhatsApp.",
-      "rank": 2,
-      "score": 9.0,
-      "source_name": "TechCrunch",
-      "source_tier": "A"
-    },
-    {
-      "article_url": "https://techcrunch.com/2026/09/15/ai-agents-now-have-a-place-to-snitch",
-      "full_title": "AI agents now have a place to snitch",
-      "one_line_summary": "A hotline lets AI agents report misconduct to authorities discreetly.",
-      "rank": 3,
-      "score": 8.5,
-      "source_name": "TechCrunch",
-      "source_tier": "A"
-    },
-    {
-      "article_url": "https://techcrunch.com/2026/09/15/us-data-centers-could-consume-more-natural-gas-than-germany-and-japan-combined-by-2035",
-      "full_title": "US data centers could consume more natural gas than Germany and Japan combined by 2035",
-      "one_line_summary": "U.S. data centers may consume more natural gas than Germany and Japan by 2035.",
-      "rank": 4,
-      "score": 8.0,
-      "source_name": "TechCrunch",
-      "source_tier": "A"
-    },
-    {
-      "article_url": "https://www.infoq.com/news/2026/09/microsoft-ai-security-patch",
-      "full_title": "AI-Assisted Discovery Helps Microsoft Patch More Than 1,000 Vulnerabilities in a Month",
-      "one_line_summary": "Microsoft used AI to patch over 1,000 vulnerabilities in a single month.",
+      "article_url": "https://techcrunch.com/2026/09/18/a-new-kind-of-ai-model-from-a-chatgpt-inventor-is-thrilling-developers",
+      "full_title": "A new kind of AI model from a ChatGPT inventor is thrilling developers",
+      "one_line_summary": "Jev model offers cheaper, faster path to software intelligence.",
       "rank": 5,
-      "score": 7.5,
-      "source_name": "InfoQ AI/ML",
-      "source_tier": "B"
+      "score": 7.8,
+      "source_name": "TechCrunch",
+      "source_tier": "A"
     }
   ]
 }
