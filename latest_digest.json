@@ -1,50 +1,50 @@
 {
-  "digest_date": "2026-09-18",
-  "saved_at": "2026-09-18T20:27:53Z",
+  "digest_date": "2026-09-25",
+  "saved_at": "2026-09-25T21:08:39Z",
   "stories": [
     {
-      "article_url": "https://arstechnica.com/ai/2026/09/report-us-almost-boarded-chinese-ship-over-hallucinated-ai-arms-report",
-      "full_title": "Report: US almost boarded Chinese ship over hallucinated AI arms report",
-      "one_line_summary": "US military nearly boarded Chinese vessel after false AI arms claim.",
+      "article_url": "https://techcrunch.com/2026/09/25/anthropic-to-pay-akamai-11-6-billion-over-seven-years-in-cloud-deal",
+      "full_title": "Anthropic to pay Akamai $11.6 billion over seven years in cloud deal",
+      "one_line_summary": "Anthropic commits $11.6B to Akamai for cloud infrastructure, betting on future CPU growth",
       "rank": 1,
       "score": 9.5,
-      "source_name": "Ars Technica",
-      "source_tier": "A"
-    },
-    {
-      "article_url": "https://arstechnica.com/ai/2026/09/faa-tees-up-875m-ai-tool-to-help-manage-air-traffic-congestion",
-      "full_title": "FAA tees up $875M AI tool to help manage air traffic congestion",
-      "one_line_summary": "FAA plans $875M AI system to ease Washington DC air traffic.",
-      "rank": 2,
-      "score": 8.8,
-      "source_name": "Ars Technica",
-      "source_tier": "A"
-    },
-    {
-      "article_url": "https://www.wired.com/story/heres-how-an-ai-slowdown-could-actually-work",
-      "full_title": "Here\u2019s How an AI Slowdown Could Actually Be Enforced",
-      "one_line_summary": "Explores mechanisms to enforce a global pause on AI development.",
-      "rank": 3,
-      "score": 8.5,
-      "source_name": "Wired AI",
-      "source_tier": "A"
-    },
-    {
-      "article_url": "https://www.theverge.com/policy/997573/virginia-governor-spanberger-data-center-ai-task-force",
-      "full_title": "Virginia governor creates an AI task force and moves to restrain data centers",
-      "one_line_summary": "Gov. Spanberger orders AI task force, slows data center approvals.",
-      "rank": 4,
-      "score": 8.0,
-      "source_name": "The Verge",
-      "source_tier": "A"
-    },
-    {
-      "article_url": "https://techcrunch.com/2026/09/18/a-new-kind-of-ai-model-from-a-chatgpt-inventor-is-thrilling-developers",
-      "full_title": "A new kind of AI model from a ChatGPT inventor is thrilling developers",
-      "one_line_summary": "Jev model offers cheaper, faster path to software intelligence.",
-      "rank": 5,
-      "score": 7.8,
       "source_name": "TechCrunch",
+      "source_tier": "A"
+    },
+    {
+      "article_url": "https://techcrunch.com/2026/09/25/for-months-openais-agent-swarms-have-been-attacking-online-databases-to-find-obscure-facts",
+      "full_title": "For months, OpenAI\u2019s agent swarms have been attacking online databases to find obscure facts",
+      "one_line_summary": "Researchers uncover unauthorized OpenAI agent swarms targeting online databases",
+      "rank": 2,
+      "score": 8.5,
+      "source_name": "TechCrunch",
+      "source_tier": "A"
+    },
+    {
+      "article_url": "https://techcrunch.com/2026/09/25/anthropics-founders-seek-voting-control-ahead-of-ipo",
+      "full_title": "Anthropic\u2019s founders seek voting control ahead of IPO",
+      "one_line_summary": "Anthropic proposes 50.1% voting control for founders before IPO",
+      "rank": 3,
+      "score": 8.0,
+      "source_name": "TechCrunch",
+      "source_tier": "A"
+    },
+    {
+      "article_url": "https://techcrunch.com/2026/09/25/meta-opens-early-access-program-for-new-muse-features",
+      "full_title": "Meta opens early access program for new Muse features",
+      "one_line_summary": "Meta launches early access for Muse, inviting users to join the program",
+      "rank": 4,
+      "score": 7.5,
+      "source_name": "TechCrunch",
+      "source_tier": "A"
+    },
+    {
+      "article_url": "https://www.theverge.com/tech/1000794/tesla-optimus-production-issues-hands",
+      "full_title": "Tesla\u2019s Optimus robot is going through growing pains",
+      "one_line_summary": "Tesla struggles to meet 20,000 Optimus units per week production target",
+      "rank": 5,
+      "score": 7.0,
+      "source_name": "The Verge",
       "source_tier": "A"
     }
   ]

@@ -1,79 +1,29 @@
 {
   "recent_titles": [
     {
-      "cleaned_title": "meta sued over training data its face-recognition systems",
-      "sent_at": "2026-09-11T20:31:21Z",
-      "url": "https://www.wired.com/story/meta-sued-over-training-data-for-its-ai-and-face-recognition-systems"
+      "cleaned_title": "anthropic pay akamai $11.6 billion over seven years cloud deal",
+      "sent_at": "2026-09-25T21:08:39Z",
+      "url": "https://techcrunch.com/2026/09/25/anthropic-to-pay-akamai-11-6-billion-over-seven-years-in-cloud-deal"
     },
     {
-      "cleaned_title": "anthropic researcher\u2019s doomsday warning comes very interesting time",
-      "sent_at": "2026-09-11T20:31:21Z",
-      "url": "https://techcrunch.com/podcast/an-anthropic-researchers-doomsday-warning-comes-at-a-very-interesting-time"
+      "cleaned_title": "months, openai\u2019s agent swarms have been attacking online databases find obscure facts",
+      "sent_at": "2026-09-25T21:08:39Z",
+      "url": "https://techcrunch.com/2026/09/25/for-months-openais-agent-swarms-have-been-attacking-online-databases-to-find-obscure-facts"
     },
     {
-      "cleaned_title": "claude users found ways around safeguards bioweapons research",
-      "sent_at": "2026-09-11T20:31:21Z",
-      "url": "https://arstechnica.com/ai/2026/09/claude-users-found-ways-around-safeguards-for-bioweapons-research"
+      "cleaned_title": "anthropic\u2019s founders seek voting control ahead ipo",
+      "sent_at": "2026-09-25T21:08:39Z",
+      "url": "https://techcrunch.com/2026/09/25/anthropics-founders-seek-voting-control-ahead-of-ipo"
     },
     {
-      "cleaned_title": "meta says it\u2019s changing suggestions after posing invasive personal questions",
-      "sent_at": "2026-09-11T20:31:21Z",
-      "url": "https://www.theverge.com/tech/993974/meta-ai-prompt-invasive-suggestions"
+      "cleaned_title": "meta opens early access program muse features",
+      "sent_at": "2026-09-25T21:08:39Z",
+      "url": "https://techcrunch.com/2026/09/25/meta-opens-early-access-program-for-new-muse-features"
     },
     {
-      "cleaned_title": "kimi-maker moonshot targets $2b annual revenue",
-      "sent_at": "2026-09-11T20:31:21Z",
-      "url": "https://techcrunch.com/2026/09/11/kimi-maker-moonshot-ai-targets-2-billion-in-annual-revenue"
-    },
-    {
-      "cleaned_title": "microsoft announces windows surface event october 7th",
-      "sent_at": "2026-09-15T20:54:15Z",
-      "url": "https://www.theverge.com/news/994714/microsoft-windows-surface-event-october-7-san-francisco"
-    },
-    {
-      "cleaned_title": "meta expands subscription push ai-focused plans",
-      "sent_at": "2026-09-15T20:54:15Z",
-      "url": "https://techcrunch.com/2026/09/15/meta-expands-subscription-push-with-new-ai-focused-plans"
-    },
-    {
-      "cleaned_title": "agents now have place snitch",
-      "sent_at": "2026-09-15T20:54:15Z",
-      "url": "https://techcrunch.com/2026/09/15/ai-agents-now-have-a-place-to-snitch"
-    },
-    {
-      "cleaned_title": "us data centers could consume more natural gas than germany japan combined 2035",
-      "sent_at": "2026-09-15T20:54:15Z",
-      "url": "https://techcrunch.com/2026/09/15/us-data-centers-could-consume-more-natural-gas-than-germany-and-japan-combined-by-2035"
-    },
-    {
-      "cleaned_title": "ai-assisted discovery helps microsoft patch more than 1,000 vulnerabilities month",
-      "sent_at": "2026-09-15T20:54:15Z",
-      "url": "https://www.infoq.com/news/2026/09/microsoft-ai-security-patch"
-    },
-    {
-      "cleaned_title": "report: us almost boarded chinese ship over hallucinated arms report",
-      "sent_at": "2026-09-18T20:27:53Z",
-      "url": "https://arstechnica.com/ai/2026/09/report-us-almost-boarded-chinese-ship-over-hallucinated-ai-arms-report"
-    },
-    {
-      "cleaned_title": "faa tees up $875m tool help manage air traffic congestion",
-      "sent_at": "2026-09-18T20:27:53Z",
-      "url": "https://arstechnica.com/ai/2026/09/faa-tees-up-875m-ai-tool-to-help-manage-air-traffic-congestion"
-    },
-    {
-      "cleaned_title": "here\u2019s slowdown could actually be enforced",
-      "sent_at": "2026-09-18T20:27:53Z",
-      "url": "https://www.wired.com/story/heres-how-an-ai-slowdown-could-actually-work"
-    },
-    {
-      "cleaned_title": "virginia governor creates task force moves restrain data centers",
-      "sent_at": "2026-09-18T20:27:53Z",
-      "url": "https://www.theverge.com/policy/997573/virginia-governor-spanberger-data-center-ai-task-force"
-    },
-    {
-      "cleaned_title": "kind model chatgpt inventor thrilling developers",
-      "sent_at": "2026-09-18T20:27:53Z",
-      "url": "https://techcrunch.com/2026/09/18/a-new-kind-of-ai-model-from-a-chatgpt-inventor-is-thrilling-developers"
+      "cleaned_title": "tesla\u2019s optimus robot going through growing pains",
+      "sent_at": "2026-09-25T21:08:39Z",
+      "url": "https://www.theverge.com/tech/1000794/tesla-optimus-production-issues-hands"
     }
   ],
   "url_hashes": [
@@ -253,6 +203,11 @@
     "34f89a45631ccd21267ceb09ef1c65b6c27c6104ea93cab8895010a7cbbb3074",
     "d0a1362ff9cce82c6b8723184fab562dc46bbad8ee52422e306db14f01d6ea9a",
     "0a255d7c17cbd4b0b89a2f8fcbe884ae20771432c45af099cba2c1b792d7cfc1",
-    "b0f2fc35950c247905dc9574ece5361db112f051551641dd43c6d390457ed5f6"
+    "b0f2fc35950c247905dc9574ece5361db112f051551641dd43c6d390457ed5f6",
+    "455ef52f381b6006d0cfd8910640c8790d31ba48d628dca7565879e32eacd3ff",
+    "67589e08baa616ead0b13a1d13d32f57cddf0e6e9a0d13b40bac18c530f3ff66",
+    "c04d25df158303d8cda5199ff3dfd1a3c8a070b5998998ca6b99f6a3d0bf0aaf",
+    "8d3ddedf5cc86ac1af106e70f105c9104890bee551c49b39b5c5fb02160ed228",
+    "d23e876d1f601e8d4775d2c08cd712029b9fe8b92bb7882c6e349b47ec987b91"
   ]
 }
