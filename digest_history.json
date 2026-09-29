@@ -24,6 +24,26 @@
       "cleaned_title": "tesla\u2019s optimus robot going through growing pains",
       "sent_at": "2026-09-25T21:08:39Z",
       "url": "https://www.theverge.com/tech/1000794/tesla-optimus-production-issues-hands"
+    },
+    {
+      "cleaned_title": "openai reportedly talks raise $30b round $1.4t valuation",
+      "sent_at": "2026-09-29T21:55:27Z",
+      "url": "https://techcrunch.com/2026/09/29/openai-repotedly-in-talks-to-raise-30b-round-at-1-4t-valuation"
+    },
+    {
+      "cleaned_title": "amd acquires world labs startup, upping ante against nvidia",
+      "sent_at": "2026-09-29T21:55:27Z",
+      "url": "https://arstechnica.com/ai/2026/09/amd-acquires-world-labs-ai-pioneer-fei-fei-lis-world-models-startup"
+    },
+    {
+      "cleaned_title": "openai\u2019s latest features take direct aim app store model",
+      "sent_at": "2026-09-29T21:55:27Z",
+      "url": "https://techcrunch.com/2026/09/29/openais-latest-features-take-direct-aim-at-the-app-store-model"
+    },
+    {
+      "cleaned_title": "openai takes microsoft launch feels whole lot like chatgpt\u2019s own office suite",
+      "sent_at": "2026-09-29T21:55:27Z",
+      "url": "https://techcrunch.com/2026/09/29/openai-takes-on-microsoft-with-the-launch-of-what-feels-a-whole-lot-like-chatgpts-own-office-suite"
     }
   ],
   "url_hashes": [
@@ -208,6 +228,10 @@
     "67589e08baa616ead0b13a1d13d32f57cddf0e6e9a0d13b40bac18c530f3ff66",
     "c04d25df158303d8cda5199ff3dfd1a3c8a070b5998998ca6b99f6a3d0bf0aaf",
     "8d3ddedf5cc86ac1af106e70f105c9104890bee551c49b39b5c5fb02160ed228",
-    "d23e876d1f601e8d4775d2c08cd712029b9fe8b92bb7882c6e349b47ec987b91"
+    "d23e876d1f601e8d4775d2c08cd712029b9fe8b92bb7882c6e349b47ec987b91",
+    "eb17e6acbf165ed75dcd853876d5bdf011d71cf0a6390d39af51f55cd4a6ceb3",
+    "989d39632f0c3a32e6eec996766895769afc34e0f327ed5db0b0b4406aa26d0e",
+    "ce7038776241850babc76232f2d4a655ad2cf09303515bf946e7d6ef56937383",
+    "e2a232be530f75b6fb8ca37eb801e39725d3f865aa26d0854f60c2ebfe2dbd4b"
   ]
 }
