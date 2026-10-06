@@ -1,41 +1,32 @@
 {
-  "digest_date": "2026-09-29",
-  "saved_at": "2026-09-29T21:55:27Z",
+  "digest_date": "2026-10-06",
+  "saved_at": "2026-10-06T22:22:40Z",
   "stories": [
     {
-      "article_url": "https://techcrunch.com/2026/09/29/openai-repotedly-in-talks-to-raise-30b-round-at-1-4t-valuation",
-      "full_title": "OpenAI reportedly in talks to raise $30B round at $1.4T valuation",
-      "one_line_summary": "OpenAI seeks $30B funding, valuing company at $1.4 trillion.",
+      "article_url": "https://openai.com/index/atlassian-partnership",
+      "full_title": "Atlassian and OpenAI expand partnership to turn enterprise knowledge into action",
+      "one_line_summary": "Atlassian-OpenAI partnership expands enterprise knowledge integration.",
       "rank": 1,
       "score": 9.5,
-      "source_name": "TechCrunch",
-      "source_tier": "A"
+      "source_name": "OpenAI",
+      "source_tier": "S"
     },
     {
-      "article_url": "https://arstechnica.com/ai/2026/09/amd-acquires-world-labs-ai-pioneer-fei-fei-lis-world-models-startup",
-      "full_title": "AMD acquires World Labs AI startup, upping the ante against Nvidia",
-      "one_line_summary": "AMD buys World Labs for $8.2B to challenge Nvidia in AI.",
+      "article_url": "https://techcrunch.com/2026/10/06/ai-computing-startup-lambda-to-raise-4b-ahead-of-planned-ipo",
+      "full_title": "AI computing startup Lambda to raise $4B ahead of planned IPO",
+      "one_line_summary": "Lambda raises up to $4B at $14.5B valuation ahead of 2027 IPO.",
       "rank": 2,
-      "score": 9.0,
-      "source_name": "Ars Technica",
-      "source_tier": "A"
-    },
-    {
-      "article_url": "https://techcrunch.com/2026/09/29/openais-latest-features-take-direct-aim-at-the-app-store-model",
-      "full_title": "OpenAI\u2019s latest features take direct aim at the app store model",
-      "one_line_summary": "OpenAI introduces ChatGPT features to replace traditional app store model.",
-      "rank": 3,
       "score": 8.8,
       "source_name": "TechCrunch",
       "source_tier": "A"
     },
     {
-      "article_url": "https://techcrunch.com/2026/09/29/openai-takes-on-microsoft-with-the-launch-of-what-feels-a-whole-lot-like-chatgpts-own-office-suite",
-      "full_title": "OpenAI takes on Microsoft with the launch of what feels a whole lot like ChatGPT\u2019s own office suite",
-      "one_line_summary": "OpenAI unveils office suite to compete directly with Microsoft.",
-      "rank": 4,
+      "article_url": "https://www.marktechpost.com/2026/10/06/mistral-ai-releases-mistral-large-4-le-chonk-a-1-05t-parameter-open-weight-multimodal-moe",
+      "full_title": "Mistral AI Releases Mistral Large 4 (Le Chonk): A 1.05T Parameter Multimodal MoE Model",
+      "one_line_summary": "Mistral releases 1.05T-parameter multimodal MoE model 'Le Chonk' with 49B active params.",
+      "rank": 3,
       "score": 8.5,
-      "source_name": "TechCrunch",
+      "source_name": "MarkTechPost",
       "source_tier": "A"
     }
   ]

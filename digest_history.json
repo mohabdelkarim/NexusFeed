@@ -1,49 +1,19 @@
 {
   "recent_titles": [
     {
-      "cleaned_title": "anthropic pay akamai $11.6 billion over seven years cloud deal",
-      "sent_at": "2026-09-25T21:08:39Z",
-      "url": "https://techcrunch.com/2026/09/25/anthropic-to-pay-akamai-11-6-billion-over-seven-years-in-cloud-deal"
+      "cleaned_title": "atlassian openai expand partnership turn enterprise knowledge into action",
+      "sent_at": "2026-10-06T22:22:40Z",
+      "url": "https://openai.com/index/atlassian-partnership"
     },
     {
-      "cleaned_title": "months, openai\u2019s agent swarms have been attacking online databases find obscure facts",
-      "sent_at": "2026-09-25T21:08:39Z",
-      "url": "https://techcrunch.com/2026/09/25/for-months-openais-agent-swarms-have-been-attacking-online-databases-to-find-obscure-facts"
+      "cleaned_title": "computing startup lambda raise $4b ahead planned ipo",
+      "sent_at": "2026-10-06T22:22:40Z",
+      "url": "https://techcrunch.com/2026/10/06/ai-computing-startup-lambda-to-raise-4b-ahead-of-planned-ipo"
     },
     {
-      "cleaned_title": "anthropic\u2019s founders seek voting control ahead ipo",
-      "sent_at": "2026-09-25T21:08:39Z",
-      "url": "https://techcrunch.com/2026/09/25/anthropics-founders-seek-voting-control-ahead-of-ipo"
-    },
-    {
-      "cleaned_title": "meta opens early access program muse features",
-      "sent_at": "2026-09-25T21:08:39Z",
-      "url": "https://techcrunch.com/2026/09/25/meta-opens-early-access-program-for-new-muse-features"
-    },
-    {
-      "cleaned_title": "tesla\u2019s optimus robot going through growing pains",
-      "sent_at": "2026-09-25T21:08:39Z",
-      "url": "https://www.theverge.com/tech/1000794/tesla-optimus-production-issues-hands"
-    },
-    {
-      "cleaned_title": "openai reportedly talks raise $30b round $1.4t valuation",
-      "sent_at": "2026-09-29T21:55:27Z",
-      "url": "https://techcrunch.com/2026/09/29/openai-repotedly-in-talks-to-raise-30b-round-at-1-4t-valuation"
-    },
-    {
-      "cleaned_title": "amd acquires world labs startup, upping ante against nvidia",
-      "sent_at": "2026-09-29T21:55:27Z",
-      "url": "https://arstechnica.com/ai/2026/09/amd-acquires-world-labs-ai-pioneer-fei-fei-lis-world-models-startup"
-    },
-    {
-      "cleaned_title": "openai\u2019s latest features take direct aim app store model",
-      "sent_at": "2026-09-29T21:55:27Z",
-      "url": "https://techcrunch.com/2026/09/29/openais-latest-features-take-direct-aim-at-the-app-store-model"
-    },
-    {
-      "cleaned_title": "openai takes microsoft launch feels whole lot like chatgpt\u2019s own office suite",
-      "sent_at": "2026-09-29T21:55:27Z",
-      "url": "https://techcrunch.com/2026/09/29/openai-takes-on-microsoft-with-the-launch-of-what-feels-a-whole-lot-like-chatgpts-own-office-suite"
+      "cleaned_title": "mistral releases mistral large 4 (le chonk): 1.05t parameter multimodal moe model",
+      "sent_at": "2026-10-06T22:22:40Z",
+      "url": "https://www.marktechpost.com/2026/10/06/mistral-ai-releases-mistral-large-4-le-chonk-a-1-05t-parameter-open-weight-multimodal-moe"
     }
   ],
   "url_hashes": [
@@ -232,6 +202,9 @@
     "eb17e6acbf165ed75dcd853876d5bdf011d71cf0a6390d39af51f55cd4a6ceb3",
     "989d39632f0c3a32e6eec996766895769afc34e0f327ed5db0b0b4406aa26d0e",
     "ce7038776241850babc76232f2d4a655ad2cf09303515bf946e7d6ef56937383",
-    "e2a232be530f75b6fb8ca37eb801e39725d3f865aa26d0854f60c2ebfe2dbd4b"
+    "e2a232be530f75b6fb8ca37eb801e39725d3f865aa26d0854f60c2ebfe2dbd4b",
+    "2896758265cec81d95898858cf3558ac9cdd51e4e22038c8fc6ca0aa5193f521",
+    "f1ec779e602e78245980c084e7ec98d9904ac8dd5dffae43986647f588420f84",
+    "75becd89b7f1b4e69390c1af75508348ac55d4a3201d0ae85e560ec188f30d41"
   ]
 }
