@@ -1,31 +1,49 @@
 {
-  "digest_date": "2026-10-06",
-  "saved_at": "2026-10-06T22:22:40Z",
+  "digest_date": "2026-10-09",
+  "saved_at": "2026-10-09T22:19:20Z",
   "stories": [
     {
-      "article_url": "https://openai.com/index/atlassian-partnership",
-      "full_title": "Atlassian and OpenAI expand partnership to turn enterprise knowledge into action",
-      "one_line_summary": "Atlassian-OpenAI partnership expands enterprise knowledge integration.",
+      "article_url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google",
+      "full_title": "Ukraine\u2019s drones knock out AI data center belonging to \"Russia\u2019s Google\"",
+      "one_line_summary": "Ukrainian drones destroyed a Yandex AI supercomputer facility",
       "rank": 1,
       "score": 9.5,
-      "source_name": "OpenAI",
-      "source_tier": "S"
+      "source_name": "Ars Technica",
+      "source_tier": "A"
     },
     {
-      "article_url": "https://techcrunch.com/2026/10/06/ai-computing-startup-lambda-to-raise-4b-ahead-of-planned-ipo",
-      "full_title": "AI computing startup Lambda to raise $4B ahead of planned IPO",
-      "one_line_summary": "Lambda raises up to $4B at $14.5B valuation ahead of 2027 IPO.",
+      "article_url": "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch",
+      "full_title": "The maker of non-text AI model Jev valued at $7.5B just weeks after launch",
+      "one_line_summary": "TypeSafe AI raised $870M, reaching a $7.5B valuation",
       "rank": 2,
-      "score": 8.8,
+      "score": 9.0,
       "source_name": "TechCrunch",
       "source_tier": "A"
     },
     {
-      "article_url": "https://www.marktechpost.com/2026/10/06/mistral-ai-releases-mistral-large-4-le-chonk-a-1-05t-parameter-open-weight-multimodal-moe",
-      "full_title": "Mistral AI Releases Mistral Large 4 (Le Chonk): A 1.05T Parameter Multimodal MoE Model",
-      "one_line_summary": "Mistral releases 1.05T-parameter multimodal MoE model 'Le Chonk' with 49B active params.",
+      "article_url": "https://www.theverge.com/ai-artificial-intelligence/1009090/anthropic-fake-homicide-information-philadelphia-pd-tip",
+      "full_title": "Anthropic\u2019s AI gave Philadelphia police a fake tip about an unsolved homicide",
+      "one_line_summary": "Anthropic model sent false homicide tip to Philadelphia PD",
       "rank": 3,
       "score": 8.5,
+      "source_name": "The Verge",
+      "source_tier": "A"
+    },
+    {
+      "article_url": "https://www.marktechpost.com/2026/10/09/alibaba-qwen-releases-qwen-image-2-1-turbo-an-8-step-7b-image-model",
+      "full_title": "Alibaba Qwen Releases Qwen-Image-2.1-Turbo, an 8-Step 7B Image Model",
+      "one_line_summary": "Alibaba unveils faster 8-step Qwen-Image-2.1-Turbo model",
+      "rank": 4,
+      "score": 8.0,
+      "source_name": "MarkTechPost",
+      "source_tier": "A"
+    },
+    {
+      "article_url": "https://www.marktechpost.com/2026/10/09/openai-decisions-api-hits-public-beta-with-10x-faster-typed-answers",
+      "full_title": "OpenAI Decisions API Hits Public Beta With 10x Faster Typed Answers",
+      "one_line_summary": "OpenAI releases faster Decisions API in public beta",
+      "rank": 5,
+      "score": 7.5,
       "source_name": "MarkTechPost",
       "source_tier": "A"
     }
