@@ -39,6 +39,31 @@
       "cleaned_title": "openai decisions api hits public beta 10x faster typed answers",
       "sent_at": "2026-10-09T22:19:20Z",
       "url": "https://www.marktechpost.com/2026/10/09/openai-decisions-api-hits-public-beta-with-10x-faster-typed-answers"
+    },
+    {
+      "cleaned_title": "openai employee arrested allegedly planting bug conference room",
+      "sent_at": "2026-10-13T22:20:08Z",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1010642/openai-employee-arrested-recording-device"
+    },
+    {
+      "cleaned_title": "judge orders openai turn over hiring records apple trade secrets case",
+      "sent_at": "2026-10-13T22:20:08Z",
+      "url": "https://techcrunch.com/2026/10/13/judge-orders-openai-to-turn-over-hiring-records-in-apple-trade-secrets-case"
+    },
+    {
+      "cleaned_title": "openai anthropic tell british lawmakers: regulate us",
+      "sent_at": "2026-10-13T22:20:08Z",
+      "url": "https://www.wired.com/story/openai-and-anthropic-tell-british-lawmakers-regulate-us"
+    },
+    {
+      "cleaned_title": "google play now lets anyone build private, vibe-coded apps that run android",
+      "sent_at": "2026-10-13T22:20:08Z",
+      "url": "https://techcrunch.com/2026/10/13/google-play-now-supports-private-vibe-coded-apps-built-just-for-you"
+    },
+    {
+      "cleaned_title": "gemini 4 argon begins rolling out gemini app antigravity, but only if you pay",
+      "sent_at": "2026-10-13T22:20:08Z",
+      "url": "https://arstechnica.com/ai/2026/10/gemini-4-argon-begins-rolling-out-in-gemini-app-and-antigravity-but-only-if-you-pay"
     }
   ],
   "url_hashes": [
@@ -235,6 +260,11 @@
     "dd7d78b72787c1eac053a26043f0502dab45dd9b51a31d60a64af7231ec79723",
     "0854a3cada87fb07918edd8a336eff6328fb5c24a084f1fcb62e81e455730288",
     "98555c8578e1748c0f7a4fc864050151597e356db7c098ef0c7c866a953ad599",
-    "46c6ea5980d9926699c1d88f3fb394ba24ecd553e2e22c53bf5b2faec04bf2ad"
+    "46c6ea5980d9926699c1d88f3fb394ba24ecd553e2e22c53bf5b2faec04bf2ad",
+    "6ec803e44d1742ccbdc9716fc725a309384ba717e011d1917a3019ef40f75ca2",
+    "47b1c61501a00890c87ae57299388bf41e774b6c20c2bfab4298858697cb7d0f",
+    "bb575fe9ad4e4a983b92eaf2f82faa1ed6bbfd8fca2f9b9a4b7aad432d510d77",
+    "45d87d6cab7a70aff9e6ab94d83347f468848ac615ba4d058eb35d9210ce5d39",
+    "172801b07e38eb18deb676c6b3cbc75ea578eb466ec5b88a6d9303b6b39f02ed"
   ]
 }

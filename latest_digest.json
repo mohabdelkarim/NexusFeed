@@ -1,50 +1,50 @@
 {
-  "digest_date": "2026-10-09",
-  "saved_at": "2026-10-09T22:19:20Z",
+  "digest_date": "2026-10-13",
+  "saved_at": "2026-10-13T22:20:08Z",
   "stories": [
     {
-      "article_url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google",
-      "full_title": "Ukraine\u2019s drones knock out AI data center belonging to \"Russia\u2019s Google\"",
-      "one_line_summary": "Ukrainian drones destroyed a Yandex AI supercomputer facility",
+      "article_url": "https://www.theverge.com/ai-artificial-intelligence/1010642/openai-employee-arrested-recording-device",
+      "full_title": "OpenAI employee arrested for allegedly planting a bug in a conference room",
+      "one_line_summary": "OpenAI engineer arrested after hidden recording device discovered",
       "rank": 1,
-      "score": 9.5,
-      "source_name": "Ars Technica",
-      "source_tier": "A"
-    },
-    {
-      "article_url": "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch",
-      "full_title": "The maker of non-text AI model Jev valued at $7.5B just weeks after launch",
-      "one_line_summary": "TypeSafe AI raised $870M, reaching a $7.5B valuation",
-      "rank": 2,
-      "score": 9.0,
-      "source_name": "TechCrunch",
-      "source_tier": "A"
-    },
-    {
-      "article_url": "https://www.theverge.com/ai-artificial-intelligence/1009090/anthropic-fake-homicide-information-philadelphia-pd-tip",
-      "full_title": "Anthropic\u2019s AI gave Philadelphia police a fake tip about an unsolved homicide",
-      "one_line_summary": "Anthropic model sent false homicide tip to Philadelphia PD",
-      "rank": 3,
-      "score": 8.5,
+      "score": 9.8,
       "source_name": "The Verge",
       "source_tier": "A"
     },
     {
-      "article_url": "https://www.marktechpost.com/2026/10/09/alibaba-qwen-releases-qwen-image-2-1-turbo-an-8-step-7b-image-model",
-      "full_title": "Alibaba Qwen Releases Qwen-Image-2.1-Turbo, an 8-Step 7B Image Model",
-      "one_line_summary": "Alibaba unveils faster 8-step Qwen-Image-2.1-Turbo model",
-      "rank": 4,
-      "score": 8.0,
-      "source_name": "MarkTechPost",
+      "article_url": "https://techcrunch.com/2026/10/13/judge-orders-openai-to-turn-over-hiring-records-in-apple-trade-secrets-case",
+      "full_title": "Judge orders OpenAI to turn over hiring records in Apple trade secrets case",
+      "one_line_summary": "Judge requires OpenAI to provide hiring data for Apple lawsuit",
+      "rank": 2,
+      "score": 9.5,
+      "source_name": "TechCrunch",
       "source_tier": "A"
     },
     {
-      "article_url": "https://www.marktechpost.com/2026/10/09/openai-decisions-api-hits-public-beta-with-10x-faster-typed-answers",
-      "full_title": "OpenAI Decisions API Hits Public Beta With 10x Faster Typed Answers",
-      "one_line_summary": "OpenAI releases faster Decisions API in public beta",
+      "article_url": "https://www.wired.com/story/openai-and-anthropic-tell-british-lawmakers-regulate-us",
+      "full_title": "OpenAI and Anthropic Tell British Lawmakers: Regulate Us",
+      "one_line_summary": "AI leaders urge UK regulators to impose new AI rules",
+      "rank": 3,
+      "score": 9.0,
+      "source_name": "Wired AI",
+      "source_tier": "A"
+    },
+    {
+      "article_url": "https://techcrunch.com/2026/10/13/google-play-now-supports-private-vibe-coded-apps-built-just-for-you",
+      "full_title": "Google Play now lets anyone build private, vibe-coded apps that run on Android",
+      "one_line_summary": "Google enables private AI-generated Android apps via Play Store",
+      "rank": 4,
+      "score": 8.5,
+      "source_name": "TechCrunch",
+      "source_tier": "A"
+    },
+    {
+      "article_url": "https://arstechnica.com/ai/2026/10/gemini-4-argon-begins-rolling-out-in-gemini-app-and-antigravity-but-only-if-you-pay",
+      "full_title": "Gemini 4 Argon begins rolling out in Gemini app and Antigravity, but only if you pay",
+      "one_line_summary": "Gemini 4 Argon released with discounted API rates for paid users",
       "rank": 5,
-      "score": 7.5,
-      "source_name": "MarkTechPost",
+      "score": 8.0,
+      "source_name": "Ars Technica",
       "source_tier": "A"
     }
   ]
