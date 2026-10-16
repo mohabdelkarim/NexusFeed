@@ -1,51 +1,42 @@
 {
-  "digest_date": "2026-10-13",
-  "saved_at": "2026-10-13T22:20:08Z",
+  "digest_date": "2026-10-16",
+  "saved_at": "2026-10-16T20:33:41Z",
   "stories": [
     {
-      "article_url": "https://www.theverge.com/ai-artificial-intelligence/1010642/openai-employee-arrested-recording-device",
-      "full_title": "OpenAI employee arrested for allegedly planting a bug in a conference room",
-      "one_line_summary": "OpenAI engineer arrested after hidden recording device discovered",
+      "article_url": "https://arstechnica.com/tech-policy/2026/10/meta-may-use-sweeping-new-commercial-tos-to-avoid-millions-in-ai-licensing-fees",
+      "full_title": "Meta may use sweeping new commercial TOS to avoid millions in AI licensing fees",
+      "one_line_summary": "Meta\u2019s new TOS could sidestep AI licensing costs, sparking industry backlash",
       "rank": 1,
-      "score": 9.8,
+      "score": 9.5,
+      "source_name": "Ars Technica",
+      "source_tier": "A"
+    },
+    {
+      "article_url": "https://www.theverge.com/tech/1012846/meta-business-terms-scrape-news-publishers",
+      "full_title": "Meta's new terms may allow it to train AI on news sites for free",
+      "one_line_summary": "Meta\u2019s updated terms could enable free AI training on news publishers\u2019 content",
+      "rank": 2,
+      "score": 9.0,
       "source_name": "The Verge",
       "source_tier": "A"
     },
     {
-      "article_url": "https://techcrunch.com/2026/10/13/judge-orders-openai-to-turn-over-hiring-records-in-apple-trade-secrets-case",
-      "full_title": "Judge orders OpenAI to turn over hiring records in Apple trade secrets case",
-      "one_line_summary": "Judge requires OpenAI to provide hiring data for Apple lawsuit",
-      "rank": 2,
-      "score": 9.5,
-      "source_name": "TechCrunch",
-      "source_tier": "A"
-    },
-    {
-      "article_url": "https://www.wired.com/story/openai-and-anthropic-tell-british-lawmakers-regulate-us",
-      "full_title": "OpenAI and Anthropic Tell British Lawmakers: Regulate Us",
-      "one_line_summary": "AI leaders urge UK regulators to impose new AI rules",
+      "article_url": "https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity",
+      "full_title": "India becomes the latest country to report rogue AI agent activity",
+      "one_line_summary": "India reports AI agents exploiting exposed credentials and cloud settings",
       "rank": 3,
-      "score": 9.0,
-      "source_name": "Wired AI",
-      "source_tier": "A"
-    },
-    {
-      "article_url": "https://techcrunch.com/2026/10/13/google-play-now-supports-private-vibe-coded-apps-built-just-for-you",
-      "full_title": "Google Play now lets anyone build private, vibe-coded apps that run on Android",
-      "one_line_summary": "Google enables private AI-generated Android apps via Play Store",
-      "rank": 4,
       "score": 8.5,
       "source_name": "TechCrunch",
       "source_tier": "A"
     },
     {
-      "article_url": "https://arstechnica.com/ai/2026/10/gemini-4-argon-begins-rolling-out-in-gemini-app-and-antigravity-but-only-if-you-pay",
-      "full_title": "Gemini 4 Argon begins rolling out in Gemini app and Antigravity, but only if you pay",
-      "one_line_summary": "Gemini 4 Argon released with discounted API rates for paid users",
-      "rank": 5,
+      "article_url": "https://www.infoq.com/news/2026/10/envharness-self-evolving-agents",
+      "full_title": "Google EnvHarness Enables Self-Evolving Agents to Learn in Dynamics Environments",
+      "one_line_summary": "Google releases EnvHarness, auto\u2011adapting training environments without modifying agents",
+      "rank": 4,
       "score": 8.0,
-      "source_name": "Ars Technica",
-      "source_tier": "A"
+      "source_name": "InfoQ AI/ML",
+      "source_tier": "B"
     }
   ]
 }

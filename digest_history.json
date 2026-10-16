@@ -1,21 +1,6 @@
 {
   "recent_titles": [
     {
-      "cleaned_title": "atlassian openai expand partnership turn enterprise knowledge into action",
-      "sent_at": "2026-10-06T22:22:40Z",
-      "url": "https://openai.com/index/atlassian-partnership"
-    },
-    {
-      "cleaned_title": "computing startup lambda raise $4b ahead planned ipo",
-      "sent_at": "2026-10-06T22:22:40Z",
-      "url": "https://techcrunch.com/2026/10/06/ai-computing-startup-lambda-to-raise-4b-ahead-of-planned-ipo"
-    },
-    {
-      "cleaned_title": "mistral releases mistral large 4 (le chonk): 1.05t parameter multimodal moe model",
-      "sent_at": "2026-10-06T22:22:40Z",
-      "url": "https://www.marktechpost.com/2026/10/06/mistral-ai-releases-mistral-large-4-le-chonk-a-1-05t-parameter-open-weight-multimodal-moe"
-    },
-    {
       "cleaned_title": "ukraine\u2019s drones knock out data center belonging \"russia\u2019s google\"",
       "sent_at": "2026-10-09T22:19:20Z",
       "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google"
@@ -64,6 +49,26 @@
       "cleaned_title": "gemini 4 argon begins rolling out gemini app antigravity, but only if you pay",
       "sent_at": "2026-10-13T22:20:08Z",
       "url": "https://arstechnica.com/ai/2026/10/gemini-4-argon-begins-rolling-out-in-gemini-app-and-antigravity-but-only-if-you-pay"
+    },
+    {
+      "cleaned_title": "meta may use sweeping commercial tos avoid millions licensing fees",
+      "sent_at": "2026-10-16T20:33:41Z",
+      "url": "https://arstechnica.com/tech-policy/2026/10/meta-may-use-sweeping-new-commercial-tos-to-avoid-millions-in-ai-licensing-fees"
+    },
+    {
+      "cleaned_title": "meta's terms may allow it train news sites free",
+      "sent_at": "2026-10-16T20:33:41Z",
+      "url": "https://www.theverge.com/tech/1012846/meta-business-terms-scrape-news-publishers"
+    },
+    {
+      "cleaned_title": "india becomes latest country report rogue agent activity",
+      "sent_at": "2026-10-16T20:33:41Z",
+      "url": "https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity"
+    },
+    {
+      "cleaned_title": "google envharness enables self-evolving agents learn dynamics environments",
+      "sent_at": "2026-10-16T20:33:41Z",
+      "url": "https://www.infoq.com/news/2026/10/envharness-self-evolving-agents"
     }
   ],
   "url_hashes": [
@@ -265,6 +270,10 @@
     "47b1c61501a00890c87ae57299388bf41e774b6c20c2bfab4298858697cb7d0f",
     "bb575fe9ad4e4a983b92eaf2f82faa1ed6bbfd8fca2f9b9a4b7aad432d510d77",
     "45d87d6cab7a70aff9e6ab94d83347f468848ac615ba4d058eb35d9210ce5d39",
-    "172801b07e38eb18deb676c6b3cbc75ea578eb466ec5b88a6d9303b6b39f02ed"
+    "172801b07e38eb18deb676c6b3cbc75ea578eb466ec5b88a6d9303b6b39f02ed",
+    "96acdef40d3eeadb1b6559ca999eb74bf5bb447aaab39b3e2bca627d3521e6b7",
+    "ca580b1475b7847a1b70cd0acc279b029b315ee708cea4f4be2fa3cae1b4ac52",
+    "43f5d9299a926e4d769e96d9ade269ccb10ae68f6224c7f4cc0dee8f18723719",
+    "3e8e3a571dc4628594ccb28bde3baf9a3c218a1faaf73ab4f8a3f5d5c165ca71"
   ]
 }
