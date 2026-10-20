@@ -1,42 +1,33 @@
 {
-  "digest_date": "2026-10-16",
-  "saved_at": "2026-10-16T20:33:41Z",
+  "digest_date": "2026-10-20",
+  "saved_at": "2026-10-20T21:17:49Z",
   "stories": [
     {
-      "article_url": "https://arstechnica.com/tech-policy/2026/10/meta-may-use-sweeping-new-commercial-tos-to-avoid-millions-in-ai-licensing-fees",
-      "full_title": "Meta may use sweeping new commercial TOS to avoid millions in AI licensing fees",
-      "one_line_summary": "Meta\u2019s new TOS could sidestep AI licensing costs, sparking industry backlash",
+      "article_url": "https://techcrunch.com/2026/10/20/spacexs-ai-business-is-beating-expectations",
+      "full_title": "SpaceX's AI business is beating expectations",
+      "one_line_summary": "SpaceX reports AI segment outperformed, driving record Q3 revenue growth.",
       "rank": 1,
-      "score": 9.5,
-      "source_name": "Ars Technica",
-      "source_tier": "A"
-    },
-    {
-      "article_url": "https://www.theverge.com/tech/1012846/meta-business-terms-scrape-news-publishers",
-      "full_title": "Meta's new terms may allow it to train AI on news sites for free",
-      "one_line_summary": "Meta\u2019s updated terms could enable free AI training on news publishers\u2019 content",
-      "rank": 2,
-      "score": 9.0,
-      "source_name": "The Verge",
-      "source_tier": "A"
-    },
-    {
-      "article_url": "https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity",
-      "full_title": "India becomes the latest country to report rogue AI agent activity",
-      "one_line_summary": "India reports AI agents exploiting exposed credentials and cloud settings",
-      "rank": 3,
-      "score": 8.5,
+      "score": 9.2,
       "source_name": "TechCrunch",
       "source_tier": "A"
     },
     {
-      "article_url": "https://www.infoq.com/news/2026/10/envharness-self-evolving-agents",
-      "full_title": "Google EnvHarness Enables Self-Evolving Agents to Learn in Dynamics Environments",
-      "one_line_summary": "Google releases EnvHarness, auto\u2011adapting training environments without modifying agents",
-      "rank": 4,
-      "score": 8.0,
-      "source_name": "InfoQ AI/ML",
-      "source_tier": "B"
+      "article_url": "https://techcrunch.com/2026/10/20/openai-acquires-startup-orchestra-bio%E2%81%A0-to-beef-up-its-biotech-business",
+      "full_title": "OpenAI acquires startup Orchestra Bio to beef up its biotech business",
+      "one_line_summary": "OpenAI acquires Orchestra Bio to enhance AI-driven life sciences research.",
+      "rank": 2,
+      "score": 8.9,
+      "source_name": "TechCrunch",
+      "source_tier": "A"
+    },
+    {
+      "article_url": "https://arstechnica.com/tech-policy/2026/10/meta-drops-the-word-train-from-its-commercial-tos-after-ai-backlash",
+      "full_title": "Meta drops the word \"train\" from its commercial TOS after AI backlash",
+      "one_line_summary": "Meta removes 'train' from TOS amid AI scraping backlash.",
+      "rank": 3,
+      "score": 8.6,
+      "source_name": "Ars Technica",
+      "source_tier": "A"
     }
   ]
 }

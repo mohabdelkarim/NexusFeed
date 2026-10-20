@@ -1,31 +1,6 @@
 {
   "recent_titles": [
     {
-      "cleaned_title": "ukraine\u2019s drones knock out data center belonging \"russia\u2019s google\"",
-      "sent_at": "2026-10-09T22:19:20Z",
-      "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google"
-    },
-    {
-      "cleaned_title": "maker non-text model jev valued $7.5b just weeks after launch",
-      "sent_at": "2026-10-09T22:19:20Z",
-      "url": "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch"
-    },
-    {
-      "cleaned_title": "anthropic\u2019s gave philadelphia police fake tip about unsolved homicide",
-      "sent_at": "2026-10-09T22:19:20Z",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1009090/anthropic-fake-homicide-information-philadelphia-pd-tip"
-    },
-    {
-      "cleaned_title": "alibaba qwen releases qwen-image-2.1-turbo, 8-step 7b image model",
-      "sent_at": "2026-10-09T22:19:20Z",
-      "url": "https://www.marktechpost.com/2026/10/09/alibaba-qwen-releases-qwen-image-2-1-turbo-an-8-step-7b-image-model"
-    },
-    {
-      "cleaned_title": "openai decisions api hits public beta 10x faster typed answers",
-      "sent_at": "2026-10-09T22:19:20Z",
-      "url": "https://www.marktechpost.com/2026/10/09/openai-decisions-api-hits-public-beta-with-10x-faster-typed-answers"
-    },
-    {
       "cleaned_title": "openai employee arrested allegedly planting bug conference room",
       "sent_at": "2026-10-13T22:20:08Z",
       "url": "https://www.theverge.com/ai-artificial-intelligence/1010642/openai-employee-arrested-recording-device"
@@ -69,6 +44,21 @@
       "cleaned_title": "google envharness enables self-evolving agents learn dynamics environments",
       "sent_at": "2026-10-16T20:33:41Z",
       "url": "https://www.infoq.com/news/2026/10/envharness-self-evolving-agents"
+    },
+    {
+      "cleaned_title": "spacex's business beating expectations",
+      "sent_at": "2026-10-20T21:17:49Z",
+      "url": "https://techcrunch.com/2026/10/20/spacexs-ai-business-is-beating-expectations"
+    },
+    {
+      "cleaned_title": "openai acquires startup orchestra bio beef up its biotech business",
+      "sent_at": "2026-10-20T21:17:49Z",
+      "url": "https://techcrunch.com/2026/10/20/openai-acquires-startup-orchestra-bio%E2%81%A0-to-beef-up-its-biotech-business"
+    },
+    {
+      "cleaned_title": "meta drops word \"train\" its commercial tos after backlash",
+      "sent_at": "2026-10-20T21:17:49Z",
+      "url": "https://arstechnica.com/tech-policy/2026/10/meta-drops-the-word-train-from-its-commercial-tos-after-ai-backlash"
     }
   ],
   "url_hashes": [
@@ -274,6 +264,9 @@
     "96acdef40d3eeadb1b6559ca999eb74bf5bb447aaab39b3e2bca627d3521e6b7",
     "ca580b1475b7847a1b70cd0acc279b029b315ee708cea4f4be2fa3cae1b4ac52",
     "43f5d9299a926e4d769e96d9ade269ccb10ae68f6224c7f4cc0dee8f18723719",
-    "3e8e3a571dc4628594ccb28bde3baf9a3c218a1faaf73ab4f8a3f5d5c165ca71"
+    "3e8e3a571dc4628594ccb28bde3baf9a3c218a1faaf73ab4f8a3f5d5c165ca71",
+    "695641ce96a702ee2898343e4f847286ca9e296b2c5768d803cf59de29ec23fd",
+    "17a7bae1cb1383ba170771a65e8bf2a4125948ecf4cb1e2fca187c8ae9a5b6f7",
+    "6a7ad8e441e64987a0ce116c06cc2ddb623a91066ac85cc92a648c210b97d5e4"
   ]
 }
