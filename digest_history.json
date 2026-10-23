@@ -1,51 +1,6 @@
 {
   "recent_titles": [
     {
-      "cleaned_title": "openai employee arrested allegedly planting bug conference room",
-      "sent_at": "2026-10-13T22:20:08Z",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1010642/openai-employee-arrested-recording-device"
-    },
-    {
-      "cleaned_title": "judge orders openai turn over hiring records apple trade secrets case",
-      "sent_at": "2026-10-13T22:20:08Z",
-      "url": "https://techcrunch.com/2026/10/13/judge-orders-openai-to-turn-over-hiring-records-in-apple-trade-secrets-case"
-    },
-    {
-      "cleaned_title": "openai anthropic tell british lawmakers: regulate us",
-      "sent_at": "2026-10-13T22:20:08Z",
-      "url": "https://www.wired.com/story/openai-and-anthropic-tell-british-lawmakers-regulate-us"
-    },
-    {
-      "cleaned_title": "google play now lets anyone build private, vibe-coded apps that run android",
-      "sent_at": "2026-10-13T22:20:08Z",
-      "url": "https://techcrunch.com/2026/10/13/google-play-now-supports-private-vibe-coded-apps-built-just-for-you"
-    },
-    {
-      "cleaned_title": "gemini 4 argon begins rolling out gemini app antigravity, but only if you pay",
-      "sent_at": "2026-10-13T22:20:08Z",
-      "url": "https://arstechnica.com/ai/2026/10/gemini-4-argon-begins-rolling-out-in-gemini-app-and-antigravity-but-only-if-you-pay"
-    },
-    {
-      "cleaned_title": "meta may use sweeping commercial tos avoid millions licensing fees",
-      "sent_at": "2026-10-16T20:33:41Z",
-      "url": "https://arstechnica.com/tech-policy/2026/10/meta-may-use-sweeping-new-commercial-tos-to-avoid-millions-in-ai-licensing-fees"
-    },
-    {
-      "cleaned_title": "meta's terms may allow it train news sites free",
-      "sent_at": "2026-10-16T20:33:41Z",
-      "url": "https://www.theverge.com/tech/1012846/meta-business-terms-scrape-news-publishers"
-    },
-    {
-      "cleaned_title": "india becomes latest country report rogue agent activity",
-      "sent_at": "2026-10-16T20:33:41Z",
-      "url": "https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity"
-    },
-    {
-      "cleaned_title": "google envharness enables self-evolving agents learn dynamics environments",
-      "sent_at": "2026-10-16T20:33:41Z",
-      "url": "https://www.infoq.com/news/2026/10/envharness-self-evolving-agents"
-    },
-    {
       "cleaned_title": "spacex's business beating expectations",
       "sent_at": "2026-10-20T21:17:49Z",
       "url": "https://techcrunch.com/2026/10/20/spacexs-ai-business-is-beating-expectations"
@@ -59,6 +14,31 @@
       "cleaned_title": "meta drops word \"train\" its commercial tos after backlash",
       "sent_at": "2026-10-20T21:17:49Z",
       "url": "https://arstechnica.com/tech-policy/2026/10/meta-drops-the-word-train-from-its-commercial-tos-after-ai-backlash"
+    },
+    {
+      "cleaned_title": "rapidly scaling online storage serve over 1 billion chatgpt users (part ii)",
+      "sent_at": "2026-10-23T21:02:43Z",
+      "url": "https://openai.com/index/scaling-storage-one-billion-users-part-two"
+    },
+    {
+      "cleaned_title": "updated google privacy policy says your gmail might be used advertising",
+      "sent_at": "2026-10-23T21:02:43Z",
+      "url": "https://arstechnica.com/gadgets/2026/10/updated-google-privacy-policy-says-your-gmail-might-be-used-for-advertising"
+    },
+    {
+      "cleaned_title": "jack dorsey\u2019s block made model that talks you like awkward friend",
+      "sent_at": "2026-10-23T21:02:43Z",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech"
+    },
+    {
+      "cleaned_title": "intel gets waiver after worries fuzzy us ban foreign-made robots may hit fabs",
+      "sent_at": "2026-10-23T21:02:43Z",
+      "url": "https://arstechnica.com/ai/2026/10/intel-gets-waiver-after-worries-fuzzy-us-ban-on-foreign-made-robots-may-hit-fabs"
+    },
+    {
+      "cleaned_title": "mit, martha minow speaks sustaining democracy, both using overcoming",
+      "sent_at": "2026-10-23T21:02:43Z",
+      "url": "https://news.mit.edu/2026/martha-minow-speaks-on-sustaining-democracy-using-overcoming-ai-1023"
     }
   ],
   "url_hashes": [
@@ -267,6 +247,11 @@
     "3e8e3a571dc4628594ccb28bde3baf9a3c218a1faaf73ab4f8a3f5d5c165ca71",
     "695641ce96a702ee2898343e4f847286ca9e296b2c5768d803cf59de29ec23fd",
     "17a7bae1cb1383ba170771a65e8bf2a4125948ecf4cb1e2fca187c8ae9a5b6f7",
-    "6a7ad8e441e64987a0ce116c06cc2ddb623a91066ac85cc92a648c210b97d5e4"
+    "6a7ad8e441e64987a0ce116c06cc2ddb623a91066ac85cc92a648c210b97d5e4",
+    "ee4c22366ef7e7abd786b0a4bc8d65774ddf350a3208b6c38568ae822ed0b9b0",
+    "1224eab7439ee9c5433ca4a1e76b9a9fe45f03c3104998047776105b3a5f1ec8",
+    "60b56cc3037dbda3a95126cc73210c100159f84d6a27e0e5e8c902267bb5813b",
+    "8c56e44a24b1f6b86bea44ac1882fe61dbf30956701c0eb01e1d0d1061a22e97",
+    "303db39c14fcfc30a17e89cf7a69849528296faeda91036a1bd539e22ebde677"
   ]
 }
