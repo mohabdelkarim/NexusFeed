@@ -1,44 +1,19 @@
 {
   "recent_titles": [
     {
-      "cleaned_title": "spacex's business beating expectations",
-      "sent_at": "2026-10-20T21:17:49Z",
-      "url": "https://techcrunch.com/2026/10/20/spacexs-ai-business-is-beating-expectations"
+      "cleaned_title": "statebench: testing language models track state changes over long documents",
+      "sent_at": "2026-11-03T22:56:16Z",
+      "url": "https://huggingface.co/blog/allenai/statebench"
     },
     {
-      "cleaned_title": "openai acquires startup orchestra bio beef up its biotech business",
-      "sent_at": "2026-10-20T21:17:49Z",
-      "url": "https://techcrunch.com/2026/10/20/openai-acquires-startup-orchestra-bio%E2%81%A0-to-beef-up-its-biotech-business"
+      "cleaned_title": "anthropic working system prove models\u2019 identity",
+      "sent_at": "2026-11-03T22:56:16Z",
+      "url": "https://techcrunch.com/2026/11/03/anthropic-is-working-on-a-system-to-prove-ai-models-identity"
     },
     {
-      "cleaned_title": "meta drops word \"train\" its commercial tos after backlash",
-      "sent_at": "2026-10-20T21:17:49Z",
-      "url": "https://arstechnica.com/tech-policy/2026/10/meta-drops-the-word-train-from-its-commercial-tos-after-ai-backlash"
-    },
-    {
-      "cleaned_title": "rapidly scaling online storage serve over 1 billion chatgpt users (part ii)",
-      "sent_at": "2026-10-23T21:02:43Z",
-      "url": "https://openai.com/index/scaling-storage-one-billion-users-part-two"
-    },
-    {
-      "cleaned_title": "updated google privacy policy says your gmail might be used advertising",
-      "sent_at": "2026-10-23T21:02:43Z",
-      "url": "https://arstechnica.com/gadgets/2026/10/updated-google-privacy-policy-says-your-gmail-might-be-used-for-advertising"
-    },
-    {
-      "cleaned_title": "jack dorsey\u2019s block made model that talks you like awkward friend",
-      "sent_at": "2026-10-23T21:02:43Z",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech"
-    },
-    {
-      "cleaned_title": "intel gets waiver after worries fuzzy us ban foreign-made robots may hit fabs",
-      "sent_at": "2026-10-23T21:02:43Z",
-      "url": "https://arstechnica.com/ai/2026/10/intel-gets-waiver-after-worries-fuzzy-us-ban-on-foreign-made-robots-may-hit-fabs"
-    },
-    {
-      "cleaned_title": "mit, martha minow speaks sustaining democracy, both using overcoming",
-      "sent_at": "2026-10-23T21:02:43Z",
-      "url": "https://news.mit.edu/2026/martha-minow-speaks-on-sustaining-democracy-using-overcoming-ai-1023"
+      "cleaned_title": "nvidia shows 3 ways speed up moe inference dgx spark, lifting ling-3.0-flash throughput 42.5%",
+      "sent_at": "2026-11-03T22:56:16Z",
+      "url": "https://www.marktechpost.com/2026/11/03/nvidia-dgx-spark-moe-inference-ling-3-0-flash"
     }
   ],
   "url_hashes": [
@@ -252,6 +227,9 @@
     "1224eab7439ee9c5433ca4a1e76b9a9fe45f03c3104998047776105b3a5f1ec8",
     "60b56cc3037dbda3a95126cc73210c100159f84d6a27e0e5e8c902267bb5813b",
     "8c56e44a24b1f6b86bea44ac1882fe61dbf30956701c0eb01e1d0d1061a22e97",
-    "303db39c14fcfc30a17e89cf7a69849528296faeda91036a1bd539e22ebde677"
+    "303db39c14fcfc30a17e89cf7a69849528296faeda91036a1bd539e22ebde677",
+    "8d86676710497099b1091deb38df79f93e8f69b79a1b2cfae325c64584a4dfbe",
+    "fa00b4f66d246a49cbf0733c518f120edfca04de12540abfcf8aedfd824e1762",
+    "baeaf101910a6c365b88ce2a2accbc665d4acda4ec9c556ab735cbe77cf2ec8d"
   ]
 }

@@ -1,51 +1,33 @@
 {
-  "digest_date": "2026-10-23",
-  "saved_at": "2026-10-23T21:02:43Z",
+  "digest_date": "2026-11-03",
+  "saved_at": "2026-11-03T22:56:16Z",
   "stories": [
     {
-      "article_url": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
-      "full_title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
-      "one_line_summary": "OpenAI scales storage to support 1B ChatGPT users, improving performance and reliability.",
+      "article_url": "https://huggingface.co/blog/allenai/statebench",
+      "full_title": "StateBench: Testing how language models track state changes over long documents",
+      "one_line_summary": "New benchmark tests language models' ability to track state changes over long documents.",
       "rank": 1,
       "score": 9.8,
-      "source_name": "OpenAI",
+      "source_name": "HuggingFace",
       "source_tier": "S"
     },
     {
-      "article_url": "https://arstechnica.com/gadgets/2026/10/updated-google-privacy-policy-says-your-gmail-might-be-used-for-advertising",
-      "full_title": "Updated Google privacy policy says your Gmail might be used for advertising",
-      "one_line_summary": "Google updates privacy policy, allowing Gmail data for personalized ad targeting.",
+      "article_url": "https://techcrunch.com/2026/11/03/anthropic-is-working-on-a-system-to-prove-ai-models-identity",
+      "full_title": "Anthropic is working on a system to prove AI models\u2019 identity",
+      "one_line_summary": "Anthropic develops FlashProve to verify AI model identity claims.",
       "rank": 2,
-      "score": 9.0,
-      "source_name": "Ars Technica",
+      "score": 9.5,
+      "source_name": "TechCrunch",
       "source_tier": "A"
     },
     {
-      "article_url": "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech",
-      "full_title": "Jack Dorsey\u2019s Block made an AI model that talks to you like an awkward new friend",
-      "one_line_summary": "Block launches Dessa, a full-duplex conversational AI trained solely on human dialogue.",
+      "article_url": "https://www.marktechpost.com/2026/11/03/nvidia-dgx-spark-moe-inference-ling-3-0-flash",
+      "full_title": "NVIDIA Shows 3 Ways to Speed Up MoE Inference on DGX Spark, Lifting Ling-3.0-flash Throughput 42.5%",
+      "one_line_summary": "NVIDIA boosts MoE inference throughput by 42.5% on DGX Spark.",
       "rank": 3,
-      "score": 8.5,
-      "source_name": "The Verge",
+      "score": 9.0,
+      "source_name": "MarkTechPost",
       "source_tier": "A"
-    },
-    {
-      "article_url": "https://arstechnica.com/ai/2026/10/intel-gets-waiver-after-worries-fuzzy-us-ban-on-foreign-made-robots-may-hit-fabs",
-      "full_title": "Intel gets waiver after worries fuzzy US ban on foreign-made robots may hit fabs",
-      "one_line_summary": "Intel receives waiver amid concerns over US ban on foreign-made robots affecting fabs.",
-      "rank": 4,
-      "score": 8.0,
-      "source_name": "Ars Technica",
-      "source_tier": "A"
-    },
-    {
-      "article_url": "https://news.mit.edu/2026/martha-minow-speaks-on-sustaining-democracy-using-overcoming-ai-1023",
-      "full_title": "At MIT, Martha Minow speaks on sustaining democracy, both by using and overcoming AI",
-      "one_line_summary": "Martha Minow warns of AI's democratic risks and proposes civic safeguards.",
-      "rank": 5,
-      "score": 7.5,
-      "source_name": "MIT News AI",
-      "source_tier": "B"
     }
   ]
 }
