@@ -14,6 +14,21 @@
       "cleaned_title": "nvidia shows 3 ways speed up moe inference dgx spark, lifting ling-3.0-flash throughput 42.5%",
       "sent_at": "2026-11-03T22:56:16Z",
       "url": "https://www.marktechpost.com/2026/11/03/nvidia-dgx-spark-moe-inference-ling-3-0-flash"
+    },
+    {
+      "cleaned_title": "all latest updates data centers",
+      "sent_at": "2026-11-06T22:45:04Z",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/902546/data-centers-ai-energy-power-grids-controversy"
+    },
+    {
+      "cleaned_title": "meta introduces spaces, way collaborate your muse agent",
+      "sent_at": "2026-11-06T22:45:04Z",
+      "url": "https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent"
+    },
+    {
+      "cleaned_title": "free chinese models are getting scary good hacking",
+      "sent_at": "2026-11-06T22:45:04Z",
+      "url": "https://www.wired.com/story/free-chinese-ai-models-are-getting-scary-good-at-hacking"
     }
   ],
   "url_hashes": [
@@ -230,6 +245,9 @@
     "303db39c14fcfc30a17e89cf7a69849528296faeda91036a1bd539e22ebde677",
     "8d86676710497099b1091deb38df79f93e8f69b79a1b2cfae325c64584a4dfbe",
     "fa00b4f66d246a49cbf0733c518f120edfca04de12540abfcf8aedfd824e1762",
-    "baeaf101910a6c365b88ce2a2accbc665d4acda4ec9c556ab735cbe77cf2ec8d"
+    "baeaf101910a6c365b88ce2a2accbc665d4acda4ec9c556ab735cbe77cf2ec8d",
+    "f8fe21ba7f368ed10ce0a3c0e1659178f895d9eae8a89112274a09de130c90c2",
+    "a8fc5de6487f58f91f0ae051f179faed5006c431b6fb6911daf336eab7c987ba",
+    "224c3d5c5f30d73d95d2e6790c1a0176175404f6bbfa1c6563944f8ef308ebdd"
   ]
 }

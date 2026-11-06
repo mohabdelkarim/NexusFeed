@@ -1,32 +1,32 @@
 {
-  "digest_date": "2026-11-03",
-  "saved_at": "2026-11-03T22:56:16Z",
+  "digest_date": "2026-11-06",
+  "saved_at": "2026-11-06T22:45:04Z",
   "stories": [
     {
-      "article_url": "https://huggingface.co/blog/allenai/statebench",
-      "full_title": "StateBench: Testing how language models track state changes over long documents",
-      "one_line_summary": "New benchmark tests language models' ability to track state changes over long documents.",
+      "article_url": "https://www.theverge.com/ai-artificial-intelligence/902546/data-centers-ai-energy-power-grids-controversy",
+      "full_title": "All the latest updates on AI data centers",
+      "one_line_summary": "New AI data centers face energy, grid, and policy challenges amid rapid expansion.",
       "rank": 1,
-      "score": 9.8,
-      "source_name": "HuggingFace",
-      "source_tier": "S"
+      "score": 9.5,
+      "source_name": "The Verge",
+      "source_tier": "A"
     },
     {
-      "article_url": "https://techcrunch.com/2026/11/03/anthropic-is-working-on-a-system-to-prove-ai-models-identity",
-      "full_title": "Anthropic is working on a system to prove AI models\u2019 identity",
-      "one_line_summary": "Anthropic develops FlashProve to verify AI model identity claims.",
+      "article_url": "https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent",
+      "full_title": "Meta introduces Spaces, a new way to collaborate with your Muse agent",
+      "one_line_summary": "Meta launches Muse Spaces, letting AI assistants build custom app-like experiences.",
       "rank": 2,
-      "score": 9.5,
+      "score": 8.8,
       "source_name": "TechCrunch",
       "source_tier": "A"
     },
     {
-      "article_url": "https://www.marktechpost.com/2026/11/03/nvidia-dgx-spark-moe-inference-ling-3-0-flash",
-      "full_title": "NVIDIA Shows 3 Ways to Speed Up MoE Inference on DGX Spark, Lifting Ling-3.0-flash Throughput 42.5%",
-      "one_line_summary": "NVIDIA boosts MoE inference throughput by 42.5% on DGX Spark.",
+      "article_url": "https://www.wired.com/story/free-chinese-ai-models-are-getting-scary-good-at-hacking",
+      "full_title": "Free Chinese AI Models Are Getting Scary Good at Hacking",
+      "one_line_summary": "Chinese AI models match OpenAI in hacking simulations, raising security concerns.",
       "rank": 3,
-      "score": 9.0,
-      "source_name": "MarkTechPost",
+      "score": 8.5,
+      "source_name": "Wired AI",
       "source_tier": "A"
     }
   ]
