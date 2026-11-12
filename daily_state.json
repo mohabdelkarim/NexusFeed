@@ -1,6 +1,6 @@
 {
   "date": "2026-11-12",
-  "last_post_time": "2026-11-12T15:39:58Z",
+  "last_post_time": "2026-11-12T22:29:21Z",
   "pending_best": {
     "authoritative_score": 7.0,
     "canonical_url": "https://news.mit.edu/2026/new-research-could-lead-faster-trustworthy-ai-models-climate-prediction-1112",
@@ -25,5 +25,5 @@
     "url": "https://news.mit.edu/2026/new-research-could-lead-faster-trustworthy-ai-models-climate-prediction-1112",
     "url_hash": "d652bf4e1f2db5615f136d8f8675842657b484f5637968a7a13607497d412676"
   },
-  "posts_today": 2
+  "posts_today": 3
 }

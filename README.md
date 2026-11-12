@@ -33,6 +33,9 @@
 
 <p align="center"><sub>Live clears · refreshed by GitHub Actions</sub></p>
 
+> [Muse can now place calls to U.S. businesses — if you pay](https://techcrunch.com/2026/11/12/muse-can-now-place-calls-to-u-s-businesses-if-you-pay)  
+> TechCrunch · Nov 12
+
 > [Google pushes privacy angle as Gemini-powered smartglasses debut starting at $395](https://arstechnica.com/google/2026/11/google-pushes-privacy-angle-as-gemini-powered-smartglasses-debut-starting-at-395)  
 > Ars Technica · Nov 12
 
@@ -53,9 +56,6 @@
 
 > [JetBrains Open-Sources KotlinLLM: Smart Macros That Generate Kotlin Source Code at Runtime and Hot-Reload It…](https://www.marktechpost.com/2026/07/31/jetbrains-research-open-sources-kotlinllm-intellij-plugin-kotlin-runtime-llm)  
 > MarkTechPost · Jul 31
-
-> [Meta accused of using biased AI targeting for mass layoffs](https://www.theverge.com/tech/965486/meta-lawsuit-former-employees-ai-layoffs)  
-> The Verge · Jul 14
 
 <p align="center"><sub>8 clears · full state in <code>posted_now.json</code></sub></p>
 

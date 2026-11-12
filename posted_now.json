@@ -1,5 +1,27 @@
 [
   {
+    "authoritative_score": 9.5,
+    "canonical_url": "https://techcrunch.com/2026/11/12/muse-can-now-place-calls-to-u-s-businesses-if-you-pay",
+    "published_at": "2026-11-12T22:22:28Z",
+    "saved_at": "2026-11-12T22:29:21Z",
+    "score": {
+      "freshness_score": 2.0,
+      "impact_score": 3.0,
+      "novelty_score": 3.0,
+      "reason": "New release with broad impact and fresh",
+      "red_flag": false,
+      "red_flag_reason": null,
+      "source_score": 1.5,
+      "total_score": 9.5
+    },
+    "source": "TechCrunch",
+    "summary": "Muse's AI can now place outbound calls to US businesses \u2014 but it's not free.",
+    "tier": "A",
+    "title": "Muse can now place calls to U.S. businesses \u2014 if you pay",
+    "url": "https://techcrunch.com/2026/11/12/muse-can-now-place-calls-to-u-s-businesses-if-you-pay",
+    "url_hash": "ab23a7fa21e24fb3c24226790bb08f711e3c8669c84a5666d3351f7cbde7aa1f"
+  },
+  {
     "authoritative_score": 9.0,
     "canonical_url": "https://arstechnica.com/google/2026/11/google-pushes-privacy-angle-as-gemini-powered-smartglasses-debut-starting-at-395",
     "published_at": "2026-11-12T14:50:17Z",
