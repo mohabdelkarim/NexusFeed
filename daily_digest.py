@@ -13,13 +13,17 @@ import requests
 
 from news_bot import (
     FEEDS,
+    GROQ_MAX_COMPLETION_TOKENS,
     GROQ_MODEL,
+    GROQ_REASONING_EFFORT,
     GROQ_URL,
     Article,
     canonicalize_url,
     clean_whitespace,
     configure_logging,
+    diversify_candidates,
     fetch_feed,
+    is_safe_http_url,
     load_local_env_file,
     stable_hash,
     truncate,
@@ -27,8 +31,8 @@ from news_bot import (
 )
 
 
-MAX_DIGEST_CANDIDATES = 30
-REDUCED_DIGEST_CANDIDATES = 15
+MAX_DIGEST_CANDIDATES = 18
+REDUCED_DIGEST_CANDIDATES = 10
 REQUIRED_SECRETS = ("GROQ_API_KEY",)
 DIGEST_HISTORY_FILE = "digest_history.json"
 DIGEST_OUTPUT_FILE = "latest_digest.json"
@@ -213,7 +217,11 @@ def fetch_digest_candidates(now: datetime) -> list[Article]:
                 articles.extend(batch)
             except Exception as exc:  # pragma: no cover
                 logging.exception("Unexpected error while processing %s: %s", feed.name, exc)
-    return sorted(articles, key=lambda item: -item.published_ts)
+    return diversify_candidates(
+        sorted(articles, key=lambda item: -item.published_ts),
+        max_per_source=3,
+        max_total=MAX_DIGEST_CANDIDATES,
+    )
 
 
 def build_digest_prompt(candidates: list[Article]) -> str:
@@ -243,7 +251,8 @@ def call_groq_for_digest(candidates: list[Article], api_key: str) -> dict[str, A
         payload = {
             "model": GROQ_MODEL,
             "temperature": 0.3,
-            "max_completion_tokens": 1500,
+            "max_completion_tokens": GROQ_MAX_COMPLETION_TOKENS,
+            "reasoning_effort": GROQ_REASONING_EFFORT,
             "response_format": {"type": "json_object"},
             "messages": [
                 {"role": "system", "content": DIGEST_SYSTEM_PROMPT},
@@ -330,6 +339,7 @@ def normalize_digest_result(result: dict[str, Any], now: datetime) -> tuple[list
             or not normalized_item["one_line_summary"]
             or not normalized_item["source_name"]
             or not normalized_item["article_url"]
+            or not is_safe_http_url(normalized_item["article_url"])
         ):
             continue
         normalized.append(normalized_item)
@@ -357,7 +367,7 @@ def main() -> int:
     now = utc_now()
     history = load_digest_history()
 
-    candidates = fetch_digest_candidates(now)[:MAX_DIGEST_CANDIDATES]
+    candidates = fetch_digest_candidates(now)
     logging.info("Prepared %s digest candidate(s).", len(candidates))
     if not candidates:
         logging.warning("No digest candidates found in the last 24 hours.")

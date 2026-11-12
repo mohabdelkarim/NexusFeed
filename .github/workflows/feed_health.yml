@@ -47,4 +47,4 @@ jobs:
               - type: section
                 text:
                   type: mrkdwn
-                  text: "*${{ github.repository }}* — `${{ github.workflow }}` failed\n<${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|View run>"
+                  text: "*${{ github.repository }}* / `${{ github.workflow }}` failed\n<${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|View run>"

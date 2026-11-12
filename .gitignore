@@ -8,3 +8,4 @@ __pycache__/
 .DS_Store
 .cursor/
 feed_health.json
+run_result.json

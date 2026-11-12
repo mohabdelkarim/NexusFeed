@@ -33,6 +33,9 @@
 
 <p align="center"><sub>Live clears · refreshed by GitHub Actions</sub></p>
 
+> [IBM Announces IBM Quantum Nighthawk r3: A New Processor to Support 10k Quantum Operations on 520…](https://www.marktechpost.com/2026/11/12/ibm-quantum-nighthawk-r3-520-qubits-1040-qubit-system-2027)  
+> MarkTechPost · Nov 12
+
 > [AMIE, our research medical AI system, demonstrates real-time clinical video consultation capabilities in a…](https://blog.google/innovation-and-ai/models-and-research/google-research/amie-video-consultations)  
 > Google AI · Aug 11
 
@@ -53,9 +56,6 @@
 
 > [Spotify expands its AI push with a ChatGPT-like music assistant](https://techcrunch.com/2026/07/14/spotify-expands-its-ai-push-with-a-chatgpt-like-music-assistant)  
 > TechCrunch · Jul 14
-
-> [Linux Foundation Launches Akrites to Protect Critical Open Source Software from AI-Powered Threats](https://www.infoq.com/news/2026/07/akrites-open-source-ai-threats)  
-> InfoQ AI/ML · Jul 10
 
 <p align="center"><sub>8 clears · full state in <code>posted_now.json</code></sub></p>
 
@@ -102,7 +102,7 @@ Drop your `GROQ_API_KEY` into `.env`, then:
 python main.py
 ```
 
-Same secret in Actions. The desk opens Tuesday and Friday.
+Same secret in Actions. The desk opens Tuesday through Friday (UTC cron slots).
 
 <details>
 <summary><code>// operator notes</code></summary>

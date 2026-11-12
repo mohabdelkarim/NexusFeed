@@ -3,11 +3,11 @@ name: NexusFeed Curator
 on:
   workflow_dispatch:
   schedule:
-    # Mon off (keep Level 1 base from other repos). No weekend runs.
-    - cron: "0 10,14,18 * * 2"          # Tue: 3 slots (Level 2)
-    - cron: "0 8,10,12,14,16,18 * * 3"   # Wed: 6 slots (Level 3)
-    - cron: "0 7,9,11,13,15,17,19,21 * * 4"  # Thu: 8 slots (Level 4)
-    - cron: "0 10,14,18 * * 5"          # Fri: 3 slots (Level 2)
+    # Mon off. No weekend runs.
+    - cron: "0 10,14,18 * * 2"          # Tue: 3 slots
+    - cron: "0 8,10,12,14,16,18 * * 3"   # Wed: 6 slots
+    - cron: "0 7,9,11,13,15,17,19,21 * * 4"  # Thu: 8 slots
+    - cron: "0 10,14,18 * * 5"          # Fri: 3 slots
 
 permissions:
   contents: write
@@ -38,12 +38,16 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Run unit tests
+        run: python -m unittest discover -s tests -v
+
       - name: Run news curator
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: python main.py
 
       - name: Commit state files
+        if: success()
         run: |
           git config user.name "MOHAbdelkarim"
           git config user.email "mohaabdelkarim2@gmail.com"
@@ -54,17 +58,24 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Slack digest on success
+      - name: Slack notify only on new clear
         if: success()
         env:
           SLACK_WEBHOOK_AI_PIPELINES: ${{ secrets.SLACK_WEBHOOK_AI_PIPELINES }}
         run: |
           if [ -z "$SLACK_WEBHOOK_AI_PIPELINES" ]; then exit 0; fi
-          TITLE=$(python -c "import json; d=json.load(open('posted_now.json',encoding='utf-8')); item=d[0] if isinstance(d,list) and d else {}; print(item.get('title','NexusFeed run')[:120])" 2>/dev/null || echo "NexusFeed run")
-          URL=$(python -c "import json; d=json.load(open('posted_now.json',encoding='utf-8')); item=d[0] if isinstance(d,list) and d else {}; print(item.get('url',''))" 2>/dev/null || echo "")
+          if [ ! -f run_result.json ]; then exit 0; fi
+          POSTED=$(python -c "import json; print(json.load(open('run_result.json',encoding='utf-8')).get('posted', False))")
+          if [ "$POSTED" != "True" ]; then
+            echo "No new clear this run; skipping Slack."
+            exit 0
+          fi
+          TITLE=$(python -c "import json; d=json.load(open('run_result.json',encoding='utf-8')); print(str(d.get('title') or 'NexusFeed clear')[:120])")
+          URL=$(python -c "import json; d=json.load(open('run_result.json',encoding='utf-8')); print(str(d.get('url') or ''))")
+          SCORE=$(python -c "import json; d=json.load(open('run_result.json',encoding='utf-8')); print(d.get('score',''))")
           python slack_notify.py --digest \
-            --title "NexusFeed" \
-            --text "*${TITLE}*\n${URL}" \
+            --title "NexusFeed clear" \
+            --text "*${TITLE}*\nscore ${SCORE}\n${URL}" \
             --webhook-env SLACK_WEBHOOK_AI_PIPELINES
 
       - name: Notify Slack on failure
@@ -79,4 +90,4 @@ jobs:
               - type: section
                 text:
                   type: mrkdwn
-                  text: "*${{ github.repository }}* — `${{ github.workflow }}` failed\n<${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|View run>"
+                  text: "*${{ github.repository }}* / `${{ github.workflow }}` failed\n<${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|View run>"

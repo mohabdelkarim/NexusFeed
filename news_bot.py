@@ -25,19 +25,27 @@ POSTED_PATH = ROOT / "posted_articles.json"
 STATE_PATH = ROOT / "daily_state.json"
 POSTED_NOW_PATH = ROOT / "posted_now.json"
 README_PATH = ROOT / "README.md"
+RUN_RESULT_PATH = ROOT / "run_result.json"
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
 GROQ_MODEL = "openai/gpt-oss-20b"
-MAX_CANDIDATES = 25
+GROQ_REASONING_EFFORT = "low"
+GROQ_MAX_COMPLETION_TOKENS = 8192
+MAX_CANDIDATES = 12
+MAX_ARTICLES_PER_FEED = 3
+MAX_SUMMARY_CHARS = 160
 MAX_POSTS_PER_DAY = 3
 MIN_HOURS_BETWEEN_POSTS = 3
 MAX_ARTICLE_AGE_HOURS = 24
 TITLE_SIMILARITY_THRESHOLD = 0.80
-POSTED_RETENTION_DAYS = 7
+POSTED_RETENTION_DAYS = 30
 RECENT_TITLE_LOOKBACK_HOURS = 24
 MAX_POSTED_NOW_ITEMS = 20
 README_FEED_LIMIT = 8
 POST_NOW_MIN_SCORE = 8.5
 PENDING_MIN_SCORE = 6.0
+SOURCE_SCORE_BY_TIER = {"S": 2.0, "A": 1.5, "B": 1.0, "C": 0.5}
+# Ambiguous phrases only count at the start of a title (avoids "What Is a Paper For?").
+START_ANCHORED_RED_FLAGS = frozenset({"what is", "how to", "guide to"})
 REQUIRED_SECRETS = [
     "GROQ_API_KEY",
 ]
@@ -88,6 +96,12 @@ RED_FLAG_PATTERNS = [
     "step-by-step",
     "cheat sheet",
     "roundup",
+    "author q+a",
+    "author q & a",
+    "q+a:",
+    "q & a:",
+    "sponsored",
+    "week in review",
 ]
 STOP_WORDS = {
     "a",
@@ -186,28 +200,36 @@ DECISION RULES:
 - best_score >= 6.0 -> SAVE_PENDING
 - best_score < 6.0  -> SKIP
 
-Respond ONLY with valid JSON. No markdown, no explanation outside JSON.
+Respond ONLY with valid JSON at the top level. No markdown fence.
+Required top-level keys:
+{
+  "articles": [
+    {
+      "index": 0,
+      "title": "string",
+      "novelty_score": 0.0,
+      "impact_score": 0.0,
+      "freshness_score": 0.0,
+      "source_score": 0.0,
+      "total_score": 0.0,
+      "red_flag": false,
+      "red_flag_reason": null,
+      "reason": "one sentence"
+    }
+  ],
+  "best_index": 0,
+  "best_score": 0.0,
+  "recommendation": "POST_NOW"
+}
+Do not wrap the object in response_schema or any other parent key.
 """.strip()
 
-GROQ_RESPONSE_SCHEMA = {
-    "articles": [
-        {
-            "index": 0,
-            "title": "string",
-            "novelty_score": 0.0,
-            "impact_score": 0.0,
-            "freshness_score": 0.0,
-            "source_score": 0.0,
-            "total_score": 0.0,
-            "red_flag": False,
-            "red_flag_reason": "string or null",
-            "reason": "string (1 sentence why this score)",
-        }
-    ],
-    "best_index": 0,
-    "best_score": 0.0,
-    "recommendation": "POST_NOW | SAVE_PENDING | SKIP",
-}
+GROQ_EXPECTED_RESPONSE_KEYS = (
+    "articles",
+    "best_index",
+    "best_score",
+    "recommendation",
+)
 
 
 @dataclass(frozen=True)
@@ -216,6 +238,7 @@ class FeedSource:
     tier: str
     urls: tuple[str, ...]
     topic_keywords: tuple[str, ...] = ()
+    max_articles: int = MAX_ARTICLES_PER_FEED
 
 
 @dataclass
@@ -300,13 +323,14 @@ FEEDS: tuple[FeedSource, ...] = (
     ),
     # Direct AI News RSS is blocked from GitHub Actions (HTTP 202 WAF).
     FeedSource("VentureBeat AI", "B", ("https://venturebeat.com/category/ai/feed/",)),
-    # SSL error in local env only - works fine on GitHub Actions runner
-    FeedSource("arXiv cs.AI", "C", ("https://rss.arxiv.org/rss/cs.AI",)),
+    # High-volume feed: keep a tiny slice so it cannot dominate scoring.
+    FeedSource("arXiv cs.AI", "C", ("https://rss.arxiv.org/rss/cs.AI",), max_articles=2),
     FeedSource(
         "Hacker News",
         "C",
         ("https://news.ycombinator.com/rss",),
         topic_keywords=GENERAL_TOPIC_KEYWORDS,
+        max_articles=4,
     ),
 )
 
@@ -492,8 +516,11 @@ def cleanup_posted_history(posted: dict[str, Any], now: datetime) -> None:
 def reset_state_if_needed(state: dict[str, Any], now: datetime) -> tuple[dict[str, Any], bool]:
     if state.get("date") == now.date().isoformat():
         return state, False
-    logging.info("Resetting daily state for new UTC day.")
-    return default_state(now), True
+    logging.info("Resetting daily counters for new UTC day (keeping pending_best).")
+    pending_best = state.get("pending_best") if isinstance(state.get("pending_best"), dict) else None
+    refreshed = default_state(now)
+    refreshed["pending_best"] = pending_best
+    return refreshed, True
 
 
 def clean_whitespace(value: str) -> str:
@@ -563,9 +590,16 @@ def _get_article_field(article: Any, field: str) -> str:
 
 
 def find_local_red_flag_pattern(article: Any) -> str | None:
-    text = ((_get_article_field(article, "title") + " " + _get_article_field(article, "summary")[:300]).lower())
+    title = _get_article_field(article, "title").lower()
+    summary = _get_article_field(article, "summary")[:300].lower()
     for pattern in RED_FLAG_PATTERNS:
-        if pattern in text:
+        escaped = re.escape(pattern)
+        boundary = rf"(?<![a-z0-9]){escaped}(?![a-z0-9])"
+        if pattern in START_ANCHORED_RED_FLAGS:
+            if re.match(rf"^{escaped}\b", title.strip()):
+                return pattern
+            continue
+        if re.search(boundary, title) or re.search(boundary, summary):
             return pattern
     return None
 
@@ -664,7 +698,8 @@ def fetch_feed(feed: FeedSource, now: datetime) -> list[Article]:
             )
         )
 
-    return sorted(articles, key=lambda item: item.published_ts, reverse=True)
+    capped = sorted(articles, key=lambda item: item.published_ts, reverse=True)[: max(0, feed.max_articles)]
+    return capped
 
 
 def fetch_all_feeds(now: datetime) -> list[Article]:
@@ -680,6 +715,28 @@ def fetch_all_feeds(now: datetime) -> list[Article]:
             except Exception as exc:  # pragma: no cover
                 logging.exception("Unexpected error while processing %s: %s", feed.name, exc)
     return sorted(all_articles, key=lambda item: -item.published_ts)
+
+
+def diversify_candidates(
+    articles: list[Article],
+    *,
+    max_per_source: int = MAX_ARTICLES_PER_FEED,
+    max_total: int = MAX_CANDIDATES,
+) -> list[Article]:
+    """Prefer fresher stories while keeping source mix so one feed cannot fill the ballot."""
+    per_source: dict[str, int] = {}
+    chosen: list[Article] = []
+    for article in sorted(articles, key=lambda item: (-item.published_ts, item.source_rank)):
+        taken = per_source.get(article.source, 0)
+        if taken >= max_per_source:
+            continue
+        chosen.append(article)
+        per_source[article.source] = taken + 1
+        if len(chosen) >= max_total:
+            break
+    for index, article in enumerate(chosen):
+        article.index = index
+    return chosen
 
 
 def is_duplicate_against_posted(article: Article, posted: dict[str, Any], now: datetime) -> bool:
@@ -725,9 +782,131 @@ def dedupe_candidates(articles: list[Article], posted: dict[str, Any], now: date
         if current_key < existing_key:
             chosen[duplicate_index] = article
 
-    for index, article in enumerate(sorted(chosen, key=lambda item: -item.published_ts)):
-        article.index = index
-    return chosen[:MAX_CANDIDATES]
+    return diversify_candidates(chosen, max_per_source=MAX_ARTICLES_PER_FEED, max_total=MAX_CANDIDATES)
+
+
+def compute_freshness_score(published_ts: float, now: datetime) -> float:
+    hours = max(0.0, (now.timestamp() - published_ts) / 3600.0)
+    if hours < 1:
+        return 2.0
+    if hours < 3:
+        return 1.5
+    if hours < 6:
+        return 1.0
+    if hours < 12:
+        return 0.5
+    return 0.0
+
+
+def enforce_local_article_scores(score: dict[str, Any], article: Article, now: datetime) -> dict[str, Any]:
+    """Override model-controlled fields that we can compute deterministically."""
+    fixed = dict(score)
+    novelty = max(0.0, min(3.0, float(fixed.get("novelty_score", 0.0) or 0.0)))
+    impact = max(0.0, min(3.0, float(fixed.get("impact_score", 0.0) or 0.0)))
+    freshness = compute_freshness_score(article.published_ts, now)
+    source = SOURCE_SCORE_BY_TIER.get(article.tier, 0.5)
+    total = round(novelty + impact + freshness + source, 2)
+    fixed["novelty_score"] = round(novelty, 2)
+    fixed["impact_score"] = round(impact, 2)
+    fixed["freshness_score"] = freshness
+    fixed["source_score"] = source
+    fixed["total_score"] = total
+    fixed["authoritative_score"] = total
+    if abs(float(score.get("total_score", total)) - total) > 0.25:
+        logging.info(
+            "Local score enforcement for [%s]: model_total=%.2f local_total=%.2f (freshness %.2f->%.2f).",
+            article.title[:80],
+            float(score.get("total_score", 0.0) or 0.0),
+            total,
+            float(score.get("freshness_score", 0.0) or 0.0),
+            freshness,
+        )
+    return fixed
+
+
+def is_safe_http_url(url: str) -> bool:
+    try:
+        parsed = urlparse(clean_whitespace(url))
+    except ValueError:
+        return False
+    if parsed.scheme not in {"http", "https"}:
+        return False
+    if not parsed.netloc or parsed.netloc.lower() in {"localhost", "127.0.0.1"}:
+        return False
+    return True
+
+
+def unwrap_groq_payload(result: dict[str, Any]) -> dict[str, Any]:
+    """Models sometimes wrap the contract under response_schema; unwrap that shape."""
+    if not isinstance(result, dict):
+        return {}
+    if isinstance(result.get("articles"), list):
+        return result
+    nested = result.get("response_schema")
+    if isinstance(nested, dict) and isinstance(nested.get("articles"), list):
+        logging.warning("Groq wrapped JSON under response_schema; unwrapping.")
+        return nested
+    for value in result.values():
+        if isinstance(value, dict) and isinstance(value.get("articles"), list):
+            logging.warning("Groq wrapped JSON under nested key; unwrapping.")
+            return value
+    return result
+
+
+def seed_posted_from_posted_now(posted: dict[str, Any], items: list[dict[str, Any]], now: datetime) -> None:
+    """Keep dedupe memory aligned with README clears inside the retention window."""
+    cutoff = now - timedelta(days=POSTED_RETENTION_DAYS)
+    existing_hashes = set(posted.get("hashes", []))
+    for item in items:
+        if not isinstance(item, dict):
+            continue
+        url_hash = item.get("url_hash")
+        if not isinstance(url_hash, str) or not url_hash:
+            continue
+        saved_at = parse_iso_datetime(str(item.get("saved_at") or item.get("published_at") or ""))
+        if not saved_at or saved_at < cutoff:
+            continue
+        if url_hash in existing_hashes:
+            continue
+        posted.setdefault("hash_records", []).append(
+            {"hash": url_hash, "posted_at": isoformat_utc(saved_at)}
+        )
+        cleaned = clean_whitespace(str(item.get("cleaned_title") or normalize_title(str(item.get("title", "")))))
+        if cleaned:
+            posted.setdefault("recent_titles", []).append(
+                {
+                    "cleaned_title": cleaned,
+                    "posted_at": isoformat_utc(saved_at),
+                    "source": item.get("source", ""),
+                    "score": item_authoritative_score(item),
+                }
+            )
+        existing_hashes.add(url_hash)
+    cleanup_posted_history(posted, now)
+
+
+def write_run_result(
+    path: Path,
+    *,
+    posted: bool,
+    title: str = "",
+    url: str = "",
+    reason: str = "",
+    score: float = 0.0,
+) -> None:
+    payload = {
+        "posted": bool(posted),
+        "title": clean_whitespace(title)[:200],
+        "url": clean_whitespace(url)[:500],
+        "reason": clean_whitespace(reason)[:80],
+        "score": round(float(score), 2),
+        "written_at": isoformat_utc(utc_now()),
+    }
+    temp_path = path.with_suffix(path.suffix + ".tmp")
+    with temp_path.open("w", encoding="utf-8", newline="\n") as handle:
+        json.dump(payload, handle, indent=2, sort_keys=True)
+        handle.write("\n")
+    temp_path.replace(path)
 
 
 def hours_ago_text(published_ts: float, now: datetime) -> str:
@@ -767,7 +946,7 @@ def parse_retry_after(header_value: str, fallback: float) -> float:
 def rebuild_prompt_with_summary_limit(candidates: list[Article], char_limit: int) -> str:
     now = utc_now()
     prompt_payload = {
-        "response_schema": GROQ_RESPONSE_SCHEMA,
+        "expected_response_keys": list(GROQ_EXPECTED_RESPONSE_KEYS),
         "candidates": [
             {
                 "index": article.index,
@@ -787,12 +966,12 @@ def rebuild_prompt_with_summary_limit(candidates: list[Article], char_limit: int
 
 def build_groq_prompt(candidates: list[Article], now: datetime) -> str:
     prompt_payload = {
-        "response_schema": GROQ_RESPONSE_SCHEMA,
+        "expected_response_keys": list(GROQ_EXPECTED_RESPONSE_KEYS),
         "candidates": [
             {
                 "index": article.index,
                 "title": article.title,
-                "summary": article.summary,
+                "summary": truncate(article.summary, MAX_SUMMARY_CHARS),
                 "source": article.source,
                 "tier": article.tier,
                 "published_time_utc": article.published_at,
@@ -805,12 +984,22 @@ def build_groq_prompt(candidates: list[Article], now: datetime) -> str:
     return json.dumps(prompt_payload, ensure_ascii=True, separators=(",", ":"))
 
 
+def _log_groq_error_body(response: requests.Response) -> None:
+    try:
+        body = response.text.replace("\n", " ")[:500]
+    except Exception:
+        body = "<unavailable>"
+    logging.error("Groq error body: %s", body)
+
+
 def call_groq(candidates: list[Article], now: datetime, api_key: str) -> dict[str, Any] | None:
-    prompt_content = build_groq_prompt(candidates, now)
-    payload = {
+    active = list(candidates[:MAX_CANDIDATES])
+    prompt_content = build_groq_prompt(active, now)
+    payload: dict[str, Any] = {
         "model": GROQ_MODEL,
         "temperature": 0.0,
-        "max_completion_tokens": 2000,
+        "max_completion_tokens": GROQ_MAX_COMPLETION_TOKENS,
+        "reasoning_effort": GROQ_REASONING_EFFORT,
         "response_format": {"type": "json_object"},
         "messages": [
             {"role": "system", "content": SCORING_SYSTEM_PROMPT},
@@ -823,12 +1012,12 @@ def call_groq(candidates: list[Article], now: datetime, api_key: str) -> dict[st
     }
 
     backoff = 2.0
-    for attempt in range(1, 6):
+    for attempt in range(1, 7):
         try:
-            response = requests.post(GROQ_URL, headers=headers, json=payload, timeout=60)
+            response = requests.post(GROQ_URL, headers=headers, json=payload, timeout=90)
         except requests.RequestException as exc:
             logging.warning("Groq request failed on attempt %s: %s", attempt, exc)
-            if attempt == 5:
+            if attempt == 6:
                 return None
             time.sleep(backoff)
             backoff *= 2
@@ -844,7 +1033,7 @@ def call_groq(candidates: list[Article], now: datetime, api_key: str) -> dict[st
 
         if response.status_code in {500, 502, 503}:
             logging.warning("Groq server error %s on attempt %s.", response.status_code, attempt)
-            if attempt == 5:
+            if attempt == 6:
                 return None
             time.sleep(backoff)
             backoff *= 2
@@ -852,32 +1041,36 @@ def call_groq(candidates: list[Article], now: datetime, api_key: str) -> dict[st
 
         if response.status_code == 400:
             logging.warning("Groq 400 Bad Request on attempt %s.", attempt)
+            _log_groq_error_body(response)
+            # json_validate_failed usually means the model burned tokens on reasoning.
             if attempt == 1:
-                logging.warning("Retrying with summary truncated to 150 chars...")
-                prompt_content = rebuild_prompt_with_summary_limit(candidates, 150)
-                payload["messages"][1]["content"] = prompt_content
+                logging.warning("Retrying with 8 candidates / 120-char summaries...")
+                active = active[:8]
+                payload["messages"][1]["content"] = rebuild_prompt_with_summary_limit(active, 120)
+                payload["max_completion_tokens"] = max(GROQ_MAX_COMPLETION_TOKENS, 8192)
                 continue
             if attempt == 2:
-                logging.warning("Retrying with max 10 candidates...")
-                prompt_content = rebuild_prompt_with_summary_limit(candidates[:10], 100)
-                payload["messages"][1]["content"] = prompt_content
+                logging.warning("Retrying with 5 candidates / 80-char summaries...")
+                active = active[:5]
+                payload["messages"][1]["content"] = rebuild_prompt_with_summary_limit(active, 80)
                 continue
-            logging.error("Groq 400 persists after 2 payload reductions. Skipping run.")
+            if attempt <= 4:
+                logging.warning("Retrying after brief pause (JSON validation flake)...")
+                time.sleep(min(backoff, 8.0))
+                backoff = min(backoff * 2, 30.0)
+                continue
+            logging.error("Groq 400 persists after payload reductions. Skipping run.")
             return None
 
         if response.status_code == 413:
-            if attempt == 1:
-                logging.warning("Groq 413: payload too large. Retrying with 15 articles / 200-char summaries.")
-                prompt_content = rebuild_prompt_with_summary_limit(candidates[:15], 200)
-                payload["messages"][1]["content"] = prompt_content
-                continue
-            if attempt == 2:
-                logging.warning("Groq 413 again. Retrying with 8 articles / 100-char summaries.")
-                prompt_content = rebuild_prompt_with_summary_limit(candidates[:8], 100)
-                payload["messages"][1]["content"] = prompt_content
-                continue
-            logging.error("Groq 413 persists after 2 reductions. Skipping run.")
-            return None
+            logging.warning("Groq 413 on attempt %s. Shrinking payload.", attempt)
+            _log_groq_error_body(response)
+            active = active[: max(3, len(active) // 2)]
+            payload["messages"][1]["content"] = rebuild_prompt_with_summary_limit(active, 100)
+            if attempt >= 5:
+                logging.error("Groq 413 persists after reductions. Skipping run.")
+                return None
+            continue
 
         if response.status_code == 401:
             logging.error("Groq API key is invalid or missing (401 Unauthorized).")
@@ -894,9 +1087,22 @@ def call_groq(candidates: list[Article], now: datetime, api_key: str) -> dict[st
         try:
             response.raise_for_status()
             data = response.json()
-            content = data["choices"][0]["message"]["content"]
-            return json.loads(content)
-        except (requests.RequestException, KeyError, IndexError, json.JSONDecodeError) as exc:
+            message = data["choices"][0]["message"]
+            content = message.get("content") or ""
+            if not content.strip():
+                logging.error("Groq returned empty content on attempt %s (likely reasoning token exhaustion).", attempt)
+                _log_groq_error_body(response)
+                if attempt < 6:
+                    active = active[: max(3, len(active) // 2)]
+                    payload["messages"][1]["content"] = rebuild_prompt_with_summary_limit(active, 100)
+                    continue
+                return None
+            parsed = json.loads(content)
+            if not isinstance(parsed, dict):
+                logging.error("Groq JSON was not an object.")
+                return None
+            return unwrap_groq_payload(parsed)
+        except (requests.RequestException, KeyError, IndexError, json.JSONDecodeError, TypeError) as exc:
             logging.error("Groq unexpected error on attempt %s: %s", attempt, exc)
             return None
 
@@ -904,6 +1110,7 @@ def call_groq(candidates: list[Article], now: datetime, api_key: str) -> dict[st
 
 
 def normalize_groq_result(result: dict[str, Any]) -> dict[str, Any] | None:
+    result = unwrap_groq_payload(result)
     if not isinstance(result, dict) or not isinstance(result.get("articles"), list):
         return None
     recommendation = str(result.get("recommendation", "SKIP")).upper()
@@ -1131,6 +1338,10 @@ def save_posted_now(payload: dict[str, Any], now: datetime) -> None:
             POST_NOW_MIN_SCORE,
         )
         return
+    candidate_url = clean_whitespace(str(payload.get("canonical_url") or payload.get("url") or ""))
+    if not is_safe_http_url(candidate_url):
+        logging.error("Skipping posted_now write for unsafe URL: %s", candidate_url[:120])
+        return
 
     temp_path = POSTED_NOW_PATH.with_suffix(POSTED_NOW_PATH.suffix + ".tmp")
     existing = [
@@ -1207,6 +1418,9 @@ def render_post_now_section(items: list[dict[str, Any]]) -> str:
         title = shorten_title(str(item.get("title", "")), max_chars=110) or "Untitled"
         source = escape_markdown_text(str(item.get("source", ""))) or "Unknown"
         url = clean_whitespace(str(item.get("canonical_url") or item.get("url", "")))
+        if url and not is_safe_http_url(url):
+            logging.warning("Skipping unsafe URL in README render: %s", url[:120])
+            url = ""
         published = format_display_date(str(item.get("published_at", "")))
         headline = f"[{title}]({url})" if url else title
         lines.append(f"> {headline}  ")
@@ -1263,9 +1477,11 @@ def main() -> int:
     secrets = require_env()
     now = utc_now()
     run_started_at = isoformat_utc(now)
+    write_run_result(RUN_RESULT_PATH, posted=False, reason="START")
 
     posted = sanitize_posted(load_json(POSTED_PATH, default_posted))
     cleanup_posted_history(posted, now)
+    seed_posted_from_posted_now(posted, load_posted_now(), now)
     state = sanitize_state(load_json(STATE_PATH, lambda: default_state(now)), now)
     state, _ = reset_state_if_needed(state, now)
 
@@ -1273,6 +1489,7 @@ def main() -> int:
         logging.info("Daily post cap reached. Exiting.")
         log_final_decision(0.0, "SKIP", -1)
         persist_state_files(state, posted)
+        write_run_result(RUN_RESULT_PATH, posted=False, reason="DAILY_CAP")
         return 0
 
     preexisting_pending = state.get("pending_best") if isinstance(state.get("pending_best"), dict) else None
@@ -1281,6 +1498,7 @@ def main() -> int:
     logging.info("Found %s deduplicated fresh candidate(s).", len(candidates))
 
     pending_updated = False
+    scoring_failed = False
     if candidates:
         groq_result = call_groq(candidates, now, secrets["GROQ_API_KEY"])
         normalized = normalize_groq_result(groq_result) if groq_result else None
@@ -1289,13 +1507,20 @@ def main() -> int:
             best_index = normalized["best_index"]
             best_article = next((article for article in candidates if article.index == best_index), None)
             best_score = score_map.get(best_index)
-            authoritative_score = float(normalized.get("authoritative_score", 0.0))
 
             if best_article and best_score and not best_score["red_flag"]:
-                best_score = dict(best_score)
-                best_score["authoritative_score"] = authoritative_score
+                best_score = enforce_local_article_scores(best_score, best_article, now)
+                authoritative_score = float(best_score["authoritative_score"])
+                if authoritative_score >= 8.5:
+                    recommendation = "POST_NOW"
+                elif authoritative_score >= 6.0:
+                    recommendation = "SAVE_PENDING"
+                else:
+                    recommendation = "SKIP"
                 payload = build_candidate_payload(best_article, best_score, now)
-                recommendation = normalized["recommendation"]
+                if not is_safe_http_url(payload["url"]):
+                    logging.error("Refusing unsafe candidate URL: %s", payload["url"][:120])
+                    recommendation = "SKIP"
                 log_final_decision(authoritative_score, recommendation, best_index)
 
                 if (
@@ -1310,6 +1535,14 @@ def main() -> int:
                     clear_pending_if_matches(state, payload)
                     persist_state_files(state, posted)
                     update_readme_post_now(load_posted_now())
+                    write_run_result(
+                        RUN_RESULT_PATH,
+                        posted=True,
+                        title=payload["title"],
+                        url=payload["url"],
+                        reason="POST_NOW",
+                        score=authoritative_score,
+                    )
                     return 0
 
                 if recommendation in {"POST_NOW", "SAVE_PENDING"} and authoritative_score >= PENDING_MIN_SCORE:
@@ -1318,39 +1551,67 @@ def main() -> int:
                         pending_updated = True
                         logging.info("Saved %s as pending_best with score %.2f.", payload["title"], authoritative_score)
             else:
+                authoritative_score = float(normalized.get("authoritative_score", 0.0))
+                if best_article and best_score:
+                    enforced = enforce_local_article_scores(best_score, best_article, now)
+                    authoritative_score = float(enforced["authoritative_score"])
                 log_final_decision(authoritative_score, normalized["recommendation"], best_index)
         else:
+            scoring_failed = True
             log_final_decision(0.0, "SKIP", -1)
+            logging.error("Scoring failed: Groq returned no usable JSON.")
 
     pending_to_post = None
     if isinstance(preexisting_pending, dict):
-        pending_score = float(preexisting_pending.get("authoritative_score", preexisting_pending.get("score", {}).get("total_score", 0.0)))
+        pending_score = float(
+            preexisting_pending.get(
+                "authoritative_score",
+                preexisting_pending.get("score", {}).get("total_score", 0.0),
+            )
+        )
         if pending_score >= POST_NOW_MIN_SCORE and can_post_now(state, pending_score, now):
             saved_at = parse_iso_datetime(preexisting_pending.get("saved_at"))
             is_from_prior_run = saved_at is not None and isoformat_utc(saved_at) < run_started_at
             if is_from_prior_run:
-                if is_peak_hours(now):
-                    pending_to_post = preexisting_pending
-                elif is_2130_or_later(now) and int(state.get("posts_today", 0)) == 0:
+                # Promote pending outside quiet hours once a prior run already approved it.
+                if not is_quiet_hours(now) or pending_score >= 9.5:
                     pending_to_post = preexisting_pending
 
     if pending_to_post:
-        save_posted_now(pending_to_post, now)
-        mark_as_posted(posted, pending_to_post, now)
-        state["posts_today"] = int(state.get("posts_today", 0)) + 1
-        state["last_post_time"] = isoformat_utc(now)
-        clear_pending_if_matches(state, pending_to_post)
-        persist_state_files(state, posted)
-        update_readme_post_now(load_posted_now())
-        return 0
+        if not is_safe_http_url(str(pending_to_post.get("url") or pending_to_post.get("canonical_url") or "")):
+            logging.error("Refusing to promote pending item with unsafe URL.")
+        else:
+            save_posted_now(pending_to_post, now)
+            mark_as_posted(posted, pending_to_post, now)
+            state["posts_today"] = int(state.get("posts_today", 0)) + 1
+            state["last_post_time"] = isoformat_utc(now)
+            clear_pending_if_matches(state, pending_to_post)
+            persist_state_files(state, posted)
+            update_readme_post_now(load_posted_now())
+            write_run_result(
+                RUN_RESULT_PATH,
+                posted=True,
+                title=str(pending_to_post.get("title", "")),
+                url=str(pending_to_post.get("canonical_url") or pending_to_post.get("url", "")),
+                reason="PENDING_PROMOTE",
+                score=float(pending_to_post.get("authoritative_score", 0.0) or 0.0),
+            )
+            return 0
 
     if not candidates:
         logging.info("No new articles qualified for scoring in this run.")
+        log_final_decision(0.0, "SKIP", -1)
+    elif scoring_failed:
+        persist_state_files(state, posted)
+        write_run_result(RUN_RESULT_PATH, posted=False, reason="SCORING_FAILED")
+        return 1
     elif not pending_updated:
         logging.info("No candidate qualified for posting or pending retention.")
 
-    if not candidates:
-        log_final_decision(0.0, "SKIP", -1)
-
     persist_state_files(state, posted)
+    write_run_result(
+        RUN_RESULT_PATH,
+        posted=False,
+        reason="PENDING_SAVED" if pending_updated else "NO_POST",
+    )
     return 0
