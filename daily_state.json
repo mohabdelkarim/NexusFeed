@@ -1,6 +1,29 @@
 {
   "date": "2026-11-12",
   "last_post_time": "2026-11-12T10:08:29Z",
-  "pending_best": null,
+  "pending_best": {
+    "authoritative_score": 7.0,
+    "canonical_url": "https://news.mit.edu/2026/new-research-could-lead-faster-trustworthy-ai-models-climate-prediction-1112",
+    "cleaned_title": "research could lead faster trustworthy ai models climate prediction",
+    "index": 0,
+    "published_at": "2026-11-12T05:00:00Z",
+    "saved_at": "2026-11-12T10:15:31Z",
+    "score": {
+      "freshness_score": 1.0,
+      "impact_score": 2.5,
+      "novelty_score": 2.5,
+      "reason": "MIT research with broad developer relevance and recent publication",
+      "red_flag": false,
+      "red_flag_reason": null,
+      "source_score": 1.0,
+      "total_score": 7.0
+    },
+    "source": "MIT News AI",
+    "summary": "MIT scientists developed a training method to generate models that simulate the effects of human activities on climate much more quickly than other approaches.",
+    "tier": "B",
+    "title": "New research could lead to faster, trustworthy AI models for climate prediction",
+    "url": "https://news.mit.edu/2026/new-research-could-lead-faster-trustworthy-ai-models-climate-prediction-1112",
+    "url_hash": "d652bf4e1f2db5615f136d8f8675842657b484f5637968a7a13607497d412676"
+  },
   "posts_today": 1
 }
