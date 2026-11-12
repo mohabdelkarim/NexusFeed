@@ -33,6 +33,9 @@
 
 <p align="center"><sub>Live clears · refreshed by GitHub Actions</sub></p>
 
+> [Google pushes privacy angle as Gemini-powered smartglasses debut starting at $395](https://arstechnica.com/google/2026/11/google-pushes-privacy-angle-as-gemini-powered-smartglasses-debut-starting-at-395)  
+> Ars Technica · Nov 12
+
 > [IBM Announces IBM Quantum Nighthawk r3: A New Processor to Support 10k Quantum Operations on 520…](https://www.marktechpost.com/2026/11/12/ibm-quantum-nighthawk-r3-520-qubits-1040-qubit-system-2027)  
 > MarkTechPost · Nov 12
 
@@ -53,9 +56,6 @@
 
 > [Meta accused of using biased AI targeting for mass layoffs](https://www.theverge.com/tech/965486/meta-lawsuit-former-employees-ai-layoffs)  
 > The Verge · Jul 14
-
-> [Spotify expands its AI push with a ChatGPT-like music assistant](https://techcrunch.com/2026/07/14/spotify-expands-its-ai-push-with-a-chatgpt-like-music-assistant)  
-> TechCrunch · Jul 14
 
 <p align="center"><sub>8 clears · full state in <code>posted_now.json</code></sub></p>
 

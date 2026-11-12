@@ -1,6 +1,28 @@
 [
   {
     "authoritative_score": 9.0,
+    "canonical_url": "https://arstechnica.com/google/2026/11/google-pushes-privacy-angle-as-gemini-powered-smartglasses-debut-starting-at-395",
+    "published_at": "2026-11-12T14:50:17Z",
+    "saved_at": "2026-11-12T15:39:58Z",
+    "score": {
+      "freshness_score": 2.0,
+      "impact_score": 2.5,
+      "novelty_score": 3.0,
+      "reason": "New product release, high impact, very fresh",
+      "red_flag": false,
+      "red_flag_reason": null,
+      "source_score": 1.5,
+      "total_score": 9.0
+    },
+    "source": "Ars Technica",
+    "summary": "The first Gemini smartglasses are a collab between Google, Samsung, Gentle Monster, and Warby Parker.",
+    "tier": "A",
+    "title": "Google pushes privacy angle as Gemini-powered smartglasses debut starting at $395",
+    "url": "https://arstechnica.com/google/2026/11/google-pushes-privacy-angle-as-gemini-powered-smartglasses-debut-starting-at-395",
+    "url_hash": "e730f1fd52f7736c70d170a7ee213913b4e98ded4ffeb0ca445e838de2316d11"
+  },
+  {
+    "authoritative_score": 9.0,
     "canonical_url": "https://www.marktechpost.com/2026/11/12/ibm-quantum-nighthawk-r3-520-qubits-1040-qubit-system-2027",
     "published_at": "2026-11-12T08:42:21Z",
     "saved_at": "2026-11-12T10:08:29Z",

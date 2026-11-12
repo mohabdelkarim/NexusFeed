@@ -3,10 +3,15 @@
     {
       "hash": "d554968d531128e76419281c0ea7456dcebd0d8097b10d474bbe70e9afb4943e",
       "posted_at": "2026-11-12T10:08:29Z"
+    },
+    {
+      "hash": "e730f1fd52f7736c70d170a7ee213913b4e98ded4ffeb0ca445e838de2316d11",
+      "posted_at": "2026-11-12T15:39:58Z"
     }
   ],
   "hashes": [
-    "d554968d531128e76419281c0ea7456dcebd0d8097b10d474bbe70e9afb4943e"
+    "d554968d531128e76419281c0ea7456dcebd0d8097b10d474bbe70e9afb4943e",
+    "e730f1fd52f7736c70d170a7ee213913b4e98ded4ffeb0ca445e838de2316d11"
   ],
   "recent_titles": [
     {
@@ -14,6 +19,12 @@
       "posted_at": "2026-11-12T10:08:29Z",
       "score": 9.0,
       "source": "MarkTechPost"
+    },
+    {
+      "cleaned_title": "google pushes privacy angle as gemini powered smartglasses debut starting at 395",
+      "posted_at": "2026-11-12T15:39:58Z",
+      "score": 9.0,
+      "source": "Ars Technica"
     }
   ]
 }
