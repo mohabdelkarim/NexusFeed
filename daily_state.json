@@ -2,28 +2,28 @@
   "date": "2026-11-13",
   "last_post_time": "2026-11-13T17:36:15Z",
   "pending_best": {
-    "authoritative_score": 7.0,
-    "canonical_url": "https://news.mit.edu/2026/new-research-could-lead-faster-trustworthy-ai-models-climate-prediction-1112",
-    "cleaned_title": "research could lead faster trustworthy ai models climate prediction",
+    "authoritative_score": 8.5,
+    "canonical_url": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say",
+    "cleaned_title": "jensen huang s departure blasts big hole ai startup funding vcs founders say",
     "index": 0,
-    "published_at": "2026-11-12T05:00:00Z",
-    "saved_at": "2026-11-12T10:15:31Z",
+    "published_at": "2026-11-13T22:43:00Z",
+    "saved_at": "2026-11-13T23:26:20Z",
     "score": {
-      "freshness_score": 1.0,
-      "impact_score": 2.5,
-      "novelty_score": 2.5,
-      "reason": "MIT research with broad developer relevance and recent publication",
+      "freshness_score": 2.0,
+      "impact_score": 3.0,
+      "novelty_score": 2.0,
+      "reason": "Industry move with high impact and fresh",
       "red_flag": false,
       "red_flag_reason": null,
-      "source_score": 1.0,
-      "total_score": 7.0
+      "source_score": 1.5,
+      "total_score": 8.5
     },
-    "source": "MIT News AI",
-    "summary": "MIT scientists developed a training method to generate models that simulate the effects of human activities on climate much more quickly than other approaches.",
-    "tier": "B",
-    "title": "New research could lead to faster, trustworthy AI models for climate prediction",
-    "url": "https://news.mit.edu/2026/new-research-could-lead-faster-trustworthy-ai-models-climate-prediction-1112",
-    "url_hash": "d652bf4e1f2db5615f136d8f8675842657b484f5637968a7a13607497d412676"
+    "source": "TechCrunch",
+    "summary": "Nvidia poured tens of billions into AI startups under Huang. Without him at the helm, founders and VCs are bracing for smaller checks and lower valuations.",
+    "tier": "A",
+    "title": "Jensen Huang\u2019s departure blasts big hole in AI startup funding, VCs and founders say",
+    "url": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say",
+    "url_hash": "9d694fa95af0cfaecf5267b73e7d6230221ffb467ae88ba047b8eeb9ff850562"
   },
   "posts_today": 1
 }
