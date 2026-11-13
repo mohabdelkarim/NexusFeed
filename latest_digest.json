@@ -1,32 +1,50 @@
 {
-  "digest_date": "2026-11-06",
-  "saved_at": "2026-11-06T22:45:04Z",
+  "digest_date": "2026-11-13",
+  "saved_at": "2026-11-13T23:17:09Z",
   "stories": [
     {
-      "article_url": "https://www.theverge.com/ai-artificial-intelligence/902546/data-centers-ai-energy-power-grids-controversy",
-      "full_title": "All the latest updates on AI data centers",
-      "one_line_summary": "New AI data centers face energy, grid, and policy challenges amid rapid expansion.",
+      "article_url": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say",
+      "full_title": "Jensen Huang\u2019s departure blasts big hole in AI startup funding, VCs and founders say",
+      "one_line_summary": "Nvidia founder leaves, funding for AI startups expected to shrink.",
       "rank": 1,
-      "score": 9.5,
-      "source_name": "The Verge",
-      "source_tier": "A"
-    },
-    {
-      "article_url": "https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent",
-      "full_title": "Meta introduces Spaces, a new way to collaborate with your Muse agent",
-      "one_line_summary": "Meta launches Muse Spaces, letting AI assistants build custom app-like experiences.",
-      "rank": 2,
-      "score": 8.8,
+      "score": 9.4,
       "source_name": "TechCrunch",
       "source_tier": "A"
     },
     {
-      "article_url": "https://www.wired.com/story/free-chinese-ai-models-are-getting-scary-good-at-hacking",
-      "full_title": "Free Chinese AI Models Are Getting Scary Good at Hacking",
-      "one_line_summary": "Chinese AI models match OpenAI in hacking simulations, raising security concerns.",
+      "article_url": "https://www.theverge.com/news/1033489/faa-ground-stop",
+      "full_title": "FAA ground stop shuts down flights nationwide",
+      "one_line_summary": "FAA halts takeoffs nationwide due to safety concerns.",
+      "rank": 2,
+      "score": 9.1,
+      "source_name": "The Verge",
+      "source_tier": "A"
+    },
+    {
+      "article_url": "https://arstechnica.com/features/2026/11/faa-expands-ai-advice-to-manage-air-traffic-congestion-across-entire-us-airspace",
+      "full_title": "FAA expands AI advice to manage air traffic congestion across entire US airspace",
+      "one_line_summary": "FAA deploys AI tool to ease nationwide air traffic congestion.",
       "rank": 3,
+      "score": 8.8,
+      "source_name": "Ars Technica",
+      "source_tier": "A"
+    },
+    {
+      "article_url": "https://www.theverge.com/ai-artificial-intelligence/1033425/openai-chatgpt-wallet",
+      "full_title": "ChatGPT Wallet lets OpenAI\u2019s Dots agents make purchases for you",
+      "one_line_summary": "OpenAI launches wallet enabling AI agents to buy goods.",
+      "rank": 4,
       "score": 8.5,
-      "source_name": "Wired AI",
+      "source_name": "The Verge",
+      "source_tier": "A"
+    },
+    {
+      "article_url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation",
+      "full_title": "AI agent startup LangChain hits $3B valuation",
+      "one_line_summary": "LangChain reaches $3B valuation with 7,000 customers.",
+      "rank": 5,
+      "score": 8.3,
+      "source_name": "TechCrunch",
       "source_tier": "A"
     }
   ]
