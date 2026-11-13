@@ -33,6 +33,9 @@
 
 <p align="center"><sub>Live clears · refreshed by GitHub Actions</sub></p>
 
+> [XYBench: Helping with the problem behind the question](https://huggingface.co/blog/allenai/xybench)  
+> HuggingFace · Nov 13
+
 > [Muse can now place calls to U.S. businesses — if you pay](https://techcrunch.com/2026/11/12/muse-can-now-place-calls-to-u-s-businesses-if-you-pay)  
 > TechCrunch · Nov 12
 
@@ -53,9 +56,6 @@
 
 > [Scientists Used AI to Create 16 New Viruses](https://www.wired.com/story/scientists-used-ai-to-create-16-new-viruses)  
 > Wired AI · Aug 07
-
-> [JetBrains Open-Sources KotlinLLM: Smart Macros That Generate Kotlin Source Code at Runtime and Hot-Reload It…](https://www.marktechpost.com/2026/07/31/jetbrains-research-open-sources-kotlinllm-intellij-plugin-kotlin-runtime-llm)  
-> MarkTechPost · Jul 31
 
 <p align="center"><sub>8 clears · full state in <code>posted_now.json</code></sub></p>
 
