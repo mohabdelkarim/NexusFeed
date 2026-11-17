@@ -15,13 +15,18 @@
     {
       "hash": "96c7f67bef86f8316048a87fd511efdf23e6f81e02406769c1ce381b73c81b1f",
       "posted_at": "2026-11-13T17:36:15Z"
+    },
+    {
+      "hash": "e79a48d758a8669941527cae8aa3ab022bdf48ef69078dbd819c56653a31327d",
+      "posted_at": "2026-11-17T18:54:39Z"
     }
   ],
   "hashes": [
     "96c7f67bef86f8316048a87fd511efdf23e6f81e02406769c1ce381b73c81b1f",
     "ab23a7fa21e24fb3c24226790bb08f711e3c8669c84a5666d3351f7cbde7aa1f",
     "d554968d531128e76419281c0ea7456dcebd0d8097b10d474bbe70e9afb4943e",
-    "e730f1fd52f7736c70d170a7ee213913b4e98ded4ffeb0ca445e838de2316d11"
+    "e730f1fd52f7736c70d170a7ee213913b4e98ded4ffeb0ca445e838de2316d11",
+    "e79a48d758a8669941527cae8aa3ab022bdf48ef69078dbd819c56653a31327d"
   ],
   "recent_titles": [
     {
@@ -47,6 +52,12 @@
       "posted_at": "2026-11-13T17:36:15Z",
       "score": 9.5,
       "source": "HuggingFace"
+    },
+    {
+      "cleaned_title": "microsoft salesforce announce copilotforce bringing trusted customer context action into microsoft ai experiences",
+      "posted_at": "2026-11-17T18:54:39Z",
+      "score": 9.5,
+      "source": "Microsoft AI"
     }
   ]
 }

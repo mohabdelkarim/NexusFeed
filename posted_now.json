@@ -1,6 +1,28 @@
 [
   {
     "authoritative_score": 9.5,
+    "canonical_url": "https://news.microsoft.com/source/2026/11/17/microsoft-and-salesforce-announce-copilotforce-bringing-trusted-customer-context-and-action-into-microsoft-ai-experiences",
+    "published_at": "2026-11-17T18:10:16Z",
+    "saved_at": "2026-11-17T18:54:39Z",
+    "score": {
+      "freshness_score": 2.0,
+      "impact_score": 2.5,
+      "novelty_score": 3.0,
+      "reason": "New Copilotforce release, high impact, fresh.",
+      "red_flag": false,
+      "red_flag_reason": null,
+      "source_score": 2.0,
+      "total_score": 9.5
+    },
+    "source": "Microsoft AI",
+    "summary": "The post Microsoft and Salesforce Announce Copilotforce, Bringing Trusted Customer Context and Action into Microsoft AI Experiences appeared first on Source .",
+    "tier": "S",
+    "title": "Microsoft and Salesforce Announce Copilotforce, Bringing Trusted Customer Context and Action into Microsoft AI Experiences",
+    "url": "https://news.microsoft.com/source/2026/11/17/microsoft-and-salesforce-announce-copilotforce-bringing-trusted-customer-context-and-action-into-microsoft-ai-experiences",
+    "url_hash": "e79a48d758a8669941527cae8aa3ab022bdf48ef69078dbd819c56653a31327d"
+  },
+  {
+    "authoritative_score": 9.5,
     "canonical_url": "https://huggingface.co/blog/allenai/xybench",
     "published_at": "2026-11-13T17:02:35Z",
     "saved_at": "2026-11-13T17:36:15Z",

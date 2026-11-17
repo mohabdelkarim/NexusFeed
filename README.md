@@ -33,6 +33,9 @@
 
 <p align="center"><sub>Live clears · refreshed by GitHub Actions</sub></p>
 
+> [Microsoft and Salesforce Announce Copilotforce, Bringing Trusted Customer Context and Action into Microsoft…](https://news.microsoft.com/source/2026/11/17/microsoft-and-salesforce-announce-copilotforce-bringing-trusted-customer-context-and-action-into-microsoft-ai-experiences)  
+> Microsoft AI · Nov 17
+
 > [XYBench: Helping with the problem behind the question](https://huggingface.co/blog/allenai/xybench)  
 > HuggingFace · Nov 13
 
@@ -53,9 +56,6 @@
 
 > [OpenAI puts the brakes on a new model because it’s supposedly too powerful](https://www.theverge.com/ai-artificial-intelligence/976948/openai-astra-model-pause-critical-cyber-capabilities)  
 > The Verge · Aug 07
-
-> [Scientists Used AI to Create 16 New Viruses](https://www.wired.com/story/scientists-used-ai-to-create-16-new-viruses)  
-> Wired AI · Aug 07
 
 <p align="center"><sub>8 clears · full state in <code>posted_now.json</code></sub></p>
 
