@@ -24,6 +24,31 @@
       "cleaned_title": "agent startup langchain hits $3b valuation",
       "sent_at": "2026-11-13T23:17:09Z",
       "url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation"
+    },
+    {
+      "cleaned_title": "nvidia abandoning china after jensen huang\u2019s ouster",
+      "sent_at": "2026-11-18T00:35:36Z",
+      "url": "https://techcrunch.com/2026/11/17/nvidia-is-abandoning-china-after-jensen-huangs-ouster"
+    },
+    {
+      "cleaned_title": "microsoft calls copilot \"the os work\" ignite keynote",
+      "sent_at": "2026-11-18T00:35:36Z",
+      "url": "https://arstechnica.com/gadgets/2026/11/microsoft-calls-copilot-the-new-os-for-work-at-ignite-keynote"
+    },
+    {
+      "cleaned_title": "openai releases gpt-6.2 astra sol 20% cheaper astra api",
+      "sent_at": "2026-11-18T00:35:36Z",
+      "url": "https://www.marktechpost.com/2026/11/17/openai-gpt-6-2-astra-sol-release"
+    },
+    {
+      "cleaned_title": "microsoft salesforce announce copilotforce, bringing trusted customer context action into microsoft experiences",
+      "sent_at": "2026-11-18T00:35:36Z",
+      "url": "https://news.microsoft.com/source/2026/11/17/microsoft-and-salesforce-announce-copilotforce-bringing-trusted-customer-context-and-action-into-microsoft-ai-experiences"
+    },
+    {
+      "cleaned_title": "perplexity computer adds multiagent: up 16 agents that cross-check work",
+      "sent_at": "2026-11-18T00:35:36Z",
+      "url": "https://www.marktechpost.com/2026/11/17/perplexity-computer-multiagent-effort-level"
     }
   ],
   "url_hashes": [
@@ -248,6 +273,11 @@
     "15ee692dbf097aa23a89d06b9abe9afbe5eeaca8109c75857554d8e2a96d0a4e",
     "05648108c87680dd8673b71ce65f542756e08e645419398729eb6402c7ad7053",
     "754f24889ed9e00a6da88e40a1324be1247f4f90f8282ebd03dd4f917036942d",
-    "49f0b0840b1ef26af09f29c86adc67fccd4a404dbae10e2dbf51e8f46347b640"
+    "49f0b0840b1ef26af09f29c86adc67fccd4a404dbae10e2dbf51e8f46347b640",
+    "7648720b0216823afd6f4aa19845bf845e1099706e20de3f7fff3ce89351f0be",
+    "0db3b4bdf59c14e4c5f17d9bcbc056c674d7dbff7b19e418aef5b0aab2cdf1f3",
+    "c8f40dca6d57dad853358dc359f4d3b18aa230faac146642718a379d0b9193ab",
+    "e79a48d758a8669941527cae8aa3ab022bdf48ef69078dbd819c56653a31327d",
+    "0a9698c9331cebfe2ea9b273d3f848983e8438b10831f782f9d64a0b124c7c9c"
   ]
 }
