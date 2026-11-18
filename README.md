@@ -33,6 +33,9 @@
 
 <p align="center"><sub>Live clears · refreshed by GitHub Actions</sub></p>
 
+> [The Gemini app is now available on lower-memory Android devices.](https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices)  
+> Google AI · Nov 18
+
 > [Microsoft and Salesforce Announce Copilotforce, Bringing Trusted Customer Context and Action into Microsoft…](https://news.microsoft.com/source/2026/11/17/microsoft-and-salesforce-announce-copilotforce-bringing-trusted-customer-context-and-action-into-microsoft-ai-experiences)  
 > Microsoft AI · Nov 17
 
@@ -53,9 +56,6 @@
 
 > [AI Is Dead. Organoids Are Alive](https://www.wired.com/story/organoids-lab-grown-brains-neural-networks)  
 > Wired AI · Aug 11
-
-> [OpenAI puts the brakes on a new model because it’s supposedly too powerful](https://www.theverge.com/ai-artificial-intelligence/976948/openai-astra-model-pause-critical-cyber-capabilities)  
-> The Verge · Aug 07
 
 <p align="center"><sub>8 clears · full state in <code>posted_now.json</code></sub></p>
 

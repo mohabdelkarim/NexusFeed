@@ -19,9 +19,14 @@
     {
       "hash": "e79a48d758a8669941527cae8aa3ab022bdf48ef69078dbd819c56653a31327d",
       "posted_at": "2026-11-17T18:54:39Z"
+    },
+    {
+      "hash": "0191a8cf5007a7e305ee6ecc84767aeda711b30a6ec196d8a24db74bf6e9ec9a",
+      "posted_at": "2026-11-18T17:00:20Z"
     }
   ],
   "hashes": [
+    "0191a8cf5007a7e305ee6ecc84767aeda711b30a6ec196d8a24db74bf6e9ec9a",
     "96c7f67bef86f8316048a87fd511efdf23e6f81e02406769c1ce381b73c81b1f",
     "ab23a7fa21e24fb3c24226790bb08f711e3c8669c84a5666d3351f7cbde7aa1f",
     "d554968d531128e76419281c0ea7456dcebd0d8097b10d474bbe70e9afb4943e",
@@ -58,6 +63,12 @@
       "posted_at": "2026-11-17T18:54:39Z",
       "score": 9.5,
       "source": "Microsoft AI"
+    },
+    {
+      "cleaned_title": "gemini app is now available lower memory android devices",
+      "posted_at": "2026-11-18T17:00:20Z",
+      "score": 9.5,
+      "source": "Google AI"
     }
   ]
 }
