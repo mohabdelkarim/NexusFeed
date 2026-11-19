@@ -3,27 +3,27 @@
   "last_post_time": "2026-11-18T17:00:20Z",
   "pending_best": {
     "authoritative_score": 8.5,
-    "canonical_url": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say",
-    "cleaned_title": "jensen huang s departure blasts big hole ai startup funding vcs founders say",
+    "canonical_url": "https://techcrunch.com/2026/11/18/amidst-fears-of-ai-cyberattacks-satya-nadella-says-lots-of-critical-infrastructure-is-unpatchable",
+    "cleaned_title": "amidst fears ai cyberattacks satya nadella says lots critical infrastructure is unpatchable",
     "index": 0,
-    "published_at": "2026-11-13T22:43:00Z",
-    "saved_at": "2026-11-13T23:26:20Z",
+    "published_at": "2026-11-18T23:45:00Z",
+    "saved_at": "2026-11-18T23:59:58Z",
     "score": {
       "freshness_score": 2.0,
       "impact_score": 3.0,
       "novelty_score": 2.0,
-      "reason": "Industry move with high impact and fresh",
+      "reason": "Industry move with broad impact and fresh",
       "red_flag": false,
       "red_flag_reason": null,
       "source_score": 1.5,
       "total_score": 8.5
     },
     "source": "TechCrunch",
-    "summary": "Nvidia poured tens of billions into AI startups under Huang. Without him at the helm, founders and VCs are bracing for smaller checks and lower valuations.",
+    "summary": "The Microsoft CEO downplayed the recent Outlook outage while noting that AI was causing both opportunities and new challenges for securing much of the connected world.",
     "tier": "A",
-    "title": "Jensen Huang\u2019s departure blasts big hole in AI startup funding, VCs and founders say",
-    "url": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say",
-    "url_hash": "9d694fa95af0cfaecf5267b73e7d6230221ffb467ae88ba047b8eeb9ff850562"
+    "title": "Amidst fears of AI-cyberattacks, Satya Nadella says lots of critical infrastructure is \u2018unpatchable\u2019",
+    "url": "https://techcrunch.com/2026/11/18/amidst-fears-of-ai-cyberattacks-satya-nadella-says-lots-of-critical-infrastructure-is-unpatchable",
+    "url_hash": "28a1e7a21c66bddf9bd12f6e1fbdc31d03308bf19b156091883752d7db3a771e"
   },
   "posts_today": 1
 }
