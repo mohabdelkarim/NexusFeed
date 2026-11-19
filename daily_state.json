@@ -2,28 +2,28 @@
   "date": "2026-11-19",
   "last_post_time": "2026-11-19T16:09:50Z",
   "pending_best": {
-    "authoritative_score": 8.5,
-    "canonical_url": "https://techcrunch.com/2026/11/18/amidst-fears-of-ai-cyberattacks-satya-nadella-says-lots-of-critical-infrastructure-is-unpatchable",
-    "cleaned_title": "amidst fears ai cyberattacks satya nadella says lots critical infrastructure is unpatchable",
-    "index": 0,
-    "published_at": "2026-11-18T23:45:00Z",
-    "saved_at": "2026-11-18T23:59:58Z",
+    "authoritative_score": 9.0,
+    "canonical_url": "https://www.theverge.com/tech/1038227/apple-ai-agent-engineer-job-listing",
+    "cleaned_title": "apple is hiring engineers build its own ai agent",
+    "index": 1,
+    "published_at": "2026-11-19T22:31:41Z",
+    "saved_at": "2026-11-19T23:19:55Z",
     "score": {
       "freshness_score": 2.0,
-      "impact_score": 3.0,
-      "novelty_score": 2.0,
-      "reason": "Industry move with broad impact and fresh",
+      "impact_score": 2.5,
+      "novelty_score": 3.0,
+      "reason": "New release, broad dev impact.",
       "red_flag": false,
       "red_flag_reason": null,
       "source_score": 1.5,
-      "total_score": 8.5
+      "total_score": 9.0
     },
-    "source": "TechCrunch",
-    "summary": "The Microsoft CEO downplayed the recent Outlook outage while noting that AI was causing both opportunities and new challenges for securing much of the connected world.",
+    "source": "The Verge",
+    "summary": "Apple is working on its own AI agent that can perform a range of tasks for you, including browsing the web, working across apps, writing code, and calling services. That's according to a job listing spotted by Bloomberg, which says Apple is looking for an engineer to lead the creation of an agentic...",
     "tier": "A",
-    "title": "Amidst fears of AI-cyberattacks, Satya Nadella says lots of critical infrastructure is \u2018unpatchable\u2019",
-    "url": "https://techcrunch.com/2026/11/18/amidst-fears-of-ai-cyberattacks-satya-nadella-says-lots-of-critical-infrastructure-is-unpatchable",
-    "url_hash": "28a1e7a21c66bddf9bd12f6e1fbdc31d03308bf19b156091883752d7db3a771e"
+    "title": "Apple is hiring engineers to build its own AI agent",
+    "url": "https://www.theverge.com/tech/1038227/apple-ai-agent-engineer-job-listing",
+    "url_hash": "f8133dc16aac0ad50d9028197181b9ddf0aad28ed07a39054323c47283007f3a"
   },
   "posts_today": 1
 }
