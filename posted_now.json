@@ -1,6 +1,28 @@
 [
   {
     "authoritative_score": 9.5,
+    "canonical_url": "https://www.theverge.com/ai-artificial-intelligence/1037634/openai-chatgpt-live-dictation",
+    "published_at": "2026-11-19T15:16:45Z",
+    "saved_at": "2026-11-19T16:09:50Z",
+    "score": {
+      "freshness_score": 2.0,
+      "impact_score": 3.0,
+      "novelty_score": 3.0,
+      "reason": "New release with broad impact",
+      "red_flag": false,
+      "red_flag_reason": null,
+      "source_score": 1.5,
+      "total_score": 9.5
+    },
+    "source": "The Verge",
+    "summary": "ChatGPT can receive audio prompts from your microphone faster now with a Live Dictation feature that transcribes as you speak, rather than waiting until you finish recording. It's rolling out now globally on all ChatGPT plans on the web, desktop app, and iOS and Android apps. While using dictation...",
+    "tier": "A",
+    "title": "ChatGPT can transcribe as you speak now with Live Dictation",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/1037634/openai-chatgpt-live-dictation",
+    "url_hash": "9f19183b29edeb233bebaa5287629f6dfcbac6bf7b423e303837da05f138f4ef"
+  },
+  {
+    "authoritative_score": 9.5,
     "canonical_url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices",
     "published_at": "2026-11-18T17:00:00Z",
     "saved_at": "2026-11-18T17:00:20Z",

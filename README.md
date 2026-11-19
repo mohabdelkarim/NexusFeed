@@ -33,6 +33,9 @@
 
 <p align="center"><sub>Live clears · refreshed by GitHub Actions</sub></p>
 
+> [ChatGPT can transcribe as you speak now with Live Dictation](https://www.theverge.com/ai-artificial-intelligence/1037634/openai-chatgpt-live-dictation)  
+> The Verge · Nov 19
+
 > [The Gemini app is now available on lower-memory Android devices.](https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices)  
 > Google AI · Nov 18
 
@@ -53,9 +56,6 @@
 
 > [AMIE, our research medical AI system, demonstrates real-time clinical video consultation capabilities in a…](https://blog.google/innovation-and-ai/models-and-research/google-research/amie-video-consultations)  
 > Google AI · Aug 11
-
-> [AI Is Dead. Organoids Are Alive](https://www.wired.com/story/organoids-lab-grown-brains-neural-networks)  
-> Wired AI · Aug 11
 
 <p align="center"><sub>8 clears · full state in <code>posted_now.json</code></sub></p>
 
