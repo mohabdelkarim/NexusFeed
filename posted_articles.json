@@ -27,6 +27,10 @@
     {
       "hash": "9f19183b29edeb233bebaa5287629f6dfcbac6bf7b423e303837da05f138f4ef",
       "posted_at": "2026-11-19T16:09:50Z"
+    },
+    {
+      "hash": "f8133dc16aac0ad50d9028197181b9ddf0aad28ed07a39054323c47283007f3a",
+      "posted_at": "2026-11-20T18:27:04Z"
     }
   ],
   "hashes": [
@@ -36,7 +40,8 @@
     "ab23a7fa21e24fb3c24226790bb08f711e3c8669c84a5666d3351f7cbde7aa1f",
     "d554968d531128e76419281c0ea7456dcebd0d8097b10d474bbe70e9afb4943e",
     "e730f1fd52f7736c70d170a7ee213913b4e98ded4ffeb0ca445e838de2316d11",
-    "e79a48d758a8669941527cae8aa3ab022bdf48ef69078dbd819c56653a31327d"
+    "e79a48d758a8669941527cae8aa3ab022bdf48ef69078dbd819c56653a31327d",
+    "f8133dc16aac0ad50d9028197181b9ddf0aad28ed07a39054323c47283007f3a"
   ],
   "recent_titles": [
     {
@@ -79,6 +84,12 @@
       "cleaned_title": "chatgpt can transcribe as you speak now live dictation",
       "posted_at": "2026-11-19T16:09:50Z",
       "score": 9.5,
+      "source": "The Verge"
+    },
+    {
+      "cleaned_title": "apple is hiring engineers build its own ai agent",
+      "posted_at": "2026-11-20T18:27:04Z",
+      "score": 9.0,
       "source": "The Verge"
     }
   ]

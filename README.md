@@ -33,6 +33,9 @@
 
 <p align="center"><sub>Live clears · refreshed by GitHub Actions</sub></p>
 
+> [Apple is hiring engineers to build its own AI agent](https://www.theverge.com/tech/1038227/apple-ai-agent-engineer-job-listing)  
+> The Verge · Nov 19
+
 > [ChatGPT can transcribe as you speak now with Live Dictation](https://www.theverge.com/ai-artificial-intelligence/1037634/openai-chatgpt-live-dictation)  
 > The Verge · Nov 19
 
@@ -53,9 +56,6 @@
 
 > [IBM Announces IBM Quantum Nighthawk r3: A New Processor to Support 10k Quantum Operations on 520…](https://www.marktechpost.com/2026/11/12/ibm-quantum-nighthawk-r3-520-qubits-1040-qubit-system-2027)  
 > MarkTechPost · Nov 12
-
-> [AMIE, our research medical AI system, demonstrates real-time clinical video consultation capabilities in a…](https://blog.google/innovation-and-ai/models-and-research/google-research/amie-video-consultations)  
-> Google AI · Aug 11
 
 <p align="center"><sub>8 clears · full state in <code>posted_now.json</code></sub></p>
 

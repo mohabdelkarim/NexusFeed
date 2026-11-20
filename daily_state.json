@@ -1,29 +1,6 @@
 {
-  "date": "2026-11-19",
-  "last_post_time": "2026-11-19T16:09:50Z",
-  "pending_best": {
-    "authoritative_score": 9.0,
-    "canonical_url": "https://www.theverge.com/tech/1038227/apple-ai-agent-engineer-job-listing",
-    "cleaned_title": "apple is hiring engineers build its own ai agent",
-    "index": 1,
-    "published_at": "2026-11-19T22:31:41Z",
-    "saved_at": "2026-11-19T23:19:55Z",
-    "score": {
-      "freshness_score": 2.0,
-      "impact_score": 2.5,
-      "novelty_score": 3.0,
-      "reason": "New release, broad dev impact.",
-      "red_flag": false,
-      "red_flag_reason": null,
-      "source_score": 1.5,
-      "total_score": 9.0
-    },
-    "source": "The Verge",
-    "summary": "Apple is working on its own AI agent that can perform a range of tasks for you, including browsing the web, working across apps, writing code, and calling services. That's according to a job listing spotted by Bloomberg, which says Apple is looking for an engineer to lead the creation of an agentic...",
-    "tier": "A",
-    "title": "Apple is hiring engineers to build its own AI agent",
-    "url": "https://www.theverge.com/tech/1038227/apple-ai-agent-engineer-job-listing",
-    "url_hash": "f8133dc16aac0ad50d9028197181b9ddf0aad28ed07a39054323c47283007f3a"
-  },
+  "date": "2026-11-20",
+  "last_post_time": "2026-11-20T18:27:04Z",
+  "pending_best": null,
   "posts_today": 1
 }
