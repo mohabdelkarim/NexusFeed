@@ -1,31 +1,6 @@
 {
   "recent_titles": [
     {
-      "cleaned_title": "jensen huang\u2019s departure blasts big hole startup funding, vcs founders say",
-      "sent_at": "2026-11-13T23:17:09Z",
-      "url": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say"
-    },
-    {
-      "cleaned_title": "faa ground stop shuts down flights nationwide",
-      "sent_at": "2026-11-13T23:17:09Z",
-      "url": "https://www.theverge.com/news/1033489/faa-ground-stop"
-    },
-    {
-      "cleaned_title": "faa expands advice manage air traffic congestion across entire us airspace",
-      "sent_at": "2026-11-13T23:17:09Z",
-      "url": "https://arstechnica.com/features/2026/11/faa-expands-ai-advice-to-manage-air-traffic-congestion-across-entire-us-airspace"
-    },
-    {
-      "cleaned_title": "chatgpt wallet lets openai\u2019s dots agents make purchases you",
-      "sent_at": "2026-11-13T23:17:09Z",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1033425/openai-chatgpt-wallet"
-    },
-    {
-      "cleaned_title": "agent startup langchain hits $3b valuation",
-      "sent_at": "2026-11-13T23:17:09Z",
-      "url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation"
-    },
-    {
       "cleaned_title": "nvidia abandoning china after jensen huang\u2019s ouster",
       "sent_at": "2026-11-18T00:35:36Z",
       "url": "https://techcrunch.com/2026/11/17/nvidia-is-abandoning-china-after-jensen-huangs-ouster"
@@ -49,6 +24,31 @@
       "cleaned_title": "perplexity computer adds multiagent: up 16 agents that cross-check work",
       "sent_at": "2026-11-18T00:35:36Z",
       "url": "https://www.marktechpost.com/2026/11/17/perplexity-computer-multiagent-effort-level"
+    },
+    {
+      "cleaned_title": "google rolls out search homepage chat history no search button",
+      "sent_at": "2026-11-20T23:43:02Z",
+      "url": "https://arstechnica.com/ai/2026/11/googles-latest-search-page-redesign-drops-the-search-button-adds-ai-sidebar"
+    },
+    {
+      "cleaned_title": "meta reconsiders 2030 net-zero goal amid record emissions data centers",
+      "sent_at": "2026-11-20T23:43:02Z",
+      "url": "https://arstechnica.com/ai/2026/11/meta-reconsiders-2030-net-zero-goal-amid-record-emissions-from-ai-data-centers"
+    },
+    {
+      "cleaned_title": "youtube reportedly preparing settle social media addiction claims $3 billion",
+      "sent_at": "2026-11-20T23:43:02Z",
+      "url": "https://www.theverge.com/streaming/1039096/youtube-social-media-addiction-school-districts-settlement"
+    },
+    {
+      "cleaned_title": "claimed solution 167-year-old riemann hypothesis \u2014 human did, too",
+      "sent_at": "2026-11-20T23:43:02Z",
+      "url": "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too"
+    },
+    {
+      "cleaned_title": "radixark ships daisyrose-27b, 27b agentic coding model trained reinforcement learning only",
+      "sent_at": "2026-11-20T23:43:02Z",
+      "url": "https://www.marktechpost.com/2026/11/20/radixark-daisyrose-27b-agentic-model"
     }
   ],
   "url_hashes": [
@@ -278,6 +278,11 @@
     "0db3b4bdf59c14e4c5f17d9bcbc056c674d7dbff7b19e418aef5b0aab2cdf1f3",
     "c8f40dca6d57dad853358dc359f4d3b18aa230faac146642718a379d0b9193ab",
     "e79a48d758a8669941527cae8aa3ab022bdf48ef69078dbd819c56653a31327d",
-    "0a9698c9331cebfe2ea9b273d3f848983e8438b10831f782f9d64a0b124c7c9c"
+    "0a9698c9331cebfe2ea9b273d3f848983e8438b10831f782f9d64a0b124c7c9c",
+    "ff62a6d0a83feae45bdbdd571d10f1d6ece7a9b1d524ba6843d1e8d1fc4494d4",
+    "66eae4612900f2e7c8ef527f9fee1c6d71f284c4e498c1c6d3b99c717516629d",
+    "28a72b175fa002be3c86f69205575b51de8a6c31f13f439354c6854ad977a875",
+    "861ca51b04b5cf4869c520baccae417328873374f8e3e22cf1f7ff87fd2948e0",
+    "d50e5d663a128931d0f8aec5f051aac60b7f2bc21fd7c0ec508df82b1c5149c8"
   ]
 }

@@ -1,49 +1,49 @@
 {
-  "digest_date": "2026-11-18",
-  "saved_at": "2026-11-18T00:35:36Z",
+  "digest_date": "2026-11-20",
+  "saved_at": "2026-11-20T23:43:02Z",
   "stories": [
     {
-      "article_url": "https://techcrunch.com/2026/11/17/nvidia-is-abandoning-china-after-jensen-huangs-ouster",
-      "full_title": "Nvidia is abandoning China after Jensen Huang\u2019s ouster",
-      "one_line_summary": "Nvidia halts Chinese sales following CEO departure.",
+      "article_url": "https://arstechnica.com/ai/2026/11/googles-latest-search-page-redesign-drops-the-search-button-adds-ai-sidebar",
+      "full_title": "Google rolls out new search homepage with AI chat history and no search button",
+      "one_line_summary": "Google removes search button, adds AI sidebar with chat history to its search page",
       "rank": 1,
       "score": 9.4,
-      "source_name": "TechCrunch",
+      "source_name": "Ars Technica",
       "source_tier": "A"
     },
     {
-      "article_url": "https://arstechnica.com/gadgets/2026/11/microsoft-calls-copilot-the-new-os-for-work-at-ignite-keynote",
-      "full_title": "Microsoft calls Copilot \"the new OS for work\" at Ignite keynote",
-      "one_line_summary": "Copilot embeds Word, Excel, PowerPoint; future agents announced.",
+      "article_url": "https://arstechnica.com/ai/2026/11/meta-reconsiders-2030-net-zero-goal-amid-record-emissions-from-ai-data-centers",
+      "full_title": "Meta reconsiders 2030 net-zero goal amid record emissions from AI data centers",
+      "one_line_summary": "Meta reevaluates 2030 net\u2011zero target after AI data center emissions spike",
       "rank": 2,
       "score": 9.1,
       "source_name": "Ars Technica",
       "source_tier": "A"
     },
     {
-      "article_url": "https://www.marktechpost.com/2026/11/17/openai-gpt-6-2-astra-sol-release",
-      "full_title": "OpenAI Releases GPT-6.2 Astra and Sol With a 20% Cheaper Astra API",
-      "one_line_summary": "New GPT-6.2 models launch with reduced API pricing.",
+      "article_url": "https://www.theverge.com/streaming/1039096/youtube-social-media-addiction-school-districts-settlement",
+      "full_title": "YouTube is reportedly preparing to settle social media addiction claims for $3 billion",
+      "one_line_summary": "YouTube may pay $3B to settle addiction lawsuits against school districts",
       "rank": 3,
-      "score": 8.8,
-      "source_name": "MarkTechPost",
+      "score": 8.9,
+      "source_name": "The Verge",
       "source_tier": "A"
     },
     {
-      "article_url": "https://news.microsoft.com/source/2026/11/17/microsoft-and-salesforce-announce-copilotforce-bringing-trusted-customer-context-and-action-into-microsoft-ai-experiences",
-      "full_title": "Microsoft and Salesforce Announce Copilotforce, Bringing Trusted Customer Context and Action into Microsoft AI Experiences",
-      "one_line_summary": "Copilotforce integrates Salesforce data into Microsoft Copilot.",
+      "article_url": "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too",
+      "full_title": "AI claimed a solution to the 167-year-old Riemann hypothesis \u2014 and a human did, too",
+      "one_line_summary": "AI and human both propose solutions to the Riemann hypothesis",
       "rank": 4,
-      "score": 8.5,
-      "source_name": "Microsoft AI",
-      "source_tier": "S"
+      "score": 8.7,
+      "source_name": "TechCrunch",
+      "source_tier": "A"
     },
     {
-      "article_url": "https://www.marktechpost.com/2026/11/17/perplexity-computer-multiagent-effort-level",
-      "full_title": "Perplexity Computer Adds Multiagent: Up to 16 AI Agents That Cross-Check Work",
-      "one_line_summary": "Perplexity launches multiagent system for cross\u2011checking AI outputs.",
+      "article_url": "https://www.marktechpost.com/2026/11/20/radixark-daisyrose-27b-agentic-model",
+      "full_title": "RadixArk Ships DaisyRose-27B, a 27B Agentic Coding Model Trained With Reinforcement Learning Only",
+      "one_line_summary": "RadixArk releases 27B agentic coding model that doubles benchmark performance",
       "rank": 5,
-      "score": 8.2,
+      "score": 8.5,
       "source_name": "MarkTechPost",
       "source_tier": "A"
     }
