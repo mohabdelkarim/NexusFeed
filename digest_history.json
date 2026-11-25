@@ -1,31 +1,6 @@
 {
   "recent_titles": [
     {
-      "cleaned_title": "nvidia abandoning china after jensen huang\u2019s ouster",
-      "sent_at": "2026-11-18T00:35:36Z",
-      "url": "https://techcrunch.com/2026/11/17/nvidia-is-abandoning-china-after-jensen-huangs-ouster"
-    },
-    {
-      "cleaned_title": "microsoft calls copilot \"the os work\" ignite keynote",
-      "sent_at": "2026-11-18T00:35:36Z",
-      "url": "https://arstechnica.com/gadgets/2026/11/microsoft-calls-copilot-the-new-os-for-work-at-ignite-keynote"
-    },
-    {
-      "cleaned_title": "openai releases gpt-6.2 astra sol 20% cheaper astra api",
-      "sent_at": "2026-11-18T00:35:36Z",
-      "url": "https://www.marktechpost.com/2026/11/17/openai-gpt-6-2-astra-sol-release"
-    },
-    {
-      "cleaned_title": "microsoft salesforce announce copilotforce, bringing trusted customer context action into microsoft experiences",
-      "sent_at": "2026-11-18T00:35:36Z",
-      "url": "https://news.microsoft.com/source/2026/11/17/microsoft-and-salesforce-announce-copilotforce-bringing-trusted-customer-context-and-action-into-microsoft-ai-experiences"
-    },
-    {
-      "cleaned_title": "perplexity computer adds multiagent: up 16 agents that cross-check work",
-      "sent_at": "2026-11-18T00:35:36Z",
-      "url": "https://www.marktechpost.com/2026/11/17/perplexity-computer-multiagent-effort-level"
-    },
-    {
       "cleaned_title": "google rolls out search homepage chat history no search button",
       "sent_at": "2026-11-20T23:43:02Z",
       "url": "https://arstechnica.com/ai/2026/11/googles-latest-search-page-redesign-drops-the-search-button-adds-ai-sidebar"
@@ -49,6 +24,31 @@
       "cleaned_title": "radixark ships daisyrose-27b, 27b agentic coding model trained reinforcement learning only",
       "sent_at": "2026-11-20T23:43:02Z",
       "url": "https://www.marktechpost.com/2026/11/20/radixark-daisyrose-27b-agentic-model"
+    },
+    {
+      "cleaned_title": "us financial crimes bureau discloses \u2018cybersecurity incident\u2019",
+      "sent_at": "2026-11-25T01:56:21Z",
+      "url": "https://www.theverge.com/policy/1041957/fincen-treasury-cybersecurity-incident"
+    },
+    {
+      "cleaned_title": "jensen huang\u2019s return shows nvidia too big police",
+      "sent_at": "2026-11-25T01:56:21Z",
+      "url": "https://www.wired.com/story/jensen-huang-nvidia-us-national-security-risks"
+    },
+    {
+      "cleaned_title": "us army about blow up nearly 10,000 pounds unstable explosives iowa",
+      "sent_at": "2026-11-25T01:56:21Z",
+      "url": "https://www.theverge.com/science/1041819/us-army-detonation-lead-explosives-iowa"
+    },
+    {
+      "cleaned_title": "tidal announces ban ai-generated music; 27 million tracks will be deleted",
+      "sent_at": "2026-11-25T01:56:21Z",
+      "url": "https://arstechnica.com/ai/2026/11/tidal-will-ban-fully-ai-generated-music-on-december-9"
+    },
+    {
+      "cleaned_title": "gemini changing game golden state's organization fans.",
+      "sent_at": "2026-11-25T01:56:21Z",
+      "url": "https://blog.google/products-and-platforms/products/gemini/gemini-golden-state"
     }
   ],
   "url_hashes": [
@@ -283,6 +283,11 @@
     "66eae4612900f2e7c8ef527f9fee1c6d71f284c4e498c1c6d3b99c717516629d",
     "28a72b175fa002be3c86f69205575b51de8a6c31f13f439354c6854ad977a875",
     "861ca51b04b5cf4869c520baccae417328873374f8e3e22cf1f7ff87fd2948e0",
-    "d50e5d663a128931d0f8aec5f051aac60b7f2bc21fd7c0ec508df82b1c5149c8"
+    "d50e5d663a128931d0f8aec5f051aac60b7f2bc21fd7c0ec508df82b1c5149c8",
+    "b260aefcebf2b187e437741334b9ff9f8fd274720eb6133d690fbd6085813916",
+    "0d6037370fa1be2af78fe07977ea84adb77efee13f0329084251dcccbe555759",
+    "710a9b72c7454d32c5b6476164c4927e5b2a70176599a279a09e6fc7517d2ea2",
+    "3d9795e0b578488bd9a1c5c7cd3cc3ee4baa03ce61c35a7934a133971188f556",
+    "a7a0adf7d6c734e350c9ea11283c0fe8c513cc2bb1d3bcd56555bd53c3f8d9a6"
   ]
 }

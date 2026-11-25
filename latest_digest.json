@@ -1,51 +1,51 @@
 {
-  "digest_date": "2026-11-20",
-  "saved_at": "2026-11-20T23:43:02Z",
+  "digest_date": "2026-11-25",
+  "saved_at": "2026-11-25T01:56:21Z",
   "stories": [
     {
-      "article_url": "https://arstechnica.com/ai/2026/11/googles-latest-search-page-redesign-drops-the-search-button-adds-ai-sidebar",
-      "full_title": "Google rolls out new search homepage with AI chat history and no search button",
-      "one_line_summary": "Google removes search button, adds AI sidebar with chat history to its search page",
+      "article_url": "https://www.theverge.com/policy/1041957/fincen-treasury-cybersecurity-incident",
+      "full_title": "US financial crimes bureau discloses \u2018cybersecurity incident\u2019",
+      "one_line_summary": "FinCEN investigates a cybersecurity breach within Treasury Department",
       "rank": 1,
       "score": 9.4,
-      "source_name": "Ars Technica",
+      "source_name": "The Verge",
       "source_tier": "A"
     },
     {
-      "article_url": "https://arstechnica.com/ai/2026/11/meta-reconsiders-2030-net-zero-goal-amid-record-emissions-from-ai-data-centers",
-      "full_title": "Meta reconsiders 2030 net-zero goal amid record emissions from AI data centers",
-      "one_line_summary": "Meta reevaluates 2030 net\u2011zero target after AI data center emissions spike",
+      "article_url": "https://www.wired.com/story/jensen-huang-nvidia-us-national-security-risks",
+      "full_title": "Jensen Huang\u2019s Return Shows Nvidia Is Too Big to Police",
+      "one_line_summary": "Nvidia\u2019s CEO return raises national security concerns over corporate influence",
       "rank": 2,
       "score": 9.1,
-      "source_name": "Ars Technica",
+      "source_name": "Wired AI",
       "source_tier": "A"
     },
     {
-      "article_url": "https://www.theverge.com/streaming/1039096/youtube-social-media-addiction-school-districts-settlement",
-      "full_title": "YouTube is reportedly preparing to settle social media addiction claims for $3 billion",
-      "one_line_summary": "YouTube may pay $3B to settle addiction lawsuits against school districts",
+      "article_url": "https://www.theverge.com/science/1041819/us-army-detonation-lead-explosives-iowa",
+      "full_title": "Why the US Army is about to blow up nearly 10,000 pounds of unstable explosives in Iowa",
+      "one_line_summary": "Army plans to detonate lead azide stockpile at Iowa ammunition plant",
       "rank": 3,
       "score": 8.9,
       "source_name": "The Verge",
       "source_tier": "A"
     },
     {
-      "article_url": "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too",
-      "full_title": "AI claimed a solution to the 167-year-old Riemann hypothesis \u2014 and a human did, too",
-      "one_line_summary": "AI and human both propose solutions to the Riemann hypothesis",
+      "article_url": "https://arstechnica.com/ai/2026/11/tidal-will-ban-fully-ai-generated-music-on-december-9",
+      "full_title": "Tidal announces ban on AI-generated music; 27 million tracks will be deleted",
+      "one_line_summary": "Tidal will remove all fully AI\u2011generated songs from its catalog",
       "rank": 4,
       "score": 8.7,
-      "source_name": "TechCrunch",
+      "source_name": "Ars Technica",
       "source_tier": "A"
     },
     {
-      "article_url": "https://www.marktechpost.com/2026/11/20/radixark-daisyrose-27b-agentic-model",
-      "full_title": "RadixArk Ships DaisyRose-27B, a 27B Agentic Coding Model Trained With Reinforcement Learning Only",
-      "one_line_summary": "RadixArk releases 27B agentic coding model that doubles benchmark performance",
+      "article_url": "https://blog.google/products-and-platforms/products/gemini/gemini-golden-state",
+      "full_title": "How Gemini is changing the game for Golden State's organization and fans.",
+      "one_line_summary": "Google Gemini powers fan experiences and operations for the Warriors and Chase Center",
       "rank": 5,
       "score": 8.5,
-      "source_name": "MarkTechPost",
-      "source_tier": "A"
+      "source_name": "Google AI",
+      "source_tier": "S"
     }
   ]
 }
