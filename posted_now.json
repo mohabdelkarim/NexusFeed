@@ -1,6 +1,28 @@
 [
   {
     "authoritative_score": 9.0,
+    "canonical_url": "https://www.theverge.com/gadgets/1041460/fairphone-6-plus-repairable-phone-black-friday-2026-deal-sale",
+    "published_at": "2026-11-25T18:00:00Z",
+    "saved_at": "2026-11-25T18:30:19Z",
+    "score": {
+      "freshness_score": 2.0,
+      "impact_score": 2.5,
+      "novelty_score": 3.0,
+      "reason": "New release, all devs impact, fresh, source A",
+      "red_flag": false,
+      "red_flag_reason": null,
+      "source_score": 1.5,
+      "total_score": 9.0
+    },
+    "source": "The Verge",
+    "summary": "Unlike most smartphones, the Fairphone 6 Plus is designed for home repair, with easily replaceable parts that could help extend its lifespan well into the future. That makes its midrange price point easier to justify, especially now that it\u2019s dropped to a new low of $552.49 (about $98 off) at Amazo...",
+    "tier": "A",
+    "title": "The Fairphone 6 Plus is modular, repairable, and $100 off right now",
+    "url": "https://www.theverge.com/gadgets/1041460/fairphone-6-plus-repairable-phone-black-friday-2026-deal-sale",
+    "url_hash": "4f570faddc68b16cdd8fc9d7a2d4f29e9f6080759c5c50c1f81aadc92a26e99d"
+  },
+  {
+    "authoritative_score": 9.0,
     "canonical_url": "https://www.theverge.com/tech/1038227/apple-ai-agent-engineer-job-listing",
     "published_at": "2026-11-19T22:31:41Z",
     "saved_at": "2026-11-20T18:27:04Z",

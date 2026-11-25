@@ -33,6 +33,9 @@
 
 <p align="center"><sub>Live clears · refreshed by GitHub Actions</sub></p>
 
+> [The Fairphone 6 Plus is modular, repairable, and $100 off right now](https://www.theverge.com/gadgets/1041460/fairphone-6-plus-repairable-phone-black-friday-2026-deal-sale)  
+> The Verge · Nov 25
+
 > [Apple is hiring engineers to build its own AI agent](https://www.theverge.com/tech/1038227/apple-ai-agent-engineer-job-listing)  
 > The Verge · Nov 19
 
@@ -53,9 +56,6 @@
 
 > [Google pushes privacy angle as Gemini-powered smartglasses debut starting at $395](https://arstechnica.com/google/2026/11/google-pushes-privacy-angle-as-gemini-powered-smartglasses-debut-starting-at-395)  
 > Ars Technica · Nov 12
-
-> [IBM Announces IBM Quantum Nighthawk r3: A New Processor to Support 10k Quantum Operations on 520…](https://www.marktechpost.com/2026/11/12/ibm-quantum-nighthawk-r3-520-qubits-1040-qubit-system-2027)  
-> MarkTechPost · Nov 12
 
 <p align="center"><sub>8 clears · full state in <code>posted_now.json</code></sub></p>
 

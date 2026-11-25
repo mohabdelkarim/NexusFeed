@@ -1,6 +1,6 @@
 {
-  "date": "2026-11-24",
-  "last_post_time": null,
+  "date": "2026-11-25",
+  "last_post_time": "2026-11-25T18:30:19Z",
   "pending_best": {
     "authoritative_score": 8.0,
     "canonical_url": "https://www.theverge.com/tech/1041618/tiktok-down-outage",
@@ -25,5 +25,5 @@
     "url": "https://www.theverge.com/tech/1041618/tiktok-down-outage",
     "url_hash": "2faf2fedd6b84aa69fd67ca8a69910398e3fe0f7aa0f150227b53d80388e8bee"
   },
-  "posts_today": 0
+  "posts_today": 1
 }
