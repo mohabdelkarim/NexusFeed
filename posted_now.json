@@ -1,5 +1,27 @@
 [
   {
+    "authoritative_score": 8.5,
+    "canonical_url": "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench",
+    "published_at": "2026-11-26T11:37:17Z",
+    "saved_at": "2026-11-26T17:24:52Z",
+    "score": {
+      "freshness_score": 1.0,
+      "impact_score": 2.5,
+      "novelty_score": 3.0,
+      "reason": "new release, broad impact, recent",
+      "red_flag": false,
+      "red_flag_reason": null,
+      "source_score": 2.0,
+      "total_score": 8.5
+    },
+    "source": "HuggingFace",
+    "summary": "",
+    "tier": "S",
+    "title": "Introducing the llama.cpp benchmark dashboard for AMD Ryzen and Radeon",
+    "url": "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench",
+    "url_hash": "a734da9d3a1d876054f86e6e92e632f9c2a091a208fef8a96dd4cc4467d6055b"
+  },
+  {
     "authoritative_score": 9.0,
     "canonical_url": "https://www.theverge.com/gadgets/1041460/fairphone-6-plus-repairable-phone-black-friday-2026-deal-sale",
     "published_at": "2026-11-25T18:00:00Z",

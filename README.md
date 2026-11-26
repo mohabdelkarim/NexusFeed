@@ -33,6 +33,9 @@
 
 <p align="center"><sub>Live clears · refreshed by GitHub Actions</sub></p>
 
+> [Introducing the llama.cpp benchmark dashboard for AMD Ryzen and Radeon](https://huggingface.co/blog/ggml-org/llamacpp-amd-bench)  
+> HuggingFace · Nov 26
+
 > [The Fairphone 6 Plus is modular, repairable, and $100 off right now](https://www.theverge.com/gadgets/1041460/fairphone-6-plus-repairable-phone-black-friday-2026-deal-sale)  
 > The Verge · Nov 25
 
@@ -53,9 +56,6 @@
 
 > [Muse can now place calls to U.S. businesses — if you pay](https://techcrunch.com/2026/11/12/muse-can-now-place-calls-to-u-s-businesses-if-you-pay)  
 > TechCrunch · Nov 12
-
-> [Google pushes privacy angle as Gemini-powered smartglasses debut starting at $395](https://arstechnica.com/google/2026/11/google-pushes-privacy-angle-as-gemini-powered-smartglasses-debut-starting-at-395)  
-> Ars Technica · Nov 12
 
 <p align="center"><sub>8 clears · full state in <code>posted_now.json</code></sub></p>
 
