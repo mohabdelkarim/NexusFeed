@@ -1,6 +1,6 @@
 {
   "date": "2026-11-27",
-  "last_post_time": null,
+  "last_post_time": "2026-11-27T19:24:25Z",
   "pending_best": {
     "authoritative_score": 8.0,
     "canonical_url": "https://www.marktechpost.com/2026/11/26/sakana-ai-namazu-small-30b-nemotron-3-nano",
@@ -25,5 +25,5 @@
     "url": "https://www.marktechpost.com/2026/11/26/sakana-ai-namazu-small-30b-nemotron-3-nano",
     "url_hash": "69277372b188510927879e40c68eac7beb8c67a6ce346757223abb3757db64cc"
   },
-  "posts_today": 0
+  "posts_today": 1
 }

@@ -39,10 +39,15 @@
     {
       "hash": "a734da9d3a1d876054f86e6e92e632f9c2a091a208fef8a96dd4cc4467d6055b",
       "posted_at": "2026-11-26T17:24:52Z"
+    },
+    {
+      "hash": "328423d917a01424e6835aa2858655ed853f06e1df3cb83f239299deb362b5e4",
+      "posted_at": "2026-11-27T19:24:25Z"
     }
   ],
   "hashes": [
     "0191a8cf5007a7e305ee6ecc84767aeda711b30a6ec196d8a24db74bf6e9ec9a",
+    "328423d917a01424e6835aa2858655ed853f06e1df3cb83f239299deb362b5e4",
     "4f570faddc68b16cdd8fc9d7a2d4f29e9f6080759c5c50c1f81aadc92a26e99d",
     "96c7f67bef86f8316048a87fd511efdf23e6f81e02406769c1ce381b73c81b1f",
     "9f19183b29edeb233bebaa5287629f6dfcbac6bf7b423e303837da05f138f4ef",
@@ -113,6 +118,12 @@
       "posted_at": "2026-11-26T17:24:52Z",
       "score": 8.5,
       "source": "HuggingFace"
+    },
+    {
+      "cleaned_title": "absolute best black friday deals we ve found so far",
+      "posted_at": "2026-11-27T19:24:25Z",
+      "score": 8.5,
+      "source": "The Verge"
     }
   ]
 }

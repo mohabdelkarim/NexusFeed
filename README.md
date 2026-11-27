@@ -33,6 +33,9 @@
 
 <p align="center"><sub>Live clears · refreshed by GitHub Actions</sub></p>
 
+> [The absolute best Black Friday deals we’ve found (so far)](https://www.theverge.com/gadgets/1039190/best-black-friday-2026-deals-tech-gadgets-gift-ideas)  
+> The Verge · Nov 27
+
 > [Introducing the llama.cpp benchmark dashboard for AMD Ryzen and Radeon](https://huggingface.co/blog/ggml-org/llamacpp-amd-bench)  
 > HuggingFace · Nov 26
 
@@ -53,9 +56,6 @@
 
 > [XYBench: Helping with the problem behind the question](https://huggingface.co/blog/allenai/xybench)  
 > HuggingFace · Nov 13
-
-> [Muse can now place calls to U.S. businesses — if you pay](https://techcrunch.com/2026/11/12/muse-can-now-place-calls-to-u-s-businesses-if-you-pay)  
-> TechCrunch · Nov 12
 
 <p align="center"><sub>8 clears · full state in <code>posted_now.json</code></sub></p>
 

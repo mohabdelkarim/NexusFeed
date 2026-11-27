@@ -1,6 +1,28 @@
 [
   {
     "authoritative_score": 8.5,
+    "canonical_url": "https://www.theverge.com/gadgets/1039190/best-black-friday-2026-deals-tech-gadgets-gift-ideas",
+    "published_at": "2026-11-27T18:59:19Z",
+    "saved_at": "2026-11-27T19:24:25Z",
+    "score": {
+      "freshness_score": 2.0,
+      "impact_score": 3.0,
+      "novelty_score": 2.0,
+      "reason": "Industry move with broad impact and fresh release",
+      "red_flag": false,
+      "red_flag_reason": null,
+      "source_score": 1.5,
+      "total_score": 8.5
+    },
+    "source": "The Verge",
+    "summary": "This year\u2019s Black Friday deals have launched in waves over the past several weeks, but now the floodgates have officially opened. You can now take advantage of the lowest prices we\u2019ve seen in-store and online for video games, wireless earbuds, TVs, e-readers, robot vacuums, and so much more. We can...",
+    "tier": "A",
+    "title": "The absolute best Black Friday deals we\u2019ve found (so far)",
+    "url": "https://www.theverge.com/gadgets/1039190/best-black-friday-2026-deals-tech-gadgets-gift-ideas",
+    "url_hash": "328423d917a01424e6835aa2858655ed853f06e1df3cb83f239299deb362b5e4"
+  },
+  {
+    "authoritative_score": 8.5,
     "canonical_url": "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench",
     "published_at": "2026-11-26T11:37:17Z",
     "saved_at": "2026-11-26T17:24:52Z",
