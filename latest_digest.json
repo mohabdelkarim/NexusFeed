@@ -1,51 +1,51 @@
 {
-  "digest_date": "2026-11-25",
-  "saved_at": "2026-11-25T01:56:21Z",
+  "digest_date": "2026-11-28",
+  "saved_at": "2026-11-28T01:09:16Z",
   "stories": [
     {
-      "article_url": "https://www.theverge.com/policy/1041957/fincen-treasury-cybersecurity-incident",
-      "full_title": "US financial crimes bureau discloses \u2018cybersecurity incident\u2019",
-      "one_line_summary": "FinCEN investigates a cybersecurity breach within Treasury Department",
+      "article_url": "https://www.wired.com/story/a-new-breed-of-chip-runs-ai-models-using-waves-of-light",
+      "full_title": "A New Breed of Chip Runs AI Models Using Waves of Light",
+      "one_line_summary": "German company Q.ANT introduces light\u2011based chip to cut AI energy usage",
       "rank": 1,
       "score": 9.4,
-      "source_name": "The Verge",
-      "source_tier": "A"
-    },
-    {
-      "article_url": "https://www.wired.com/story/jensen-huang-nvidia-us-national-security-risks",
-      "full_title": "Jensen Huang\u2019s Return Shows Nvidia Is Too Big to Police",
-      "one_line_summary": "Nvidia\u2019s CEO return raises national security concerns over corporate influence",
-      "rank": 2,
-      "score": 9.1,
       "source_name": "Wired AI",
       "source_tier": "A"
     },
     {
-      "article_url": "https://www.theverge.com/science/1041819/us-army-detonation-lead-explosives-iowa",
-      "full_title": "Why the US Army is about to blow up nearly 10,000 pounds of unstable explosives in Iowa",
-      "one_line_summary": "Army plans to detonate lead azide stockpile at Iowa ammunition plant",
+      "article_url": "https://research.google/blog/supercharging-transformer-residual-connections",
+      "full_title": "Google's DeepCrossAttention achieves comparable model quality up to 3x faster",
+      "one_line_summary": "Google releases DeepCrossAttention, speeding transformer inference by up to three times",
+      "rank": 2,
+      "score": 9.1,
+      "source_name": "Google Research Blog",
+      "source_tier": "A"
+    },
+    {
+      "article_url": "https://www.infoq.com/news/2026/11/uber-agent-spend-steady",
+      "full_title": "Meta Brings Code Review Auto-Approval More Mainstream with PyTorch GreenLight",
+      "one_line_summary": "Meta opens PyTorch GreenLight, enabling AI\u2011driven pull request approvals",
       "rank": 3,
-      "score": 8.9,
-      "source_name": "The Verge",
-      "source_tier": "A"
-    },
-    {
-      "article_url": "https://arstechnica.com/ai/2026/11/tidal-will-ban-fully-ai-generated-music-on-december-9",
-      "full_title": "Tidal announces ban on AI-generated music; 27 million tracks will be deleted",
-      "one_line_summary": "Tidal will remove all fully AI\u2011generated songs from its catalog",
-      "rank": 4,
       "score": 8.7,
-      "source_name": "Ars Technica",
-      "source_tier": "A"
+      "source_name": "InfoQ AI/ML",
+      "source_tier": "B"
     },
     {
-      "article_url": "https://blog.google/products-and-platforms/products/gemini/gemini-golden-state",
-      "full_title": "How Gemini is changing the game for Golden State's organization and fans.",
-      "one_line_summary": "Google Gemini powers fan experiences and operations for the Warriors and Chase Center",
-      "rank": 5,
+      "article_url": "https://www.infoq.com/news/2026/11/netflix-quasar-api-impact",
+      "full_title": "Netflix Builds Quasar to Measure the Blast Radius of Library API Changes",
+      "one_line_summary": "Netflix develops Quasar to track downstream impact of library updates",
+      "rank": 4,
       "score": 8.5,
-      "source_name": "Google AI",
-      "source_tier": "S"
+      "source_name": "InfoQ AI/ML",
+      "source_tier": "B"
+    },
+    {
+      "article_url": "https://www.marktechpost.com/2026/11/26/tencent-dfly2-speculative-decoding-sparse-models",
+      "full_title": "Tencent Open-Sources DFly2: Speculative Decoding That Reuses the Target\u2019s Sparse KV Cache",
+      "one_line_summary": "Tencent releases DFly2, a speculative decoding method for sparse\u2011attention LLMs",
+      "rank": 5,
+      "score": 8.3,
+      "source_name": "MarkTechPost",
+      "source_tier": "A"
     }
   ]
 }

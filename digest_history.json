@@ -1,31 +1,6 @@
 {
   "recent_titles": [
     {
-      "cleaned_title": "google rolls out search homepage chat history no search button",
-      "sent_at": "2026-11-20T23:43:02Z",
-      "url": "https://arstechnica.com/ai/2026/11/googles-latest-search-page-redesign-drops-the-search-button-adds-ai-sidebar"
-    },
-    {
-      "cleaned_title": "meta reconsiders 2030 net-zero goal amid record emissions data centers",
-      "sent_at": "2026-11-20T23:43:02Z",
-      "url": "https://arstechnica.com/ai/2026/11/meta-reconsiders-2030-net-zero-goal-amid-record-emissions-from-ai-data-centers"
-    },
-    {
-      "cleaned_title": "youtube reportedly preparing settle social media addiction claims $3 billion",
-      "sent_at": "2026-11-20T23:43:02Z",
-      "url": "https://www.theverge.com/streaming/1039096/youtube-social-media-addiction-school-districts-settlement"
-    },
-    {
-      "cleaned_title": "claimed solution 167-year-old riemann hypothesis \u2014 human did, too",
-      "sent_at": "2026-11-20T23:43:02Z",
-      "url": "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too"
-    },
-    {
-      "cleaned_title": "radixark ships daisyrose-27b, 27b agentic coding model trained reinforcement learning only",
-      "sent_at": "2026-11-20T23:43:02Z",
-      "url": "https://www.marktechpost.com/2026/11/20/radixark-daisyrose-27b-agentic-model"
-    },
-    {
       "cleaned_title": "us financial crimes bureau discloses \u2018cybersecurity incident\u2019",
       "sent_at": "2026-11-25T01:56:21Z",
       "url": "https://www.theverge.com/policy/1041957/fincen-treasury-cybersecurity-incident"
@@ -49,6 +24,31 @@
       "cleaned_title": "gemini changing game golden state's organization fans.",
       "sent_at": "2026-11-25T01:56:21Z",
       "url": "https://blog.google/products-and-platforms/products/gemini/gemini-golden-state"
+    },
+    {
+      "cleaned_title": "breed chip runs models using waves light",
+      "sent_at": "2026-11-28T01:09:16Z",
+      "url": "https://www.wired.com/story/a-new-breed-of-chip-runs-ai-models-using-waves-of-light"
+    },
+    {
+      "cleaned_title": "google's deepcrossattention achieves comparable model quality up 3x faster",
+      "sent_at": "2026-11-28T01:09:16Z",
+      "url": "https://research.google/blog/supercharging-transformer-residual-connections"
+    },
+    {
+      "cleaned_title": "meta brings code review auto-approval more mainstream pytorch greenlight",
+      "sent_at": "2026-11-28T01:09:16Z",
+      "url": "https://www.infoq.com/news/2026/11/uber-agent-spend-steady"
+    },
+    {
+      "cleaned_title": "netflix builds quasar measure blast radius library api changes",
+      "sent_at": "2026-11-28T01:09:16Z",
+      "url": "https://www.infoq.com/news/2026/11/netflix-quasar-api-impact"
+    },
+    {
+      "cleaned_title": "tencent open-sources dfly2: speculative decoding that reuses target\u2019s sparse kv cache",
+      "sent_at": "2026-11-28T01:09:16Z",
+      "url": "https://www.marktechpost.com/2026/11/26/tencent-dfly2-speculative-decoding-sparse-models"
     }
   ],
   "url_hashes": [
@@ -288,6 +288,11 @@
     "0d6037370fa1be2af78fe07977ea84adb77efee13f0329084251dcccbe555759",
     "710a9b72c7454d32c5b6476164c4927e5b2a70176599a279a09e6fc7517d2ea2",
     "3d9795e0b578488bd9a1c5c7cd3cc3ee4baa03ce61c35a7934a133971188f556",
-    "a7a0adf7d6c734e350c9ea11283c0fe8c513cc2bb1d3bcd56555bd53c3f8d9a6"
+    "a7a0adf7d6c734e350c9ea11283c0fe8c513cc2bb1d3bcd56555bd53c3f8d9a6",
+    "8a7bedc20d3b6ed3ea23c1701e82aed8c4032748978c8c1da0d55abeb0bd3fff",
+    "8a952e6dea4cd37582529417e11e3c93c99807900dc4dc83974d2a98d63722e8",
+    "e89fb0d1bf0fe70a8efe37c1ef8300bcd9b25d9f186ea27ec8dc7adee23037cf",
+    "e88e0d1dfc6375d61064784b8d277a2b7a4ecb4b44c3d0bb28b61b013524bad7",
+    "0e2b345431c7ee0dab007957da1459174706aeab5604437c02569d1d87a656fb"
   ]
 }
